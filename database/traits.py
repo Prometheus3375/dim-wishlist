@@ -268,6 +268,12 @@ HighGround = Item(
     icon='https://bungie.net/common/destiny2_content/icons/5ee6f65d7af0a9acf6f22e3254e85283.png',
     )
 
+FourthTimesTheCharm = Item(
+    name="Fourth Time's the Charm",
+    hash=1354429876,
+    icon='https://bungie.net/common/destiny2_content/icons/a5edd4e751e1aa34bf8328a63b121e71.png',
+    )
+
 # endregion
 
 # region Origin Traits
