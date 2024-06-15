@@ -9,7 +9,7 @@ wishlist = Wishlist(
 # region Omolon
 
 wishlist.add(
-    'YarovitMG4 rolls',
+    'Yarovit MG4 rolls',
     YarovitMG4,
     {RewindRounds, Strategist, EnlightenedAction},
     {Surrounded, DesperateMeasures},
@@ -32,7 +32,6 @@ wishlist.add(
 wishlist.add(
     'Spectrum-4FR bad combo',
     Suspectum4FR,
-    {ArrowheadBrake},
     {EnviousAssassin},
     {FourthTimesTheCharm},
     notes='FTTC does not regenerate ammo if mag is overflowed',
