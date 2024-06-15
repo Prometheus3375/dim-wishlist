@@ -16,6 +16,18 @@ dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3615421669&perks=839105230,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
 
+// Ergo Sum Wolfpack Rounds
+//notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
+dimwishlist:item=1681583613&perks=1959135343,436053704,2753228730
+dimwishlist:item=1681583613&perks=1959135343,1261178282,2753228730
+dimwishlist:item=1681583613&perks=1959135343,938542991,2753228730
+
+// Ergo Sum Gathering Light
+//notes:Good roll to get ability energy from sword kills
+dimwishlist:item=1681583613&perks=3551049142,436053704,289811733
+dimwishlist:item=1681583613&perks=3551049142,1261178282,289811733
+dimwishlist:item=1681583613&perks=3551049142,938542991,289811733
+
 // Breachlight grenade roll
 dimwishlist:item=2328923181&perks=3523296417,11612903#notes:Roll for grenade builds
 

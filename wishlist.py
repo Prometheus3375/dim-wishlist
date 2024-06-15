@@ -40,6 +40,29 @@ wishlist.add(
 
 # endregion
 
+# region The Pale Heart
+
+wishlist.add(
+    'Ergo Sum Wolfpack Rounds',
+    ErgoSum,
+    {ES_WolfpackRounds},
+    {EnduringBlade, HungryEdge, TemperedEdge},
+    {ES_LightweightFrame},
+    notes='Roll to activate Wolfpack Rounds on swords. '
+          'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
+    )
+
+wishlist.add(
+    'Ergo Sum Gathering Light',
+    ErgoSum,
+    {ES_GatheringLight},
+    {EnduringBlade, HungryEdge, TemperedEdge},
+    {ES_WaveSwordFrame},
+    notes='Good roll to get ability energy from sword kills',
+    )
+
+# endregion
+
 # region Echoes
 
 wishlist.add(
