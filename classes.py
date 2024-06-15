@@ -107,6 +107,12 @@ class Wishlist:
         then makes any possible combination of them.
         If ``trash`` is ``True``, then this roll will be marked as a trash roll.
         """
+        # Wildcard Item cannot be in trash rolls
+        from database.items import AnyItem
+
+        if item is AnyItem and trash:
+            raise ValueError(f'AnyItem cannot be used to specify trash rolls')
+
         # Clear strings
         title = ' '.join(title.split())
         notes = ' '.join(notes.split())
