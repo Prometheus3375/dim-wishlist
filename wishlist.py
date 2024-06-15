@@ -13,7 +13,7 @@ wishlist.add(
     YarovitMG4,
     {RewindRounds, Strategist, EnlightenedAction},
     {Surrounded, DesperateMeasures},
-    notes='Good PvE roll',
+    notes='Good PvE rolls',
     )
 
 # endregion
@@ -26,7 +26,7 @@ wishlist.add(
     {ArrowheadBrake},
     {EnlightenedAction, EnviousAssassin},
     {PrecisionInstrument},
-    notes='Roll for DPS',
+    notes='Rolls for DPS',
     )
 
 wishlist.add(
@@ -72,7 +72,7 @@ wishlist.add(
     Breachlight,
     {ThreatDetector, Demolitionist},
     {DesperateMeasures, Hatchling},
-    notes='Regular good PvE roll',
+    notes='Good PvE rolls',
     )
 
 wishlist.add(
@@ -80,7 +80,7 @@ wishlist.add(
     PatronOfLostCauses,
     {Strategist},
     {ExplosivePayload, KineticTremors},
-    notes='An interesting roll to get class ability energy from afar',
+    notes='Rolls to get class ability energy from afar',
     )
 
 wishlist.add(
@@ -88,7 +88,7 @@ wishlist.add(
     PatronOfLostCauses,
     {RapidHit},
     {ExplosivePayload, KineticTremors},
-    notes='A classic PvE roll for a scout rifle',
+    notes='Classic PvE rolls for a scout rifle',
     )
 
 wishlist.add(
@@ -98,7 +98,7 @@ wishlist.add(
     {TacticalMag},
     {FieldPrep},
     {OneTwoPunch},
-    notes='Special roll for melee damage increase',
+    notes='Special rolls for melee damage increase',
     )
 
 wishlist.add(
@@ -108,7 +108,7 @@ wishlist.add(
     {TacticalMag},
     {ThreatDetector, FieldPrep},
     {TrenchBarrel},
-    notes='Roll for shotgun DPS',
+    notes='Rolls for shotgun DPS',
     )
 
 wishlist.add(
@@ -138,7 +138,7 @@ wishlist.add(
     {HighVelocityRounds},
     {Demolitionist, HealClip, AutoLoadingHolster},
     {DesperateMeasures, Incandescent},
-    notes='Good PvE roll',
+    notes='Good PvE rolls',
     )
 
 wishlist.add(
@@ -147,7 +147,7 @@ wishlist.add(
     {ArrowheadBrake},
     {Demolitionist, ClownCartridge},
     {BaitAndSwitch},
-    notes='DPS roll'
+    notes='DPS rolls'
     )
 
 # endregion
