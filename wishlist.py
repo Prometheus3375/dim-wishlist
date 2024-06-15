@@ -29,6 +29,16 @@ wishlist.add(
     notes='Roll for DPS',
     )
 
+wishlist.add(
+    'Spectrum-4FR bad combo',
+    Suspectum4FR,
+    {ArrowheadBrake},
+    {EnviousAssassin},
+    {FourthTimesTheCharm},
+    notes='FTTC does not regenerate ammo if mag is overflowed',
+    trash=True,
+    )
+
 # endregion
 
 # region Echoes
