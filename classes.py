@@ -108,8 +108,8 @@ class Wishlist:
         If ``trash`` is ``True``, then this roll will be marked as a trash roll.
         """
         # Clear strings
-        title = ''.join(title.split())
-        notes = ''.join(notes.split())
+        title = ' '.join(title.split())
+        notes = ' '.join(notes.split())
         # Remove empty sets
         trait_sets = tuple(filter(None, trait_sets))
         # Determine a list and add entry
