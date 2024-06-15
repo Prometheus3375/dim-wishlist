@@ -9,7 +9,7 @@ class Item:
     """
     A common class for armor, weapons, traits, categories, etc.
     """
-    __hash2item: ClassVar[dict[int, Self]]
+    __hash2item: ClassVar[dict[int, Self]] = {}
 
     name: str
     hash: int
