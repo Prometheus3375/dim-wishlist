@@ -33,5 +33,6 @@ RewindRounds = Item(name='Rewind Rounds', hash=3418782618)
 Surrounded = Item(name='Surrounded', hash=3708227201)
 HighGround = Item(name='High Ground', hash=2319119708)
 FourthTimesTheCharm = Item(name="Fourth Time's the Charm", hash=1354429876)
+Headstone = Item(name='Headstone', hash=124408337)
 
 del Item
