@@ -58,7 +58,7 @@ class WishlistEntry:
         if len(combos) < 2:
             if len(combos) == 1:
                 combo_str = ','.join(str(i.hash) for i in combos[0])
-                combo_str = f'perks={combo_str}'
+                combo_str = f'&perks={combo_str}'
             else:
                 combo_str = ''
 
@@ -67,7 +67,7 @@ class WishlistEntry:
                 f'// {self.title}\n'
                 f'dimwishlist:'
                 f'item={item_hash}'
-                f'&{combo_str}'
+                f'{combo_str}'
                 f'{notes}'
             )
 
