@@ -6,10 +6,13 @@ description:Rolls on weapons and armor Prometheus3375 would like to have
 //notes:Good PvE rolls
 dimwishlist:item=3959549446&perks=3418782618,3708227201
 dimwishlist:item=3959549446&perks=3418782618,2109543898
+dimwishlist:item=3959549446&perks=3418782618,124408337
 dimwishlist:item=3959549446&perks=880644845,3708227201
 dimwishlist:item=3959549446&perks=880644845,2109543898
+dimwishlist:item=3959549446&perks=880644845,124408337
 dimwishlist:item=3959549446&perks=3828510309,3708227201
 dimwishlist:item=3959549446&perks=3828510309,2109543898
+dimwishlist:item=3959549446&perks=3828510309,124408337
 
 // Spectrum-4FR DPS rolls
 //notes:Rolls for DPS
