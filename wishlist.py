@@ -11,8 +11,8 @@ wishlist = Wishlist(
 wishlist.add(
     'Yarovit MG4 rolls',
     YarovitMG4,
-    {RewindRounds, Strategist, EnlightenedAction},
-    {Surrounded, DesperateMeasures},
+    {traits.RewindRounds, traits.Strategist, traits.EnlightenedAction},
+    {traits.Surrounded, traits.DesperateMeasures},
     notes='Good PvE rolls',
     )
 
@@ -23,17 +23,17 @@ wishlist.add(
 wishlist.add(
     'Spectrum-4FR DPS rolls',
     Suspectum4FR,
-    {ArrowheadBrake},
-    {EnlightenedAction, EnviousAssassin},
-    {PrecisionInstrument},
+    {barrels.ArrowheadBrake},
+    {traits.EnlightenedAction, traits.EnviousAssassin},
+    {traits.PrecisionInstrument},
     notes='Rolls for DPS',
     )
 
 wishlist.add(
     'Spectrum-4FR bad combo',
     Suspectum4FR,
-    {EnviousAssassin},
-    {FourthTimesTheCharm},
+    {traits.EnviousAssassin},
+    {traits.FourthTimesTheCharm},
     notes='FTTC does not regenerate ammo if mag is overflowed',
     trash=True,
     )
@@ -42,12 +42,14 @@ wishlist.add(
 
 # region The Pale Heart
 
+_es_blades = {blades.EnduringBlade, blades.HungryEdge, blades.TemperedEdge}
+
 wishlist.add(
     'Ergo Sum Wolfpack Rounds',
     ErgoSum,
-    {ES_WolfpackRounds},
-    {EnduringBlade, HungryEdge, TemperedEdge},
-    {ES_LightweightFrame},
+    {unique.ES_WolfpackRounds},
+    _es_blades,
+    {unique.ES_LightweightFrame},
     notes='Roll to activate Wolfpack Rounds on swords. '
           'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
     )
@@ -55,9 +57,9 @@ wishlist.add(
 wishlist.add(
     'Ergo Sum Gathering Light',
     ErgoSum,
-    {ES_GatheringLight},
-    {EnduringBlade, HungryEdge, TemperedEdge},
-    {ES_WaveSwordFrame},
+    {unique.ES_GatheringLight},
+    _es_blades,
+    {unique.ES_WaveSwordFrame},
     notes='Good roll to get ability energy from sword kills',
     )
 
@@ -68,107 +70,110 @@ wishlist.add(
 wishlist.add(
     'Breachlight grenade roll',
     Breachlight,
-    {Demolitionist},
-    {AdrenalineJunkie},
+    {traits.Demolitionist},
+    {traits.AdrenalineJunkie},
     notes='Roll for grenade builds',
     )
 
 wishlist.add(
     'Breachlight melee roll',
     Breachlight,
-    {Pugilist},
-    {Swashbuckler},
+    {traits.Pugilist},
+    {traits.Swashbuckler},
     notes='Roll for melee builds and synergy with the origin trait',
     )
 
 wishlist.add(
     'Breachlight Strand roll',
     Breachlight,
-    {Slice},
-    {Hatchling},
+    {traits.Slice},
+    {traits.Hatchling},
     notes='Roll for Strand builds',
     )
 
 wishlist.add(
     'Breachlight rolls',
     Breachlight,
-    {ThreatDetector, Demolitionist},
-    {DesperateMeasures, Hatchling},
+    {traits.ThreatDetector, traits.Demolitionist},
+    {traits.DesperateMeasures, traits.Hatchling},
     notes='Good PvE rolls',
     )
 
 wishlist.add(
     'Patron of Lost Causes class ability rolls',
     PatronOfLostCauses,
-    {Strategist},
-    {ExplosivePayload, KineticTremors},
+    {traits.Strategist},
+    {traits.ExplosivePayload, traits.KineticTremors},
     notes='Rolls to get class ability energy from afar',
     )
 
 wishlist.add(
     'Patron of Lost Causes classic rolls',
     PatronOfLostCauses,
-    {RapidHit},
-    {ExplosivePayload, KineticTremors},
+    {traits.RapidHit},
+    {traits.ExplosivePayload, traits.KineticTremors},
     notes='Classic PvE rolls for a scout rifle',
     )
+
+_perfect_paradox_barrels = {barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud}
+_perfect_paradox_mags = {magazines.TacticalMag}
 
 wishlist.add(
     'Perfect Paradox melee rolls',
     PerfectParadox,
-    {Smallbore, CorkscrewRifling, BarrelShroud},
-    {TacticalMag},
-    {FieldPrep},
-    {OneTwoPunch},
+    _perfect_paradox_barrels,
+    _perfect_paradox_mags,
+    {traits.FieldPrep},
+    {traits.OneTwoPunch},
     notes='Special rolls for melee damage increase',
     )
 
 wishlist.add(
     'Perfect Paradox DPS rolls',
     PerfectParadox,
-    {Smallbore, CorkscrewRifling, BarrelShroud},
-    {TacticalMag},
-    {ThreatDetector, FieldPrep},
-    {TrenchBarrel},
+    _perfect_paradox_barrels,
+    _perfect_paradox_mags,
+    {traits.ThreatDetector, traits.FieldPrep},
+    {traits.TrenchBarrel},
     notes='Rolls for shotgun DPS',
     )
 
 wishlist.add(
     "Martyr's Retribution Clip roll",
     MartyrsRetribution,
-    {VolatileLaunch},
-    {HighVelocityRounds},
-    {HealClip},
-    {KillClip},
+    {barrels.VolatileLaunch},
+    {magazines.HighVelocityRounds},
+    {traits.HealClip},
+    {traits.KillClip},
     notes='Special Clip combo',
     )
 
 wishlist.add(
     "Martyr's Retribution grenade roll",
     MartyrsRetribution,
-    {VolatileLaunch},
-    {HighVelocityRounds},
-    {Demolitionist},
-    {AdrenalineJunkie},
+    {barrels.VolatileLaunch},
+    {magazines.HighVelocityRounds},
+    {traits.Demolitionist},
+    {traits.AdrenalineJunkie},
     notes='Roll for grenade builds',
     )
 
 wishlist.add(
     "Martyr's Retribution regular rolls",
     MartyrsRetribution,
-    {VolatileLaunch},
-    {HighVelocityRounds},
-    {Demolitionist, HealClip, AutoLoadingHolster},
-    {DesperateMeasures, Incandescent},
+    {barrels.VolatileLaunch},
+    {magazines.HighVelocityRounds},
+    {traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster},
+    {traits.DesperateMeasures, traits.Incandescent},
     notes='Good PvE rolls',
     )
 
 wishlist.add(
     'Line in the Sand DPS rolls',
     LineInTheSand,
-    {ArrowheadBrake},
-    {Demolitionist, ClownCartridge},
-    {BaitAndSwitch},
+    {barrels.ArrowheadBrake},
+    {traits.Demolitionist, traits.ClownCartridge},
+    {traits.BaitAndSwitch},
     notes='DPS rolls'
     )
 
