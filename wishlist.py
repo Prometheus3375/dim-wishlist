@@ -12,7 +12,7 @@ wishlist.add(
     'Yarovit MG4 rolls',
     YarovitMG4,
     {traits.RewindRounds, traits.Strategist, traits.EnlightenedAction},
-    {traits.Surrounded, traits.DesperateMeasures},
+    {traits.Surrounded, traits.DesperateMeasures, traits.Headstone},
     notes='Good PvE rolls',
     )
 
