@@ -47,9 +47,9 @@ _es_blades = {blades.EnduringBlade, blades.HungryEdge, blades.TemperedEdge}
 wishlist.add(
     'Ergo Sum Wolfpack Rounds',
     ErgoSum,
-    {unique.ES_WolfpackRounds},
+    {unique.ErgoSum.WolfpackRounds},
     _es_blades,
-    {unique.ES_LightweightFrame},
+    {unique.ErgoSum.LightweightFrame},
     notes='Roll to activate Wolfpack Rounds on swords. '
           'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
     )
@@ -57,9 +57,9 @@ wishlist.add(
 wishlist.add(
     'Ergo Sum Gathering Light',
     ErgoSum,
-    {unique.ES_GatheringLight},
+    {unique.ErgoSum.GatheringLight},
     _es_blades,
-    {unique.ES_WaveSwordFrame},
+    {unique.ErgoSum.WaveSwordFrame},
     notes='Good roll to get ability energy from sword kills',
     )
 
