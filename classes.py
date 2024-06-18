@@ -76,6 +76,16 @@ class WishlistEntry:
         return '\n'.join(lines)
 
 
+type AnnotatedRoll = tuple[str, tuple[Set[Item], ...]]
+
+
+def roll(notes: str, /, *perk_sets: Set[Item]) -> AnnotatedRoll:
+    """
+    Creates an annotated roll definition from the given notes and perk sets.
+    """
+    return notes, perk_sets
+
+
 @dataclass(kw_only=True, slots=True)
 class Wishlist:
     """
@@ -117,6 +127,17 @@ class Wishlist:
                 )
             )
 
+    def add_many(self, item: Item, /, *rolls: AnnotatedRoll, trash: bool = False) -> None:
+        """
+        A convenient function to add several roll definitions
+        with different notes to the same item.
+        Every roll definition takes an arbitrary number of perk sets,
+        then makes any possible combination of them.
+        If ``trash`` is ``True``, then **all** rolls are marked as trash.
+        """
+        for notes, perk_sets in rolls:
+            self.add(item, notes, *perk_sets, trash=trash)
+
     def to_dim_wishlist_file(self, filepath: str, /) -> None:
         """
         Writes this wishlist to a file.
@@ -141,4 +162,4 @@ class Wishlist:
                     file.write('\n\n')
 
 
-__all__ = 'Item', 'Wishlist'
+__all__ = 'Item', 'Wishlist', 'roll'
