@@ -1,8 +1,8 @@
 title:Wishlist made by Prometheus3375
 description:Rolls on weapons and armor Prometheus3375 would like to have
+
 // Wish rolls
 
-// Yarovit MG4 rolls
 //notes:Good PvE rolls
 dimwishlist:item=3959549446&perks=3418782618,3708227201
 dimwishlist:item=3959549446&perks=3418782618,2109543898
@@ -14,56 +14,45 @@ dimwishlist:item=3959549446&perks=3828510309,3708227201
 dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3959549446&perks=3828510309,124408337
 
-// Spectrum-4FR DPS rolls
 //notes:Rolls for DPS
 dimwishlist:item=3615421669&perks=839105230,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
 
-// Ergo Sum Wolfpack Rounds
 //notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
 dimwishlist:item=1681583613&perks=1959135343,436053704,2753228730
 dimwishlist:item=1681583613&perks=1959135343,1261178282,2753228730
 dimwishlist:item=1681583613&perks=1959135343,938542991,2753228730
 
-// Ergo Sum Gathering Light
 //notes:Good roll to get ability energy from sword kills
 dimwishlist:item=1681583613&perks=3551049142,436053704,289811733
 dimwishlist:item=1681583613&perks=3551049142,1261178282,289811733
 dimwishlist:item=1681583613&perks=3551049142,938542991,289811733
 
-// Breachlight grenade roll
 dimwishlist:item=2328923181&perks=3523296417,11612903#notes:Roll for grenade builds
 
-// Breachlight melee roll
 dimwishlist:item=2328923181&perks=691659142,4082225868#notes:Roll for melee builds and synergy with the origin trait
 
-// Breachlight Strand roll
 dimwishlist:item=2328923181&perks=923806249,831391274#notes:Roll for Strand builds
 
-// Breachlight rolls
 //notes:Good PvE rolls
 dimwishlist:item=2328923181&perks=3523296417,2109543898
 dimwishlist:item=2328923181&perks=3523296417,831391274
 dimwishlist:item=2328923181&perks=4071163871,2109543898
 dimwishlist:item=2328923181&perks=4071163871,831391274
 
-// Patron of Lost Causes class ability rolls
 //notes:Rolls to get class ability energy from afar
 dimwishlist:item=2249996761&perks=880644845,3891536761
 dimwishlist:item=2249996761&perks=880644845,3038247973
 
-// Patron of Lost Causes classic rolls
 //notes:Classic PvE rolls for a scout rifle
 dimwishlist:item=2249996761&perks=247725512,3891536761
 dimwishlist:item=2249996761&perks=247725512,3038247973
 
-// Perfect Paradox melee rolls
 //notes:Special rolls for melee damage increase
 dimwishlist:item=1298672084&perks=1482024992,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=4090651448,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=1300023272,106909392,2869569095,2679249093
 
-// Perfect Paradox DPS rolls
 //notes:Rolls for shotgun DPS
 dimwishlist:item=1298672084&perks=1482024992,106909392,2869569095,2360754333
 dimwishlist:item=1298672084&perks=1482024992,106909392,4071163871,2360754333
@@ -72,13 +61,10 @@ dimwishlist:item=1298672084&perks=4090651448,106909392,4071163871,2360754333
 dimwishlist:item=1298672084&perks=1300023272,106909392,2869569095,2360754333
 dimwishlist:item=1298672084&perks=1300023272,106909392,4071163871,2360754333
 
-// Martyr's Retribution Clip roll
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457#notes:Special Clip combo
 
-// Martyr's Retribution grenade roll
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903#notes:Roll for grenade builds
 
-// Martyr's Retribution regular rolls
 //notes:Good PvE rolls
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,2109543898
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,4293542123
@@ -87,13 +73,11 @@ dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,4293542123
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,2109543898
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,4293542123
 
-// Line in the Sand DPS rolls
 //notes:DPS rolls
 dimwishlist:item=2450049485&perks=839105230,3523296417,3078487919
 dimwishlist:item=2450049485&perks=839105230,2284787283,3078487919
 
 // Trash rolls
 
-// Spectrum-4FR bad combo
 dimwishlist:item=-3615421669&perks=968510818,1354429876#notes:FTTC does not regenerate ammo if mag is overflowed
 
