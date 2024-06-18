@@ -28,6 +28,60 @@ dimwishlist:item=1681583613&perks=3551049142,436053704,289811733
 dimwishlist:item=1681583613&perks=3551049142,1261178282,289811733
 dimwishlist:item=1681583613&perks=3551049142,938542991,289811733
 
+//notes:Combination Blow builds
+dimwishlist:item=2809120022&perks=1476923952,3751917992
+dimwishlist:item=2809120022&perks=3751917996,3751917992
+
+//notes:Other melee builds; Synthoceps increase damage of Combination Blow very little
+dimwishlist:item=2809120022&perks=1476923952,1476923956
+dimwishlist:item=2809120022&perks=3751917996,1476923956
+
+dimwishlist:item=2809120022&perks=3751917995,3751917994#notes:Duskfield build
+
+dimwishlist:item=2809120022&perks=3751917998,1476923955#notes:Super build
+
+dimwishlist:item=2809120022&perks=3751917997,1476923955#notes:Super and weapon damage
+
+dimwishlist:item=2809120022&perks=1476923954,3751917991#notes:PvP build
+
+//notes:Melee builds
+dimwishlist:item=266021826&perks=1476923952,3573490504
+dimwishlist:item=266021826&perks=1476923952,1476923956
+dimwishlist:item=266021826&perks=1476923953,3573490504
+dimwishlist:item=266021826&perks=1476923953,1476923956
+dimwishlist:item=266021826&perks=3573490509,3573490504
+dimwishlist:item=266021826&perks=3573490509,1476923956
+
+//notes:Barricade builds
+dimwishlist:item=266021826&perks=3573490508,3573490506
+dimwishlist:item=266021826&perks=3573490508,3573490501
+
+dimwishlist:item=266021826&perks=3573490505,3573490500#notes:Unbreakable build
+
+dimwishlist:item=266021826&perks=3573490510,3573490506#notes:Drengr's Lash build
+
+dimwishlist:item=266021826&perks=3573490511,1476923955#notes:Super and weapon damage
+
+dimwishlist:item=266021826&perks=1476923954,3573490501#notes:PvP build
+
+//notes:Melee builds
+dimwishlist:item=2273643087&perks=1476923952,1476923956
+dimwishlist:item=2273643087&perks=1476923952,183430247
+dimwishlist:item=2273643087&perks=1476923953,1476923956
+dimwishlist:item=2273643087&perks=1476923953,183430247
+dimwishlist:item=2273643087&perks=183430252,1476923956
+dimwishlist:item=2273643087&perks=183430252,183430247
+
+dimwishlist:item=2273643087&perks=183430255,183430249#notes:Empowered Rift combo
+
+//notes:Super builds
+dimwishlist:item=2273643087&perks=183430250,1476923955
+dimwishlist:item=2273643087&perks=183430250,183430254
+
+dimwishlist:item=2273643087&perks=183430250,1476923957#notes:Song of Flame grenade build
+
+dimwishlist:item=2273643087&perks=1476923954,183430254#notes:PvP build
+
 dimwishlist:item=2328923181&perks=3523296417,11612903#notes:Roll for grenade builds
 
 dimwishlist:item=2328923181&perks=691659142,4082225868#notes:Roll for melee builds and synergy with the origin trait
