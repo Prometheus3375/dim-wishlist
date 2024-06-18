@@ -47,11 +47,11 @@ class WishlistEntry:
     A separate entry of a wishlist.
     """
     item: Item
-    trait_sets: tuple[Set[Item], ...]
+    perk_sets: tuple[Set[Item], ...]
     notes: str
 
     def to_dim_wishlist(self, trash: bool, /) -> str:
-        combos: list[tuple[Item, ...]] = list(product(*self.trait_sets))
+        combos: list[tuple[Item, ...]] = list(product(*self.perk_sets))
         item_hash = -self.item.hash if trash else self.item.hash
 
         if len(combos) < 2:
@@ -87,18 +87,18 @@ class Wishlist:
     _wishes: list[WishlistEntry] = field(default_factory=list)
     _trashes: list[WishlistEntry] = field(default_factory=list)
 
-    def add(self, item: Item, notes: str, /, *trait_sets: Set[Item], trash: bool = False) -> None:
+    def add(self, item: Item, notes: str, /, *perk_sets: Set[Item], trash: bool = False) -> None:
         """
         Adds a new roll definition for an item to this wishlist.
-        Roll definition takes an arbitrary number of trait sets,
+        Roll definition takes an arbitrary number of perk sets,
         then makes any possible combination of them.
-        If ``trash`` is ``True``, then this roll will be marked as a trash roll.
+        If ``trash`` is ``True``, then this roll is marked as trash.
         """
-        # Wildcard Item cannot be in trash rolls
         from database.items import AnyItem
 
+        # Wildcard cannot be used in trash rolls
         if item is AnyItem and trash:
-            raise ValueError(f'AnyItem cannot be used to specify trash rolls')
+            raise ValueError(f'AnyItem cannot be used inside trash rolls')
 
         # Clear strings
         notes = ' '.join(notes.split())
@@ -106,13 +106,13 @@ class Wishlist:
             raise ValueError('Notes cannot be empty')
 
         # Remove empty sets
-        trait_sets = tuple(filter(None, trait_sets))
+        perk_sets = tuple(filter(None, perk_sets))
         # Determine a list and add entry
         li = self._trashes if trash else self._wishes
         li.append(
             WishlistEntry(
                 item=item,
-                trait_sets=trait_sets,
+                perk_sets=perk_sets,
                 notes=notes,
                 )
             )
