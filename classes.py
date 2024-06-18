@@ -62,10 +62,10 @@ class WishlistEntry:
                 combo_str = ''
 
             return (
+                f'//notes:{self.notes}\n'
                 f'dimwishlist:'
                 f'item={item_hash}'
                 f'{combo_str}'
-                f'#notes:{self.notes}'
             )
 
         lines = [f'//notes:{self.notes}']
