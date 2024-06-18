@@ -126,6 +126,8 @@ class Wishlist:
             if self.description:
                 file.write(f'description:{self.description}\n')
 
+            file.write(f'\n')
+
             if self._wishes:
                 file.write('// Wish rolls\n\n')
                 for entry in self._wishes:
