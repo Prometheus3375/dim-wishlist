@@ -36,13 +36,17 @@ dimwishlist:item=2809120022&perks=3751917996,3751917992
 dimwishlist:item=2809120022&perks=1476923952,1476923956
 dimwishlist:item=2809120022&perks=3751917996,1476923956
 
-dimwishlist:item=2809120022&perks=3751917995,3751917994#notes:Duskfield build
+//notes:Duskfield build
+dimwishlist:item=2809120022&perks=3751917995,3751917994
 
-dimwishlist:item=2809120022&perks=3751917998,1476923955#notes:Super build
+//notes:Super build
+dimwishlist:item=2809120022&perks=3751917998,1476923955
 
-dimwishlist:item=2809120022&perks=3751917997,1476923955#notes:Super and weapon damage
+//notes:Super and weapon damage
+dimwishlist:item=2809120022&perks=3751917997,1476923955
 
-dimwishlist:item=2809120022&perks=1476923954,3751917991#notes:PvP build
+//notes:PvP build
+dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 //notes:Melee builds
 dimwishlist:item=266021826&perks=1476923952,3573490504
@@ -56,13 +60,17 @@ dimwishlist:item=266021826&perks=3573490509,1476923956
 dimwishlist:item=266021826&perks=3573490508,3573490506
 dimwishlist:item=266021826&perks=3573490508,3573490501
 
-dimwishlist:item=266021826&perks=3573490505,3573490500#notes:Unbreakable build
+//notes:Unbreakable build
+dimwishlist:item=266021826&perks=3573490505,3573490500
 
-dimwishlist:item=266021826&perks=3573490510,3573490506#notes:Drengr's Lash build
+//notes:Drengr's Lash build
+dimwishlist:item=266021826&perks=3573490510,3573490506
 
-dimwishlist:item=266021826&perks=3573490511,1476923955#notes:Super and weapon damage
+//notes:Super and weapon damage
+dimwishlist:item=266021826&perks=3573490511,1476923955
 
-dimwishlist:item=266021826&perks=1476923954,3573490501#notes:PvP build
+//notes:PvP build
+dimwishlist:item=266021826&perks=1476923954,3573490501
 
 //notes:Melee builds
 dimwishlist:item=2273643087&perks=1476923952,1476923956
@@ -72,21 +80,27 @@ dimwishlist:item=2273643087&perks=1476923953,183430247
 dimwishlist:item=2273643087&perks=183430252,1476923956
 dimwishlist:item=2273643087&perks=183430252,183430247
 
-dimwishlist:item=2273643087&perks=183430255,183430249#notes:Empowered Rift combo
+//notes:Empowered Rift combo
+dimwishlist:item=2273643087&perks=183430255,183430249
 
 //notes:Super builds
 dimwishlist:item=2273643087&perks=183430250,1476923955
 dimwishlist:item=2273643087&perks=183430250,183430254
 
-dimwishlist:item=2273643087&perks=183430250,1476923957#notes:Song of Flame grenade build
+//notes:Song of Flame grenade build
+dimwishlist:item=2273643087&perks=183430250,1476923957
 
-dimwishlist:item=2273643087&perks=1476923954,183430254#notes:PvP build
+//notes:PvP build
+dimwishlist:item=2273643087&perks=1476923954,183430254
 
-dimwishlist:item=2328923181&perks=3523296417,11612903#notes:Roll for grenade builds
+//notes:Roll for grenade builds
+dimwishlist:item=2328923181&perks=3523296417,11612903
 
-dimwishlist:item=2328923181&perks=691659142,4082225868#notes:Roll for melee builds and synergy with the origin trait
+//notes:Roll for melee builds and synergy with the origin trait
+dimwishlist:item=2328923181&perks=691659142,4082225868
 
-dimwishlist:item=2328923181&perks=923806249,831391274#notes:Roll for Strand builds
+//notes:Roll for Strand builds
+dimwishlist:item=2328923181&perks=923806249,831391274
 
 //notes:Good PvE rolls
 dimwishlist:item=2328923181&perks=3523296417,2109543898
@@ -102,7 +116,7 @@ dimwishlist:item=2249996761&perks=880644845,3038247973
 dimwishlist:item=2249996761&perks=247725512,3891536761
 dimwishlist:item=2249996761&perks=247725512,3038247973
 
-//notes:Special rolls for melee damage increase
+//notes:Rolls for melee damage increase
 dimwishlist:item=1298672084&perks=1482024992,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=4090651448,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=1300023272,106909392,2869569095,2679249093
@@ -115,9 +129,11 @@ dimwishlist:item=1298672084&perks=4090651448,106909392,4071163871,2360754333
 dimwishlist:item=1298672084&perks=1300023272,106909392,2869569095,2360754333
 dimwishlist:item=1298672084&perks=1300023272,106909392,4071163871,2360754333
 
-dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457#notes:Special Clip combo
+//notes:Clip combo
+dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457
 
-dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903#notes:Roll for grenade builds
+//notes:Roll for grenade builds
+dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903
 
 //notes:Good PvE rolls
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,2109543898
@@ -133,5 +149,6 @@ dimwishlist:item=2450049485&perks=839105230,2284787283,3078487919
 
 // Trash rolls
 
-dimwishlist:item=-3615421669&perks=968510818,1354429876#notes:FTTC does not regenerate ammo if mag is overflowed
+//notes:FTTC does not regenerate ammo if mag is overflowed
+dimwishlist:item=-3615421669&perks=968510818,1354429876
 
