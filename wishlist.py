@@ -58,6 +58,170 @@ wishlist.add(
     {unique.ErgoSum.WaveSwordFrame},
     )
 
+# region Relativism
+wishlist.add(
+    Relativism,
+    'Combination Blow builds',
+    {unique.SpiritOf.Assassin, unique.SpiritOf.Caliban},
+    {unique.SpiritOf.Liar},
+    )
+
+wishlist.add(
+    Relativism,
+    'Other melee builds; '
+    'Synthoceps increase damage of Combination Blow very little',
+    {unique.SpiritOf.Assassin, unique.SpiritOf.Caliban},
+    {unique.SpiritOf.Synthoceps},
+    )
+
+wishlist.add(
+    Relativism,
+    'Duskfield build',
+    {unique.SpiritOf.Renewal},
+    {unique.SpiritOf.Cyrtarachne},
+    )
+
+# wishlist.add(
+#     Relativism,
+#     'Woven Mail builds',
+#     {unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer},
+#     {unique.SpiritOf.Cyrtarachne},
+#     )
+
+# wishlist.add(
+#     Relativism,
+#     'Dodge builds',
+#     {unique.SpiritOf.Dragon},
+#     {unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk},
+#     )
+
+wishlist.add(
+    Relativism,
+    'Super build',
+    {unique.SpiritOf.Galanor},
+    {unique.SpiritOf.StarEater},
+    )
+
+wishlist.add(
+    Relativism,
+    'Super and weapon damage',
+    {unique.SpiritOf.Foetracer},
+    {unique.SpiritOf.StarEater},
+    )
+
+# wishlist.add(
+#     Relativism,
+#     'Gyrfalcon builds',
+#     {unique.SpiritOf.Dragon, unique.SpiritOf.Foetracer},
+#     {unique.SpiritOf.Gyrfalcon},
+#     )
+
+wishlist.add(
+    Relativism,
+    'PvP build',
+    {unique.SpiritOf.Ophidian},
+    {unique.SpiritOf.Wormhusk},
+    )
+# endregion
+
+
+# region Stoicism
+wishlist.add(
+    Stoicism,
+    'Melee builds',
+    {unique.SpiritOf.Assassin, unique.SpiritOf.InmostLight, unique.SpiritOf.Severance},
+    {unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact},
+    )
+
+wishlist.add(
+    Stoicism,
+    'Barricade builds',
+    {unique.SpiritOf.Hoarfrost},
+    {unique.SpiritOf.AlphaLupi, unique.SpiritOf.Horn},
+    )
+
+# todo Check if Verity buffs damage from Unbreakable
+wishlist.add(
+    Stoicism,
+    'Unbreakable build',
+    {unique.SpiritOf.Bear},
+    {unique.SpiritOf.Armamentarium},
+    )
+
+wishlist.add(
+    Stoicism,
+    "Drengr's Lash build",
+    {unique.SpiritOf.Abeyant},
+    {unique.SpiritOf.Horn},
+    )
+
+wishlist.add(
+    Stoicism,
+    'Super and weapon damage',
+    {unique.SpiritOf.EternalWarrior},
+    {unique.SpiritOf.StarEater},
+    )
+
+wishlist.add(
+    Stoicism,
+    'PvP build',
+    {unique.SpiritOf.Ophidian},
+    {unique.SpiritOf.AlphaLupi},
+    )
+# endregion
+
+
+# region Solipsism
+wishlist.add(
+    Solipsism,
+    'Melee builds',
+    {unique.SpiritOf.Assassin, unique.SpiritOf.InmostLight, unique.SpiritOf.Necrotic},
+    {unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw},
+    )
+
+# wishlist.add(
+#     Solipsism,
+#     'Grenade build',
+#     {unique.SpiritOf.Osmiomancy},
+#     {unique.SpiritOf.Verity},
+#     )
+
+wishlist.add(
+    Solipsism,
+    'Empowered Rift combo',
+    {unique.SpiritOf.Filaments},
+    {unique.SpiritOf.Starfire},
+    )
+
+# wishlist.add(
+#     Solipsism,
+#     'Other Rift builds',
+#     {unique.SpiritOf.InmostLight, unique.SpiritOf.Stag},
+#     {unique.SpiritOf.Vesper},
+#     )
+
+wishlist.add(
+    Solipsism,
+    'Super builds',
+    {unique.SpiritOf.Apotheosis},
+    {unique.SpiritOf.Harmony, unique.SpiritOf.StarEater},
+    )
+
+wishlist.add(
+    Solipsism,
+    'Song of Flame grenade build',
+    {unique.SpiritOf.Apotheosis},
+    {unique.SpiritOf.Verity},
+    )
+
+wishlist.add(
+    Solipsism,
+    'PvP build',
+    {unique.SpiritOf.Ophidian},
+    {unique.SpiritOf.Harmony},
+    )
+# endregion
+
 # endregion
 
 # region Echoes
