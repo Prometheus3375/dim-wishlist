@@ -46,7 +46,6 @@ class WishlistEntry:
     """
     A separate entry of a wishlist.
     """
-    title: str
     item: Item
     trait_sets: tuple[Set[Item], ...]
     notes: str
@@ -62,18 +61,14 @@ class WishlistEntry:
             else:
                 combo_str = ''
 
-            notes = f'#notes:{self.notes}' if self.notes else ''
             return (
-                f'// {self.title}\n'
                 f'dimwishlist:'
                 f'item={item_hash}'
                 f'{combo_str}'
-                f'{notes}'
+                f'#notes:{self.notes}'
             )
 
-        lines = [f'// {self.title}']
-        if self.notes: lines.append(f'//notes:{self.notes}')
-
+        lines = [f'//notes:{self.notes}']
         for combo in combos:
             combo_str = ','.join(str(i.hash) for i in combo)
             lines.append(f'dimwishlist:item={item_hash}&perks={combo_str}')
@@ -92,15 +87,7 @@ class Wishlist:
     _wishes: list[WishlistEntry] = field(default_factory=list)
     _trashes: list[WishlistEntry] = field(default_factory=list)
 
-    def add(
-            self,
-            title: str,
-            item: Item,
-            /,
-            *trait_sets: Set[Item],
-            notes: str = '',
-            trash: bool = False,
-            ) -> None:
+    def add(self, item: Item, notes: str, /, *trait_sets: Set[Item], trash: bool = False) -> None:
         """
         Adds a new roll definition for an item to this wishlist.
         Roll definition takes an arbitrary number of trait sets,
@@ -114,15 +101,16 @@ class Wishlist:
             raise ValueError(f'AnyItem cannot be used to specify trash rolls')
 
         # Clear strings
-        title = ' '.join(title.split())
         notes = ' '.join(notes.split())
+        if not notes:
+            raise ValueError('Notes cannot be empty')
+
         # Remove empty sets
         trait_sets = tuple(filter(None, trait_sets))
         # Determine a list and add entry
         li = self._trashes if trash else self._wishes
         li.append(
             WishlistEntry(
-                title=title,
                 item=item,
                 trait_sets=trait_sets,
                 notes=notes,
