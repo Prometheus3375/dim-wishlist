@@ -19,14 +19,13 @@ dimwishlist:item=3615421669&perks=839105230,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
 
 //notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
-dimwishlist:item=1681583613&perks=1959135343,436053704,2753228730
-dimwishlist:item=1681583613&perks=1959135343,1261178282,2753228730
-dimwishlist:item=1681583613&perks=1959135343,938542991,2753228730
+dimwishlist:item=1681583613&perks=1959135343,2753228730
+
+//notes:Roll for DPS
+dimwishlist:item=1681583613&perks=1522566605,519046634,3666208348,269888150
 
 //notes:Good roll to get ability energy from sword kills
-dimwishlist:item=1681583613&perks=3551049142,436053704,289811733
-dimwishlist:item=1681583613&perks=3551049142,1261178282,289811733
-dimwishlist:item=1681583613&perks=3551049142,938542991,289811733
+dimwishlist:item=1681583613&perks=3551049142,289811733
 
 //notes:Combination Blow builds
 dimwishlist:item=2809120022&perks=1476923952,3751917992
@@ -151,4 +150,7 @@ dimwishlist:item=2450049485&perks=839105230,2284787283,3078487919
 
 //notes:FTTC does not regenerate ammo if mag is overflowed
 dimwishlist:item=-3615421669&perks=968510818,1354429876
+
+//notes:Stormbringer requires 3 kills to activate and barely makes a difference in ad clear
+dimwishlist:item=-1681583613&perks=461437088
 

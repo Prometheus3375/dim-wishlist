@@ -39,23 +39,33 @@ wishlist.add(
 
 # region The Pale Heart
 
-_es_blades = {blades.EnduringBlade, blades.HungryEdge, blades.TemperedEdge}
-
 wishlist.add_many(
     ErgoSum,
     roll(
         'Roll to activate Wolfpack Rounds on swords. '
         'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
         {unique.ErgoSum.WolfpackRounds},
-        _es_blades,
         {unique.ErgoSum.LightweightFrame},
+        ),
+    roll(
+        'Roll for DPS',
+        {unique.ErgoSum.ThePerfectFifth},
+        {unique.ErgoSum.CasterFrame},
+        {blades.JaggedEdge},
+        {guards.SwordmastersGuard},
         ),
     roll(
         'Good roll to get ability energy from sword kills',
         {unique.ErgoSum.GatheringLight},
-        _es_blades,
         {unique.ErgoSum.WaveSwordFrame},
         ),
+    )
+
+wishlist.add(
+    ErgoSum,
+    'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
+    {unique.ErgoSum.Stormbringer},
+    trash=True,
     )
 
 wishlist.add_many(
