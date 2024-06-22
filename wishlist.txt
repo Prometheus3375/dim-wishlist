@@ -12,8 +12,8 @@ dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3959549446&perks=3828510309,124408337
 
 //notes:Rolls for DPS
-dimwishlist:item=3615421669&perks=839105230,968510818,555281244
-dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
+dimwishlist:item=3615421669&perks=839105230,689005463,968510818,555281244
+dimwishlist:item=3615421669&perks=839105230,689005463,3828510309,555281244
 
 //notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
 dimwishlist:item=1681583613&perks=1959135343,2753228730
