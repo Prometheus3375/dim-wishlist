@@ -24,6 +24,7 @@ wishlist.add_many(
     roll(
         'Rolls for DPS',
         {barrels.ArrowheadBrake},
+        {batteries.AcceleratedCoils},
         {traits.EnlightenedAction, traits.EnviousAssassin},
         {traits.PrecisionInstrument},
         ),
