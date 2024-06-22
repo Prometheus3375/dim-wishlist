@@ -76,14 +76,14 @@ class WishlistEntry:
         return '\n'.join(lines)
 
 
-type AnnotatedRoll = tuple[str, tuple[Set[Item], ...]]
+type AnnotatedRoll = tuple[str, bool, tuple[Set[Item], ...]]
 
 
-def roll(notes: str, /, *perk_sets: Set[Item]) -> AnnotatedRoll:
+def roll(notes: str, /, *perk_sets: Set[Item], is_trash: bool = False) -> AnnotatedRoll:
     """
     Creates an annotated roll definition from the given notes and perk sets.
     """
-    return notes, perk_sets
+    return notes, is_trash, perk_sets
 
 
 @dataclass(kw_only=True, slots=True)
@@ -97,17 +97,17 @@ class Wishlist:
     _wishes: list[WishlistEntry] = field(default_factory=list)
     _trashes: list[WishlistEntry] = field(default_factory=list)
 
-    def add(self, item: Item, notes: str, /, *perk_sets: Set[Item], trash: bool = False) -> None:
+    def add(self, item: Item, notes: str, /, *perk_sets: Set[Item], is_trash: bool = False) -> None:
         """
         Adds a new roll definition for an item to this wishlist.
         Roll definition takes an arbitrary number of perk sets,
         then makes any possible combination of them.
-        If ``trash`` is ``True``, then this roll is marked as trash.
+        If ``is_trash`` is ``True``, then this roll is marked as trash.
         """
         from database.items import AnyItem
 
         # Wildcard cannot be used in trash rolls
-        if item is AnyItem and trash:
+        if item is AnyItem and is_trash:
             raise ValueError(f'AnyItem cannot be used inside trash rolls')
 
         # Clear strings
@@ -118,7 +118,7 @@ class Wishlist:
         # Remove empty sets
         perk_sets = tuple(filter(None, perk_sets))
         # Determine a list and add entry
-        li = self._trashes if trash else self._wishes
+        li = self._trashes if is_trash else self._wishes
         li.append(
             WishlistEntry(
                 item=item,
@@ -127,16 +127,13 @@ class Wishlist:
                 )
             )
 
-    def add_many(self, item: Item, /, *rolls: AnnotatedRoll, trash: bool = False) -> None:
+    def add_many(self, item: Item, /, *rolls: AnnotatedRoll) -> None:
         """
         A convenient function to add several roll definitions
         with different notes to the same item.
-        Every roll definition takes an arbitrary number of perk sets,
-        then makes any possible combination of them.
-        If ``trash`` is ``True``, then **all** rolls are marked as trash.
         """
-        for notes, perk_sets in rolls:
-            self.add(item, notes, *perk_sets, trash=trash)
+        for notes, is_trash, perk_sets in rolls:
+            self.add(item, notes, *perk_sets, is_trash=is_trash)
 
     def to_dim_wishlist_file(self, filepath: str, /) -> None:
         """
