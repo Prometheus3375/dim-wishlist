@@ -19,20 +19,20 @@ wishlist.add(
 
 # region Veist
 
-wishlist.add(
+wishlist.add_many(
     Suspectum4FR,
-    'Rolls for DPS',
-    {barrels.ArrowheadBrake},
-    {traits.EnlightenedAction, traits.EnviousAssassin},
-    {traits.PrecisionInstrument},
-    )
-
-wishlist.add(
-    Suspectum4FR,
-    'FTTC does not regenerate ammo if mag is overflowed',
-    {traits.EnviousAssassin},
-    {traits.FourthTimesTheCharm},
-    trash=True,
+    roll(
+        'Rolls for DPS',
+        {barrels.ArrowheadBrake},
+        {traits.EnlightenedAction, traits.EnviousAssassin},
+        {traits.PrecisionInstrument},
+        ),
+    roll(
+        'FTTC does not regenerate ammo if mag is overflowed',
+        {traits.EnviousAssassin},
+        {traits.FourthTimesTheCharm},
+        is_trash=True,
+        ),
     )
 
 # endregion
@@ -59,13 +59,11 @@ wishlist.add_many(
         {unique.ErgoSum.GatheringLight},
         {unique.ErgoSum.WaveSwordFrame},
         ),
-    )
-
-wishlist.add(
-    ErgoSum,
-    'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
-    {unique.ErgoSum.Stormbringer},
-    trash=True,
+    roll(
+        'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
+        {unique.ErgoSum.Stormbringer},
+        is_trash=True,
+        ),
     )
 
 wishlist.add_many(
