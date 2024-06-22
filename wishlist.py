@@ -11,7 +11,7 @@ wishlist = Wishlist(
 wishlist.add(
     YarovitMG4,
     'Good PvE rolls',
-    {traits.RewindRounds, traits.Strategist, traits.EnlightenedAction},
+    {traits.Strategist, traits.EnlightenedAction},
     {traits.Surrounded, traits.DesperateMeasures, traits.Headstone},
     )
 
