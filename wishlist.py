@@ -129,7 +129,7 @@ wishlist.add_many(
         {unique.SpiritOf.AlphaLupi, unique.SpiritOf.Horn},
         ),
     roll(
-        # todo Check if Verity buffs damage from Unbreakable
+        # Verity buffs Unbreakable damage, check when dropped how usable it is
         'Unbreakable build',
         {unique.SpiritOf.Bear},
         {unique.SpiritOf.Armamentarium},
