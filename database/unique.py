@@ -74,6 +74,7 @@ class SpiritOf:
     Starfire = Item(name='Spirit of Starfire', hash=183430249)
     Vesper = Item(name='Spirit of Vesper', hash=183430251)
     Harmony = Item(name='Spirit of Harmony', hash=183430254)
+
     # endregion
 
 
