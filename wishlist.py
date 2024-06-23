@@ -195,25 +195,31 @@ wishlist.add_many(
 
 # region Echoes
 
+_breachlight_mags = {magazines.AppendedMag, magazines.TacticalMag, magazines.FlaredMagwell}
+
 wishlist.add_many(
     Breachlight,
     roll(
         'Roll for grenade builds',
+        _breachlight_mags,
         {traits.Demolitionist},
         {traits.AdrenalineJunkie},
         ),
     roll(
         'Roll for melee builds and synergy with the origin trait',
+        _breachlight_mags,
         {traits.Pugilist},
         {traits.Swashbuckler},
         ),
     roll(
         'Roll for Strand builds',
+        _breachlight_mags,
         {traits.Slice},
         {traits.Hatchling},
         ),
     roll(
         'Good PvE rolls',
+        _breachlight_mags,
         {traits.ThreatDetector, traits.Demolitionist},
         {traits.DesperateMeasures, traits.Hatchling},
         ),
