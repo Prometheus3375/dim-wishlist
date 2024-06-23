@@ -24,6 +24,7 @@ wishlist.add_many(
     roll(
         'Rolls for DPS',
         {barrels.ArrowheadBrake},
+        # todo add mags when lear which actually work
         {batteries.AcceleratedCoils},
         {traits.EnlightenedAction, traits.EnviousAssassin},
         {traits.PrecisionInstrument},
@@ -289,6 +290,8 @@ wishlist.add(
     LineInTheSand,
     'DPS rolls',
     {barrels.ArrowheadBrake},
+    # todo add mags when lear which actually work
+    {batteries.AcceleratedCoils},
     {traits.Demolitionist, traits.ClownCartridge},
     {traits.BaitAndSwitch},
     )
