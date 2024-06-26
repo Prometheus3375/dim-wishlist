@@ -24,7 +24,7 @@ wishlist.add_many(
     roll(
         'Rolls for DPS',
         {barrels.ArrowheadBrake},
-        # todo add mags when lear which actually work
+        # todo add mags when learn which actually work
         {batteries.AcceleratedCoils},
         {traits.EnlightenedAction, traits.EnviousAssassin},
         {traits.PrecisionInstrument},
@@ -201,27 +201,11 @@ _breachlight_mags = {magazines.AppendedMag, magazines.TacticalMag, magazines.Fla
 wishlist.add_many(
     Breachlight,
     roll(
-        'Roll for grenade builds',
+        'PvE rolls; '
+        'Desperate Measures is better than Swashbuckler and Adrenaline Junkie'
+        'because it can be activated while stowed and lasts longer',
         _breachlight_mags,
-        {traits.Demolitionist},
-        {traits.AdrenalineJunkie},
-        ),
-    roll(
-        'Roll for melee builds and synergy with the origin trait',
-        _breachlight_mags,
-        {traits.Pugilist},
-        {traits.Swashbuckler},
-        ),
-    roll(
-        'Roll for Strand builds',
-        _breachlight_mags,
-        {traits.Slice},
-        {traits.Hatchling},
-        ),
-    roll(
-        'Good PvE rolls',
-        _breachlight_mags,
-        {traits.ThreatDetector, traits.Demolitionist},
+        {traits.Demolitionist, traits.Pugilist, traits.ThreatDetector},
         {traits.DesperateMeasures, traits.Hatchling},
         ),
     )
@@ -290,7 +274,7 @@ wishlist.add(
     LineInTheSand,
     'DPS rolls',
     {barrels.ArrowheadBrake},
-    # todo add mags when lear which actually work
+    # todo add mags when learn which actually work
     {batteries.AcceleratedCoils},
     {traits.Demolitionist, traits.ClownCartridge},
     {traits.BaitAndSwitch},
