@@ -39,6 +39,31 @@ wishlist.add_many(
 
 # endregion
 
+# region Vanguard
+
+_scintillation_rolls = [
+    roll(
+        'Roll for damage dealing',
+        {AnyPerk, barrels.ArrowheadBrake},
+        {AnyPerk, batteries.EnhancedBattery, batteries.AcceleratedCoils},
+        {traits.RewindRounds, traits.EnviousAssassin},
+        {traits.BaitAndSwitch, traits.Surrounded},
+        {origin.VeistStinger},
+        ),
+    roll(
+        'Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. '
+        'Unfortunately, any mag stat increase above 20 reduces reserves; '
+        'Enhanced Battery is +20, Ionized Battery is +40',
+        {batteries.IonizedBattery},
+        is_trash=True,
+        ),
+    ]
+
+wishlist.add_many(Scintillation, *_scintillation_rolls)
+wishlist.add_many(ScintillationAdept, *_scintillation_rolls)
+
+# endregion
+
 # region The Pale Heart
 
 wishlist.add_many(
