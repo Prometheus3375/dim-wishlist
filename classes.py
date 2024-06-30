@@ -61,15 +61,26 @@ class WishlistEntry:
     notes: str
 
     def to_dim_wishlist(self, trash: bool, /) -> str:
-        combos: list[tuple[Item, ...]] = list(product(*self.perk_sets))
+        # Use product to produce every possible combo,
+        # then from every combo remove AnyPerk.
+        # Remain only non-empty combos.
+        # Use dict to remove duplicated combos and preserve order.
+        combos: dict[tuple[Item, ...], None] = {
+            reduced_combo: None
+            for combo in product(*self.perk_sets)
+            if (reduced_combo := tuple(i for i in combo if i is not AnyPerk))
+            }
         item_hash = -self.item.hash if trash else self.item.hash
 
         if len(combos) < 2:
             if len(combos) == 1:
-                combo_str = ','.join(str(i.hash) for i in combos[0])
+                combo = next(iter(combos))
+                combo_str = ','.join(str(i.hash) for i in combo)
                 combo_str = f'&perks={combo_str}'
-            else:
+            elif trash:
                 combo_str = ''
+            else:
+                raise ValueError(f'Impossible to wishlist {self.item.name!r} with zero combos')
 
             return (
                 f'//notes:{self.notes}\n'
