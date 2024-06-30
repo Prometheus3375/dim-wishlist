@@ -3,7 +3,7 @@ description:Rolls on weapons and armor Prometheus3375 would like to have
 
 // Wish rolls
 
-//notes:Good PvE rolls
+//notes:Good PvE roll
 dimwishlist:item=3959549446&perks=880644845,3708227201
 dimwishlist:item=3959549446&perks=880644845,2109543898
 dimwishlist:item=3959549446&perks=880644845,124408337
@@ -11,14 +11,16 @@ dimwishlist:item=3959549446&perks=3828510309,3708227201
 dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3959549446&perks=3828510309,124408337
 
-//notes:Rolls for DPS
+//notes:Roll for damage dealing
+dimwishlist:item=3615421669&perks=839105230,968510818,555281244
+dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,3828510309,555281244
 
 //notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
 dimwishlist:item=1681583613&perks=1959135343,2753228730
 
-//notes:Roll for DPS
+//notes:Roll for damage dealing
 dimwishlist:item=1681583613&perks=1522566605,519046634,3666208348,269888150
 
 //notes:Good roll to get ability energy from sword kills
@@ -89,40 +91,42 @@ dimwishlist:item=2273643087&perks=183430250,1476923957
 //notes:PvP build
 dimwishlist:item=2273643087&perks=1476923954,183430254
 
-//notes:PvE rolls; Desperate Measures is better than Swashbuckler and Adrenaline Junkiebecause it can be activated while stowed and lasts longer
+//notes:PvE roll; Desperate Measures is better than Swashbuckler and Adrenaline Junkiebecause it can be activated while stowed and lasts longer
 dimwishlist:item=2328923181&perks=106909392,3523296417,2109543898
-dimwishlist:item=2328923181&perks=106909392,3523296417,831391274
 dimwishlist:item=2328923181&perks=106909392,691659142,2109543898
-dimwishlist:item=2328923181&perks=106909392,691659142,831391274
 dimwishlist:item=2328923181&perks=106909392,4071163871,2109543898
-dimwishlist:item=2328923181&perks=106909392,4071163871,831391274
 dimwishlist:item=2328923181&perks=1087426260,3523296417,2109543898
-dimwishlist:item=2328923181&perks=1087426260,3523296417,831391274
 dimwishlist:item=2328923181&perks=1087426260,691659142,2109543898
-dimwishlist:item=2328923181&perks=1087426260,691659142,831391274
 dimwishlist:item=2328923181&perks=1087426260,4071163871,2109543898
-dimwishlist:item=2328923181&perks=1087426260,4071163871,831391274
 dimwishlist:item=2328923181&perks=3230963543,3523296417,2109543898
-dimwishlist:item=2328923181&perks=3230963543,3523296417,831391274
 dimwishlist:item=2328923181&perks=3230963543,691659142,2109543898
-dimwishlist:item=2328923181&perks=3230963543,691659142,831391274
 dimwishlist:item=2328923181&perks=3230963543,4071163871,2109543898
+
+//notes:Hatchling roll
+dimwishlist:item=2328923181&perks=106909392,3523296417,831391274
+dimwishlist:item=2328923181&perks=106909392,691659142,831391274
+dimwishlist:item=2328923181&perks=106909392,4071163871,831391274
+dimwishlist:item=2328923181&perks=1087426260,3523296417,831391274
+dimwishlist:item=2328923181&perks=1087426260,691659142,831391274
+dimwishlist:item=2328923181&perks=1087426260,4071163871,831391274
+dimwishlist:item=2328923181&perks=3230963543,3523296417,831391274
+dimwishlist:item=2328923181&perks=3230963543,691659142,831391274
 dimwishlist:item=2328923181&perks=3230963543,4071163871,831391274
 
-//notes:Rolls to get class ability energy from afar
+//notes:Roll to get class ability energy from afar
 dimwishlist:item=2249996761&perks=880644845,3891536761
 dimwishlist:item=2249996761&perks=880644845,3038247973
 
-//notes:Classic PvE rolls for a scout rifle
+//notes:Classic PvE roll for a scout rifle
 dimwishlist:item=2249996761&perks=247725512,3891536761
 dimwishlist:item=2249996761&perks=247725512,3038247973
 
-//notes:Rolls for melee damage increase
+//notes:Melee damage increase
 dimwishlist:item=1298672084&perks=1482024992,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=4090651448,106909392,2869569095,2679249093
 dimwishlist:item=1298672084&perks=1300023272,106909392,2869569095,2679249093
 
-//notes:Rolls for shotgun DPS
+//notes:Roll for damage dealing
 dimwishlist:item=1298672084&perks=1482024992,106909392,2869569095,2360754333
 dimwishlist:item=1298672084&perks=1482024992,106909392,4071163871,2360754333
 dimwishlist:item=1298672084&perks=4090651448,106909392,2869569095,2360754333
@@ -136,7 +140,7 @@ dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457
 //notes:Roll for grenade builds
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903
 
-//notes:Good PvE rolls
+//notes:Good PvE roll
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,2109543898
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,4293542123
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,2109543898
@@ -144,7 +148,7 @@ dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,4293542123
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,2109543898
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,4293542123
 
-//notes:DPS rolls
+//notes:Roll for damage dealing
 dimwishlist:item=2450049485&perks=839105230,689005463,3523296417,3078487919
 dimwishlist:item=2450049485&perks=839105230,689005463,2284787283,3078487919
 
