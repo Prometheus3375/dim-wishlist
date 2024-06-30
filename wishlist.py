@@ -10,7 +10,7 @@ wishlist = Wishlist(
 
 wishlist.add(
     YarovitMG4,
-    'Good PvE rolls',
+    'Good PvE roll',
     {traits.Strategist, traits.EnlightenedAction},
     {traits.Surrounded, traits.DesperateMeasures, traits.Headstone},
     )
@@ -22,8 +22,8 @@ wishlist.add(
 wishlist.add_many(
     Suspectum4FR,
     roll(
-        'Rolls for DPS',
         {barrels.ArrowheadBrake},
+        'Roll for damage dealing',
         # todo add mags when learn which actually work
         {batteries.AcceleratedCoils},
         {traits.EnlightenedAction, traits.EnviousAssassin},
@@ -50,7 +50,7 @@ wishlist.add_many(
         {unique.ErgoSum.LightweightFrame},
         ),
     roll(
-        'Roll for DPS',
+        'Roll for damage dealing',
         {unique.ErgoSum.ThePerfectFifth},
         {unique.ErgoSum.CasterFrame},
         {blades.JaggedEdge},
@@ -201,24 +201,30 @@ _breachlight_mags = {magazines.AppendedMag, magazines.TacticalMag, magazines.Fla
 wishlist.add_many(
     Breachlight,
     roll(
-        'PvE rolls; '
+        'PvE roll; '
         'Desperate Measures is better than Swashbuckler and Adrenaline Junkie'
         'because it can be activated while stowed and lasts longer',
         _breachlight_mags,
         {traits.Demolitionist, traits.Pugilist, traits.ThreatDetector},
-        {traits.DesperateMeasures, traits.Hatchling},
+        {traits.DesperateMeasures},
+        ),
+    roll(
+        'Hatchling roll',
+        _breachlight_mags,
+        {traits.Demolitionist, traits.Pugilist, traits.ThreatDetector},
+        {traits.Hatchling},
         ),
     )
 
 wishlist.add_many(
     PatronOfLostCauses,
     roll(
-        'Rolls to get class ability energy from afar',
+        'Roll to get class ability energy from afar',
         {traits.Strategist},
         {traits.ExplosivePayload, traits.KineticTremors},
         ),
     roll(
-        'Classic PvE rolls for a scout rifle',
+        'Classic PvE roll for a scout rifle',
         {traits.RapidHit},
         {traits.ExplosivePayload, traits.KineticTremors},
         ),
@@ -230,14 +236,14 @@ _perfect_paradox_mags = {magazines.TacticalMag}
 wishlist.add_many(
     PerfectParadox,
     roll(
-        'Rolls for melee damage increase',
+        'Melee damage increase',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
         {traits.FieldPrep},
         {traits.OneTwoPunch},
         ),
     roll(
-        'Rolls for shotgun DPS',
+        'Roll for damage dealing',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
         {traits.ThreatDetector, traits.FieldPrep},
@@ -262,7 +268,7 @@ wishlist.add_many(
         {traits.AdrenalineJunkie},
         ),
     roll(
-        'Good PvE rolls',
+        'Good PvE roll',
         {barrels.VolatileLaunch},
         {magazines.HighVelocityRounds},
         {traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster},
@@ -272,8 +278,8 @@ wishlist.add_many(
 
 wishlist.add(
     LineInTheSand,
-    'DPS rolls',
     {barrels.ArrowheadBrake},
+    'Roll for damage dealing',
     # todo add mags when learn which actually work
     {batteries.AcceleratedCoils},
     {traits.Demolitionist, traits.ClownCartridge},
