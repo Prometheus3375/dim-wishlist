@@ -22,6 +22,22 @@ Suspectum4FR = Item(
 
 # endregion
 
+# region Vanguard
+
+Scintillation = Item(
+    name='Scintillation',
+    hash=2591257541,
+    icon='https://bungie.net/common/destiny2_content/icons/880c56767df0dc8253ac458d252d0919.jpg',
+    )
+
+ScintillationAdept = Item(
+    name='Scintillation (Adept)',
+    hash=1492522228,
+    icon='https://bungie.net/common/destiny2_content/icons/446f4c45e6f2b7aa0bfb221528a4c98d.jpg',
+    )
+
+# endregion
+
 # region The Pale Heart
 
 ErgoSum = Item(
