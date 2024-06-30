@@ -1,7 +1,5 @@
 from classes import Item
 
-AnyItem = Item(name='DIM Wildcard', hash=-69420)
-
 # region Omolon
 
 YarovitMG4 = Item(

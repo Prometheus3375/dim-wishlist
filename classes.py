@@ -41,6 +41,16 @@ class Item:
         return self.hash
 
 
+AnyItem = Item(name='DIM Wildcard', hash=-69420)
+"""
+Special item for DIM to denote any item.
+"""
+AnyPerk = Item(name='Any Perk', hash=-1)
+"""
+Special perk to denote an empty selection for a perk column.
+"""
+
+
 @dataclass(frozen=True, kw_only=True, slots=True)
 class WishlistEntry:
     """
@@ -104,8 +114,6 @@ class Wishlist:
         then makes any possible combination of them.
         If ``is_trash`` is ``True``, then this roll is marked as trash.
         """
-        from database.items import AnyItem
-
         # Wildcard cannot be used in trash rolls
         if item is AnyItem and is_trash:
             raise ValueError(f'AnyItem cannot be used inside trash rolls')
@@ -159,4 +167,4 @@ class Wishlist:
                     file.write('\n\n')
 
 
-__all__ = 'Item', 'Wishlist', 'roll'
+__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'roll'
