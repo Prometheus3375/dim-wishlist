@@ -1,4 +1,4 @@
-from collections.abc import Set
+from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
 from itertools import product
 from typing import ClassVar, Self
@@ -50,6 +50,18 @@ AnyPerk = Item(name='Any Perk', hash=-1)
 Special perk to denote an empty selection for a perk column.
 """
 
+type OrderedSet[T] = dict[T, None]
+type PerkSet = Sequence[Item]
+type InternalPerkSet = OrderedSet[Item]
+type AnnotatedRoll = tuple[str, bool, tuple[PerkSet, ...]]
+
+
+def iterable2set[T](s: Iterable[T], /) -> OrderedSet[T]:
+    """
+    Converts a sequence to an ordered set.
+    """
+    return dict.fromkeys(s)
+
 
 @dataclass(frozen=True, kw_only=True, slots=True)
 class WishlistEntry:
@@ -57,7 +69,7 @@ class WishlistEntry:
     A separate entry of a wishlist.
     """
     item: Item
-    perk_sets: tuple[Set[Item], ...]
+    perk_sets: tuple[InternalPerkSet, ...]
     notes: str
 
     def to_dim_wishlist(self, trash: bool, /) -> str:
@@ -65,7 +77,7 @@ class WishlistEntry:
         # then from every combo remove AnyPerk.
         # Remain only non-empty combos.
         # Use dict to remove duplicated combos and preserve order.
-        combos: dict[tuple[Item, ...], None] = {
+        combos: OrderedSet[tuple[Item, ...]] = {
             reduced_combo: None
             for combo in product(*self.perk_sets)
             if (reduced_combo := tuple(i for i in combo if i is not AnyPerk))
@@ -97,10 +109,7 @@ class WishlistEntry:
         return '\n'.join(lines)
 
 
-type AnnotatedRoll = tuple[str, bool, tuple[Set[Item], ...]]
-
-
-def roll(notes: str, /, *perk_sets: Set[Item], is_trash: bool = False) -> AnnotatedRoll:
+def roll(notes: str, /, *perk_sets: PerkSet, is_trash: bool = False) -> AnnotatedRoll:
     """
     Creates an annotated roll definition from the given notes and perk sets.
     """
@@ -118,7 +127,7 @@ class Wishlist:
     _wishes: list[WishlistEntry] = field(default_factory=list)
     _trashes: list[WishlistEntry] = field(default_factory=list)
 
-    def add(self, item: Item, notes: str, /, *perk_sets: Set[Item], is_trash: bool = False) -> None:
+    def add(self, item: Item, notes: str, /, *perk_sets: PerkSet, is_trash: bool = False) -> None:
         """
         Adds a new roll definition for an item to this wishlist.
         Roll definition takes an arbitrary number of perk sets,
@@ -135,13 +144,13 @@ class Wishlist:
             raise ValueError('Notes cannot be empty')
 
         # Remove empty sets
-        perk_sets = tuple(filter(None, perk_sets))
+        final_perk_sets = tuple(filter(None, map(iterable2set, perk_sets)))
         # Determine a list and add entry
         li = self._trashes if is_trash else self._wishes
         li.append(
             WishlistEntry(
                 item=item,
-                perk_sets=perk_sets,
+                perk_sets=final_perk_sets,
                 notes=notes,
                 )
             )
