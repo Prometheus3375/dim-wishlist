@@ -227,7 +227,7 @@ wishlist.add_many(
     Breachlight,
     roll(
         'PvE roll; '
-        'Desperate Measures is better than Swashbuckler and Adrenaline Junkie'
+        'Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
         'because it can be activated while stowed and lasts longer',
         _breachlight_mags,
         [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],

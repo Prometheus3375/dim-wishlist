@@ -147,7 +147,7 @@ dimwishlist:item=2273643087&perks=183430250,1476923957
 //notes:PvP build
 dimwishlist:item=2273643087&perks=1476923954,183430254
 
-//notes:PvE roll; Desperate Measures is better than Swashbuckler and Adrenaline Junkiebecause it can be activated while stowed and lasts longer
+//notes:PvE roll; Desperate Measures is better than Swashbuckler and Adrenaline Junkie because it can be activated while stowed and lasts longer
 dimwishlist:item=2328923181&perks=106909392,3523296417,2109543898
 dimwishlist:item=2328923181&perks=106909392,691659142,2109543898
 dimwishlist:item=2328923181&perks=106909392,4071163871,2109543898
