@@ -11,8 +11,8 @@ wishlist = Wishlist(
 wishlist.add(
     YarovitMG4,
     'Good PvE roll',
-    {traits.Strategist, traits.EnlightenedAction},
-    {traits.Surrounded, traits.DesperateMeasures, traits.Headstone},
+    [traits.Strategist, traits.EnlightenedAction],
+    [traits.Headstone, traits.DesperateMeasures, traits.Surrounded],
     )
 
 # endregion
@@ -23,16 +23,16 @@ wishlist.add_many(
     Suspectum4FR,
     roll(
         'Roll for damage dealing',
-        {AnyPerk, barrels.ArrowheadBrake},
-        # todo add mags when learn which actually work
-        {AnyPerk, batteries.AcceleratedCoils},
-        {traits.EnlightenedAction, traits.EnviousAssassin},
-        {traits.PrecisionInstrument},
+        [AnyPerk, barrels.ArrowheadBrake],
+        # todo add mags when learnt which actually work
+        [AnyPerk, batteries.AcceleratedCoils],
+        [traits.EnviousAssassin, traits.EnlightenedAction],
+        [traits.PrecisionInstrument],
         ),
     roll(
         'FTTC does not regenerate ammo if mag is overflowed',
-        {traits.EnviousAssassin},
-        {traits.FourthTimesTheCharm},
+        [traits.EnviousAssassin],
+        [traits.FourthTimesTheCharm],
         is_trash=True,
         ),
     )
@@ -44,17 +44,17 @@ wishlist.add_many(
 _scintillation_rolls = [
     roll(
         'Roll for damage dealing',
-        {AnyPerk, barrels.ArrowheadBrake},
-        {AnyPerk, batteries.EnhancedBattery, batteries.AcceleratedCoils},
-        {traits.RewindRounds, traits.EnviousAssassin},
-        {traits.BaitAndSwitch, traits.Surrounded},
-        {origin.VeistStinger},
+        [AnyPerk, barrels.ArrowheadBrake],
+        [AnyPerk, batteries.EnhancedBattery, batteries.AcceleratedCoils],
+        [traits.RewindRounds, traits.EnviousAssassin],
+        [traits.BaitAndSwitch, traits.Surrounded],
+        [origin.VeistStinger],
         ),
     roll(
         'Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. '
         'Unfortunately, any mag stat increase above 20 reduces reserves; '
         'Enhanced Battery is +20, Ionized Battery is +40',
-        {batteries.IonizedBattery},
+        [batteries.IonizedBattery],
         is_trash=True,
         ),
     ]
@@ -71,24 +71,24 @@ wishlist.add_many(
     roll(
         'Roll to activate Wolfpack Rounds on swords. '
         'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
-        {unique.ErgoSum.WolfpackRounds},
-        {unique.ErgoSum.LightweightFrame},
+        [unique.ErgoSum.WolfpackRounds],
+        [unique.ErgoSum.LightweightFrame],
         ),
     roll(
         'Roll for damage dealing',
-        {unique.ErgoSum.ThePerfectFifth},
-        {unique.ErgoSum.CasterFrame},
-        {blades.JaggedEdge},
-        {guards.SwordmastersGuard},
+        [unique.ErgoSum.ThePerfectFifth],
+        [unique.ErgoSum.CasterFrame],
+        [blades.JaggedEdge],
+        [guards.SwordmastersGuard],
         ),
     roll(
         'Good roll to get ability energy from sword kills',
-        {unique.ErgoSum.GatheringLight},
-        {unique.ErgoSum.WaveSwordFrame},
+        [unique.ErgoSum.GatheringLight],
+        [unique.ErgoSum.WaveSwordFrame],
         ),
     roll(
         'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
-        {unique.ErgoSum.Stormbringer},
+        [unique.ErgoSum.Stormbringer],
         is_trash=True,
         ),
     )
@@ -97,49 +97,49 @@ wishlist.add_many(
     Relativism,
     roll(
         'Combination Blow builds',
-        {unique.SpiritOf.Assassin, unique.SpiritOf.Caliban},
-        {unique.SpiritOf.Liar},
+        [unique.SpiritOf.Assassin, unique.SpiritOf.Caliban],
+        [unique.SpiritOf.Liar],
         ),
     roll(
         'Other melee builds; '
         'Synthoceps increase damage of Combination Blow very little',
-        {unique.SpiritOf.Assassin, unique.SpiritOf.Caliban},
-        {unique.SpiritOf.Synthoceps},
+        [unique.SpiritOf.Assassin, unique.SpiritOf.Caliban],
+        [unique.SpiritOf.Synthoceps],
         ),
     roll(
         'Duskfield build',
-        {unique.SpiritOf.Renewal},
-        {unique.SpiritOf.Cyrtarachne},
+        [unique.SpiritOf.Renewal],
+        [unique.SpiritOf.Cyrtarachne],
         ),
     # roll(
     #     'Woven Mail builds',
-    #     {unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer},
-    #     {unique.SpiritOf.Cyrtarachne},
+    #     [unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer],
+    #     [unique.SpiritOf.Cyrtarachne],
     #     ),
     # roll(
     #     'Dodge builds',
-    #     {unique.SpiritOf.Dragon},
-    #     {unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk},
+    #     [unique.SpiritOf.Dragon],
+    #     [unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk],
     #     ),
     roll(
         'Super build',
-        {unique.SpiritOf.Galanor},
-        {unique.SpiritOf.StarEater},
+        [unique.SpiritOf.Galanor],
+        [unique.SpiritOf.StarEater],
         ),
     roll(
         'Super and weapon damage',
-        {unique.SpiritOf.Foetracer},
-        {unique.SpiritOf.StarEater},
+        [unique.SpiritOf.Foetracer],
+        [unique.SpiritOf.StarEater],
         ),
     # roll(
     #     'Gyrfalcon builds',
-    #     {unique.SpiritOf.Dragon, unique.SpiritOf.Foetracer},
-    #     {unique.SpiritOf.Gyrfalcon},
+    #     [unique.SpiritOf.Dragon, unique.SpiritOf.Foetracer],
+    #     [unique.SpiritOf.Gyrfalcon],
     #     ),
     roll(
         'PvP build',
-        {unique.SpiritOf.Ophidian},
-        {unique.SpiritOf.Wormhusk},
+        [unique.SpiritOf.Ophidian],
+        [unique.SpiritOf.Wormhusk],
         ),
     )
 
@@ -147,34 +147,34 @@ wishlist.add_many(
     Stoicism,
     roll(
         'Melee builds',
-        {unique.SpiritOf.Assassin, unique.SpiritOf.InmostLight, unique.SpiritOf.Severance},
-        {unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact},
+        [unique.SpiritOf.InmostLight, unique.SpiritOf.Assassin, unique.SpiritOf.Severance],
+        [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
         ),
     roll(
         'Barricade builds',
-        {unique.SpiritOf.Hoarfrost},
-        {unique.SpiritOf.AlphaLupi, unique.SpiritOf.Horn},
+        [unique.SpiritOf.Hoarfrost],
+        [unique.SpiritOf.AlphaLupi, unique.SpiritOf.Horn],
         ),
     roll(
         # Verity buffs Unbreakable damage, check when dropped how usable it is
         'Unbreakable build',
-        {unique.SpiritOf.Bear},
-        {unique.SpiritOf.Armamentarium},
+        [unique.SpiritOf.Bear],
+        [unique.SpiritOf.Armamentarium],
         ),
     roll(
         "Drengr's Lash build",
-        {unique.SpiritOf.Abeyant},
-        {unique.SpiritOf.Horn},
+        [unique.SpiritOf.Abeyant],
+        [unique.SpiritOf.Horn],
         ),
     roll(
         'Super and weapon damage',
-        {unique.SpiritOf.EternalWarrior},
-        {unique.SpiritOf.StarEater},
+        [unique.SpiritOf.EternalWarrior],
+        [unique.SpiritOf.StarEater],
         ),
     roll(
         'PvP build',
-        {unique.SpiritOf.Ophidian},
-        {unique.SpiritOf.AlphaLupi},
+        [unique.SpiritOf.Ophidian],
+        [unique.SpiritOf.AlphaLupi],
         ),
     )
 
@@ -182,38 +182,38 @@ wishlist.add_many(
     Solipsism,
     roll(
         'Melee builds',
-        {unique.SpiritOf.Assassin, unique.SpiritOf.InmostLight, unique.SpiritOf.Necrotic},
-        {unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw},
+        [unique.SpiritOf.Necrotic, unique.SpiritOf.InmostLight, unique.SpiritOf.Assassin],
+        [unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw],
         ),
     # roll(
     #     'Grenade build',
-    #     {unique.SpiritOf.Osmiomancy},
-    #     {unique.SpiritOf.Verity},
+    #     [unique.SpiritOf.Osmiomancy],
+    #     [unique.SpiritOf.Verity],
     #     ),
     roll(
         'Empowered Rift combo',
-        {unique.SpiritOf.Filaments},
-        {unique.SpiritOf.Starfire},
+        [unique.SpiritOf.Filaments],
+        [unique.SpiritOf.Starfire],
         ),
     # roll(
     #     'Other Rift builds',
-    #     {unique.SpiritOf.InmostLight, unique.SpiritOf.Stag},
-    #     {unique.SpiritOf.Vesper},
+    #     [unique.SpiritOf.InmostLight, unique.SpiritOf.Stag],
+    #     [unique.SpiritOf.Vesper],
     #     ),
     roll(
         'Super builds',
-        {unique.SpiritOf.Apotheosis},
-        {unique.SpiritOf.Harmony, unique.SpiritOf.StarEater},
+        [unique.SpiritOf.Apotheosis],
+        [unique.SpiritOf.StarEater, unique.SpiritOf.Harmony],
         ),
     roll(
         'Song of Flame grenade build',
-        {unique.SpiritOf.Apotheosis},
-        {unique.SpiritOf.Verity},
+        [unique.SpiritOf.Apotheosis],
+        [unique.SpiritOf.Verity],
         ),
     roll(
         'PvP build',
-        {unique.SpiritOf.Ophidian},
-        {unique.SpiritOf.Harmony},
+        [unique.SpiritOf.Ophidian],
+        [unique.SpiritOf.Harmony],
         ),
     )
 
@@ -221,7 +221,7 @@ wishlist.add_many(
 
 # region Echoes
 
-_breachlight_mags = {magazines.AppendedMag, magazines.TacticalMag, magazines.FlaredMagwell}
+_breachlight_mags = [magazines.TacticalMag, magazines.FlaredMagwell, magazines.AppendedMag]
 
 wishlist.add_many(
     Breachlight,
@@ -230,14 +230,14 @@ wishlist.add_many(
         'Desperate Measures is better than Swashbuckler and Adrenaline Junkie'
         'because it can be activated while stowed and lasts longer',
         _breachlight_mags,
-        {traits.Demolitionist, traits.Pugilist, traits.ThreatDetector},
-        {traits.DesperateMeasures},
+        [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
+        [traits.DesperateMeasures],
         ),
     roll(
         'Hatchling roll',
         _breachlight_mags,
-        {traits.Demolitionist, traits.Pugilist, traits.ThreatDetector},
-        {traits.Hatchling},
+        [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
+        [traits.Hatchling],
         ),
     )
 
@@ -245,18 +245,18 @@ wishlist.add_many(
     PatronOfLostCauses,
     roll(
         'Roll to get class ability energy from afar',
-        {traits.Strategist},
-        {traits.ExplosivePayload, traits.KineticTremors},
+        [traits.Strategist],
+        [traits.KineticTremors, traits.ExplosivePayload],
         ),
     roll(
         'Classic PvE roll for a scout rifle',
-        {traits.RapidHit},
-        {traits.ExplosivePayload, traits.KineticTremors},
+        [traits.RapidHit],
+        [traits.KineticTremors, traits.ExplosivePayload],
         ),
     )
 
-_perfect_paradox_barrels = {barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud}
-_perfect_paradox_mags = {magazines.TacticalMag}
+_perfect_paradox_barrels = [barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud]
+_perfect_paradox_mags = [magazines.TacticalMag]
 
 wishlist.add_many(
     PerfectParadox,
@@ -264,15 +264,15 @@ wishlist.add_many(
         'Melee damage increase',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        {traits.FieldPrep},
-        {traits.OneTwoPunch},
+        [traits.ThreatDetector, traits.FieldPrep],
+        [traits.OneTwoPunch],
         ),
     roll(
         'Roll for damage dealing',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        {traits.ThreatDetector, traits.FieldPrep},
-        {traits.TrenchBarrel},
+        [traits.ThreatDetector, traits.DualLoader],
+        [traits.TrenchBarrel],
         )
     )
 
@@ -280,35 +280,35 @@ wishlist.add_many(
     MartyrsRetribution,
     roll(
         'Clip combo',
-        {barrels.VolatileLaunch},
-        {magazines.HighVelocityRounds},
-        {traits.HealClip},
-        {traits.KillClip},
+        [barrels.VolatileLaunch],
+        [magazines.HighVelocityRounds],
+        [traits.HealClip],
+        [traits.KillClip],
         ),
     roll(
         'Roll for grenade builds',
-        {barrels.VolatileLaunch},
-        {magazines.HighVelocityRounds},
-        {traits.Demolitionist},
-        {traits.AdrenalineJunkie},
+        [barrels.VolatileLaunch],
+        [magazines.HighVelocityRounds],
+        [traits.Demolitionist],
+        [traits.AdrenalineJunkie],  # todo consider removing this roll
         ),
     roll(
         'Good PvE roll',
-        {barrels.VolatileLaunch},
-        {magazines.HighVelocityRounds},
-        {traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster},
-        {traits.DesperateMeasures, traits.Incandescent},
+        [barrels.VolatileLaunch],
+        [magazines.HighVelocityRounds],
+        [traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster],
+        [traits.DesperateMeasures, traits.Incandescent],
         ),
     )
 
 wishlist.add(
     LineInTheSand,
     'Roll for damage dealing',
-    {AnyPerk, barrels.ArrowheadBrake},
+    [AnyPerk, barrels.ArrowheadBrake],
     # todo add mags when learn which actually work
-    {AnyPerk, batteries.AcceleratedCoils},
-    {traits.Demolitionist, traits.ClownCartridge},
-    {traits.BaitAndSwitch},
+    [AnyPerk, batteries.AcceleratedCoils],
+    [traits.Demolitionist, traits.ClownCartridge],
+    [traits.BaitAndSwitch],
     )
 
 # endregion
