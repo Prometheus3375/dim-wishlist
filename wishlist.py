@@ -23,9 +23,9 @@ wishlist.add_many(
     Suspectum4FR,
     roll(
         'Roll for damage dealing',
-        [AnyPerk, barrels.ArrowheadBrake],
+        [barrels.ArrowheadBrake, AnyPerk],
         # todo add mags when learnt which actually work
-        [AnyPerk, batteries.AcceleratedCoils],
+        [batteries.AcceleratedCoils, AnyPerk],
         [traits.EnviousAssassin, traits.EnlightenedAction],
         [traits.PrecisionInstrument],
         ),
@@ -44,8 +44,8 @@ wishlist.add_many(
 _scintillation_rolls = [
     roll(
         'Roll for damage dealing',
-        [AnyPerk, barrels.ArrowheadBrake],
-        [AnyPerk, batteries.EnhancedBattery, batteries.AcceleratedCoils],
+        [barrels.ArrowheadBrake, AnyPerk],
+        [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
         [traits.RewindRounds, traits.EnviousAssassin],
         [traits.BaitAndSwitch, traits.Surrounded],
         [origin.VeistStinger],
@@ -304,9 +304,9 @@ wishlist.add_many(
 wishlist.add(
     LineInTheSand,
     'Roll for damage dealing',
-    [AnyPerk, barrels.ArrowheadBrake],
+    [barrels.ArrowheadBrake, AnyPerk],
     # todo add mags when learn which actually work
-    [AnyPerk, batteries.AcceleratedCoils],
+    [batteries.AcceleratedCoils, AnyPerk],
     [traits.Demolitionist, traits.ClownCartridge],
     [traits.BaitAndSwitch],
     )
