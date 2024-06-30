@@ -16,6 +16,10 @@ dimwishlist:item=3615421669&perks=839105230,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,3828510309,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,3828510309,555281244
+dimwishlist:item=3615421669&perks=968510818,555281244
+dimwishlist:item=3615421669&perks=3828510309,555281244
+dimwishlist:item=3615421669&perks=689005463,968510818,555281244
+dimwishlist:item=3615421669&perks=689005463,3828510309,555281244
 
 //notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
 dimwishlist:item=1681583613&perks=1959135343,2753228730
@@ -149,13 +153,25 @@ dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,2109543898
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3300816228,4293542123
 
 //notes:Roll for damage dealing
+dimwishlist:item=2450049485&perks=839105230,3523296417,3078487919
+dimwishlist:item=2450049485&perks=839105230,2284787283,3078487919
 dimwishlist:item=2450049485&perks=839105230,689005463,3523296417,3078487919
 dimwishlist:item=2450049485&perks=839105230,689005463,2284787283,3078487919
+dimwishlist:item=2450049485&perks=3523296417,3078487919
+dimwishlist:item=2450049485&perks=2284787283,3078487919
+dimwishlist:item=2450049485&perks=689005463,3523296417,3078487919
+dimwishlist:item=2450049485&perks=689005463,2284787283,3078487919
 
 // Trash rolls
 
 //notes:FTTC does not regenerate ammo if mag is overflowed
 dimwishlist:item=-3615421669&perks=968510818,1354429876
+
+//notes:Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
+dimwishlist:item=-2591257541&perks=1483536627
+
+//notes:Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
+dimwishlist:item=-1492522228&perks=1483536627
 
 //notes:Stormbringer requires 3 kills to activate and barely makes a difference in ad clear
 dimwishlist:item=-1681583613&perks=461437088
