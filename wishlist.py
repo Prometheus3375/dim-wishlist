@@ -22,10 +22,10 @@ wishlist.add(
 wishlist.add_many(
     Suspectum4FR,
     roll(
-        {barrels.ArrowheadBrake},
         'Roll for damage dealing',
+        {AnyPerk, barrels.ArrowheadBrake},
         # todo add mags when learn which actually work
-        {batteries.AcceleratedCoils},
+        {AnyPerk, batteries.AcceleratedCoils},
         {traits.EnlightenedAction, traits.EnviousAssassin},
         {traits.PrecisionInstrument},
         ),
@@ -278,10 +278,10 @@ wishlist.add_many(
 
 wishlist.add(
     LineInTheSand,
-    {barrels.ArrowheadBrake},
     'Roll for damage dealing',
+    {AnyPerk, barrels.ArrowheadBrake},
     # todo add mags when learn which actually work
-    {batteries.AcceleratedCoils},
+    {AnyPerk, batteries.AcceleratedCoils},
     {traits.Demolitionist, traits.ClownCartridge},
     {traits.BaitAndSwitch},
     )
