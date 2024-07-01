@@ -51,6 +51,14 @@ _scintillation_rolls = [
         [origin.VeistStinger],
         ),
     roll(
+        'ALH and BnS are good combo',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
+        [traits.AutoLoadingHolster],
+        [traits.BaitAndSwitch],
+        [origin.VeistStinger],
+        ),
+    roll(
         'Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. '
         'Unfortunately, any mag stat increase above 20 reduces reserves; '
         'Enhanced Battery is +20, Ionized Battery is +40',
