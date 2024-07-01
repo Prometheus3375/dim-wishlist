@@ -115,6 +115,9 @@ dimwishlist:item=2809120022&perks=3751917998,1476923955
 //notes:Super and weapon damage
 dimwishlist:item=2809120022&perks=3751917997,1476923955
 
+//notes:Ad clear and super damage
+dimwishlist:item=2809120022&perks=3751917996,1476923955
+
 //notes:PvP build
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
