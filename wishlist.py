@@ -139,6 +139,11 @@ wishlist.add_many(
         [unique.SpiritOf.Foetracer],
         [unique.SpiritOf.StarEater],
         ),
+    roll(
+        'Ad clear and super damage',
+        [unique.SpiritOf.Caliban],
+        [unique.SpiritOf.StarEater],
+        ),
     # roll(
     #     'Gyrfalcon builds',
     #     [unique.SpiritOf.Dragon, unique.SpiritOf.Foetracer],
