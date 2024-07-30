@@ -1,5 +1,15 @@
 from classes import Item
 
+# region Cassoid
+
+DedGramaryeIV = Item(
+    name='Ded Gramarye IV',
+    hash=499245245,
+    icon='https://bungie.net/common/destiny2_content/icons/e3a15797822c1b748cc5fbdfba4b0323.jpg',
+    )
+
+# endregion
+
 # region Omolon
 
 YarovitMG4 = Item(
