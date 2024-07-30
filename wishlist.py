@@ -6,6 +6,18 @@ wishlist = Wishlist(
     description='Rolls on weapons and armor Prometheus3375 would like to have',
     )
 
+# region Cassoid
+
+wishlist.add(
+    DedGramaryeIV,
+    'Good PvE roll',
+    [magazines.TacticalMag],
+    [traits.ThreatDetector],
+    [traits.ChainReaction, traits.Voltshot],
+    )
+
+# endregion
+
 # region Omolon
 
 wishlist.add(
@@ -74,6 +86,15 @@ wishlist.add_many(ScintillationAdept, *_scintillation_rolls)
 
 # region The Pale Heart
 
+_ergo_sum_blades = [blades.EnduringBlade, AnyPerk]
+_ergo_sum_dmg_note = (
+    'Roll for damage dealing. Blade and guard is not that important. '
+    'Prefer Enduring Blade for more ammo. '
+    'In any damage situation you should be transcendent '
+    'which maximizes Charge Rate anyway.'
+    'Aegis thoughts: https://youtu.be/bGTXGydS8uM'
+)
+
 wishlist.add_many(
     ErgoSum,
     roll(
@@ -81,19 +102,36 @@ wishlist.add_many(
         'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
         [unique.ErgoSum.WolfpackRounds],
         [unique.ErgoSum.LightweightFrame],
+        _ergo_sum_blades,
         ),
     roll(
-        'Roll for damage dealing',
+        _ergo_sum_dmg_note,
         [unique.ErgoSum.ThePerfectFifth],
         [unique.ErgoSum.CasterFrame],
-        [blades.JaggedEdge],
-        [guards.SwordmastersGuard],
+        _ergo_sum_blades,
         ),
     roll(
-        'Good roll to get ability energy from sword kills',
-        [unique.ErgoSum.GatheringLight],
-        [unique.ErgoSum.WaveSwordFrame],
+        _ergo_sum_dmg_note,
+        [unique.ErgoSum.UnplannedReprieve],
+        [unique.ErgoSum.LightweightFrame],
+        _ergo_sum_blades,
         ),
+    roll(
+        'Roll for ad clear',
+        [unique.ErgoSum.ArcConductor],
+        [
+            unique.ErgoSum.LightweightFrame,
+            unique.ErgoSum.WaveSwordFrame,
+            unique.ErgoSum.CasterFrame,
+            ],
+        _ergo_sum_blades,
+        ),
+    # roll(
+    #     'Good roll to get ability energy from sword kills',
+    #     [unique.ErgoSum.GatheringLight],
+    #     [unique.ErgoSum.WaveSwordFrame],
+    #     _ergo_sum_blades,
+    #     ),
     roll(
         'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
         [unique.ErgoSum.Stormbringer],
