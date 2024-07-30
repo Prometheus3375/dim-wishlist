@@ -34,5 +34,6 @@ Surrounded = Item(name='Surrounded', hash=3708227201)
 HighGround = Item(name='High Ground', hash=2319119708)
 FourthTimesTheCharm = Item(name="Fourth Time's the Charm", hash=1354429876)
 Headstone = Item(name='Headstone', hash=124408337)
+ChainReaction = Item(name='Chain Reaction', hash=2396489472)
 
 del Item
