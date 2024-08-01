@@ -98,13 +98,6 @@ _ergo_sum_dmg_note = (
 wishlist.add_many(
     ErgoSum,
     roll(
-        'Roll to activate Wolfpack Rounds on swords. '
-        'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
-        [unique.ErgoSum.WolfpackRounds],
-        [unique.ErgoSum.LightweightFrame],
-        _ergo_sum_blades,
-        ),
-    roll(
         _ergo_sum_dmg_note,
         [unique.ErgoSum.ThePerfectFifth],
         [unique.ErgoSum.CasterFrame],
@@ -117,6 +110,14 @@ wishlist.add_many(
         _ergo_sum_blades,
         ),
     roll(
+        'Roll to activate Wolfpack Rounds on swords. '
+        'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
+        [unique.ErgoSum.WolfpackRounds],
+        [unique.ErgoSum.LightweightFrame],
+        _ergo_sum_blades,
+        [guards.SwordmastersGuard, AnyPerk],
+        ),
+    roll(
         'Roll for ad clear',
         [unique.ErgoSum.ArcConductor],
         [
@@ -125,6 +126,7 @@ wishlist.add_many(
             unique.ErgoSum.CasterFrame,
             ],
         _ergo_sum_blades,
+        [guards.SwordmastersGuard, AnyPerk],
         ),
     # roll(
     #     'Good roll to get ability energy from sword kills',

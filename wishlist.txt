@@ -93,10 +93,6 @@ dimwishlist:item=1492522228&perks=2680121939,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=3300816228,3078487919,3988215619
 
-//notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
-dimwishlist:item=1681583613&perks=1959135343,2753228730,1261178282
-dimwishlist:item=1681583613&perks=1959135343,2753228730
-
 //notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway.Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1522566605,519046634,1261178282
 dimwishlist:item=1681583613&perks=1522566605,519046634
@@ -105,12 +101,24 @@ dimwishlist:item=1681583613&perks=1522566605,519046634
 dimwishlist:item=1681583613&perks=1327961177,2753228730,1261178282
 dimwishlist:item=1681583613&perks=1327961177,2753228730
 
+//notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
+dimwishlist:item=1681583613&perks=1959135343,2753228730,1261178282,269888150
+dimwishlist:item=1681583613&perks=1959135343,2753228730,1261178282
+dimwishlist:item=1681583613&perks=1959135343,2753228730,269888150
+dimwishlist:item=1681583613&perks=1959135343,2753228730
+
 //notes:Roll for ad clear
+dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282,269888150
 dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282
+dimwishlist:item=1681583613&perks=3949068808,2753228730,269888150
 dimwishlist:item=1681583613&perks=3949068808,2753228730
+dimwishlist:item=1681583613&perks=3949068808,289811733,1261178282,269888150
 dimwishlist:item=1681583613&perks=3949068808,289811733,1261178282
+dimwishlist:item=1681583613&perks=3949068808,289811733,269888150
 dimwishlist:item=1681583613&perks=3949068808,289811733
+dimwishlist:item=1681583613&perks=3949068808,519046634,1261178282,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634,1261178282
+dimwishlist:item=1681583613&perks=3949068808,519046634,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634
 
 //notes:Combination Blow builds
