@@ -324,7 +324,7 @@ wishlist.add_many(
         'Roll for damage dealing',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        [traits.ThreatDetector, traits.DualLoader],
+        [traits.DualLoader, traits.ThreatDetector],
         [traits.TrenchBarrel],
         )
     )
