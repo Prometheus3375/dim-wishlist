@@ -308,8 +308,8 @@ wishlist.add_many(
         ),
     )
 
-_perfect_paradox_barrels = [barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud]
-_perfect_paradox_mags = [magazines.TacticalMag]
+_perfect_paradox_barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
+_perfect_paradox_mags = [magazines.TacticalMag, magazines.LightMag]
 
 wishlist.add_many(
     PerfectParadox,
@@ -317,14 +317,14 @@ wishlist.add_many(
         'Melee damage increase',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        [traits.ThreatDetector, traits.FieldPrep],
+        [traits.Pugilist],
         [traits.OneTwoPunch],
         ),
     roll(
         'Roll for damage dealing',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        [traits.DualLoader, traits.ThreatDetector],
+        [traits.DualLoader, traits.Pugilist],
         [traits.TrenchBarrel],
         )
     )
