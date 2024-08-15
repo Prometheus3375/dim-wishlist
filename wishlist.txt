@@ -148,10 +148,10 @@ dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 //notes:Melee builds
 dimwishlist:item=266021826&perks=1476923953,1476923956
-dimwishlist:item=266021826&perks=1476923953,3573490504
 dimwishlist:item=266021826&perks=1476923952,1476923956
-dimwishlist:item=266021826&perks=1476923952,3573490504
 dimwishlist:item=266021826&perks=3573490509,1476923956
+
+//notes:Severance and Contact combo
 dimwishlist:item=266021826&perks=3573490509,3573490504
 
 //notes:Barricade builds
