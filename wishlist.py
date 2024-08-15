@@ -201,7 +201,12 @@ wishlist.add_many(
     roll(
         'Melee builds',
         [unique.SpiritOf.InmostLight, unique.SpiritOf.Assassin, unique.SpiritOf.Severance],
-        [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
+        [unique.SpiritOf.Synthoceps],
+        ),
+    roll(
+        'Severance and Contact combo',
+        [unique.SpiritOf.Severance],
+        [unique.SpiritOf.Contact],
         ),
     roll(
         'Barricade builds',
