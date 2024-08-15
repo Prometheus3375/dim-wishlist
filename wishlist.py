@@ -12,7 +12,7 @@ wishlist.add(
     DedGramaryeIV,
     'Good PvE roll',
     [magazines.TacticalMag],
-    [traits.ThreatDetector],
+    [traits.Discord, traits.ThreatDetector],
     [traits.ChainReaction, traits.Voltshot],
     )
 
