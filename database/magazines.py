@@ -8,6 +8,7 @@ SteadyRounds = Item(name='Steady Rounds', hash=3177308360)
 AlloyMagazine = Item(name='Alloy Magazine', hash=1431678320)
 FlaredMagwell = Item(name='Flared Magwell', hash=3230963543)
 LightMag = Item(name='Light Mag', hash=679225683)
+AssaultMag = Item(name='Assault Mag', hash=791862061)
 
 HighVelocityRounds = Item(name='High-Velocity Rounds', hash=2822142346)
 
