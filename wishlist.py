@@ -8,12 +8,27 @@ wishlist = Wishlist(
 
 # region Cassoid
 
-wishlist.add(
+_ded_gramarye_iv_barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
+
+wishlist.add_many(
     DedGramaryeIV,
-    'Good PvE roll',
-    [magazines.TacticalMag],
-    [traits.Discord, traits.ThreatDetector],
-    [traits.ChainReaction, traits.Voltshot],
+    roll(
+        'Chain Reaction roll',
+        _ded_gramarye_iv_barrels,
+        [magazines.AssaultMag, magazines.LightMag, magazines.TacticalMag],
+        [traits.Discord, traits.ThreatDetector],
+        [traits.ChainReaction],
+        ),
+    roll(
+        'Voltshot roll; '
+        'mag increasing perks are not good with Voltshot as with them reserves deplete earlier; '
+        'Discord is not an option as it refills mag, does not reload; '
+        'thus, it does not activate Voltshot',
+        _ded_gramarye_iv_barrels,
+        [magazines.AssaultMag, magazines.LightMag],
+        [traits.ThreatDetector],
+        [traits.Voltshot],
+        ),
     )
 
 # endregion
