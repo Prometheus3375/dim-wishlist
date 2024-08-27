@@ -300,8 +300,8 @@ wishlist.add_many(
     Breachlight,
     roll(
         'PvE roll; '
-        'Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
-        'because it can be activated while stowed and lasts longer',
+        'for this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
+        'because DM can be activated while stowed and lasts longer',
         _breachlight_mags,
         [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
         [traits.DesperateMeasures],
@@ -359,18 +359,14 @@ wishlist.add_many(
         [traits.KillClip],
         ),
     roll(
-        'Roll for grenade builds',
-        [barrels.VolatileLaunch],
-        [magazines.HighVelocityRounds],
-        [traits.Demolitionist],
-        [traits.AdrenalineJunkie],  # todo consider removing this roll
-        ),
-    roll(
-        'Good PvE roll',
+        'Good PvE roll; '
+        'for this weapon Adrenaline Junkie is better than Desperate Measures '
+        'because AJ can achieve max stacks easily with 1-2 shots, '
+        'while DM requires two ability kills',
         [barrels.VolatileLaunch],
         [magazines.HighVelocityRounds],
         [traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster],
-        [traits.DesperateMeasures, traits.Incandescent],
+        [traits.AdrenalineJunkie, traits.Incandescent],
         ),
     )
 
