@@ -117,11 +117,11 @@ dimwishlist:item=1492522228&perks=2680121939,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=3300816228,3078487919,3988215619
 
-//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway.Aegis thoughts: https://youtu.be/bGTXGydS8uM
+//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1522566605,519046634,1261178282
 dimwishlist:item=1681583613&perks=1522566605,519046634
 
-//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway.Aegis thoughts: https://youtu.be/bGTXGydS8uM
+//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1327961177,2753228730,1261178282
 dimwishlist:item=1681583613&perks=1327961177,2753228730
 

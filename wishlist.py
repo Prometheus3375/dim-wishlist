@@ -106,7 +106,7 @@ _ergo_sum_dmg_note = (
     'Roll for damage dealing. Blade and guard is not that important. '
     'Prefer Enduring Blade for more ammo. '
     'In any damage situation you should be transcendent '
-    'which maximizes Charge Rate anyway.'
+    'which maximizes Charge Rate anyway. '
     'Aegis thoughts: https://youtu.be/bGTXGydS8uM'
 )
 
