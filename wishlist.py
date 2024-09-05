@@ -224,9 +224,15 @@ wishlist.add_many(
         [unique.SpiritOf.Contact],
         ),
     roll(
-        'Barricade builds',
+        'Barricade combo',
         [unique.SpiritOf.Hoarfrost],
-        [unique.SpiritOf.AlphaLupi, unique.SpiritOf.Horn],
+        [unique.SpiritOf.Horn],
+        ),
+    roll(
+        'Apparently, Alpha Lupi does not work with Hoarfrost :(',
+        [unique.SpiritOf.Hoarfrost],
+        [unique.SpiritOf.AlphaLupi],
+        is_trash=True,
         ),
     roll(
         # Verity buffs Unbreakable damage, check when dropped how usable it is
