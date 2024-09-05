@@ -300,23 +300,23 @@ wishlist.add_many(
 
 # region Echoes
 
-_breachlight_mags = [magazines.TacticalMag, magazines.FlaredMagwell, magazines.AppendedMag]
+_breachlight_mags = [magazines.FlaredMagwell, magazines.TacticalMag, magazines.AppendedMag]
 
 wishlist.add_many(
     Breachlight,
-    roll(
-        'PvE roll; '
-        'for this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
-        'because DM can be activated while stowed and lasts longer',
-        _breachlight_mags,
-        [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
-        [traits.DesperateMeasures],
-        ),
     roll(
         'Hatchling roll',
         _breachlight_mags,
         [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
         [traits.Hatchling],
+        ),
+    roll(
+        'Good PvE roll; '
+        'for this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
+        'because DM can be activated while stowed and lasts longer',
+        _breachlight_mags,
+        [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
+        [traits.DesperateMeasures],
         ),
     )
 
