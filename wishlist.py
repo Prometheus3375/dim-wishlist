@@ -352,6 +352,14 @@ wishlist.add_many(
 wishlist.add_many(
     MartyrsRetribution,
     roll(
+        'Incandescent roll; the preferred roll as there is already a Solar Wave Frame GL '
+        'with damage increase perks, Explosive Personality with One for All',
+        [barrels.VolatileLaunch],
+        [magazines.HighVelocityRounds],
+        [traits.Demolitionist, traits.HealClip],
+        [traits.Incandescent],
+        ),
+    roll(
         'Clip combo',
         [barrels.VolatileLaunch],
         [magazines.HighVelocityRounds],
@@ -365,8 +373,8 @@ wishlist.add_many(
         'while DM requires two ability kills',
         [barrels.VolatileLaunch],
         [magazines.HighVelocityRounds],
-        [traits.Demolitionist, traits.HealClip, traits.AutoLoadingHolster],
-        [traits.AdrenalineJunkie, traits.Incandescent],
+        [traits.Demolitionist, traits.HealClip],
+        [traits.AdrenalineJunkie],
         ),
     )
 
