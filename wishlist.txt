@@ -165,6 +165,9 @@ dimwishlist:item=2809120022&perks=3751917997,1476923955
 //notes:Ad clear and super damage
 dimwishlist:item=2809120022&perks=3751917996,1476923955
 
+//notes:Gyrfalcon build
+dimwishlist:item=2809120022&perks=1476923953,3751917993
+
 //notes:PvP build
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
