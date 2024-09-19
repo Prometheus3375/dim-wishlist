@@ -199,11 +199,11 @@ wishlist.add_many(
         [unique.SpiritOf.Caliban],
         [unique.SpiritOf.StarEater],
         ),
-    # roll(
-    #     'Gyrfalcon builds',
-    #     [unique.SpiritOf.Dragon, unique.SpiritOf.Foetracer],
-    #     [unique.SpiritOf.Gyrfalcon],
-    #     ),
+    roll(
+        'Gyrfalcon build',
+        [unique.SpiritOf.InmostLight],
+        [unique.SpiritOf.Gyrfalcon],
+        ),
     roll(
         'PvP build',
         [unique.SpiritOf.Ophidian],
