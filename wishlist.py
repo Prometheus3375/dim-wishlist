@@ -340,10 +340,11 @@ _perfect_paradox_mags = [magazines.TacticalMag, magazines.LightMag]
 wishlist.add_many(
     PerfectParadox,
     roll(
-        'Melee damage increase',
+        'Melee damage increase; Ready/Stow speed-wise Pugilist is better than Threat Detector x1, '
+        'but is worse than Threat Detector x2',
         _perfect_paradox_barrels,
         _perfect_paradox_mags,
-        [traits.Pugilist],
+        [traits.Pugilist, traits.ThreatDetector],
         [traits.OneTwoPunch],
         ),
     roll(
