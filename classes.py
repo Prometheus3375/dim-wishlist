@@ -176,13 +176,25 @@ class Wishlist:
 
             if self._wishes:
                 file.write('// Wish rolls\n\n')
+                last_name = ''
                 for entry in self._wishes:
+                    curr_name = entry.item.name
+                    if curr_name != last_name:
+                        file.write(f'// {curr_name}\n')
+                        last_name = curr_name
+
                     file.write(entry.to_dim_wishlist(False))
                     file.write('\n\n')
 
             if self._trashes:
                 file.write('// Trash rolls\n\n')
+                last_name = ''
                 for entry in self._trashes:
+                    curr_name = entry.item.name
+                    if curr_name != last_name:
+                        file.write(f'// {curr_name}\n')
+                        last_name = curr_name
+
                     file.write(entry.to_dim_wishlist(True))
                     file.write('\n\n')
 
