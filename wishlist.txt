@@ -3,6 +3,7 @@ description:Rolls on weapons and armor Prometheus3375 would like to have
 
 // Wish rolls
 
+// Ded Gramarye IV
 //notes:Chain Reaction roll
 dimwishlist:item=499245245&perks=1300023272,791862061,3978468247,2396489472
 dimwishlist:item=499245245&perks=1300023272,791862061,4071163871,2396489472
@@ -31,6 +32,7 @@ dimwishlist:item=499245245&perks=4090651448,679225683,4071163871,2173046394
 dimwishlist:item=499245245&perks=1482024992,791862061,4071163871,2173046394
 dimwishlist:item=499245245&perks=1482024992,679225683,4071163871,2173046394
 
+// Yarovit MG4
 //notes:Good PvE roll
 dimwishlist:item=3959549446&perks=880644845,124408337
 dimwishlist:item=3959549446&perks=880644845,2109543898
@@ -39,6 +41,7 @@ dimwishlist:item=3959549446&perks=3828510309,124408337
 dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3959549446&perks=3828510309,3708227201
 
+// Suspectum-4FR
 //notes:Roll for damage dealing
 dimwishlist:item=3615421669&perks=839105230,689005463,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,3828510309,555281244
@@ -49,6 +52,7 @@ dimwishlist:item=3615421669&perks=689005463,3828510309,555281244
 dimwishlist:item=3615421669&perks=968510818,555281244
 dimwishlist:item=3615421669&perks=3828510309,555281244
 
+// Scintillation
 //notes:Roll for damage dealing
 dimwishlist:item=2591257541&perks=839105230,2680121939,3418782618,3078487919,3988215619
 dimwishlist:item=2591257541&perks=839105230,2680121939,3418782618,3708227201,3988215619
@@ -83,6 +87,7 @@ dimwishlist:item=2591257541&perks=2680121939,3300816228,3078487919,3988215619
 dimwishlist:item=2591257541&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=2591257541&perks=3300816228,3078487919,3988215619
 
+// Scintillation (Adept)
 //notes:Roll for damage dealing
 dimwishlist:item=1492522228&perks=839105230,2680121939,3418782618,3078487919,3988215619
 dimwishlist:item=1492522228&perks=839105230,2680121939,3418782618,3708227201,3988215619
@@ -117,6 +122,7 @@ dimwishlist:item=1492522228&perks=2680121939,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=3300816228,3078487919,3988215619
 
+// Ergo Sum
 //notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1522566605,519046634,1261178282
 dimwishlist:item=1681583613&perks=1522566605,519046634
@@ -145,6 +151,7 @@ dimwishlist:item=1681583613&perks=3949068808,519046634,1261178282
 dimwishlist:item=1681583613&perks=3949068808,519046634,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634
 
+// Relativism
 //notes:Combination Blow builds
 dimwishlist:item=2809120022&perks=1476923952,3751917992
 dimwishlist:item=2809120022&perks=3751917996,3751917992
@@ -171,6 +178,7 @@ dimwishlist:item=2809120022&perks=1476923953,3751917993
 //notes:PvP build
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
+// Stoicism
 //notes:Melee builds
 dimwishlist:item=266021826&perks=1476923953,1476923956
 dimwishlist:item=266021826&perks=1476923952,1476923956
@@ -194,6 +202,7 @@ dimwishlist:item=266021826&perks=3573490511,1476923955
 //notes:PvP build
 dimwishlist:item=266021826&perks=1476923954,3573490501
 
+// Solipsism
 //notes:Melee builds
 dimwishlist:item=2273643087&perks=183430252,1476923956
 dimwishlist:item=2273643087&perks=183430252,183430247
@@ -215,6 +224,7 @@ dimwishlist:item=2273643087&perks=183430250,1476923957
 //notes:PvP build
 dimwishlist:item=2273643087&perks=1476923954,183430254
 
+// Breachlight
 //notes:Hatchling roll
 dimwishlist:item=2328923181&perks=3230963543,3523296417,831391274
 dimwishlist:item=2328923181&perks=3230963543,691659142,831391274
@@ -237,6 +247,7 @@ dimwishlist:item=2328923181&perks=1087426260,3523296417,2109543898
 dimwishlist:item=2328923181&perks=1087426260,691659142,2109543898
 dimwishlist:item=2328923181&perks=1087426260,4071163871,2109543898
 
+// Patron of Lost Causes
 //notes:Roll to get class ability energy from afar
 dimwishlist:item=2249996761&perks=880644845,3891536761
 dimwishlist:item=2249996761&perks=880644845,3038247973
@@ -245,6 +256,7 @@ dimwishlist:item=2249996761&perks=880644845,3038247973
 dimwishlist:item=2249996761&perks=247725512,3891536761
 dimwishlist:item=2249996761&perks=247725512,3038247973
 
+// Perfect Paradox
 //notes:Melee damage increase; Ready/Stow speed-wise Pugilist is better than Threat Detector x1, but is worse than Threat Detector x2
 dimwishlist:item=1298672084&perks=1300023272,106909392,691659142,2679249093
 dimwishlist:item=1298672084&perks=1300023272,106909392,4071163871,2679249093
@@ -273,6 +285,7 @@ dimwishlist:item=1298672084&perks=1482024992,106909392,691659142,2360754333
 dimwishlist:item=1298672084&perks=1482024992,679225683,25606670,2360754333
 dimwishlist:item=1298672084&perks=1482024992,679225683,691659142,2360754333
 
+// Martyr's Retribution
 //notes:Incandescent roll; the preferred roll as there is already a Solar Wave Frame GL with damage increase perks, Explosive Personality with One for All
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,4293542123
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,4293542123
@@ -284,6 +297,7 @@ dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,11612903
 
+// Line in the Sand
 //notes:Roll for damage dealing
 dimwishlist:item=2450049485&perks=839105230,689005463,3523296417,3078487919
 dimwishlist:item=2450049485&perks=839105230,689005463,2284787283,3078487919
@@ -296,18 +310,23 @@ dimwishlist:item=2450049485&perks=2284787283,3078487919
 
 // Trash rolls
 
+// Suspectum-4FR
 //notes:FTTC does not regenerate ammo if mag is overflowed
 dimwishlist:item=-3615421669&perks=968510818,1354429876
 
-//notes:Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
+// Scintillation
+//notes:Rewind Rounds with Veist Stinger usually allows to fire all reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
 dimwishlist:item=-2591257541&perks=1483536627
 
-//notes:Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
+// Scintillation (Adept)
+//notes:Rewind Rounds with Veist Stinger usually allows to fire all reserves. Unfortunately, any mag stat increase above 20 reduces reserves; Enhanced Battery is +20, Ionized Battery is +40
 dimwishlist:item=-1492522228&perks=1483536627
 
+// Ergo Sum
 //notes:Stormbringer requires 3 kills to activate and barely makes a difference in ad clear
 dimwishlist:item=-1681583613&perks=461437088
 
+// Stoicism
 //notes:Apparently, Alpha Lupi does not work with Hoarfrost :(
 dimwishlist:item=-266021826&perks=3573490508,3573490501
 

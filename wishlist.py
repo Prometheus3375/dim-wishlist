@@ -86,7 +86,7 @@ _scintillation_rolls = [
         [origin.VeistStinger],
         ),
     roll(
-        'Rewind Rounds with Veist Stinger usually allows to fire all of the reserves. '
+        'Rewind Rounds with Veist Stinger usually allows to fire all reserves. '
         'Unfortunately, any mag stat increase above 20 reduces reserves; '
         'Enhanced Battery is +20, Ionized Battery is +40',
         [batteries.IonizedBattery],
