@@ -170,9 +170,9 @@ wishlist.add_many(
         [unique.SpiritOf.Synthoceps],
         ),
     roll(
-        'Duskfield build',
+        'Duskfield builds',
         [unique.SpiritOf.Renewal],
-        [unique.SpiritOf.Cyrtarachne],
+        [unique.SpiritOf.Cyrtarachne, unique.SpiritOf.StarEater],
         ),
     # roll(
     #     'Woven Mail builds',
