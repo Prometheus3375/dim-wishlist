@@ -22,4 +22,4 @@ or higher version of Python 3.12.
 
 ## Updating wishlist
 
-Run `python wishlist.py` to update wishlist.
+Run `python -m wishlist` to update wishlist.
