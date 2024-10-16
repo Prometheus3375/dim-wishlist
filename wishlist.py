@@ -229,12 +229,6 @@ wishlist.add_many(
         [unique.SpiritOf.Horn],
         ),
     roll(
-        'Apparently, Alpha Lupi does not work with Hoarfrost :(',
-        [unique.SpiritOf.Hoarfrost],
-        [unique.SpiritOf.AlphaLupi],
-        is_trash=True,
-        ),
-    roll(
         # Verity buffs Unbreakable damage, check when dropped how usable it is
         'Unbreakable build',
         [unique.SpiritOf.Bear],
