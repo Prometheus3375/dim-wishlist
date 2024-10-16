@@ -199,4 +199,61 @@ class Wishlist:
                     file.write('\n\n')
 
 
-__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'roll'
+class RD:
+    """
+    A special class to define a set of rolls for a specific item verbosely.
+    """
+
+    item: Item
+    """
+    An instance of :class:`Item` for which rolls are specified.
+    Cannot be specified with ``items``.
+    """
+    items: Iterable[Item]
+    """
+    A set of instances of :class:`Item` for which rolls are specified.
+    Cannot be specified with ``item``.
+    """
+
+    roll: AnnotatedRoll
+    """
+    One roll definition for the item. Cannot be specified with ``rolls``.
+    """
+    rolls: Iterable[AnnotatedRoll]
+    """
+    A set of roll definitions for the item. Cannot be specified with ``roll``.
+    """
+
+    def __init_subclass__(cls, /) -> None:
+        item = getattr(cls, 'item', None)
+        items = getattr(cls, 'items', None)
+
+        if item and items:
+            raise TypeError(f'items and item cannot be both specified in {cls.__name__}')
+        elif item:
+            cls.items = [item]
+            del cls.item
+        elif items:
+            if not isinstance(items, tuple):
+                # noinspection PyTypeChecker
+                cls.items = tuple(items)
+        else:
+            raise TypeError(f'either items or item must be specified in {cls.__name__}')
+
+        roll_ = getattr(cls, 'roll', None)
+        rolls = getattr(cls, 'rolls', None)
+
+        if roll_ and rolls:
+            raise TypeError(f'rolls and roll cannot be both specified in {cls.__name__}')
+        elif roll_:
+            cls.rolls = [roll_]
+            del cls.roll
+        elif rolls:
+            if not isinstance(rolls, tuple):
+                # noinspection PyTypeChecker
+                cls.rolls = tuple(rolls)
+        else:
+            raise TypeError(f'either rolls or roll must be specified in {cls.__name__}')
+
+
+__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'roll', 'RD'
