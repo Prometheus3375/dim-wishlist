@@ -19,7 +19,7 @@ class Item:
     def __post_init__(self, /) -> None:
         existing = self.__hash2item.get(self.hash)
         if existing:
-            raise ValueError(f'Item with hash {self.hash} already exists')
+            raise ValueError(f'item with hash {self.hash} already exists')
 
         self.__hash2item[self.hash] = self
 
@@ -92,7 +92,7 @@ class WishlistEntry:
             elif trash:
                 combo_str = ''
             else:
-                raise ValueError(f'Impossible to wishlist {self.item.name!r} with zero combos')
+                raise ValueError(f'impossible to wishlist {self.item.name!r} with zero combos')
 
             return (
                 f'//notes:{self.notes}\n'
@@ -141,7 +141,7 @@ class Wishlist:
         # Clear strings
         notes = ' '.join(notes.split())
         if not notes:
-            raise ValueError('Notes cannot be empty')
+            raise ValueError('notes cannot be empty')
 
         # Remove empty sets
         final_perk_sets = tuple(filter(None, map(iterable2set, perk_sets)))
