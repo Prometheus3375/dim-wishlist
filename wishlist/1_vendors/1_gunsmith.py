@@ -28,6 +28,37 @@ class DedGramaryeIV(RD):
 
 
 # endregion
+# region Field forged
+class LiveFire(RD):
+    item = Item(name='Live Fire', hash=3612142623)
+    rolls = [
+        roll(
+            'Shoot to Loot roll',
+            [traits.Rimestealer, traits.RapidHit],
+            [traits.ShootToLoot],
+            ),
+        roll(
+            'Headstone roll, prefer Red Tape for Rimestealer + Headstone',
+            [traits.Rimestealer, traits.RapidHit],
+            [traits.Headstone],
+            ),
+        ]
+
+
+# endregion
+# region Hakke
+class VeledaF(RD):
+    item = Item(name='Veleda F', hash=4200122994)
+    roll = roll(
+        'Weaken support roll',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
+        [traits.AirTrigger],
+        [traits.WitheringGaze],
+        )
+
+
+# endregion
 # region Omolon
 class YarovitMG4(RD):
     item = Item(name='Yarovit MG4', hash=3959549446)
@@ -35,6 +66,19 @@ class YarovitMG4(RD):
         'Good PvE roll',
         [traits.Strategist, traits.EnlightenedAction],
         [traits.Headstone, traits.DesperateMeasures, traits.Surrounded],
+        )
+
+
+# endregion
+# SUROS
+class Legato11(RD):
+    item = Item(name='Legato-11', hash=3753063346)
+    roll = roll(
+        'Roll for damage dealing',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
+        [traits.AutoLoadingHolster, traits.TripleTap],
+        [traits.VorpalWeapon],
         )
 
 
