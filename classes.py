@@ -209,7 +209,7 @@ class RD:
     An instance of :class:`Item` for which rolls are specified.
     Cannot be specified with ``items``.
     """
-    items: Iterable[Item]
+    items: Sequence[Item]
     """
     A set of instances of :class:`Item` for which rolls are specified.
     Cannot be specified with ``item``.
@@ -219,7 +219,7 @@ class RD:
     """
     One roll definition for the item. Cannot be specified with ``rolls``.
     """
-    rolls: Iterable[AnnotatedRoll]
+    rolls: Sequence[AnnotatedRoll]
     """
     A set of roll definitions for the item. Cannot be specified with ``roll``.
     """
@@ -231,7 +231,7 @@ class RD:
         if item and items:
             raise TypeError(f'items and item cannot be both specified in {cls.__name__}')
         elif item:
-            cls.items = [item]
+            cls.items = (item,)
             del cls.item
         elif items:
             if not isinstance(items, tuple):
@@ -246,7 +246,7 @@ class RD:
         if roll_ and rolls:
             raise TypeError(f'rolls and roll cannot be both specified in {cls.__name__}')
         elif roll_:
-            cls.rolls = [roll_]
+            cls.rolls = (roll_,)
             del cls.roll
         elif rolls:
             if not isinstance(rolls, tuple):
