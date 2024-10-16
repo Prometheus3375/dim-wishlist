@@ -327,7 +327,3 @@ dimwishlist:item=-1492522228&perks=1483536627
 //notes:Stormbringer requires 3 kills to activate and barely makes a difference in ad clear
 dimwishlist:item=-1681583613&perks=461437088
 
-// Stoicism
-//notes:Apparently, Alpha Lupi does not work with Hoarfrost :(
-dimwishlist:item=-266021826&perks=3573490508,3573490501
-
