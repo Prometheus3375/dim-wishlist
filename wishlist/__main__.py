@@ -11,7 +11,6 @@ for dirpath, dirnames, filenames in os.walk(this_dir):
         if file.endswith('.py') and not file.startswith('_'):
             import_module(f'{this_package}.{module_path}.{file[:-3]}')
 
-
 wishlist = Wishlist(
     title='Wishlist made by Prometheus3375',
     description='Rolls on weapons and armor Prometheus3375 would like to have',
