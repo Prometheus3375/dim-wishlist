@@ -1,7 +1,7 @@
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
 from itertools import product
-from typing import ClassVar, Self
+from typing import Any, ClassVar, Self, TypeGuard
 
 
 @dataclass(frozen=True, kw_only=True, slots=True)
@@ -114,6 +114,24 @@ def roll(notes: str, /, *perk_sets: PerkSet, is_trash: bool = False) -> Annotate
     Creates an annotated roll definition from the given notes and perk sets.
     """
     return notes, is_trash, perk_sets
+
+
+def is_annotated_roll(obj: Any, /) -> TypeGuard[AnnotatedRoll]:
+    """
+    Returns ``True`` if passed object is an annotated roll.
+    """
+    return (
+            isinstance(obj, tuple)
+            and len(obj) == 3
+            and isinstance(obj[0], str)
+            and isinstance(obj[1], bool)
+            and isinstance(obj[2], tuple)
+            and
+            all(
+                isinstance(ps, Sequence) and all(isinstance(i, Item) for i in ps)
+                for ps in obj[2]
+                )
+    )
 
 
 @dataclass(kw_only=True, slots=True)
@@ -231,12 +249,18 @@ class RD:
         if item and items:
             raise TypeError(f'items and item cannot be both specified in {cls.__name__}')
         elif item:
-            cls.items = (item,)
-            del cls.item
+            if isinstance(item, Item):
+                cls.items = (item,)
+                del cls.item
+            else:
+                raise TypeError(f'item must be of type {Item.__name__}, got {item!r}')
         elif items:
             if not isinstance(items, tuple):
                 # noinspection PyTypeChecker
-                cls.items = tuple(items)
+                items = cls.items = tuple(items)
+
+            if not all(isinstance(i, Item) for i in items):
+                raise TypeError(f'items must be a sequence of {Item.__name__}, got {items!r}')
         else:
             raise TypeError(f'either items or item must be specified in {cls.__name__}')
 
@@ -246,12 +270,20 @@ class RD:
         if roll_ and rolls:
             raise TypeError(f'rolls and roll cannot be both specified in {cls.__name__}')
         elif roll_:
-            cls.rolls = (roll_,)
-            del cls.roll
+            if is_annotated_roll(roll_):
+                cls.rolls = (roll_,)
+                del cls.roll
+            else:
+                raise TypeError(f'roll must be of type {AnnotatedRoll.__name__}, got {roll_!r}')
         elif rolls:
             if not isinstance(rolls, tuple):
                 # noinspection PyTypeChecker
-                cls.rolls = tuple(rolls)
+                rolls = cls.rolls = tuple(rolls)
+
+            if not all(map(is_annotated_roll, rolls)):
+                raise TypeError(
+                    f'rolls must be a sequence of {AnnotatedRoll.__name__}, got {rolls!r}'
+                    )
         else:
             raise TypeError(f'either rolls or roll must be specified in {cls.__name__}')
 
