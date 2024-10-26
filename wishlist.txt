@@ -365,77 +365,80 @@ dimwishlist:item=1681583613&perks=3949068808,519046634,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634
 
 // Relativism
-//notes:Combination Blow builds
-dimwishlist:item=2809120022&perks=1476923952,3751917992
-dimwishlist:item=2809120022&perks=3751917996,3751917992
-
-//notes:Other melee builds; Synthoceps increase damage of Combination Blow very little
-dimwishlist:item=2809120022&perks=1476923952,1476923956
-dimwishlist:item=2809120022&perks=3751917996,1476923956
-
-//notes:Duskfield builds
-dimwishlist:item=2809120022&perks=3751917995,3751917994
+//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+dimwishlist:item=2809120022&perks=1476923953,1476923955
 dimwishlist:item=2809120022&perks=3751917995,1476923955
-
-//notes:Super build
+dimwishlist:item=2809120022&perks=3751917996,1476923955
+dimwishlist:item=2809120022&perks=3751917997,1476923955
 dimwishlist:item=2809120022&perks=3751917998,1476923955
 
-//notes:Super and weapon damage
-dimwishlist:item=2809120022&perks=3751917997,1476923955
+//notes:Roll for melee builds. Melee builds should be paired with Stylish Executioner aspect as it increases melee damage dealt from invisibility. It also provides invisibility, making Spirit of the Assassin redundant. Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
+dimwishlist:item=2809120022&perks=3751917996,3751917992
+dimwishlist:item=2809120022&perks=3751917996,1476923956
+dimwishlist:item=2809120022&perks=3751917995,3751917992
+dimwishlist:item=2809120022&perks=3751917995,1476923956
 
-//notes:Ad clear and super damage
-dimwishlist:item=2809120022&perks=3751917996,1476923955
+//notes:Roll with Cyrtarachne
+dimwishlist:item=2809120022&perks=1476923953,3751917994
+dimwishlist:item=2809120022&perks=3751917995,3751917994
+dimwishlist:item=2809120022&perks=3751917997,3751917994
 
-//notes:Gyrfalcon build
+//notes:Roll with Gyrfalcon
 dimwishlist:item=2809120022&perks=1476923953,3751917993
 
-//notes:PvP build
+//notes:Roll for PvP
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 // Stoicism
-//notes:Melee builds
-dimwishlist:item=266021826&perks=1476923953,1476923956
-dimwishlist:item=266021826&perks=1476923952,1476923956
-dimwishlist:item=266021826&perks=3573490509,1476923956
-
-//notes:Severance and Contact combo
-dimwishlist:item=266021826&perks=3573490509,3573490504
-
-//notes:Barricade combo
-dimwishlist:item=266021826&perks=3573490508,3573490506
-
-//notes:Unbreakable build
-dimwishlist:item=266021826&perks=3573490505,3573490500
-
-//notes:Drengr's Lash build
-dimwishlist:item=266021826&perks=3573490510,3573490506
-
-//notes:Super and weapon damage
+//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+dimwishlist:item=266021826&perks=1476923953,1476923955
+dimwishlist:item=266021826&perks=3573490505,1476923955
 dimwishlist:item=266021826&perks=3573490511,1476923955
 
-//notes:PvP build
+//notes:Roll for grenade builds
+dimwishlist:item=266021826&perks=1476923953,1476923957
+dimwishlist:item=266021826&perks=1476923953,3573490500
+
+//notes:Roll for melee builds
+dimwishlist:item=266021826&perks=1476923953,1476923956
+dimwishlist:item=266021826&perks=1476923953,3573490504
+dimwishlist:item=266021826&perks=3573490509,1476923956
+dimwishlist:item=266021826&perks=3573490509,3573490504
+
+//notes:Roll for class ability builds
+dimwishlist:item=266021826&perks=3573490508,3573490506
+
+//notes:Roll for Unbreakable aspect
+dimwishlist:item=266021826&perks=3573490505,3573490500
+
+//notes:Roll for Drengr's Lash aspect
+dimwishlist:item=266021826&perks=3573490510,3573490506
+
+//notes:Roll for PvP
 dimwishlist:item=266021826&perks=1476923954,3573490501
 
 // Solipsism
-//notes:Melee builds
-dimwishlist:item=2273643087&perks=183430252,1476923956
-dimwishlist:item=2273643087&perks=183430252,183430247
+//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+dimwishlist:item=2273643087&perks=1476923953,1476923955
+dimwishlist:item=2273643087&perks=183430250,1476923955
+dimwishlist:item=2273643087&perks=183430252,1476923955
+
+//notes:Roll for grenade builds
+dimwishlist:item=2273643087&perks=1476923953,1476923957
+dimwishlist:item=2273643087&perks=183430250,1476923957
+dimwishlist:item=2273643087&perks=183430253,1476923957
+
+//notes:Roll for melee builds
 dimwishlist:item=2273643087&perks=1476923953,1476923956
 dimwishlist:item=2273643087&perks=1476923953,183430247
-dimwishlist:item=2273643087&perks=1476923952,1476923956
-dimwishlist:item=2273643087&perks=1476923952,183430247
+dimwishlist:item=2273643087&perks=183430252,1476923956
+dimwishlist:item=2273643087&perks=183430252,183430247
 
-//notes:Empowered Rift combo
+//notes:Roll for Empowered Rift
 dimwishlist:item=2273643087&perks=183430255,183430249
+dimwishlist:item=2273643087&perks=183430253,183430249
 
-//notes:Super builds
-dimwishlist:item=2273643087&perks=183430250,1476923955
-dimwishlist:item=2273643087&perks=183430250,183430254
-
-//notes:Song of Flame grenade build
-dimwishlist:item=2273643087&perks=183430250,1476923957
-
-//notes:PvP build
+//notes:Roll for PvP
 dimwishlist:item=2273643087&perks=1476923954,183430254
 
 // VS Pyroelectric Propellant
