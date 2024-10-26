@@ -57,57 +57,45 @@ class ErgoSum(RD):
         ]
 
 
+_note_spirit_of_the_star_eater = """
+Roll with Star-Eater
+Feast of Light stacks are preserved when swapping from
+one class item w/ Spirit of Star-Eater to another
+"""
+
+
 class Relativism(RD):
     item = Item(name='Relativism', hash=2809120022)
     rolls = [
         roll(
-            'Combination Blow builds',
-            [unique.SpiritOf.Assassin, unique.SpiritOf.Caliban],
-            [unique.SpiritOf.Liar],
-            ),
-        roll(
-            'Other melee builds; '
-            'Synthoceps increase damage of Combination Blow very little',
-            [unique.SpiritOf.Assassin, unique.SpiritOf.Caliban],
-            [unique.SpiritOf.Synthoceps],
-            ),
-        roll(
-            'Duskfield builds',
-            [unique.SpiritOf.Renewal],
-            [unique.SpiritOf.Cyrtarachne, unique.SpiritOf.StarEater],
-            ),
-        # roll(
-        #     'Woven Mail builds',
-        #     [unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer],
-        #     [unique.SpiritOf.Cyrtarachne],
-        #     ),
-        # roll(
-        #     'Dodge builds',
-        #     [unique.SpiritOf.Dragon],
-        #     [unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk],
-        #     ),
-        roll(
-            'Super build',
-            [unique.SpiritOf.Galanor],
+            _note_spirit_of_the_star_eater,
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Caliban,
+             unique.SpiritOf.Foetracer, unique.SpiritOf.Galanor],
             [unique.SpiritOf.StarEater],
             ),
         roll(
-            'Super and weapon damage',
-            [unique.SpiritOf.Foetracer],
-            [unique.SpiritOf.StarEater],
+            """
+            Roll for melee builds.
+            Melee builds should be paired with Stylish Executioner aspect
+            as it increases melee damage dealt from invisibility.
+            It also provides invisibility, making Spirit of the Assassin redundant.
+            Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
+            """,
+            [unique.SpiritOf.Caliban, unique.SpiritOf.Renewal],
+            [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
         roll(
-            'Ad clear and super damage',
-            [unique.SpiritOf.Caliban],
-            [unique.SpiritOf.StarEater],
+            'Roll with Cyrtarachne',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Foetracer],
+            [unique.SpiritOf.Cyrtarachne],
             ),
         roll(
-            'Gyrfalcon build',
+            'Roll with Gyrfalcon',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Gyrfalcon],
             ),
         roll(
-            'PvP build',
+            'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Wormhusk],
             ),
@@ -118,37 +106,37 @@ class Stoicism(RD):
     item = Item(name='Stoicism', hash=266021826)
     rolls = [
         roll(
-            'Melee builds',
-            [unique.SpiritOf.InmostLight, unique.SpiritOf.Assassin, unique.SpiritOf.Severance],
-            [unique.SpiritOf.Synthoceps],
+            _note_spirit_of_the_star_eater,
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Bear, unique.SpiritOf.EternalWarrior],
+            [unique.SpiritOf.StarEater],
             ),
         roll(
-            'Severance and Contact combo',
-            [unique.SpiritOf.Severance],
-            [unique.SpiritOf.Contact],
+            'Roll for grenade builds',
+            [unique.SpiritOf.InmostLight],
+            [unique.SpiritOf.Verity, unique.SpiritOf.Armamentarium],
             ),
         roll(
-            'Barricade combo',
+            'Roll for melee builds',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Severance],
+            [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
+            ),
+        roll(
+            'Roll for class ability builds',
             [unique.SpiritOf.Hoarfrost],
             [unique.SpiritOf.Horn],
             ),
         roll(
-            'Unbreakable build',
+            'Roll for Unbreakable aspect',
             [unique.SpiritOf.Bear],
             [unique.SpiritOf.Armamentarium],
             ),
         roll(
-            "Drengr's Lash build",
+            "Roll for Drengr's Lash aspect",
             [unique.SpiritOf.Abeyant],
             [unique.SpiritOf.Horn],
             ),
         roll(
-            'Super and weapon damage',
-            [unique.SpiritOf.EternalWarrior],
-            [unique.SpiritOf.StarEater],
-            ),
-        roll(
-            'PvP build',
+            'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.AlphaLupi],
             ),
@@ -159,18 +147,23 @@ class Solipsism(RD):
     item = Item(name='Solipsism', hash=2273643087)
     rolls = [
         roll(
-            'Melee builds',
-            [unique.SpiritOf.Necrotic, unique.SpiritOf.InmostLight, unique.SpiritOf.Assassin],
+            _note_spirit_of_the_star_eater,
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Necrotic],
+            [unique.SpiritOf.StarEater],
+            ),
+        roll(
+            'Roll for grenade builds',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Osmiomancy],
+            [unique.SpiritOf.Verity],
+            ),
+        roll(
+            'Roll for melee builds',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Necrotic],
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw],
             ),
-        # roll(
-        #     'Grenade build',
-        #     [unique.SpiritOf.Osmiomancy],
-        #     [unique.SpiritOf.Verity],
-        #     ),
         roll(
-            'Empowered Rift combo',
-            [unique.SpiritOf.Filaments],
+            'Roll for Empowered Rift',
+            [unique.SpiritOf.Filaments, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Starfire],
             ),
         # roll(
@@ -179,17 +172,7 @@ class Solipsism(RD):
         #     [unique.SpiritOf.Vesper],
         #     ),
         roll(
-            'Super builds',
-            [unique.SpiritOf.Apotheosis],
-            [unique.SpiritOf.StarEater, unique.SpiritOf.Harmony],
-            ),
-        roll(
-            'Song of Flame grenade build',
-            [unique.SpiritOf.Apotheosis],
-            [unique.SpiritOf.Verity],
-            ),
-        roll(
-            'PvP build',
+            'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Harmony],
             ),
