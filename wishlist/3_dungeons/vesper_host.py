@@ -58,7 +58,14 @@ class ChillInhibitor(RD):
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.CascadePoint],
-            [traits.BaitAndSwitch, traits.Surrounded, traits.ExplosiveLight],
+            [traits.BaitAndSwitch, traits.Surrounded],
+            ),
+        roll(
+            'Roll with high DPS',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal, traits.CascadePoint],
+            [traits.ExplosiveLight],
             ),
         roll(
             'Roll for ad clear',

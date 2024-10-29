@@ -98,13 +98,22 @@ class NoxiousVetiver(RD):
 
 class BitterSweet(RD):
     item = Item(name='Bitter/Sweet', hash=2599338625)
-    roll = roll(
-        'Roll for damage dealing',
-        [barrels.HardLaunch, AnyPerk],
-        [magazines.SpikeGrenades, AnyPerk],
-        [traits.EnviousArsenal],
-        [traits.BaitAndSwitch, traits.ExplosiveLight],
-        )
+    rolls = [
+        roll(
+            'Roll for damage dealing',
+            [barrels.HardLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal],
+            [traits.BaitAndSwitch],
+            ),
+        roll(
+            'Roll with high DPS',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal],
+            [traits.ExplosiveLight],
+            ),
+        ]
 
 
 class HereticsFervor(RD):
