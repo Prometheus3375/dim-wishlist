@@ -50,9 +50,14 @@ class RakeAngle(RD):
         Item(name='Rake Angle (Adept)', hash=3997086838),
         ]
     roll = roll(
-        'PvE rolls',
+        """
+        PvE rolls;
+        Backup Mag, Appended Mag and Extended Mag add 1 ammo,
+        Adept Mag adds 2 ammo, Adept Mag + Extended Mag add 3 ammo.
+        I suggest Adept Mag + Alloy Magazine for mag size of 6 and faster reload at 3 ammo
+        """,
         [hafts.LowImpedanceWindings, AnyPerk],
         [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-        [traits.ReplenishingAegis],
+        [traits.ReplenishingAegis, traits.Overflow],
         [traits.ChillClip],
         )
