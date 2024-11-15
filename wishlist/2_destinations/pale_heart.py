@@ -58,7 +58,7 @@ class ErgoSum(RD):
 
 
 _note_spirit_of_the_star_eater = """
-Roll with Star-Eater
+Roll with Star-Eater;
 Feast of Light stacks are preserved when swapping from
 one class item w/ Spirit of Star-Eater to another
 """

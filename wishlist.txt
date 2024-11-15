@@ -377,7 +377,7 @@ dimwishlist:item=1681583613&perks=3949068808,519046634,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634
 
 // Relativism
-//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=2809120022&perks=1476923953,1476923955
 dimwishlist:item=2809120022&perks=3751917995,1476923955
 dimwishlist:item=2809120022&perks=3751917996,1476923955
@@ -402,7 +402,7 @@ dimwishlist:item=2809120022&perks=1476923953,3751917993
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 // Stoicism
-//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=266021826&perks=1476923953,1476923955
 dimwishlist:item=266021826&perks=3573490505,1476923955
 dimwishlist:item=266021826&perks=3573490511,1476923955
@@ -430,7 +430,7 @@ dimwishlist:item=266021826&perks=3573490510,3573490506
 dimwishlist:item=266021826&perks=1476923954,3573490501
 
 // Solipsism
-//notes:Roll with Star-Eater Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=2273643087&perks=1476923953,1476923955
 dimwishlist:item=2273643087&perks=183430250,1476923955
 dimwishlist:item=2273643087&perks=183430252,1476923955
