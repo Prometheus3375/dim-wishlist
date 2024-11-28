@@ -3,19 +3,25 @@ from database import *
 
 class TinashasMastery(RD):
     item = Item(name="Tinasha's Mastery", hash=480368036)
+    _mag_note = (
+        '; '
+        'High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, '
+        'Tactical Mag with Backup Mag mod is the second best'
+    )
+
     rolls = [
         roll(
-            'Chill Clip roll',
+            f'Chill Clip roll{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier, traits.LooseChange],
+            [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
+            [traits.ImpulseAmplifier, traits.AirTrigger, traits.LooseChange],
             [traits.ChillClip],
             ),
         roll(
-            'Roll for ad clear',
+            f'Roll for ad clear{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier],
+            [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
+            [traits.ImpulseAmplifier, traits.AirTrigger],
             [traits.OneForAll, traits.Adagio],
             ),
         ]
