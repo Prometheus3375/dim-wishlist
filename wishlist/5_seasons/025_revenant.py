@@ -87,7 +87,7 @@ class NoxiousVetiver(RD):
         'Roll for ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
-        [traits.AttritionOrbs],
+        [traits.AttritionOrbs, traits.LooseChange, traits.Pugilist],
         [traits.JoltingFeedback],
         )
 
