@@ -13,7 +13,6 @@ class Item:
 
     name: str
     hash: int
-    icon: str | None = None
 
     # noinspection PyDataclass
     def __post_init__(self, /) -> None:
