@@ -39,6 +39,13 @@ class Item:
     def __hash__(self, /) -> int:
         return self.hash
 
+    @property
+    def light_gg(self, /) -> str:
+        """
+        Link to the page of this item on light.gg.
+        """
+        return f'https://www.light.gg/db/items/{self.hash}'
+
 
 AnyItem = Item(name='DIM Wildcard', hash=-69420)
 """
