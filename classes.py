@@ -25,7 +25,7 @@ class Item:
     @classmethod
     def from_hash(cls, hash_: int, /) -> Self | None:
         """
-        Returns an existing item by passed hash value
+        Returns an existing item with the given hash value
         or ``None`` if no item with such hash exists.
         """
         return cls.__hash2item.get(hash_)
@@ -53,7 +53,7 @@ Special item for DIM to denote any item.
 """
 AnyPerk = Item(name='Any Perk', hash=-1)
 """
-Special perk to denote an empty selection for a perk column.
+Special item to denote an empty selection for a perk column.
 """
 
 type OrderedSet[T] = dict[T, None]
@@ -225,7 +225,7 @@ class Wishlist:
 
 class RD:
     """
-    A special class to define a set of rolls for a specific item verbosely.
+    A special class to verbosely define a set of rolls for specific items.
     """
 
     item: Item
