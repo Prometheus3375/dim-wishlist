@@ -1,9 +1,9 @@
-# noinspection PyUnresolvedReferences
 from classes import AnyItem, AnyPerk, Item, RD, roll
 from . import (
     barrels,
     batteries,
     blades,
+    categories,
     guards,
     hafts,
     magazines,
@@ -12,4 +12,22 @@ from . import (
     traits,
     unique,
     )
-from .categories import *
+
+__all__ = (
+    'AnyItem',
+    'AnyPerk',
+    'Item',
+    'RD',
+    'roll',
+    'barrels',
+    'batteries',
+    'blades',
+    'categories',
+    'guards',
+    'hafts',
+    'magazines',
+    'masterworks',
+    'origin',
+    'traits',
+    'unique',
+    )
