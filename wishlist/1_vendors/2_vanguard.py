@@ -3,13 +3,22 @@ from database import *
 
 class WickedSister(RD):
     item = Item(name='Wicked Sister', hash=2039776723)
-    roll = roll(
-        'Roll for damage dealing',
-        [barrels.HardLaunch, AnyPerk],
-        [magazines.SpikeGrenades, AnyPerk],
-        [traits.EnviousArsenal, traits.AutoLoadingHolster, traits.EnviousAssassin],
-        [traits.BaitAndSwitch, traits.ExplosiveLight],
-        )
+    rolls = [
+        roll(
+            'Roll for damage dealing',
+            [barrels.HardLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
+            [traits.BaitAndSwitch],
+            ),
+        roll(
+            'Roll with high DPS',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
+            [traits.ExplosiveLight],
+            ),
+        ]
 
 
 class Scintillation(RD):
