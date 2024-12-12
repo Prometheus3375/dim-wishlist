@@ -44,8 +44,11 @@ class PerfectParadox(RD):
     _mags = [magazines.TacticalMag, magazines.LightMag]
     rolls = [
         roll(
-            'Melee damage increase; Ready/Stow speed-wise Pugilist is better than Threat Detector x1, '
-            'but is worse than Threat Detector x2',
+            """
+            Melee damage increase;
+            Ready/Stow speed-wise Pugilist is better than Threat Detector x1,
+            but is worse than Threat Detector x2
+            """,
             _barrels,
             _mags,
             [traits.Pugilist, traits.ThreatDetector],
