@@ -11,13 +11,15 @@ class Liturgy(RD):
             [traits.EnviousArsenal],
             [traits.ChillClip],
             ),
-        roll(
-            'Stasis combo',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades],
-            [traits.Rimestealer],
-            [traits.ChillClip],
-            ),
+        # Rimestealer requires destroying a frozen target or Stasis crystal
+        # which hard to achieve with Chill Clip.
+        # roll(
+        #     'Stasis combo',
+        #     [barrels.HardLaunch, AnyPerk],
+        #     [magazines.SpikeGrenades],
+        #     [traits.Rimestealer],
+        #     [traits.ChillClip],
+        #     ),
         ]
 
 
@@ -34,13 +36,22 @@ class RedTape(RD):
         magazines.AlloyMagazine,
         magazines.FlaredMagwell,
         ]
-    rolls = roll(
-        'PvE rolls',
-        _barrels,
-        _mags,
-        [traits.Demolitionist, traits.Rimestealer],
-        [traits.ExplosivePayload, traits.Headstone],
-        ),
+    rolls = [
+        roll(
+            'Explosive Payload roll',
+            _barrels,
+            _mags,
+            [traits.Demolitionist],
+            [traits.ExplosivePayload, traits.Headstone],
+            ),
+        roll(
+            'Headstone roll',
+            _barrels,
+            _mags,
+            [traits.Demolitionist, traits.Rimestealer],
+            [traits.Headstone],
+            ),
+        ]
 
 
 # class Insurmountable(RD):
