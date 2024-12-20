@@ -34,7 +34,7 @@ class LiveFire(RD):
     rolls = [
         roll(
             'Shoot to Loot roll',
-            [traits.Rimestealer, traits.RapidHit],
+            [traits.RapidHit],
             [traits.ShootToLoot],
             ),
         roll(

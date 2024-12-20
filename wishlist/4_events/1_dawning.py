@@ -75,10 +75,12 @@ class Zephyr(RD):
             [traits.WhirlwindBlade, traits.Surrounded],
             ),
         roll(
-            'Stasis roll',
+            'Cold Steel roll',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            [traits.Rimestealer, traits.RelentlessStrikes, traits.AttritionOrbs],
+            # Rimestealer requires destroying a frozen target or Stasis crystal
+            # which hard to achieve with Cold Steel.
+            [traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.ColdSteel],
             ),
         roll(
