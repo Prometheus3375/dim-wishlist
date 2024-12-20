@@ -3,11 +3,10 @@ from database import *
 
 class TinashasMastery(RD):
     item = Item(name="Tinasha's Mastery", hash=480368036)
-    _mag_note = (
-        '; '
-        'High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, '
-        'Tactical Mag with Backup Mag mod is the second best'
-    )
+    _mag_note = """;
+    High-Explosive Ordnance with Backup Mag mod gives the maximum reserves,
+    Tactical Mag with Backup Mag mod is the second best
+    """
 
     rolls = [
         roll(
