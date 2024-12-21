@@ -270,17 +270,17 @@ class RD:
         else:
             raise TypeError(f'either items or item must be specified in {cls.__name__}')
 
-        roll_ = getattr(cls, 'roll', None)
+        roll = getattr(cls, 'roll', None)
         rolls = getattr(cls, 'rolls', None)
 
-        if roll_ and rolls:
+        if roll and rolls:
             raise TypeError(f'rolls and roll cannot be both specified in {cls.__name__}')
-        elif roll_:
-            if is_annotated_roll(roll_):
-                cls.rolls = (roll_,)
+        elif roll:
+            if is_annotated_roll(roll):
+                cls.rolls = (roll,)
                 del cls.roll
             else:
-                raise TypeError(f'roll must be of type {AnnotatedRoll.__name__}, got {roll_!r}')
+                raise TypeError(f'roll must be of type {AnnotatedRoll.__name__}, got {roll!r}')
         elif rolls:
             if not isinstance(rolls, tuple):
                 # noinspection PyTypeChecker
@@ -291,7 +291,7 @@ class RD:
                     f'rolls must be a sequence of {AnnotatedRoll.__name__}, got {rolls!r}'
                     )
         else:
-            raise TypeError(f'either rolls or roll must be specified in {cls.__name__}')
+            cls.rolls = ()
 
 
 __all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RD'
