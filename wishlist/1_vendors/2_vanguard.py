@@ -4,14 +4,14 @@ from database import *
 class WickedSister(RD):
     item = Item(name='Wicked Sister', hash=2039776723)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
             [traits.BaitAndSwitch],
             ),
-        roll(
+        Roll(
             'Roll with high DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
@@ -27,7 +27,7 @@ class Scintillation(RD):
         Item(name='Scintillation (Adept)', hash=1492522228),
         ]
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
@@ -35,7 +35,7 @@ class Scintillation(RD):
             [traits.BaitAndSwitch, traits.Surrounded],
             [origin.VeistStinger],
             ),
-        roll(
+        Roll(
             'ALH and BnS are good combo',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
@@ -43,7 +43,7 @@ class Scintillation(RD):
             [traits.BaitAndSwitch],
             [origin.VeistStinger],
             ),
-        roll(
+        Roll(
             'Rewind Rounds with Veist Stinger usually allows to fire all reserves. '
             'Unfortunately, any mag stat increase above 20 reduces reserves; '
             'Enhanced Battery is +20, Ionized Battery is +40',
@@ -58,7 +58,7 @@ class RakeAngle(RD):
         Item(name='Rake Angle', hash=2298039571),
         Item(name='Rake Angle (Adept)', hash=3997086838),
         ]
-    roll = roll(
+    roll = Roll(
         """
         PvE rolls;
         Backup Mag, Appended Mag and Extended Mag add 1 ammo,

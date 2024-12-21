@@ -9,7 +9,7 @@ class StayFrosty(RD):
         magazines.AlloyMagazine,
         magazines.FlaredMagwell,
         ]
-    roll = roll(
+    roll = Roll(
         'Headstone roll',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
@@ -21,28 +21,28 @@ class StayFrosty(RD):
 class Glacioclasm(RD):
     item = Item(name='Glacioclasm', hash=1183116657)
     rolls = [
-        roll(
+        Roll(
             'Roll for ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Subsistence, traits.Overflow],
             [traits.ReservoirBurst],
             ),
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Overflow],
             [traits.ControlledBurst],
             ),
-        roll(
+        Roll(
             'Weaken support roll',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Overflow],
             [traits.WitheringGaze],
             ),
-        roll(
+        Roll(
             'PvP roll',
             [barrels.Smallbore],
             [batteries.ProjectionFuse],
@@ -54,7 +54,7 @@ class Glacioclasm(RD):
 
 class MistralLift(RD):
     item = Item(name='Mistral Lift', hash=3483485727)
-    roll = roll(
+    roll = Roll(
         'Roll for damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [batteries.AcceleratedCoils, AnyPerk],
@@ -67,14 +67,14 @@ class MistralLift(RD):
 class Zephyr(RD):
     item = Item(name='Zephyr', hash=601948197)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
             [traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.WhirlwindBlade, traits.Surrounded],
             ),
-        roll(
+        Roll(
             'Cold Steel roll',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
@@ -83,7 +83,7 @@ class Zephyr(RD):
             [traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.ColdSteel],
             ),
-        roll(
+        Roll(
             'Roll for ad clear',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],

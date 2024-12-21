@@ -12,19 +12,19 @@ class ErgoSum(RD):
         'Aegis thoughts: https://youtu.be/bGTXGydS8uM'
     )
     rolls = [
-        roll(
+        Roll(
             _dmg_note,
             [unique.ErgoSum.ThePerfectFifth],
             [unique.ErgoSum.CasterFrame],
             _blades,
             ),
-        roll(
+        Roll(
             _dmg_note,
             [unique.ErgoSum.UnplannedReprieve],
             [unique.ErgoSum.LightweightFrame],
             _blades,
             ),
-        roll(
+        Roll(
             'Roll to activate Wolfpack Rounds on swords. '
             'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
             [unique.ErgoSum.WolfpackRounds],
@@ -32,7 +32,7 @@ class ErgoSum(RD):
             _blades,
             [guards.SwordmastersGuard, AnyPerk],
             ),
-        roll(
+        Roll(
             'Roll for ad clear',
             [unique.ErgoSum.ArcConductor],
             [
@@ -49,7 +49,7 @@ class ErgoSum(RD):
         #     [unique.ErgoSum.WaveSwordFrame],
         #     _ergo_sum_blades,
         #     ),
-        roll(
+        Roll(
             'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
             [unique.ErgoSum.Stormbringer],
             is_trash=True,
@@ -67,13 +67,13 @@ one class item w/ Spirit of Star-Eater to another
 class Relativism(RD):
     item = Item(name='Relativism', hash=2809120022)
     rolls = [
-        roll(
+        Roll(
             _note_spirit_of_the_star_eater,
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Caliban,
              unique.SpiritOf.Foetracer, unique.SpiritOf.Galanor],
             [unique.SpiritOf.StarEater],
             ),
-        roll(
+        Roll(
             """
             Roll for melee builds.
             Melee builds should be paired with Stylish Executioner aspect
@@ -84,17 +84,17 @@ class Relativism(RD):
             [unique.SpiritOf.Caliban, unique.SpiritOf.Renewal],
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
-        roll(
+        Roll(
             'Roll with Cyrtarachne',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Foetracer],
             [unique.SpiritOf.Cyrtarachne],
             ),
-        roll(
+        Roll(
             'Roll with Gyrfalcon',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Gyrfalcon],
             ),
-        roll(
+        Roll(
             'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Wormhusk],
@@ -105,37 +105,37 @@ class Relativism(RD):
 class Stoicism(RD):
     item = Item(name='Stoicism', hash=266021826)
     rolls = [
-        roll(
+        Roll(
             _note_spirit_of_the_star_eater,
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Bear, unique.SpiritOf.EternalWarrior],
             [unique.SpiritOf.StarEater],
             ),
-        roll(
+        Roll(
             'Roll for grenade builds',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Verity, unique.SpiritOf.Armamentarium],
             ),
-        roll(
+        Roll(
             'Roll for melee builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Severance],
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
             ),
-        roll(
+        Roll(
             'Roll for class ability builds',
             [unique.SpiritOf.Hoarfrost],
             [unique.SpiritOf.Horn],
             ),
-        roll(
+        Roll(
             'Roll for Unbreakable aspect',
             [unique.SpiritOf.Bear],
             [unique.SpiritOf.Armamentarium],
             ),
-        roll(
+        Roll(
             "Roll for Drengr's Lash aspect",
             [unique.SpiritOf.Abeyant],
             [unique.SpiritOf.Horn],
             ),
-        roll(
+        Roll(
             'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.AlphaLupi],
@@ -146,22 +146,22 @@ class Stoicism(RD):
 class Solipsism(RD):
     item = Item(name='Solipsism', hash=2273643087)
     rolls = [
-        roll(
+        Roll(
             _note_spirit_of_the_star_eater,
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Necrotic],
             [unique.SpiritOf.StarEater],
             ),
-        roll(
+        Roll(
             'Roll for grenade builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Verity],
             ),
-        roll(
+        Roll(
             'Roll for melee builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Necrotic],
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw],
             ),
-        roll(
+        Roll(
             'Roll for Empowered Rift',
             [unique.SpiritOf.Filaments, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Starfire],
@@ -171,7 +171,7 @@ class Solipsism(RD):
         #     [unique.SpiritOf.InmostLight, unique.SpiritOf.Stag],
         #     [unique.SpiritOf.Vesper],
         #     ),
-        roll(
+        Roll(
             'Roll for PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Harmony],

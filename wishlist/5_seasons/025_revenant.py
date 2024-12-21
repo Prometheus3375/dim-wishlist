@@ -4,7 +4,7 @@ from database import *
 class Liturgy(RD):
     item = Item(name='Liturgy', hash=2599338624)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage rotations',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades],
@@ -37,14 +37,14 @@ class RedTape(RD):
         magazines.FlaredMagwell,
         ]
     rolls = [
-        roll(
+        Roll(
             'Explosive Payload roll',
             _barrels,
             _mags,
             [traits.Demolitionist],
             [traits.ExplosivePayload],
             ),
-        roll(
+        Roll(
             'Headstone roll',
             _barrels,
             _mags,
@@ -60,7 +60,7 @@ class RedTape(RD):
 
 class Sovereignty(RD):
     item = Item(name='Sovereignty', hash=3818198556)
-    roll = roll(
+    roll = Roll(
         'Weaken support roll',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
@@ -77,7 +77,7 @@ class VantagePoint(RD):
         magazines.AlloyMagazine,
         magazines.FlaredMagwell,
         ]
-    roll = roll(
+    roll = Roll(
         'Roll for ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
@@ -94,7 +94,7 @@ class NoxiousVetiver(RD):
         magazines.TacticalMag,
         magazines.AppendedMag,
         ]
-    roll = roll(
+    roll = Roll(
         'Roll for ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
@@ -110,14 +110,14 @@ class NoxiousVetiver(RD):
 class BitterSweet(RD):
     item = Item(name='Bitter/Sweet', hash=2599338625)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal],
             [traits.BaitAndSwitch],
             ),
-        roll(
+        Roll(
             'Roll with high DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
@@ -129,7 +129,7 @@ class BitterSweet(RD):
 
 class HereticsFervor(RD):
     item = Item(name="Heretic's Fervor", hash=4224667951)
-    roll = roll(
+    roll = Roll(
         'Roll for damage dealing',
         [barrels.QuickLaunch, AnyPerk],
         [magazines.ImpactCasing, AnyPerk],
@@ -147,14 +147,14 @@ class ChromaRush(RD):
         magazines.AppendedMag,
         ]
     rolls = [
-        roll(
+        Roll(
             'Kinetic Tremor roll',
             [barrels.ArrowheadBrake, AnyPerk],
             _mags,
             [traits.Subsistence],
             [traits.KineticTremors],
             ),
-        roll(
+        Roll(
             "Good ol' roll",
             [barrels.ArrowheadBrake, AnyPerk],
             _mags,
@@ -174,7 +174,7 @@ class ChromaRush(RD):
 
 class SojournersTale(RD):
     item = Item(name="Sojourner's Tale", hash=2130875369)
-    roll = roll(
+    roll = Roll(
         'Roll for damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
