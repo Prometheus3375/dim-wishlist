@@ -83,7 +83,7 @@ class YarovitMG4(RD):
     roll = Roll(
         'PvE',
         [traits.Strategist, traits.EnlightenedAction],
-        [traits.Headstone, traits.DesperateMeasures, traits.Surrounded],
+        [traits.Headstone, traits.Surrounded],
         )
 
 
