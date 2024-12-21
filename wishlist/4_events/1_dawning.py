@@ -70,9 +70,13 @@ class MistralLift(RD):
         'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [batteries.AcceleratedCoils, AnyPerk],
-        [traits.Reconstruction, traits.EnviousAssassin, traits.ClownCartridge,
-         traits.WitheringGaze],
-        [traits.PrecisionInstrument, traits.BaitAndSwitch],
+        [
+            traits.EnviousArsenal,
+            traits.EnviousAssassin,
+            traits.Reconstruction,
+            traits.WitheringGaze,
+            ],
+        [traits.BaitAndSwitch, traits.PrecisionInstrument],
         )
 
 
