@@ -2,6 +2,10 @@ from database import *
 
 
 class PyroelectricPropellant(RD):
+    """
+    Arc Auto Rifle, Adaptive Frame
+    https://www.light.gg/db/items/4232480042
+    """
     item = Item(name='VS Pyroelectric Propellant', hash=4232480042)
     roll = Roll(
         'Roll for ad clear',
@@ -11,6 +15,10 @@ class PyroelectricPropellant(RD):
 
 
 class GraviticArrest(RD):
+    """
+    Void Fusion Rifle, Adaptive Frame
+    https://www.light.gg/db/items/93061497
+    """
     item = Item(name='VS Gravitic Arrest', hash=93061497)
     rolls = [
         Roll(
@@ -31,6 +39,10 @@ class GraviticArrest(RD):
 
 
 class VelocityBaton(RD):
+    """
+    Void Breechloaded Grenade Launcher, Area Denial Frame
+    https://www.light.gg/db/items/1762785663
+    """
     item = Item(name='VS Velocity Baton', hash=1762785663)
     rolls = [
         Roll(
@@ -51,6 +63,10 @@ class VelocityBaton(RD):
 
 
 class ChillInhibitor(RD):
+    """
+    Stasis Power Grenade Launcher, Rapid-Fire Frame
+    https://www.light.gg/db/items/1762785662
+    """
     item = Item(name='VS Chill Inhibitor', hash=1762785662)
     rolls = [
         Roll(

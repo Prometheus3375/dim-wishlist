@@ -2,6 +2,9 @@ from database import *
 
 
 class WickedSister(RD):
+    """
+    Strand Power Grenade Launcher, Adaptive Frame
+    """
     item = Item(name='Wicked Sister', hash=2039776723)
     rolls = [
         Roll(
@@ -22,6 +25,10 @@ class WickedSister(RD):
 
 
 class Scintillation(RD):
+    """
+    Strand Linear Fusion Rifle, Adaptive Burst
+    https://www.light.gg/db/items/2591257541
+    """
     items = [
         Item(name='Scintillation', hash=2591257541),
         Item(name='Scintillation (Adept)', hash=1492522228),
@@ -54,6 +61,10 @@ class Scintillation(RD):
 
 
 class RakeAngle(RD):
+    """
+    Stasis Aggressive Glaive
+    https://www.light.gg/db/items/2298039571
+    """
     items = [
         Item(name='Rake Angle', hash=2298039571),
         Item(name='Rake Angle (Adept)', hash=3997086838),

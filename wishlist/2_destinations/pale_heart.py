@@ -2,6 +2,10 @@ from database import *
 
 
 class ErgoSum(RD):
+    """
+    Exotic Sword on Special Ammo
+    https://www.light.gg/db/items/1681583613
+    """
     item = ErgoSum = Item(name='Ergo Sum', hash=1681583613)
     _blades = [blades.EnduringBlade, AnyPerk]
     _dmg_note = (
@@ -65,6 +69,10 @@ one class item w/ Spirit of Star-Eater to another
 
 
 class Relativism(RD):
+    """
+    Hunter Exotic Class Item
+    https://www.light.gg/db/items/2809120022
+    """
     item = Item(name='Relativism', hash=2809120022)
     rolls = [
         Roll(
@@ -103,6 +111,10 @@ class Relativism(RD):
 
 
 class Stoicism(RD):
+    """
+    Titan Exotic Class Item
+    https://www.light.gg/db/items/266021826
+    """
     item = Item(name='Stoicism', hash=266021826)
     rolls = [
         Roll(
@@ -144,6 +156,10 @@ class Stoicism(RD):
 
 
 class Solipsism(RD):
+    """
+    Warlock Exotic Class Item
+    https://www.light.gg/db/items/2273643087
+    """
     item = Item(name='Solipsism', hash=2273643087)
     rolls = [
         Roll(

@@ -2,6 +2,10 @@ from database import *
 
 
 class Breachlight(RD):
+    """
+    Strand Sidearm, Heavy Burst
+    https://www.light.gg/db/items/2328923181
+    """
     item = Item(name='Breachlight', hash=2328923181)
     _mags = [magazines.FlaredMagwell, magazines.TacticalMag, magazines.AppendedMag]
     rolls = [
@@ -23,6 +27,10 @@ class Breachlight(RD):
 
 
 class PatronOfLostCauses(RD):
+    """
+    Kinetic Scout Rifle, Lightweight Frame
+    https://www.light.gg/db/items/2249996761
+    """
     item = Item(name='Patron of Lost Causes', hash=2249996761)
     rolls = [
         Roll(
@@ -39,6 +47,10 @@ class PatronOfLostCauses(RD):
 
 
 class PerfectParadox(RD):
+    """
+    Kinetic Shotgun, Rapid-Fire Frame
+    https://www.light.gg/db/items/1298672084
+    """
     item = Item(name='Perfect Paradox', hash=1298672084)
     _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
     _mags = [magazines.TacticalMag, magazines.LightMag]
@@ -65,6 +77,10 @@ class PerfectParadox(RD):
 
 
 class MartyrsRetribution(RD):
+    """
+    Solar Breechloaded Grenade Launcher, Wave Frame
+    https://www.light.gg/db/items/2584830733
+    """
     item = Item(name="Martyr's Retribution", hash=2584830733)
     rolls = [
         Roll(
@@ -96,6 +112,10 @@ class MartyrsRetribution(RD):
 
 
 class LineInTheSand(RD):
+    """
+    Arc Linear Fusion Rifle, Precision Frame
+    https://www.light.gg/db/items/2450049485
+    """
     item = Item(name='Line in the Sand', hash=2450049485)
     roll = Roll(
         'Roll for damage dealing',

@@ -2,6 +2,10 @@ from database import *
 
 
 class ArcaneEmbrace(RD):
+    """
+    Arc Shotgun, Heavy Burst
+    https://www.light.gg/db/items/3649985571
+    """
     item = Item(name='Arcane Embrace', hash=3649985571)
     roll = Roll(
         'Roll for damage dealing',
