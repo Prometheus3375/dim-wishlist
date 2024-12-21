@@ -55,7 +55,7 @@ class Glacioclasm(RD):
             [barrels.Smallbore],
             [batteries.ProjectionFuse],
             [traits.UnderPressure],
-            [traits.HighImpactReserves, traits.ClosingTime],
+            [traits.ClosingTime, traits.HighImpactReserves],
             ),
         ]
 
@@ -105,7 +105,7 @@ class Zephyr(RD):
             'Ad clear',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade, traits.AttritionOrbs],
+            [traits.TirelessBlade, traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.ChainReaction],
             ),
         ]
