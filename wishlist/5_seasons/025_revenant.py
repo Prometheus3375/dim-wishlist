@@ -42,7 +42,7 @@ class RedTape(RD):
             _barrels,
             _mags,
             [traits.Demolitionist],
-            [traits.ExplosivePayload, traits.Headstone],
+            [traits.ExplosivePayload],
             ),
         roll(
             'Headstone roll',
