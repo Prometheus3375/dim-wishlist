@@ -4,7 +4,7 @@ description:Rolls on weapons and armor Prometheus3375 would like to have
 // Wish rolls
 
 // Ded Gramarye IV
-//notes:Chain Reaction roll
+//notes:Ad clear
 dimwishlist:item=499245245&perks=1300023272,791862061,3978468247,2396489472
 dimwishlist:item=499245245&perks=1300023272,791862061,4071163871,2396489472
 dimwishlist:item=499245245&perks=1300023272,679225683,3978468247,2396489472
@@ -24,7 +24,7 @@ dimwishlist:item=499245245&perks=1482024992,679225683,4071163871,2396489472
 dimwishlist:item=499245245&perks=1482024992,106909392,3978468247,2396489472
 dimwishlist:item=499245245&perks=1482024992,106909392,4071163871,2396489472
 
-//notes:Voltshot roll; mag increasing perks are not good with Voltshot as with them reserves deplete earlier; Discord is not an option as it refills mag, does not reload; thus, it does not activate Voltshot
+//notes:Voltshot. Mag increasing perks are not good with Voltshot as with them reserves deplete earlier. Discord is not an option as it refills mag, does not reload; thus, it does not activate Voltshot
 dimwishlist:item=499245245&perks=1300023272,791862061,4071163871,2173046394
 dimwishlist:item=499245245&perks=1300023272,679225683,4071163871,2173046394
 dimwishlist:item=499245245&perks=4090651448,791862061,4071163871,2173046394
@@ -33,15 +33,15 @@ dimwishlist:item=499245245&perks=1482024992,791862061,4071163871,2173046394
 dimwishlist:item=499245245&perks=1482024992,679225683,4071163871,2173046394
 
 // Live Fire
-//notes:Shoot to Loot roll
+//notes:Shoot to Loot
 dimwishlist:item=3612142623&perks=247725512,3700496672
 
-//notes:Headstone roll, prefer Red Tape for Rimestealer + Headstone
+//notes:Headstone. Prefer Red Tape for Rimestealer + Headstone
 dimwishlist:item=3612142623&perks=1955165503,124408337
 dimwishlist:item=3612142623&perks=247725512,124408337
 
 // Veleda F
-//notes:Weaken support roll
+//notes:Withering Gaze
 dimwishlist:item=4200122994&perks=839105230,106909392,1421772400,1134488199
 dimwishlist:item=4200122994&perks=839105230,1431678320,1421772400,1134488199
 dimwishlist:item=4200122994&perks=839105230,3230963543,1421772400,1134488199
@@ -50,16 +50,14 @@ dimwishlist:item=4200122994&perks=1431678320,1421772400,1134488199
 dimwishlist:item=4200122994&perks=3230963543,1421772400,1134488199
 
 // Yarovit MG4
-//notes:Good PvE roll
+//notes:PvE
 dimwishlist:item=3959549446&perks=880644845,124408337
-dimwishlist:item=3959549446&perks=880644845,2109543898
 dimwishlist:item=3959549446&perks=880644845,3708227201
 dimwishlist:item=3959549446&perks=3828510309,124408337
-dimwishlist:item=3959549446&perks=3828510309,2109543898
 dimwishlist:item=3959549446&perks=3828510309,3708227201
 
 // Legato-11
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=3753063346&perks=839105230,791862061,3300816228,1546637391
 dimwishlist:item=3753063346&perks=839105230,791862061,3400784728,1546637391
 dimwishlist:item=3753063346&perks=839105230,106909392,3300816228,1546637391
@@ -74,7 +72,7 @@ dimwishlist:item=3753063346&perks=679225683,3300816228,1546637391
 dimwishlist:item=3753063346&perks=679225683,3400784728,1546637391
 
 // Suspectum-4FR
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=3615421669&perks=839105230,689005463,968510818,555281244
 dimwishlist:item=3615421669&perks=839105230,689005463,3828510309,555281244
 dimwishlist:item=3615421669&perks=839105230,968510818,555281244
@@ -85,7 +83,7 @@ dimwishlist:item=3615421669&perks=968510818,555281244
 dimwishlist:item=3615421669&perks=3828510309,555281244
 
 // Wicked Sister
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=2039776723&perks=981914802,3301904089,3987942396,3078487919
 dimwishlist:item=2039776723&perks=981914802,3301904089,968510818,3078487919
 dimwishlist:item=2039776723&perks=981914802,3301904089,3300816228,3078487919
@@ -99,7 +97,7 @@ dimwishlist:item=2039776723&perks=3987942396,3078487919
 dimwishlist:item=2039776723&perks=968510818,3078487919
 dimwishlist:item=2039776723&perks=3300816228,3078487919
 
-//notes:Roll with high DPS
+//notes:High DPS
 dimwishlist:item=2039776723&perks=3525010810,3301904089,3987942396,3194351027
 dimwishlist:item=2039776723&perks=3525010810,3301904089,968510818,3194351027
 dimwishlist:item=2039776723&perks=3525010810,3301904089,3300816228,3194351027
@@ -114,7 +112,7 @@ dimwishlist:item=2039776723&perks=968510818,3194351027
 dimwishlist:item=2039776723&perks=3300816228,3194351027
 
 // Scintillation
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=2591257541&perks=839105230,2680121939,3418782618,3078487919,3988215619
 dimwishlist:item=2591257541&perks=839105230,2680121939,3418782618,3708227201,3988215619
 dimwishlist:item=2591257541&perks=839105230,2680121939,968510818,3078487919,3988215619
@@ -149,7 +147,7 @@ dimwishlist:item=2591257541&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=2591257541&perks=3300816228,3078487919,3988215619
 
 // Scintillation (Adept)
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=1492522228&perks=839105230,2680121939,3418782618,3078487919,3988215619
 dimwishlist:item=1492522228&perks=839105230,2680121939,3418782618,3708227201,3988215619
 dimwishlist:item=1492522228&perks=839105230,2680121939,968510818,3078487919,3988215619
@@ -184,7 +182,7 @@ dimwishlist:item=1492522228&perks=689005463,3300816228,3078487919,3988215619
 dimwishlist:item=1492522228&perks=3300816228,3078487919,3988215619
 
 // Rake Angle
-//notes:PvE rolls; Backup Mag, Appended Mag and Extended Mag add 1 ammo, Adept Mag adds 2 ammo, Adept Mag + Extended Mag add 3 ammo. I suggest Adept Mag + Alloy Magazine for mag size of 6 and faster reload at 3 ammo
+//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 6 and faster reload at 3 ammo
 dimwishlist:item=2298039571&perks=2713678205,1431678320,1966281507,2978966579
 dimwishlist:item=2298039571&perks=2713678205,1431678320,3643424744,2978966579
 dimwishlist:item=2298039571&perks=2713678205,679225683,1966281507,2978966579
@@ -199,7 +197,7 @@ dimwishlist:item=2298039571&perks=1966281507,2978966579
 dimwishlist:item=2298039571&perks=3643424744,2978966579
 
 // Rake Angle (Adept)
-//notes:PvE rolls; Backup Mag, Appended Mag and Extended Mag add 1 ammo, Adept Mag adds 2 ammo, Adept Mag + Extended Mag add 3 ammo. I suggest Adept Mag + Alloy Magazine for mag size of 6 and faster reload at 3 ammo
+//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 6 and faster reload at 3 ammo
 dimwishlist:item=3997086838&perks=2713678205,1431678320,1966281507,2978966579
 dimwishlist:item=3997086838&perks=2713678205,1431678320,3643424744,2978966579
 dimwishlist:item=3997086838&perks=2713678205,679225683,1966281507,2978966579
@@ -214,7 +212,7 @@ dimwishlist:item=3997086838&perks=1966281507,2978966579
 dimwishlist:item=3997086838&perks=3643424744,2978966579
 
 // Bygones
-//notes:PvE rolls
+//notes:PvE
 dimwishlist:item=2199554524&perks=243981275,3891536761
 dimwishlist:item=2199554524&perks=3700496672,3891536761
 
@@ -225,7 +223,7 @@ dimwishlist:item=1051949956&perks=243981275,2173046394
 dimwishlist:item=1051949956&perks=3523296417,2173046394
 
 // Tinasha's Mastery
-//notes:Chill Clip roll; High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, Tactical Mag with Backup Mag mod is the second best
+//notes:Chill Clip. High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, Tactical Mag with Backup Mag mod is the second best
 dimwishlist:item=480368036&perks=1478423395,1380253176,951095735,2978966579
 dimwishlist:item=480368036&perks=1478423395,1380253176,1421772400,2978966579
 dimwishlist:item=480368036&perks=1478423395,1380253176,1119449540,2978966579
@@ -245,7 +243,7 @@ dimwishlist:item=480368036&perks=951095735,2978966579
 dimwishlist:item=480368036&perks=1421772400,2978966579
 dimwishlist:item=480368036&perks=1119449540,2978966579
 
-//notes:Roll for ad clear; High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, Tactical Mag with Backup Mag mod is the second best
+//notes:Ad clear. High-Explosive Ordnance with Backup Mag mod gives the maximum reserves, Tactical Mag with Backup Mag mod is the second best
 dimwishlist:item=480368036&perks=1478423395,1380253176,951095735,4049631843
 dimwishlist:item=480368036&perks=1478423395,1380253176,951095735,3673922083
 dimwishlist:item=480368036&perks=1478423395,1380253176,1421772400,4049631843
@@ -272,7 +270,7 @@ dimwishlist:item=480368036&perks=1421772400,4049631843
 dimwishlist:item=480368036&perks=1421772400,3673922083
 
 // Archon's Thunder
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=2896109856&perks=839105230,1087426260,1955165503,124408337
 dimwishlist:item=2896109856&perks=839105230,1087426260,1421772400,124408337
 dimwishlist:item=2896109856&perks=839105230,1431678320,1955165503,124408337
@@ -291,17 +289,17 @@ dimwishlist:item=2896109856&perks=106909392,1955165503,124408337
 dimwishlist:item=2896109856&perks=106909392,1421772400,124408337
 
 // Yesterday's Question
-//notes:Roll for Lucky Pants
+//notes:Damage dealing with Lucky Pants
 dimwishlist:item=2300143112&perks=1354429876,1546637391
 dimwishlist:item=2300143112&perks=247725512,1546637391
 
 // Yesterday's Question (Adept)
-//notes:Roll for Lucky Pants
+//notes:Damage dealing with Lucky Pants
 dimwishlist:item=2378785953&perks=1354429876,1546637391
 dimwishlist:item=2378785953&perks=247725512,1546637391
 
 // Tomorrow's Answer
-//notes:Roll for damage dealing; High-Impact Frame is bad for burst damage, but there is no other good Void RL
+//notes:Damage dealing. High-Impact Frame is bad for this, but there is no other good Void RL
 dimwishlist:item=3009199534&perks=3525010810,3796465595,3987942396,3078487919
 dimwishlist:item=3009199534&perks=3525010810,3796465595,3987942396,3194351027
 dimwishlist:item=3009199534&perks=3525010810,3796465595,1134488199,3078487919
@@ -319,7 +317,7 @@ dimwishlist:item=3009199534&perks=3987942396,3194351027
 dimwishlist:item=3009199534&perks=1134488199,3078487919
 dimwishlist:item=3009199534&perks=1134488199,3194351027
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=3009199534&perks=1478423395,2985827016,960810156,1439600632
 dimwishlist:item=3009199534&perks=1478423395,2985827016,960810156,2396489472
 dimwishlist:item=3009199534&perks=1478423395,2985827016,1421772400,1439600632
@@ -338,7 +336,7 @@ dimwishlist:item=3009199534&perks=1421772400,1439600632
 dimwishlist:item=3009199534&perks=1421772400,2396489472
 
 // Tomorrow's Answer (Adept)
-//notes:Roll for damage dealing; High-Impact Frame is bad for burst damage, but there is no other good Void RL
+//notes:Damage dealing. High-Impact Frame is bad for this, but there is no other good Void RL
 dimwishlist:item=303107619&perks=3525010810,3796465595,3987942396,3078487919
 dimwishlist:item=303107619&perks=3525010810,3796465595,3987942396,3194351027
 dimwishlist:item=303107619&perks=3525010810,3796465595,1134488199,3078487919
@@ -356,7 +354,7 @@ dimwishlist:item=303107619&perks=3987942396,3194351027
 dimwishlist:item=303107619&perks=1134488199,3078487919
 dimwishlist:item=303107619&perks=1134488199,3194351027
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=303107619&perks=1478423395,2985827016,960810156,1439600632
 dimwishlist:item=303107619&perks=1478423395,2985827016,960810156,2396489472
 dimwishlist:item=303107619&perks=1478423395,2985827016,1421772400,1439600632
@@ -375,118 +373,118 @@ dimwishlist:item=303107619&perks=1421772400,1439600632
 dimwishlist:item=303107619&perks=1421772400,2396489472
 
 // Ergo Sum
-//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
+//notes:Damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1522566605,519046634,1261178282
 dimwishlist:item=1681583613&perks=1522566605,519046634
 
-//notes:Roll for damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
+//notes:Damage dealing. Blade and guard is not that important. Prefer Enduring Blade for more ammo. In any damage situation you should be transcendent which maximizes Charge Rate anyway. Aegis thoughts: https://youtu.be/bGTXGydS8uM
 dimwishlist:item=1681583613&perks=1327961177,2753228730,1261178282
 dimwishlist:item=1681583613&perks=1327961177,2753228730
 
-//notes:Roll to activate Wolfpack Rounds on swords. Lightweight Frame has fast heavy attack which consumes only 3 ammo
+//notes:Lightweight Frame has fast heavy attack which consumes only 3 ammo, good for Wolfpack Rounds
 dimwishlist:item=1681583613&perks=1959135343,2753228730,1261178282,269888150
 dimwishlist:item=1681583613&perks=1959135343,2753228730,1261178282
 dimwishlist:item=1681583613&perks=1959135343,2753228730,269888150
 dimwishlist:item=1681583613&perks=1959135343,2753228730
 
-//notes:Roll for ad clear
-dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282,269888150
-dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282
-dimwishlist:item=1681583613&perks=3949068808,2753228730,269888150
-dimwishlist:item=1681583613&perks=3949068808,2753228730
+//notes:Ad clear
 dimwishlist:item=1681583613&perks=3949068808,289811733,1261178282,269888150
 dimwishlist:item=1681583613&perks=3949068808,289811733,1261178282
 dimwishlist:item=1681583613&perks=3949068808,289811733,269888150
 dimwishlist:item=1681583613&perks=3949068808,289811733
+dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282,269888150
+dimwishlist:item=1681583613&perks=3949068808,2753228730,1261178282
+dimwishlist:item=1681583613&perks=3949068808,2753228730,269888150
+dimwishlist:item=1681583613&perks=3949068808,2753228730
 dimwishlist:item=1681583613&perks=3949068808,519046634,1261178282,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634,1261178282
 dimwishlist:item=1681583613&perks=3949068808,519046634,269888150
 dimwishlist:item=1681583613&perks=3949068808,519046634
 
 // Relativism
-//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=2809120022&perks=1476923953,1476923955
 dimwishlist:item=2809120022&perks=3751917995,1476923955
 dimwishlist:item=2809120022&perks=3751917996,1476923955
 dimwishlist:item=2809120022&perks=3751917997,1476923955
 dimwishlist:item=2809120022&perks=3751917998,1476923955
 
-//notes:Roll for melee builds. Melee builds should be paired with Stylish Executioner aspect as it increases melee damage dealt from invisibility. It also provides invisibility, making Spirit of the Assassin redundant. Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
+//notes:Melee builds. Should be paired with Stylish Executioner aspect as it increases melee damage dealt from invisibility. It also provides invisibility, making Spirit of the Assassin redundant. Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
 dimwishlist:item=2809120022&perks=3751917996,3751917992
 dimwishlist:item=2809120022&perks=3751917996,1476923956
 dimwishlist:item=2809120022&perks=3751917995,3751917992
 dimwishlist:item=2809120022&perks=3751917995,1476923956
 
-//notes:Roll with Cyrtarachne
+//notes:Cyrtarachne
 dimwishlist:item=2809120022&perks=1476923953,3751917994
 dimwishlist:item=2809120022&perks=3751917995,3751917994
 dimwishlist:item=2809120022&perks=3751917997,3751917994
 
-//notes:Roll with Gyrfalcon
+//notes:Gyrfalcon
 dimwishlist:item=2809120022&perks=1476923953,3751917993
 
-//notes:Roll for PvP
+//notes:PvP
 dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 // Stoicism
-//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=266021826&perks=1476923953,1476923955
 dimwishlist:item=266021826&perks=3573490505,1476923955
 dimwishlist:item=266021826&perks=3573490511,1476923955
 
-//notes:Roll for grenade builds
+//notes:Grenade builds
 dimwishlist:item=266021826&perks=1476923953,1476923957
 dimwishlist:item=266021826&perks=1476923953,3573490500
 
-//notes:Roll for melee builds
+//notes:Melee builds
 dimwishlist:item=266021826&perks=1476923953,1476923956
 dimwishlist:item=266021826&perks=1476923953,3573490504
 dimwishlist:item=266021826&perks=3573490509,1476923956
 dimwishlist:item=266021826&perks=3573490509,3573490504
 
-//notes:Roll for class ability builds
+//notes:Class ability builds
 dimwishlist:item=266021826&perks=3573490508,3573490506
 
-//notes:Roll for Unbreakable aspect
+//notes:Unbreakable aspect
 dimwishlist:item=266021826&perks=3573490505,3573490500
 
-//notes:Roll for Drengr's Lash aspect
+//notes:Drengr's Lash aspect
 dimwishlist:item=266021826&perks=3573490510,3573490506
 
-//notes:Roll for PvP
+//notes:PvP
 dimwishlist:item=266021826&perks=1476923954,3573490501
 
 // Solipsism
-//notes:Roll with Star-Eater; Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
 dimwishlist:item=2273643087&perks=1476923953,1476923955
 dimwishlist:item=2273643087&perks=183430250,1476923955
 dimwishlist:item=2273643087&perks=183430252,1476923955
 
-//notes:Roll for grenade builds
+//notes:Grenade builds
 dimwishlist:item=2273643087&perks=1476923953,1476923957
 dimwishlist:item=2273643087&perks=183430250,1476923957
 dimwishlist:item=2273643087&perks=183430253,1476923957
 
-//notes:Roll for melee builds
+//notes:Melee builds
 dimwishlist:item=2273643087&perks=1476923953,1476923956
 dimwishlist:item=2273643087&perks=1476923953,183430247
 dimwishlist:item=2273643087&perks=183430252,1476923956
 dimwishlist:item=2273643087&perks=183430252,183430247
 
-//notes:Roll for Empowered Rift
+//notes:Empowered Rift builds
 dimwishlist:item=2273643087&perks=183430255,183430249
 dimwishlist:item=2273643087&perks=183430253,183430249
 
-//notes:Roll for PvP
+//notes:PvP
 dimwishlist:item=2273643087&perks=1476923954,183430254
 
 // VS Pyroelectric Propellant
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=4232480042&perks=243981275,3966416502
 dimwishlist:item=4232480042&perks=684456054,3966416502
 
 // VS Gravitic Arrest
-//notes:Weaken support roll
+//notes:Withering Gaze
 dimwishlist:item=93061497&perks=839105230,689005463,3523296417,1134488199
 dimwishlist:item=93061497&perks=839105230,689005463,776531651,1134488199
 dimwishlist:item=93061497&perks=839105230,3523296417,1134488199
@@ -496,7 +494,7 @@ dimwishlist:item=93061497&perks=689005463,776531651,1134488199
 dimwishlist:item=93061497&perks=3523296417,1134488199
 dimwishlist:item=93061497&perks=776531651,1134488199
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=93061497&perks=839105230,689005463,3523296417,2396489472
 dimwishlist:item=93061497&perks=839105230,689005463,776531651,2396489472
 dimwishlist:item=93061497&perks=839105230,3523296417,2396489472
@@ -507,13 +505,13 @@ dimwishlist:item=93061497&perks=3523296417,2396489472
 dimwishlist:item=93061497&perks=776531651,2396489472
 
 // VS Velocity Baton
-//notes:Attrition Orbs roll
+//notes:Attrition Orbs
 dimwishlist:item=1762785663&perks=3525010810,2822142346,3523296417,243981275
 dimwishlist:item=1762785663&perks=3525010810,2822142346,776531651,243981275
 dimwishlist:item=1762785663&perks=2822142346,3523296417,243981275
 dimwishlist:item=1762785663&perks=2822142346,776531651,243981275
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=1762785663&perks=3525010810,2822142346,3523296417,3673922083
 dimwishlist:item=1762785663&perks=3525010810,2822142346,3523296417,2048641572
 dimwishlist:item=1762785663&perks=3525010810,2822142346,776531651,3673922083
@@ -524,7 +522,7 @@ dimwishlist:item=1762785663&perks=2822142346,776531651,3673922083
 dimwishlist:item=1762785663&perks=2822142346,776531651,2048641572
 
 // VS Chill Inhibitor
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=1762785662&perks=981914802,3301904089,3987942396,3078487919
 dimwishlist:item=1762785662&perks=981914802,3301904089,3987942396,3708227201
 dimwishlist:item=1762785662&perks=981914802,3301904089,3751912585,3078487919
@@ -542,7 +540,7 @@ dimwishlist:item=1762785662&perks=3987942396,3708227201
 dimwishlist:item=1762785662&perks=3751912585,3078487919
 dimwishlist:item=1762785662&perks=3751912585,3708227201
 
-//notes:Roll with high DPS
+//notes:High DPS
 dimwishlist:item=1762785662&perks=3525010810,3301904089,3987942396,3194351027
 dimwishlist:item=1762785662&perks=3525010810,3301904089,3751912585,3194351027
 dimwishlist:item=1762785662&perks=3525010810,3987942396,3194351027
@@ -552,7 +550,7 @@ dimwishlist:item=1762785662&perks=3301904089,3751912585,3194351027
 dimwishlist:item=1762785662&perks=3987942396,3194351027
 dimwishlist:item=1762785662&perks=3751912585,3194351027
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=1762785662&perks=1478423395,1380253176,960810156,3708227201
 dimwishlist:item=1762785662&perks=1478423395,1380253176,960810156,2396489472
 dimwishlist:item=1762785662&perks=1478423395,1380253176,3523296417,3708227201
@@ -571,7 +569,7 @@ dimwishlist:item=1762785662&perks=3523296417,3708227201
 dimwishlist:item=1762785662&perks=3523296417,2396489472
 
 // Stay Frosty
-//notes:Headstone roll
+//notes:Stasis combo
 dimwishlist:item=1123433952&perks=839105230,106909392,1955165503,124408337
 dimwishlist:item=1123433952&perks=839105230,1087426260,1955165503,124408337
 dimwishlist:item=1123433952&perks=839105230,1431678320,1955165503,124408337
@@ -582,7 +580,7 @@ dimwishlist:item=1123433952&perks=1431678320,1955165503,124408337
 dimwishlist:item=1123433952&perks=3230963543,1955165503,124408337
 
 // Glacioclasm
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=1183116657&perks=839105230,689005463,1820235745,1427256713
 dimwishlist:item=1183116657&perks=839105230,689005463,3643424744,1427256713
 dimwishlist:item=1183116657&perks=839105230,1820235745,1427256713
@@ -592,59 +590,59 @@ dimwishlist:item=1183116657&perks=689005463,3643424744,1427256713
 dimwishlist:item=1183116657&perks=1820235745,1427256713
 dimwishlist:item=1183116657&perks=3643424744,1427256713
 
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=1183116657&perks=839105230,689005463,3643424744,2594592626
 dimwishlist:item=1183116657&perks=839105230,3643424744,2594592626
 dimwishlist:item=1183116657&perks=689005463,3643424744,2594592626
 dimwishlist:item=1183116657&perks=3643424744,2594592626
 
-//notes:Weaken support roll
+//notes:Withering Gaze
 dimwishlist:item=1183116657&perks=839105230,689005463,3643424744,1134488199
 dimwishlist:item=1183116657&perks=839105230,3643424744,1134488199
 dimwishlist:item=1183116657&perks=689005463,3643424744,1134488199
 dimwishlist:item=1183116657&perks=3643424744,1134488199
 
-//notes:PvP roll
-dimwishlist:item=1183116657&perks=1482024992,2969185026,1645158859,2213355989
+//notes:PvP
 dimwishlist:item=1183116657&perks=1482024992,2969185026,1645158859,1194056669
+dimwishlist:item=1183116657&perks=1482024992,2969185026,1645158859,2213355989
 
 // Mistral Lift
-//notes:Roll for damage dealing
-dimwishlist:item=3483485727&perks=839105230,689005463,1523832109,555281244
-dimwishlist:item=3483485727&perks=839105230,689005463,1523832109,3078487919
-dimwishlist:item=3483485727&perks=839105230,689005463,968510818,555281244
+//notes:Damage dealing
+dimwishlist:item=3483485727&perks=839105230,689005463,3987942396,3078487919
+dimwishlist:item=3483485727&perks=839105230,689005463,3987942396,555281244
 dimwishlist:item=3483485727&perks=839105230,689005463,968510818,3078487919
-dimwishlist:item=3483485727&perks=839105230,689005463,2284787283,555281244
-dimwishlist:item=3483485727&perks=839105230,689005463,2284787283,3078487919
-dimwishlist:item=3483485727&perks=839105230,689005463,1134488199,555281244
+dimwishlist:item=3483485727&perks=839105230,689005463,968510818,555281244
+dimwishlist:item=3483485727&perks=839105230,689005463,1523832109,3078487919
+dimwishlist:item=3483485727&perks=839105230,689005463,1523832109,555281244
 dimwishlist:item=3483485727&perks=839105230,689005463,1134488199,3078487919
-dimwishlist:item=3483485727&perks=839105230,1523832109,555281244
-dimwishlist:item=3483485727&perks=839105230,1523832109,3078487919
-dimwishlist:item=3483485727&perks=839105230,968510818,555281244
+dimwishlist:item=3483485727&perks=839105230,689005463,1134488199,555281244
+dimwishlist:item=3483485727&perks=839105230,3987942396,3078487919
+dimwishlist:item=3483485727&perks=839105230,3987942396,555281244
 dimwishlist:item=3483485727&perks=839105230,968510818,3078487919
-dimwishlist:item=3483485727&perks=839105230,2284787283,555281244
-dimwishlist:item=3483485727&perks=839105230,2284787283,3078487919
-dimwishlist:item=3483485727&perks=839105230,1134488199,555281244
+dimwishlist:item=3483485727&perks=839105230,968510818,555281244
+dimwishlist:item=3483485727&perks=839105230,1523832109,3078487919
+dimwishlist:item=3483485727&perks=839105230,1523832109,555281244
 dimwishlist:item=3483485727&perks=839105230,1134488199,3078487919
-dimwishlist:item=3483485727&perks=689005463,1523832109,555281244
-dimwishlist:item=3483485727&perks=689005463,1523832109,3078487919
-dimwishlist:item=3483485727&perks=689005463,968510818,555281244
+dimwishlist:item=3483485727&perks=839105230,1134488199,555281244
+dimwishlist:item=3483485727&perks=689005463,3987942396,3078487919
+dimwishlist:item=3483485727&perks=689005463,3987942396,555281244
 dimwishlist:item=3483485727&perks=689005463,968510818,3078487919
-dimwishlist:item=3483485727&perks=689005463,2284787283,555281244
-dimwishlist:item=3483485727&perks=689005463,2284787283,3078487919
-dimwishlist:item=3483485727&perks=689005463,1134488199,555281244
+dimwishlist:item=3483485727&perks=689005463,968510818,555281244
+dimwishlist:item=3483485727&perks=689005463,1523832109,3078487919
+dimwishlist:item=3483485727&perks=689005463,1523832109,555281244
 dimwishlist:item=3483485727&perks=689005463,1134488199,3078487919
-dimwishlist:item=3483485727&perks=1523832109,555281244
-dimwishlist:item=3483485727&perks=1523832109,3078487919
-dimwishlist:item=3483485727&perks=968510818,555281244
+dimwishlist:item=3483485727&perks=689005463,1134488199,555281244
+dimwishlist:item=3483485727&perks=3987942396,3078487919
+dimwishlist:item=3483485727&perks=3987942396,555281244
 dimwishlist:item=3483485727&perks=968510818,3078487919
-dimwishlist:item=3483485727&perks=2284787283,555281244
-dimwishlist:item=3483485727&perks=2284787283,3078487919
-dimwishlist:item=3483485727&perks=1134488199,555281244
+dimwishlist:item=3483485727&perks=968510818,555281244
+dimwishlist:item=3483485727&perks=1523832109,3078487919
+dimwishlist:item=3483485727&perks=1523832109,555281244
 dimwishlist:item=3483485727&perks=1134488199,3078487919
+dimwishlist:item=3483485727&perks=1134488199,555281244
 
 // Zephyr
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=601948197&perks=3666208348,269888150,1749209109,3913600130
 dimwishlist:item=601948197&perks=3666208348,269888150,1749209109,3708227201
 dimwishlist:item=601948197&perks=3666208348,269888150,243981275,3913600130
@@ -662,7 +660,7 @@ dimwishlist:item=601948197&perks=1749209109,3708227201
 dimwishlist:item=601948197&perks=243981275,3913600130
 dimwishlist:item=601948197&perks=243981275,3708227201
 
-//notes:Cold Steel roll
+//notes:Cold Steel. Rimestealer requires destroying a frozen target or a Stasis crystal which hard to achieve with Cold Steel
 dimwishlist:item=601948197&perks=3666208348,269888150,1749209109,3650930298
 dimwishlist:item=601948197&perks=3666208348,269888150,243981275,3650930298
 dimwishlist:item=601948197&perks=3666208348,1749209109,3650930298
@@ -672,18 +670,22 @@ dimwishlist:item=601948197&perks=269888150,243981275,3650930298
 dimwishlist:item=601948197&perks=1749209109,3650930298
 dimwishlist:item=601948197&perks=243981275,3650930298
 
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=601948197&perks=3666208348,269888150,2590710093,2396489472
+dimwishlist:item=601948197&perks=3666208348,269888150,1749209109,2396489472
 dimwishlist:item=601948197&perks=3666208348,269888150,243981275,2396489472
 dimwishlist:item=601948197&perks=3666208348,2590710093,2396489472
+dimwishlist:item=601948197&perks=3666208348,1749209109,2396489472
 dimwishlist:item=601948197&perks=3666208348,243981275,2396489472
 dimwishlist:item=601948197&perks=269888150,2590710093,2396489472
+dimwishlist:item=601948197&perks=269888150,1749209109,2396489472
 dimwishlist:item=601948197&perks=269888150,243981275,2396489472
 dimwishlist:item=601948197&perks=2590710093,2396489472
+dimwishlist:item=601948197&perks=1749209109,2396489472
 dimwishlist:item=601948197&perks=243981275,2396489472
 
 // Arcane Embrace
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=3649985571&perks=839105230,106909392,1354429876,555281244
 dimwishlist:item=3649985571&perks=839105230,106909392,1354429876,3708227201
 dimwishlist:item=3649985571&perks=839105230,1431678320,1354429876,555281244
@@ -698,7 +700,7 @@ dimwishlist:item=3649985571&perks=3230963543,1354429876,555281244
 dimwishlist:item=3649985571&perks=3230963543,1354429876,3708227201
 
 // Breachlight
-//notes:Hatchling roll
+//notes:Hatchling
 dimwishlist:item=2328923181&perks=3230963543,3523296417,831391274
 dimwishlist:item=2328923181&perks=3230963543,691659142,831391274
 dimwishlist:item=2328923181&perks=3230963543,4071163871,831391274
@@ -709,7 +711,7 @@ dimwishlist:item=2328923181&perks=1087426260,3523296417,831391274
 dimwishlist:item=2328923181&perks=1087426260,691659142,831391274
 dimwishlist:item=2328923181&perks=1087426260,4071163871,831391274
 
-//notes:Good PvE roll; for this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie because DM can be activated while stowed and lasts longer
+//notes:Desperate Measures. For this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie because DM can be activated while stowed and lasts longer
 dimwishlist:item=2328923181&perks=3230963543,3523296417,2109543898
 dimwishlist:item=2328923181&perks=3230963543,691659142,2109543898
 dimwishlist:item=2328923181&perks=3230963543,4071163871,2109543898
@@ -721,16 +723,16 @@ dimwishlist:item=2328923181&perks=1087426260,691659142,2109543898
 dimwishlist:item=2328923181&perks=1087426260,4071163871,2109543898
 
 // Patron of Lost Causes
-//notes:Roll to get class ability energy from afar
+//notes:Strategist
 dimwishlist:item=2249996761&perks=880644845,3891536761
 dimwishlist:item=2249996761&perks=880644845,3038247973
 
-//notes:Classic PvE roll for a scout rifle
+//notes:Classic PvE combo for a scout rifle
 dimwishlist:item=2249996761&perks=247725512,3891536761
 dimwishlist:item=2249996761&perks=247725512,3038247973
 
 // Perfect Paradox
-//notes:Melee damage increase; Ready/Stow speed-wise Pugilist is better than Threat Detector x1, but is worse than Threat Detector x2
+//notes:Melee damage increase. Ready/Stow speed-wise Pugilist is better than Threat Detector x1, but is worse than Threat Detector x2
 dimwishlist:item=1298672084&perks=1300023272,106909392,691659142,2679249093
 dimwishlist:item=1298672084&perks=1300023272,106909392,4071163871,2679249093
 dimwishlist:item=1298672084&perks=1300023272,679225683,691659142,2679249093
@@ -744,7 +746,7 @@ dimwishlist:item=1298672084&perks=1482024992,106909392,4071163871,2679249093
 dimwishlist:item=1298672084&perks=1482024992,679225683,691659142,2679249093
 dimwishlist:item=1298672084&perks=1482024992,679225683,4071163871,2679249093
 
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=1298672084&perks=1300023272,106909392,25606670,2360754333
 dimwishlist:item=1298672084&perks=1300023272,106909392,691659142,2360754333
 dimwishlist:item=1298672084&perks=1300023272,679225683,25606670,2360754333
@@ -759,19 +761,19 @@ dimwishlist:item=1298672084&perks=1482024992,679225683,25606670,2360754333
 dimwishlist:item=1298672084&perks=1482024992,679225683,691659142,2360754333
 
 // Martyr's Retribution
-//notes:Incandescent roll; the preferred roll as there is already a Solar Wave Frame GL with damage increase perks, Explosive Personality with One for All
+//notes:Incandescent. The preferred roll as there is already a Solar Wave Frame GL with damage increase perks: Explosive Personality with One for All
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,4293542123
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,4293542123
 
 //notes:Clip combo
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,1015611457
 
-//notes:Good PvE roll; for this weapon Adrenaline Junkie is better than Desperate Measures because AJ can achieve max stacks easily with 1-2 shots, while DM requires two ability kills
+//notes:Adrenaline Junkie. For this weapon Adrenaline Junkie is better than Desperate Measures because AJ can achieve max stacks easily with 1-2 shots, while DM requires two ability kills
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3523296417,11612903
 dimwishlist:item=2584830733&perks=1478423395,2822142346,3017780555,11612903
 
 // Line in the Sand
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=2450049485&perks=839105230,689005463,3523296417,3078487919
 dimwishlist:item=2450049485&perks=839105230,689005463,2284787283,3078487919
 dimwishlist:item=2450049485&perks=839105230,3523296417,3078487919
@@ -781,57 +783,8 @@ dimwishlist:item=2450049485&perks=689005463,2284787283,3078487919
 dimwishlist:item=2450049485&perks=3523296417,3078487919
 dimwishlist:item=2450049485&perks=2284787283,3078487919
 
-// Liturgy
-//notes:Roll for damage rotations
-dimwishlist:item=2599338624&perks=981914802,3301904089,3987942396,2978966579
-dimwishlist:item=2599338624&perks=3301904089,3987942396,2978966579
-
-// Red Tape
-//notes:Explosive Payload roll
-dimwishlist:item=3423493037&perks=839105230,106909392,3523296417,3038247973
-dimwishlist:item=3423493037&perks=839105230,1087426260,3523296417,3038247973
-dimwishlist:item=3423493037&perks=839105230,1431678320,3523296417,3038247973
-dimwishlist:item=3423493037&perks=839105230,3230963543,3523296417,3038247973
-dimwishlist:item=3423493037&perks=106909392,3523296417,3038247973
-dimwishlist:item=3423493037&perks=1087426260,3523296417,3038247973
-dimwishlist:item=3423493037&perks=1431678320,3523296417,3038247973
-dimwishlist:item=3423493037&perks=3230963543,3523296417,3038247973
-
-//notes:Headstone roll
-dimwishlist:item=3423493037&perks=839105230,106909392,3523296417,124408337
-dimwishlist:item=3423493037&perks=839105230,106909392,1955165503,124408337
-dimwishlist:item=3423493037&perks=839105230,1087426260,3523296417,124408337
-dimwishlist:item=3423493037&perks=839105230,1087426260,1955165503,124408337
-dimwishlist:item=3423493037&perks=839105230,1431678320,3523296417,124408337
-dimwishlist:item=3423493037&perks=839105230,1431678320,1955165503,124408337
-dimwishlist:item=3423493037&perks=839105230,3230963543,3523296417,124408337
-dimwishlist:item=3423493037&perks=839105230,3230963543,1955165503,124408337
-dimwishlist:item=3423493037&perks=106909392,3523296417,124408337
-dimwishlist:item=3423493037&perks=106909392,1955165503,124408337
-dimwishlist:item=3423493037&perks=1087426260,3523296417,124408337
-dimwishlist:item=3423493037&perks=1087426260,1955165503,124408337
-dimwishlist:item=3423493037&perks=1431678320,3523296417,124408337
-dimwishlist:item=3423493037&perks=1431678320,1955165503,124408337
-dimwishlist:item=3423493037&perks=3230963543,3523296417,124408337
-dimwishlist:item=3423493037&perks=3230963543,1955165503,124408337
-
-// Sovereignty
-//notes:Weaken support roll
-dimwishlist:item=3818198556&perks=839105230,106909392,3523296417,1134488199
-dimwishlist:item=3818198556&perks=839105230,106909392,2866798147,1134488199
-dimwishlist:item=3818198556&perks=839105230,1431678320,3523296417,1134488199
-dimwishlist:item=3818198556&perks=839105230,1431678320,2866798147,1134488199
-dimwishlist:item=3818198556&perks=839105230,3230963543,3523296417,1134488199
-dimwishlist:item=3818198556&perks=839105230,3230963543,2866798147,1134488199
-dimwishlist:item=3818198556&perks=106909392,3523296417,1134488199
-dimwishlist:item=3818198556&perks=106909392,2866798147,1134488199
-dimwishlist:item=3818198556&perks=1431678320,3523296417,1134488199
-dimwishlist:item=3818198556&perks=1431678320,2866798147,1134488199
-dimwishlist:item=3818198556&perks=3230963543,3523296417,1134488199
-dimwishlist:item=3818198556&perks=3230963543,2866798147,1134488199
-
 // Vantage Point
-//notes:Roll for ad clear
+//notes:Ad clear
 dimwishlist:item=3830941962&perks=839105230,106909392,684456054,3966416502
 dimwishlist:item=3830941962&perks=839105230,1087426260,684456054,3966416502
 dimwishlist:item=3830941962&perks=839105230,1431678320,684456054,3966416502
@@ -840,6 +793,43 @@ dimwishlist:item=3830941962&perks=106909392,684456054,3966416502
 dimwishlist:item=3830941962&perks=1087426260,684456054,3966416502
 dimwishlist:item=3830941962&perks=1431678320,684456054,3966416502
 dimwishlist:item=3830941962&perks=3230963543,684456054,3966416502
+
+// Liturgy
+//notes:Damage rotations combo
+dimwishlist:item=2599338624&perks=981914802,3301904089,3987942396,2978966579
+dimwishlist:item=2599338624&perks=3301904089,3987942396,2978966579
+
+// Sovereignty
+//notes:Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7
+dimwishlist:item=3818198556&perks=839105230,1087426260,3523296417,1134488199
+dimwishlist:item=3818198556&perks=839105230,1087426260,2866798147,1134488199
+dimwishlist:item=3818198556&perks=839105230,106909392,3523296417,1134488199
+dimwishlist:item=3818198556&perks=839105230,106909392,2866798147,1134488199
+dimwishlist:item=3818198556&perks=839105230,1431678320,3523296417,1134488199
+dimwishlist:item=3818198556&perks=839105230,1431678320,2866798147,1134488199
+dimwishlist:item=3818198556&perks=839105230,3230963543,3523296417,1134488199
+dimwishlist:item=3818198556&perks=839105230,3230963543,2866798147,1134488199
+dimwishlist:item=3818198556&perks=1087426260,3523296417,1134488199
+dimwishlist:item=3818198556&perks=1087426260,2866798147,1134488199
+dimwishlist:item=3818198556&perks=106909392,3523296417,1134488199
+dimwishlist:item=3818198556&perks=106909392,2866798147,1134488199
+dimwishlist:item=3818198556&perks=1431678320,3523296417,1134488199
+dimwishlist:item=3818198556&perks=1431678320,2866798147,1134488199
+dimwishlist:item=3818198556&perks=3230963543,3523296417,1134488199
+dimwishlist:item=3818198556&perks=3230963543,2866798147,1134488199
+
+// Bitter/Sweet
+//notes:Damage dealing
+dimwishlist:item=2599338625&perks=981914802,3301904089,3987942396,3078487919
+dimwishlist:item=2599338625&perks=981914802,3987942396,3078487919
+dimwishlist:item=2599338625&perks=3301904089,3987942396,3078487919
+dimwishlist:item=2599338625&perks=3987942396,3078487919
+
+//notes:High DPS
+dimwishlist:item=2599338625&perks=3525010810,3301904089,3987942396,3194351027
+dimwishlist:item=2599338625&perks=3525010810,3987942396,3194351027
+dimwishlist:item=2599338625&perks=3301904089,3987942396,3194351027
+dimwishlist:item=2599338625&perks=3987942396,3194351027
 
 // Noxious Vetiver
 //notes:Roll for ad clear
@@ -868,21 +858,37 @@ dimwishlist:item=825495813&perks=1087426260,243981275,3966416502
 dimwishlist:item=825495813&perks=1087426260,1119449540,3966416502
 dimwishlist:item=825495813&perks=1087426260,691659142,3966416502
 
-// Bitter/Sweet
-//notes:Roll for damage dealing
-dimwishlist:item=2599338625&perks=981914802,3301904089,3987942396,3078487919
-dimwishlist:item=2599338625&perks=981914802,3987942396,3078487919
-dimwishlist:item=2599338625&perks=3301904089,3987942396,3078487919
-dimwishlist:item=2599338625&perks=3987942396,3078487919
+// Red Tape
+//notes:Explosive Payload
+dimwishlist:item=3423493037&perks=839105230,106909392,3523296417,3038247973
+dimwishlist:item=3423493037&perks=839105230,1087426260,3523296417,3038247973
+dimwishlist:item=3423493037&perks=839105230,1431678320,3523296417,3038247973
+dimwishlist:item=3423493037&perks=839105230,3230963543,3523296417,3038247973
+dimwishlist:item=3423493037&perks=106909392,3523296417,3038247973
+dimwishlist:item=3423493037&perks=1087426260,3523296417,3038247973
+dimwishlist:item=3423493037&perks=1431678320,3523296417,3038247973
+dimwishlist:item=3423493037&perks=3230963543,3523296417,3038247973
 
-//notes:Roll with high DPS
-dimwishlist:item=2599338625&perks=3525010810,3301904089,3987942396,3194351027
-dimwishlist:item=2599338625&perks=3525010810,3987942396,3194351027
-dimwishlist:item=2599338625&perks=3301904089,3987942396,3194351027
-dimwishlist:item=2599338625&perks=3987942396,3194351027
+//notes:Headstone
+dimwishlist:item=3423493037&perks=839105230,106909392,3523296417,124408337
+dimwishlist:item=3423493037&perks=839105230,106909392,1955165503,124408337
+dimwishlist:item=3423493037&perks=839105230,1087426260,3523296417,124408337
+dimwishlist:item=3423493037&perks=839105230,1087426260,1955165503,124408337
+dimwishlist:item=3423493037&perks=839105230,1431678320,3523296417,124408337
+dimwishlist:item=3423493037&perks=839105230,1431678320,1955165503,124408337
+dimwishlist:item=3423493037&perks=839105230,3230963543,3523296417,124408337
+dimwishlist:item=3423493037&perks=839105230,3230963543,1955165503,124408337
+dimwishlist:item=3423493037&perks=106909392,3523296417,124408337
+dimwishlist:item=3423493037&perks=106909392,1955165503,124408337
+dimwishlist:item=3423493037&perks=1087426260,3523296417,124408337
+dimwishlist:item=3423493037&perks=1087426260,1955165503,124408337
+dimwishlist:item=3423493037&perks=1431678320,3523296417,124408337
+dimwishlist:item=3423493037&perks=1431678320,1955165503,124408337
+dimwishlist:item=3423493037&perks=3230963543,3523296417,124408337
+dimwishlist:item=3423493037&perks=3230963543,1955165503,124408337
 
 // Heretic's Fervor
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=4224667951&perks=3525010810,3796465595,3300816228,3194351027
 dimwishlist:item=4224667951&perks=3525010810,3300816228,3194351027
 dimwishlist:item=4224667951&perks=3796465595,3300816228,3194351027
@@ -910,7 +916,7 @@ dimwishlist:item=2598420927&perks=106909392,1820235745,3425386926
 dimwishlist:item=2598420927&perks=1087426260,1820235745,3425386926
 
 // Sojourner's Tale
-//notes:Roll for damage dealing
+//notes:Damage dealing
 dimwishlist:item=2130875369&perks=839105230,791862061,3300816228,555281244
 dimwishlist:item=2130875369&perks=839105230,106909392,3300816228,555281244
 dimwishlist:item=2130875369&perks=839105230,679225683,3300816228,555281244
