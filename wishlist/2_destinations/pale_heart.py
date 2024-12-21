@@ -43,8 +43,8 @@ class ErgoSum(RD):
             'Ad clear',
             [unique.ErgoSum.ArcConductor],
             [
-                unique.ErgoSum.LightweightFrame,
                 unique.ErgoSum.WaveSwordFrame,
+                unique.ErgoSum.LightweightFrame,
                 unique.ErgoSum.CasterFrame,
                 ],
             _blades,
