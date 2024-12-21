@@ -115,7 +115,7 @@ class WishlistEntry:
         return '\n'.join(lines)
 
 
-def roll(notes: str, /, *perk_sets: PerkSet, is_trash: bool = False) -> AnnotatedRoll:
+def Roll(notes: str, /, *perk_sets: PerkSet, is_trash: bool = False) -> AnnotatedRoll:
     """
     Creates an annotated roll definition from the given notes and perk sets.
     """
@@ -294,4 +294,4 @@ class RD:
             raise TypeError(f'either rolls or roll must be specified in {cls.__name__}')
 
 
-__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'roll', 'RD'
+__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RD'

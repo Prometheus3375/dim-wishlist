@@ -6,14 +6,14 @@ class DedGramaryeIV(RD):
     item = Item(name='Ded Gramarye IV', hash=499245245)
     _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
     rolls = [
-        roll(
+        Roll(
             'Chain Reaction roll',
             _barrels,
             [magazines.AssaultMag, magazines.LightMag, magazines.TacticalMag],
             [traits.Discord, traits.ThreatDetector],
             [traits.ChainReaction],
             ),
-        roll(
+        Roll(
             'Voltshot roll; '
             'mag increasing perks are not good with Voltshot '
             'as with them reserves deplete earlier; '
@@ -32,12 +32,12 @@ class DedGramaryeIV(RD):
 class LiveFire(RD):
     item = Item(name='Live Fire', hash=3612142623)
     rolls = [
-        roll(
+        Roll(
             'Shoot to Loot roll',
             [traits.RapidHit],
             [traits.ShootToLoot],
             ),
-        roll(
+        Roll(
             'Headstone roll, prefer Red Tape for Rimestealer + Headstone',
             [traits.Rimestealer, traits.RapidHit],
             [traits.Headstone],
@@ -49,7 +49,7 @@ class LiveFire(RD):
 # region Hakke
 class VeledaF(RD):
     item = Item(name='Veleda F', hash=4200122994)
-    roll = roll(
+    roll = Roll(
         'Weaken support roll',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
@@ -62,7 +62,7 @@ class VeledaF(RD):
 # region Omolon
 class YarovitMG4(RD):
     item = Item(name='Yarovit MG4', hash=3959549446)
-    roll = roll(
+    roll = Roll(
         'Good PvE roll',
         [traits.Strategist, traits.EnlightenedAction],
         [traits.Headstone, traits.DesperateMeasures, traits.Surrounded],
@@ -73,7 +73,7 @@ class YarovitMG4(RD):
 # SUROS
 class Legato11(RD):
     item = Item(name='Legato-11', hash=3753063346)
-    roll = roll(
+    roll = Roll(
         'Roll for damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
@@ -87,14 +87,14 @@ class Legato11(RD):
 class Suspectum4FR(RD):
     item = Item(name='Suspectum-4FR', hash=3615421669)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.EnviousAssassin, traits.EnlightenedAction],
             [traits.PrecisionInstrument],
             ),
-        roll(
+        Roll(
             'FTTC does not regenerate ammo if mag is overflowed',
             [traits.EnviousAssassin],
             [traits.FourthTimesTheCharm],

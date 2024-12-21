@@ -9,14 +9,14 @@ class TinashasMastery(RD):
     """
 
     rolls = [
-        roll(
+        Roll(
             f'Chill Clip roll{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
             [traits.ImpulseAmplifier, traits.AirTrigger, traits.LooseChange],
             [traits.ChillClip],
             ),
-        roll(
+        Roll(
             f'Roll for ad clear{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
@@ -34,7 +34,7 @@ class ArchonsThunder(RD):
         magazines.FlaredMagwell,
         magazines.TacticalMag,
         ]
-    roll = roll(
+    roll = Roll(
         'Roll for ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,

@@ -5,13 +5,13 @@ class Breachlight(RD):
     item = Item(name='Breachlight', hash=2328923181)
     _mags = [magazines.FlaredMagwell, magazines.TacticalMag, magazines.AppendedMag]
     rolls = [
-        roll(
+        Roll(
             'Hatchling roll',
             _mags,
             [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
             [traits.Hatchling],
             ),
-        roll(
+        Roll(
             'Good PvE roll; '
             'for this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie '
             'because DM can be activated while stowed and lasts longer',
@@ -25,12 +25,12 @@ class Breachlight(RD):
 class PatronOfLostCauses(RD):
     item = Item(name='Patron of Lost Causes', hash=2249996761)
     rolls = [
-        roll(
+        Roll(
             'Roll to get class ability energy from afar',
             [traits.Strategist],
             [traits.KineticTremors, traits.ExplosivePayload],
             ),
-        roll(
+        Roll(
             'Classic PvE roll for a scout rifle',
             [traits.RapidHit],
             [traits.KineticTremors, traits.ExplosivePayload],
@@ -43,7 +43,7 @@ class PerfectParadox(RD):
     _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
     _mags = [magazines.TacticalMag, magazines.LightMag]
     rolls = [
-        roll(
+        Roll(
             """
             Melee damage increase;
             Ready/Stow speed-wise Pugilist is better than Threat Detector x1,
@@ -54,7 +54,7 @@ class PerfectParadox(RD):
             [traits.Pugilist, traits.ThreatDetector],
             [traits.OneTwoPunch],
             ),
-        roll(
+        Roll(
             'Roll for damage dealing',
             _barrels,
             _mags,
@@ -67,7 +67,7 @@ class PerfectParadox(RD):
 class MartyrsRetribution(RD):
     item = Item(name="Martyr's Retribution", hash=2584830733)
     rolls = [
-        roll(
+        Roll(
             'Incandescent roll; the preferred roll as there is already a Solar Wave Frame GL '
             'with damage increase perks, Explosive Personality with One for All',
             [barrels.VolatileLaunch],
@@ -75,14 +75,14 @@ class MartyrsRetribution(RD):
             [traits.Demolitionist, traits.HealClip],
             [traits.Incandescent],
             ),
-        roll(
+        Roll(
             'Clip combo',
             [barrels.VolatileLaunch],
             [magazines.HighVelocityRounds],
             [traits.HealClip],
             [traits.KillClip],
             ),
-        roll(
+        Roll(
             'Good PvE roll; '
             'for this weapon Adrenaline Junkie is better than Desperate Measures '
             'because AJ can achieve max stacks easily with 1-2 shots, '
@@ -97,7 +97,7 @@ class MartyrsRetribution(RD):
 
 class LineInTheSand(RD):
     item = Item(name='Line in the Sand', hash=2450049485)
-    roll = roll(
+    roll = Roll(
         'Roll for damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [batteries.AcceleratedCoils, AnyPerk],

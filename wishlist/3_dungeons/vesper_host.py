@@ -3,7 +3,7 @@ from database import *
 
 class PyroelectricPropellant(RD):
     item = Item(name='VS Pyroelectric Propellant', hash=4232480042)
-    roll = roll(
+    roll = Roll(
         'Roll for ad clear',
         [traits.AttritionOrbs, traits.EddyCurrent],
         [traits.JoltingFeedback],
@@ -13,14 +13,14 @@ class PyroelectricPropellant(RD):
 class GraviticArrest(RD):
     item = Item(name='VS Gravitic Arrest', hash=93061497)
     rolls = [
-        roll(
+        Roll(
             'Weaken support roll',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Demolitionist, traits.RepulsorBrace],
             [traits.WitheringGaze],
             ),
-        roll(
+        Roll(
             'Roll for ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
@@ -33,14 +33,14 @@ class GraviticArrest(RD):
 class VelocityBaton(RD):
     item = Item(name='VS Velocity Baton', hash=1762785663)
     rolls = [
-        roll(
+        Roll(
             'Attrition Orbs roll',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
             [traits.Demolitionist, traits.RepulsorBrace],
             [traits.AttritionOrbs],
             ),
-        roll(
+        Roll(
             'Roll for ad clear',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
@@ -53,21 +53,21 @@ class VelocityBaton(RD):
 class ChillInhibitor(RD):
     item = Item(name='VS Chill Inhibitor', hash=1762785662)
     rolls = [
-        roll(
+        Roll(
             'Roll for damage dealing',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.CascadePoint],
             [traits.BaitAndSwitch, traits.Surrounded],
             ),
-        roll(
+        Roll(
             'Roll with high DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.CascadePoint],
             [traits.ExplosiveLight],
             ),
-        roll(
+        Roll(
             'Roll for ad clear',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, AnyPerk],

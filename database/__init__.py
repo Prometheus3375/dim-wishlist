@@ -1,4 +1,4 @@
-from classes import AnyItem, AnyPerk, Item, RD, roll
+from classes import AnyItem, AnyPerk, Item, RD, Roll
 from . import (
     barrels,
     batteries,
@@ -18,7 +18,7 @@ __all__ = (
     'AnyPerk',
     'Item',
     'RD',
-    'roll',
+    'Roll',
     'barrels',
     'batteries',
     'blades',
