@@ -11,7 +11,7 @@ class YesterdaysQuestion(RD):
         Item(name="Yesterday's Question (Adept)", hash=2378785953),
         ]
     roll = Roll(
-        'Roll for Lucky Pants',
+        'Damage dealing with Lucky Pants',
         [traits.FourthTimesTheCharm, traits.RapidHit],
         [traits.VorpalWeapon],
         )
@@ -28,15 +28,18 @@ class TomorrowsAnswer(RD):
         ]
     rolls = [
         Roll(
-            'Roll for damage dealing; High-Impact Frame is bad for burst damage,'
-            ' but there is no other good Void RL',
+            """
+            Damage dealing.
+            High-Impact Frame is bad for this,
+            but there is no other good Void RL
+            """,
             [barrels.QuickLaunch, AnyPerk],
             [magazines.ImpactCasing, AnyPerk],
             [traits.EnviousArsenal, traits.WitheringGaze],
             [traits.BaitAndSwitch, traits.ExplosiveLight],
             ),
         Roll(
-            'Roll for ad clear',
+            'Ad clear',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.AlloyCasing, AnyPerk],
             [traits.DangerZone, traits.AirTrigger],

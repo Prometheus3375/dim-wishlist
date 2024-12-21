@@ -8,14 +8,14 @@ class WickedSister(RD):
     item = Item(name='Wicked Sister', hash=2039776723)
     rolls = [
         Roll(
-            'Roll for damage dealing',
+            'Damage dealing',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
             [traits.BaitAndSwitch],
             ),
         Roll(
-            'Roll with high DPS',
+            'High DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
@@ -35,7 +35,7 @@ class Scintillation(RD):
         ]
     rolls = [
         Roll(
-            'Roll for damage dealing',
+            'Damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
             [traits.RewindRounds, traits.EnviousAssassin],
@@ -51,9 +51,11 @@ class Scintillation(RD):
             [origin.VeistStinger],
             ),
         Roll(
-            'Rewind Rounds with Veist Stinger usually allows to fire all reserves. '
-            'Unfortunately, any mag stat increase above 20 reduces reserves; '
-            'Enhanced Battery is +20, Ionized Battery is +40',
+            """
+            Rewind Rounds with Veist Stinger usually allows to fire all reserves.
+            Unfortunately, any mag stat increase above 20 reduces reserves;
+            Enhanced Battery is +20, Ionized Battery is +40
+            """,
             [batteries.IonizedBattery],
             is_trash=True,
             ),
@@ -71,10 +73,10 @@ class RakeAngle(RD):
         ]
     roll = Roll(
         """
-        PvE rolls;
-        Backup Mag, Appended Mag and Extended Mag add 1 ammo,
-        Adept Mag adds 2 ammo, Adept Mag + Extended Mag add 3 ammo.
-        I suggest Adept Mag + Alloy Magazine for mag size of 6 and faster reload at 3 ammo
+        Chill Clip.
+        Appended Mag, Extended Mag and Backup Mag mod add 1 ammo,
+        Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo.
+        I suggest Alloy Magazine + Adept Mag for mag size of 6 and faster reload at 3 ammo
         """,
         [hafts.LowImpedanceWindings, AnyPerk],
         [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],

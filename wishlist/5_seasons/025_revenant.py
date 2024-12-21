@@ -9,21 +9,12 @@ class Liturgy(RD):
     item = Item(name='Liturgy', hash=2599338624)
     rolls = [
         Roll(
-            'Roll for damage rotations',
+            'Damage rotations combo',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades],
             [traits.EnviousArsenal],
             [traits.ChillClip],
             ),
-        # Rimestealer requires destroying a frozen target or Stasis crystal
-        # which hard to achieve with Chill Clip.
-        # roll(
-        #     'Stasis combo',
-        #     [barrels.HardLaunch, AnyPerk],
-        #     [magazines.SpikeGrenades],
-        #     [traits.Rimestealer],
-        #     [traits.ChillClip],
-        #     ),
         ]
 
 
@@ -50,14 +41,14 @@ class RedTape(RD):
         ]
     rolls = [
         Roll(
-            'Explosive Payload roll',
+            'Explosive Payload',
             _barrels,
             _mags,
             [traits.Demolitionist],
             [traits.ExplosivePayload],
             ),
         Roll(
-            'Headstone roll',
+            'Headstone',
             _barrels,
             _mags,
             [traits.Demolitionist, traits.Rimestealer],
@@ -81,7 +72,7 @@ class Sovereignty(RD):
     """
     item = Item(name='Sovereignty', hash=3818198556)
     roll = Roll(
-        'Weaken support roll',
+        'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
         [traits.Demolitionist, traits.NoDistractions],
@@ -102,7 +93,7 @@ class VantagePoint(RD):
         magazines.FlaredMagwell,
         ]
     roll = Roll(
-        'Roll for ad clear',
+        'Ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
         [traits.EddyCurrent],
@@ -147,14 +138,14 @@ class BitterSweet(RD):
     item = Item(name='Bitter/Sweet', hash=2599338625)
     rolls = [
         Roll(
-            'Roll for damage dealing',
+            'Damage dealing',
             [barrels.HardLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal],
             [traits.BaitAndSwitch],
             ),
         Roll(
-            'Roll with high DPS',
+            'High DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
             [traits.EnviousArsenal],
@@ -170,7 +161,7 @@ class HereticsFervor(RD):
     """
     item = Item(name="Heretic's Fervor", hash=4224667951)
     roll = Roll(
-        'Roll for damage dealing',
+        'Damage dealing',
         [barrels.QuickLaunch, AnyPerk],
         [magazines.ImpactCasing, AnyPerk],
         [traits.AutoLoadingHolster],
@@ -231,7 +222,7 @@ class SojournersTale(RD):
     """
     item = Item(name="Sojourner's Tale", hash=2130875369)
     roll = Roll(
-        'Roll for damage dealing',
+        'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
         [traits.AutoLoadingHolster],

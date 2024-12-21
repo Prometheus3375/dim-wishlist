@@ -8,7 +8,7 @@ class Bygones(RD):
     """
     item = Item(name='Bygones', hash=2199554524)
     roll = Roll(
-        'PvE rolls',
+        'PvE',
         [traits.AttritionOrbs, traits.ShootToLoot],
         [traits.KineticTremors],
         )

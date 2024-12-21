@@ -8,13 +8,14 @@ class ErgoSum(RD):
     """
     item = ErgoSum = Item(name='Ergo Sum', hash=1681583613)
     _blades = [blades.EnduringBlade, AnyPerk]
-    _dmg_note = (
-        'Roll for damage dealing. Blade and guard is not that important. '
-        'Prefer Enduring Blade for more ammo. '
-        'In any damage situation you should be transcendent '
-        'which maximizes Charge Rate anyway. '
-        'Aegis thoughts: https://youtu.be/bGTXGydS8uM'
-    )
+    _dmg_note = """
+        Damage dealing. Blade and guard is not that important.
+        Prefer Enduring Blade for more ammo.
+        In any damage situation you should be transcendent
+        which maximizes Charge Rate anyway.
+        Aegis thoughts: https://youtu.be/bGTXGydS8uM
+        """
+
     rolls = [
         Roll(
             _dmg_note,
@@ -29,15 +30,17 @@ class ErgoSum(RD):
             _blades,
             ),
         Roll(
-            'Roll to activate Wolfpack Rounds on swords. '
-            'Lightweight Frame has fast heavy attack which consumes only 3 ammo',
+            """
+            Lightweight Frame has fast heavy attack which consumes only 3 ammo,
+            good for Wolfpack Rounds
+            """,
             [unique.ErgoSum.WolfpackRounds],
             [unique.ErgoSum.LightweightFrame],
             _blades,
             [guards.SwordmastersGuard, AnyPerk],
             ),
         Roll(
-            'Roll for ad clear',
+            'Ad clear',
             [unique.ErgoSum.ArcConductor],
             [
                 unique.ErgoSum.LightweightFrame,
@@ -62,10 +65,10 @@ class ErgoSum(RD):
 
 
 _note_spirit_of_the_star_eater = """
-Roll with Star-Eater;
-Feast of Light stacks are preserved when swapping from
-one class item w/ Spirit of Star-Eater to another
-"""
+    Star-Eater.
+    Feast of Light stacks are preserved when swapping from
+    one class item w/ Spirit of Star-Eater to another
+    """
 
 
 class Relativism(RD):
@@ -83,8 +86,8 @@ class Relativism(RD):
             ),
         Roll(
             """
-            Roll for melee builds.
-            Melee builds should be paired with Stylish Executioner aspect
+            Melee builds.
+            Should be paired with Stylish Executioner aspect
             as it increases melee damage dealt from invisibility.
             It also provides invisibility, making Spirit of the Assassin redundant.
             Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
@@ -93,17 +96,17 @@ class Relativism(RD):
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
         Roll(
-            'Roll with Cyrtarachne',
+            'Cyrtarachne',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Foetracer],
             [unique.SpiritOf.Cyrtarachne],
             ),
         Roll(
-            'Roll with Gyrfalcon',
+            'Gyrfalcon',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Gyrfalcon],
             ),
         Roll(
-            'Roll for PvP',
+            'PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Wormhusk],
             ),
@@ -123,32 +126,32 @@ class Stoicism(RD):
             [unique.SpiritOf.StarEater],
             ),
         Roll(
-            'Roll for grenade builds',
+            'Grenade builds',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Verity, unique.SpiritOf.Armamentarium],
             ),
         Roll(
-            'Roll for melee builds',
+            'Melee builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Severance],
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
             ),
         Roll(
-            'Roll for class ability builds',
+            'Class ability builds',
             [unique.SpiritOf.Hoarfrost],
             [unique.SpiritOf.Horn],
             ),
         Roll(
-            'Roll for Unbreakable aspect',
+            'Unbreakable aspect',
             [unique.SpiritOf.Bear],
             [unique.SpiritOf.Armamentarium],
             ),
         Roll(
-            "Roll for Drengr's Lash aspect",
+            "Drengr's Lash aspect",
             [unique.SpiritOf.Abeyant],
             [unique.SpiritOf.Horn],
             ),
         Roll(
-            'Roll for PvP',
+            'PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.AlphaLupi],
             ),
@@ -168,17 +171,17 @@ class Solipsism(RD):
             [unique.SpiritOf.StarEater],
             ),
         Roll(
-            'Roll for grenade builds',
+            'Grenade builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Verity],
             ),
         Roll(
-            'Roll for melee builds',
+            'Melee builds',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Necrotic],
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Claw],
             ),
         Roll(
-            'Roll for Empowered Rift',
+            'Empowered Rift builds',
             [unique.SpiritOf.Filaments, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Starfire],
             ),
@@ -188,7 +191,7 @@ class Solipsism(RD):
         #     [unique.SpiritOf.Vesper],
         #     ),
         Roll(
-            'Roll for PvP',
+            'PvP',
             [unique.SpiritOf.Ophidian],
             [unique.SpiritOf.Harmony],
             ),
