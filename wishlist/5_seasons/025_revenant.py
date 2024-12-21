@@ -1,23 +1,6 @@
 from database import *
 
 
-class Liturgy(RD):
-    """
-    Stasis Breechloaded Grenade Launcher, Double Fire
-    https://www.light.gg/db/items/2599338624
-    """
-    item = Item(name='Liturgy', hash=2599338624)
-    rolls = [
-        Roll(
-            'Damage rotations combo',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades],
-            [traits.EnviousArsenal],
-            [traits.ChillClip],
-            ),
-        ]
-
-
 class Exuviae(RD):
     """
     Stasis Hand Cannon, Aggressive Frame
@@ -26,59 +9,12 @@ class Exuviae(RD):
     item = Item(name='Exuviae', hash=2823644677)
 
 
-class RedTape(RD):
-    """
-    Stasis Scout Rifle, Lightweight Frame
-    https://www.light.gg/db/items/3423493037
-    """
-    item = Item(name='Red Tape', hash=3423493037)
-    _barrels = [barrels.ArrowheadBrake, AnyPerk]
-    _mags = [
-        magazines.TacticalMag,
-        magazines.AppendedMag,
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
-        ]
-    rolls = [
-        Roll(
-            'Explosive Payload',
-            _barrels,
-            _mags,
-            [traits.Demolitionist],
-            [traits.ExplosivePayload],
-            ),
-        Roll(
-            'Headstone',
-            _barrels,
-            _mags,
-            [traits.Demolitionist, traits.Rimestealer],
-            [traits.Headstone],
-            ),
-        ]
-
-
 class Insurmountable(RD):
     """
     Void Sidearm, Precision Frame
     https://www.light.gg/db/items/414045521
     """
     item = Item(name='Insurmountable', hash=414045521)
-
-
-class Sovereignty(RD):
-    """
-    Void Sniper Rifle, Adaptive Frame
-    https://www.light.gg/db/items/3818198556
-    """
-    item = Item(name='Sovereignty', hash=3818198556)
-    roll = Roll(
-        'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.AppendedMag, magazines.TacticalMag, magazines.AlloyMagazine,
-         magazines.FlaredMagwell],
-        [traits.Demolitionist, traits.NoDistractions],
-        [traits.WitheringGaze],
-        )
 
 
 class VantagePoint(RD):
@@ -100,6 +36,63 @@ class VantagePoint(RD):
         [traits.EddyCurrent],
         [traits.JoltingFeedback],
         )
+
+
+class Liturgy(RD):
+    """
+    Stasis Breechloaded Grenade Launcher, Double Fire
+    https://www.light.gg/db/items/2599338624
+    """
+    item = Item(name='Liturgy', hash=2599338624)
+    rolls = [
+        Roll(
+            'Damage rotations combo',
+            [barrels.HardLaunch, AnyPerk],
+            [magazines.SpikeGrenades],
+            [traits.EnviousArsenal],
+            [traits.ChillClip],
+            ),
+        ]
+
+
+class Sovereignty(RD):
+    """
+    Void Sniper Rifle, Adaptive Frame
+    https://www.light.gg/db/items/3818198556
+    """
+    item = Item(name='Sovereignty', hash=3818198556)
+    roll = Roll(
+        'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.AppendedMag, magazines.TacticalMag, magazines.AlloyMagazine,
+         magazines.FlaredMagwell],
+        [traits.Demolitionist, traits.NoDistractions],
+        [traits.WitheringGaze],
+        )
+
+
+class BitterSweet(RD):
+    """
+    Arc Power Grenade Launcher, Adaptive Frame
+    https://www.light.gg/db/items/2599338625
+    """
+    item = Item(name='Bitter/Sweet', hash=2599338625)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [barrels.HardLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal],
+            [traits.BaitAndSwitch],
+            ),
+        Roll(
+            'High DPS',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal],
+            [traits.ExplosiveLight],
+            ),
+        ]
 
 
 class NoxiousVetiver(RD):
@@ -131,26 +124,33 @@ class ScavengersFate(RD):
     item = Item(name="Scavenger's Fate", hash=2913577176)
 
 
-class BitterSweet(RD):
+class RedTape(RD):
     """
-    Arc Power Grenade Launcher, Adaptive Frame
-    https://www.light.gg/db/items/2599338625
+    Stasis Scout Rifle, Lightweight Frame
+    https://www.light.gg/db/items/3423493037
     """
-    item = Item(name='Bitter/Sweet', hash=2599338625)
+    item = Item(name='Red Tape', hash=3423493037)
+    _barrels = [barrels.ArrowheadBrake, AnyPerk]
+    _mags = [
+        magazines.TacticalMag,
+        magazines.AppendedMag,
+        magazines.AlloyMagazine,
+        magazines.FlaredMagwell,
+        ]
     rolls = [
         Roll(
-            'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.BaitAndSwitch],
+            'Explosive Payload',
+            _barrels,
+            _mags,
+            [traits.Demolitionist],
+            [traits.ExplosivePayload],
             ),
         Roll(
-            'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.ExplosiveLight],
+            'Headstone',
+            _barrels,
+            _mags,
+            [traits.Demolitionist, traits.Rimestealer],
+            [traits.Headstone],
             ),
         ]
 
@@ -200,20 +200,20 @@ class ChromaRush(RD):
         ]
 
 
-class IgnitionCode(RD):
-    """
-    Kinetic Breechloaded Grenade Launcher, Lightweight Frame
-    https://www.light.gg/db/items/2761869150
-    """
-    item = Item(name='Ignition Code', hash=2761869150)
-
-
 class Gridskipper(RD):
     """
     Void Pulse Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/3433930495
     """
     item = Item(name='Gridskipper', hash=3433930495)
+
+
+class IgnitionCode(RD):
+    """
+    Kinetic Breechloaded Grenade Launcher, Lightweight Frame
+    https://www.light.gg/db/items/2761869150
+    """
+    item = Item(name='Ignition Code', hash=2761869150)
 
 
 class SojournersTale(RD):
