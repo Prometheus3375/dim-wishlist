@@ -3,6 +3,10 @@ from database import *
 
 # region Cassoid
 class DedGramaryeIV(RD):
+    """
+    Ark Shotgun, Lightweight Frame
+    https://www.light.gg/db/items/499245245
+    """
     item = Item(name='Ded Gramarye IV', hash=499245245)
     _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
     rolls = [
@@ -30,6 +34,10 @@ class DedGramaryeIV(RD):
 # endregion
 # region Field forged
 class LiveFire(RD):
+    """
+    Stasis Scout Rifle, Precision Frame
+    https://www.light.gg/db/items/3612142623
+    """
     item = Item(name='Live Fire', hash=3612142623)
     rolls = [
         Roll(
@@ -48,6 +56,10 @@ class LiveFire(RD):
 # endregion
 # region Hakke
 class VeledaF(RD):
+    """
+    Void Sniper Rifle, Aggressive Frame
+    https://www.light.gg/db/items/4200122994
+    """
     item = Item(name='Veleda F', hash=4200122994)
     roll = Roll(
         'Weaken support roll',
@@ -61,6 +73,10 @@ class VeledaF(RD):
 # endregion
 # region Omolon
 class YarovitMG4(RD):
+    """
+    Stasis Submachine Gun, Lightweight Frame
+    https://www.light.gg/db/items/3959549446
+    """
     item = Item(name='Yarovit MG4', hash=3959549446)
     roll = Roll(
         'Good PvE roll',
@@ -72,6 +88,10 @@ class YarovitMG4(RD):
 # endregion
 # SUROS
 class Legato11(RD):
+    """
+    Solar Shotgun, Pinpoint Slug Frame
+    https://www.light.gg/db/items/3753063346
+    """
     item = Item(name='Legato-11', hash=3753063346)
     roll = Roll(
         'Roll for damage dealing',
@@ -85,6 +105,10 @@ class Legato11(RD):
 # endregion
 # region Veist
 class Suspectum4FR(RD):
+    """
+    Stasis Linear Fusion Rifle, Precision Frame
+    https://www.light.gg/db/items/3615421669
+    """
     item = Item(name='Suspectum-4FR', hash=3615421669)
     rolls = [
         Roll(

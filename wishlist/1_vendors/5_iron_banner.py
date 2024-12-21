@@ -2,6 +2,10 @@ from database import *
 
 
 class TinashasMastery(RD):
+    """
+    Stasis Sidearm, Rocket-Assisted Frame
+    https://www.light.gg/db/items/480368036
+    """
     item = Item(name="Tinasha's Mastery", hash=480368036)
     _mag_note = """;
     High-Explosive Ordnance with Backup Mag mod gives the maximum reserves,
@@ -27,6 +31,10 @@ class TinashasMastery(RD):
 
 
 class ArchonsThunder(RD):
+    """
+    Stasis Machine Gun, High-Impact Frame
+    https://www.light.gg/db/items/2896109856
+    """
     item = Item(name="Archon's Thunder", hash=2896109856)
     _mags = [
         magazines.AppendedMag,
