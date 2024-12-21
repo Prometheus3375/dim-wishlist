@@ -7,21 +7,21 @@ class TinashasMastery(RD):
     https://www.light.gg/db/items/480368036
     """
     item = Item(name="Tinasha's Mastery", hash=480368036)
-    _mag_note = """;
-    High-Explosive Ordnance with Backup Mag mod gives the maximum reserves,
-    Tactical Mag with Backup Mag mod is the second best
-    """
+    _mag_note = """.
+        High-Explosive Ordnance with Backup Mag mod gives the maximum reserves,
+        Tactical Mag with Backup Mag mod is the second best
+        """
 
     rolls = [
         Roll(
-            f'Chill Clip roll{_mag_note}',
+            f'Chill Clip{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
             [traits.ImpulseAmplifier, traits.AirTrigger, traits.LooseChange],
             [traits.ChillClip],
             ),
         Roll(
-            f'Roll for ad clear{_mag_note}',
+            f'Ad clear{_mag_note}',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
             [traits.ImpulseAmplifier, traits.AirTrigger],
@@ -43,7 +43,7 @@ class ArchonsThunder(RD):
         magazines.TacticalMag,
         ]
     roll = Roll(
-        'Roll for ad clear',
+        'Ad clear',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
         [traits.Rimestealer, traits.AirTrigger],

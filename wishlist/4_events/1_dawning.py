@@ -14,7 +14,7 @@ class StayFrosty(RD):
         magazines.FlaredMagwell,
         ]
     roll = Roll(
-        'Headstone roll',
+        'Stasis combo',
         [barrels.ArrowheadBrake, AnyPerk],
         _mags,
         [traits.Rimestealer],
@@ -30,28 +30,28 @@ class Glacioclasm(RD):
     item = Item(name='Glacioclasm', hash=1183116657)
     rolls = [
         Roll(
-            'Roll for ad clear',
+            'Ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Subsistence, traits.Overflow],
             [traits.ReservoirBurst],
             ),
         Roll(
-            'Roll for damage dealing',
+            'Damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Overflow],
             [traits.ControlledBurst],
             ),
         Roll(
-            'Weaken support roll',
+            'Withering Gaze',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
             [traits.Overflow],
             [traits.WitheringGaze],
             ),
         Roll(
-            'PvP roll',
+            'PvP',
             [barrels.Smallbore],
             [batteries.ProjectionFuse],
             [traits.UnderPressure],
@@ -67,7 +67,7 @@ class MistralLift(RD):
     """
     item = Item(name='Mistral Lift', hash=3483485727)
     roll = Roll(
-        'Roll for damage dealing',
+        'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [batteries.AcceleratedCoils, AnyPerk],
         [traits.Reconstruction, traits.EnviousAssassin, traits.ClownCartridge,
@@ -84,23 +84,25 @@ class Zephyr(RD):
     item = Item(name='Zephyr', hash=601948197)
     rolls = [
         Roll(
-            'Roll for damage dealing',
+            'Damage dealing',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
             [traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.WhirlwindBlade, traits.Surrounded],
             ),
         Roll(
-            'Cold Steel roll',
+            """
+            Cold Steel.
+            Rimestealer requires destroying a frozen target or a Stasis crystal
+            which hard to achieve with Cold Steel
+            """,
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            # Rimestealer requires destroying a frozen target or Stasis crystal
-            # which hard to achieve with Cold Steel.
             [traits.RelentlessStrikes, traits.AttritionOrbs],
             [traits.ColdSteel],
             ),
         Roll(
-            'Roll for ad clear',
+            'Ad clear',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
             [traits.TirelessBlade, traits.AttritionOrbs],

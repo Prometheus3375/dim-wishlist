@@ -8,7 +8,7 @@ class ArcaneEmbrace(RD):
     """
     item = Item(name='Arcane Embrace', hash=3649985571)
     roll = Roll(
-        'Roll for damage dealing',
+        'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
         [traits.FourthTimesTheCharm],
