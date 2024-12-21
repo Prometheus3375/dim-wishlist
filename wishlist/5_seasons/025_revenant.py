@@ -74,7 +74,8 @@ class Sovereignty(RD):
     roll = Roll(
         'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
         [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
+        [magazines.AppendedMag, magazines.TacticalMag, magazines.AlloyMagazine,
+         magazines.FlaredMagwell],
         [traits.Demolitionist, traits.NoDistractions],
         [traits.WitheringGaze],
         )
