@@ -30,14 +30,26 @@ class Item:
         """
         return cls.__hash2item.get(hash_)
 
-    def __eq__(self, other: Self, /) -> bool:
+    def __eq__(self, other: Any, /) -> bool:
         return self.hash == other.hash if isinstance(other, Item) else False
 
-    def __ne__(self, other: Self, /) -> bool:
+    def __ne__(self, other: Any, /) -> bool:
         return self.hash != other.hash if isinstance(other, Item) else True
 
     def __hash__(self, /) -> int:
         return self.hash
+
+    def __lt__(self, other: Self, /) -> bool:
+        return self.hash < other.hash if isinstance(other, Item) else NotImplemented
+
+    def __le__(self, other: Self, /) -> bool:
+        return self.hash <= other.hash if isinstance(other, Item) else NotImplemented
+
+    def __gt__(self, other: Self, /) -> bool:
+        return self.hash > other.hash if isinstance(other, Item) else NotImplemented
+
+    def __ge__(self, other: Self, /) -> bool:
+        return self.hash >= other.hash if isinstance(other, Item) else NotImplemented
 
     @property
     def light_gg(self, /) -> str:
