@@ -1,7 +1,7 @@
 from collections.abc import Iterable, Sequence
 from dataclasses import InitVar, dataclass, field
 from itertools import product
-from typing import Any, ClassVar, Self, TypeGuard
+from typing import Any, ClassVar, Self, TextIO, TypeGuard
 
 
 @dataclass(frozen=True, kw_only=True, slots=True)
@@ -208,36 +208,57 @@ class Wishlist:
         """
         Writes this wishlist to a file.
         """
+        added_rolls: set[tuple[Item, frozenset[Item]]] = set()
+
         with open(filepath, 'w', encoding='utf-8') as file:
             file.write(f'title:{self.title}\n')
             if self.description:
                 file.write(f'description:{self.description}\n')
 
             file.write(f'\n')
+            self._write_wishlist_entry_list(file, added_rolls, trash_list=False)
+            self._write_wishlist_entry_list(file, added_rolls, trash_list=True)
 
-            if self._wishes:
-                file.write('// Wish rolls\n\n')
-                last_name = ''
-                for entry in self._wishes:
-                    curr_name = entry.item.name
-                    if curr_name != last_name:
-                        file.write(f'// {curr_name}\n')
-                        last_name = curr_name
+    def _write_wishlist_entry_list(
+            self,
+            file: TextIO,
+            added_rolls: set[tuple[Item, frozenset[Item]]],
+            /,
+            trash_list: bool,
+            ) -> None:
+        """
+        Writes the trash list or the wish list to the given file.
+        Every roll encountered is added to the given set.
+        """
+        if trash_list:
+            title = '// Trash rolls\n\n'
+            entry_list = self._trashes
+        else:
+            title = '// Wish rolls\n\n'
+            entry_list = self._wishes
 
-                    file.write(entry.to_dim_wishlist(False))
-                    file.write('\n\n')
+        if entry_list:
+            file.write(title)
+            last_name = ''
+            for entry in entry_list:
+                for combo in entry.combos:
+                    roll = entry.item, frozenset(combo)
+                    if roll in added_rolls:
+                        raise ValueError(
+                            f'{entry.item.name} with '
+                            f'{', '.join(perk.name for perk in combo)} '
+                            f'was already added to this wishlist'
+                            )
+                    else:
+                        added_rolls.add(roll)
 
-            if self._trashes:
-                file.write('// Trash rolls\n\n')
-                last_name = ''
-                for entry in self._trashes:
-                    curr_name = entry.item.name
-                    if curr_name != last_name:
-                        file.write(f'// {curr_name}\n')
-                        last_name = curr_name
+                curr_name = entry.item.name
+                if curr_name != last_name:
+                    file.write(f'// {curr_name}\n')
+                    last_name = curr_name
 
-                    file.write(entry.to_dim_wishlist(True))
-                    file.write('\n\n')
+                file.write(entry.to_dim_wishlist(trash_list))
+                file.write('\n\n')
 
 
 class RD:
