@@ -96,6 +96,11 @@ class Relativism(RD):
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
         Roll(
+            'Class ability builds',
+            [unique.SpiritOf.InmostLight],
+            [unique.SpiritOf.Coyote],
+            ),
+        Roll(
             'Cyrtarachne',
             [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Foetracer],
             [unique.SpiritOf.Cyrtarachne],
