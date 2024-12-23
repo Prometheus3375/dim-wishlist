@@ -1,3 +1,4 @@
+from collections import Counter
 from collections.abc import Iterable, Sequence
 from dataclasses import InitVar, dataclass, field
 from itertools import product
@@ -208,7 +209,6 @@ class Wishlist:
         """
         Writes this wishlist to a file.
         """
-        added_rolls: set[tuple[Item, frozenset[Item]]] = set()
 
         with open(filepath, 'w', encoding='utf-8') as file:
             file.write(f'title:{self.title}\n')
@@ -216,13 +216,27 @@ class Wishlist:
                 file.write(f'description:{self.description}\n')
 
             file.write(f'\n')
+
+            added_rolls: Counter[tuple[Item, frozenset[Item]]] = Counter()
             self._write_wishlist_entry_list(file, added_rolls, trash_list=False)
             self._write_wishlist_entry_list(file, added_rolls, trash_list=True)
+
+            errors = [
+                ValueError(
+                    f'{item.name} [{item.hash}] with '
+                    f'{', '.join(perk.name for perk in combo)} '
+                    f'is duplicated {count - 1} {'time' if count == 2 else 'times'}'
+                    )
+                for (item, combo), count in added_rolls.items()
+                if count > 1
+                ]
+            if errors:
+                raise ExceptionGroup('some perk combinations are duplicated', errors)
 
     def _write_wishlist_entry_list(
             self,
             file: TextIO,
-            added_rolls: set[tuple[Item, frozenset[Item]]],
+            added_rolls: Counter[tuple[Item, frozenset[Item]]],
             /,
             trash_list: bool,
             ) -> None:
@@ -242,15 +256,7 @@ class Wishlist:
             last_name = ''
             for entry in entry_list:
                 for combo in entry.combos:
-                    roll = entry.item, frozenset(combo)
-                    if roll in added_rolls:
-                        raise ValueError(
-                            f'{entry.item.name} with '
-                            f'{', '.join(perk.name for perk in combo)} '
-                            f'was already added to this wishlist'
-                            )
-                    else:
-                        added_rolls.add(roll)
+                    added_rolls[entry.item, frozenset(combo)] += 1
 
                 curr_name = entry.item.name
                 if curr_name != last_name:
