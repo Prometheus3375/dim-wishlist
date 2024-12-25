@@ -7,16 +7,15 @@ class StayFrosty(RD):
     https://www.light.gg/db/items/1123433952
     """
     item = Item(name='Stay Frosty', hash=1123433952)
-    _mags = [
-        magazines.TacticalMag,
-        magazines.AppendedMag,
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
-        ]
     roll = Roll(
         'Stasis combo',
         [barrels.ArrowheadBrake, AnyPerk],
-        _mags,
+        [
+            magazines.TacticalMag,
+            magazines.AppendedMag,
+            magazines.AlloyMagazine,
+            magazines.FlaredMagwell,
+            ],
         [traits.Rimestealer],
         [traits.Headstone],
         )
@@ -30,23 +29,23 @@ class Glacioclasm(RD):
     item = Item(name='Glacioclasm', hash=1183116657)
     rolls = [
         Roll(
-            'Ad clear',
+            'Ad clear. Enhanced Battery + Reservoir Burst give mag size of 8 (max)',
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
+            [batteries.EnhancedBattery, AnyPerk],
             [traits.Subsistence, traits.Overflow],
             [traits.ReservoirBurst],
             ),
         Roll(
             'Damage dealing',
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
+            [batteries.EnhancedBattery, AnyPerk],
             [traits.Overflow],
             [traits.ControlledBurst],
             ),
         Roll(
             'Withering Gaze',
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
+            [batteries.EnhancedBattery, AnyPerk],
             [traits.Overflow],
             [traits.WitheringGaze],
             ),
