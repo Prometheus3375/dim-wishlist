@@ -29,29 +29,27 @@ class Glacioclasm(RD):
     item = Item(name='Glacioclasm', hash=1183116657)
     rolls = [
         Roll(
-            'Ad clear. Enhanced Battery + Reservoir Burst give mag size of 8 (max)',
+            """
+            Ad clear.
+            Reservoir Burst increases mag size to 7 and with Enhanced battery to 8 (max),
+            but better to use just Reservoir Burst for one more empowered shot.
+            """,
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, AnyPerk],
-            [traits.Subsistence, traits.Overflow],
+            [batteries.LiquidCoils, AnyPerk],
+            [traits.Subsistence, traits.Overflow, traits.EnviousAssassin],
             [traits.ReservoirBurst],
             ),
         Roll(
-            'Damage dealing',
+            'Damage dealing. Enhanced Battery + Backup Mag mod give mag size of 8 (max)',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.EnhancedBattery, AnyPerk],
-            [traits.Overflow],
+            [traits.EnviousAssassin, traits.Overflow],
             [traits.ControlledBurst],
-            ),
-        Roll(
-            'Withering Gaze',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, AnyPerk],
-            [traits.Overflow],
-            [traits.WitheringGaze],
+            [origin.OmolonFluidDynamics],
             ),
         Roll(
             'PvP',
-            [barrels.Smallbore],
+            [barrels.Smallbore, barrels.ExtendedBarrel],
             [batteries.ProjectionFuse],
             [traits.UnderPressure],
             [traits.ClosingTime, traits.HighImpactReserves],
