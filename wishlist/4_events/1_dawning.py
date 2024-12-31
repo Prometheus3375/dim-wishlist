@@ -49,7 +49,7 @@ class Glacioclasm(RD):
             ),
         Roll(
             'PvP',
-            [barrels.Smallbore, barrels.ExtendedBarrel],
+            [barrels.Smallbore, barrels.ExtendedBarrel, barrels.ArrowheadBrake],
             [batteries.ProjectionFuse],
             [traits.UnderPressure],
             [traits.ClosingTime, traits.HighImpactReserves],
