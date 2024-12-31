@@ -584,7 +584,7 @@ dimwishlist:item=1123433952&perks=1431678320,1955165503,124408337
 dimwishlist:item=1123433952&perks=3230963543,1955165503,124408337
 
 // Glacioclasm
-//notes:Ad clear. Reservoir Burst increase mag size to 7 and to 8 with Enhanced battery (max), but better to use just Reservoir Burst for one more empowered shot.
+//notes:Ad clear. Reservoir Burst increases mag size to 7 and with Enhanced battery to 8 (max), but better to use just Reservoir Burst for one more empowered shot.
 dimwishlist:item=1183116657&perks=839105230,1687452232,1820235745,1427256713
 dimwishlist:item=1183116657&perks=839105230,1687452232,3643424744,1427256713
 dimwishlist:item=1183116657&perks=839105230,1687452232,968510818,1427256713
@@ -665,16 +665,12 @@ dimwishlist:item=601948197&perks=243981275,3650930298
 //notes:Ad clear
 dimwishlist:item=601948197&perks=3666208348,269888150,2590710093,2396489472
 dimwishlist:item=601948197&perks=3666208348,269888150,1749209109,2396489472
-dimwishlist:item=601948197&perks=3666208348,269888150,243981275,2396489472
 dimwishlist:item=601948197&perks=3666208348,2590710093,2396489472
 dimwishlist:item=601948197&perks=3666208348,1749209109,2396489472
-dimwishlist:item=601948197&perks=3666208348,243981275,2396489472
 dimwishlist:item=601948197&perks=269888150,2590710093,2396489472
 dimwishlist:item=601948197&perks=269888150,1749209109,2396489472
-dimwishlist:item=601948197&perks=269888150,243981275,2396489472
 dimwishlist:item=601948197&perks=2590710093,2396489472
 dimwishlist:item=601948197&perks=1749209109,2396489472
-dimwishlist:item=601948197&perks=243981275,2396489472
 
 // Arcane Embrace
 //notes:Damage dealing

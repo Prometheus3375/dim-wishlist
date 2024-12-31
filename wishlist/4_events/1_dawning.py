@@ -107,7 +107,7 @@ class Zephyr(RD):
             'Ad clear',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade, traits.RelentlessStrikes, traits.AttritionOrbs],
+            [traits.TirelessBlade, traits.RelentlessStrikes],
             [traits.ChainReaction],
             ),
         ]
