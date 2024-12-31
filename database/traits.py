@@ -74,5 +74,6 @@ RelentlessStrikes = Item(name='Relentless Strikes', hash=1749209109)
 TirelessBlade = Item(name='Tireless Blade', hash=2590710093)
 ColdSteel = Item(name='Cold Steel', hash=3650930298)
 WhirlwindBlade = Item(name='Whirlwind Blade', hash=3913600130)
+Unrelenting = Item(name='Unrelenting', hash=3108830275)
 
 del Item
