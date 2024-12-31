@@ -75,7 +75,7 @@ class MistralLift(RD):
             traits.Reconstruction,
             traits.WitheringGaze,
             ],
-        [traits.BaitAndSwitch, traits.PrecisionInstrument],
+        [traits.BaitAndSwitch],
         [origin.VeistStinger],
         )
 
