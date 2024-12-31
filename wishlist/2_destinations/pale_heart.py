@@ -98,7 +98,7 @@ class Relativism(RD):
         Roll(
             'Class ability builds',
             [unique.SpiritOf.InmostLight],
-            [unique.SpiritOf.Coyote],
+            [unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk],
             ),
         Roll(
             'Cyrtarachne',
