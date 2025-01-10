@@ -459,10 +459,11 @@ dimwishlist:item=266021826&perks=3573490510,3573490506
 dimwishlist:item=266021826&perks=1476923954,3573490501
 
 // Solipsism
-//notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
+//notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another. Poison from Necrotic is affected neither by Star-Eater, nor by Song of Flame
 dimwishlist:item=2273643087&perks=1476923953,1476923955
 dimwishlist:item=2273643087&perks=183430250,1476923955
 dimwishlist:item=2273643087&perks=183430252,1476923955
+dimwishlist:item=2273643087&perks=183430248,1476923955
 
 //notes:Grenade builds
 dimwishlist:item=2273643087&perks=1476923953,1476923957

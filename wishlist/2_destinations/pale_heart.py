@@ -171,8 +171,11 @@ class Solipsism(RD):
     item = Item(name='Solipsism', hash=2273643087)
     rolls = [
         Roll(
-            _note_spirit_of_the_star_eater,
-            [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Necrotic],
+            f"""
+            {_note_spirit_of_the_star_eater.strip()}.
+            Poison from Necrotic is affected neither by Star-Eater, nor by Song of Flame""",
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Apotheosis, unique.SpiritOf.Necrotic,
+             unique.SpiritOf.Stag],
             [unique.SpiritOf.StarEater],
             ),
         Roll(
