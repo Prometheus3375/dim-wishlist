@@ -50,12 +50,6 @@ class ErgoSum(RD):
             _blades,
             [guards.SwordmastersGuard, AnyPerk],
             ),
-        # roll(
-        #     'Good roll to get ability energy from sword kills',
-        #     [unique.ErgoSum.GatheringLight],
-        #     [unique.ErgoSum.WaveSwordFrame],
-        #     _ergo_sum_blades,
-        #     ),
         Roll(
             'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',
             [unique.ErgoSum.Stormbringer],
@@ -96,9 +90,14 @@ class Relativism(RD):
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
         Roll(
-            'Class ability builds',
+            'Wormhusk',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer, unique.SpiritOf.Renewal],
+            [unique.SpiritOf.Wormhusk],
+            ),
+        Roll(
+            'Coyote',
             [unique.SpiritOf.InmostLight],
-            [unique.SpiritOf.Coyote, unique.SpiritOf.Wormhusk],
+            [unique.SpiritOf.Coyote],
             ),
         Roll(
             'Cyrtarachne',
@@ -109,11 +108,6 @@ class Relativism(RD):
             'Gyrfalcon',
             [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Gyrfalcon],
-            ),
-        Roll(
-            'PvP',
-            [unique.SpiritOf.Ophidian],
-            [unique.SpiritOf.Wormhusk],
             ),
         ]
 
@@ -155,11 +149,6 @@ class Stoicism(RD):
             [unique.SpiritOf.Abeyant],
             [unique.SpiritOf.Horn],
             ),
-        Roll(
-            'PvP',
-            [unique.SpiritOf.Ophidian],
-            [unique.SpiritOf.AlphaLupi],
-            ),
         ]
 
 
@@ -192,15 +181,5 @@ class Solipsism(RD):
             'Empowered Rift builds',
             [unique.SpiritOf.Filaments, unique.SpiritOf.Osmiomancy],
             [unique.SpiritOf.Starfire],
-            ),
-        # roll(
-        #     'Other Rift builds',
-        #     [unique.SpiritOf.InmostLight, unique.SpiritOf.Stag],
-        #     [unique.SpiritOf.Vesper],
-        #     ),
-        Roll(
-            'PvP',
-            [unique.SpiritOf.Ophidian],
-            [unique.SpiritOf.Harmony],
             ),
         ]
