@@ -415,9 +415,13 @@ dimwishlist:item=2809120022&perks=3751917996,1476923956
 dimwishlist:item=2809120022&perks=3751917995,3751917992
 dimwishlist:item=2809120022&perks=3751917995,1476923956
 
-//notes:Class ability builds
-dimwishlist:item=2809120022&perks=1476923953,3751917990
+//notes:Wormhusk
 dimwishlist:item=2809120022&perks=1476923953,3751917991
+dimwishlist:item=2809120022&perks=3751917997,3751917991
+dimwishlist:item=2809120022&perks=3751917995,3751917991
+
+//notes:Coyote
+dimwishlist:item=2809120022&perks=1476923953,3751917990
 
 //notes:Cyrtarachne
 dimwishlist:item=2809120022&perks=1476923953,3751917994
@@ -426,9 +430,6 @@ dimwishlist:item=2809120022&perks=3751917997,3751917994
 
 //notes:Gyrfalcon
 dimwishlist:item=2809120022&perks=1476923953,3751917993
-
-//notes:PvP
-dimwishlist:item=2809120022&perks=1476923954,3751917991
 
 // Stoicism
 //notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another
@@ -455,9 +456,6 @@ dimwishlist:item=266021826&perks=3573490505,3573490500
 //notes:Drengr's Lash aspect
 dimwishlist:item=266021826&perks=3573490510,3573490506
 
-//notes:PvP
-dimwishlist:item=266021826&perks=1476923954,3573490501
-
 // Solipsism
 //notes:Star-Eater. Feast of Light stacks are preserved when swapping from one class item w/ Spirit of Star-Eater to another. Poison from Necrotic is affected neither by Star-Eater, nor by Song of Flame
 dimwishlist:item=2273643087&perks=1476923953,1476923955
@@ -479,9 +477,6 @@ dimwishlist:item=2273643087&perks=183430252,183430247
 //notes:Empowered Rift builds
 dimwishlist:item=2273643087&perks=183430255,183430249
 dimwishlist:item=2273643087&perks=183430253,183430249
-
-//notes:PvP
-dimwishlist:item=2273643087&perks=1476923954,183430254
 
 // VS Pyroelectric Propellant
 //notes:Ad clear
