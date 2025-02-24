@@ -12,3 +12,18 @@ class Bygones(RD):
         [traits.AttritionOrbs, traits.ShootToLoot],
         [traits.KineticTremors],
         )
+
+
+class Backfang(RD):
+    """
+    Arc Rapid-Fire Glaive
+    https://www.light.gg/db/items/267672635
+    """
+    item = Item(name='Backfang', hash=267672635)
+    roll = Roll(
+        'PvE',
+        [hafts.LowImpedanceWindings, AnyPerk],
+        [magazines.LightMag, AnyPerk],
+        [traits.ReplenishingAegis],
+        [traits.JoltingFeedback, traits.Surrounded, traits.UnstoppableForce, traits.VorpalWeapon],
+        )
