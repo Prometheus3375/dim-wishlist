@@ -48,16 +48,25 @@ class TinashasMastery(RD):
 class WarlordsSpear(RD):
     """
     Arc Trace Rifle, Adaptive Frame
-    https://www.light.gg/db/items/2029899814
+    https://www.light.gg/db/items/1968711238
     """
     item = Item(name="Warlord's Spear", hash=1968711238)
-    roll = Roll(
-        'PvE',
-        [barrels.Smallbore, AnyPerk],
-        [batteries.TacticalBattery, AnyPerk],
-        [traits.LooseChange],
-        [traits.JoltingFeedback, traits.DetonatorBeam],
-        )
+    rolls = [
+        Roll(
+            'Jolting Feedback',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [batteries.TacticalBattery, AnyPerk],
+            [traits.RewindRounds, traits.LooseChange],
+            [traits.JoltingFeedback],
+            ),
+        Roll(
+            'Detonator Beam',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [batteries.TacticalBattery, AnyPerk],
+            [traits.RewindRounds],
+            [traits.DetonatorBeam],
+            ),
+        ]
 
 
 class ArchonsThunder(RD):
