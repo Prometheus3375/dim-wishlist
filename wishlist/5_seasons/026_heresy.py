@@ -90,18 +90,18 @@ class WatchfulEye(RD):
         ]
     rolls = [
         Roll(
+            'Ad clear',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.AppendedMag, AnyPerk],
+            [traits.Overflow],
+            [traits.KillingTally, traits.JoltingFeedback],
+            ),
+        Roll(
             'Arc combo',
             [barrels.ArrowheadBrake, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.EddyCurrent],
             [traits.JoltingFeedback],
-            ),
-        Roll(
-            'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Overflow],
-            [traits.KillingTally],
             ),
         ]
 
