@@ -137,14 +137,6 @@ class Scintillation(RD):
             [origin.VeistStinger],
             ),
         Roll(
-            'ALH and BnS are good combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
-            [traits.AutoLoadingHolster],
-            [traits.BaitAndSwitch],
-            [origin.VeistStinger],
-            ),
-        Roll(
             """
             Rewind Rounds with Veist Stinger usually allows to fire all reserves.
             Unfortunately, any mag stat increase above 20 reduces reserves;
