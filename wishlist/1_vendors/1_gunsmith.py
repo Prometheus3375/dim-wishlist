@@ -144,18 +144,18 @@ class CruorisFR4(RD):
 
 # endregion
 # region Tex Mechanica
-class BoondoggleMK55(RD):
+class BoondoggleMk55(RD):
     """
     Kinetic Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/32287609
     """
-    item = Item(name='Boondoggle MK. 55', hash=32287609)
+    item = Item(name='Boondoggle Mk. 55', hash=32287609)
     rolls = [
         Roll(
-            'Hip fire',
+            'Hip-Fire',
             [barrels.ExtendedBarrel, barrels.ArrowheadBrake, AnyPerk],
-            [magazines.RicochetRounds, magazines.LightMag, AnyPerk],
-            [traits.HipFireGrip],
+            [magazines.RicochetRounds, magazines.LightMag, magazines.FlaredMagwell, AnyPerk],
+            [traits.HipFireGrip, traits.Subsistence],
             [traits.OffhandStrike],
             ),
         ]
