@@ -74,7 +74,7 @@ class RakeAngle(RD):
         """
         Chill Clip.
         Appended Mag, Extended Mag and Backup Mag mod add 1 ammo,
-        Adept Mag mod adds 2 ammo.
+        Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo.
         I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
         """,
         [hafts.LowImpedanceWindings, AnyPerk],

@@ -207,7 +207,7 @@ dimwishlist:item=4077588826&perks=3038247973,3081867624,1050127423
 dimwishlist:item=4077588826&perks=3038247973,3218042543,1050127423
 
 // Rake Angle
-//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
+//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
 dimwishlist:item=2298039571&perks=2713678205,1431678320,1966281507,2978966579
 dimwishlist:item=2298039571&perks=2713678205,1431678320,3643424744,2978966579
 dimwishlist:item=2298039571&perks=2713678205,679225683,1966281507,2978966579
@@ -222,7 +222,7 @@ dimwishlist:item=2298039571&perks=1966281507,2978966579
 dimwishlist:item=2298039571&perks=3643424744,2978966579
 
 // Rake Angle (Adept)
-//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
+//notes:Chill Clip. Appended Mag, Extended Mag and Backup Mag mod add 1 ammo, Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo. I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
 dimwishlist:item=3997086838&perks=2713678205,1431678320,1966281507,2978966579
 dimwishlist:item=3997086838&perks=2713678205,1431678320,3643424744,2978966579
 dimwishlist:item=3997086838&perks=2713678205,679225683,1966281507,2978966579
