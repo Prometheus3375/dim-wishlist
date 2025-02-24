@@ -1,6 +1,21 @@
 from database import *
 
 
+class Peacebond(RD):
+    """
+    Stasis Sidearm, Adaptive Burst
+    https://www.light.gg/db/items/3437370193
+    """
+    item = Item(name='Peacebond', hash=3437370193)
+    roll = Roll(
+        'PvE',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
+        [traits.Headstone],
+        [traits.Rimestealer],
+        )
+
+
 class TinashasMastery(RD):
     """
     Stasis Sidearm, Rocket-Assisted Frame
@@ -28,6 +43,21 @@ class TinashasMastery(RD):
             [traits.OneForAll, traits.Adagio],
             ),
         ]
+
+
+class WarlordsSpear(RD):
+    """
+    Arc Trace Rifle, Adaptive Frame
+    https://www.light.gg/db/items/2029899814
+    """
+    item = Item(name="Warlord's Spear", hash=1968711238)
+    roll = Roll(
+        'PvE',
+        [barrels.Smallbore, AnyPerk],
+        [batteries.TacticalBattery, AnyPerk],
+        [traits.LooseChange],
+        [traits.JoltingFeedback, traits.DetonatorBeam],
+        )
 
 
 class ArchonsThunder(RD):

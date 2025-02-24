@@ -17,6 +17,37 @@ class YesterdaysQuestion(RD):
         )
 
 
+class ExaltedTruth(RD):
+    """
+    Void Hand Cannon, Adaptive Frame
+    https://www.light.gg/db/items/3436626079
+    """
+    items = [
+        Item(name='Exalted Truth', hash=3436626079),
+        Item(name='Exalted Truth (Adept)', hash=1201528146),
+        ]
+    rolls = [
+        Roll(
+            'PvE',
+            [barrels.Smallbore, AnyPerk],
+            [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
+            [traits.DestabilizingRounds, traits.WitheringGaze],
+            [traits.RepulsorBrace, traits.Demoralize],
+            )
+        ]
+
+
+class KeenThistle(RD):
+    """
+    Solar Sniper Rifle, Aggressive Frame
+    https://www.light.gg/db/items/1893967086
+    """
+    items = [
+        Item(name='Keen Thistle', hash=1893967086),
+        Item(name='Keen Thistle (Adept)', hash=3503560035),
+        ]
+
+
 class TomorrowsAnswer(RD):
     """
     Void Rocket Launcher, High-Impact Frame

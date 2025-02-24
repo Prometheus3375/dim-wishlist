@@ -33,6 +33,21 @@ class DedGramaryeIV(RD):
         ]
 
 
+class QuaFurorV(RD):
+    """
+    Stasis Machine Gun, Aggressive Frame
+    https://www.light.gg/db/items/751880654
+    """
+    item = Item(name='Qua Furor V', hash=751880654)
+    roll = Roll(
+        'PvE',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.FlaredMagwell, AnyPerk],
+        [traits.FeedingFrenzy],
+        [traits.OneForAll, traits.Dragonfly],
+        )
+
+
 # endregion
 # region Field forged
 class LiveFire(RD):
@@ -62,12 +77,27 @@ class VeledaF(RD):
     Void Sniper Rifle, Aggressive Frame
     https://www.light.gg/db/items/4200122994
     """
-    item = Item(name='Veleda F', hash=4200122994)
+    item = Item(name='Veleda-F', hash=4200122994)
     roll = Roll(
         'Withering Gaze',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
         [traits.AirTrigger],
+        [traits.WitheringGaze],
+        )
+
+
+class AdmetusD(RD):
+    """
+    Void Scout Rifle, High-Impact Frame
+    https://www.light.gg/db/items/3776430252
+    """
+    item = Item(name='Admetus-D', hash=3776430252)
+    roll = Roll(
+        'Withering Gaze',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.FlaredMagwell, AnyPerk],
+        [traits.RepulsorBrace],
         [traits.WitheringGaze],
         )
 
@@ -102,6 +132,33 @@ class Legato11(RD):
         [traits.AutoLoadingHolster, traits.TripleTap],
         [traits.VorpalWeapon],
         )
+
+
+class CruorisFR4(RD):
+    """
+    Arc Fusion Rifle, Aggressive Frame
+    https://www.light.gg/db/items/891996636
+    """
+    item = Item(name='Cruoris FR4', hash=891996636)
+
+
+# endregion
+# region Tex Mechanica
+class BoondoggleMK55(RD):
+    """
+    Kinetic Submachine Gun, Aggressive Frame
+    https://www.light.gg/db/items/32287609
+    """
+    item = Item(name='Boondoggle MK. 55', hash=32287609)
+    rolls = [
+        Roll(
+            'Hip fire',
+            [barrels.ExtendedBarrel, barrels.ArrowheadBrake, AnyPerk],
+            [magazines.RicochetRounds, magazines.LightMag, AnyPerk],
+            [traits.HipFireGrip],
+            [traits.OffhandStrike],
+            ),
+        ]
 
 
 # endregion
