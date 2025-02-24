@@ -16,8 +16,9 @@ class Adamantite(RD):
     rolls = [
         Roll(
             'Self-healing. Attrition Orbs procs from healing allies',
-            [barrels.HammerForgedRifling, barrels.Smallbore, barrels.CorkscrewRifling, AnyPerk],
-            [magazines.FlaredMagwell, magazines.TacticalMag, magazines.AlloyMagazine, AnyPerk],
+            [barrels.FullBore, barrels.HammerForgedRifling, barrels.Smallbore,
+             barrels.CorkscrewRifling, AnyPerk],
+            [magazines.FlaredMagwell, magazines.AlloyMagazine, magazines.TacticalMag, AnyPerk],
             [traits.Reciprocity],
             [traits.Hatchling, traits.AttritionOrbs],
             ),
