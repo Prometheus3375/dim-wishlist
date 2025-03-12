@@ -130,10 +130,10 @@ class AbyssalEdge(RD):
 class RefusalOfTheCall(RD):
     """
     Strand Adaptive Glaive
-    https://www.light.gg/db/items/2671849376
+    https://www.light.gg/db/items/3269398063
     """
     items = [
-        # Item(name='Refusal of the Call', hash=),
+        Item(name='Refusal of the Call', hash=3269398063),
         Item(name='Refusal of the Call (Adept)', hash=25228802),
         # With Runneth Over
         Item(name='Refusal of the Call', hash=2671849376),
@@ -160,10 +160,10 @@ class RefusalOfTheCall(RD):
 class MirrorImago(RD):
     """
     Strand Submachine Gun, Adaptive Frame
-    https://www.light.gg/db/items/3877448149
+    https://www.light.gg/db/items/3234363830
     """
     items = [
-        # Item(name='Mirror Imago', hash=),
+        Item(name='Mirror Imago', hash=3234363830),
         Item(name='Mirror Imago (Adept)', hash=302039451),
         # With Runneth Over
         Item(name='Mirror Imago', hash=3877448149),
@@ -174,10 +174,10 @@ class MirrorImago(RD):
 class Anamnesis(RD):
     """
     Void Combat Bow, Lightweight Frame
-    https://www.light.gg/db/items/3417731926
+    https://www.light.gg/db/items/2291392465
     """
     items = [
-        # Item(name='Anamnesis', hash=),
+        Item(name='Anamnesis', hash=2291392465),
         Item(name='Anamnesis (Adept)', hash=1536325168),
         # With Runneth Over
         Item(name='Anamnesis', hash=3417731926),
@@ -197,10 +197,10 @@ class Anamnesis(RD):
 class Afterlight(RD):
     """
     Vois Fusion Rifle, Adaptive Frame
-    https://www.light.gg/db/items/1834313033
+    https://www.light.gg/db/items/3228630258
     """
     items = [
-        # Item(name='Afterlight', hash=),
+        Item(name='Afterlight', hash=3228630258),
         Item(name='Afterlight (Adept)', hash=3953163559),
         # With Runneth Over
         Item(name='Afterlight', hash=1834313033),
@@ -211,10 +211,10 @@ class Afterlight(RD):
 class Division(RD):
     """
     Arc Sidearm, Heavy Burst
-    https://www.light.gg/db/items/2992463569
+    https://www.light.gg/db/items/2903168058
     """
     items = [
-        # Item(name='Division', hash=),
+        Item(name='Division', hash=2903168058),
         Item(name='Division (Adept)', hash=3734001727),
         # With Runneth Over
         Item(name='Division', hash=2992463569),
