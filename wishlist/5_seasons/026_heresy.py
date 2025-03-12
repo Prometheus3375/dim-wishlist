@@ -154,6 +154,13 @@ class RefusalOfTheCall(RD):
             [traits.ReplenishingAegis, traits.AutoLoadingHolster],
             [traits.MeleeMomentum],
             ),
+        Roll(
+            'Melee damage',
+            [hafts.LowImpedanceWindings, AnyPerk],
+            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
+            [traits.ReplenishingAegis, traits.AutoLoadingHolster],
+            [traits.CloseToMelee],
+            ),
         ]
 
 
