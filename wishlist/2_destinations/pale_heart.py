@@ -101,7 +101,7 @@ class Relativism(RD):
             ),
         Roll(
             'Cyrtarachne',
-            [unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal, unique.SpiritOf.Foetracer],
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer, unique.SpiritOf.Renewal],
             [unique.SpiritOf.Cyrtarachne],
             ),
         Roll(
@@ -126,7 +126,7 @@ class Stoicism(RD):
             ),
         Roll(
             'Grenade builds',
-            [unique.SpiritOf.InmostLight],
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Bear],
             [unique.SpiritOf.Verity, unique.SpiritOf.Armamentarium],
             ),
         Roll(
@@ -135,18 +135,14 @@ class Stoicism(RD):
             [unique.SpiritOf.Synthoceps, unique.SpiritOf.Contact],
             ),
         Roll(
-            'Class ability builds',
-            [unique.SpiritOf.Hoarfrost],
-            [unique.SpiritOf.Horn],
+            'Alpha Lupi',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.EternalWarrior, unique.SpiritOf.Abeyant,
+             unique.SpiritOf.Bear],
+            [unique.SpiritOf.AlphaLupi],
             ),
         Roll(
-            'Unbreakable aspect',
-            [unique.SpiritOf.Bear],
-            [unique.SpiritOf.Armamentarium],
-            ),
-        Roll(
-            "Drengr's Lash aspect",
-            [unique.SpiritOf.Abeyant],
+            'Horn',
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Hoarfrost, unique.SpiritOf.Abeyant],
             [unique.SpiritOf.Horn],
             ),
         ]

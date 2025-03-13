@@ -739,8 +739,8 @@ dimwishlist:item=2809120022&perks=1476923953,3751917990
 
 //notes:Cyrtarachne
 dimwishlist:item=2809120022&perks=1476923953,3751917994
-dimwishlist:item=2809120022&perks=3751917995,3751917994
 dimwishlist:item=2809120022&perks=3751917997,3751917994
+dimwishlist:item=2809120022&perks=3751917995,3751917994
 
 //notes:Gyrfalcon
 dimwishlist:item=2809120022&perks=1476923953,3751917993
@@ -754,6 +754,8 @@ dimwishlist:item=266021826&perks=3573490511,1476923955
 //notes:Grenade builds
 dimwishlist:item=266021826&perks=1476923953,1476923957
 dimwishlist:item=266021826&perks=1476923953,3573490500
+dimwishlist:item=266021826&perks=3573490505,1476923957
+dimwishlist:item=266021826&perks=3573490505,3573490500
 
 //notes:Melee builds
 dimwishlist:item=266021826&perks=1476923953,1476923956
@@ -761,13 +763,15 @@ dimwishlist:item=266021826&perks=1476923953,3573490504
 dimwishlist:item=266021826&perks=3573490509,1476923956
 dimwishlist:item=266021826&perks=3573490509,3573490504
 
-//notes:Class ability builds
+//notes:Alpha Lupi
+dimwishlist:item=266021826&perks=1476923953,3573490501
+dimwishlist:item=266021826&perks=3573490511,3573490501
+dimwishlist:item=266021826&perks=3573490510,3573490501
+dimwishlist:item=266021826&perks=3573490505,3573490501
+
+//notes:Horn
+dimwishlist:item=266021826&perks=1476923953,3573490506
 dimwishlist:item=266021826&perks=3573490508,3573490506
-
-//notes:Unbreakable aspect
-dimwishlist:item=266021826&perks=3573490505,3573490500
-
-//notes:Drengr's Lash aspect
 dimwishlist:item=266021826&perks=3573490510,3573490506
 
 // Solipsism
