@@ -39,13 +39,22 @@ class Keraunios(RD):
     https://www.light.gg/db/items/2029899814
     """
     item = Item(name='Keraunios', hash=2029899814)
-    roll = Roll(
-        'PvE',
-        [barrels.Smallbore, AnyPerk],
-        [batteries.TacticalBattery, AnyPerk],
-        [traits.Overflow, traits.EddyCurrent],
-        [traits.JoltingFeedback, traits.DetonatorBeam],
-        )
+    rolls = [
+        Roll(
+            'PvE',
+            [barrels.Smallbore, AnyPerk],
+            [batteries.EnhancedBattery, batteries.TacticalBattery, AnyPerk],
+            [traits.Overflow],
+            [traits.JoltingFeedback, traits.KillingTally, traits.DetonatorBeam],
+            ),
+        Roll(
+            'Arc combo',
+            [barrels.Smallbore, AnyPerk],
+            [batteries.EnhancedBattery, batteries.TacticalBattery, AnyPerk],
+            [traits.EddyCurrent],
+            [traits.JoltingFeedback],
+            ),
+        ]
 
 
 class Hullabaloo(RD):
