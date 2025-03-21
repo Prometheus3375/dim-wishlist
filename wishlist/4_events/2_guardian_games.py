@@ -44,8 +44,8 @@ class Keraunios(RD):
             'PvE',
             [barrels.Smallbore, AnyPerk],
             [batteries.EnhancedBattery, batteries.TacticalBattery, AnyPerk],
-            [traits.Overflow],
-            [traits.JoltingFeedback, traits.KillingTally, traits.DetonatorBeam],
+            [traits.Overflow, traits.TripleTap],
+            [traits.JoltingFeedback, traits.DetonatorBeam, traits.KillingTally],
             ),
         Roll(
             'Arc combo',
