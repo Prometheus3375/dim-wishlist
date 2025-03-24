@@ -97,7 +97,7 @@ class AdmetusD(RD):
         'Withering Gaze',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.FlaredMagwell, AnyPerk],
-        [traits.RepulsorBrace],
+        [traits.RepulsorBrace, traits.RapidHit],
         [traits.WitheringGaze],
         )
 
