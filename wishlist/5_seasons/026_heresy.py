@@ -112,19 +112,28 @@ class AbyssalEdge(RD):
     https://www.light.gg/db/items/547165496
     """
     items = [
-        Item(name='Psychopomp', hash=547165496),
-        Item(name='Psychopomp (Adept)', hash=2712683313),
+        Item(name='Abyssal Edge', hash=547165496),
+        Item(name='Abyssal Edge (Adept)', hash=2712683313),
         # With Runneth Over
-        Item(name='Psychopomp', hash=4221591387),
-        Item(name='Psychopomp (Adept)', hash=3054597646),
+        Item(name='Abyssal Edge', hash=4221591387),
+        Item(name='Abyssal Edge (Adept)', hash=3054597646),
         ]
-    roll = Roll(
-        'Damage dealing',
-        [blades.JaggedEdge],
-        [guards.SwordmastersGuard, AnyPerk],
-        [traits.RelentlessStrikes],
-        [traits.Surrounded],
-        )
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [blades.JaggedEdge],
+            [guards.SwordmastersGuard, AnyPerk],
+            [traits.RelentlessStrikes],
+            [traits.Surrounded],
+            ),
+        Roll(
+            'Damage blocking',
+            [blades.JaggedEdge, AnyPerk],
+            [guards.HeavyGuard, AnyPerk],
+            [traits.FlashCounter],
+            [traits.Redirection, traits.Hatchling],
+            ),
+        ]
 
 
 class RefusalOfTheCall(RD):
