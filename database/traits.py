@@ -102,5 +102,9 @@ Firefly = Item(name='Firefly', hash=3824105627)
 FeedingFrenzy = Item(name='Feeding Frenzy', hash=2779035018)
 LastingImpression = Item(name='Lasting Impression', hash=3927722942)
 KillingTally = Item(name='Killing Tally', hash=557221067)
+FlashCounter = Item(name='Flash Counter', hash=2244851822)
+EnergyTransfer = Item(name='Energy Transfer', hash=2030760728)
+SwordLogic = Item(name='Sword Logic', hash=31345821)
+Redirection = Item(name='Redirection', hash=3201496230)
 
 del Item
