@@ -153,7 +153,7 @@ class BoondoggleMk55(RD):
     rolls = [
         Roll(
             'Hip-Fire',
-            [barrels.ExtendedBarrel, barrels.ArrowheadBrake, AnyPerk],
+            [barrels.Smallbore, barrels.CorkscrewRifling, AnyPerk],
             [magazines.RicochetRounds, magazines.LightMag, magazines.FlaredMagwell, AnyPerk],
             [traits.HipFireGrip, traits.Subsistence],
             [traits.OffhandStrike],
