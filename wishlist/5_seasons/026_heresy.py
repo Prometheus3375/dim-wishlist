@@ -50,7 +50,7 @@ class Psychopomp(RD):
             [barrels.Countermass, AnyPerk],
             [magazines.HighVelocityRounds],
             [traits.EnviousArsenal],
-            [traits.FullCourt, traits.Frenzy],
+            [traits.ElementalHoning, traits.FullCourt],
             ),
         Roll(
             'Melee regen',
