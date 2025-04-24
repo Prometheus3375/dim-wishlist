@@ -206,6 +206,13 @@ class Gridskipper(RD):
     https://www.light.gg/db/items/3433930495
     """
     item = Item(name='Gridskipper', hash=3433930495)
+    roll = Roll(
+        'PvE',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.FlaredMagwell, AnyPerk],
+        [traits.RepulsorBrace],
+        [traits.DestabilizingRounds],
+        )
 
 
 class IgnitionCode(RD):
