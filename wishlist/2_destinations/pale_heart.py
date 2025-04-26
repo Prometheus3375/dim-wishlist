@@ -96,7 +96,7 @@ class Relativism(RD):
             ),
         Roll(
             'Coyote',
-            [unique.SpiritOf.InmostLight],
+            [unique.SpiritOf.InmostLight, unique.SpiritOf.Foetracer],
             [unique.SpiritOf.Coyote],
             ),
         Roll(
