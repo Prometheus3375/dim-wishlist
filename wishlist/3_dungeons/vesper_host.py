@@ -9,7 +9,7 @@ class PyroelectricPropellant(RD):
     item = Item(name='VS Pyroelectric Propellant', hash=4232480042)
     roll = Roll(
         'Ad clear',
-        [traits.AttritionOrbs, traits.EddyCurrent],
+        [traits.AttritionOrbs, traits.EddyCurrent, traits.Strategist],
         [traits.JoltingFeedback],
         )
 
@@ -25,14 +25,14 @@ class GraviticArrest(RD):
             'Withering Gaze',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Demolitionist, traits.RepulsorBrace],
+            [traits.Demolitionist],
             [traits.WitheringGaze],
             ),
         Roll(
             'Ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
             [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Demolitionist, traits.RepulsorBrace],
+            [traits.Demolitionist],
             [traits.ChainReaction],
             )
         ]
@@ -49,7 +49,7 @@ class VelocityBaton(RD):
             'Attrition Orbs',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
-            [traits.Demolitionist, traits.Unrelenting, traits.RepulsorBrace],
+            [traits.Demolitionist, traits.Unrelenting],
             [traits.AttritionOrbs],
             ),
         Roll(
@@ -80,7 +80,7 @@ class ChillInhibitor(RD):
             'High DPS',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal, traits.CascadePoint],
+            [traits.CascadePoint],
             [traits.ExplosiveLight],
             ),
         Roll(
@@ -88,6 +88,6 @@ class ChillInhibitor(RD):
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, AnyPerk],
             [traits.DangerZone, traits.Demolitionist],
-            [traits.Surrounded, traits.ChainReaction],
+            [traits.ChainReaction, traits.Surrounded],
             ),
         ]
