@@ -28,13 +28,6 @@ class GraviticArrest(RD):
             [traits.Demolitionist],
             [traits.WitheringGaze],
             ),
-        Roll(
-            'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Demolitionist],
-            [traits.ChainReaction],
-            )
         ]
 
 
@@ -87,7 +80,7 @@ class ChillInhibitor(RD):
             'Ad clear',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighExplosiveOrdnance, AnyPerk],
-            [traits.DangerZone, traits.Demolitionist],
+            [traits.DangerZone],
             [traits.ChainReaction, traits.Surrounded],
             ),
         ]
