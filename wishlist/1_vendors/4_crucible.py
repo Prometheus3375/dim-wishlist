@@ -74,8 +74,8 @@ class Deadlock(RD):
     roll = Roll(
         'PvP',
         [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.FullChoke],
-        [magazines.LightMag, magazines.AccurizedRounds],
+        [magazines.AccurizedRounds, magazines.LightMag],
         [traits.LoneWolf],
         [traits.ClosingTime],
-        [stocks.HandLaidStock, stocks.FittedStock, AnyPerk],
+        [stocks.ShortActionStock, AnyPerk],
         )
