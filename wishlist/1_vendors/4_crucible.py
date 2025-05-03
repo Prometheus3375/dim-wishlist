@@ -20,13 +20,22 @@ class JoxersLongsword(RD):
     https://www.light.gg/db/items/157601190
     """
     item = Item(name="Joxer's Longsword", hash=157601190)
-    roll = Roll(
-        'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.RepulsorBrace, traits.Dragonfly],
-        [traits.DestabilizingRounds, traits.Demoralize, traits.WitheringGaze],
-        )
+    rolls = [
+        Roll(
+            'PvE',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.RepulsorBrace, traits.Dragonfly],
+            [traits.DestabilizingRounds, traits.Demoralize],
+            ),
+        Roll(
+            'Withering Gaze',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.Demolitionist],
+            [traits.WitheringGaze],
+            ),
+        ]
 
 
 # Competitive
