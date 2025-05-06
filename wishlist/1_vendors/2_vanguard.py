@@ -1,7 +1,7 @@
 from database import *
 
 
-class WickedSister(RD):
+class WickedSister(RollDefinition):
     """
     Strand Power Grenade Launcher, Adaptive Frame
     """
@@ -24,7 +24,7 @@ class WickedSister(RD):
         ]
 
 
-class Cynosure(RD):
+class Cynosure(RollDefinition):
     """
     Strand Rocket launcher, Adaptive Frame
     https://www.light.gg/db/items/694275488
@@ -42,7 +42,7 @@ class Cynosure(RD):
 # Nightfalls
 
 
-class Palindrome(RD):
+class Palindrome(RollDefinition):
     """
     Arc Hand Cannon, Adaptive Frame
     https://www.light.gg/db/items/2876244791
@@ -61,7 +61,7 @@ class Palindrome(RD):
         )
 
 
-class RakeAngle(RD):
+class RakeAngle(RollDefinition):
     """
     Stasis Aggressive Glaive
     https://www.light.gg/db/items/2298039571
@@ -84,7 +84,7 @@ class RakeAngle(RD):
         )
 
 
-class LotusEater(RD):
+class LotusEater(RollDefinition):
     """
     Void Sidearm, Rocket-Assisted Frame
     https://www.light.gg/db/items/3922217119
@@ -118,7 +118,7 @@ class LotusEater(RD):
         ]
 
 
-class Scintillation(RD):
+class Scintillation(RollDefinition):
     """
     Strand Linear Fusion Rifle, Adaptive Burst
     https://www.light.gg/db/items/2591257541

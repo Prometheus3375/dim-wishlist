@@ -1,7 +1,7 @@
 from database import *
 
 
-class Peacebond(RD):
+class Peacebond(RollDefinition):
     """
     Stasis Sidearm, Adaptive Burst
     https://www.light.gg/db/items/3437370193
@@ -16,7 +16,7 @@ class Peacebond(RD):
         )
 
 
-class TinashasMastery(RD):
+class TinashasMastery(RollDefinition):
     """
     Stasis Sidearm, Rocket-Assisted Frame
     https://www.light.gg/db/items/480368036
@@ -45,7 +45,7 @@ class TinashasMastery(RD):
         ]
 
 
-class WarlordsSpear(RD):
+class WarlordsSpear(RollDefinition):
     """
     Arc Trace Rifle, Adaptive Frame
     https://www.light.gg/db/items/1968711238
@@ -69,7 +69,7 @@ class WarlordsSpear(RD):
         ]
 
 
-class ArchonsThunder(RD):
+class ArchonsThunder(RollDefinition):
     """
     Stasis Machine Gun, High-Impact Frame
     https://www.light.gg/db/items/2896109856

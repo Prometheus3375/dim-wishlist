@@ -1,7 +1,7 @@
 from database import *
 
 
-class Adamantite(RD):
+class Adamantite(RollDefinition):
     """
     Strand Auto Rifle, Support Frame
     https://www.light.gg/db/items/3229982889
@@ -25,7 +25,7 @@ class Adamantite(RD):
         ]
 
 
-class Psychopomp(RD):
+class Psychopomp(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Area Denial Frame
     https://www.light.gg/db/items/4028298892
@@ -62,7 +62,7 @@ class Psychopomp(RD):
         ]
 
 
-class EyesUnveiled(RD):
+class EyesUnveiled(RollDefinition):
     """
     Void Linear Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/727781522
@@ -76,7 +76,7 @@ class EyesUnveiled(RD):
         ]
 
 
-class WatchfulEye(RD):
+class WatchfulEye(RollDefinition):
     """
     Arc Machine Gun, Aggressive Frame
     https://www.light.gg/db/items/1757177186
@@ -106,7 +106,7 @@ class WatchfulEye(RD):
         ]
 
 
-class AbyssalEdge(RD):
+class AbyssalEdge(RollDefinition):
     """
     Strand Sword, Wave Sword Frame
     https://www.light.gg/db/items/547165496
@@ -136,7 +136,7 @@ class AbyssalEdge(RD):
         ]
 
 
-class RefusalOfTheCall(RD):
+class RefusalOfTheCall(RollDefinition):
     """
     Strand Adaptive Glaive
     https://www.light.gg/db/items/3269398063
@@ -173,7 +173,7 @@ class RefusalOfTheCall(RD):
         ]
 
 
-class MirrorImago(RD):
+class MirrorImago(RollDefinition):
     """
     Strand Submachine Gun, Adaptive Frame
     https://www.light.gg/db/items/3234363830
@@ -187,7 +187,7 @@ class MirrorImago(RD):
         ]
 
 
-class Anamnesis(RD):
+class Anamnesis(RollDefinition):
     """
     Void Combat Bow, Lightweight Frame
     https://www.light.gg/db/items/2291392465
@@ -210,7 +210,7 @@ class Anamnesis(RD):
         ]
 
 
-class Afterlight(RD):
+class Afterlight(RollDefinition):
     """
     Vois Fusion Rifle, Adaptive Frame
     https://www.light.gg/db/items/3228630258
@@ -224,7 +224,7 @@ class Afterlight(RD):
         ]
 
 
-class Division(RD):
+class Division(RollDefinition):
     """
     Arc Sidearm, Heavy Burst
     https://www.light.gg/db/items/2903168058
@@ -245,7 +245,7 @@ class Division(RD):
         )
 
 
-class FalsePromises(RD):
+class FalsePromises(RollDefinition):
     """
     Stasis Auto Rifle, High-Impact Frame
     https://www.light.gg/db/items/1390080550
@@ -253,7 +253,7 @@ class FalsePromises(RD):
     item = Item(name='False Promises', hash=1390080550)
 
 
-class WhisperingSlab(RD):
+class WhisperingSlab(RollDefinition):
     """
     Kinetic Combat Bow, Lightweight Frame
     https://www.light.gg/db/items/690341468
@@ -270,7 +270,7 @@ class WhisperingSlab(RD):
         ]
 
 
-class ColdDenial(RD):
+class ColdDenial(RollDefinition):
     """
     Kinetic Pulse Rifle, High-Impact Frame
     https://www.light.gg/db/items/558794124
@@ -294,7 +294,7 @@ class ColdDenial(RD):
         ]
 
 
-class HollowWords(RD):
+class HollowWords(RollDefinition):
     """
     Arc Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/342027677
@@ -302,7 +302,7 @@ class HollowWords(RD):
     item = Item(name='Hollow Words', hash=342027677)
 
 
-class TemptationsHook(RD):
+class TemptationsHook(RollDefinition):
     """
     Arc Sword, Caster Frame
     https://www.light.gg/db/items/1587953057

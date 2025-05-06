@@ -1,7 +1,7 @@
 from database import *
 
 
-class Exuviae(RD):
+class Exuviae(RollDefinition):
     """
     Stasis Hand Cannon, Aggressive Frame
     https://www.light.gg/db/items/2823644677
@@ -9,7 +9,7 @@ class Exuviae(RD):
     item = Item(name='Exuviae', hash=2823644677)
 
 
-class Insurmountable(RD):
+class Insurmountable(RollDefinition):
     """
     Void Sidearm, Precision Frame
     https://www.light.gg/db/items/414045521
@@ -17,7 +17,7 @@ class Insurmountable(RD):
     item = Item(name='Insurmountable', hash=414045521)
 
 
-class VantagePoint(RD):
+class VantagePoint(RollDefinition):
     """
     Arc Pulse Rifle, Adaptive Frame
     https://www.light.gg/db/items/3830941962
@@ -38,7 +38,7 @@ class VantagePoint(RD):
         )
 
 
-class Liturgy(RD):
+class Liturgy(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Double Fire
     https://www.light.gg/db/items/2599338624
@@ -55,7 +55,7 @@ class Liturgy(RD):
         ]
 
 
-class Sovereignty(RD):
+class Sovereignty(RollDefinition):
     """
     Void Sniper Rifle, Adaptive Frame
     https://www.light.gg/db/items/3818198556
@@ -71,7 +71,7 @@ class Sovereignty(RD):
         )
 
 
-class BitterSweet(RD):
+class BitterSweet(RollDefinition):
     """
     Arc Power Grenade Launcher, Adaptive Frame
     https://www.light.gg/db/items/2599338625
@@ -95,7 +95,7 @@ class BitterSweet(RD):
         ]
 
 
-class NoxiousVetiver(RD):
+class NoxiousVetiver(RollDefinition):
     """
     Arc Submachine Gun, Precision Frame
     https://www.light.gg/db/items/825495813
@@ -116,7 +116,7 @@ class NoxiousVetiver(RD):
         )
 
 
-class ScavengersFate(RD):
+class ScavengersFate(RollDefinition):
     """
     Void Shotgun, Precision Frame
     https://www.light.gg/db/items/2913577176
@@ -124,7 +124,7 @@ class ScavengersFate(RD):
     item = Item(name="Scavenger's Fate", hash=2913577176)
 
 
-class RedTape(RD):
+class RedTape(RollDefinition):
     """
     Stasis Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/3423493037
@@ -155,7 +155,7 @@ class RedTape(RD):
         ]
 
 
-class HereticsFervor(RD):
+class HereticsFervor(RollDefinition):
     """
     Stasis Rocket Launcher, Aggressive Frame
     https://www.light.gg/db/items/4224667951
@@ -170,7 +170,7 @@ class HereticsFervor(RD):
         )
 
 
-class ChromaRush(RD):
+class ChromaRush(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2598420927
@@ -200,7 +200,7 @@ class ChromaRush(RD):
         ]
 
 
-class Gridskipper(RD):
+class Gridskipper(RollDefinition):
     """
     Void Pulse Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/3433930495
@@ -215,7 +215,7 @@ class Gridskipper(RD):
         )
 
 
-class IgnitionCode(RD):
+class IgnitionCode(RollDefinition):
     """
     Kinetic Breechloaded Grenade Launcher, Lightweight Frame
     https://www.light.gg/db/items/2761869150
@@ -223,7 +223,7 @@ class IgnitionCode(RD):
     item = Item(name='Ignition Code', hash=2761869150)
 
 
-class SojournersTale(RD):
+class SojournersTale(RollDefinition):
     """
     Solar Shotgun, Pinpoint Slug Frame
     https://www.light.gg/db/items/2130875369

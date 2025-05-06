@@ -1,7 +1,7 @@
 from database import *
 
 
-class StayFrosty(RD):
+class StayFrosty(RollDefinition):
     """
     Stasis Pulse Rifle, Lightweight Frame
     https://www.light.gg/db/items/1123433952
@@ -21,7 +21,7 @@ class StayFrosty(RD):
         )
 
 
-class Glacioclasm(RD):
+class Glacioclasm(RollDefinition):
     """
     Void Fusion Rifle, High-Impact Frame
     https://www.light.gg/db/items/1183116657
@@ -57,7 +57,7 @@ class Glacioclasm(RD):
         ]
 
 
-class MistralLift(RD):
+class MistralLift(RollDefinition):
     """
     Void Linear Fusion Rifle, Adaptive Burst
     https://www.light.gg/db/items/3483485727
@@ -78,7 +78,7 @@ class MistralLift(RD):
         )
 
 
-class Zephyr(RD):
+class Zephyr(RollDefinition):
     """
     Stasis Sword, Adaptive Frame
     https://www.light.gg/db/items/601948197

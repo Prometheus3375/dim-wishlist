@@ -1,7 +1,7 @@
 from database import *
 
 
-class Breachlight(RD):
+class Breachlight(RollDefinition):
     """
     Strand Sidearm, Heavy Burst
     https://www.light.gg/db/items/2328923181
@@ -29,7 +29,7 @@ class Breachlight(RD):
         ]
 
 
-class PatronOfLostCauses(RD):
+class PatronOfLostCauses(RollDefinition):
     """
     Kinetic Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/2249996761
@@ -53,7 +53,7 @@ class PatronOfLostCauses(RD):
         ]
 
 
-class PerfectParadox(RD):
+class PerfectParadox(RollDefinition):
     """
     Kinetic Shotgun, Rapid-Fire Frame
     https://www.light.gg/db/items/1298672084
@@ -83,7 +83,7 @@ class PerfectParadox(RD):
         ]
 
 
-class MartyrsRetribution(RD):
+class MartyrsRetribution(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Wave Frame
     https://www.light.gg/db/items/2584830733
@@ -123,7 +123,7 @@ class MartyrsRetribution(RD):
         ]
 
 
-class LineInTheSand(RD):
+class LineInTheSand(RollDefinition):
     """
     Arc Linear Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/2450049485

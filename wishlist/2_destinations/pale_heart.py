@@ -1,7 +1,7 @@
 from database import *
 
 
-class ErgoSum(RD):
+class ErgoSum(RollDefinition):
     """
     Exotic Sword on Special Ammo
     https://www.light.gg/db/items/1681583613
@@ -65,7 +65,7 @@ _note_spirit_of_the_star_eater = """
     """
 
 
-class Relativism(RD):
+class Relativism(RollDefinition):
     """
     Hunter Exotic Class Item
     https://www.light.gg/db/items/2809120022
@@ -112,7 +112,7 @@ class Relativism(RD):
         ]
 
 
-class Stoicism(RD):
+class Stoicism(RollDefinition):
     """
     Titan Exotic Class Item
     https://www.light.gg/db/items/266021826
@@ -148,7 +148,7 @@ class Stoicism(RD):
         ]
 
 
-class Solipsism(RD):
+class Solipsism(RollDefinition):
     """
     Warlock Exotic Class Item
     https://www.light.gg/db/items/2273643087
