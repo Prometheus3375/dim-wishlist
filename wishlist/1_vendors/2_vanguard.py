@@ -61,6 +61,33 @@ class Palindrome(RollDefinition):
         )
 
 
+class CruelMercy(RollDefinition):
+    """
+    Arc Pulse Rifle, Heavy Burst
+    https://www.light.gg/db/items/233635202
+    """
+    items = [
+        Item(name='Cruel Mercy', hash=233635202),
+        Item(name='Cruel Mercy (Adept)', hash=2347178967),
+        ]
+    rolls = [
+        Roll(
+            'PvE',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.Dragonfly],
+            [traits.Frenzy],
+            ),
+        Roll(
+            'Arc combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.EddyCurrent],
+            [traits.RollingStorm],
+            ),
+        ]
+
+
 class RakeAngle(RollDefinition):
     """
     Stasis Aggressive Glaive

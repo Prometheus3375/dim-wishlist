@@ -48,6 +48,17 @@ class KeenThistle(RollDefinition):
         ]
 
 
+class Inquisitor(RollDefinition):
+    """
+    Arc Shotgun, Pinpoint Slug Frame
+    https://www.light.gg/db/items/51129316
+    """
+    items = [
+        Item(name='The Inquisitor', hash=51129316),
+        Item(name='The Inquisitor (Adept)', hash=2330860573),
+        ]
+
+
 class TomorrowsAnswer(RollDefinition):
     """
     Void Rocket Launcher, High-Impact Frame
