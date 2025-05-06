@@ -106,5 +106,6 @@ FlashCounter = Item(name='Flash Counter', hash=2244851822)
 EnergyTransfer = Item(name='Energy Transfer', hash=2030760728)
 SwordLogic = Item(name='Sword Logic', hash=31345821)
 Redirection = Item(name='Redirection', hash=3201496230)
+TimedPayload = Item(name='Timed Payload', hash=1954620775)
 
 del Item
