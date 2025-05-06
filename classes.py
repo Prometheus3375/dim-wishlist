@@ -267,7 +267,7 @@ class Wishlist:
                 file.write('\n\n')
 
 
-class RD:
+class RollDefinition:
     """
     A special class to verbosely define a set of rolls for specific items.
     """
@@ -338,4 +338,4 @@ class RD:
             cls.rolls = ()
 
 
-__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RD'
+__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'

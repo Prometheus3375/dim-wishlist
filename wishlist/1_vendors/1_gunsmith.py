@@ -2,7 +2,7 @@ from database import *
 
 
 # region Cassoid
-class DedGramaryeIV(RD):
+class DedGramaryeIV(RollDefinition):
     """
     Ark Shotgun, Lightweight Frame
     https://www.light.gg/db/items/499245245
@@ -33,7 +33,7 @@ class DedGramaryeIV(RD):
         ]
 
 
-class QuaFurorV(RD):
+class QuaFurorV(RollDefinition):
     """
     Stasis Machine Gun, Aggressive Frame
     https://www.light.gg/db/items/751880654
@@ -50,7 +50,7 @@ class QuaFurorV(RD):
 
 # endregion
 # region Field forged
-class LiveFire(RD):
+class LiveFire(RollDefinition):
     """
     Stasis Scout Rifle, Precision Frame
     https://www.light.gg/db/items/3612142623
@@ -72,7 +72,7 @@ class LiveFire(RD):
 
 # endregion
 # region Hakke
-class VeledaF(RD):
+class VeledaF(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame
     https://www.light.gg/db/items/4200122994
@@ -87,7 +87,7 @@ class VeledaF(RD):
         )
 
 
-class AdmetusD(RD):
+class AdmetusD(RollDefinition):
     """
     Void Scout Rifle, High-Impact Frame
     https://www.light.gg/db/items/3776430252
@@ -104,7 +104,7 @@ class AdmetusD(RD):
 
 # endregion
 # region Omolon
-class YarovitMG4(RD):
+class YarovitMG4(RollDefinition):
     """
     Stasis Submachine Gun, Lightweight Frame
     https://www.light.gg/db/items/3959549446
@@ -119,7 +119,7 @@ class YarovitMG4(RD):
 
 # endregion
 # SUROS
-class Legato11(RD):
+class Legato11(RollDefinition):
     """
     Solar Shotgun, Pinpoint Slug Frame
     https://www.light.gg/db/items/3753063346
@@ -134,7 +134,7 @@ class Legato11(RD):
         )
 
 
-class CruorisFR4(RD):
+class CruorisFR4(RollDefinition):
     """
     Arc Fusion Rifle, Aggressive Frame
     https://www.light.gg/db/items/891996636
@@ -144,7 +144,7 @@ class CruorisFR4(RD):
 
 # endregion
 # region Tex Mechanica
-class BoondoggleMk55(RD):
+class BoondoggleMk55(RollDefinition):
     """
     Kinetic Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/32287609
@@ -163,7 +163,7 @@ class BoondoggleMk55(RD):
 
 # endregion
 # region Veist
-class Suspectum4FR(RD):
+class Suspectum4FR(RollDefinition):
     """
     Stasis Linear Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/3615421669

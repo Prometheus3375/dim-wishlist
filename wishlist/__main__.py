@@ -1,7 +1,7 @@
 import os
 from importlib import import_module
 
-from classes import RD, Wishlist
+from classes import RollDefinition, Wishlist
 
 this_dir = os.path.dirname(__file__)
 this_package = os.path.basename(this_dir)
@@ -16,7 +16,7 @@ wishlist = Wishlist(
     description='Rolls on weapons and armor Prometheus3375 would like to have',
     )
 
-for cls in RD.__subclasses__():
+for cls in RollDefinition.__subclasses__():
     for item in cls.items:
         wishlist.add_many(item, *cls.rolls)
 

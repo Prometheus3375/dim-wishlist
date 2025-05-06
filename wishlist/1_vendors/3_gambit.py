@@ -1,7 +1,7 @@
 from database import *
 
 
-class Bygones(RD):
+class Bygones(RollDefinition):
     """
     Kinetic Pulse Rifle, Adaptive Frame
     https://www.light.gg/db/items/2199554524
@@ -14,7 +14,7 @@ class Bygones(RD):
         )
 
 
-class Backfang(RD):
+class Backfang(RollDefinition):
     """
     Arc Rapid-Fire Glaive
     https://www.light.gg/db/items/267672635

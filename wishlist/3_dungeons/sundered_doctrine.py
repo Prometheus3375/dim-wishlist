@@ -1,7 +1,7 @@
 from database import *
 
 
-class Unloved(RD):
+class Unloved(RollDefinition):
     """
     Strand Hand Cannon, Heavy Burst
     https://www.light.gg/db/items/2485881870
@@ -18,7 +18,7 @@ class Unloved(RD):
         ]
 
 
-class Unsworn(RD):
+class Unsworn(RollDefinition):
     """
     Strand Trace Rifle, Adaptive Frame
     https://www.light.gg/db/items/1303313141
@@ -42,7 +42,7 @@ class Unsworn(RD):
         ]
 
 
-class Unworthy(RD):
+class Unworthy(RollDefinition):
     """
     Arc Scout Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2226158470
@@ -57,7 +57,7 @@ class Unworthy(RD):
         )
 
 
-class Unvoiced(RD):
+class Unvoiced(RollDefinition):
     """
     Void Shotgun, Pinpoint Slug Frame
     https://www.light.gg/db/items/3360937899

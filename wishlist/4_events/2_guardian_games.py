@@ -1,7 +1,7 @@
 from database import *
 
 
-class Taraxippos(RD):
+class Taraxippos(RollDefinition):
     """
     Strand Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/2595813005
@@ -9,7 +9,7 @@ class Taraxippos(RD):
     item = Item(name='Taraxippos', hash=2595813005)
 
 
-class Title(RD):
+class Title(RollDefinition):
     """
     Void Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/55393445
@@ -33,7 +33,7 @@ class Title(RD):
         ]
 
 
-class Keraunios(RD):
+class Keraunios(RollDefinition):
     """
     Arc Trace Rifle, Adaptive Frame
     https://www.light.gg/db/items/2029899814
@@ -57,7 +57,7 @@ class Keraunios(RD):
         ]
 
 
-class Hullabaloo(RD):
+class Hullabaloo(RollDefinition):
     """
     Arc Heavy Grenade Launcher, Compressed Wave Frame
     https://www.light.gg/db/items/2666273249

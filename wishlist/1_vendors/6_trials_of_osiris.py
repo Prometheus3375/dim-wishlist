@@ -1,7 +1,7 @@
 from database import *
 
 
-class YesterdaysQuestion(RD):
+class YesterdaysQuestion(RollDefinition):
     """
     Arc Hand Cannon, Heavy Burst
     https://www.light.gg/db/items/2300143112
@@ -17,7 +17,7 @@ class YesterdaysQuestion(RD):
         )
 
 
-class ExaltedTruth(RD):
+class ExaltedTruth(RollDefinition):
     """
     Void Hand Cannon, Adaptive Frame
     https://www.light.gg/db/items/3436626079
@@ -37,7 +37,7 @@ class ExaltedTruth(RD):
         ]
 
 
-class KeenThistle(RD):
+class KeenThistle(RollDefinition):
     """
     Solar Sniper Rifle, Aggressive Frame
     https://www.light.gg/db/items/1893967086
@@ -48,7 +48,7 @@ class KeenThistle(RD):
         ]
 
 
-class TomorrowsAnswer(RD):
+class TomorrowsAnswer(RollDefinition):
     """
     Void Rocket Launcher, High-Impact Frame
     https://www.light.gg/db/items/3009199534

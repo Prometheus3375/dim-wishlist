@@ -1,7 +1,7 @@
 from database import *
 
 
-class ArcaneEmbrace(RD):
+class ArcaneEmbrace(RollDefinition):
     """
     Arc Shotgun, Heavy Burst
     https://www.light.gg/db/items/3649985571

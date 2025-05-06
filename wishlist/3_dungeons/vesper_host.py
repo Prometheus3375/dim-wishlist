@@ -1,7 +1,7 @@
 from database import *
 
 
-class PyroelectricPropellant(RD):
+class PyroelectricPropellant(RollDefinition):
     """
     Arc Auto Rifle, Adaptive Frame
     https://www.light.gg/db/items/4232480042
@@ -14,7 +14,7 @@ class PyroelectricPropellant(RD):
         )
 
 
-class GraviticArrest(RD):
+class GraviticArrest(RollDefinition):
     """
     Void Fusion Rifle, Adaptive Frame
     https://www.light.gg/db/items/93061497
@@ -31,7 +31,7 @@ class GraviticArrest(RD):
         ]
 
 
-class VelocityBaton(RD):
+class VelocityBaton(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Area Denial Frame
     https://www.light.gg/db/items/1762785663
@@ -55,7 +55,7 @@ class VelocityBaton(RD):
         ]
 
 
-class ChillInhibitor(RD):
+class ChillInhibitor(RollDefinition):
     """
     Stasis Power Grenade Launcher, Rapid-Fire Frame
     https://www.light.gg/db/items/1762785662

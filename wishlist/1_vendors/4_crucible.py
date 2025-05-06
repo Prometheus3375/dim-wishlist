@@ -1,7 +1,7 @@
 from database import *
 
 
-class AnonymousAutumn(RD):
+class AnonymousAutumn(RollDefinition):
     """
     Arc Sidearm, Lightweight Frame
     https://www.light.gg/db/items/1051949956
@@ -14,7 +14,7 @@ class AnonymousAutumn(RD):
         )
 
 
-class JoxersLongsword(RD):
+class JoxersLongsword(RollDefinition):
     """
     Void Pulse Rifle, Heavy Burst
     https://www.light.gg/db/items/157601190
@@ -41,7 +41,7 @@ class JoxersLongsword(RD):
 # Competitive
 
 
-class RedrixsEstoc(RD):
+class RedrixsEstoc(RollDefinition):
     """
     Stasis Pulse Rifle, Legacy PR-55 Frame
     https://www.light.gg/db/items/3218364298
@@ -74,7 +74,7 @@ class RedrixsEstoc(RD):
         ]
 
 
-class Deadlock(RD):
+class Deadlock(RollDefinition):
     """
     Stasis Shotgun, Precision Frame
     https://www.light.gg/db/items/2035738085
