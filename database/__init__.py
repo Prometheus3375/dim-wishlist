@@ -1,20 +1,5 @@
 from classes import AnyItem, AnyPerk, Item, Roll, RollDefinition
-from . import (
-    arrows,
-    barrels,
-    batteries,
-    blades,
-    categories,
-    guards,
-    hafts,
-    magazines,
-    masterworks,
-    origin,
-    stocks,
-    strings,
-    traits,
-    unique,
-    )
+from . import *
 
 __all__ = (
     'AnyItem',
@@ -32,6 +17,7 @@ __all__ = (
     'magazines',
     'masterworks',
     'origin',
+    'sights',
     'stocks',
     'strings',
     'traits',
