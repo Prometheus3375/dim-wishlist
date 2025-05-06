@@ -16,6 +16,30 @@ class Peacebond(RollDefinition):
         )
 
 
+class NatureReclaimed(RollDefinition):
+    """
+    Solar Scout Rifle, Lightweight Frame
+    https://www.light.gg/db/items/2639921391
+    """
+    item = Item(name='Nature Reclaimed', hash=2639921391)
+    rolls = [
+        Roll(
+            'Shoot to Loot',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.ShootToLoot],
+            [traits.ExplosivePayload],
+            ),
+        Roll(
+            'Solar combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.HealClip],
+            [traits.Incandescent],
+            ),
+        ]
+
+
 class TinashasMastery(RollDefinition):
     """
     Stasis Sidearm, Rocket-Assisted Frame
