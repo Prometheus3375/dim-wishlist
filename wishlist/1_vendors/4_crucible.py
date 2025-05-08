@@ -26,7 +26,7 @@ class JoxersLongsword(RollDefinition):
             [barrels.ArrowheadBrake, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.RepulsorBrace, traits.Dragonfly],
-            [traits.DestabilizingRounds, traits.Demoralize],
+            [traits.DestabilizingRounds],
             ),
         Roll(
             'Withering Gaze',
