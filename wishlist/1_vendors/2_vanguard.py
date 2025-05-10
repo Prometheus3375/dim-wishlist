@@ -56,7 +56,7 @@ class Palindrome(RollDefinition):
         [barrels.Smallbore, AnyPerk],
         [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
         [traits.ExplosivePayload],
-        [traits.MasterOfArms, traits.RollingStorm],
+        [traits.MasterOfArms],
         [origin.WildCard],
         )
 
@@ -78,13 +78,13 @@ class CruelMercy(RollDefinition):
             [traits.Dragonfly],
             [traits.Frenzy],
             ),
-        Roll(
-            'Arc combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.EddyCurrent],
-            [traits.RollingStorm],
-            ),
+        # Roll(
+        #     'Arc combo',
+        #     [barrels.ArrowheadBrake, AnyPerk],
+        #     [magazines.FlaredMagwell, AnyPerk],
+        #     [traits.EddyCurrent],
+        #     [traits.RollingStorm],
+        #     ),
         ]
 
 
