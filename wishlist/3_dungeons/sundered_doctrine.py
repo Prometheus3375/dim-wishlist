@@ -53,7 +53,7 @@ class Unworthy(RollDefinition):
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.FlaredMagwell, AnyPerk],
         [traits.Firefly],
-        [traits.Voltshot, traits.RollingStorm],
+        [traits.Voltshot],
         )
 
 
