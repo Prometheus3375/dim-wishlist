@@ -67,6 +67,6 @@ class Unvoiced(RollDefinition):
         'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.TacticalMag, magazines.AssaultMag, magazines.LightMag],
-        [traits.FourthTimesTheCharm, traits.EnviousArsenal],
-        [traits.BaitAndSwitch, traits.VorpalWeapon],
+        [traits.Redirection, traits.FourthTimesTheCharm, traits.EnviousArsenal],
+        [traits.BaitAndSwitch],
         )
