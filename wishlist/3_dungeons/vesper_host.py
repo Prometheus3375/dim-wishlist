@@ -42,15 +42,22 @@ class VelocityBaton(RollDefinition):
             'Attrition Orbs',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
-            [traits.Demolitionist, traits.Unrelenting],
+            [traits.Unrelenting, traits.Demolitionist],
             [traits.AttritionOrbs],
             ),
         Roll(
             'Ad clear',
             [barrels.QuickLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
-            [traits.Demolitionist, traits.Unrelenting, traits.RepulsorBrace],
-            [traits.Adagio, traits.DestabilizingRounds],
+            [traits.Unrelenting, traits.Demolitionist],
+            [traits.DestabilizingRounds, traits.Adagio],
+            ),
+        Roll(
+            'Void Combo',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.HighVelocityRounds],
+            [traits.RepulsorBrace],
+            [traits.DestabilizingRounds],
             ),
         ]
 
