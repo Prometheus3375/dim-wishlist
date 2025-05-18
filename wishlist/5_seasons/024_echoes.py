@@ -23,6 +23,7 @@ class Breachlight(RollDefinition):
             because DM can be activated while stowed and lasts longer
             """,
             [barrels.ArrowheadBrake, AnyPerk],
+            _mags,
             [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
             [traits.DesperateMeasures],
             ),
