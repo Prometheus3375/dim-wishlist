@@ -117,15 +117,7 @@ class LongArm(RollDefinition):
             [barrels.ArrowheadBrake, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.DualLoader, traits.HipFireGrip],
-            [traits.Redirection],
-            ),
-        Roll(
-            '''
-            Explosive Payload is currently bugged and does not give bonus damage
-            (per https://x.com/mossy_max/status/1919845792212189554)
-            ''',
-            [traits.ExplosivePayload],
-            is_trash=True,
+            [traits.Redirection, traits.ExplosivePayload],
             ),
         ]
 
