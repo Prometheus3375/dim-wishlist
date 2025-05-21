@@ -26,14 +26,14 @@ class NatureReclaimed(RollDefinition):
         Roll(
             'Shoot to Loot',
             [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
             [traits.ShootToLoot],
             [traits.ExplosivePayload],
             ),
         Roll(
             'Solar combo',
             [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
             [traits.HealClip],
             [traits.Incandescent],
             ),
