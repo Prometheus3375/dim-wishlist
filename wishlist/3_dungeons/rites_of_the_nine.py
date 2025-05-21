@@ -240,7 +240,7 @@ class GreasyLuck(RollDefinition):
             'PvE',
             [hafts.LowImpedanceWindings, AnyPerk],
             [magazines.AlloyMagazine, AnyPerk],
-            [traits.ReplenishingAegis],
+            [traits.ReplenishingAegis, traits.Reconstruction],
             [traits.Redirection, traits.Incandescent],
             ),
         ]
@@ -259,10 +259,10 @@ class ColdComfort(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Damage dealing',
+            "Damage dealing; prefer Heretic's Fervor for roll with Explosive Light",
             [barrels.QuickLaunch, AnyPerk],
             [magazines.ImpactCasing, AnyPerk],
-            [traits.Reconstruction, traits.EnviousArsenal],
-            [traits.BaitAndSwitch, traits.ExplosiveLight, traits.ElementalHoning],
+            [traits.EnviousArsenal, traits.Reconstruction],
+            [traits.BaitAndSwitch, traits.ElementalHoning],
             ),
         ]
