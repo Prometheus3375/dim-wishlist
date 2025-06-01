@@ -201,11 +201,11 @@ class NewPacificEpitaph(RollDefinition):
         ]
     rolls = [
         Roll(
-            'PvE',
+            'Ad clear',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.HighVelocityRounds],
             [traits.Unrelenting],
-            [traits.Redirection, traits.ChainReaction],
+            [traits.ChainReaction, traits.KillClip, traits.Redirection],
             ),
         Roll(
             'Grenade combo',
@@ -238,7 +238,7 @@ class GreasyLuck(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [hafts.LowImpedanceWindings, AnyPerk],
+            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
             [magazines.AlloyMagazine, AnyPerk],
             [traits.ReplenishingAegis, traits.Reconstruction],
             [traits.Redirection, traits.Incandescent],
