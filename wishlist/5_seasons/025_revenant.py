@@ -122,6 +122,13 @@ class ScavengersFate(RollDefinition):
     https://www.light.gg/db/items/2913577176
     """
     item = Item(name="Scavenger's Fate", hash=2913577176)
+    roll = Roll(
+        'PvP',
+        [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.FullChoke],
+        [magazines.AccurizedRounds, magazines.LightMag],
+        [traits.LoneWolf],
+        [traits.ClosingTime],
+        )
 
 
 class RedTape(RollDefinition):
