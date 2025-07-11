@@ -243,6 +243,13 @@ class GreasyLuck(RollDefinition):
             [traits.ReplenishingAegis, traits.Reconstruction],
             [traits.Redirection, traits.Incandescent],
             ),
+        Roll(
+            'Melee damage',
+            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
+            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
+            [traits.ReplenishingAegis, traits.Reconstruction],
+            [traits.CloseToMelee],
+            ),
         ]
 
 
