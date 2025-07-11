@@ -22,8 +22,8 @@ class Backfang(RollDefinition):
     item = Item(name='Backfang', hash=267672635)
     roll = Roll(
         'PvE',
-        [hafts.LowImpedanceWindings, AnyPerk],
-        [magazines.LightMag, AnyPerk],
+        [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
+        [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
         [traits.ReplenishingAegis],
-        [traits.JoltingFeedback, traits.Surrounded, traits.UnstoppableForce, traits.VorpalWeapon],
+        [traits.Voltshot, traits.Surrounded, traits.UnstoppableForce],
         )
