@@ -239,7 +239,7 @@ class GreasyLuck(RollDefinition):
         Roll(
             'PvE',
             [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, AnyPerk],
+            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
             [traits.ReplenishingAegis, traits.Reconstruction],
             [traits.Redirection, traits.Incandescent],
             ),
