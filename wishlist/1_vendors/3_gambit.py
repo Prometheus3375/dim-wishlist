@@ -20,10 +20,19 @@ class Backfang(RollDefinition):
     https://www.light.gg/db/items/267672635
     """
     item = Item(name='Backfang', hash=267672635)
-    roll = Roll(
-        'PvE',
-        [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-        [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-        [traits.ReplenishingAegis],
-        [traits.Voltshot, traits.Surrounded, traits.UnstoppableForce],
-        )
+    rolls = [
+        Roll(
+            'PvE',
+            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
+            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
+            [traits.ReplenishingAegis],
+            [traits.Voltshot, traits.Surrounded, traits.UnstoppableForce],
+            ),
+        Roll(
+            'Melee damage',
+            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
+            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
+            [traits.ReplenishingAegis],
+            [traits.CloseToMelee],
+            ),
+        ]
