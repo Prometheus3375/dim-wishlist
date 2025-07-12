@@ -22,10 +22,17 @@ class JoxersLongsword(RollDefinition):
     item = Item(name="Joxer's Longsword", hash=157601190)
     rolls = [
         Roll(
-            'PvE',
+            'Ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
-            [traits.RepulsorBrace, traits.Dragonfly],
+            [traits.Dragonfly],
+            [traits.DestabilizingRounds, traits.Demoralize],
+            ),
+        Roll(
+            'Void combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.RepulsorBrace],
             [traits.DestabilizingRounds],
             ),
         Roll(
