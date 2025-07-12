@@ -35,7 +35,7 @@ class Cynosure(RollDefinition):
         [barrels.QuickLaunch, AnyPerk],
         [magazines.ImpactCasing, AnyPerk],
         [traits.Reconstruction, traits.ClownCartridge, traits.EnviousArsenal, traits.Demolitionist],
-        [traits.ExplosiveLight, traits.LastingImpression],
+        [traits.ExplosiveLight],
         )
 
 
