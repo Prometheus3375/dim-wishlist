@@ -57,6 +57,7 @@ class LanceEphemeral(RollDefinition):
     Strand Sniper Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/688593230
     """
+    item = Item(name='Lance Ephemeral', hash=688593230)
     rolls = [
         Roll(
             'Damage dealing',
