@@ -73,7 +73,7 @@ class Sovereignty(RollDefinition):
 
 class BitterSweet(RollDefinition):
     """
-    Arc Power Grenade Launcher, Adaptive Frame
+    Arc Drum Grenade Launcher, Adaptive Frame
     https://www.light.gg/db/items/2599338625
     """
     item = Item(name='Bitter/Sweet', hash=2599338625)

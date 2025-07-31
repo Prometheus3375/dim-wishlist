@@ -1,51 +1,30 @@
 from database import *
 
 
-class AnonymousAutumn(RollDefinition):
+class SolemnRemembrance(RollDefinition):
     """
-    Arc Sidearm, Lightweight Frame
-    https://www.light.gg/db/items/1051949956
+    Stasis Hand Cannon, Precision Frame
+    https://www.light.gg/db/items/4116518582
     """
-    item = Item(name='Anonymous Autumn', hash=1051949956)
-    roll = Roll(
-        'PvE',
-        [traits.EddyCurrent, traits.AttritionOrbs, traits.Demolitionist],
-        [traits.Voltshot],
-        )
-
-
-class JoxersLongsword(RollDefinition):
-    """
-    Void Pulse Rifle, Heavy Burst
-    https://www.light.gg/db/items/157601190
-    """
-    item = Item(name="Joxer's Longsword", hash=157601190)
+    item = Item(name='Solemn Remembrance', hash=4116518582)
     rolls = [
         Roll(
             'Ad clear',
             [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Dragonfly],
-            [traits.DestabilizingRounds, traits.Demoralize],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.Headstone],
+            [traits.Firefly],
+            [grips.PolymerGrip, AnyPerk],
             ),
         Roll(
-            'Void combo',
+            'Stasis combo',
             [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
-            ),
-        Roll(
-            'Withering Gaze',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Demolitionist],
-            [traits.WitheringGaze],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.Headstone],
+            [traits.Rimestealer],
+            [grips.PolymerGrip, AnyPerk],
             ),
         ]
-
-
-# Competitive
 
 
 class RedrixsEstoc(RollDefinition):
@@ -79,6 +58,9 @@ class RedrixsEstoc(RollDefinition):
             [traits.Headstone],
             ),
         ]
+
+
+# Special
 
 
 class Deadlock(RollDefinition):
