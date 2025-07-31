@@ -3,7 +3,7 @@ from database import *
 
 class WickedSister(RollDefinition):
     """
-    Strand Power Grenade Launcher, Adaptive Frame
+    Strand Drum Grenade Launcher, Adaptive Frame
     """
     item = Item(name='Wicked Sister', hash=2039776723)
     rolls = [

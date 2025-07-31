@@ -40,6 +40,9 @@ class NatureReclaimed(RollDefinition):
         ]
 
 
+# Special
+
+
 class TinashasMastery(RollDefinition):
     """
     Stasis Sidearm, Rocket-Assisted Frame
@@ -91,6 +94,9 @@ class WarlordsSpear(RollDefinition):
             [traits.DetonatorBeam],
             ),
         ]
+
+
+# Heavy
 
 
 class ArchonsThunder(RollDefinition):

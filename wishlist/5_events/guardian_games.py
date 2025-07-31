@@ -59,7 +59,7 @@ class Keraunios(RollDefinition):
 
 class Hullabaloo(RollDefinition):
     """
-    Arc Heavy Grenade Launcher, Compressed Wave Frame
+    Arc Drum Grenade Launcher, Compressed Wave Frame
     https://www.light.gg/db/items/2666273249
     """
     item = Item(name='Hullabaloo', hash=2666273249)

@@ -64,7 +64,7 @@ class VelocityBaton(RollDefinition):
 
 class ChillInhibitor(RollDefinition):
     """
-    Stasis Power Grenade Launcher, Rapid-Fire Frame
+    Stasis Drum Grenade Launcher, Rapid-Fire Frame
     https://www.light.gg/db/items/1762785662
     """
     item = Item(name='VS Chill Inhibitor', hash=1762785662)
