@@ -122,23 +122,16 @@ class OpaqueHourglass(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [rails.LowProfileRail, rails.EmpoweredRail, AnyPerk],
+            [rails.LowProfileRail, AnyPerk],
             [bolts.HeavyBolts, bolts.ChargedBolts, AnyPerk],
             [traits.BoltScavenger, traits.ImpulseAmplifier],
             [traits.Frenzy, traits.BinaryOrbit],
             ),
         Roll(
             'Ad clear',
-            [rails.LowProfileRail, rails.EmpoweredRail, AnyPerk],
+            [rails.LowProfileRail, AnyPerk],
             [bolts.HeavyBolts, bolts.ChargedBolts, AnyPerk],
             [traits.Firefly],
             [traits.Dragonfly],
-            ),
-        Roll(
-            'PvP',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.HeavyBolts, bolts.ChargedBolts, AnyPerk],
-            [traits.BoltScavenger],
-            [traits.BinaryOrbit, traits.MasterOfArms, traits.BinaryOrbit],
             ),
         ]
