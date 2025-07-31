@@ -60,7 +60,7 @@ class AhabChar(RollDefinition):
     https://www.light.gg/db/items/1411560894
     """
     item = Item(name='Ahab Char', hash=1411560894)
-    rolls = Roll(
+    roll = Roll(
         'PvE',
         [barrels.ArrowheadBrake, AnyPerk],
         [magazines.FlaredMagwell, AnyPerk],
