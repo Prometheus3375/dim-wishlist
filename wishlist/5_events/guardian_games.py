@@ -43,14 +43,14 @@ class Keraunios(RollDefinition):
         Roll(
             'PvE',
             [barrels.Smallbore, AnyPerk],
-            [batteries.EnhancedBattery, batteries.TacticalBattery, AnyPerk],
+            [batteries.TacticalBattery, AnyPerk],
             [traits.Overflow, traits.TripleTap],
             [traits.JoltingFeedback, traits.DetonatorBeam, traits.KillingTally],
             ),
         Roll(
             'Arc combo',
             [barrels.Smallbore, AnyPerk],
-            [batteries.EnhancedBattery, batteries.TacticalBattery, AnyPerk],
+            [batteries.TacticalBattery, AnyPerk],
             [traits.EddyCurrent],
             [traits.JoltingFeedback],
             ),
