@@ -99,7 +99,7 @@ class Boomslang4FR(RollDefinition):
     roll = Roll(
         'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
-        [batteries.EnhancedBattery, AnyPerk],
+        [batteries.AcceleratedCoils, AnyPerk],
         [traits.EnviousArsenal],
         [traits.PrecisionInstrument],
         )
