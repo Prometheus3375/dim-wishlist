@@ -117,13 +117,20 @@ class AuroraDawn(RollDefinition):
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
             [traits.TirelessBlade, traits.Unrelenting],
-            [traits.OneForAll, traits.Unrelenting],
+            [traits.OneForAll, traits.ColdSteel],
             ),
         Roll(
-            'Cold Steel',
+            'Damage dealing with Ergo Sum',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade, traits.Unrelenting],
+            [traits.SharpHarvest],
+            [traits.WhirlwindBlade],
+            ),
+        Roll(
+            'Damage blocking. Flash Counter applies Cold Steel',
+            [blades.JaggedEdge, AnyPerk],
+            [guards.SwordmastersGuard, AnyPerk],
+            [traits.FlashCounter],
             [traits.ColdSteel],
             ),
         ]
