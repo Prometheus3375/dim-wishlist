@@ -24,7 +24,7 @@ class Lionfish4FR(RollDefinition):
     Stasis Fusion Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2423071981
     """
-    item = Item(name='Lionfish-4FR', hash=2838279629)
+    item = Item(name='Lionfish-4FR', hash=2423071981)
     rolls = [
         Roll(
             'Chill Clip',
