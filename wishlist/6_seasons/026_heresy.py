@@ -129,7 +129,7 @@ class AbyssalEdge(RollDefinition):
         Roll(
             'Damage blocking',
             [blades.JaggedEdge, AnyPerk],
-            [guards.HeavyGuard, AnyPerk],
+            [guards.SwordmastersGuard, AnyPerk],
             [traits.FlashCounter],
             [traits.Redirection, traits.Hatchling],
             ),
