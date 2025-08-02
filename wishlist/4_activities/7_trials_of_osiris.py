@@ -60,6 +60,13 @@ class AureusNeutralizer(RollDefinition):
     item = Item(name='Aureus Neutralizer', hash=3981920134)
     rolls = [
         Roll(
+            'Damage dealing',
+            [barrels.BarrelShroud, AnyPerk],
+            [magazines.AppendedMag, AnyPerk],
+            [traits.VorpalWeapon],
+            [traits.TrenchBarrel, traits.CascadePoint],
+            ),
+        Roll(
             'Melee damage increase',
             [barrels.BarrelShroud, AnyPerk],
             [magazines.TacticalMag, AnyPerk],
@@ -67,18 +74,11 @@ class AureusNeutralizer(RollDefinition):
             [traits.OneTwoPunch],
             ),
         Roll(
-            'Damage dealing',
-            [barrels.BarrelShroud, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.VorpalWeapon],
-            [traits.TrenchBarrel],
-            ),
-        Roll(
             'PvP',
             [barrels.Smallbore, AnyPerk],
             [magazines.AccurizedRounds, AnyPerk],
             [traits.BarrelConstrictor],
-            [traits.ClosingTime],
+            [traits.ClosingTime, traits.OpeningShot],
             ),
         ]
 
