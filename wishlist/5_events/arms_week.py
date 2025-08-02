@@ -20,6 +20,13 @@ class PhoneutriaFera(RollDefinition):
             [traits.OneTwoPunch],
             ),
         Roll(
+            'Damage dealing',
+            [barrels.FlutedBarrel, AnyPerk],
+            [magazines.AppendedMag, AnyPerk],
+            [traits.ThreatDetector],
+            [traits.Surrounded],
+            ),
+        Roll(
             'Ad clear',
             [barrels.FlutedBarrel, AnyPerk],
             [magazines.TacticalMag, AnyPerk],
