@@ -3,7 +3,7 @@ from database import *
 
 class FortunateStar(RollDefinition):
     """
-    Combat Bow, Precision Frame
+    Combat Bow, Lightweight Frame
     https://www.light.gg/db/items/2631466936
     """
     items = [
@@ -13,14 +13,14 @@ class FortunateStar(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [strings.ElasticString, AnyPerk],
+            [strings.PolymerString, AnyPerk],
             [arrows.FiberglassArrowShaft, AnyPerk],
             [traits.Dragonfly, traits.ArchersTempo],
             [traits.DestabilizingRounds],
             ),
         Roll(
             'Void combo',
-            [strings.ElasticString, AnyPerk],
+            [strings.PolymerString, AnyPerk],
             [arrows.FiberglassArrowShaft, AnyPerk],
             [traits.RepulsorBrace],
             [traits.DestabilizingRounds, traits.Demoralize],
