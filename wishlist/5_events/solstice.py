@@ -50,7 +50,7 @@ class YeartideApex(RollDefinition):
             [barrels.Smallbore, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.AttritionOrbs],
-            [traits.TargetLock],
+            [traits.ChaosReshaped, traits.TargetLock],
             ),
         ]
 
