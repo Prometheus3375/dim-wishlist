@@ -22,6 +22,13 @@ class GiversBlessing(RollDefinition):
             [traits.Demolitionist, traits.FeedingFrenzy],
             [traits.OneForAll],
             ),
+        Roll(
+            'Ammo generation',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.ImpromptuAmmunition],
+            [traits.KineticTremors, traits.OneForAll],
+            ),
         ]
 
 
