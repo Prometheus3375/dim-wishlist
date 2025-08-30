@@ -83,8 +83,7 @@ class Relativism(RollDefinition):
             Melee builds.
             Should be paired with Stylish Executioner aspect
             as it increases melee damage dealt from invisibility.
-            It also provides invisibility, making Spirit of the Assassin redundant.
-            Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
+            It also provides invisibility, making Spirit of the Assassin redundant
             """,
             [unique.SpiritOf.Caliban, unique.SpiritOf.Renewal],
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],

@@ -122,7 +122,7 @@ dimwishlist:item=2809120022&perks=3751917996,1476923955
 dimwishlist:item=2809120022&perks=3751917997,1476923955
 dimwishlist:item=2809120022&perks=3751917998,1476923955
 
-//notes:Melee builds. Should be paired with Stylish Executioner aspect as it increases melee damage dealt from invisibility. It also provides invisibility, making Spirit of the Assassin redundant. Note: Spirit of Synthoceps has reduced damage increase for Combination Blow
+//notes:Melee builds. Should be paired with Stylish Executioner aspect as it increases melee damage dealt from invisibility. It also provides invisibility, making Spirit of the Assassin redundant
 dimwishlist:item=2809120022&perks=3751917996,3751917992
 dimwishlist:item=2809120022&perks=3751917996,1476923956
 dimwishlist:item=2809120022&perks=3751917995,3751917992
