@@ -32,7 +32,7 @@ class Synanceia(RollDefinition):
     rolls = [
         Roll(
             'Movement',
-            [blades.JaggedEdge, AnyPerk],
+            [blades.HonedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
             [traits.AssassinsBlade],
             [traits.EagerEdge],
