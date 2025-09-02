@@ -126,5 +126,7 @@ ChaosReshaped = Item(name='Chaos Reshaped', hash=3640170453)
 AssassinsBlade = Item(name="Assassin's Blade", hash=354401740)
 SharpHarvest = Item(name='Sharp Harvest', hash=4132187021)
 BoltScavenger = Item(name='Bolt Scavenger', hash=4042220767)
+EagerEdge = Item(name='Eager Edge', hash=2077819806)
+Wellspring = Item(name='Wellspring', hash=3592538738)
 
 del Item
