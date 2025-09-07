@@ -29,16 +29,16 @@ class Lionfish4FR(RollDefinition):
         Roll(
             'Chill Clip',
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
+            [batteries.EnhancedBattery, AnyPerk],
             [traits.Reconstruction],
             [traits.ChillClip],
             ),
         Roll(
             'Damage Dealing',
             [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
+            [batteries.EnhancedBattery, AnyPerk],
             [traits.Reconstruction],
-            [traits.ControlledBurst],
+            [traits.ControlledBurst, traits.ElementalHoning],
             ),
         ]
 
