@@ -108,7 +108,7 @@ class TheWhenAndWhere(RollDefinition):
             [barrels.QuickLaunch, AnyPerk],
             [magazines.ImpactCasing, AnyPerk],
             [traits.Reconstruction, traits.Overflow, traits.ClownCartridge],
-            [traits.BaitAndSwitch, traits.ElementalHoning, traits.Surrounded],
+            [traits.BaitAndSwitch, traits.ElementalHoning, traits.ReapersTithe],
             ),
         ]
 
