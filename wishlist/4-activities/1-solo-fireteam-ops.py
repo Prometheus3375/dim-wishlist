@@ -154,7 +154,7 @@ class Boomslang4FR(RollDefinition):
         'Damage dealing',
         [barrels.ArrowheadBrake, AnyPerk],
         [batteries.AcceleratedCoils, AnyPerk],
-        [traits.EnviousArsenal],
+        [traits.EnviousArsenal, traits.RapidHit],
         [traits.PrecisionInstrument],
         )
 
