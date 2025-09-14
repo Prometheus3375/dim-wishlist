@@ -74,6 +74,29 @@ class Trachinus(RollDefinition):
         Item(name='Trachinus', hash=2888021254),
         Item(name='Trachinus', hash=2888021255),
         ]
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.AssaultMag, AnyPerk],
+            [traits.Rimestealer],
+            [traits.Headstone],
+            ),
+        Roll(
+            'Chill Clip',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.AssaultMag, AnyPerk],
+            [traits.LeadFromGold],
+            [traits.ChillClip],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.AssaultMag, AnyPerk],
+            [traits.RapidHit, traits.LeadFromGold],
+            [traits.PrecisionInstrument],
+            ),
+        ]
 
 
 # Heavy
