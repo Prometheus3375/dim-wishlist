@@ -57,21 +57,21 @@ class CuspSempiternal(RollDefinition):
     item = Item(name='Cusp Sempiternal', hash=2579693381)
     rolls = [
         Roll(
-            'Self-healing'
+            'Self-healing',
             [barrels.FullBore],
             [magazines.FlaredMagwell],
             [traits.Reciprocity],
             [traits.DestabilizingRounds],
             ),
         Roll(
-            'Ad clear'
+            'Ad clear',
             [barrels.FullBore],
             [magazines.FlaredMagwell],
             [traits.Reconstruction, traits.AttritionOrbs],
             [traits.DestabilizingRounds],
             ),
         Roll(
-            'Void combo'
+            'Void combo',
             [barrels.FullBore],
             [magazines.FlaredMagwell],
             [traits.RepulsorBrace],
