@@ -17,5 +17,8 @@ Tenacity = Item(name='Tenacity', hash=3911709647)
 ProblemSolver = Item(name='Problem Solver', hash=3454102905)
 DreamWork = Item(name='Dream Work', hash=1380061575)
 BrayLegacy = Item(name='Bray Legacy', hash=4139916815)
+SearchParty = Item(name='Search Party', hash=2250679103)
+SkulkingWolf = Item(name='Skulking Wolf', hash=3989629871)
+ContendingCascade = Item(name='Contending Cascade', hash=934928524)
 
 del Item
