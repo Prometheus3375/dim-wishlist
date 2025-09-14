@@ -16,6 +16,54 @@ class PreAstyanaxIV(RollDefinition):
         )
 
 
+class ForcedMemorializer(RollDefinition):
+    """
+    Kinetic Scout Rifle, Precision Frame
+    https://www.light.gg/db/items/1197073834
+    """
+    item = Item(name='Forced Memorializer', hash=1197073834)
+    rolls = [
+        Roll(
+            'PvE',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.ExplosivePayload],
+            [traits.KineticTremors],
+            ),
+        Roll(
+            'Missile combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.BewilderingBurst],
+            [traits.AncillaryOrdinance],
+            ),
+        ]
+
+
+class SeraphineHaze(RollDefinition):
+    """
+    Stasis Submachine Gun, Aggressive Frame
+    https://www.light.gg/db/items/1524387902
+    """
+    item = Item(name='Seraphine Haze', hash=1524387902)
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrels.ChamberedCompensator, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.Rimestealer, traits.Demolitionist],
+            [traits.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Orb combo',
+            [barrels.ChamberedCompensator, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.LeadFromLight],
+            [traits.AttritionOrbs],
+            ),
+        ]
+
+
 # Special
 
 

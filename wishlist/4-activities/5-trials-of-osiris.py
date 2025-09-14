@@ -47,6 +47,30 @@ class AureusNeutralizer(RollDefinition):
         ]
 
 
+class EverburningGlitz(RollDefinition):
+    """
+    Kinetic Auto Rifle, Rapid-Fire Frame
+    https://www.light.gg/db/items/2857870254
+    """
+    item = Item(name='Everburning Glitz', hash=2857870254)
+    rolls = [
+        Roll(
+            'Attrition Orbs',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.AttritionOrbs],
+            [traits.KineticTremors, traits.OneForAll],
+            ),
+        Roll(
+            'Missile combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
+            [traits.BewilderingBurst],
+            [traits.AncillaryOrdinance],
+            ),
+        ]
+
+
 class AishasEmbrace(RollDefinition):
     """
     Void Scout Rifle, Rapid-Fire Frame
@@ -73,6 +97,23 @@ class Forgiveness(RollDefinition):
 
 
 # Special
+
+
+class BurdenOfGuilt(RollDefinition):
+    """
+    Stasis Fusion Rifle, Adaptive Frame
+    https://www.light.gg/db/items/976459525
+    """
+    item = Item(name='Burden Of Guilt', hash=976459525)
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [batteries.AcceleratedCoils, AnyPerk],
+            [traits.Rimestealer],
+            [traits.CrystallineCorpsebloom],
+            ),
+        ]
 
 
 # Heavy

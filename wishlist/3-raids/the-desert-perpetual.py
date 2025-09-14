@@ -49,6 +49,37 @@ class Antedate(RollDefinition):
         ]
 
 
+class CuspSempiternal(RollDefinition):
+    """
+    Void Auto Rifle, Support Frame
+    https://www.light.gg/db/items/2579693381
+    """
+    item = Item(name='Cusp Sempiternal', hash=2579693381)
+    rolls = [
+        Roll(
+            'Self-healing'
+            [barrels.FullBore],
+            [magazines.FlaredMagwell],
+            [traits.Reciprocity],
+            [traits.DestabilizingRounds],
+            ),
+        Roll(
+            'Ad clear'
+            [barrels.FullBore],
+            [magazines.FlaredMagwell],
+            [traits.Reconstruction, traits.AttritionOrbs],
+            [traits.DestabilizingRounds],
+            ),
+        Roll(
+            'Void combo'
+            [barrels.FullBore],
+            [magazines.FlaredMagwell],
+            [traits.RepulsorBrace],
+            [traits.DestabilizingRounds],
+            ),
+        ]
+
+
 # Special
 
 
@@ -91,6 +122,14 @@ class FiniteMaybe(RollDefinition):
             [traits.BaitAndSwitch, traits.ControlledBurst],
             ),
         ]
+
+
+class StarscapeNull(RollDefinition):
+    """
+    Solar Shotgun, Lightweight Frame
+    https://www.light.gg/db/items/3868973291
+    """
+    item = Item(name='Starscape Null', hash=3868973291)
 
 
 # Heavy
@@ -145,5 +184,36 @@ class OpaqueHourglass(RollDefinition):
             [bolts.HeavyBolts, AnyPerk],
             [traits.Firefly],
             [traits.Dragonfly],
+            ),
+        ]
+
+
+class TheEverPresent(RollDefinition):
+    """
+    Strand Drum Grenade Launcher, Rapid-Fire Frame
+    https://www.light.gg/db/items/3177074192
+    """
+    item = Item(name='The Ever-Present', hash=3177074192)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [barrels.HardLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.EnviousArsenal],
+            [traits.AggregateCharge, traits.BaitAndSwitch, traits.ElementalHoning],
+            ),
+        Roll(
+            'High DPS',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.SpikeGrenades, AnyPerk],
+            [traits.AutoLoadingHolster],
+            [traits.ExplosiveLight],
+            ),
+        Roll(
+            'Ad clear',
+            [barrels.VolatileLaunch, AnyPerk],
+            [magazines.AlloyCasing, AnyPerk],
+            [traits.Hatchling],
+            [traits.ChainReaction],
             ),
         ]

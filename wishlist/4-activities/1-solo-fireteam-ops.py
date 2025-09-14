@@ -69,6 +69,36 @@ class AhabChar(RollDefinition):
         )
 
 
+class Drang(RollDefinition):
+    """
+    Solar Sidearm, Adaptive Frame
+    https://www.light.gg/db/items/358190158
+    """
+    item = Item(name='Drang', hash=358190158)
+    roll = Roll(
+        'Solar combo',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.TacticalMag, AnyPerk],
+        [traits.HealClip],
+        [traits.Incandescent],
+        )
+
+
+class MIDAMiniTool(RollDefinition):
+    """
+    Solar Submachine Gun, Lightweight Frame
+    https://www.light.gg/db/items/3946054154
+    """
+    item = Item(name='MIDA Mini-Tool', hash=3946054154)
+    roll = Roll(
+        'Solar combo',
+        [barrels.ArrowheadBrake, AnyPerk],
+        [magazines.FlaredMagwell, AnyPerk],
+        [traits.HealClip],
+        [traits.Incandescent],
+        )
+
+
 # Special
 
 
@@ -85,6 +115,30 @@ class ShorelineDissident(RollDefinition):
         [traits.TripleTap],
         [traits.PrecisionInstrument],
         )
+
+
+class Unfall(RollDefinition):
+    """
+    Arc Sidearm, Rocket-Assisted Frame
+    https://www.light.gg/db/items/738446555
+    """
+    item = Item(name='Unfall', hash=738446555)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrels.VolatileLaunch, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.ImpulseAmplifier],
+            [traits.OneForAll, traits.JoltingFeedback],
+            ),
+        Roll(
+            'Deconstruct',
+            [barrels.VolatileLaunch, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.ImpulseAmplifier],
+            [traits.Deconstruct],
+            ),
+        ]
 
 
 # Heavy
@@ -132,5 +186,29 @@ class AuroraDawn(RollDefinition):
             [guards.SwordmastersGuard, AnyPerk],
             [traits.FlashCounter],
             [traits.ColdSteel],
+            ),
+        ]
+
+
+class Haliaetus(RollDefinition):
+    """
+    Strand Rocket Launcher, High-Impact Frame
+    https://www.light.gg/db/items/2155534128
+    """
+    item = Item(name='Haliaetus', hash=2155534128)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [barrels.QuickLaunch, AnyPerk],
+            [magazines.ImpactCasing, AnyPerk],
+            [traits.ClusterBomb, traits.AutoLoadingHolster],
+            [traits.AggregateCharge, traits.ReapersTithe, traits.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            [barrels.VolatileLaunch, AnyPerk],
+            [magazines.AlloyCasing, AnyPerk],
+            [traits.ClusterBomb, traits.ImpulseAmplifier],
+            [traits.Bipod],
             ),
         ]

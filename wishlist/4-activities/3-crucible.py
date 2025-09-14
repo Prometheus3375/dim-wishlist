@@ -42,3 +42,18 @@ class ReturnedMemory(RollDefinition):
             [traits.Incandescent],
             ),
         ]
+
+
+class MIDAMacroTool(RollDefinition):
+    """
+    Arc Shotgun, Precision Frame
+    https://www.light.gg/db/items/2699423382
+    """
+    item = Item(name='MIDA Macro-Tool', hash=2699423382)
+    roll = Roll(
+        'PvP',
+        [barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud],
+        [magazines.AccurizedRounds, magazines.LightMag],
+        [traits.LoneWolf],
+        [traits.ClosingTime, traits.OpeningShot],
+        )
