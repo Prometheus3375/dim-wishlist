@@ -160,18 +160,6 @@ class OpaqueHourglass(RollDefinition):
     item = Item(name='Opaque Hourglass', hash=1553681400)
     rolls = [
         Roll(
-            """
-            Temporal Blast mod combo.
-            Explosive Bolts activate Temporal Blast,
-            so the mod is active every shot in non-under-light environments.
-            In addition, Vorpal is broken on crossbows as it gives x1.32 bonus damage.
-            """,
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.ExplosiveBolts],
-            [traits.ImpulseAmplifier, traits.BoltScavenger],
-            [traits.VorpalWeapon],
-            ),
-        Roll(
             'Damage dealing',
             [rails.LowProfileRail, AnyPerk],
             [bolts.HeavyBolts, AnyPerk],
