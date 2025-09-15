@@ -71,7 +71,7 @@ class Submersion(RollDefinition):
         Roll(
             'Ad clear',
             [rails.LowProfileRail, AnyPerk],
-            [bolts.HeavyBolts, AnyPerk],
+            [bolts.ExplosiveBolts, AnyPerk],
             [traits.AutoLoadingHolster, traits.ImpulseAmplifier, traits.BoltScavenger],
             [traits.Headstone],
             ),

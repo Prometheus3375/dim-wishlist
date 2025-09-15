@@ -169,7 +169,7 @@ class OpaqueHourglass(RollDefinition):
         Roll(
             'Ad clear',
             [rails.LowProfileRail, AnyPerk],
-            [bolts.HeavyBolts, AnyPerk],
+            [bolts.ExplosiveBolts, AnyPerk],
             [traits.Firefly],
             [traits.Dragonfly],
             ),
