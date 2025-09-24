@@ -64,18 +64,18 @@ class Agape(RollDefinition):
     item = Item(name='Agape', hash=4124362340)
     rolls = [
         Roll(
+            'Lucky Pants combo',
+            [barrels.ChamberedCompensator, AnyPerk],
+            [magazines.AppendedMag, AnyPerk],
+            [traits.RewindRounds],
+            [traits.PrecisionInstrument, traits.VorpalWeapon],
+            ),
+        Roll(
             'Solar combo',
             [barrels.ArrowheadBrake, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.HealClip],
             [traits.Incandescent],
-            ),
-        Roll(
-            'Lucky Pants combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.ExtendedMag, AnyPerk],
-            [traits.RewindRounds],
-            [traits.PrecisionInstrument, traits.VorpalWeapon],
             ),
         ]
 
