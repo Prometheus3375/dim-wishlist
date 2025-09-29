@@ -58,22 +58,22 @@ class CuspSempiternal(RollDefinition):
     rolls = [
         Roll(
             'Self-healing',
-            [barrels.FullBore],
-            [magazines.FlaredMagwell],
+            [barrels.FullBore, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
             [traits.Reciprocity],
             [traits.DestabilizingRounds],
             ),
         Roll(
             'Ad clear',
-            [barrels.FullBore],
-            [magazines.FlaredMagwell],
+            [barrels.FullBore, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
             [traits.Reconstruction, traits.AttritionOrbs],
             [traits.DestabilizingRounds],
             ),
         Roll(
             'Void combo',
-            [barrels.FullBore],
-            [magazines.FlaredMagwell],
+            [barrels.FullBore, AnyPerk],
+            [magazines.FlaredMagwell, AnyPerk],
             [traits.RepulsorBrace],
             [traits.DestabilizingRounds],
             ),
