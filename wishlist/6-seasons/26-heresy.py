@@ -1,4 +1,4 @@
-from database import *
+from wishlist import *
 
 
 class Adamantite(RollDefinition):
