@@ -1,4 +1,4 @@
-from database import Item
+from classes import Item
 
 CompositeStock = Item(name='Composite Stock', hash=3465198467)
 FittedStock = Item(name='Fitted Stock', hash=4259401308)
