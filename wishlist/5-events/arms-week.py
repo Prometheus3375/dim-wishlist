@@ -126,7 +126,7 @@ class Synanceia(RollDefinition):
             'Ad clear',
             [blades.JaggedEdge, AnyPerk],
             [guards.SwordmastersGuard, AnyPerk],
-            [traits.AssassinsBlade, traits.RelentlessStrikes],
+            [traits.RelentlessStrikes],
             [traits.ChainReaction],
             ),
         Roll(
