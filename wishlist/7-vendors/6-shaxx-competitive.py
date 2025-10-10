@@ -47,7 +47,7 @@ class Deadlock(RollDefinition):
         'PvP',
         [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.FullChoke],
         [magazines.AccurizedRounds, magazines.LightMag],
-        [traits.LoneWolf],
+        [traits.ThreatDetector],
         [traits.ClosingTime],
         [stocks.ShortActionStock, AnyPerk],
         )

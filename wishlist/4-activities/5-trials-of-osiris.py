@@ -41,7 +41,7 @@ class AureusNeutralizer(RollDefinition):
             'PvP',
             [barrels.Smallbore, AnyPerk],
             [magazines.AccurizedRounds, AnyPerk],
-            [traits.LoneWolf],
+            [traits.ThreatDetector],
             [traits.OpeningShot, traits.ClosingTime],
             ),
         ]
