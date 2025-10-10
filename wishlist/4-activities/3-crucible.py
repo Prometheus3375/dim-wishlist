@@ -54,6 +54,6 @@ class MIDAMacroTool(RollDefinition):
         'PvP',
         [barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud],
         [magazines.AccurizedRounds, magazines.LightMag],
-        [traits.LoneWolf],
+        [traits.ThreatDetector],
         [traits.ClosingTime, traits.OpeningShot],
         )
