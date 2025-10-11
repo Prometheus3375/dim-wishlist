@@ -103,7 +103,7 @@ def json_lookup(obj: JSONContainer, path: JSONPath, /) -> JSONAny:
         elif isinstance(current, list):
             current = current[int(part)]
         else:
-            raise TypeError(f'value at {'.'.join(path[:i])!r} is not subscriptable')
+            raise TypeError(f'value at {json_path_to_str(path[:i])!r} is not subscriptable')
 
     return current
 
