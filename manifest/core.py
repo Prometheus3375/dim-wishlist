@@ -298,16 +298,16 @@ class Manifest(JSONObjectWrapper):
     def iterate_legendary_weapons_since_release(self, release_string: str, /) -> Iterator['Weapon']:
         """
         Returns an iterator over instances of :class:`Weapon`
-        which were released at the given release or later.
+        that were released at the given release or later.
         """
         return (w for w in self.legendary_weapons if w.release_string >= release_string)
 
-    def legendary_weapons_perks(self, release_string: str = '', /) -> set[PerkTuple]:
+    def get_legendary_weapon_perks(self, release_string: str = '', /) -> set[PerkTuple]:
         """
         Returns a set of instances of :class:`PerkTuple`
-        which are found in legendary weapons.
+        that are found in legendary weapons.
 
-        Parameter *release_string* can be used to use weapons
+        Parameter *release_string* can be used to use only weapons
         that were released at the given release or later.
         """
         if release_string:
@@ -315,7 +315,7 @@ class Manifest(JSONObjectWrapper):
         else:
             weapons = iter(self.legendary_weapons)
 
-        name2perk = {}
+        name_to_tuple_set: dict[str, set[PerkTuple]] = defaultdict(set)
         plug_sets = {
             plug_set
             for weapon in weapons
@@ -323,24 +323,24 @@ class Manifest(JSONObjectWrapper):
             }
         for plug_set in plug_sets:
             for perk_tuple in plug_set.iterate_perks(self):
-                name = perk_tuple.proper_name
-                present = name2perk.get(name)
-                if present:
-                    best = PerkTuple.choose_best(present, perk_tuple)
-                    if best is None:
-                        warn(
-                            f'there are two perk tuples named {name!r}: '
-                            f'(regular={present.regular}, enhanced={present.enhanced}) and '
-                            f'(regular={perk_tuple.regular}, enhanced={perk_tuple.enhanced})',
-                            category=PerkTupleDuplicationWarning,
-                            stacklevel=2,
-                            )
+                perk_tuple.add_to_tuple_set(name_to_tuple_set[perk_tuple.name])
 
-                    name2perk[name] = best
-                else:
-                    name2perk[name] = perk_tuple
+        result: set[PerkTuple] = set()
+        for name, tuple_set in name_to_tuple_set.items():
+            result.update(tuple_set)
+            count = len(tuple_set)
+            if count > 1:
+                tuples_desc = ', '.join(
+                    f'(regular={t.regular}, enhanced={t.enhanced})'
+                    for t in sorted(tuple_set)
+                    )
+                warn(
+                    f'there are {count} perk tuples named {name!r}: {tuples_desc}',
+                    category=PerkTupleDuplicationWarning,
+                    stacklevel=2,
+                    )
 
-        return set(name2perk.values())
+        return result
 
 
 def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
