@@ -37,10 +37,10 @@ class AmmunitionType(IntEnum):
 
 class PerkTuple(NamedTuple):
     """
-    Contains a name of a weapon perk, its hash and hash of its enhanced version if any.
+    Contains the name of a weapon perk, its hash and hash of its enhanced version.
     """
     name: str
-    regular: int
+    regular: int = 0
     enhanced: int = 0
 
     @property
@@ -409,7 +409,11 @@ class PlugSet:
         for name, definitions in name2defs.items():
             match len(definitions):
                 case 1:
-                    yield PerkTuple(name, definitions[0]['hash'])
+                    def1 = definitions[0]
+                    if is_perk_enhanced(def1):
+                        yield PerkTuple(name, enhanced=def1['hash'])
+                    else:
+                        yield PerkTuple(name, regular=def1['hash'])
                 case 2:
                     first, second = definitions
                     first_hash = first['hash']
