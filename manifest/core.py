@@ -401,8 +401,10 @@ class PlugSet:
         name2defs = defaultdict(list)
         for h in self._plug_hashes:
             definition = manifest.get_item(h)
-            name = definition['displayProperties.name']
-            name2defs[name].append(definition)
+            # Ignore perks with no item type
+            if definition['itemTypeDisplayName']:
+                name = definition['displayProperties.name']
+                name2defs[name].append(definition)
 
         for name, definitions in name2defs.items():
             match len(definitions):
