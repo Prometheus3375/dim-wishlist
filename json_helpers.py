@@ -184,6 +184,7 @@ def json_lookup(container: JSONContainer, path: JSONPath, /) -> JSONAny:
 
 
 type JSONWrappedAny = JSONScalar | 'BaseJSONWrapper'
+type WrapperSubscript = int | str | JSONPath
 
 
 class BaseJSONWrapper:
@@ -228,7 +229,7 @@ class BaseJSONWrapper:
     def __len__(self, /) -> int:
         return len(self._container)
 
-    def __getitem__(self, item: int | str | JSONPath, /) -> JSONWrappedAny:
+    def __getitem__(self, item: WrapperSubscript, /) -> JSONWrappedAny:
         path: JSONPath
         if isinstance(item, int):
             path = (item,)
@@ -251,6 +252,15 @@ class BaseJSONWrapper:
             return result
 
         return self
+
+    def get[T](self, item: WrapperSubscript, default: T | None = None) -> JSONWrappedAny | T:
+        """
+        Returns ``self[item]``, but if :class:`LookupError` occurs, returns ``default``.
+        """
+        try:
+            return self[item]
+        except LookupError:
+            return default
 
     def clear_lookup_cache(self, /) -> None:
         """
