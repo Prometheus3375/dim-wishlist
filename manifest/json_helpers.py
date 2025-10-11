@@ -67,10 +67,10 @@ def json_search(obj: JSONContainer, search_value: JSONAny, /) -> Iterator[JSONPa
     Recursively searches for the given search value inside the given JSON container.
     Returns an iterator over all JSON paths where the given search value is present.
     """
-    stack = deque()
+    stack: deque[tuple[JSONPath, JSONAny]] = deque()
     stack.append(((), obj))
     while stack:
-        path_parts, obj = stack.popleft()
+        path_parts, obj = stack.popleft()  # type: ignore[assignment]
         if obj == search_value:
             yield path_parts
             continue
@@ -96,7 +96,7 @@ def json_lookup(obj: JSONContainer, path: JSONPath, /) -> JSONAny:
     Can also raise :class:`KeyError` and :class:`IndexError`
     if the path contains wrong dict keys and list indexes respectively.
     """
-    current = obj
+    current: JSONAny = obj
     for i, part in enumerate(path, 1):
         if isinstance(current, dict):
             current = current[str(part)]
@@ -132,7 +132,7 @@ class BaseJSONWrapper:
             raise TypeError(f"can't instantiate abstract class {BaseJSONWrapper.__name__}")
 
         self._container = container
-        self._lookup_cache = {}
+        self._lookup_cache: dict[JSONPath, JSONWrappedAny] = {}
 
     def search(self, value: JSONAny, /) -> Iterator[JSONPath]:
         """
@@ -154,6 +154,7 @@ class BaseJSONWrapper:
         return len(self._container)
 
     def __getitem__(self, item: int | str | JSONPath, /) -> JSONWrappedAny:
+        path: JSONPath
         if isinstance(item, int):
             path = (item,)
         elif isinstance(item, str):
@@ -190,7 +191,7 @@ class BaseJSONWrapper:
         """
         raise NotImplementedError
 
-    def values(self, /) -> Iterator[JSONAny]:
+    def values(self, /) -> Iterator[JSONWrappedAny]:
         """
         Returns an iterator over values of the wrapped container.
         """
@@ -219,8 +220,9 @@ class JSONArrayWrapper(BaseJSONWrapper):
             raise TypeError(f'container must be a list, got {type(container)}')
 
         super().__init__(container)
+        self._container: JSONArray
 
-    def __contains__(self, item: JSONAny, /) -> bool: ...
+    def __contains__(self, item: JSONAny, /) -> bool: ...  # type: ignore[empty-body]
     del __contains__
 
     def __iter__(self, /) -> Iterator[JSONWrappedAny]:
@@ -263,8 +265,9 @@ class JSONObjectWrapper(BaseJSONWrapper):
             raise TypeError(f'container must be a dict, got {type(container)}')
 
         super().__init__(container)
+        self._container: JSONObject
 
-    def __contains__(self, item: str, /) -> bool: ...
+    def __contains__(self, item: str, /) -> bool: ...  # type: ignore[empty-body]
     del __contains__
 
     def __iter__(self, /) -> Iterator[str]:
