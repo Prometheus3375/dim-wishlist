@@ -323,6 +323,17 @@ class Manifest(JSONObjectWrapper):
         return set(name2perk.values())
 
 
+def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
+    """
+    Whether the perk described by the given definition is enhanced.
+    """
+    return (
+            definition['itemTypeDisplayName'].startswith('Enhanced')
+            or
+            definition['itemTypeAndTierDisplayName'].startswith('Uncommon')
+    )
+
+
 class PlugSet:
     """
     Holder of plug set identifier and plug item hashes.
@@ -400,8 +411,8 @@ class PlugSet:
                     first, second = definitions
                     first_hash = first['hash']
                     second_hash = second['hash']
-                    is_first_enhanced = first['itemTypeDisplayName'].startswith('Enhanced')
-                    is_second_enhanced = second['itemTypeDisplayName'].startswith('Enhanced')
+                    is_first_enhanced = is_perk_enhanced(first)
+                    is_second_enhanced = is_perk_enhanced(second)
                     if is_first_enhanced and not is_second_enhanced:
                         yield PerkTuple(name, regular=second_hash, enhanced=first_hash)
                     elif not is_first_enhanced and is_second_enhanced:
