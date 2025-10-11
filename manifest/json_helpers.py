@@ -259,7 +259,7 @@ class JSONObjectWrapper(BaseJSONWrapper):
     __slots__ = ()
 
     def __init__(self, container: JSONObject, /) -> None:
-        if not isinstance(container, list):
+        if not isinstance(container, dict):
             raise TypeError(f'container must be a dict, got {type(container)}')
 
         super().__init__(container)
