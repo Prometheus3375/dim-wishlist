@@ -116,9 +116,14 @@ class BaseJSONWrapper:
     A convenience wrapper around JSON objects and arrays.
 
     Supports functions ``len``, ``iter`` and ``reversed``,
-    operator ``in`` and subscript notation, i.e., ``wrapper['a.b.c']``, to get nested values.
-    Subscript notation also supports JSON paths and integers.
-    If a nested value is a JSON container, it is wrapped into this class before returning.
+    operator ``in`` and subscript notation to get nested values.
+
+    Subscript notation supports JSON paths, strings and integers.
+    For example, ``wrapper['a.1.c']``, ``wrapper['a', 1, 'c']`` and ``wrapper['a', '1', 'c']``
+    represent the same nested value.
+
+    Whether a nested value is returned via methods, subscripting or iterating,
+    it is always wrapped into this class unless it is a scalar value.
     """
     __slots__ = '_container', '_lookup_cache'
 
