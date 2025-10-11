@@ -252,7 +252,8 @@ class Manifest(JSONObjectWrapper):
         for definition in self['DestinyInventoryItemDefinition'].values():
             category_hashes = definition.get('itemCategoryHashes', ())
             is_weapon = any(self.item_category_names[h] == 'Weapon' for h in category_hashes)
-            if not is_weapon: continue
+            is_dummy = any(self.item_category_names[h] == 'Dummies' for h in category_hashes)
+            if is_dummy or not is_weapon: continue
 
             if definition['inventory.tierTypeName'] == 'Legendary':
                 li.append(Weapon(definition, self))
