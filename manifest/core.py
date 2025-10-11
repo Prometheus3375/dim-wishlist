@@ -367,6 +367,7 @@ class PlugSet:
         plug_hashes = (
             plug_entry['plugItemHash']
             for plug_entry in definition['reusablePlugItems']
+            if plug_entry['currentlyCanRoll']
             )
         return cls(plug_hashes, identifier)
 
