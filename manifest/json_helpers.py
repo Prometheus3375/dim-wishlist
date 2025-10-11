@@ -137,10 +137,10 @@ class BaseJSONWrapper:
         return item in self._container
 
     def __iter__(self, /) -> Iterator:
-        return iter(self._container)
+        raise NotImplementedError
 
     def __reversed__(self, /) -> Iterator:
-        return reversed(self._container)
+        raise NotImplementedError
 
     def __len__(self, /) -> int:
         return len(self._container)
@@ -215,11 +215,11 @@ class JSONArrayWrapper(BaseJSONWrapper):
     def __contains__(self, item: JSONAny, /) -> bool: ...
     del __contains__
 
-    def __iter__(self, /) -> Iterator[JSONAny]: ...
-    del __iter__
+    def __iter__(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+        return map(self.__getitem__, range(len(self._container)))
 
-    def __reversed__(self, /) -> Iterator[JSONAny]: ...
-    del __reversed__
+    def __reversed__(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+        return map(self.__getitem__, range(len(self._container) - 1, -1, -1))
 
     def keys(self, /) -> Iterator[int]:
         """
@@ -227,18 +227,18 @@ class JSONArrayWrapper(BaseJSONWrapper):
         """
         return iter(range(len(self._container)))
 
-    def values(self, /) -> Iterator[JSONAny]:
+    def values(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
         """
         Returns an iterator over values of the wrapped array.
         """
-        return iter(self._container)
+        return self.__iter__()
 
-    def items(self, /) -> Iterator[tuple[int, JSONAny]]:
+    def items(self, /) -> Iterator[tuple[int, JSONScalar | BaseJSONWrapper]]:
         """
         Returns an iterator over items of the wrapped array.
         An item is a tuple of an index and respective value.
         """
-        return enumerate(self._container)
+        return enumerate(self.__iter__())
 
 
 class JSONObjectWrapper(BaseJSONWrapper):
@@ -259,30 +259,30 @@ class JSONObjectWrapper(BaseJSONWrapper):
     def __contains__(self, item: str, /) -> bool: ...
     del __contains__
 
-    def __iter__(self, /) -> Iterator[str]: ...
-    del __iter__
+    def __iter__(self, /) -> Iterator[str]:
+        return iter(self._container)
 
-    def __reversed__(self, /) -> Iterator[str]: ...
-    del __reversed__
+    def __reversed__(self, /) -> Iterator[str]:
+        return reversed(self._container)
 
     def keys(self, /) -> Iterator[str]:
         """
         Returns an iterator over attributes of the wrapped object.
         """
-        return iter(self._container.keys())
+        return iter(self._container)
 
-    def values(self, /) -> Iterator[JSONAny]:
+    def values(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
         """
         Returns an iterator over values of the wrapped object.
         """
-        return iter(self._container.values())
+        return map(self.__getitem__, self._container)
 
-    def items(self, /) -> Iterator[tuple[str, JSONAny]]:
+    def items(self, /) -> Iterator[tuple[str, JSONScalar | BaseJSONWrapper]]:
         """
         Returns an iterator over items of the wrapped object.
         An item is a tuple of an attribute and respective value.
         """
-        return iter(self._container.items())
+        return zip(self._container, self.values(), strict=True)
 
 
 @overload
