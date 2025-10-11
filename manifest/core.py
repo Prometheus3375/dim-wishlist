@@ -306,53 +306,48 @@ class Manifest(JSONObjectWrapper):
 
 class PlugSet:
     """
-    Holder of plug set hash and plug item hashes.
+    Holder of plug set identifier and plug item hashes.
     """
-    __slots__ = '_plug_hashes', '_hash'
+    __slots__ = '_plug_hashes', '_identifier'
 
-    def __init__(
-            self,
-            /,
-            *,
-            definition: JSONObjectWrapper | None = None,
-            plug_hashes: Iterable[int] | None = None,
-            ) -> None:
-        if definition is None and plug_hashes is None:
-            raise ValueError('plug set must be defined with either a definition or plug hashes')
+    def __init__(self, plug_hashes: Iterable[int], identifier: JSONPath, /) -> None:
+        plug_hashes = tuple(plug_hashes)
+        if not all(isinstance(h, int) for h in plug_hashes):
+            raise TypeError('all plug hashes must be integers')
 
-        if definition is None:
-            plug_hashes = tuple(plug_hashes)
-            if not all(isinstance(h, int) for h in plug_hashes):
-                raise TypeError('all plug hashes must be integers')
-
-            self._hash = 0
-
-        elif plug_hashes is None:
-            if not isinstance(definition, JSONObjectWrapper):
-                raise TypeError(
-                    f'plug set definition must be of type {JSONObjectWrapper}, '
-                    f'got {type(definition)}'
-                    )
-
-            self._hash = definition['hash']
-            plug_entry: JSONObjectWrapper
-            plug_hashes = [
-                plug_entry['plugItemHash']
-                for plug_entry in definition['reusablePlugItems']
-                ]
-
-        else:
-            raise ValueError('both definition and plug hashes are specified, only one is allowed')
+        if not is_json_path(identifier):
+            raise TypeError('identifier must be a JSON path')
 
         self._plug_hashes = frozenset(plug_hashes)
+        self._identifier = identifier
 
-    def hash(self, /) -> int:
+    @classmethod
+    def from_definition(cls, definition: JSONObjectWrapper, /) -> Self:
         """
-        Predefined hash of this plug set.
-        It is zero if this plug set is defined from plug hashes.
+        Creates an instance of :class:`PlugSet` from a plug set definition.
         """
-        return self._hash
+        if not isinstance(definition, JSONObjectWrapper):
+            raise TypeError(
+                f'plug set definition must be of type {JSONObjectWrapper}, '
+                f'got {type(definition)}'
+                )
 
+        identifier = 'DestinyPlugSetDefinition', definition['hash']
+        plug_entry: JSONObjectWrapper
+        plug_hashes = (
+            plug_entry['plugItemHash']
+            for plug_entry in definition['reusablePlugItems']
+            )
+        return cls(plug_hashes, identifier)
+
+    @property
+    def identifier(self, /) -> str:
+        """
+        Identifier of this plug set.
+        """
+        return json_path_to_str(self._identifier)
+
+    @property
     def plug_hashes(self, /) -> Set[int]:
         """
         Plug hashes defined in this plug set.
@@ -516,14 +511,23 @@ class Weapon:
             entry = socket_entries[index]
             reusable_hash = entry.get('reusablePlugSetHash')
             if reusable_hash:
-                yield PlugSet(definition=self._manifest.get_plug_set(reusable_hash))
+                yield PlugSet.from_definition(self._manifest.get_plug_set(reusable_hash))
 
             randomized_hash = entry.get('randomizedPlugSetHash')
             if randomized_hash:
-                yield PlugSet(definition=self._manifest.get_plug_set(randomized_hash))
+                yield PlugSet.from_definition(self._manifest.get_plug_set(randomized_hash))
 
             reusable_plugs: JSONArrayWrapper = entry.get('reusablePlugItems')
             if reusable_plugs:
-                yield PlugSet(plug_hashes=(d['plugItemHash'] for d in reusable_plugs))
+                plug_hashes = (d['plugItemHash'] for d in reusable_plugs)
+                identifier = (
+                    'DestinyInventoryItemDefinition',
+                    self.hash,
+                    'sockets',
+                    'socketEntries',
+                    index,
+                    'reusablePlugItems',
+                    )
+                yield PlugSet(plug_hashes, identifier)
 
         return plug_sets
