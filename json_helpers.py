@@ -21,7 +21,7 @@ def str_to_json_path(path: str, /) -> JSONPath:
     """
     Converts a string to a JSON path.
 
-    >>> from manifest.json_helpers import str_to_json_path
+    >>> from json_helpers import str_to_json_path
     >>> str_to_json_path('a.b.v.1')
     ('a', 'b', 'v', '1')
     """
@@ -32,7 +32,7 @@ def json_path_to_str(path: JSONPath, /) -> str:
     """
     Converts a JSON path to a string.
 
-    >>> from manifest.json_helpers import json_path_to_str
+    >>> from json_helpers import json_path_to_str
     >>> json_path_to_str(('a', 'b', 'v', 1))
     'a.b.v.1'
     """
