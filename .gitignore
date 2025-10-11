@@ -1,4 +1,5 @@
 # Project
+/.manifest-cache/
 
 # Python
-__pycache__
+__pycache__/
