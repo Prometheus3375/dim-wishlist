@@ -1,6 +1,6 @@
 from collections import deque
 from collections.abc import Iterator
-from typing import Any, Self, TypeGuard, overload
+from typing import Any, TypeGuard, overload
 
 type JSONObject = dict[str, 'JSONAny']
 type JSONArray = list['JSONAny']
@@ -108,6 +108,9 @@ def json_lookup(obj: JSONContainer, path: JSONPath, /) -> JSONAny:
     return current
 
 
+type JSONWrappedAny = JSONScalar | 'BaseJSONWrapper'
+
+
 class BaseJSONWrapper:
     """
     A convenience wrapper around JSON objects and arrays.
@@ -145,7 +148,7 @@ class BaseJSONWrapper:
     def __len__(self, /) -> int:
         return len(self._container)
 
-    def __getitem__(self, item: int | str | JSONPath, /) -> JSONScalar | Self:
+    def __getitem__(self, item: int | str | JSONPath, /) -> JSONWrappedAny:
         if isinstance(item, int):
             path = (item,)
         elif isinstance(item, str):
@@ -215,10 +218,10 @@ class JSONArrayWrapper(BaseJSONWrapper):
     def __contains__(self, item: JSONAny, /) -> bool: ...
     del __contains__
 
-    def __iter__(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+    def __iter__(self, /) -> Iterator[JSONWrappedAny]:
         return map(self.__getitem__, range(len(self._container)))
 
-    def __reversed__(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+    def __reversed__(self, /) -> Iterator[JSONWrappedAny]:
         return map(self.__getitem__, range(len(self._container) - 1, -1, -1))
 
     def keys(self, /) -> Iterator[int]:
@@ -227,13 +230,13 @@ class JSONArrayWrapper(BaseJSONWrapper):
         """
         return iter(range(len(self._container)))
 
-    def values(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+    def values(self, /) -> Iterator[JSONWrappedAny]:
         """
         Returns an iterator over values of the wrapped array.
         """
         return self.__iter__()
 
-    def items(self, /) -> Iterator[tuple[int, JSONScalar | BaseJSONWrapper]]:
+    def items(self, /) -> Iterator[tuple[int, JSONWrappedAny]]:
         """
         Returns an iterator over items of the wrapped array.
         An item is a tuple of an index and respective value.
@@ -271,13 +274,13 @@ class JSONObjectWrapper(BaseJSONWrapper):
         """
         return iter(self._container)
 
-    def values(self, /) -> Iterator[JSONScalar | BaseJSONWrapper]:
+    def values(self, /) -> Iterator[JSONWrappedAny]:
         """
         Returns an iterator over values of the wrapped object.
         """
         return map(self.__getitem__, self._container)
 
-    def items(self, /) -> Iterator[tuple[str, JSONScalar | BaseJSONWrapper]]:
+    def items(self, /) -> Iterator[tuple[str, JSONWrappedAny]]:
         """
         Returns an iterator over items of the wrapped object.
         An item is a tuple of an attribute and respective value.
@@ -318,6 +321,7 @@ __all__ = (
     'JSONContainer',
     'JSONAny',
     'JSONPath',
+    'JSONWrappedAny',
     'is_json_path',
     'str_to_json_path',
     'json_path_to_str',
