@@ -166,6 +166,28 @@ class Manifest(JSONObjectWrapper):
 
         return cls(manifest)
 
+    @classmethod
+    def from_recent(cls, /) -> Self:
+        """
+        Creates an instance of :class:`Manifest`
+        from the most recent cached version stored inside ``CACHED_DIR``.
+
+        Fallbacks to ``from_api`` if there is no cached version.
+        """
+        filename = max(
+            (
+                filename
+                for filename in os.listdir(cls.CACHE_DIR)
+                if filename.endswith('.json')
+                ),
+            default='',
+            )
+
+        if filename:
+            return cls.from_file(join(cls.CACHE_DIR, filename))
+
+        return cls.from_api()
+
     # endregion
 
     @property
