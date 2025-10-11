@@ -8,12 +8,15 @@ from http.client import HTTPResponse
 from os.path import dirname, join
 from typing import Any, ClassVar, NamedTuple, Self
 from urllib.request import Request, urlopen
+from warnings import warn
 
 from json_helpers import *
 
 __all__ = (
     'AmmunitionType',
     'PerkTuple',
+    'PerkTupleDuplicationWarning',
+    'PlugSetPerkDuplicationWarning',
     'Manifest',
     'PlugSet',
     'Weapon'
@@ -67,6 +70,18 @@ class PerkTuple(NamedTuple):
                 return second
 
         return None
+
+
+class PerkTupleDuplicationWarning(Warning):
+    """
+    Warnings about duplicated instances of :class:`PerkTuple`.
+    """
+
+
+class PlugSetPerkDuplicationWarning(Warning):
+    """
+    Warnings about duplicated perks inside instances of :class:`PlugSet`.
+    """
 
 
 class Manifest(JSONObjectWrapper):
@@ -293,9 +308,12 @@ class Manifest(JSONObjectWrapper):
                 if present:
                     best = PerkTuple.choose_best(present, perk_tuple)
                     if best is None:
-                        raise ValueError(
+                        warn(
                             f'there are two perk tuples named {name!r}: '
-                            f'{present} and {perk_tuple}'
+                            f'(regular={present.regular}, enhanced={present.enhanced}) and '
+                            f'(regular={perk_tuple.regular}, enhanced={perk_tuple.enhanced})',
+                            category=PerkTupleDuplicationWarning,
+                            stacklevel=2,
                             )
 
                     name2perk[name] = best
@@ -389,15 +407,19 @@ class PlugSet:
                     elif not is_first_enhanced and is_second_enhanced:
                         yield PerkTuple(name, regular=first_hash, enhanced=second_hash)
                     else:
-                        raise ValueError(
-                            f'plug set {self._hash} has 2 perks of name {name!r} '
+                        warn(
+                            f'plug set {self.identifier!r} has 2 perks named {name!r} '
                             f'with hashes {first_hash} and {second_hash}, '
-                            f'both are {'enhanced' if is_first_enhanced else 'not enhanced'}'
+                            f'both are {'enhanced' if is_first_enhanced else 'not enhanced'}',
+                            category=PlugSetPerkDuplicationWarning,
+                            stacklevel=2,
                             )
                 case n:
-                    raise ValueError(
-                        f'plug set {self._hash} has {n} perks of name {name!r} '
-                        f'with hashes {', '.join(str(d['hash']) for d in definitions)}'
+                    warn(
+                        f'plug set {self.identifier!r} has {n} perks named {name!r} '
+                        f'with hashes {', '.join(str(d['hash']) for d in definitions)}',
+                        category=PlugSetPerkDuplicationWarning,
+                        stacklevel=2,
                         )
 
 
