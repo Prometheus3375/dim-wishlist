@@ -98,6 +98,12 @@ def json_lookup(obj: JSONContainer, path: JSONPath, /) -> JSONAny:
     """
     current: JSONAny = obj
     for i, part in enumerate(path, 1):
+        if isinstance(part, str) and '.' in part:
+            raise ValueError(
+                'a valid JSONPath cannot contain string parts with dots, '
+                f'part {part!r} at index {i} is invalid'
+                )
+
         if isinstance(current, dict):
             current = current[str(part)]
         elif isinstance(current, list):
