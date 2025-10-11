@@ -44,32 +44,52 @@ class PerkTuple(NamedTuple):
     enhanced: int = 0
 
     @property
-    def proper_name(self, /) -> str:
+    def is_complete(self, /) -> bool:
         """
-        Basically the name, but can be changed a bit in some exceptional cases.
+        Whether this tuple has both regular and enhanced hashes.
         """
-        return self.name
+        return self.regular > 0 and self.enhanced > 0
 
-    @classmethod
-    def choose_best(cls, first: Self, second: Self, /) -> Self | None:
+    @property
+    def unique_name(self, /) -> str:
         """
-        If both tuples are identical, returns the first of them.
-        If both tuples have the same name and regular
-        and one of the does not define enhanced,
-        then returns the one with defined enhanced.
-        Otherwise, returns ``None``.
+        The unique name for this tuple.
         """
-        if first.name == second.name and first.regular == second.regular:
-            if first.enhanced == second.enhanced:
-                return first
+        if self.is_complete:
+            return self.name
 
-            if second.enhanced == 0 and first.enhanced >= 0:
-                return first
+        return f'{self.name}_{max(self.regular, self.enhanced)}'
 
-            if first.enhanced == 0 and second.enhanced >= 0:
-                return second
+    def add_to_tuple_set(self, tuple_set: set['PerkTuple'], /) -> None:
+        """
+        Conditionally modifies the given set of tuples.
+        If this tuple is complete, and the set contains an incomplete version
+        with the same regular or enhanced hashes,
+        then removes all incomplete versions from the set and adds this tuple.
+        If this tuple is incomplete, and the set contains the complete version,
+        then does nothing.
+        In any other case adds this tuple to the set.
+        """
+        to_remove = set()
+        add_self = True
+        for other in tuple_set:
+            if self.regular == other.regular:
+                if self.enhanced > 0 and other.enhanced == 0:
+                    to_remove.add(other)
+                elif other.enhanced > 0 and self.enhanced == 0:
+                    add_self = False
 
-        return None
+            elif self.enhanced == other.enhanced:
+                if self.regular > 0 and other.regular == 0:
+                    to_remove.add(other)
+                elif other.regular > 0 and self.regular == 0:
+                    add_self = False
+
+        for other in to_remove:
+            tuple_set.remove(other)
+
+        if add_self:
+            tuple_set.add(self)
 
 
 class PerkTupleDuplicationWarning(Warning):
