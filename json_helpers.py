@@ -2,6 +2,24 @@ from collections import deque
 from collections.abc import Iterator
 from typing import Any, TypeGuard, overload
 
+__all__ = (
+    'JSONObject',
+    'JSONArray',
+    'JSONScalar',
+    'JSONContainer',
+    'JSONAny',
+    'JSONPath',
+    'JSONWrappedAny',
+    'is_json_path',
+    'str_to_json_path',
+    'json_path_to_str',
+    'json_search',
+    'json_lookup',
+    'BaseJSONWrapper',
+    'JSONArrayWrapper',
+    'JSONObjectWrapper',
+    )
+
 type JSONObject = dict[str, 'JSONAny']
 type JSONArray = list['JSONAny']
 type JSONScalar = None | bool | int | float | str
@@ -405,22 +423,3 @@ def wrap_json_value(value, /) -> Any:
         return JSONObjectWrapper(value)
 
     return value
-
-
-__all__ = (
-    'JSONObject',
-    'JSONArray',
-    'JSONScalar',
-    'JSONContainer',
-    'JSONAny',
-    'JSONPath',
-    'JSONWrappedAny',
-    'is_json_path',
-    'str_to_json_path',
-    'json_path_to_str',
-    'json_search',
-    'json_lookup',
-    'BaseJSONWrapper',
-    'JSONArrayWrapper',
-    'JSONObjectWrapper',
-    )

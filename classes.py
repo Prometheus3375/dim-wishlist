@@ -4,6 +4,8 @@ from dataclasses import InitVar, dataclass, field
 from itertools import product
 from typing import Any, ClassVar, Self, TextIO, TypeGuard
 
+__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
+
 
 @dataclass(frozen=True, kw_only=True, slots=True)
 class Item:
@@ -336,6 +338,3 @@ class RollDefinition:
                     )
         else:
             cls.rolls = ()
-
-
-__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
