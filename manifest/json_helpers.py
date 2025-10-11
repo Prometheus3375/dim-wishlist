@@ -88,26 +88,95 @@ def json_search(obj: JSONContainer, search_value: JSONAny, /) -> Iterator[JSONPa
                 )
 
 
-def json_lookup(obj: JSONContainer, path: JSONPath, /) -> JSONAny:
+def json_lookup(container: JSONContainer, path: JSONPath, /) -> JSONAny:
     """
     Returns a value situated at the given path in the given JSON container.
 
     Raises :class:`TypeError` if scalar is met at some point in the path.
     Can also raise :class:`KeyError` and :class:`IndexError`
-    if the path contains wrong dict keys and list indexes respectively.
+    if the path contains wrong object attributes and array indexes respectively.
     """
-    current: JSONAny = obj
-    for i, part in enumerate(path, 1):
-        if isinstance(part, str) and '.' in part:
-            raise ValueError(
-                'a valid JSONPath cannot contain string parts with dots, '
-                f'part {part!r} at index {i} is invalid'
-                )
-
+    current: JSONAny = container
+    for i, part in enumerate(path):
         if isinstance(current, dict):
-            current = current[str(part)]
+            # Benchmark code:
+            # stm1 = """
+            # v = mapping.get(key, default)
+            # if v is default:
+            #     pass
+            # """
+            # stm2 = """
+            # try:
+            #     v = mapping[key]
+            # except KeyError as e:
+            #     pass
+            # """
+
+            part = str(part)
+            current = current.get(part, ...)  # type: ignore[arg-type]
+            if current is ...:
+                raise KeyError(
+                    f'object at {json_path_to_str(path[:i])!r} '
+                    f'does not have attribute {part!r}'
+                    )
+
         elif isinstance(current, list):
-            current = current[int(part)]
+            # Benchmark code:
+            # stm1 = """
+            # if isinstance(part, str):
+            #     if part.isdecimal():
+            #         part_ = int(part)
+            #     else:
+            #         pass
+            # """
+            # stm2 = """
+            # try:
+            #     part_ = int(part)
+            # except ValueError as e:
+            #     pass
+            # """
+
+            if isinstance(part, str):
+                if part.isdecimal():
+                    part = int(part)
+                else:
+                    raise ValueError(
+                        f'cannot convert path part {part!r} '
+                        f'at index {i} to an integer'
+                        )
+
+            # Use try-except here because range check
+            # -len <= index < len slows valid lookups
+            # to the level of invalid ones.
+            # Valid lookups are ~7 times faster than invalid ones.
+            # Benchmark code:
+            # stm1 = """
+            # if -len(li) <= i < len(li):
+            #     li_ = li[i]
+            # else:
+            #     pass
+            # """
+            # stm2 = """
+            # try:
+            #     li_ = li[i]
+            # except IndexError as e:
+            #     pass
+            # """
+            # stm3 = """
+            # li_len = len(li)
+            # if -li_len <= i < li_len:
+            #     li_ = li[i]
+            # else:
+            #     pass
+            # """
+            try:
+                current = current[part]
+            except IndexError:
+                raise IndexError(
+                    f'array at {json_path_to_str(path[:i])!r} '
+                    f'does not have index {part!r}'
+                    )
+
         else:
             raise TypeError(f'value at {json_path_to_str(path[:i])!r} is not subscriptable')
 
