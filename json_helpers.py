@@ -133,10 +133,8 @@ def json_lookup(container: JSONContainer, path: JSONPath, /) -> JSONAny:
             part = str(part)
             current = current.get(part, ...)  # type: ignore[arg-type]
             if current is ...:
-                raise KeyError(
-                    f'object at {json_path_to_str(path[:i])!r} '
-                    f'does not have attribute {part!r}'
-                    )
+                desc = 'the given object' if i == 0 else f'object at {json_path_to_str(path[:i])!r}'
+                raise KeyError(f'{desc} does not have attribute {part!r}')
 
         elif isinstance(current, list):
             # Benchmark code:
@@ -190,13 +188,14 @@ def json_lookup(container: JSONContainer, path: JSONPath, /) -> JSONAny:
             try:
                 current = current[part]
             except IndexError:
-                raise IndexError(
-                    f'array at {json_path_to_str(path[:i])!r} '
-                    f'does not have index {part!r}'
-                    )
+                desc = 'the given array' if i == 0 else f'array at {json_path_to_str(path[:i])!r}'
+                raise IndexError(f'{desc} does not have index {part!r}')
 
         else:
-            raise TypeError(f'value at {json_path_to_str(path[:i])!r} is not subscriptable')
+            if i == 0:
+                raise TypeError(f' the given value at is not a JSON array or object')
+            else:
+                raise TypeError(f'value at {json_path_to_str(path[:i])!r} is not subscriptable')
 
     return current
 
