@@ -334,6 +334,32 @@ def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
     )
 
 
+def handle_exceptional_perk_pairs(
+        name: str,
+        def1: JSONObjectWrapper,
+        def2: JSONObjectWrapper,
+        /,
+        ) -> Sequence[PerkTuple] | None:
+    """
+    Handles some exceptional pairings in plug sets,
+    providing correct instances of :class:`PerkTuple`.
+
+    If the pairing is not exceptional, returns ``None``.
+    """
+    match name:
+        case 'Pulse Monitor':
+            # They are both regular versions.
+            # Example of a weapon that rolls both:
+            # https://www.light.gg/db/items/1402766122/retrofuturist
+            if {def1['hash'], def2['hash']} == {205890336, 972757866}:
+                return [
+                    PerkTuple(name, 205890336),
+                    PerkTuple(name, 972757866),
+                    ]
+
+    return None
+
+
 class PlugSet:
     """
     Holder of plug set identifier and plug item hashes.
@@ -415,23 +441,28 @@ class PlugSet:
                     else:
                         yield PerkTuple(name, regular=def1['hash'])
                 case 2:
-                    first, second = definitions
-                    first_hash = first['hash']
-                    second_hash = second['hash']
-                    is_first_enhanced = is_perk_enhanced(first)
-                    is_second_enhanced = is_perk_enhanced(second)
-                    if is_first_enhanced and not is_second_enhanced:
-                        yield PerkTuple(name, regular=second_hash, enhanced=first_hash)
-                    elif not is_first_enhanced and is_second_enhanced:
-                        yield PerkTuple(name, regular=first_hash, enhanced=second_hash)
+                    def1, def2 = definitions
+                    result = handle_exceptional_perk_pairs(name, def1, def2)
+                    if result is None:
+                        def1_hash = def1['hash']
+                        def2_hash = def2['hash']
+                        is_def1_enhanced = is_perk_enhanced(def1)
+                        is_def2_enhanced = is_perk_enhanced(def2)
+                        if is_def1_enhanced and not is_def2_enhanced:
+                            yield PerkTuple(name, regular=def2_hash, enhanced=def1_hash)
+                        elif not is_def1_enhanced and is_def2_enhanced:
+                            yield PerkTuple(name, regular=def1_hash, enhanced=def2_hash)
+                        else:
+                            warn(
+                                f'plug set {self.identifier!r} has 2 perks named {name!r} '
+                                f'with hashes {def1_hash} and {def2_hash}, '
+                                f'both are {'enhanced' if is_def1_enhanced else 'not enhanced'}',
+                                category=PlugSetPerkDuplicationWarning,
+                                stacklevel=2,
+                                )
                     else:
-                        warn(
-                            f'plug set {self.identifier!r} has 2 perks named {name!r} '
-                            f'with hashes {first_hash} and {second_hash}, '
-                            f'both are {'enhanced' if is_first_enhanced else 'not enhanced'}',
-                            category=PlugSetPerkDuplicationWarning,
-                            stacklevel=2,
-                            )
+                        yield from result
+
                 case n:
                     warn(
                         f'plug set {self.identifier!r} has {n} perks named {name!r} '
@@ -560,7 +591,7 @@ class Weapon:
 
             reusable_plugs: JSONArrayWrapper = entry.get('reusablePlugItems')
             if reusable_plugs:
-                plug_hashes = (d['plugItemHash'] for d in reusable_plugs)
+                plug_hashes = (plug_entry['plugItemHash'] for plug_entry in reusable_plugs)
                 identifier = (
                     'DestinyInventoryItemDefinition',
                     self.hash,
