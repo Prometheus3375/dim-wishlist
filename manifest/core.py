@@ -608,7 +608,6 @@ class Weapon:
         """
         socket_indexes = self._get_socket_indexes_by_category_name('WEAPON PERKS')
         socket_entries = self._definition['sockets.socketEntries']
-        plug_sets = set()
         for index in socket_indexes:
             entry = socket_entries[index]
             reusable_hash = entry.get('reusablePlugSetHash')
@@ -631,5 +630,3 @@ class Weapon:
                     'reusablePlugItems',
                     )
                 yield PlugSet(plug_hashes, identifier)
-
-        return plug_sets
