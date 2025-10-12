@@ -85,6 +85,13 @@ class AishasEmbrace(RollDefinition):
             [traits.RapidHit, traits.Demoralize],
             [traits.DestabilizingRounds],
             ),
+        Roll(
+            'Withering Gaze',
+            [barrels.ArrowheadBrake, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.RapidHit, traits.Demoralize],
+            [traits.WitheringGaze],
+            ),
         ]
 
 
