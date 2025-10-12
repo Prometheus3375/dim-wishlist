@@ -5,6 +5,7 @@ from collections.abc import Iterable, Iterator, Mapping, Sequence, Set
 from enum import IntEnum
 from functools import cached_property
 from http.client import HTTPResponse
+from operator import attrgetter
 from os.path import dirname, join
 from typing import Any, ClassVar, NamedTuple, Self
 from urllib.request import Request, urlopen
@@ -15,11 +16,13 @@ from json_helpers import *
 __all__ = (
     'AmmunitionType',
     'PerkTuple',
+    'PERK_TUPLE_SORT_KEY',
     'PerkTupleDuplicationWarning',
-    'PlugSetPerkDuplicationWarning',
-    'Manifest',
+    'is_perk_enhanced',
     'PlugSet',
-    'Weapon'
+    'PlugSetPerkDuplicationWarning',
+    'Weapon',
+    'Manifest',
     )
 
 
@@ -63,25 +66,27 @@ class PerkTuple(NamedTuple):
     def add_to_tuple_set(self, tuple_set: set['PerkTuple'], /) -> None:
         """
         Conditionally modifies the given set of tuples.
-        If this tuple is complete, and the set contains an incomplete version
+
+        If this tuple is complete, and the set contains incomplete versions
         with the same regular or enhanced hashes,
         then removes all incomplete versions from the set and adds this tuple.
         If this tuple is incomplete, and the set contains the complete version,
         then does nothing.
+
         In any other case adds this tuple to the set.
         """
-        to_remove = set()
+        to_remove = []
         add_self = True
         for other in tuple_set:
             if self.regular == other.regular:
                 if self.enhanced > 0 and other.enhanced == 0:
-                    to_remove.add(other)
+                    to_remove.append(other)
                 elif other.enhanced > 0 and self.enhanced == 0:
                     add_self = False
 
             elif self.enhanced == other.enhanced:
                 if self.regular > 0 and other.regular == 0:
-                    to_remove.add(other)
+                    to_remove.append(other)
                 elif other.regular > 0 and self.regular == 0:
                     add_self = False
 
@@ -90,6 +95,12 @@ class PerkTuple(NamedTuple):
 
         if add_self:
             tuple_set.add(self)
+
+
+PERK_TUPLE_SORT_KEY = attrgetter('is_complete', 'regular', 'enhanced')
+"""
+Callable to use when sorting instances of :class:`PerkTuple`.
+"""
 
 
 class PerkTupleDuplicationWarning(Warning):
