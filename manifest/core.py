@@ -313,9 +313,9 @@ class Manifest(JSONObjectWrapper):
         """
         return (w for w in self.legendary_weapons if w.release_string >= release_string)
 
-    def get_legendary_weapon_perks(self, release_string: str = '', /) -> set[PerkTuple]:
+    def get_legendary_weapon_perks(self, release_string: str = '', /) -> dict[str, set[PerkTuple]]:
         """
-        Returns a set of instances of :class:`PerkTuple`
+        Returns a mapping between perk names and sets of instances of :class:`PerkTuple`
         that are found in legendary weapons.
 
         Parameter *release_string* can be used to use only weapons
@@ -336,22 +336,21 @@ class Manifest(JSONObjectWrapper):
             for perk_tuple in plug_set.iterate_perks(self):
                 perk_tuple.add_to_tuple_set(name_to_tuple_set[perk_tuple.name])
 
-        result: set[PerkTuple] = set()
         for name, tuple_set in name_to_tuple_set.items():
-            result.update(tuple_set)
-            count = len(tuple_set)
-            if count > 1:
+            count_complete = sum(t.is_complete for t in tuple_set)
+            if count_complete > 1:
                 tuples_desc = ', '.join(
                     f'(regular={t.regular}, enhanced={t.enhanced})'
-                    for t in sorted(tuple_set)
+                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_KEY, reverse=True)
                     )
                 warn(
-                    f'there are {count} perk tuples named {name!r}: {tuples_desc}',
+                    f'there are {count_complete} complete perk tuples '
+                    f'named {name!r}: {tuples_desc}',
                     category=PerkTupleDuplicationWarning,
                     stacklevel=2,
                     )
 
-        return result
+        return name_to_tuple_set
 
 
 def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
