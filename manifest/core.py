@@ -306,6 +306,13 @@ class Manifest(JSONObjectWrapper):
 
         return tuple(li)
 
+    @cached_property
+    def release_strings(self, /) -> Set[str]:
+        """
+        All release strings met in legendary weapons.
+        """
+        return frozenset(weapon.release_string for weapon in self.legendary_weapons)
+
     def iterate_legendary_weapons_since_release(self, release_string: str, /) -> Iterator['Weapon']:
         """
         Returns an iterator over instances of :class:`Weapon`
