@@ -304,7 +304,7 @@ class Manifest(JSONObjectWrapper):
             if definition['inventory.tierTypeName'] == 'Legendary':
                 li.append(Weapon(definition, self))
 
-        return li
+        return tuple(li)
 
     def iterate_legendary_weapons_since_release(self, release_string: str, /) -> Iterator['Weapon']:
         """
