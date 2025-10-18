@@ -66,7 +66,7 @@ def check_release_string(
     exit()
 
 
-def generate_commands(args: Namespace) -> None:
+def generate_commands(args: Namespace, /) -> None:
     """
     Main function for generating commands.
     """
