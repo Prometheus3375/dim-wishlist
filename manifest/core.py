@@ -17,7 +17,7 @@ __all__ = (
     'name_to_python_identifier',
     'AmmunitionType',
     'PerkTuple',
-    'PERK_TUPLE_SORT_KEY',
+    'PERK_TUPLE_SORT_BY_COMPLETENESS',
     'PerkTupleDuplicationWarning',
     'get_perk_category',
     'is_perk_enhanced',
@@ -114,9 +114,9 @@ class PerkTuple(NamedTuple):
             tuple_set.add(self)
 
 
-PERK_TUPLE_SORT_KEY = attrgetter('is_complete', 'regular', 'enhanced')
+PERK_TUPLE_SORT_BY_COMPLETENESS = attrgetter('is_complete', 'regular', 'enhanced')
 """
-Callable to use when sorting instances of :class:`PerkTuple`.
+Callable to use for sorting instances of :class:`PerkTuple` by completeness.
 """
 
 
@@ -369,7 +369,7 @@ class Manifest(JSONObjectWrapper):
             if count_complete > 1:
                 tuples_desc = ', '.join(
                     f'(regular={t.regular}, enhanced={t.enhanced})'
-                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_KEY, reverse=True)
+                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS, reverse=True)
                     )
                 warn(
                     f'there are {count_complete} complete perk tuples '
