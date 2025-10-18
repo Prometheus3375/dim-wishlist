@@ -328,7 +328,11 @@ class Manifest(JSONObjectWrapper):
         """
         All release strings met in legendary weapons.
         """
-        return frozenset(weapon.release_string for weapon in self.legendary_weapons)
+        return frozenset(
+            weapon.release_string
+            for weapon in self.legendary_weapons
+            if weapon.release_string is not None
+            )
 
     def iterate_legendary_weapons_since_release(self, release_string: str, /) -> Iterator['Weapon']:
         """
@@ -620,10 +624,10 @@ class Weapon:
         return self._manifest.get_collectible(collectible_hash)['sourceString']
 
     @cached_property
-    def release_string(self, /) -> str:
+    def release_string(self, /) -> str | None:
         """
         Returns release string when this weapon was added.
-        Can be the empty string, if no proper release string is present.
+        Can be ``None``, if no proper release string is present.
         """
         return max(
             (
@@ -631,7 +635,7 @@ class Weapon:
                 for v in self._definition['traitIds']
                 if v.startswith('releases')
                 ),
-            default='',
+            default=None,
             )
 
     def _get_socket_indexes_by_category_name(self, category_name: str, /) -> list[int]:
