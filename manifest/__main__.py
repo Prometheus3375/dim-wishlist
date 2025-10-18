@@ -170,7 +170,7 @@ def parse_cmd_arguments() -> Namespace:
         add_help=False,
         )
 
-    parser_list.set_defaults(function=list_commands)
+    parser_generate.set_defaults(function=generate_commands)
     parser_generate.add_argument(*help_args, **help_kwargs)
 
     perk_database_default = 'releases.v800.annual'
