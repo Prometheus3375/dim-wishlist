@@ -596,10 +596,10 @@ class Weapon:
         """
         Names of damage types of this weapon.
         """
-        return [
+        return tuple(
             self._manifest.damage_type_names[dt_hash]
             for dt_hash in self._definition['damageTypeHashes']
-            ]
+            )
 
     @property
     def ammo_type(self, /) -> AmmunitionType:
@@ -655,11 +655,11 @@ class Weapon:
         """
         socket_indexes = self._get_socket_indexes_by_category_name('INTRINSIC TRAITS')
         socket_entries = self._definition['sockets.socketEntries']
-        return [
+        return tuple(
             self._manifest.get_item(hash_)['displayProperties.name']
             for index in socket_indexes
             if (hash_ := socket_entries[index, 'singleInitialItemHash']) > 0
-            ]
+            )
 
     def iterate_perk_plug_sets(self, /) -> Iterator[PlugSet]:
         """
