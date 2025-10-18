@@ -4,7 +4,7 @@ from dataclasses import InitVar, dataclass, field
 from itertools import product
 from typing import Any, ClassVar, Self, TextIO, TypeGuard
 
-__all__ = 'Item', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
+__all__ = 'Item', 'Perk', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
 
 
 @dataclass(frozen=True, kw_only=True, slots=True)
@@ -12,18 +12,18 @@ class Item:
     """
     A common class for armor, weapons, traits, categories, etc.
     """
-    __hash2item: ClassVar[dict[int, Self]] = {}
+    _hash2item: ClassVar[dict[int, Self]] = {}
 
     name: str
     hash: int
 
     # noinspection PyDataclass
     def __post_init__(self, /) -> None:
-        existing = self.__hash2item.get(self.hash)
+        existing = self._hash2item.get(self.hash)
         if existing:
             raise ValueError(f'item with hash {self.hash} already exists')
 
-        self.__hash2item[self.hash] = self
+        self._hash2item[self.hash] = self
 
     @classmethod
     def from_hash(cls, hash_: int, /) -> Self | None:
@@ -31,7 +31,7 @@ class Item:
         Returns an existing item with the given hash value
         or ``None`` if no item with such hash exists.
         """
-        return cls.__hash2item.get(hash_)
+        return cls._hash2item.get(hash_)
 
     def __eq__(self, other: Any, /) -> bool:
         return self.hash == other.hash if isinstance(other, Item) else False
@@ -62,17 +62,36 @@ class Item:
         return f'https://www.light.gg/db/items/{self.hash}'
 
 
+@dataclass(frozen=True, slots=True)
+class Perk(Item):
+    """
+    A class dedicated to weapon perks.
+    """
+    enhanced: int
+
+    def __init__(self, /, *, name: str, regular: int, enhanced: int = 0) -> None:
+        super().__init__(name=name, hash=regular)
+        object.__setattr__(self, 'enhanced', enhanced)
+
+        if enhanced > 0:
+            existing = self._hash2item.get(enhanced)
+            if existing:
+                raise ValueError(f'perk with enhanced hash {existing} already exists')
+
+            self._hash2item[enhanced] = self
+
+
 AnyItem = Item(name='DIM Wildcard', hash=-69420)
 """
 Special item for DIM to denote any item.
 """
-AnyPerk = Item(name='Any Perk', hash=-1)
+AnyPerk = Perk(name='Any Perk', regular=-1)
 """
 Special item to denote an empty selection for a perk column.
 """
 
 type OrderedSet[T] = dict[T, None]
-type PerkList = Sequence[Item]
+type PerkList = Sequence[Perk]
 type AnnotatedRoll = tuple[str, bool, tuple[PerkList, ...]]
 
 
@@ -89,7 +108,7 @@ class WishlistEntry:
     # noinspection PyDataclass
     def __post_init__(self, perk_lists: Sequence[PerkList], /):
         # Remove empty lists and convert remaining to ordered sets
-        perk_sets: Iterable[OrderedSet[Item]] = map(dict.fromkeys, filter(None, perk_lists))
+        perk_sets: Iterable[OrderedSet[Perk]] = map(dict.fromkeys, filter(None, perk_lists))
 
         # Use product to produce every possible combo.
         # From every combo remove AnyPerk and remain only non-empty ones.
@@ -149,7 +168,7 @@ def is_annotated_roll(obj: Any, /) -> TypeGuard[AnnotatedRoll]:
             and isinstance(obj[2], tuple)
             and
             all(
-                isinstance(ps, Sequence) and all(isinstance(i, Item) for i in ps)
+                isinstance(ps, Sequence) and all(isinstance(i, Perk) for i in ps)
                 for ps in obj[2]
                 )
     )
@@ -219,7 +238,7 @@ class Wishlist:
 
             file.write(f'\n')
 
-            added_rolls: Counter[tuple[Item, frozenset[Item]]] = Counter()
+            added_rolls: Counter[tuple[Item, frozenset[Perk]]] = Counter()
             self._write_wishlist_entry_list(file, added_rolls, trash_list=False)
             self._write_wishlist_entry_list(file, added_rolls, trash_list=True)
 
@@ -238,7 +257,7 @@ class Wishlist:
     def _write_wishlist_entry_list(
             self,
             file: TextIO,
-            added_rolls: Counter[tuple[Item, frozenset[Item]]],
+            added_rolls: Counter[tuple[Item, frozenset[Perk]]],
             /,
             trash_list: bool,
             ) -> None:
