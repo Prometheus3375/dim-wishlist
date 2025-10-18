@@ -19,6 +19,7 @@ __all__ = (
     'PerkTuple',
     'PERK_TUPLE_SORT_KEY',
     'PerkTupleDuplicationWarning',
+    'get_perk_category',
     'is_perk_enhanced',
     'PlugSet',
     'PlugSetPerkDuplicationWarning',
@@ -51,6 +52,7 @@ class PerkTuple(NamedTuple):
     Contains the name of a weapon perk, its hash and hash of its enhanced version.
     """
     name: str
+    category: str
     regular: int = 0
     enhanced: int = 0
 
@@ -375,6 +377,17 @@ class Manifest(JSONObjectWrapper):
         return name_to_tuple_set
 
 
+def get_perk_category(definition: JSONObjectWrapper, /) -> str:
+    """
+    Returns a proper perk category from the given item definition.
+    """
+    category = definition['itemTypeDisplayName']
+    if category.startswith('Enhanced'):
+        return category[9:]
+
+    return category
+
+
 def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
     """
     Whether the perk described by the given definition is enhanced.
@@ -403,10 +416,12 @@ def handle_exceptional_perk_pairs(
             # They are both regular versions.
             # Example of a weapon that rolls both:
             # https://www.light.gg/db/items/1402766122/retrofuturist
-            if {def1['hash'], def2['hash']} == {205890336, 972757866}:
+            h1 = def1['hash']
+            h2 = def2['hash']
+            if {h1, h2} == {205890336, 972757866}:
                 return [
-                    PerkTuple(name, 205890336),
-                    PerkTuple(name, 972757866),
+                    PerkTuple(name, get_perk_category(def1), regular=h1),
+                    PerkTuple(name, get_perk_category(def2), regular=h2),
                     ]
 
     return None
@@ -489,9 +504,9 @@ class PlugSet:
                 case 1:
                     def1 = definitions[0]
                     if is_perk_enhanced(def1):
-                        yield PerkTuple(name, enhanced=def1['hash'])
+                        yield PerkTuple(name, get_perk_category(def1), enhanced=def1['hash'])
                     else:
-                        yield PerkTuple(name, regular=def1['hash'])
+                        yield PerkTuple(name, get_perk_category(def1), regular=def1['hash'])
                 case 2:
                     def1, def2 = definitions
                     result = handle_exceptional_perk_pairs(name, def1, def2)
@@ -501,9 +516,21 @@ class PlugSet:
                         is_def1_enhanced = is_perk_enhanced(def1)
                         is_def2_enhanced = is_perk_enhanced(def2)
                         if is_def1_enhanced and not is_def2_enhanced:
-                            yield PerkTuple(name, regular=def2_hash, enhanced=def1_hash)
+                            yield PerkTuple(
+                                name,
+                                get_perk_category(def2),
+                                regular=def2_hash,
+                                enhanced=def1_hash,
+                                )
+
                         elif not is_def1_enhanced and is_def2_enhanced:
-                            yield PerkTuple(name, regular=def1_hash, enhanced=def2_hash)
+                            yield PerkTuple(
+                                name,
+                                get_perk_category(def1),
+                                regular=def1_hash,
+                                enhanced=def2_hash,
+                                )
+
                         else:
                             warn(
                                 f'plug set {self.identifier!r} has 2 perks named {name!r} '
