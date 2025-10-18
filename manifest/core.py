@@ -79,6 +79,12 @@ class PerkTuple(NamedTuple):
         """
         return name_to_python_identifier(self.unique_name)
 
+    def category_as_python_identifier(self, /) -> str:
+        """
+        The category of this tuple as Python identifier.
+        """
+        return self.category.lower().replace(' ', '_')
+
     def add_to_tuple_set(self, tuple_set: set['PerkTuple'], /) -> None:
         """
         Conditionally modifies the given set of tuples.
