@@ -689,3 +689,6 @@ class Weapon:
                     'reusablePlugItems',
                     )
                 yield PlugSet(plug_hashes, identifier)
+
+    def __repr__(self, /) -> str:
+        return f'<{self.__class__.__name__} {self.name!r} hash={self.hash}>'
