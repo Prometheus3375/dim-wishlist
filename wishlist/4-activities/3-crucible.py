@@ -28,18 +28,18 @@ class ReturnedMemory(RollDefinition):
     item = Item(name='Returned Memory', hash=4049127142)
     rolls = [
         Roll(
+            'Heal Clip',
+            [barrels.VolatileLaunch, AnyPerk],
+            [magazines.TacticalMag, AnyPerk],
+            [traits.HealClip],
+            [traits.OneForAll, traits.Redirection, traits.Incandescent],
+            ),
+        Roll(
             'Ad clear',
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.TacticalMag, AnyPerk],
             [traits.ImpulseAmplifier],
             [traits.OneForAll, traits.Redirection],
-            ),
-        Roll(
-            'Solar combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.HealClip],
-            [traits.Incandescent],
             ),
         ]
 
