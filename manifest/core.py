@@ -14,7 +14,7 @@ from warnings import warn
 from json_helpers import *
 
 __all__ = (
-    'name_to_identifier',
+    'name_to_python_identifier',
     'AmmunitionType',
     'PerkTuple',
     'PERK_TUPLE_SORT_KEY',
@@ -40,7 +40,7 @@ class AmmunitionType(IntEnum):
     Unknown = 4
 
 
-def name_to_identifier(name: str, /) -> str:
+def name_to_python_identifier(name: str, /) -> str:
     """
     Converts name of an item to a proper Python identifier.
     """
@@ -74,11 +74,11 @@ class PerkTuple(NamedTuple):
         return f'{self.name}_{max(self.regular, self.enhanced)}'
 
     @property
-    def identifier(self, /) -> str:
+    def python_identifier(self, /) -> str:
         """
         The name of this tuple as Python identifier.
         """
-        return name_to_identifier(self.unique_name)
+        return name_to_python_identifier(self.unique_name)
 
     def add_to_tuple_set(self, tuple_set: set['PerkTuple'], /) -> None:
         """
@@ -582,11 +582,11 @@ class Weapon:
         return self._definition['displayProperties.name']
 
     @property
-    def identifier(self, /) -> str:
+    def python_identifier(self, /) -> str:
         """
         Name of this weapon as Python identifier.
         """
-        return name_to_identifier(self.name)
+        return name_to_python_identifier(self.name)
 
     @cached_property
     def damage_types(self, /) -> Sequence[str]:
