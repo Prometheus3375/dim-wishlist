@@ -28,7 +28,6 @@ def list_commands(args: Namespace, /) -> None:
     manifest_ = Manifest.from_recent()
     match args.list_option:
         case ListOptions.RELEASE_STRINGS:
-            print('Available release strings:')
             print(*sorted(manifest_.release_strings), sep='\n')
 
         case unknown:
