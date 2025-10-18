@@ -31,9 +31,9 @@ class ReturnedMemory(RollDefinition):
             """
             Heal Clip.
             Note for Redirection: stacks are granted and consumed for every hit,
-            i.e., 2 * (1 [impact] + targets_hit_by_explosion).
-            If red bar dies to impact, explosion doesn't hit it.
-            Multiplier 2 is replaced with 3 for consumption if perk is not enhanced
+            i.e., 2 * (1 [impact] + #[targets hit by an explosion]).
+            If a target dies to impact, explosion doesn't hit it.
+            Multiplier 2 is replaced with 3 for consumption if perk is not enhanced.
             """,
             [barrels.VolatileLaunch, AnyPerk],
             [magazines.TacticalMag, AnyPerk],
