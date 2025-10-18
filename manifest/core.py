@@ -63,21 +63,16 @@ class PerkTuple(NamedTuple):
         """
         return self.regular > 0 and self.enhanced > 0
 
-    @property
-    def unique_name(self, /) -> str:
+    def name_as_python_identifier(self, /) -> str:
         """
-        The unique name of this tuple.
+        The name of this tuple as Python identifier.
         """
         if self.is_complete:
-            return self.name
+            name = self.name
+        else:
+            name = f'{self.name}_{max(self.regular, self.enhanced)}'
 
-        return f'{self.name}_{max(self.regular, self.enhanced)}'
-
-    def unique_name_as_python_identifier(self, /) -> str:
-        """
-        The unique name of this tuple as Python identifier.
-        """
-        return name_to_python_identifier(self.unique_name)
+        return name_to_python_identifier(name)
 
     def category_as_python_identifier(self, /) -> str:
         """
