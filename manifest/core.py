@@ -654,7 +654,7 @@ class Weapon:
         return [
             self._manifest.get_item(hash_)['displayProperties.name']
             for index in socket_indexes
-            if (hash_ := socket_entries[index, 'singleInitialItemHash'] > 0)
+            if (hash_ := socket_entries[index, 'singleInitialItemHash']) > 0
             ]
 
     def iterate_perk_plug_sets(self, /) -> Iterator[PlugSet]:
