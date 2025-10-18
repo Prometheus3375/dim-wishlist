@@ -49,14 +49,14 @@ class SeraphineHaze(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.ChamberedCompensator, AnyPerk],
+            [barrels.PolygonalRifling, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.Rimestealer, traits.Demolitionist],
             [traits.CrystallineCorpsebloom],
             ),
         Roll(
             'Orb combo',
-            [barrels.ChamberedCompensator, AnyPerk],
+            [barrels.PolygonalRifling, AnyPerk],
             [magazines.FlaredMagwell, AnyPerk],
             [traits.LeadFromLight],
             [traits.AttritionOrbs],
