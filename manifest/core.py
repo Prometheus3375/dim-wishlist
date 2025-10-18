@@ -73,10 +73,9 @@ class PerkTuple(NamedTuple):
 
         return f'{self.name}_{max(self.regular, self.enhanced)}'
 
-    @property
-    def python_identifier(self, /) -> str:
+    def unique_name_as_python_identifier(self, /) -> str:
         """
-        The name of this tuple as Python identifier.
+        The unique name of this tuple as Python identifier.
         """
         return name_to_python_identifier(self.unique_name)
 
@@ -581,8 +580,7 @@ class Weapon:
         """
         return self._definition['displayProperties.name']
 
-    @property
-    def python_identifier(self, /) -> str:
+    def name_as_python_identifier(self, /) -> str:
         """
         Name of this weapon as Python identifier.
         """
