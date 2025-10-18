@@ -70,7 +70,7 @@ class Perk(Item):
     enhanced: int
 
     def __init__(self, /, *, name: str, regular: int, enhanced: int = 0) -> None:
-        super().__init__(name=name, hash=regular)
+        super(Perk, self).__init__(name=name, hash=regular)
         object.__setattr__(self, 'enhanced', enhanced)
 
         if enhanced > 0:
