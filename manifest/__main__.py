@@ -22,7 +22,7 @@ RELEASE_STRING_ALL = 'all'
 RELEASE_STRING_LATEST = 'latest'
 PERK_DATABASE_DIRECTORY = join(PROJECT_DIR, 'database')
 WEAPON_DEFINITIONS_FILE = join(PROJECT_DIR, 'new-weapons.py')
-PERK_MAPPING_FILE = 'regular-to-enhanced.json'
+PERK_MAPPING_FILE = join(PROJECT_DIR, 'regular-to-enhanced.json')
 
 
 def parse_cmd_arguments() -> Namespace:
