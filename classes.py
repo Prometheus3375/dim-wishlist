@@ -68,6 +68,17 @@ class Perk(Item):
     A class dedicated to weapon perks.
     """
     enhanced: int
+    """
+    Hash of the enhanced version of this perk.
+
+    Value of zero means there is no enhanced version.
+    """
+
+    def regular(self, /) -> int:
+        """
+        Hash of the regular version of this perk.
+        """
+        return self.hash
 
     def __init__(self, /, *, name: str, regular: int, enhanced: int = 0) -> None:
         super(Perk, self).__init__(name=name, hash=regular)
