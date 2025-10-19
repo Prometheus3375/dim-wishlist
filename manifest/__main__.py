@@ -218,7 +218,7 @@ def name_to_python_identifier(name: str, /) -> str:
     Converts the given name of a weapon or a perk to a proper Python identifier.
     """
     parts = name.replace("'", '').replace('-', ' ').split()
-    return ''.join(map(str.capitalize, parts))
+    return ''.join(f'{part[0].upper()}{part[1:]}' for part in parts)
 
 
 def perk_category_to_python_identifier(category: str, /) -> str:
