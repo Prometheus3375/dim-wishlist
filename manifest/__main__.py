@@ -1,10 +1,13 @@
+import os
 from argparse import ArgumentParser, Namespace, RawTextHelpFormatter
+from collections import defaultdict
 from enum import StrEnum
 from os.path import dirname, join
 from typing import assert_never
 
 import manifest
-from manifest.core import Manifest
+from classes import Perk
+from manifest.core import Manifest, PERK_TUPLE_SORT_BY_COMPLETENESS, PerkTuple
 
 
 class ListOptions(StrEnum):
@@ -32,6 +35,27 @@ def list_commands(args: Namespace, /) -> None:
 
         case unknown:
             assert_never(unknown)
+
+
+def name_to_python_identifier(name: str, /) -> str:
+    """
+    Converts the given name of a weapon or a perk to a proper Python identifier.
+    """
+    parts = name.replace("'", '').replace('-', ' ').split()
+    return ''.join(map(str.capitalize, parts))
+
+
+def perk_category_to_python_identifier(category: str, /) -> str:
+    """
+    Converts the given category of a perk to a proper Python identifier.
+    """
+    category = category.lower().replace(' ', '_')
+
+    match category:
+        case 'origin_trait':
+            category = 'origin'
+
+    return category
 
 
 def check_release_string(
@@ -69,7 +93,10 @@ def generate_commands(args: Namespace, /) -> None:
     """
     Main function for generating commands.
     """
+    print('Getting the most recent game data from the API...')
     manifest_ = Manifest.from_api()
+    print('Game data is loaded')
+
     perk_db_release = check_release_string(
         manifest_,
         args.perk_database,
@@ -96,7 +123,48 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     """
     Generates perk database since the given release.
     """
+    print(f'Generating perk database listing perks met in weapons since {release!r}...')
+
+    os.makedirs(PERK_DATABASE_DIRECTORY, exist_ok=True)
+
     name_to_perks = manifest_.get_legendary_weapon_perks(release)
+    category_to_perks: dict[str, list[PerkTuple]] = defaultdict(list)
+    for perk_set in name_to_perks.values():
+        perk = max(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
+        category = perk_category_to_python_identifier(perk.category)
+        category_to_perks[category].append(perk)
+
+    for category, perk_list in category_to_perks.items():
+        filepath = join(PERK_DATABASE_DIRECTORY, f'{category}.py')
+        with open(filepath, 'w') as f:
+            f.write(f'from {Perk.__module__} import {Perk.__name__}\n\n')
+
+            perk_list.sort()
+            for perk in perk_list:
+                variable = name_to_python_identifier(perk.name)
+                if perk.enhanced > 0:
+                    hashes = f'regular={perk.regular}, enhanced={perk.enhanced}'
+                else:
+                    hashes = f'regular={perk.regular}'
+
+                f.write(f'{variable} = {Perk.__name__}(name={perk.name!r}, {hashes})\n')
+
+            f.write(f'\ndel {Perk.__name__}\n')
+
+    modules = [
+        name[:-3]
+        for name in os.listdir(PERK_DATABASE_DIRECTORY)
+        if name.endswith('.py') and not name.startswith('_')
+        ]
+    filepath = join(PERK_DATABASE_DIRECTORY, '__init__.py')
+    with open(filepath, 'w') as f:
+        f.write('__all__ = (\n')
+        for name in modules:
+            f.write(f'    {name!r},\n')
+
+        f.write('    )\n')
+
+    print(f'Generating perk database is complete')
 
 
 def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
