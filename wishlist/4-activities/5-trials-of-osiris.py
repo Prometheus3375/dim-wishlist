@@ -9,10 +9,10 @@ class AuricDisabler(RollDefinition):
     item = Item(name='Auric Disabler', hash=702001725)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.Hatchling],
-        [traits.Tear, traits.SwordLogic, traits.DesperateMeasures],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Hatchling],
+        [trait.Tear, trait.SwordLogic, trait.DesperateMeasures],
         )
 
 
@@ -25,24 +25,24 @@ class AureusNeutralizer(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.BarrelShroud, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.VorpalWeapon],
-            [traits.TrenchBarrel, traits.CascadePoint],
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.VorpalWeapon],
+            [trait.TrenchBarrel, trait.CascadePoint],
             ),
         Roll(
             'Melee damage increase',
-            [barrels.BarrelShroud, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.GraveRobber, traits.ThreatDetector],
-            [traits.OneTwoPunch],
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.GraveRobber, trait.ThreatDetector],
+            [trait.OneTwoPunch],
             ),
         Roll(
             'PvP',
-            [barrels.Smallbore, AnyPerk],
-            [magazines.AccurizedRounds, AnyPerk],
-            [traits.ThreatDetector],
-            [traits.OpeningShot, traits.ClosingTime],
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.OpeningShot, trait.ClosingTime],
             ),
         ]
 
@@ -56,17 +56,17 @@ class EverburningGlitz(RollDefinition):
     rolls = [
         Roll(
             'Attrition Orbs',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.AttritionOrbs],
-            [traits.KineticTremors, traits.OneForAll],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.AttritionOrbs],
+            [trait.KineticTremors, trait.OneForAll],
             ),
         Roll(
             'Missile combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.BewilderingBurst],
-            [traits.AncillaryOrdinance],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
             ),
         ]
 
@@ -80,17 +80,17 @@ class AishasEmbrace(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.RapidHit, traits.Demoralize],
-            [traits.DestabilizingRounds],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.RapidHit, trait.Demoralize],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Withering Gaze',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.RapidHit, traits.Demoralize],
-            [traits.WitheringGaze],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.RapidHit, trait.Demoralize],
+            [trait.WitheringGaze],
             ),
         ]
 
@@ -115,10 +115,10 @@ class BurdenOfGuilt(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Rimestealer],
-            [traits.CrystallineCorpsebloom],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
             ),
         ]
 
@@ -135,16 +135,16 @@ class UnwaveringDuty(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Incandescent, traits.Rampage, traits.Incandescent],
-            [traits.KillingTally],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Incandescent, trait.Rampage, trait.Incandescent],
+            [trait.KillingTally],
             ),
         Roll(
             'Solar combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Incandescent],
-            [traits.BurningAmbition],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Incandescent],
+            [trait.BurningAmbition],
             ),
         ]

@@ -7,7 +7,7 @@ class ErgoSum(RollDefinition):
     https://www.light.gg/db/items/1681583613
     """
     item = ErgoSum = Item(name='Ergo Sum', hash=1681583613)
-    _blades = [blades.EnduringBlade, AnyPerk]
+    _blades = [blade.EnduringBlade, AnyPerk]
     _dmg_note = """
         Damage dealing. Blade and guard is not that important.
         Prefer Enduring Blade for more ammo.
@@ -37,7 +37,7 @@ class ErgoSum(RollDefinition):
             [unique.ErgoSum.WolfpackRounds],
             [unique.ErgoSum.LightweightFrame],
             _blades,
-            [guards.SwordmastersGuard, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
             ),
         Roll(
             'Ad clear',
@@ -48,7 +48,7 @@ class ErgoSum(RollDefinition):
                 unique.ErgoSum.CasterFrame,
                 ],
             _blades,
-            [guards.SwordmastersGuard, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
             ),
         Roll(
             'Stormbringer requires 3 kills to activate and barely makes a difference in ad clear',

@@ -24,17 +24,17 @@ class VantagePoint(RollDefinition):
     """
     item = Item(name='Vantage Point', hash=3830941962)
     _mags = [
-        magazines.TacticalMag,
-        magazines.AppendedMag,
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
+        magazine.TacticalMag,
+        magazine.AppendedMag,
+        magazine.AlloyMagazine,
+        magazine.FlaredMagwell,
         ]
     roll = Roll(
         'Ad clear',
-        [barrels.ArrowheadBrake, AnyPerk],
+        [barrel.ArrowheadBrake, AnyPerk],
         _mags,
-        [traits.EddyCurrent],
-        [traits.JoltingFeedback],
+        [trait.EddyCurrent],
+        [trait.JoltingFeedback],
         )
 
 
@@ -47,10 +47,10 @@ class Liturgy(RollDefinition):
     rolls = [
         Roll(
             'Damage rotations combo',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades],
-            [traits.EnviousArsenal],
-            [traits.ChillClip],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades],
+            [trait.EnviousArsenal],
+            [trait.ChillClip],
             ),
         ]
 
@@ -63,11 +63,11 @@ class Sovereignty(RollDefinition):
     item = Item(name='Sovereignty', hash=3818198556)
     roll = Roll(
         'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.AppendedMag, magazines.TacticalMag, magazines.AlloyMagazine,
-         magazines.FlaredMagwell],
-        [traits.Demolitionist, traits.NoDistractions],
-        [traits.WitheringGaze],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.AppendedMag, magazine.TacticalMag, magazine.AlloyMagazine,
+         magazine.FlaredMagwell],
+        [trait.Demolitionist, trait.NoDistractions],
+        [trait.WitheringGaze],
         )
 
 
@@ -80,17 +80,17 @@ class BitterSweet(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.BaitAndSwitch],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
             ),
         Roll(
             'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.ExplosiveLight],
             ),
         ]
 
@@ -102,17 +102,17 @@ class NoxiousVetiver(RollDefinition):
     """
     item = Item(name='Noxious Vetiver', hash=825495813)
     _mags = [
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
-        magazines.TacticalMag,
-        magazines.AppendedMag,
+        magazine.AlloyMagazine,
+        magazine.FlaredMagwell,
+        magazine.TacticalMag,
+        magazine.AppendedMag,
         ]
     roll = Roll(
         'Roll for ad clear',
-        [barrels.ArrowheadBrake, AnyPerk],
+        [barrel.ArrowheadBrake, AnyPerk],
         _mags,
-        [traits.AttritionOrbs, traits.LooseChange, traits.Pugilist],
-        [traits.JoltingFeedback],
+        [trait.AttritionOrbs, trait.LooseChange, trait.Pugilist],
+        [trait.JoltingFeedback],
         )
 
 
@@ -124,10 +124,10 @@ class ScavengersFate(RollDefinition):
     item = Item(name="Scavenger's Fate", hash=2913577176)
     roll = Roll(
         'PvP',
-        [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.FullChoke],
-        [magazines.AccurizedRounds, magazines.LightMag],
-        [traits.LoneWolf],
-        [traits.ClosingTime],
+        [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.FullChoke],
+        [magazine.AccurizedRounds, magazine.LightMag],
+        [trait.LoneWolf],
+        [trait.ClosingTime],
         )
 
 
@@ -137,27 +137,27 @@ class RedTape(RollDefinition):
     https://www.light.gg/db/items/3423493037
     """
     item = Item(name='Red Tape', hash=3423493037)
-    _barrels = [barrels.ArrowheadBrake, AnyPerk]
+    _barrels = [barrel.ArrowheadBrake, AnyPerk]
     _mags = [
-        magazines.TacticalMag,
-        magazines.AppendedMag,
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
+        magazine.TacticalMag,
+        magazine.AppendedMag,
+        magazine.AlloyMagazine,
+        magazine.FlaredMagwell,
         ]
     rolls = [
         Roll(
             'Explosive Payload',
             _barrels,
             _mags,
-            [traits.Demolitionist],
-            [traits.ExplosivePayload],
+            [trait.Demolitionist],
+            [trait.ExplosivePayload],
             ),
         Roll(
             'Headstone',
             _barrels,
             _mags,
-            [traits.Demolitionist, traits.Rimestealer],
-            [traits.Headstone],
+            [trait.Demolitionist, trait.Rimestealer],
+            [trait.Headstone],
             ),
         ]
 
@@ -170,10 +170,10 @@ class HereticsFervor(RollDefinition):
     item = Item(name="Heretic's Fervor", hash=4224667951)
     roll = Roll(
         'Damage dealing',
-        [barrels.QuickLaunch, AnyPerk],
-        [magazines.ImpactCasing, AnyPerk],
-        [traits.AutoLoadingHolster],
-        [traits.ExplosiveLight],
+        [launcher_barrel.QuickLaunch, AnyPerk],
+        [magazine.ImpactCasing, AnyPerk],
+        [trait.AutoLoadingHolster],
+        [trait.ExplosiveLight],
         )
 
 
@@ -184,25 +184,25 @@ class ChromaRush(RollDefinition):
     """
     item = Item(name='Chroma Rush', hash=2598420927)
     _mags = [
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
-        magazines.TacticalMag,
-        magazines.AppendedMag,
+        magazine.AlloyMagazine,
+        magazine.FlaredMagwell,
+        magazine.TacticalMag,
+        magazine.AppendedMag,
         ]
     rolls = [
         Roll(
             'Kinetic Tremor roll',
-            [barrels.ArrowheadBrake, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
             _mags,
-            [traits.Subsistence],
-            [traits.KineticTremors],
+            [trait.Subsistence],
+            [trait.KineticTremors],
             ),
         Roll(
             "Good ol' roll",
-            [barrels.ArrowheadBrake, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
             _mags,
-            [traits.Subsistence],
-            [traits.Rampage],
+            [trait.Subsistence],
+            [trait.Rampage],
             ),
         ]
 
@@ -215,10 +215,10 @@ class Gridskipper(RollDefinition):
     item = Item(name='Gridskipper', hash=3433930495)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.RepulsorBrace],
-        [traits.DestabilizingRounds],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.RepulsorBrace],
+        [trait.DestabilizingRounds],
         )
 
 
@@ -238,8 +238,8 @@ class SojournersTale(RollDefinition):
     item = Item(name="Sojourner's Tale", hash=2130875369)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
-        [traits.AutoLoadingHolster],
-        [traits.PrecisionInstrument],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.AssaultMag, magazine.TacticalMag, magazine.LightMag],
+        [trait.AutoLoadingHolster],
+        [trait.PrecisionInstrument],
         )

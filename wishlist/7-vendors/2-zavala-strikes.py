@@ -9,17 +9,17 @@ class WickedSister(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
-            [traits.BaitAndSwitch],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal, trait.EnviousAssassin, trait.AutoLoadingHolster],
+            [trait.BaitAndSwitch],
             ),
         Roll(
             'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal, traits.EnviousAssassin, traits.AutoLoadingHolster],
-            [traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal, trait.EnviousAssassin, trait.AutoLoadingHolster],
+            [trait.ExplosiveLight],
             ),
         ]
 
@@ -32,8 +32,8 @@ class Cynosure(RollDefinition):
     item = Item(name='Cynosure', hash=694275488)
     roll = Roll(
         'Damage dealing',
-        [barrels.QuickLaunch, AnyPerk],
-        [magazines.ImpactCasing, AnyPerk],
-        [traits.Reconstruction, traits.ClownCartridge, traits.EnviousArsenal, traits.Demolitionist],
-        [traits.ExplosiveLight, traits.ElementalHoning],
+        [launcher_barrel.QuickLaunch, AnyPerk],
+        [magazine.ImpactCasing, AnyPerk],
+        [trait.Reconstruction, trait.ClownCartridge, trait.EnviousArsenal, trait.Demolitionist],
+        [trait.ExplosiveLight, trait.ElementalHoning],
         )

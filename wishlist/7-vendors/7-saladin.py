@@ -9,10 +9,10 @@ class Peacebond(RollDefinition):
     item = Item(name='Peacebond', hash=3437370193)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-        [traits.Headstone],
-        [traits.Rimestealer],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+        [trait.Headstone],
+        [trait.Rimestealer],
         )
 
 
@@ -25,17 +25,17 @@ class NatureReclaimed(RollDefinition):
     rolls = [
         Roll(
             'Shoot to Loot',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ShootToLoot],
-            [traits.ExplosivePayload],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
             ),
         Roll(
             'Solar combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.HealClip],
-            [traits.Incandescent],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent],
             ),
         ]
 
@@ -57,17 +57,17 @@ class TinashasMastery(RollDefinition):
     rolls = [
         Roll(
             f'Chill Clip{_mag_note}',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier, traits.AirTrigger, traits.LooseChange],
-            [traits.ChillClip],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighExplosiveOrdnance, magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier, trait.AirTrigger, trait.LooseChange],
+            [trait.ChillClip],
             ),
         Roll(
             f'Ad clear{_mag_note}',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighExplosiveOrdnance, magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier, traits.AirTrigger],
-            [traits.OneForAll, traits.Adagio],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighExplosiveOrdnance, magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier, trait.AirTrigger],
+            [trait.OneForAll, trait.Adagio],
             ),
         ]
 
@@ -81,17 +81,17 @@ class WarlordsSpear(RollDefinition):
     rolls = [
         Roll(
             'Jolting Feedback',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.RewindRounds, traits.LooseChange],
-            [traits.JoltingFeedback],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.RewindRounds, trait.LooseChange],
+            [trait.JoltingFeedback],
             ),
         Roll(
             'Detonator Beam',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.RewindRounds],
-            [traits.DetonatorBeam],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.DetonatorBeam],
             ),
         ]
 
@@ -106,15 +106,15 @@ class ArchonsThunder(RollDefinition):
     """
     item = Item(name="Archon's Thunder", hash=2896109856)
     _mags = [
-        magazines.AppendedMag,
-        magazines.AlloyMagazine,
-        magazines.FlaredMagwell,
-        magazines.TacticalMag,
+        magazine.AppendedMag,
+        magazine.AlloyMagazine,
+        magazine.FlaredMagwell,
+        magazine.TacticalMag,
         ]
     roll = Roll(
         'Ad clear',
-        [barrels.ArrowheadBrake, AnyPerk],
+        [barrel.ArrowheadBrake, AnyPerk],
         _mags,
-        [traits.Rimestealer, traits.AirTrigger],
-        [traits.Headstone],
+        [trait.Rimestealer, trait.AirTrigger],
+        [trait.Headstone],
         )

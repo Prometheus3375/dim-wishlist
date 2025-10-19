@@ -9,10 +9,10 @@ class PreAstyanaxIV(RollDefinition):
     item = Item(name='Pre Astyanax IV', hash=471764396)
     roll = Roll(
         'Solar combo',
-        [strings.ElasticString, AnyPerk],
-        [arrows.CompactArrowShaft, AnyPerk],
-        [traits.Incandescent],
-        [traits.BurningAmbition],
+        [bowstring.ElasticString, AnyPerk],
+        [arrow.CompactArrowShaft, AnyPerk],
+        [trait.Incandescent],
+        [trait.BurningAmbition],
         )
 
 
@@ -25,17 +25,17 @@ class ForcedMemorializer(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.ExplosivePayload],
-            [traits.KineticTremors],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ExplosivePayload],
+            [trait.KineticTremors],
             ),
         Roll(
             'Missile combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.BewilderingBurst],
-            [traits.AncillaryOrdinance],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
             ),
         ]
 
@@ -49,17 +49,17 @@ class SeraphineHaze(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.PolygonalRifling, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Rimestealer, traits.Demolitionist],
-            [traits.CrystallineCorpsebloom],
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Rimestealer, trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
             ),
         Roll(
             'Orb combo',
-            [barrels.PolygonalRifling, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.LeadFromLight],
-            [traits.AttritionOrbs],
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LeadFromLight],
+            [trait.AttritionOrbs],
             ),
         ]
 
@@ -76,17 +76,17 @@ class Lionfish4FR(RollDefinition):
     rolls = [
         Roll(
             'Chill Clip',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, AnyPerk],
-            [traits.Reconstruction],
-            [traits.ChillClip],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Reconstruction],
+            [trait.ChillClip],
             ),
         Roll(
             'Damage Dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, AnyPerk],
-            [traits.Reconstruction],
-            [traits.ControlledBurst, traits.ElementalHoning],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Reconstruction],
+            [trait.ControlledBurst, trait.ElementalHoning],
             ),
         ]
 
@@ -100,17 +100,17 @@ class MintRetrograde(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, magazines.FlaredMagwell, AnyPerk],
-            [traits.Hatchling],
-            [traits.OneForAll, traits.ChainReaction],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, magazine.FlaredMagwell, AnyPerk],
+            [trait.Hatchling],
+            [trait.OneForAll, trait.ChainReaction],
             ),
         Roll(
             'Damage dealing',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.RewindRounds],
-            [traits.BaitAndSwitch, traits.ElementalHoning],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.RewindRounds],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
             ),
         ]
 
@@ -124,10 +124,10 @@ class Theodolite(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.Reconstruction],
-            [traits.Frenzy, traits.ReapersTithe],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.Reconstruction],
+            [trait.Frenzy, trait.ReapersTithe],
             ),
         ]
 
@@ -144,23 +144,23 @@ class OutrageousFortune(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.BaitAndSwitch],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
             ),
         Roll(
             'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.ExplosiveLight],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighExplosiveOrdnance, AnyPerk],
-            [traits.Incandescent],
-            [traits.ChainReaction],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighExplosiveOrdnance, AnyPerk],
+            [trait.Incandescent],
+            [trait.ChainReaction],
             ),
         ]

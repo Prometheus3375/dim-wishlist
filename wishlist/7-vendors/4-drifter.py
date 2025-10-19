@@ -9,8 +9,8 @@ class Bygones(RollDefinition):
     item = Item(name='Bygones', hash=2199554524)
     roll = Roll(
         'PvE',
-        [traits.AttritionOrbs, traits.ShootToLoot],
-        [traits.KineticTremors],
+        [trait.AttritionOrbs, trait.ShootToLoot],
+        [trait.KineticTremors],
         )
 
 
@@ -23,16 +23,16 @@ class Backfang(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis],
-            [traits.Voltshot, traits.Surrounded, traits.UnstoppableForce],
+            [haft.AuxiliaryReserves, haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.Voltshot, trait.Surrounded, trait.UnstoppableForce],
             ),
         Roll(
             'Melee damage',
-            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis],
-            [traits.CloseToMelee],
+            [haft.AuxiliaryReserves, haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.CloseToMelee],
             ),
         ]

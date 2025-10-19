@@ -10,10 +10,10 @@ class Unloved(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, magazines.LightMag, magazines.AlloyMagazine, AnyPerk],
-            [traits.Hatchling, traits.Dragonfly],
-            [traits.Tear, traits.ParacausalAffinity],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, magazine.LightMag, magazine.AlloyMagazine, AnyPerk],
+            [trait.Hatchling, trait.Dragonfly],
+            [trait.Tear, trait.ParacausalAffinity],
             ),
         ]
 
@@ -27,17 +27,17 @@ class Unsworn(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.Smallbore, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.Tear],
-            [traits.Hatchling, traits.DetonatorBeam],
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.Tear],
+            [trait.Hatchling, trait.DetonatorBeam],
             ),
         Roll(
             'Shoot to Loot',
-            [barrels.Smallbore, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.ShootToLoot],
-            [traits.Hatchling, traits.DetonatorBeam],
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.Hatchling, trait.DetonatorBeam],
             ),
         ]
 
@@ -50,10 +50,10 @@ class Unworthy(RollDefinition):
     item = Item(name='Unworthy', hash=2226158470)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.Firefly],
-        [traits.Voltshot],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Firefly],
+        [trait.Voltshot],
         )
 
 
@@ -65,8 +65,8 @@ class Unvoiced(RollDefinition):
     item = Item(name='Unvoiced', hash=3360937899)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, magazines.AssaultMag, magazines.LightMag],
-        [traits.Redirection, traits.FourthTimesTheCharm, traits.EnviousArsenal],
-        [traits.BaitAndSwitch],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, magazine.AssaultMag, magazine.LightMag],
+        [trait.Redirection, trait.FourthTimesTheCharm, trait.EnviousArsenal],
+        [trait.BaitAndSwitch],
         )

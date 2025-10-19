@@ -15,17 +15,17 @@ class Judgement(RollDefinition):
     rolls = [
         Roll(
             'PvE classic',
-            [sights.SteadyhandHCS, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.RapidHit],
-            [traits.TimedPayload],
+            [sight.SteadyhandHcs, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.RapidHit],
+            [trait.TimedPayload],
             ),
         Roll(
             'Stasis Combo',
-            [sights.SteadyhandHCS, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.Headstone],
-            [traits.Rimestealer],
+            [sight.SteadyhandHcs, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
             ),
         ]
 
@@ -44,10 +44,10 @@ class Relentless(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Firefly, traits.Tear],
-            [traits.Hatchling],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Firefly, trait.Tear],
+            [trait.Hatchling],
             ),
         ]
 
@@ -92,10 +92,10 @@ class LiminalVigil(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Headstone],
-            [traits.Rimestealer],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
             ),
         ]
 
@@ -114,10 +114,10 @@ class LongArm(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.DualLoader, traits.HipFireGrip],
-            [traits.Redirection, traits.ExplosivePayload],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.DualLoader, trait.HipFireGrip],
+            [trait.Redirection, trait.ExplosivePayload],
             ),
         ]
 
@@ -136,10 +136,10 @@ class Wilderflight(RollDefinition):
     rolls = [
         Roll(
             'Damage rotations',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.BaitAndSwitch],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
             ),
         ]
 
@@ -158,10 +158,10 @@ class TerminusHorizon(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Reconstruction],
-            [traits.KillingTally, traits.JoltingFeedback],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Reconstruction],
+            [trait.KillingTally, trait.JoltingFeedback],
             ),
         ]
 
@@ -180,10 +180,10 @@ class NoSurvivors(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.HealClip],
-            [traits.Incandescent, traits.MasterOfArms],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent, trait.MasterOfArms],
             ),
         ]
 
@@ -202,24 +202,24 @@ class NewPacificEpitaph(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Unrelenting],
-            [traits.ChainReaction, traits.KillClip, traits.Redirection],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Unrelenting],
+            [trait.ChainReaction, trait.KillClip, trait.Redirection],
             ),
         Roll(
             'Grenade combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Demolitionist],
-            [traits.AdrenalineJunkie],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
             ),
         Roll(
             'Reload combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.RecycledEnergy],
-            [traits.KillClip],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.RecycledEnergy],
+            [trait.KillClip],
             ),
         ]
 
@@ -238,17 +238,17 @@ class GreasyLuck(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis, traits.Reconstruction],
-            [traits.Redirection, traits.Incandescent],
+            [haft.AuxiliaryReserves, haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis, trait.Reconstruction],
+            [trait.Redirection, trait.Incandescent],
             ),
         Roll(
             'Melee damage',
-            [hafts.AuxiliaryReserves, hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis, traits.Reconstruction],
-            [traits.CloseToMelee],
+            [haft.AuxiliaryReserves, haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis, trait.Reconstruction],
+            [trait.CloseToMelee],
             ),
         ]
 
@@ -267,9 +267,9 @@ class ColdComfort(RollDefinition):
     rolls = [
         Roll(
             "Damage dealing; prefer Heretic's Fervor for roll with Explosive Light",
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.ImpactCasing, AnyPerk],
-            [traits.EnviousArsenal, traits.Reconstruction],
-            [traits.BaitAndSwitch, traits.ElementalHoning],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.EnviousArsenal, trait.Reconstruction],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
             ),
         ]

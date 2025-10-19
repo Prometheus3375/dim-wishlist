@@ -12,8 +12,8 @@ class YesterdaysQuestion(RollDefinition):
         ]
     roll = Roll(
         'Damage dealing with Lucky Pants',
-        [traits.FourthTimesTheCharm, traits.RapidHit],
-        [traits.VorpalWeapon],
+        [trait.FourthTimesTheCharm, trait.RapidHit],
+        [trait.VorpalWeapon],
         )
 
 
@@ -29,10 +29,10 @@ class ExaltedTruth(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.Smallbore, AnyPerk],
-            [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-            [traits.DestabilizingRounds, traits.WitheringGaze],
-            [traits.RepulsorBrace, traits.Demoralize],
+            [barrel.Smallbore, AnyPerk],
+            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+            [trait.DestabilizingRounds, trait.WitheringGaze],
+            [trait.RepulsorBrace, trait.Demoralize],
             )
         ]
 
@@ -81,16 +81,16 @@ class TomorrowsAnswer(RollDefinition):
             High-Impact Frame is bad for this,
             but there is no other good Void RL
             """,
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.ImpactCasing, AnyPerk],
-            [traits.EnviousArsenal, traits.WitheringGaze],
-            [traits.BaitAndSwitch, traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.EnviousArsenal, trait.WitheringGaze],
+            [trait.BaitAndSwitch, trait.ExplosiveLight],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AlloyCasing, AnyPerk],
-            [traits.DangerZone, traits.AirTrigger],
-            [traits.Bipod, traits.ChainReaction],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AlloyCasing, AnyPerk],
+            [trait.DangerZone, trait.AirTrigger],
+            [trait.Bipod, trait.ChainReaction],
             ),
         ]

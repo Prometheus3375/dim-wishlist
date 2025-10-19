@@ -13,10 +13,10 @@ class HushedWhisper(RollDefinition):
     rolls = [
         Roll(
             'Strand combo',
-            [strings.ElasticString, AnyPerk],
-            [arrows.CompactArrowShaft, AnyPerk],
-            [traits.Tear, traits.Slice],
-            [traits.Hatchling],
+            [bowstring.ElasticString, AnyPerk],
+            [arrow.CompactArrowShaft, AnyPerk],
+            [trait.Tear, trait.Slice],
+            [trait.Hatchling],
             ),
         ]
 
@@ -33,24 +33,24 @@ class Gunburn(RollDefinition):
     rolls = [
         Roll(
             'Kinetic Tremors',
-            [barrels.ChamberedCompensator, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.ThreatDetector, traits.LeadFromLight],
-            [traits.KineticTremors],
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ThreatDetector, trait.LeadFromLight],
+            [trait.KineticTremors],
             ),
         Roll(
             'Orb combo',
-            [barrels.ChamberedCompensator, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.LeadFromLight],
-            [traits.AttritionOrbs],
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LeadFromLight],
+            [trait.AttritionOrbs],
             ),
         Roll(
             'Missile combo',
-            [barrels.ChamberedCompensator, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.BewilderingBurst],
-            [traits.AncillaryOrdinance],
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
             ),
         ]
 
@@ -69,8 +69,8 @@ class ArcaneEmbrace(RollDefinition):
         ]
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, AnyPerk],
-        [traits.FourthTimesTheCharm],
-        [traits.PrecisionInstrument, traits.AggregateCharge, traits.Surrounded],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.FourthTimesTheCharm],
+        [trait.PrecisionInstrument, trait.AggregateCharge, trait.Surrounded],
         )

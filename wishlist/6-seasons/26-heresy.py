@@ -16,11 +16,11 @@ class Adamantite(RollDefinition):
     rolls = [
         Roll(
             'Self-healing. Attrition Orbs procs from healing allies',
-            [barrels.FullBore, barrels.HammerForgedRifling, barrels.Smallbore,
-             barrels.CorkscrewRifling, AnyPerk],
-            [magazines.FlaredMagwell, magazines.AlloyMagazine, magazines.TacticalMag, AnyPerk],
-            [traits.Reciprocity],
-            [traits.Hatchling, traits.AttritionOrbs],
+            [barrel.FullBore, barrel.HammerForgedRifling, barrel.Smallbore,
+             barrel.CorkscrewRifling, AnyPerk],
+            [magazine.FlaredMagwell, magazine.AlloyMagazine, magazine.TacticalMag, AnyPerk],
+            [trait.Reciprocity],
+            [trait.Hatchling, trait.AttritionOrbs],
             ),
         ]
 
@@ -40,24 +40,24 @@ class Psychopomp(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.AmbitiousAssassin],
-            [traits.Unrelenting],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.AmbitiousAssassin],
+            [trait.Unrelenting],
             ),
         Roll(
             'Damage rotations combo',
-            [barrels.Countermass, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.EnviousArsenal],
-            [traits.ElementalHoning, traits.FullCourt],
+            [launcher_barrel.Countermass, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.EnviousArsenal],
+            [trait.ElementalHoning, trait.FullCourt],
             ),
         Roll(
             'Melee regen',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Pugilist],
-            [traits.RollingStorm],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Pugilist],
+            [trait.RollingStorm],
             ),
         ]
 
@@ -91,17 +91,17 @@ class WatchfulEye(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Overflow],
-            [traits.KillingTally, traits.JoltingFeedback],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Overflow],
+            [trait.KillingTally, trait.JoltingFeedback],
             ),
         Roll(
             'Arc combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.EddyCurrent],
-            [traits.JoltingFeedback],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.EddyCurrent],
+            [trait.JoltingFeedback],
             ),
         ]
 
@@ -121,17 +121,17 @@ class AbyssalEdge(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [blades.JaggedEdge],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes],
-            [traits.Surrounded],
+            [blade.JaggedEdge],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.Surrounded],
             ),
         Roll(
             'Damage blocking',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.FlashCounter],
-            [traits.Redirection, traits.Hatchling],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.FlashCounter],
+            [trait.Redirection, trait.Hatchling],
             ),
         ]
 
@@ -151,24 +151,24 @@ class RefusalOfTheCall(RollDefinition):
     rolls = [
         Roll(
             'Damage blocking',
-            [hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis],
-            [traits.UnstoppableForce, traits.VorpalWeapon],
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.UnstoppableForce, trait.VorpalWeapon],
             ),
         Roll(
             'Shield energy from melee',
-            [hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis],
-            [traits.MeleeMomentum],
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.MeleeMomentum],
             ),
         Roll(
             'Melee damage',
-            [hafts.LowImpedanceWindings, AnyPerk],
-            [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-            [traits.ReplenishingAegis],
-            [traits.CloseToMelee],
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.CloseToMelee],
             ),
         ]
 
@@ -202,10 +202,10 @@ class Anamnesis(RollDefinition):
     rolls = [
         Roll(
             'Void combo',
-            [strings.PolymerString, AnyPerk],
-            [arrows.FiberglassArrowShaft, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds, traits.Demoralize],
+            [bowstring.PolymerString, AnyPerk],
+            [arrow.FiberglassArrowShaft, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds, trait.Demoralize],
             )
         ]
 
@@ -238,10 +238,10 @@ class Division(RollDefinition):
         ]
     roll = Roll(
         'PvE',
-        [barrels.FlutedBarrel, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.EddyCurrent],
-        [traits.Voltshot, traits.Surrounded],
+        [barrel.FlutedBarrel, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.EddyCurrent],
+        [trait.Voltshot, trait.Surrounded],
         )
 
 
@@ -262,10 +262,10 @@ class WhisperingSlab(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [strings.PolymerString, AnyPerk],
-            [arrows.FiberglassArrowShaft, AnyPerk],
-            [traits.ArchersTempo],
-            [traits.VorpalWeapon],
+            [bowstring.PolymerString, AnyPerk],
+            [arrow.FiberglassArrowShaft, AnyPerk],
+            [trait.ArchersTempo],
+            [trait.VorpalWeapon],
             ),
         ]
 
@@ -279,17 +279,17 @@ class ColdDenial(RollDefinition):
     rolls = [
         Roll(
             'PvP',
-            [barrels.ArrowheadBrake, barrels.ExtendedBarrel],
-            [magazines.RicochetRounds, AnyPerk],
-            [traits.ZenMoment],
-            [traits.Headseeker],
+            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
+            [magazine.RicochetRounds, AnyPerk],
+            [trait.ZenMoment],
+            [trait.Headseeker],
             ),
         Roll(
             'Desperado',
-            [barrels.ArrowheadBrake, barrels.ExtendedBarrel],
-            [magazines.RicochetRounds, AnyPerk],
-            [traits.TunnelVision],
-            [traits.Desperado],
+            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
+            [magazine.RicochetRounds, AnyPerk],
+            [trait.TunnelVision],
+            [trait.Desperado],
             ),
         ]
 
@@ -311,23 +311,23 @@ class TemptationsHook(RollDefinition):
     rolls = [
         Roll(
             'PvP, ad clear',
-            [blades.JaggedEdge],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade],
-            [traits.ChainReaction],
+            [blade.JaggedEdge],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.TirelessBlade],
+            [trait.ChainReaction],
             ),
         Roll(
             'Damage dealing',
-            [blades.JaggedEdge],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes],
-            [traits.WhirlwindBlade],
+            [blade.JaggedEdge],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.WhirlwindBlade],
             ),
         Roll(
             'Attrition Orbs',
-            [blades.JaggedEdge],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.AttritionOrbs],
-            [traits.WhirlwindBlade],
+            [blade.JaggedEdge],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.AttritionOrbs],
+            [trait.WhirlwindBlade],
             ),
         ]

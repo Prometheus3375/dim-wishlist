@@ -9,8 +9,8 @@ class AnonymousAutumn(RollDefinition):
     item = Item(name='Anonymous Autumn', hash=1051949956)
     roll = Roll(
         'PvE',
-        [traits.EddyCurrent, traits.AttritionOrbs, traits.Demolitionist],
-        [traits.Voltshot],
+        [trait.EddyCurrent, trait.AttritionOrbs, trait.Demolitionist],
+        [trait.Voltshot],
         )
 
 
@@ -23,23 +23,23 @@ class JoxersLongsword(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Dragonfly],
-            [traits.DestabilizingRounds, traits.Demoralize],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Dragonfly],
+            [trait.DestabilizingRounds, trait.Demoralize],
             ),
         Roll(
             'Void combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Withering Gaze',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Demolitionist],
-            [traits.WitheringGaze],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Demolitionist],
+            [trait.WitheringGaze],
             ),
         ]

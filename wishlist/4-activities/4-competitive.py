@@ -10,18 +10,18 @@ class SolemnRemembrance(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.Headstone],
-            [traits.Firefly],
-            [grips.PolymerGrip, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Firefly],
+            [grip.PolymerGrip, AnyPerk],
             ),
         Roll(
             'Stasis combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.Headstone],
-            [traits.Rimestealer],
-            [grips.PolymerGrip, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
+            [grip.PolymerGrip, AnyPerk],
             ),
         ]

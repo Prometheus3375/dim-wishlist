@@ -10,17 +10,17 @@ class Intercalary(RollDefinition):
     rolls = [
         Roll(
             'Stasis Combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Headstone],
-            [traits.Rimestealer],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
             ),
         Roll(
             'One for All',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Headstone, traits.Demolitionist],
-            [traits.OneForAll],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Headstone, trait.Demolitionist],
+            [trait.OneForAll],
             ),
         ]
 
@@ -34,17 +34,17 @@ class Antedate(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Dragonfly],
-            [traits.JoltingFeedback],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Dragonfly],
+            [trait.JoltingFeedback],
             ),
         Roll(
             'Super regen',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RewindRounds],
-            [traits.TargetLock],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RewindRounds],
+            [trait.TargetLock],
             ),
         ]
 
@@ -58,24 +58,24 @@ class CuspSempiternal(RollDefinition):
     rolls = [
         Roll(
             'Self-healing',
-            [barrels.FullBore, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Reciprocity],
-            [traits.DestabilizingRounds],
+            [barrel.FullBore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Reciprocity],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Ad clear',
-            [barrels.FullBore, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Reconstruction, traits.AttritionOrbs],
-            [traits.DestabilizingRounds],
+            [barrel.FullBore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Reconstruction, trait.AttritionOrbs],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Void combo',
-            [barrels.FullBore, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [barrel.FullBore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         ]
 
@@ -92,10 +92,10 @@ class LanceEphemeral(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.RewindRounds, traits.FourthTimesTheCharm],
-            [traits.BaitAndSwitch, traits.Redirection, traits.ElementalHoning],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.RewindRounds, trait.FourthTimesTheCharm],
+            [trait.BaitAndSwitch, trait.Redirection, trait.ElementalHoning],
             ),
         ]
 
@@ -109,17 +109,17 @@ class FiniteMaybe(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Incandescent],
-            [traits.Discord],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.Incandescent],
+            [trait.Discord],
             ),
         Roll(
             'Damage dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Reconstruction],
-            [traits.BaitAndSwitch, traits.ControlledBurst],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.Reconstruction],
+            [trait.BaitAndSwitch, trait.ControlledBurst],
             ),
         ]
 
@@ -144,10 +144,10 @@ class TheWhenAndWhere(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.ImpactCasing, AnyPerk],
-            [traits.Reconstruction, traits.Overflow, traits.ClownCartridge],
-            [traits.BaitAndSwitch, traits.ElementalHoning, traits.ReapersTithe],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.Reconstruction, trait.Overflow, trait.ClownCartridge],
+            [trait.BaitAndSwitch, trait.ElementalHoning, trait.ReapersTithe],
             ),
         ]
 
@@ -161,17 +161,17 @@ class OpaqueHourglass(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.HeavyBolts, AnyPerk],
-            [traits.ImpulseAmplifier, traits.BoltScavenger],
-            [traits.ElementalHoning, traits.Frenzy],
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.ImpulseAmplifier, trait.BoltScavenger],
+            [trait.ElementalHoning, trait.Frenzy],
             ),
         Roll(
             'Ad clear',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.ExplosiveBolts, AnyPerk],
-            [traits.Firefly],
-            [traits.Dragonfly],
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.ExplosiveBolts, AnyPerk],
+            [trait.Firefly],
+            [trait.Dragonfly],
             ),
         ]
 
@@ -185,23 +185,23 @@ class TheEverPresent(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal],
-            [traits.AggregateCharge, traits.BaitAndSwitch, traits.ElementalHoning],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.AggregateCharge, trait.BaitAndSwitch, trait.ElementalHoning],
             ),
         Roll(
             'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.AutoLoadingHolster],
-            [traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.AutoLoadingHolster],
+            [trait.ExplosiveLight],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AlloyCasing, AnyPerk],
-            [traits.Hatchling],
-            [traits.ChainReaction],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AlloyCasing, AnyPerk],
+            [trait.Hatchling],
+            [trait.ChainReaction],
             ),
         ]

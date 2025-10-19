@@ -35,17 +35,17 @@ class ReturnedMemory(RollDefinition):
             If a target dies to impact, explosion doesn't hit it.
             Multiplier 2 is replaced with 3 for consumption if perk is not enhanced.
             """,
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.HealClip],
-            [traits.OneForAll, traits.Redirection, traits.Incandescent],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.HealClip],
+            [trait.OneForAll, trait.Redirection, trait.Incandescent],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier],
-            [traits.OneForAll, traits.Redirection],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier],
+            [trait.OneForAll, trait.Redirection],
             ),
         ]
 
@@ -58,8 +58,8 @@ class MIDAMacroTool(RollDefinition):
     item = Item(name='MIDA Macro-Tool', hash=2699423382)
     roll = Roll(
         'PvP',
-        [barrels.Smallbore, barrels.CorkscrewRifling, barrels.BarrelShroud],
-        [magazines.AccurizedRounds, magazines.LightMag],
-        [traits.ThreatDetector],
-        [traits.ClosingTime, traits.OpeningShot],
+        [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],
+        [magazine.AccurizedRounds, magazine.LightMag],
+        [trait.ThreatDetector],
+        [trait.ClosingTime, trait.OpeningShot],
         )

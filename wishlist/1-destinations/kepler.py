@@ -10,24 +10,24 @@ class GiversBlessing(RollDefinition):
     rolls = [
         Roll(
             'Kinetic Tremors',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RewindRounds, traits.Demolitionist],
-            [traits.KineticTremors],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RewindRounds, trait.Demolitionist],
+            [trait.KineticTremors],
             ),
         Roll(
             'One for All',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Demolitionist, traits.FeedingFrenzy],
-            [traits.OneForAll],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Demolitionist, trait.FeedingFrenzy],
+            [trait.OneForAll],
             ),
         Roll(
             'Ammo generation',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.ImpromptuAmmunition],
-            [traits.KineticTremors, traits.OneForAll],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ImpromptuAmmunition],
+            [trait.KineticTremors, trait.OneForAll],
             ),
         ]
 
@@ -41,17 +41,17 @@ class LastThursday(RollDefinition):
     rolls = [
         Roll(
             'Slice',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Strategist],
-            [traits.Slice],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Strategist],
+            [trait.Slice],
             ),
         Roll(
             'Hatchling',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Demolitionist, traits.Strategist],
-            [traits.Hatchling],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Demolitionist, trait.Strategist],
+            [trait.Hatchling],
             ),
         ]
 
@@ -65,17 +65,17 @@ class Agape(RollDefinition):
     rolls = [
         Roll(
             'Lucky Pants combo',
-            [barrels.ChamberedCompensator, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.RewindRounds],
-            [traits.PrecisionInstrument, traits.VorpalWeapon],
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.RewindRounds],
+            [trait.PrecisionInstrument, trait.VorpalWeapon],
             ),
         Roll(
             'Solar combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.HealClip],
-            [traits.Incandescent],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent],
             ),
         ]
 
@@ -111,16 +111,16 @@ class UlteriorObservation(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Headstone],
-            [traits.Rimestealer],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
             ),
         Roll(
             'Ad clear',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.Subsistence, traits.Headstone],
-            [traits.KillingTally],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Subsistence, trait.Headstone],
+            [trait.KillingTally],
             ),
         ]

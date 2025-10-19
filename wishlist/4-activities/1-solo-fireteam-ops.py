@@ -9,10 +9,10 @@ class MercuryA(RollDefinition):
     item = Item(name='Mercury-A', hash=2838279629)
     roll = Roll(
         "Hit combo; hits with Kinetic Tremors grant progress for Attrition Orbs",
-        [strings.ElasticString, AnyPerk],
-        [arrows.CompactArrowShaft, AnyPerk],
-        [traits.AttritionOrbs],
-        [traits.KineticTremors],
+        [bowstring.ElasticString, AnyPerk],
+        [arrow.CompactArrowShaft, AnyPerk],
+        [trait.AttritionOrbs],
+        [trait.KineticTremors],
         )
 
 
@@ -24,10 +24,10 @@ class QuaNilusII(RollDefinition):
     item = Item(name='Qua Nilus II', hash=190747610)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.Slice],
-        [traits.Hatchling, traits.Surrounded],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Slice],
+        [trait.Hatchling, trait.Surrounded],
         )
 
 
@@ -47,10 +47,10 @@ class FaustusDecline(RollDefinition):
     item = Item(name='Faustus Decline', hash=1663482635)
     roll = Roll(
         'PvE',
-        [barrels.Smallbore, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.Demolitionist, traits.Rimestealer],
-        [traits.Headstone],
+        [barrel.Smallbore, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Demolitionist, trait.Rimestealer],
+        [trait.Headstone],
         )
 
 
@@ -62,10 +62,10 @@ class AhabChar(RollDefinition):
     item = Item(name='Ahab Char', hash=1411560894)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.HealClip],
-        [traits.BurningAmbition, traits.KillClip],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.HealClip],
+        [trait.BurningAmbition, trait.KillClip],
         )
 
 
@@ -77,10 +77,10 @@ class Drang(RollDefinition):
     item = Item(name='Drang', hash=358190158)
     roll = Roll(
         'Solar combo',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, AnyPerk],
-        [traits.HealClip],
-        [traits.Incandescent],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.HealClip],
+        [trait.Incandescent],
         )
 
 
@@ -92,10 +92,10 @@ class MIDAMiniTool(RollDefinition):
     item = Item(name='MIDA Mini-Tool', hash=3946054154)
     roll = Roll(
         'Solar combo',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.HealClip],
-        [traits.Incandescent],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.HealClip],
+        [trait.Incandescent],
         )
 
 
@@ -110,10 +110,10 @@ class ShorelineDissident(RollDefinition):
     item = Item(name='Shoreline Dissident', hash=1193318082)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, AnyPerk],
-        [traits.TripleTap],
-        [traits.PrecisionInstrument],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.TripleTap],
+        [trait.PrecisionInstrument],
         )
 
 
@@ -126,17 +126,17 @@ class Unfall(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier],
-            [traits.OneForAll, traits.JoltingFeedback],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier],
+            [trait.OneForAll, trait.JoltingFeedback],
             ),
         Roll(
             'Deconstruct',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ImpulseAmplifier],
-            [traits.Deconstruct],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier],
+            [trait.Deconstruct],
             ),
         ]
 
@@ -152,10 +152,10 @@ class Boomslang4FR(RollDefinition):
     item = Item(name='Boomslang-4FR', hash=3926153598)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [batteries.AcceleratedCoils, AnyPerk],
-        [traits.EnviousArsenal, traits.RapidHit],
-        [traits.PrecisionInstrument],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [battery.AcceleratedCoils, AnyPerk],
+        [trait.EnviousArsenal, trait.RapidHit],
+        [trait.PrecisionInstrument],
         )
 
 
@@ -168,24 +168,24 @@ class AuroraDawn(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade, traits.Unrelenting],
-            [traits.OneForAll, traits.ColdSteel],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.TirelessBlade, trait.Unrelenting],
+            [trait.OneForAll, trait.ColdSteel],
             ),
         Roll(
             'Damage dealing with Ergo Sum',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.SharpHarvest],
-            [traits.WhirlwindBlade],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.SharpHarvest],
+            [trait.WhirlwindBlade],
             ),
         Roll(
             'Damage blocking. Flash Counter applies Cold Steel',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.FlashCounter],
-            [traits.ColdSteel],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.FlashCounter],
+            [trait.ColdSteel],
             ),
         ]
 
@@ -199,16 +199,16 @@ class Haliaetus(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.ImpactCasing, AnyPerk],
-            [traits.ClusterBomb, traits.AutoLoadingHolster],
-            [traits.AggregateCharge, traits.ReapersTithe, traits.ElementalHoning],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb, trait.AutoLoadingHolster],
+            [trait.AggregateCharge, trait.ReapersTithe, trait.ElementalHoning],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AlloyCasing, AnyPerk],
-            [traits.ClusterBomb, traits.ImpulseAmplifier],
-            [traits.Bipod],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AlloyCasing, AnyPerk],
+            [trait.ClusterBomb, trait.ImpulseAmplifier],
+            [trait.Bipod],
             ),
         ]

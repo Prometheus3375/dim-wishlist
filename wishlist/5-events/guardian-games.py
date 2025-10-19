@@ -18,17 +18,17 @@ class Title(RollDefinition):
     rolls = [
         Roll(
             'Void combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Classic combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.ThreatDetector],
-            [traits.Surrounded],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Surrounded],
             ),
         ]
 
@@ -42,17 +42,17 @@ class Keraunios(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.Smallbore, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.Overflow, traits.TripleTap],
-            [traits.JoltingFeedback, traits.DetonatorBeam, traits.KillingTally],
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.Overflow, trait.TripleTap],
+            [trait.JoltingFeedback, trait.DetonatorBeam, trait.KillingTally],
             ),
         Roll(
             'Arc combo',
-            [barrels.Smallbore, AnyPerk],
-            [batteries.TacticalBattery, AnyPerk],
-            [traits.EddyCurrent],
-            [traits.JoltingFeedback],
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.EddyCurrent],
+            [trait.JoltingFeedback],
             ),
         ]
 
@@ -66,16 +66,16 @@ class Hullabaloo(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Voltshot, traits.Demolitionist],
-            [traits.ChainReaction, traits.OneForAll],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Voltshot, trait.Demolitionist],
+            [trait.ChainReaction, trait.OneForAll],
             ),
         Roll(
             'Damage dealing',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.EnviousAssassin],
-            [traits.OneForAll],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.EnviousAssassin],
+            [trait.OneForAll],
             ),
         ]

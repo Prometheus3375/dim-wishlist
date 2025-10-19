@@ -12,10 +12,10 @@ class Palindrome(RollDefinition):
         ]
     roll = Roll(
         'PvE',
-        [barrels.Smallbore, AnyPerk],
-        [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-        [traits.ExplosivePayload],
-        [traits.MasterOfArms],
+        [barrel.Smallbore, AnyPerk],
+        [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+        [trait.ExplosivePayload],
+        [trait.MasterOfArms],
         [origin.WildCard],
         )
 
@@ -32,17 +32,17 @@ class CruelMercy(RollDefinition):
     rolls = [
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, AnyPerk],
-            [traits.Dragonfly],
-            [traits.Frenzy],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Dragonfly],
+            [trait.Frenzy],
             ),
         # Roll(
         #     'Arc combo',
-        #     [barrels.ArrowheadBrake, AnyPerk],
-        #     [magazines.FlaredMagwell, AnyPerk],
-        #     [traits.EddyCurrent],
-        #     [traits.RollingStorm],
+        #     [barrel.ArrowheadBrake, AnyPerk],
+        #     [magazine.FlaredMagwell, AnyPerk],
+        #     [trait.EddyCurrent],
+        #     [trait.RollingStorm],
         #     ),
         ]
 
@@ -66,10 +66,10 @@ class RakeAngle(RollDefinition):
         Adept Mag mod adds 2 ammo, Extended Mag + Adept Mag add 3 ammo.
         I suggest Alloy Magazine + Adept Mag for mag size of 7 and faster reload at 3 ammo
         """,
-        [hafts.LowImpedanceWindings, AnyPerk],
-        [magazines.AlloyMagazine, magazines.LightMag, AnyPerk],
-        [traits.ReplenishingAegis, traits.Overflow],
-        [traits.ChillClip],
+        [haft.LowImpedanceWindings, AnyPerk],
+        [magazine.AlloyMagazine, magazine.LightMag, AnyPerk],
+        [trait.ReplenishingAegis, trait.Overflow],
+        [trait.ChillClip],
         )
 
 
@@ -85,24 +85,24 @@ class LotusEater(RollDefinition):
     rolls = [
         Roll(
             'Void combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AppendedMag, magazines.HighVelocityRounds, AnyPerk],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AppendedMag, magazine.HighVelocityRounds, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AppendedMag, magazines.HighVelocityRounds, AnyPerk],
-            [traits.Reconstruction],
-            [traits.OneForAll],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AppendedMag, magazine.HighVelocityRounds, AnyPerk],
+            [trait.Reconstruction],
+            [trait.OneForAll],
             ),
         Roll(
             'Withering Gaze',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.AppendedMag, magazines.HighVelocityRounds, AnyPerk],
-            [traits.Reconstruction, traits.RepulsorBrace],
-            [traits.WitheringGaze],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AppendedMag, magazine.HighVelocityRounds, AnyPerk],
+            [trait.Reconstruction, trait.RepulsorBrace],
+            [trait.WitheringGaze],
             ),
         ]
 
@@ -122,10 +122,10 @@ class Scintillation(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, batteries.AcceleratedCoils, AnyPerk],
-            [traits.RewindRounds, traits.EnviousAssassin],
-            [traits.BaitAndSwitch, traits.Surrounded],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, battery.AcceleratedCoils, AnyPerk],
+            [trait.RewindRounds, trait.EnviousAssassin],
+            [trait.BaitAndSwitch, trait.Surrounded],
             [origin.VeistStinger],
             ),
         Roll(
@@ -134,7 +134,7 @@ class Scintillation(RollDefinition):
             Unfortunately, any mag stat increase above 20 reduces reserves;
             Enhanced Battery is +20, Ionized Battery is +40
             """,
-            [batteries.IonizedBattery],
+            [battery.IonizedBattery],
             is_trash=True,
             ),
         ]

@@ -9,15 +9,15 @@ class StayFrosty(RollDefinition):
     item = Item(name='Stay Frosty', hash=1123433952)
     roll = Roll(
         'Stasis combo',
-        [barrels.ArrowheadBrake, AnyPerk],
+        [barrel.ArrowheadBrake, AnyPerk],
         [
-            magazines.TacticalMag,
-            magazines.AppendedMag,
-            magazines.AlloyMagazine,
-            magazines.FlaredMagwell,
+            magazine.TacticalMag,
+            magazine.AppendedMag,
+            magazine.AlloyMagazine,
+            magazine.FlaredMagwell,
             ],
-        [traits.Rimestealer],
-        [traits.Headstone],
+        [trait.Rimestealer],
+        [trait.Headstone],
         )
 
 
@@ -34,25 +34,25 @@ class Glacioclasm(RollDefinition):
             Reservoir Burst increases mag size to 7 and with Enhanced battery to 8 (max),
             but better to use just Reservoir Burst for one more empowered shot.
             """,
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.LiquidCoils, AnyPerk],
-            [traits.Subsistence, traits.Overflow, traits.EnviousAssassin],
-            [traits.ReservoirBurst],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.LiquidCoils, AnyPerk],
+            [trait.Subsistence, trait.Overflow, trait.EnviousAssassin],
+            [trait.ReservoirBurst],
             ),
         Roll(
             'Damage dealing. Enhanced Battery + Backup Mag mod give mag size of 8 (max)',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.EnhancedBattery, AnyPerk],
-            [traits.EnviousAssassin, traits.Overflow],
-            [traits.ControlledBurst],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.EnviousAssassin, trait.Overflow],
+            [trait.ControlledBurst],
             [origin.OmolonFluidDynamics],
             ),
         Roll(
             'PvP',
-            [barrels.Smallbore, barrels.ExtendedBarrel, barrels.ArrowheadBrake],
-            [batteries.ProjectionFuse],
-            [traits.UnderPressure],
-            [traits.ClosingTime, traits.HighImpactReserves],
+            [barrel.Smallbore, barrel.ExtendedBarrel, barrel.ArrowheadBrake],
+            [battery.ProjectionFuse],
+            [trait.UnderPressure],
+            [trait.ClosingTime, trait.HighImpactReserves],
             ),
         ]
 
@@ -65,15 +65,15 @@ class MistralLift(RollDefinition):
     item = Item(name='Mistral Lift', hash=3483485727)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [batteries.AcceleratedCoils, AnyPerk],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [battery.AcceleratedCoils, AnyPerk],
         [
-            traits.EnviousArsenal,
-            traits.EnviousAssassin,
-            traits.Reconstruction,
-            traits.WitheringGaze,
+            trait.EnviousArsenal,
+            trait.EnviousAssassin,
+            trait.Reconstruction,
+            trait.WitheringGaze,
             ],
-        [traits.BaitAndSwitch],
+        [trait.BaitAndSwitch],
         [origin.VeistStinger],
         )
 
@@ -87,10 +87,10 @@ class Zephyr(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes, traits.AttritionOrbs],
-            [traits.WhirlwindBlade, traits.Surrounded],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes, trait.AttritionOrbs],
+            [trait.WhirlwindBlade, trait.Surrounded],
             ),
         Roll(
             """
@@ -98,16 +98,16 @@ class Zephyr(RollDefinition):
             Rimestealer requires destroying a frozen target or a Stasis crystal
             which hard to achieve with Cold Steel
             """,
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes, traits.AttritionOrbs],
-            [traits.ColdSteel],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes, trait.AttritionOrbs],
+            [trait.ColdSteel],
             ),
         Roll(
             'Ad clear',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.TirelessBlade, traits.RelentlessStrikes],
-            [traits.ChainReaction],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.TirelessBlade, trait.RelentlessStrikes],
+            [trait.ChainReaction],
             ),
         ]

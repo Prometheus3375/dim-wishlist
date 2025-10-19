@@ -8,14 +8,14 @@ class DedGramaryeIV(RollDefinition):
     https://www.light.gg/db/items/499245245
     """
     item = Item(name='Ded Gramarye IV', hash=499245245)
-    _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
+    _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
     rolls = [
         Roll(
             'Ad clear',
             _barrels,
-            [magazines.AssaultMag, magazines.LightMag, magazines.TacticalMag],
-            [traits.Discord, traits.ThreatDetector],
-            [traits.ChainReaction],
+            [magazine.AssaultMag, magazine.LightMag, magazine.TacticalMag],
+            [trait.Discord, trait.ThreatDetector],
+            [trait.ChainReaction],
             ),
         Roll(
             """
@@ -26,9 +26,9 @@ class DedGramaryeIV(RollDefinition):
             thus, it does not activate Voltshot
             """,
             _barrels,
-            [magazines.AssaultMag, magazines.LightMag],
-            [traits.ThreatDetector],
-            [traits.Voltshot],
+            [magazine.AssaultMag, magazine.LightMag],
+            [trait.ThreatDetector],
+            [trait.Voltshot],
             ),
         ]
 
@@ -41,10 +41,10 @@ class QuaFurorV(RollDefinition):
     item = Item(name='Qua Furor V', hash=751880654)
     roll = Roll(
         'PvE',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.FeedingFrenzy],
-        [traits.OneForAll, traits.Dragonfly],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.FeedingFrenzy],
+        [trait.OneForAll, trait.Dragonfly],
         )
 
 
@@ -59,13 +59,13 @@ class LiveFire(RollDefinition):
     rolls = [
         Roll(
             'Shoot to Loot',
-            [traits.RapidHit],
-            [traits.ShootToLoot],
+            [trait.RapidHit],
+            [trait.ShootToLoot],
             ),
         Roll(
             'Headstone. Prefer Red Tape for Rimestealer + Headstone',
-            [traits.Rimestealer, traits.RapidHit],
-            [traits.Headstone],
+            [trait.Rimestealer, trait.RapidHit],
+            [trait.Headstone],
             ),
         ]
 
@@ -80,10 +80,10 @@ class VeledaF(RollDefinition):
     item = Item(name='Veleda-F', hash=4200122994)
     roll = Roll(
         'Withering Gaze',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.TacticalMag, magazines.AlloyMagazine, magazines.FlaredMagwell],
-        [traits.AirTrigger],
-        [traits.WitheringGaze],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, magazine.AlloyMagazine, magazine.FlaredMagwell],
+        [trait.AirTrigger],
+        [trait.WitheringGaze],
         )
 
 
@@ -95,10 +95,10 @@ class AdmetusD(RollDefinition):
     item = Item(name='Admetus-D', hash=3776430252)
     roll = Roll(
         'Withering Gaze',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.FlaredMagwell, AnyPerk],
-        [traits.RepulsorBrace, traits.RapidHit],
-        [traits.WitheringGaze],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.RepulsorBrace, trait.RapidHit],
+        [trait.WitheringGaze],
         )
 
 
@@ -112,8 +112,8 @@ class YarovitMG4(RollDefinition):
     item = Item(name='Yarovit MG4', hash=3959549446)
     roll = Roll(
         'PvE',
-        [traits.Strategist, traits.EnlightenedAction],
-        [traits.Headstone, traits.Surrounded],
+        [trait.Strategist, trait.EnlightenedAction],
+        [trait.Headstone, trait.Surrounded],
         )
 
 
@@ -127,10 +127,10 @@ class Legato11(RollDefinition):
     item = Item(name='Legato-11', hash=3753063346)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [magazines.AssaultMag, magazines.TacticalMag, magazines.LightMag],
-        [traits.AutoLoadingHolster, traits.TripleTap],
-        [traits.VorpalWeapon],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.AssaultMag, magazine.TacticalMag, magazine.LightMag],
+        [trait.AutoLoadingHolster, trait.TripleTap],
+        [trait.VorpalWeapon],
         )
 
 
@@ -153,10 +153,10 @@ class BoondoggleMk55(RollDefinition):
     rolls = [
         Roll(
             'Hip-Fire',
-            [barrels.Smallbore, barrels.CorkscrewRifling, AnyPerk],
-            [magazines.RicochetRounds, magazines.LightMag, magazines.FlaredMagwell, AnyPerk],
-            [traits.HipFireGrip, traits.Subsistence],
-            [traits.OffhandStrike],
+            [barrel.Smallbore, barrel.CorkscrewRifling, AnyPerk],
+            [magazine.RicochetRounds, magazine.LightMag, magazine.FlaredMagwell, AnyPerk],
+            [trait.HipFireGrip, trait.Subsistence],
+            [trait.OffhandStrike],
             ),
         ]
 
@@ -172,15 +172,15 @@ class Suspectum4FR(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.EnviousAssassin, traits.EnlightenedAction],
-            [traits.PrecisionInstrument],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.EnviousAssassin, trait.EnlightenedAction],
+            [trait.PrecisionInstrument],
             ),
         Roll(
             'FTTC does not regenerate ammo if mag is overflowed',
-            [traits.EnviousAssassin],
-            [traits.FourthTimesTheCharm],
+            [trait.EnviousAssassin],
+            [trait.FourthTimesTheCharm],
             is_trash=True,
             ),
         ]

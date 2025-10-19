@@ -16,24 +16,24 @@ class PhoneutriaFera(RollDefinition):
     rolls = [
         Roll(
             'Melee damage increase',
-            [barrels.FlutedBarrel, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ThreatDetector],
-            [traits.OneTwoPunch],
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.OneTwoPunch],
             ),
         Roll(
             'Damage dealing',
-            [barrels.FlutedBarrel, AnyPerk],
-            [magazines.AppendedMag, AnyPerk],
-            [traits.ThreatDetector],
-            [traits.Surrounded],
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Surrounded],
             ),
         Roll(
             'Ad clear',
-            [barrels.FlutedBarrel, AnyPerk],
-            [magazines.TacticalMag, AnyPerk],
-            [traits.ThreatDetector],
-            [traits.Incandescent],
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Incandescent],
             ),
         ]
 
@@ -55,10 +55,10 @@ class Ribbontail(RollDefinition):
         ]
     roll = Roll(
         'Ad clear',
-        [barrels.Smallbore, AnyPerk],
-        [batteries.LightBattery, AnyPerk],
-        [traits.Subsistence],
-        [traits.Redirection, traits.DetonatorBeam],
+        [barrel.Smallbore, AnyPerk],
+        [battery.LightBattery, AnyPerk],
+        [trait.Subsistence],
+        [trait.Redirection, trait.DetonatorBeam],
         )
 
 
@@ -77,24 +77,24 @@ class Trachinus(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AssaultMag, AnyPerk],
-            [traits.Rimestealer],
-            [traits.Headstone],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.Rimestealer],
+            [trait.Headstone],
             ),
         Roll(
             'Chill Clip',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AssaultMag, AnyPerk],
-            [traits.LeadFromGold],
-            [traits.ChillClip],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.LeadFromGold],
+            [trait.ChillClip],
             ),
         Roll(
             'Damage dealing',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.AssaultMag, AnyPerk],
-            [traits.RapidHit, traits.LeadFromGold],
-            [traits.PrecisionInstrument],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.RapidHit, trait.LeadFromGold],
+            [trait.PrecisionInstrument],
             ),
         ]
 
@@ -117,23 +117,23 @@ class Synanceia(RollDefinition):
     rolls = [
         Roll(
             'Movement',
-            [blades.HonedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.AssassinsBlade],
-            [traits.EagerEdge],
+            [blade.HonedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.AssassinsBlade],
+            [trait.EagerEdge],
             ),
         Roll(
             'Ad clear',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes],
-            [traits.ChainReaction],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.ChainReaction],
             ),
         Roll(
             'Damage dealing',
-            [blades.JaggedEdge, AnyPerk],
-            [guards.SwordmastersGuard, AnyPerk],
-            [traits.RelentlessStrikes],
-            [traits.Surrounded, traits.ElementalHoning],
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.Surrounded, trait.ElementalHoning],
             ),
         ]

@@ -19,17 +19,17 @@ class RomanticDeath(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.ThreatDetector, traits.FeedingFrenzy],
-            [traits.DestabilizingRounds, traits.OneForAll, traits.ChainReaction],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.ThreatDetector, trait.FeedingFrenzy],
+            [trait.DestabilizingRounds, trait.OneForAll, trait.ChainReaction],
             ),
         Roll(
             'Void combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         ]
 
@@ -51,10 +51,10 @@ class FoldedRoot(RollDefinition):
         ]
     roll = Roll(
         'Damage dealing',
-        [barrels.QuickLaunch, AnyPerk],
-        [magazines.ImpactCasing, AnyPerk],
-        [traits.ClusterBomb],
-        [traits.LastingImpression, traits.Frenzy],
+        [launcher_barrel.QuickLaunch, AnyPerk],
+        [magazine.ImpactCasing, AnyPerk],
+        [trait.ClusterBomb],
+        [trait.LastingImpression, trait.Frenzy],
         )
 
 
@@ -70,23 +70,23 @@ class Submersion(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.ExplosiveBolts, AnyPerk],
-            [traits.AutoLoadingHolster, traits.ImpulseAmplifier, traits.BoltScavenger],
-            [traits.Headstone],
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.ExplosiveBolts, AnyPerk],
+            [trait.AutoLoadingHolster, trait.ImpulseAmplifier, trait.BoltScavenger],
+            [trait.Headstone],
             ),
         Roll(
             'Chill Clip',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.SerratedBolts, AnyPerk],
-            [traits.AutoLoadingHolster, traits.ImpulseAmplifier, traits.BoltScavenger],
-            [traits.ChillClip],
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.SerratedBolts, AnyPerk],
+            [trait.AutoLoadingHolster, trait.ImpulseAmplifier, trait.BoltScavenger],
+            [trait.ChillClip],
             ),
         Roll(
             'Damage dealing',
-            [rails.LowProfileRail, AnyPerk],
-            [bolts.HeavyBolts, AnyPerk],
-            [traits.AutoLoadingHolster, traits.ImpulseAmplifier, traits.BoltScavenger],
-            [traits.AggregateCharge, traits.HighGround, traits.FiringLine],
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.AutoLoadingHolster, trait.ImpulseAmplifier, trait.BoltScavenger],
+            [trait.AggregateCharge, trait.HighGround, trait.FiringLine],
             ),
         ]

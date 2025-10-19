@@ -10,26 +10,26 @@ class RedrixsEstoc(RollDefinition):
     rolls = [
         Roll(
             'PvP',
-            [barrels.ArrowheadBrake, barrels.ExtendedBarrel],
-            [magazines.AccurizedRounds],
-            [traits.LoneWolf],
-            [traits.Headseeker],
-            [stocks.HandLaidStock, AnyPerk],
+            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
+            [magazine.AccurizedRounds],
+            [trait.LoneWolf],
+            [trait.Headseeker],
+            [stock.HandLaidStock, AnyPerk],
             ),
         Roll(
             'PvP hip fire',
-            [barrels.ArrowheadBrake, barrels.ExtendedBarrel],
-            [magazines.AccurizedRounds],
-            [traits.OffhandStrike],
-            [traits.Desperado],
-            [stocks.ShortActionStock, AnyPerk],
+            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
+            [magazine.AccurizedRounds],
+            [trait.OffhandStrike],
+            [trait.Desperado],
+            [stock.ShortActionStock, AnyPerk],
             ),
         Roll(
             'PvE',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-            [traits.Rimestealer, traits.Demolitionist],
-            [traits.Headstone],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+            [trait.Rimestealer, trait.Demolitionist],
+            [trait.Headstone],
             ),
         ]
 
@@ -45,9 +45,9 @@ class Deadlock(RollDefinition):
     item = Item(name='Deadlock', hash=2035738085)
     roll = Roll(
         'PvP',
-        [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.FullChoke],
-        [magazines.AccurizedRounds, magazines.LightMag],
-        [traits.ThreatDetector],
-        [traits.ClosingTime],
-        [stocks.ShortActionStock, AnyPerk],
+        [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.FullChoke],
+        [magazine.AccurizedRounds, magazine.LightMag],
+        [trait.ThreatDetector],
+        [trait.ClosingTime],
+        [stock.ShortActionStock, AnyPerk],
         )

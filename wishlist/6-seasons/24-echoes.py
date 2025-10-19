@@ -7,14 +7,14 @@ class Breachlight(RollDefinition):
     https://www.light.gg/db/items/2328923181
     """
     item = Item(name='Breachlight', hash=2328923181)
-    _mags = [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk]
+    _mags = [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk]
     rolls = [
         Roll(
             'Hatchling',
-            [barrels.ArrowheadBrake, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
             _mags,
-            [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
-            [traits.Hatchling],
+            [trait.Demolitionist, trait.Pugilist, trait.ThreatDetector],
+            [trait.Hatchling],
             ),
         Roll(
             """
@@ -22,10 +22,10 @@ class Breachlight(RollDefinition):
             For this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie
             because DM can be activated while stowed and lasts longer
             """,
-            [barrels.ArrowheadBrake, AnyPerk],
+            [barrel.ArrowheadBrake, AnyPerk],
             _mags,
-            [traits.Demolitionist, traits.Pugilist, traits.ThreatDetector],
-            [traits.DesperateMeasures],
+            [trait.Demolitionist, trait.Pugilist, trait.ThreatDetector],
+            [trait.DesperateMeasures],
             ),
         ]
 
@@ -39,17 +39,17 @@ class PatronOfLostCauses(RollDefinition):
     rolls = [
         Roll(
             'Classic PvE combo for a scout rifle',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-            [traits.RapidHit],
-            [traits.KineticTremors, traits.ExplosivePayload],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+            [trait.RapidHit],
+            [trait.KineticTremors, trait.ExplosivePayload],
             ),
         Roll(
             'Strategist',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [magazines.FlaredMagwell, magazines.TacticalMag, AnyPerk],
-            [traits.Strategist],
-            [traits.KineticTremors, traits.ExplosivePayload],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
+            [trait.Strategist],
+            [trait.KineticTremors, trait.ExplosivePayload],
             ),
         ]
 
@@ -60,8 +60,8 @@ class PerfectParadox(RollDefinition):
     https://www.light.gg/db/items/1298672084
     """
     item = Item(name='Perfect Paradox', hash=1298672084)
-    _barrels = [barrels.BarrelShroud, barrels.CorkscrewRifling, barrels.Smallbore]
-    _mags = [magazines.TacticalMag, magazines.LightMag]
+    _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
+    _mags = [magazine.TacticalMag, magazine.LightMag]
     rolls = [
         Roll(
             """
@@ -71,15 +71,15 @@ class PerfectParadox(RollDefinition):
             """,
             _barrels,
             _mags,
-            [traits.Pugilist, traits.ThreatDetector],
-            [traits.OneTwoPunch],
+            [trait.Pugilist, trait.ThreatDetector],
+            [trait.OneTwoPunch],
             ),
         Roll(
             'Damage dealing',
             _barrels,
             _mags,
-            [traits.DualLoader, traits.Pugilist],
-            [traits.TrenchBarrel],
+            [trait.DualLoader, trait.Pugilist],
+            [trait.TrenchBarrel],
             )
         ]
 
@@ -97,17 +97,17 @@ class MartyrsRetribution(RollDefinition):
             The preferred roll as there is already a Solar Wave Frame GL
             with damage increase perks: Explosive Personality with One for All
             """,
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Demolitionist, traits.HealClip],
-            [traits.Incandescent],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist, trait.HealClip],
+            [trait.Incandescent],
             ),
         Roll(
             'Clip combo',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.HealClip],
-            [traits.KillClip],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip],
+            [trait.KillClip],
             ),
         Roll(
             """
@@ -116,10 +116,10 @@ class MartyrsRetribution(RollDefinition):
             because AJ can achieve max stacks easily with 1-2 shots,
             while DM requires two ability kills
             """,
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Demolitionist, traits.HealClip],
-            [traits.AdrenalineJunkie],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist, trait.HealClip],
+            [trait.AdrenalineJunkie],
             ),
         ]
 
@@ -132,8 +132,8 @@ class LineInTheSand(RollDefinition):
     item = Item(name='Line in the Sand', hash=2450049485)
     roll = Roll(
         'Damage dealing',
-        [barrels.ArrowheadBrake, AnyPerk],
-        [batteries.AcceleratedCoils, AnyPerk],
-        [traits.Demolitionist, traits.ClownCartridge],
-        [traits.BaitAndSwitch],
+        [barrel.ArrowheadBrake, AnyPerk],
+        [battery.AcceleratedCoils, AnyPerk],
+        [trait.Demolitionist, trait.ClownCartridge],
+        [trait.BaitAndSwitch],
         )

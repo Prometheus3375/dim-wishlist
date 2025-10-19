@@ -9,8 +9,8 @@ class PyroelectricPropellant(RollDefinition):
     item = Item(name='VS Pyroelectric Propellant', hash=4232480042)
     roll = Roll(
         'Ad clear',
-        [traits.AttritionOrbs, traits.EddyCurrent, traits.Strategist],
-        [traits.JoltingFeedback],
+        [trait.AttritionOrbs, trait.EddyCurrent, trait.Strategist],
+        [trait.JoltingFeedback],
         )
 
 
@@ -23,10 +23,10 @@ class GraviticArrest(RollDefinition):
     rolls = [
         Roll(
             'Withering Gaze',
-            [barrels.ArrowheadBrake, AnyPerk],
-            [batteries.AcceleratedCoils, AnyPerk],
-            [traits.Demolitionist],
-            [traits.WitheringGaze],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.Demolitionist],
+            [trait.WitheringGaze],
             ),
         ]
 
@@ -40,24 +40,24 @@ class VelocityBaton(RollDefinition):
     rolls = [
         Roll(
             'Attrition Orbs',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Unrelenting, traits.Demolitionist],
-            [traits.AttritionOrbs],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Unrelenting, trait.Demolitionist],
+            [trait.AttritionOrbs],
             ),
         Roll(
             'Ad clear',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.Unrelenting, traits.Demolitionist],
-            [traits.DestabilizingRounds, traits.Adagio],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Unrelenting, trait.Demolitionist],
+            [trait.DestabilizingRounds, trait.Adagio],
             ),
         Roll(
             'Void Combo',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.HighVelocityRounds],
-            [traits.RepulsorBrace],
-            [traits.DestabilizingRounds],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
             ),
         ]
 
@@ -71,23 +71,23 @@ class ChillInhibitor(RollDefinition):
     rolls = [
         Roll(
             'Damage dealing',
-            [barrels.HardLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.EnviousArsenal, traits.CascadePoint],
-            [traits.BaitAndSwitch, traits.Surrounded],
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal, trait.CascadePoint],
+            [trait.BaitAndSwitch, trait.Surrounded],
             ),
         Roll(
             'High DPS',
-            [barrels.QuickLaunch, AnyPerk],
-            [magazines.SpikeGrenades, AnyPerk],
-            [traits.CascadePoint],
-            [traits.ExplosiveLight],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.CascadePoint],
+            [trait.ExplosiveLight],
             ),
         Roll(
             'Ad clear',
-            [barrels.VolatileLaunch, AnyPerk],
-            [magazines.HighExplosiveOrdnance, AnyPerk],
-            [traits.DangerZone],
-            [traits.ChainReaction, traits.Surrounded],
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighExplosiveOrdnance, AnyPerk],
+            [trait.DangerZone],
+            [trait.ChainReaction, trait.Surrounded],
             ),
         ]
