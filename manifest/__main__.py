@@ -17,166 +17,12 @@ class ListOptions(StrEnum):
     RELEASE_STRINGS = 'release-strings'
 
 
+PROJECT_DIR = dirname(dirname(__file__))
 RELEASE_STRING_ALL = 'all'
 RELEASE_STRING_LATEST = 'latest'
-PERK_DATABASE_DIRECTORY = join(dirname(dirname(__file__)), 'database')
-WEAPON_DEFINITIONS_FILE = 'new_weapons.py'
+PERK_DATABASE_DIRECTORY = join(PROJECT_DIR, 'database')
+WEAPON_DEFINITIONS_FILE = join(PROJECT_DIR, 'new-weapons.py')
 PERK_MAPPING_FILE = 'regular-to-enhanced.json'
-
-
-def list_commands(args: Namespace, /) -> None:
-    """
-    Main function for listing commands.
-    """
-    manifest_ = Manifest.from_recent()
-    match args.list_option:
-        case ListOptions.RELEASE_STRINGS:
-            print(*sorted(manifest_.release_strings), sep='\n')
-
-        case unknown:
-            assert_never(unknown)
-
-
-def name_to_python_identifier(name: str, /) -> str:
-    """
-    Converts the given name of a weapon or a perk to a proper Python identifier.
-    """
-    parts = name.replace("'", '').replace('-', ' ').split()
-    return ''.join(map(str.capitalize, parts))
-
-
-def perk_category_to_python_identifier(category: str, /) -> str:
-    """
-    Converts the given category of a perk to a proper Python identifier.
-    """
-    category = category.lower().replace(' ', '_')
-
-    match category:
-        case 'origin_trait':
-            category = 'origin'
-
-    return category
-
-
-def check_release_string(
-        manifest_: Manifest,
-        release_string: str | None,
-        cmd_name: str,
-        /,
-        ) -> str | None:
-    """
-    Verifies the given release string and return a proper value.
-    If the string is invalid, then closes the program.
-
-    If ``None`` is passed, ``None`` is returned.
-    """
-    if release_string is None: return None
-
-    if release_string == RELEASE_STRING_ALL:
-        return ''
-
-    if release_string == RELEASE_STRING_LATEST:
-        return max(manifest_.release_strings)
-
-    releases = manifest_.release_strings
-    if release_string in releases: return release_string
-
-    print(
-        f'Error: invalid release string {release_string!r} for command {cmd_name!r}.\n'
-        f'Release string can be {RELEASE_STRING_ALL!r}, {RELEASE_STRING_LATEST!r} '
-        f'or any of the following:\n  {'\n  '.join(releases)}'
-        )
-    exit()
-
-
-def generate_commands(args: Namespace, /) -> None:
-    """
-    Main function for generating commands.
-    """
-    print('Getting the most recent game data from the API...')
-    manifest_ = Manifest.from_api()
-    print('Game data is loaded')
-
-    perk_db_release = check_release_string(
-        manifest_,
-        args.perk_database,
-        '--perk-database',
-        )
-    weapons_release = check_release_string(
-        manifest_,
-        args.weapon_definitions,
-        '--weapon-definitions',
-        )
-    do_generate_mapping = args.perk_mapping
-
-    if perk_db_release:
-        generate_perk_database(manifest_, perk_db_release)
-
-    if weapons_release:
-        generate_weapons_definitions(manifest_, weapons_release)
-
-    if do_generate_mapping:
-        generate_perk_mapping(manifest_)
-
-
-def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
-    """
-    Generates perk database since the given release.
-    """
-    print(f'Generating perk database listing perks met in weapons since {release!r}...')
-
-    os.makedirs(PERK_DATABASE_DIRECTORY, exist_ok=True)
-
-    name_to_perks = manifest_.get_legendary_weapon_perks(release)
-    category_to_perks: dict[str, list[PerkTuple]] = defaultdict(list)
-    for perk_set in name_to_perks.values():
-        perk = max(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
-        category = perk_category_to_python_identifier(perk.category)
-        category_to_perks[category].append(perk)
-
-    for category, perk_list in category_to_perks.items():
-        filepath = join(PERK_DATABASE_DIRECTORY, f'{category}.py')
-        with open(filepath, 'w') as f:
-            f.write(f'from {Perk.__module__} import {Perk.__name__}\n\n')
-
-            perk_list.sort()
-            for perk in perk_list:
-                variable = name_to_python_identifier(perk.name)
-                if perk.enhanced > 0:
-                    hashes = f'regular={perk.regular}, enhanced={perk.enhanced}'
-                else:
-                    hashes = f'regular={perk.regular}'
-
-                f.write(f'{variable} = {Perk.__name__}(name={perk.name!r}, {hashes})\n')
-
-            f.write(f'\ndel {Perk.__name__}\n')
-
-    modules = [
-        name[:-3]
-        for name in os.listdir(PERK_DATABASE_DIRECTORY)
-        if name.endswith('.py') and not name.startswith('_')
-        ]
-    filepath = join(PERK_DATABASE_DIRECTORY, '__init__.py')
-    with open(filepath, 'w') as f:
-        f.write('__all__ = (\n')
-        for name in modules:
-            f.write(f'    {name!r},\n')
-
-        f.write('    )\n')
-
-    print(f'Generating perk database is complete')
-
-
-def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
-    """
-    Generates weapon definitions since the given release.
-    """
-
-
-def generate_perk_mapping(manifest_: Manifest, /) -> None:
-    """
-    Generates a mapping between regular and correspondent enhanced perks.
-    """
 
 
 def parse_cmd_arguments() -> Namespace:
@@ -291,6 +137,161 @@ def main() -> None:
                 f'Cache cleared successfully.\n'
                 f'The most recent version is {max(versions)!r}.'
                 )
+
+
+def list_commands(args: Namespace, /) -> None:
+    """
+    Main function for listing commands.
+    """
+    manifest_ = Manifest.from_recent()
+    match args.list_option:
+        case ListOptions.RELEASE_STRINGS:
+            print(*sorted(manifest_.release_strings), sep='\n')
+
+        case unknown:
+            assert_never(unknown)
+
+
+def generate_commands(args: Namespace, /) -> None:
+    """
+    Main function for generating commands.
+    """
+    print('Getting the most recent game data from the API...')
+    manifest_ = Manifest.from_api()
+    print('Game data is loaded')
+
+    perk_db_release = check_release_string(
+        manifest_,
+        args.perk_database,
+        '--perk-database',
+        )
+    weapons_release = check_release_string(
+        manifest_,
+        args.weapon_definitions,
+        '--weapon-definitions',
+        )
+    do_generate_mapping = args.perk_mapping
+
+    if perk_db_release:
+        generate_perk_database(manifest_, perk_db_release)
+
+    if weapons_release:
+        generate_weapons_definitions(manifest_, weapons_release)
+
+    if do_generate_mapping:
+        generate_perk_mapping(manifest_)
+
+
+def check_release_string(
+        manifest_: Manifest,
+        release_string: str | None,
+        cmd_name: str,
+        /,
+        ) -> str | None:
+    """
+    Verifies the given release string and return a proper value.
+    If the string is invalid, then closes the program.
+
+    If ``None`` is passed, ``None`` is returned.
+    """
+    if release_string is None: return None
+
+    if release_string == RELEASE_STRING_ALL:
+        return ''
+
+    if release_string == RELEASE_STRING_LATEST:
+        return max(manifest_.release_strings)
+
+    releases = manifest_.release_strings
+    if release_string in releases: return release_string
+
+    print(
+        f'Error: invalid release string {release_string!r} for command {cmd_name!r}.\n'
+        f'Release string can be {RELEASE_STRING_ALL!r}, {RELEASE_STRING_LATEST!r} '
+        f'or any of the following:\n  {'\n  '.join(releases)}'
+        )
+    exit()
+
+
+def name_to_python_identifier(name: str, /) -> str:
+    """
+    Converts the given name of a weapon or a perk to a proper Python identifier.
+    """
+    parts = name.replace("'", '').replace('-', ' ').split()
+    return ''.join(map(str.capitalize, parts))
+
+
+def perk_category_to_python_identifier(category: str, /) -> str:
+    """
+    Converts the given category of a perk to a proper Python identifier.
+    """
+    category = category.lower().replace(' ', '_')
+
+    match category:
+        case 'origin_trait':
+            category = 'origin'
+
+    return category
+
+
+def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
+    """
+    Generates perk database since the given release.
+    """
+    print(f'Generating perk database listing perks met in weapons since {release!r}...')
+
+    os.makedirs(PERK_DATABASE_DIRECTORY, exist_ok=True)
+
+    name_to_perks = manifest_.get_legendary_weapon_perks(release)
+    category_to_perks: dict[str, list[PerkTuple]] = defaultdict(list)
+    for perk_set in name_to_perks.values():
+        perk = max(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
+        category = perk_category_to_python_identifier(perk.category)
+        category_to_perks[category].append(perk)
+
+    for category, perk_list in category_to_perks.items():
+        filepath = join(PERK_DATABASE_DIRECTORY, f'{category}.py')
+        with open(filepath, 'w') as f:
+            f.write(f'from {Perk.__module__} import {Perk.__name__}\n\n')
+
+            perk_list.sort()
+            for perk in perk_list:
+                variable = name_to_python_identifier(perk.name)
+                if perk.enhanced > 0:
+                    hashes = f'regular={perk.regular}, enhanced={perk.enhanced}'
+                else:
+                    hashes = f'regular={perk.regular}'
+
+                f.write(f'{variable} = {Perk.__name__}(name={perk.name!r}, {hashes})\n')
+
+            f.write(f'\ndel {Perk.__name__}\n')
+
+    modules = [
+        name[:-3]
+        for name in os.listdir(PERK_DATABASE_DIRECTORY)
+        if name.endswith('.py') and not name.startswith('_')
+        ]
+    filepath = join(PERK_DATABASE_DIRECTORY, '__init__.py')
+    with open(filepath, 'w') as f:
+        f.write('__all__ = (\n')
+        for name in modules:
+            f.write(f'    {name!r},\n')
+
+        f.write('    )\n')
+
+    print(f'Generating perk database is complete')
+
+
+def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
+    """
+    Generates weapon definitions since the given release.
+    """
+
+
+def generate_perk_mapping(manifest_: Manifest, /) -> None:
+    """
+    Generates a mapping between regular and correspondent enhanced perks.
+    """
 
 
 if __name__ == '__main__':
