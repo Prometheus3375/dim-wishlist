@@ -1,5 +1,7 @@
 # Project
 /.manifest-cache/
+/new-weapons.py
+/regular-to-enhanced.json
 
 # Python
 __pycache__/
