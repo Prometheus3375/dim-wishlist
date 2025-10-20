@@ -23,3 +23,18 @@ or higher version of Python 3.12.
 ## Updating wishlist
 
 Run `python -m wishlist` to update wishlist.
+
+## Working with game data
+
+Run `python -m manifest --help` for more information.
+
+### Updating perk database
+
+Run `python -m manifest -u generate -p` to generate perk database
+using the most recent Destiny 2 data.
+
+### Generating roll definitions for recently added weapons
+
+Run `python -m manifest -u generate -w` to generate roll definition classes
+for weapons added in the most recent Destiny 2 release.
+The result is saved in file `new-weapons.py`.
