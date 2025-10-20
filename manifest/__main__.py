@@ -195,10 +195,10 @@ def generate_commands(manifest_: Manifest, args: Namespace, /) -> None:
         )
     do_generate_mapping = args.perk_mapping
 
-    if perk_db_release:
+    if perk_db_release is not None:
         generate_perk_database(manifest_, perk_db_release)
 
-    if weapons_release:
+    if weapons_release is not None:
         generate_weapons_definitions(manifest_, weapons_release)
 
     if do_generate_mapping:
