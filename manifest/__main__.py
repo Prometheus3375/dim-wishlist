@@ -92,7 +92,11 @@ def parse_cmd_arguments() -> Namespace:
     parser_list.add_argument(
         'list_option',
         choices=tuple(ListOptions),
-        help='Options for listing.'
+        metavar='LIST_OPTION',
+        help=f'Option for listing. Can be one of the following:\n'
+             f'{ListOptions.RELEASE_STRINGS} -- lists all present release strings;\n'
+             f'{ListOptions.PERK_DUPES} -- lists all perks that have '
+             f'more than one regular or enhanced version.'
         )
 
     parser_generate = subparsers.add_parser(
