@@ -5,7 +5,6 @@ __all__ = (
     'blade',
     'bolt',
     'bowstring',
-    'category',
     'grip',
     'guard',
     'haft',
