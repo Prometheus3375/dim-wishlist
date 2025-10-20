@@ -120,7 +120,7 @@ def parse_cmd_arguments() -> Namespace:
     parser_generate.add_argument(
         '-m', '--perk-mapping',
         action='store_true',
-        help=f'Generates a mapping between regular and enhanced perks '
+        help=f'Generates the mapping between regular and enhanced perks '
              f'and saves it to file {PERK_MAPPING_FILE!r}.',
         )
 
@@ -385,6 +385,23 @@ def generate_perk_mapping(manifest_: Manifest, /) -> None:
     """
     Generates a mapping between regular and correspondent enhanced perks.
     """
+    print('Generating the mapping between regular and enhanced perks...')
+
+    import json
+
+    with open(PERK_MAPPING_FILE, 'w') as f:
+        mapping = {
+            perk.regular: perk.enhanced
+            for tuple_set in manifest_.get_legendary_weapon_perks().values()
+            for perk in tuple_set
+            if perk.is_complete
+            }
+
+        data = dict(version=manifest_.version, mapping=mapping)
+        json.dump(data, f, ensure_ascii=False, indent=2, sort_keys=True)
+        f.write('\n')
+
+    print(f'Generating the mapping is complete')
 
 
 if __name__ == '__main__':
