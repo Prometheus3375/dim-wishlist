@@ -371,6 +371,10 @@ def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
     """
     Whether the perk described by the given definition is enhanced.
     """
+    # Some enhanced perks do not have Enhanced prefix, for example:
+    # https://data.destinysets.com/i/InventoryItem:1164602481
+    # Some enhanced perks do not have Uncommon rarity, for example:
+    # https://data.destinysets.com/i/InventoryItem:745577913
     return (
             definition['itemTypeDisplayName'].startswith('Enhanced')
             or
