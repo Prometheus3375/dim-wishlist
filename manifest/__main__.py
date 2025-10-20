@@ -69,7 +69,7 @@ def parse_cmd_arguments() -> Namespace:
         )
 
     subparsers = parser.add_subparsers(
-        title='Subcommands',
+        title='subcommands',
         description=f'All of the subcommands use the most recent manifest '
                     f'in directory {Manifest.CACHE_DIR!r}.\n'
                     f'If there is no cached manifest, '
@@ -145,9 +145,9 @@ def parse_cmd_arguments() -> Namespace:
 def main() -> None:
     args = parse_cmd_arguments()
     if args.update_cache:
-        print('Getting the most recent game data from the API...')
+        print('Loading the most recent game data from the API...')
         manifest_ = Manifest.from_api()
-        print('Game data is loaded')
+        print('Game data is loaded.')
     else:
         manifest_ = Manifest.from_recent()
 
@@ -308,7 +308,7 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
 
         f.write('    )\n')
 
-    print(f'Generating perk database is complete')
+    print(f'Generating perk database is complete.')
 
 
 _sort_key_for_weapon = attrgetter('source')
@@ -395,7 +395,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
 
                 f.write('        ]\n')
 
-    print(f'Generating weapon definitions is complete')
+    print(f'Generating weapon definitions is complete.')
 
 
 def generate_perk_mapping(manifest_: Manifest, /) -> None:
@@ -419,7 +419,7 @@ def generate_perk_mapping(manifest_: Manifest, /) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2, sort_keys=True)
         f.write('\n')
 
-    print(f'Generating the mapping is complete')
+    print(f'Generating the mapping is complete.')
 
 
 if __name__ == '__main__':
