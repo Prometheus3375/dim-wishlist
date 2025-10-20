@@ -55,6 +55,13 @@ class PerkTuple(NamedTuple):
         """
         return self.regular > 0 and self.enhanced > 0
 
+    @property
+    def not_complete(self, /) -> bool:
+        """
+        Whether this tuple misses either regular hash or enhanced hash.
+        """
+        return self.regular <= 0 or self.enhanced <= 0
+
     def add_to_tuple_set(self, tuple_set: set['PerkTuple'], /) -> None:
         """
         Conditionally modifies the given set of tuples.
@@ -89,7 +96,7 @@ class PerkTuple(NamedTuple):
             tuple_set.add(self)
 
 
-PERK_TUPLE_SORT_BY_COMPLETENESS = attrgetter('is_complete', 'regular', 'enhanced')
+PERK_TUPLE_SORT_BY_COMPLETENESS = attrgetter('not_complete', 'regular', 'enhanced')
 """
 Callable to use for sorting instances of :class:`PerkTuple` by completeness.
 """
@@ -344,7 +351,7 @@ class Manifest(JSONObjectWrapper):
             if count_complete > 1:
                 tuples_desc = ', '.join(
                     f'(regular={t.regular}, enhanced={t.enhanced})'
-                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS, reverse=True)
+                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
                     )
                 warn(
                     f'there are {count_complete} complete perk tuples '

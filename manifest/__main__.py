@@ -274,7 +274,7 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     name_to_perks = manifest_.get_legendary_weapon_perks(release)
     category_to_perks: dict[str, list[PerkTuple]] = defaultdict(list)
     for perk_set in name_to_perks.values():
-        perk = max(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
+        perk = min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
         category = perk_category_to_python_identifier(perk.category)
         category_to_perks[category].append(perk)
 
