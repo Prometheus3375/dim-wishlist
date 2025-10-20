@@ -208,7 +208,11 @@ def check_release_string(
         return ''
 
     if release_string == RELEASE_STRING_LATEST:
-        return max(manifest_.release_strings)
+        # Latest must cover any part of the same release
+        release_string = max(manifest_.release_strings)
+        parts = release_string.split('.')
+        assert len(parts) >= 2, 'any release string must have at least one dot'
+        return f'{parts[0]}.{parts[1]}'
 
     releases = manifest_.release_strings
     if release_string in releases: return release_string
@@ -216,7 +220,7 @@ def check_release_string(
     print(
         f'Error: invalid release string {release_string!r} for command {cmd_name!r}.\n'
         f'Release string can be {RELEASE_STRING_ALL!r}, {RELEASE_STRING_LATEST!r} '
-        f'or any of the following:\n  {'\n  '.join(releases)}'
+        f'or any of the following:\n{'\n'.join(releases)}'
         )
     exit()
 
