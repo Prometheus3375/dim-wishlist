@@ -80,7 +80,7 @@ class Perk(Item):
         """
         return self.hash
 
-    def __init__(self, /, *, name: str, regular: int, enhanced: int = 0) -> None:
+    def __init__(self, name: str, /, *, regular: int, enhanced: int = 0) -> None:
         super(Perk, self).__init__(name=name, hash=regular)
         object.__setattr__(self, 'enhanced', enhanced)
 
@@ -96,9 +96,9 @@ AnyItem = Item(name='DIM Wildcard', hash=-69420)
 """
 Special item for DIM to denote any item.
 """
-AnyPerk = Perk(name='Any Perk', regular=-1)
+AnyPerk = Perk('Any Perk', regular=-1)
 """
-Special item to denote an empty selection for a perk column.
+Special perk to denote an empty selection for a perk column.
 """
 
 type OrderedSet[T] = dict[T, None]

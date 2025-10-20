@@ -274,7 +274,7 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
                 else:
                     hashes = f'regular={perk.regular}'
 
-                f.write(f'{variable} = {Perk.__name__}(name={perk.name!r}, {hashes})\n')
+                f.write(f'{variable} = {Perk.__name__}({perk.name!r}, {hashes})\n')
 
             f.write(f'\ndel {Perk.__name__}\n')
 
