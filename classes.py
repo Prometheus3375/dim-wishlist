@@ -10,7 +10,7 @@ __all__ = 'Item', 'Perk', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinit
 @dataclass(frozen=True, kw_only=True, slots=True)
 class Item:
     """
-    A common class for armor, weapons, traits, categories, etc.
+    A common class for armor, weapons, perks, categories, etc.
     """
     _hash2item: ClassVar[dict[int, Self]] = {}
 
@@ -65,7 +65,7 @@ class Item:
 @dataclass(frozen=True, slots=True)
 class Perk(Item):
     """
-    A class dedicated to weapon perks.
+    A class dedicated to armor and weapon perks.
     """
     enhanced: int
     """
