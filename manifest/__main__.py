@@ -68,15 +68,20 @@ def parse_cmd_arguments() -> Namespace:
              f'This command is executed at the very end of the script.'
         )
 
-    subparsers = parser.add_subparsers()
-    parser_list = subparsers.add_parser(
-        cmd_list,
-        description=f'Commands for listing some Destiny 2 data.\n\n'
-                    f'All commands use the most recent manifest '
+    subparsers = parser.add_subparsers(
+        title='Subcommands',
+        description=f'All of the subcommands use the most recent manifest '
                     f'in directory {Manifest.CACHE_DIR!r}.\n'
                     f'If there is no cached manifest, '
-                    f'then a command downloads one to that directory and uses it instead.',
-        help='Listing commands.',
+                    f'then a command downloads one to that directory and uses it instead.\n'
+                    f'To force usage of the most recent data, '
+                    f'specify flag {cmd_update!r} when running subcommands.',
+        help="Run a subcommand with '--help' to learn more.",
+        )
+    parser_list = subparsers.add_parser(
+        cmd_list,
+        description=f'Commands for listing stuff using Destiny 2 data.',
+        help='Subcommand for listing commands.',
         formatter_class=RawTextHelpFormatter,
         add_help=False,
         )
@@ -91,11 +96,11 @@ def parse_cmd_arguments() -> Namespace:
 
     parser_generate = subparsers.add_parser(
         'generate',
-        description=f'Commands for generating.\n\n'
+        description=f'Commands for generating stuff using Destiny 2 data.\n\n'
                     f'Some commands accept release strings.\n'
                     f'A release string is {RELEASE_STRING_ALL!r}, {RELEASE_STRING_LATEST!r} '
                     f'or ony other string listed by command {cmd_list_release_strings!r}.',
-        help='Generating commands.',
+        help='Subcommand for generating commands.',
         formatter_class=RawTextHelpFormatter,
         add_help=False,
         )
