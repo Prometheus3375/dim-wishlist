@@ -294,11 +294,12 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     print(f'Generating perk database is complete')
 
 
-_sort_weapon_list_by_source = attrgetter('source')
+_sort_key_for_weapon = attrgetter('source')
 
 
-def _sort_weapon_lists_by_source(li: list[Weapon], /) -> str:
-    return li[0].source
+def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
+    w = li[0]
+    return w.source, w.ammo_type, w.name
 
 
 def get_weapon_type(w: Weapon, /) -> str:
@@ -342,10 +343,10 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
 
     for li in name2weapons.values():
         # Place the weapon with source at start.
-        li.sort(key=_sort_weapon_list_by_source, reverse=True)
+        li.sort(key=_sort_key_for_weapon, reverse=True)
 
     # Sort weapon lists by the source.
-    weapon_lists = sorted(name2weapons.values(), key=_sort_weapon_lists_by_source)
+    weapon_lists = sorted(name2weapons.values(), key=_sort_key_for_weapon_list)
     with open(WEAPON_DEFINITIONS_FILE, 'w') as f:
         f.write(f'from {wishlist.__name__} import *\n')
 
