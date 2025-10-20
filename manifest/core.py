@@ -356,6 +356,19 @@ class Manifest(JSONObjectWrapper):
         return name_to_tuple_set
 
 
+def get_perk_name(definition: JSONObjectWrapper, /) -> str:
+    """
+    Returns a proper perk name from the given item definition.
+    """
+    # Some enhanced perks has Enhanced in the name, for example:
+    # https://data.destinysets.com/i/InventoryItem:4290541820
+    name = definition['displayProperties.name']
+    if name.endswith('Enhanced'):
+        return name[:-9]
+
+    return name
+
+
 def get_perk_category(definition: JSONObjectWrapper, /) -> str:
     """
     Returns a proper perk category from the given item definition.
@@ -479,7 +492,7 @@ class PlugSet:
             definition = manifest.get_item(h)
             # Ignore perks with no item type
             if definition['itemTypeDisplayName']:
-                name = definition['displayProperties.name']
+                name = get_perk_name(definition)
                 name2defs[name].append(definition)
 
         for name, definitions in name2defs.items():
