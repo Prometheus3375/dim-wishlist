@@ -588,8 +588,12 @@ class Weapon:
     def source(self, /) -> str:
         """
         From where this weapon can be obtained.
+        Can be the empty string if no collectible is present.
         """
-        collectible_hash = self._definition['collectibleHash']
+        collectible_hash = self._definition.get('collectibleHash')
+        if collectible_hash is None:
+            return ''
+
         return self._manifest.get_collectible(collectible_hash)['sourceString']
 
     @cached_property
