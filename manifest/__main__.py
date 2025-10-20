@@ -32,6 +32,7 @@ PERK_MAPPING_FILE = join(PROJECT_DIR, 'regular-to-enhanced.json')
 
 
 def parse_cmd_arguments() -> Namespace:
+    cmd_update = '--update-cache'
     cmd_list = 'list'
     cmd_list_release_strings = f'{cmd_list} {ListOptions.RELEASE_STRINGS.value}'
 
@@ -50,12 +51,21 @@ def parse_cmd_arguments() -> Namespace:
 
     parser.set_defaults(function=None)
     parser.add_argument(*help_args, **help_kwargs)
+
+    parser.add_argument(
+        '-u', cmd_update,
+        action='store_true',
+        help=f'Downloads the most recent version of the game data '
+             f'and stores it in directory {Manifest.CACHE_DIR!r}.\n'
+             f'This command is executed at the very start of the script.'
+        )
+
     parser.add_argument(
         '--clear-cache',
         action='store_true',
         help=f'Removes all, but the most recent cached manifest '
              f'from directory {Manifest.CACHE_DIR!r}.\n'
-             f'This command is executed at the end of the script.'
+             f'This command is executed at the very end of the script.'
         )
 
     subparsers = parser.add_subparsers()
@@ -129,8 +139,15 @@ def parse_cmd_arguments() -> Namespace:
 
 def main() -> None:
     args = parse_cmd_arguments()
+    if args.update_cache:
+        print('Getting the most recent game data from the API...')
+        manifest_ = Manifest.from_api()
+        print('Game data is loaded')
+    else:
+        manifest_ = Manifest.from_recent()
+
     if args.function is not None:
-        args.function(args)
+        args.function(manifest_, args)
 
     if args.clear_cache:
         versions = Manifest.list_cached_versions()
@@ -145,11 +162,10 @@ def main() -> None:
                 )
 
 
-def list_commands(args: Namespace, /) -> None:
+def list_commands(manifest_: Manifest, args: Namespace, /) -> None:
     """
     Main function for listing commands.
     """
-    manifest_ = Manifest.from_recent()
     match args.list_option:
         case ListOptions.RELEASE_STRINGS:
             print(*sorted(manifest_.release_strings), sep='\n')
@@ -158,14 +174,10 @@ def list_commands(args: Namespace, /) -> None:
             assert_never(unknown)
 
 
-def generate_commands(args: Namespace, /) -> None:
+def generate_commands(manifest_: Manifest, args: Namespace, /) -> None:
     """
     Main function for generating commands.
     """
-    print('Getting the most recent game data from the API...')
-    manifest_ = Manifest.from_api()
-    print('Game data is loaded')
-
     perk_db_release = check_release_string(
         manifest_,
         args.perk_database,
