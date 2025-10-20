@@ -20,8 +20,8 @@ __all__ = (
     'JSONObjectWrapper',
     )
 
-type JSONObject = dict[str, 'JSONAny']
-type JSONArray = list['JSONAny']
+type JSONObject = dict[str, JSONAny]
+type JSONArray = list[JSONAny]
 type JSONScalar = None | bool | int | float | str
 type JSONContainer = JSONArray | JSONObject
 type JSONAny = JSONScalar | JSONArray | JSONObject
@@ -200,7 +200,7 @@ def json_lookup(container: JSONContainer, path: JSONPath, /) -> JSONAny:
     return current
 
 
-type JSONWrappedAny = JSONScalar | 'BaseJSONWrapper'
+type JSONWrappedAny = JSONScalar | BaseJSONWrapper
 type WrapperSubscript = int | str | JSONPath
 
 
