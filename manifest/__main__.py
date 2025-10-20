@@ -7,8 +7,6 @@ from os.path import dirname, join
 from typing import assert_never
 
 import manifest
-import wishlist
-from classes import Item, Perk, RollDefinition
 from manifest.core import (
     AmmunitionType,
     Manifest,
@@ -252,6 +250,8 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     """
     print(f'Generating perk database listing perks met in weapons since {release!r}...')
 
+    from classes import Perk
+
     os.makedirs(PERK_DATABASE_DIRECTORY, exist_ok=True)
 
     name_to_perks = manifest_.get_legendary_weapon_perks(release)
@@ -320,13 +320,13 @@ def get_weapon_type(w: Weapon, /) -> str:
             return other
 
 
-WEAPON_DEFINITION_CODE = f"""
+WEAPON_DEFINITION_CODE = """
 
-class {{identifier}}({RollDefinition.__name__}):
+class {identifier}({base_class}):
     \"""
-    {{damage_type}} {{weapon_type}}, {{intrinsic}}
-    {{source}}
-    https://www.light.gg/db/items/{{hash}}
+    {damage_type} {weapon_type}, {intrinsic}
+    {source}
+    https://www.light.gg/db/items/{hash}
     \"""
 """
 
@@ -336,6 +336,9 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
     Generates weapon definitions since the given release.
     """
     print(f'Generating weapon definitions for weapons since {release!r}...')
+
+    import wishlist
+    from classes import Item, RollDefinition
 
     name2weapons: dict[str, list[Weapon]] = defaultdict(list)
     for weapon in manifest_.iterate_legendary_weapons_since_release(release):
@@ -354,6 +357,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
             main_weapon = li[0]
             format_params = dict(
                 identifier=name_to_python_identifier(main_weapon.name),
+                base_class=RollDefinition.__name__,
                 damage_type='-'.join(main_weapon.damage_types),
                 weapon_type=get_weapon_type(main_weapon),
                 intrinsic=', '.join(main_weapon.intrinsics),
