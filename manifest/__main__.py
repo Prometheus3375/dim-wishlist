@@ -2,12 +2,20 @@ import os
 from argparse import ArgumentParser, Namespace, RawTextHelpFormatter
 from collections import defaultdict
 from enum import StrEnum
+from operator import attrgetter
 from os.path import dirname, join
 from typing import assert_never
 
 import manifest
-from classes import Perk
-from manifest.core import Manifest, PERK_TUPLE_SORT_BY_COMPLETENESS, PerkTuple
+import wishlist
+from classes import Item, Perk, RollDefinition
+from manifest.core import (
+    AmmunitionType,
+    Manifest,
+    PERK_TUPLE_SORT_BY_COMPLETENESS,
+    PerkTuple,
+    Weapon,
+    )
 
 
 class ListOptions(StrEnum):
@@ -282,10 +290,86 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     print(f'Generating perk database is complete')
 
 
+_sort_weapon_list_by_source = attrgetter('source')
+
+
+def _sort_weapon_lists_by_source(li: list[Weapon], /) -> str:
+    return li[0].source
+
+
+def get_weapon_type(w: Weapon, /) -> str:
+    """
+    Return a proper name of the weapon type.
+    """
+    match w.weapon_type:
+        case 'Grenade Launcher' if w.ammo_type is AmmunitionType.Special:
+            return 'Breechloaded Grenade Launcher'
+
+        case 'Grenade Launcher' if w.ammo_type is AmmunitionType.Heavy:
+            return 'Drum Grenade Launcher'
+
+        case 'Combat Bow' if w.ammo_type is AmmunitionType.Heavy:
+            return 'Crossbow'
+
+        case other:
+            return other
+
+
+WEAPON_DEFINITION_CODE = f"""
+
+class {{identifier}}({RollDefinition.__name__}):
+    \"""
+    {{damage_type}} {{weapon_type}}, {{intrinsic}}
+    {{source}}
+    https://www.light.gg/db/items/{{hash}}
+    \"""
+"""
+
+
 def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
     """
     Generates weapon definitions since the given release.
     """
+    print(f'Generating weapon definitions for weapons since {release!r}...')
+
+    name2weapons: dict[str, list[Weapon]] = defaultdict(list)
+    for weapon in manifest_.iterate_legendary_weapons_since_release(release):
+        name2weapons[weapon.name].append(weapon)
+
+    for li in name2weapons.values():
+        # Place the weapon with source at start.
+        li.sort(key=_sort_weapon_list_by_source, reverse=True)
+
+    # Sort weapon lists by the source.
+    weapon_lists = sorted(name2weapons.values(), key=_sort_weapon_lists_by_source)
+    with open(WEAPON_DEFINITIONS_FILE, 'w') as f:
+        f.write(f'from {wishlist.__name__} import *\n')
+
+        for li in weapon_lists:
+            main_weapon = li[0]
+            format_params = dict(
+                identifier=name_to_python_identifier(main_weapon.name),
+                damage_type='-'.join(main_weapon.damage_types),
+                weapon_type=get_weapon_type(main_weapon),
+                intrinsic=', '.join(main_weapon.intrinsics),
+                source=main_weapon.source,
+                hash=main_weapon.hash,
+                )
+            f.write(WEAPON_DEFINITION_CODE.format_map(format_params))
+            if len(li) == 1:
+                f.write(
+                    f'    item = {Item.__name__}'
+                    f'(name={main_weapon.name!r}, hash={main_weapon.hash})\n'
+                    )
+
+            else:
+                f.write(f'    items = [\n')
+                for w in li:
+                    f.write(f'        {Item.__name__}(name={w.name!r}, hash={w.hash}),\n')
+
+                f.write('        ]\n')
+
+    print(f'Generating weapon definitions is complete')
 
 
 def generate_perk_mapping(manifest_: Manifest, /) -> None:
