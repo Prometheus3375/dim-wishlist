@@ -7,10 +7,10 @@ class Judgement(RollDefinition):
     https://www.light.gg/db/items/2226572694
     """
     items = [
-        Item(name='Judgment', hash=2226572694),
-        Item(name='Judgment (Adept)', hash=1987644603),
-        Item(name='Judgment', hash=1773934241),
-        Item(name='Judgment (Adept)', hash=3329218848),
+        Item('Judgment', hash=2226572694),
+        Item('Judgment (Adept)', hash=1987644603),
+        Item('Judgment', hash=1773934241),
+        Item('Judgment (Adept)', hash=3329218848),
         ]
     rolls = [
         Roll(
@@ -36,10 +36,10 @@ class Relentless(RollDefinition):
     https://www.light.gg/db/items/3733988413
     """
     items = [
-        Item(name='Relentless', hash=3733988413),
-        Item(name='Relentless (Adept)', hash=1827058652),
-        Item(name='Relentless', hash=3681280908),
-        Item(name='Relentless (Adept)', hash=1066598837),
+        Item('Relentless', hash=3733988413),
+        Item('Relentless (Adept)', hash=1827058652),
+        Item('Relentless', hash=3681280908),
+        Item('Relentless (Adept)', hash=1066598837),
         ]
     rolls = [
         Roll(
@@ -58,10 +58,10 @@ class Prosecutor(RollDefinition):
     https://www.light.gg/db/items/880829467
     """
     items = [
-        Item(name='Prosecutor', hash=880829467),
-        Item(name='Prosecutor (Adept)', hash=4025177550),
-        Item(name='Prosecutor', hash=2129814338),
-        Item(name='Prosecutor (Adept)', hash=749483159),
+        Item('Prosecutor', hash=880829467),
+        Item('Prosecutor (Adept)', hash=4025177550),
+        Item('Prosecutor', hash=2129814338),
+        Item('Prosecutor (Adept)', hash=749483159),
         ]
 
 
@@ -71,10 +71,10 @@ class SuddenDeath(RollDefinition):
     https://www.light.gg/db/items/1976481399
     """
     items = [
-        Item(name='A Sudden Death', hash=1976481399),
-        Item(name='A Sudden Death (Adept)', hash=1626437786),
-        Item(name='A Sudden Death', hash=1904170910),
-        Item(name='A Sudden Death (Adept)', hash=2764074355),
+        Item('A Sudden Death', hash=1976481399),
+        Item('A Sudden Death (Adept)', hash=1626437786),
+        Item('A Sudden Death', hash=1904170910),
+        Item('A Sudden Death (Adept)', hash=2764074355),
         ]
 
 
@@ -84,10 +84,10 @@ class LiminalVigil(RollDefinition):
     https://www.light.gg/db/items/2575844666
     """
     items = [
-        Item(name='Liminal Vigil', hash=2575844666),
-        Item(name='Liminal Vigil (Adept)', hash=1905934655),
-        Item(name='Liminal Vigil', hash=1460079227),
-        Item(name='Liminal Vigil (Adept)', hash=3421639790),
+        Item('Liminal Vigil', hash=2575844666),
+        Item('Liminal Vigil (Adept)', hash=1905934655),
+        Item('Liminal Vigil', hash=1460079227),
+        Item('Liminal Vigil (Adept)', hash=3421639790),
         ]
     rolls = [
         Roll(
@@ -106,10 +106,10 @@ class LongArm(RollDefinition):
     https://www.light.gg/db/items/4249949938
     """
     items = [
-        Item(name='Long Arm', hash=4249949938),
-        Item(name='Long Arm (Adept)', hash=4239378215),
-        Item(name='Long Arm', hash=14929251),
-        Item(name='Long Arm (Adept)', hash=3692140710),
+        Item('Long Arm', hash=4249949938),
+        Item('Long Arm (Adept)', hash=4239378215),
+        Item('Long Arm', hash=14929251),
+        Item('Long Arm (Adept)', hash=3692140710),
         ]
     rolls = [
         Roll(
@@ -128,10 +128,10 @@ class Wilderflight(RollDefinition):
     https://www.light.gg/db/items/1206729100
     """
     items = [
-        Item(name='Wilderflight', hash=1206729100),
-        Item(name='Wilderflight (Adept)', hash=559523765),
-        Item(name='Wilderflight', hash=2982006965),
-        Item(name='Wilderflight (Adept)', hash=2477408004),
+        Item('Wilderflight', hash=1206729100),
+        Item('Wilderflight (Adept)', hash=559523765),
+        Item('Wilderflight', hash=2982006965),
+        Item('Wilderflight (Adept)', hash=2477408004),
         ]
     rolls = [
         Roll(
@@ -150,10 +150,10 @@ class TerminusHorizon(RollDefinition):
     https://www.light.gg/db/items/3984556130
     """
     items = [
-        Item(name='Terminus Horizon', hash=3984556130),
-        Item(name='Terminus Horizon (Adept)', hash=2210806903),
-        Item(name='Terminus Horizon', hash=2730671571),
-        Item(name='Terminus Horizon (Adept)', hash=4267192886),
+        Item('Terminus Horizon', hash=3984556130),
+        Item('Terminus Horizon (Adept)', hash=2210806903),
+        Item('Terminus Horizon', hash=2730671571),
+        Item('Terminus Horizon (Adept)', hash=4267192886),
         ]
     rolls = [
         Roll(
@@ -172,10 +172,10 @@ class NoSurvivors(RollDefinition):
     https://www.light.gg/db/items/4228149269
     """
     items = [
-        Item(name='No Survivors', hash=4228149269),
-        Item(name='No Survivors (Adept)', hash=189194532),
-        Item(name='No Survivors', hash=4193602194),
-        Item(name='No Survivors (Adept)', hash=1157220231),
+        Item('No Survivors', hash=4228149269),
+        Item('No Survivors (Adept)', hash=189194532),
+        Item('No Survivors', hash=4193602194),
+        Item('No Survivors (Adept)', hash=1157220231),
         ]
     rolls = [
         Roll(
@@ -194,10 +194,10 @@ class NewPacificEpitaph(RollDefinition):
     https://www.light.gg/db/items/2059741649
     """
     items = [
-        Item(name='New Pacific Epitaph', hash=2059741649),
-        Item(name='New Pacific Epitaph (Adept)', hash=233402416),
-        Item(name='New Pacific Epitaph', hash=492673102),
-        Item(name='New Pacific Epitaph (Adept)', hash=3185151619),
+        Item('New Pacific Epitaph', hash=2059741649),
+        Item('New Pacific Epitaph (Adept)', hash=233402416),
+        Item('New Pacific Epitaph', hash=492673102),
+        Item('New Pacific Epitaph (Adept)', hash=3185151619),
         ]
     rolls = [
         Roll(
@@ -230,10 +230,10 @@ class GreasyLuck(RollDefinition):
     https://www.light.gg/db/items/2934305134
     """
     items = [
-        Item(name='Greasy Luck', hash=2934305134),
-        Item(name='Greasy Luck (Adept)', hash=3210739171),
-        Item(name='Greasy Luck', hash=1685406703),
-        Item(name='Greasy Luck (Adept)', hash=1050582210),
+        Item('Greasy Luck', hash=2934305134),
+        Item('Greasy Luck (Adept)', hash=3210739171),
+        Item('Greasy Luck', hash=1685406703),
+        Item('Greasy Luck (Adept)', hash=1050582210),
         ]
     rolls = [
         Roll(
@@ -259,10 +259,10 @@ class ColdComfort(RollDefinition):
     https://www.light.gg/db/items/291447487
     """
     items = [
-        Item(name='Cold Comfort', hash=291447487),
-        Item(name='Cold Comfort (Adept)', hash=1817605554),
-        Item(name='Cold Comfort', hash=2760833884),
-        Item(name='Cold Comfort (Adept)', hash=2126543269),
+        Item('Cold Comfort', hash=291447487),
+        Item('Cold Comfort (Adept)', hash=1817605554),
+        Item('Cold Comfort', hash=2760833884),
+        Item('Cold Comfort (Adept)', hash=2126543269),
         ]
     rolls = [
         Roll(

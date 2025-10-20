@@ -7,11 +7,11 @@ class PhoneutriaFera(RollDefinition):
     https://www.light.gg/db/items/3496887154
     """
     items = [
-        Item(name='Phoneutria Fera', hash=3496887154),
-        Item(name='Phoneutria Fera', hash=3804242792),
-        Item(name='Phoneutria Fera', hash=3804242793),
-        Item(name='Phoneutria Fera', hash=3804242794),
-        Item(name='Phoneutria Fera', hash=3804242795),
+        Item('Phoneutria Fera', hash=3496887154),
+        Item('Phoneutria Fera', hash=3804242792),
+        Item('Phoneutria Fera', hash=3804242793),
+        Item('Phoneutria Fera', hash=3804242794),
+        Item('Phoneutria Fera', hash=3804242795),
         ]
     rolls = [
         Roll(
@@ -47,11 +47,11 @@ class Ribbontail(RollDefinition):
     https://www.light.gg/db/items/3576134513
     """
     items = [
-        Item(name='Ribbontail', hash=3576134513),
-        Item(name='Ribbontail', hash=407150808),
-        Item(name='Ribbontail', hash=407150809),
-        Item(name='Ribbontail', hash=407150810),
-        Item(name='Ribbontail', hash=407150811),
+        Item('Ribbontail', hash=3576134513),
+        Item('Ribbontail', hash=407150808),
+        Item('Ribbontail', hash=407150809),
+        Item('Ribbontail', hash=407150810),
+        Item('Ribbontail', hash=407150811),
         ]
     roll = Roll(
         'Ad clear',
@@ -68,11 +68,11 @@ class Trachinus(RollDefinition):
     https://www.light.gg/db/items/3635232671
     """
     items = [
-        Item(name='Trachinus', hash=3635232671),
-        Item(name='Trachinus', hash=2888021252),
-        Item(name='Trachinus', hash=2888021253),
-        Item(name='Trachinus', hash=2888021254),
-        Item(name='Trachinus', hash=2888021255),
+        Item('Trachinus', hash=3635232671),
+        Item('Trachinus', hash=2888021252),
+        Item('Trachinus', hash=2888021253),
+        Item('Trachinus', hash=2888021254),
+        Item('Trachinus', hash=2888021255),
         ]
     rolls = [
         Roll(
@@ -108,11 +108,11 @@ class Synanceia(RollDefinition):
     https://www.light.gg/db/items/1823308496
     """
     items = [
-        Item(name='Synanceia', hash=1823308496),
-        Item(name='Synanceia', hash=2765451288),
-        Item(name='Synanceia', hash=2765451289),
-        Item(name='Synanceia', hash=2765451290),
-        Item(name='Synanceia', hash=2765451291),
+        Item('Synanceia', hash=1823308496),
+        Item('Synanceia', hash=2765451288),
+        Item('Synanceia', hash=2765451289),
+        Item('Synanceia', hash=2765451290),
+        Item('Synanceia', hash=2765451291),
         ]
     rolls = [
         Roll(

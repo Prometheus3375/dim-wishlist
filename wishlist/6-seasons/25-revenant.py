@@ -6,7 +6,7 @@ class Exuviae(RollDefinition):
     Stasis Hand Cannon, Aggressive Frame
     https://www.light.gg/db/items/2823644677
     """
-    item = Item(name='Exuviae', hash=2823644677)
+    item = Item('Exuviae', hash=2823644677)
 
 
 class Insurmountable(RollDefinition):
@@ -14,7 +14,7 @@ class Insurmountable(RollDefinition):
     Void Sidearm, Precision Frame
     https://www.light.gg/db/items/414045521
     """
-    item = Item(name='Insurmountable', hash=414045521)
+    item = Item('Insurmountable', hash=414045521)
 
 
 class VantagePoint(RollDefinition):
@@ -22,7 +22,7 @@ class VantagePoint(RollDefinition):
     Arc Pulse Rifle, Adaptive Frame
     https://www.light.gg/db/items/3830941962
     """
-    item = Item(name='Vantage Point', hash=3830941962)
+    item = Item('Vantage Point', hash=3830941962)
     _mags = [
         magazine.TacticalMag,
         magazine.AppendedMag,
@@ -43,7 +43,7 @@ class Liturgy(RollDefinition):
     Stasis Breechloaded Grenade Launcher, Double Fire
     https://www.light.gg/db/items/2599338624
     """
-    item = Item(name='Liturgy', hash=2599338624)
+    item = Item('Liturgy', hash=2599338624)
     rolls = [
         Roll(
             'Damage rotations combo',
@@ -60,7 +60,7 @@ class Sovereignty(RollDefinition):
     Void Sniper Rifle, Adaptive Frame
     https://www.light.gg/db/items/3818198556
     """
-    item = Item(name='Sovereignty', hash=3818198556)
+    item = Item('Sovereignty', hash=3818198556)
     roll = Roll(
         'Withering Gaze. Appended Mag + Backup Mag mod increase mag size to 7',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -76,7 +76,7 @@ class BitterSweet(RollDefinition):
     Arc Drum Grenade Launcher, Adaptive Frame
     https://www.light.gg/db/items/2599338625
     """
-    item = Item(name='Bitter/Sweet', hash=2599338625)
+    item = Item('Bitter/Sweet', hash=2599338625)
     rolls = [
         Roll(
             'Damage dealing',
@@ -100,7 +100,7 @@ class NoxiousVetiver(RollDefinition):
     Arc Submachine Gun, Precision Frame
     https://www.light.gg/db/items/825495813
     """
-    item = Item(name='Noxious Vetiver', hash=825495813)
+    item = Item('Noxious Vetiver', hash=825495813)
     _mags = [
         magazine.AlloyMagazine,
         magazine.FlaredMagwell,
@@ -121,7 +121,7 @@ class ScavengersFate(RollDefinition):
     Void Shotgun, Precision Frame
     https://www.light.gg/db/items/2913577176
     """
-    item = Item(name="Scavenger's Fate", hash=2913577176)
+    item = Item("Scavenger's Fate", hash=2913577176)
     roll = Roll(
         'PvP',
         [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.FullChoke],
@@ -136,7 +136,7 @@ class RedTape(RollDefinition):
     Stasis Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/3423493037
     """
-    item = Item(name='Red Tape', hash=3423493037)
+    item = Item('Red Tape', hash=3423493037)
     _barrels = [barrel.ArrowheadBrake, AnyPerk]
     _mags = [
         magazine.TacticalMag,
@@ -167,7 +167,7 @@ class HereticsFervor(RollDefinition):
     Stasis Rocket Launcher, Aggressive Frame
     https://www.light.gg/db/items/4224667951
     """
-    item = Item(name="Heretic's Fervor", hash=4224667951)
+    item = Item("Heretic's Fervor", hash=4224667951)
     roll = Roll(
         'Damage dealing',
         [launcher_barrel.QuickLaunch, AnyPerk],
@@ -182,7 +182,7 @@ class ChromaRush(RollDefinition):
     Kinetic Auto Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2598420927
     """
-    item = Item(name='Chroma Rush', hash=2598420927)
+    item = Item('Chroma Rush', hash=2598420927)
     _mags = [
         magazine.AlloyMagazine,
         magazine.FlaredMagwell,
@@ -212,7 +212,7 @@ class Gridskipper(RollDefinition):
     Void Pulse Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/3433930495
     """
-    item = Item(name='Gridskipper', hash=3433930495)
+    item = Item('Gridskipper', hash=3433930495)
     roll = Roll(
         'PvE',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -227,7 +227,7 @@ class IgnitionCode(RollDefinition):
     Kinetic Breechloaded Grenade Launcher, Lightweight Frame
     https://www.light.gg/db/items/2761869150
     """
-    item = Item(name='Ignition Code', hash=2761869150)
+    item = Item('Ignition Code', hash=2761869150)
 
 
 class SojournersTale(RollDefinition):
@@ -235,7 +235,7 @@ class SojournersTale(RollDefinition):
     Solar Shotgun, Pinpoint Slug Frame
     https://www.light.gg/db/items/2130875369
     """
-    item = Item(name="Sojourner's Tale", hash=2130875369)
+    item = Item("Sojourner's Tale", hash=2130875369)
     roll = Roll(
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],

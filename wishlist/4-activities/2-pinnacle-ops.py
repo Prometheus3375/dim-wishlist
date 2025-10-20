@@ -6,7 +6,7 @@ class PreAstyanaxIV(RollDefinition):
     Solar Combat Bow, Precision Frame
     https://www.light.gg/db/items/471764396
     """
-    item = Item(name='Pre Astyanax IV', hash=471764396)
+    item = Item('Pre Astyanax IV', hash=471764396)
     roll = Roll(
         'Solar combo',
         [bowstring.ElasticString, AnyPerk],
@@ -21,7 +21,7 @@ class ForcedMemorializer(RollDefinition):
     Kinetic Scout Rifle, Precision Frame
     https://www.light.gg/db/items/1197073834
     """
-    item = Item(name='Forced Memorializer', hash=1197073834)
+    item = Item('Forced Memorializer', hash=1197073834)
     rolls = [
         Roll(
             'PvE',
@@ -45,7 +45,7 @@ class SeraphineHaze(RollDefinition):
     Stasis Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/1524387902
     """
-    item = Item(name='Seraphine Haze', hash=1524387902)
+    item = Item('Seraphine Haze', hash=1524387902)
     rolls = [
         Roll(
             'Stasis combo',
@@ -72,7 +72,7 @@ class Lionfish4FR(RollDefinition):
     Stasis Fusion Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2423071981
     """
-    item = Item(name='Lionfish-4FR', hash=2423071981)
+    item = Item('Lionfish-4FR', hash=2423071981)
     rolls = [
         Roll(
             'Chill Clip',
@@ -96,7 +96,7 @@ class MintRetrograde(RollDefinition):
     Strand Pulse Rifle, Rocket-Assisted Frame
     https://www.light.gg/db/items/42435996
     """
-    item = Item(name='Mint Retrograde', hash=42435996)
+    item = Item('Mint Retrograde', hash=42435996)
     rolls = [
         Roll(
             'Ad clear',
@@ -120,7 +120,7 @@ class Theodolite(RollDefinition):
     Arc Breechloaded Grenade Launcher, Micro-Missile Frame
     https://www.light.gg/db/items/4146673635
     """
-    item = Item(name='Theodolite', hash=4146673635)
+    item = Item('Theodolite', hash=4146673635)
     rolls = [
         Roll(
             'PvE',
@@ -140,7 +140,7 @@ class OutrageousFortune(RollDefinition):
     Solar Drum Grenade Launcher, Rapid-Fire Frame
     https://www.light.gg/db/items/4146673634
     """
-    item = Item(name='Outrageous Fortune', hash=4146673634)
+    item = Item('Outrageous Fortune', hash=4146673634)
     rolls = [
         Roll(
             'Damage dealing',

@@ -7,8 +7,8 @@ class YesterdaysQuestion(RollDefinition):
     https://www.light.gg/db/items/2300143112
     """
     items = [
-        Item(name="Yesterday's Question", hash=2300143112),
-        Item(name="Yesterday's Question (Adept)", hash=2378785953),
+        Item("Yesterday's Question", hash=2300143112),
+        Item("Yesterday's Question (Adept)", hash=2378785953),
         ]
     roll = Roll(
         'Damage dealing with Lucky Pants',
@@ -23,8 +23,8 @@ class ExaltedTruth(RollDefinition):
     https://www.light.gg/db/items/3436626079
     """
     items = [
-        Item(name='Exalted Truth', hash=3436626079),
-        Item(name='Exalted Truth (Adept)', hash=1201528146),
+        Item('Exalted Truth', hash=3436626079),
+        Item('Exalted Truth (Adept)', hash=1201528146),
         ]
     rolls = [
         Roll(
@@ -46,8 +46,8 @@ class KeenThistle(RollDefinition):
     https://www.light.gg/db/items/1893967086
     """
     items = [
-        Item(name='Keen Thistle', hash=1893967086),
-        Item(name='Keen Thistle (Adept)', hash=3503560035),
+        Item('Keen Thistle', hash=1893967086),
+        Item('Keen Thistle (Adept)', hash=3503560035),
         ]
 
 
@@ -57,8 +57,8 @@ class Inquisitor(RollDefinition):
     https://www.light.gg/db/items/51129316
     """
     items = [
-        Item(name='The Inquisitor', hash=51129316),
-        Item(name='The Inquisitor (Adept)', hash=2330860573),
+        Item('The Inquisitor', hash=51129316),
+        Item('The Inquisitor (Adept)', hash=2330860573),
         ]
 
 
@@ -71,8 +71,8 @@ class TomorrowsAnswer(RollDefinition):
     https://www.light.gg/db/items/3009199534
     """
     items = [
-        Item(name="Tomorrow's Answer", hash=3009199534),
-        Item(name="Tomorrow's Answer (Adept)", hash=303107619),
+        Item("Tomorrow's Answer", hash=3009199534),
+        Item("Tomorrow's Answer (Adept)", hash=303107619),
         ]
     rolls = [
         Roll(

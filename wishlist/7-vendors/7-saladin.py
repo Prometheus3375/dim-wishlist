@@ -6,7 +6,7 @@ class Peacebond(RollDefinition):
     Stasis Sidearm, Adaptive Burst
     https://www.light.gg/db/items/3437370193
     """
-    item = Item(name='Peacebond', hash=3437370193)
+    item = Item('Peacebond', hash=3437370193)
     roll = Roll(
         'PvE',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -21,7 +21,7 @@ class NatureReclaimed(RollDefinition):
     Solar Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/2639921391
     """
-    item = Item(name='Nature Reclaimed', hash=2639921391)
+    item = Item('Nature Reclaimed', hash=2639921391)
     rolls = [
         Roll(
             'Shoot to Loot',
@@ -48,7 +48,7 @@ class TinashasMastery(RollDefinition):
     Stasis Sidearm, Rocket-Assisted Frame
     https://www.light.gg/db/items/480368036
     """
-    item = Item(name="Tinasha's Mastery", hash=480368036)
+    item = Item("Tinasha's Mastery", hash=480368036)
     _mag_note = """.
         High-Explosive Ordnance with Backup Mag mod gives the maximum reserves,
         Tactical Mag with Backup Mag mod is the second best
@@ -77,7 +77,7 @@ class WarlordsSpear(RollDefinition):
     Arc Trace Rifle, Adaptive Frame
     https://www.light.gg/db/items/1968711238
     """
-    item = Item(name="Warlord's Spear", hash=1968711238)
+    item = Item("Warlord's Spear", hash=1968711238)
     rolls = [
         Roll(
             'Jolting Feedback',
@@ -104,7 +104,7 @@ class ArchonsThunder(RollDefinition):
     Stasis Machine Gun, High-Impact Frame
     https://www.light.gg/db/items/2896109856
     """
-    item = Item(name="Archon's Thunder", hash=2896109856)
+    item = Item("Archon's Thunder", hash=2896109856)
     _mags = [
         magazine.AppendedMag,
         magazine.AlloyMagazine,

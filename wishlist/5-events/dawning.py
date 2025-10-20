@@ -6,7 +6,7 @@ class StayFrosty(RollDefinition):
     Stasis Pulse Rifle, Lightweight Frame
     https://www.light.gg/db/items/1123433952
     """
-    item = Item(name='Stay Frosty', hash=1123433952)
+    item = Item('Stay Frosty', hash=1123433952)
     roll = Roll(
         'Stasis combo',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -26,7 +26,7 @@ class Glacioclasm(RollDefinition):
     Void Fusion Rifle, High-Impact Frame
     https://www.light.gg/db/items/1183116657
     """
-    item = Item(name='Glacioclasm', hash=1183116657)
+    item = Item('Glacioclasm', hash=1183116657)
     rolls = [
         Roll(
             """
@@ -62,7 +62,7 @@ class MistralLift(RollDefinition):
     Void Linear Fusion Rifle, Adaptive Burst
     https://www.light.gg/db/items/3483485727
     """
-    item = Item(name='Mistral Lift', hash=3483485727)
+    item = Item('Mistral Lift', hash=3483485727)
     roll = Roll(
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -83,7 +83,7 @@ class Zephyr(RollDefinition):
     Stasis Sword, Adaptive Frame
     https://www.light.gg/db/items/601948197
     """
-    item = Item(name='Zephyr', hash=601948197)
+    item = Item('Zephyr', hash=601948197)
     rolls = [
         Roll(
             'Damage dealing',

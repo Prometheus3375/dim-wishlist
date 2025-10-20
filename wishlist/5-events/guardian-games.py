@@ -6,7 +6,7 @@ class Taraxippos(RollDefinition):
     Strand Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/2595813005
     """
-    item = Item(name='Taraxippos', hash=2595813005)
+    item = Item('Taraxippos', hash=2595813005)
 
 
 class Title(RollDefinition):
@@ -14,7 +14,7 @@ class Title(RollDefinition):
     Void Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/55393445
     """
-    item = Item(name='The Title', hash=55393445)
+    item = Item('The Title', hash=55393445)
     rolls = [
         Roll(
             'Void combo',
@@ -38,7 +38,7 @@ class Keraunios(RollDefinition):
     Arc Trace Rifle, Adaptive Frame
     https://www.light.gg/db/items/2029899814
     """
-    item = Item(name='Keraunios', hash=2029899814)
+    item = Item('Keraunios', hash=2029899814)
     rolls = [
         Roll(
             'PvE',
@@ -62,7 +62,7 @@ class Hullabaloo(RollDefinition):
     Arc Drum Grenade Launcher, Compressed Wave Frame
     https://www.light.gg/db/items/2666273249
     """
-    item = Item(name='Hullabaloo', hash=2666273249)
+    item = Item('Hullabaloo', hash=2666273249)
     rolls = [
         Roll(
             'Ad clear',

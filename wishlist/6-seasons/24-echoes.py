@@ -6,7 +6,7 @@ class Breachlight(RollDefinition):
     Strand Sidearm, Heavy Burst
     https://www.light.gg/db/items/2328923181
     """
-    item = Item(name='Breachlight', hash=2328923181)
+    item = Item('Breachlight', hash=2328923181)
     _mags = [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk]
     rolls = [
         Roll(
@@ -35,7 +35,7 @@ class PatronOfLostCauses(RollDefinition):
     Kinetic Scout Rifle, Lightweight Frame
     https://www.light.gg/db/items/2249996761
     """
-    item = Item(name='Patron of Lost Causes', hash=2249996761)
+    item = Item('Patron of Lost Causes', hash=2249996761)
     rolls = [
         Roll(
             'Classic PvE combo for a scout rifle',
@@ -59,7 +59,7 @@ class PerfectParadox(RollDefinition):
     Kinetic Shotgun, Rapid-Fire Frame
     https://www.light.gg/db/items/1298672084
     """
-    item = Item(name='Perfect Paradox', hash=1298672084)
+    item = Item('Perfect Paradox', hash=1298672084)
     _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
     _mags = [magazine.TacticalMag, magazine.LightMag]
     rolls = [
@@ -89,7 +89,7 @@ class MartyrsRetribution(RollDefinition):
     Solar Breechloaded Grenade Launcher, Wave Frame
     https://www.light.gg/db/items/2584830733
     """
-    item = Item(name="Martyr's Retribution", hash=2584830733)
+    item = Item("Martyr's Retribution", hash=2584830733)
     rolls = [
         Roll(
             """
@@ -129,7 +129,7 @@ class LineInTheSand(RollDefinition):
     Arc Linear Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/2450049485
     """
-    item = Item(name='Line in the Sand', hash=2450049485)
+    item = Item('Line in the Sand', hash=2450049485)
     roll = Roll(
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],

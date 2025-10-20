@@ -6,7 +6,7 @@ class SolemnRemembrance(RollDefinition):
     Stasis Hand Cannon, Precision Frame
     https://www.light.gg/db/items/4116518582
     """
-    item = Item(name='Solemn Remembrance', hash=4116518582)
+    item = Item('Solemn Remembrance', hash=4116518582)
     rolls = [
         Roll(
             'Ad clear',

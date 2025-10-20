@@ -6,7 +6,7 @@ class PyroelectricPropellant(RollDefinition):
     Arc Auto Rifle, Adaptive Frame
     https://www.light.gg/db/items/4232480042
     """
-    item = Item(name='VS Pyroelectric Propellant', hash=4232480042)
+    item = Item('VS Pyroelectric Propellant', hash=4232480042)
     roll = Roll(
         'Ad clear',
         [trait.AttritionOrbs, trait.EddyCurrent, trait.Strategist],
@@ -19,7 +19,7 @@ class GraviticArrest(RollDefinition):
     Void Fusion Rifle, Adaptive Frame
     https://www.light.gg/db/items/93061497
     """
-    item = Item(name='VS Gravitic Arrest', hash=93061497)
+    item = Item('VS Gravitic Arrest', hash=93061497)
     rolls = [
         Roll(
             'Withering Gaze',
@@ -36,7 +36,7 @@ class VelocityBaton(RollDefinition):
     Void Breechloaded Grenade Launcher, Area Denial Frame
     https://www.light.gg/db/items/1762785663
     """
-    item = Item(name='VS Velocity Baton', hash=1762785663)
+    item = Item('VS Velocity Baton', hash=1762785663)
     rolls = [
         Roll(
             'Attrition Orbs',
@@ -67,7 +67,7 @@ class ChillInhibitor(RollDefinition):
     Stasis Drum Grenade Launcher, Rapid-Fire Frame
     https://www.light.gg/db/items/1762785662
     """
-    item = Item(name='VS Chill Inhibitor', hash=1762785662)
+    item = Item('VS Chill Inhibitor', hash=1762785662)
     rolls = [
         Roll(
             'Damage dealing',

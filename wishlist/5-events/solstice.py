@@ -7,8 +7,8 @@ class FortunateStar(RollDefinition):
     https://www.light.gg/db/items/2631466936
     """
     items = [
-        Item(name='Fortunate Star', hash=2631466936),
-        Item(name='Fortunate Star', hash=591672323),
+        Item('Fortunate Star', hash=2631466936),
+        Item('Fortunate Star', hash=591672323),
         ]
     rolls = [
         Roll(
@@ -34,8 +34,8 @@ class YeartideApex(RollDefinition):
     https://www.light.gg/db/items/3293207827
     """
     items = [
-        Item(name='Yeartide Apex', hash=3293207827),
-        Item(name='Yeartide Apex', hash=2965080304),
+        Item('Yeartide Apex', hash=3293207827),
+        Item('Yeartide Apex', hash=2965080304),
         ]
     rolls = [
         Roll(
@@ -64,8 +64,8 @@ class FestivalFlight(RollDefinition):
     https://www.light.gg/db/items/4019651319
     """
     items = [
-        Item(name='Festival Flight', hash=4019651319),
-        Item(name='Festival Flight', hash=3977654524),
+        Item('Festival Flight', hash=4019651319),
+        Item('Festival Flight', hash=3977654524),
         ]
     rolls = [
         Roll(

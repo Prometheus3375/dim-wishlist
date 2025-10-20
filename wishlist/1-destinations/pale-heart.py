@@ -6,7 +6,7 @@ class ErgoSum(RollDefinition):
     Exotic Sword on Special Ammo
     https://www.light.gg/db/items/1681583613
     """
-    item = ErgoSum = Item(name='Ergo Sum', hash=1681583613)
+    item = ErgoSum = Item('Ergo Sum', hash=1681583613)
     _blades = [blade.EnduringBlade, AnyPerk]
     _dmg_note = """
         Damage dealing. Blade and guard is not that important.
@@ -70,7 +70,7 @@ class Relativism(RollDefinition):
     Hunter Exotic Class Item
     https://www.light.gg/db/items/2809120022
     """
-    item = Item(name='Relativism', hash=2809120022)
+    item = Item('Relativism', hash=2809120022)
     rolls = [
         Roll(
             _note_spirit_of_the_star_eater,
@@ -116,7 +116,7 @@ class Stoicism(RollDefinition):
     Titan Exotic Class Item
     https://www.light.gg/db/items/266021826
     """
-    item = Item(name='Stoicism', hash=266021826)
+    item = Item('Stoicism', hash=266021826)
     rolls = [
         Roll(
             _note_spirit_of_the_star_eater,
@@ -152,7 +152,7 @@ class Solipsism(RollDefinition):
     Warlock Exotic Class Item
     https://www.light.gg/db/items/2273643087
     """
-    item = Item(name='Solipsism', hash=2273643087)
+    item = Item('Solipsism', hash=2273643087)
     rolls = [
         Roll(
             f"""

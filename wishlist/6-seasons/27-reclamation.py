@@ -10,11 +10,11 @@ class RomanticDeath(RollDefinition):
     https://www.light.gg/db/items/4169082039
     """
     items = [
-        Item(name='Romantic Death', hash=4169082039),
-        Item(name='Romantic Death', hash=2979965244),
-        Item(name='Romantic Death', hash=2979965245),
-        Item(name='Romantic Death', hash=2979965246),
-        Item(name='Romantic Death', hash=2979965247),
+        Item('Romantic Death', hash=4169082039),
+        Item('Romantic Death', hash=2979965244),
+        Item('Romantic Death', hash=2979965245),
+        Item('Romantic Death', hash=2979965246),
+        Item('Romantic Death', hash=2979965247),
         ]
     rolls = [
         Roll(
@@ -43,11 +43,11 @@ class FoldedRoot(RollDefinition):
     https://www.light.gg/db/items/2725894221
     """
     items = [
-        Item(name='Folded Root', hash=2725894221),
-        Item(name='Folded Root', hash=3184457500),
-        Item(name='Folded Root', hash=3184457501),
-        Item(name='Folded Root', hash=3184457502),
-        Item(name='Folded Root', hash=3184457503),
+        Item('Folded Root', hash=2725894221),
+        Item('Folded Root', hash=3184457500),
+        Item('Folded Root', hash=3184457501),
+        Item('Folded Root', hash=3184457502),
+        Item('Folded Root', hash=3184457503),
         ]
     roll = Roll(
         'Damage dealing',
@@ -64,8 +64,8 @@ class Submersion(RollDefinition):
     https://www.light.gg/db/items/3524386983
     """
     items = [
-        Item(name='Submersion', hash=3524386983),
-        Item(name='Submersion', hash=1724104236),
+        Item('Submersion', hash=3524386983),
+        Item('Submersion', hash=1724104236),
         ]
     rolls = [
         Roll(

@@ -7,8 +7,8 @@ class HushedWhisper(RollDefinition):
     https://www.light.gg/db/items/1175295126
     """
     items = [
-        Item(name='Hushed Whisper', hash=1175295126),
-        Item(name='Hushed Whisper', hash=3574168117),
+        Item('Hushed Whisper', hash=1175295126),
+        Item('Hushed Whisper', hash=3574168117),
         ]
     rolls = [
         Roll(
@@ -27,8 +27,8 @@ class Gunburn(RollDefinition):
     https://www.light.gg/db/items/3431536253
     """
     items = [
-        Item(name='Gunburn', hash=3431536253),
-        Item(name='Gunburn', hash=72775246),
+        Item('Gunburn', hash=3431536253),
+        Item('Gunburn', hash=72775246),
         ]
     rolls = [
         Roll(
@@ -64,8 +64,8 @@ class ArcaneEmbrace(RollDefinition):
     https://www.light.gg/db/items/3328019216
     """
     items = [
-        Item(name='Arcane Embrace', hash=3328019216),
-        Item(name='Arcane Embrace', hash=1813474267),
+        Item('Arcane Embrace', hash=3328019216),
+        Item('Arcane Embrace', hash=1813474267),
         ]
     roll = Roll(
         'Damage dealing',

@@ -6,7 +6,7 @@ class AnonymousAutumn(RollDefinition):
     Arc Sidearm, Lightweight Frame
     https://www.light.gg/db/items/1051949956
     """
-    item = Item(name='Anonymous Autumn', hash=1051949956)
+    item = Item('Anonymous Autumn', hash=1051949956)
     roll = Roll(
         'PvE',
         [trait.EddyCurrent, trait.AttritionOrbs, trait.Demolitionist],
@@ -19,7 +19,7 @@ class JoxersLongsword(RollDefinition):
     Void Pulse Rifle, Heavy Burst
     https://www.light.gg/db/items/157601190
     """
-    item = Item(name="Joxer's Longsword", hash=157601190)
+    item = Item("Joxer's Longsword", hash=157601190)
     rolls = [
         Roll(
             'Ad clear',

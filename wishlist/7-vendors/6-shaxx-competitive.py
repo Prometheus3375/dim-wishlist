@@ -6,7 +6,7 @@ class RedrixsEstoc(RollDefinition):
     Stasis Pulse Rifle, Legacy PR-55 Frame
     https://www.light.gg/db/items/3218364298
     """
-    item = Item(name="Redrix's Estoc", hash=3218364298)
+    item = Item("Redrix's Estoc", hash=3218364298)
     rolls = [
         Roll(
             'PvP',
@@ -42,7 +42,7 @@ class Deadlock(RollDefinition):
     Stasis Shotgun, Precision Frame
     https://www.light.gg/db/items/2035738085
     """
-    item = Item(name='Deadlock', hash=2035738085)
+    item = Item('Deadlock', hash=2035738085)
     roll = Roll(
         'PvP',
         [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.FullChoke],

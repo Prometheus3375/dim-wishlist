@@ -6,7 +6,7 @@ class StarsInShadow(RollDefinition):
     Solar Pulse Rifle, High-Impact Frame
     https://www.light.gg/db/items/3602242905
     """
-    item = Item(name='Stars In Shadow', hash=3602242905)
+    item = Item('Stars In Shadow', hash=3602242905)
 
 
 # Special
@@ -17,7 +17,7 @@ class PureRecollection(RollDefinition):
     Void Shotgun, Heavy Burst
     https://www.light.gg/db/items/1956186483
     """
-    item = Item(name='Void Shotgun', hash=1956186483)
+    item = Item('Void Shotgun', hash=1956186483)
 
 
 class ReturnedMemory(RollDefinition):
@@ -25,7 +25,7 @@ class ReturnedMemory(RollDefinition):
     Solar Sidearm, Rocket-Assisted Frame
     https://www.light.gg/db/items/4049127142
     """
-    item = Item(name='Returned Memory', hash=4049127142)
+    item = Item('Returned Memory', hash=4049127142)
     rolls = [
         Roll(
             """
@@ -55,7 +55,7 @@ class MIDAMacroTool(RollDefinition):
     Arc Shotgun, Precision Frame
     https://www.light.gg/db/items/2699423382
     """
-    item = Item(name='MIDA Macro-Tool', hash=2699423382)
+    item = Item('MIDA Macro-Tool', hash=2699423382)
     roll = Roll(
         'PvP',
         [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],

@@ -7,7 +7,7 @@ class DedGramaryeIV(RollDefinition):
     Ark Shotgun, Lightweight Frame
     https://www.light.gg/db/items/499245245
     """
-    item = Item(name='Ded Gramarye IV', hash=499245245)
+    item = Item('Ded Gramarye IV', hash=499245245)
     _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
     rolls = [
         Roll(
@@ -38,7 +38,7 @@ class QuaFurorV(RollDefinition):
     Stasis Machine Gun, Aggressive Frame
     https://www.light.gg/db/items/751880654
     """
-    item = Item(name='Qua Furor V', hash=751880654)
+    item = Item('Qua Furor V', hash=751880654)
     roll = Roll(
         'PvE',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -55,7 +55,7 @@ class LiveFire(RollDefinition):
     Stasis Scout Rifle, Precision Frame
     https://www.light.gg/db/items/3612142623
     """
-    item = Item(name='Live Fire', hash=3612142623)
+    item = Item('Live Fire', hash=3612142623)
     rolls = [
         Roll(
             'Shoot to Loot',
@@ -77,7 +77,7 @@ class VeledaF(RollDefinition):
     Void Sniper Rifle, Aggressive Frame
     https://www.light.gg/db/items/4200122994
     """
-    item = Item(name='Veleda-F', hash=4200122994)
+    item = Item('Veleda-F', hash=4200122994)
     roll = Roll(
         'Withering Gaze',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -92,7 +92,7 @@ class AdmetusD(RollDefinition):
     Void Scout Rifle, High-Impact Frame
     https://www.light.gg/db/items/3776430252
     """
-    item = Item(name='Admetus-D', hash=3776430252)
+    item = Item('Admetus-D', hash=3776430252)
     roll = Roll(
         'Withering Gaze',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -109,7 +109,7 @@ class YarovitMG4(RollDefinition):
     Stasis Submachine Gun, Lightweight Frame
     https://www.light.gg/db/items/3959549446
     """
-    item = Item(name='Yarovit MG4', hash=3959549446)
+    item = Item('Yarovit MG4', hash=3959549446)
     roll = Roll(
         'PvE',
         [trait.Strategist, trait.EnlightenedAction],
@@ -124,7 +124,7 @@ class Legato11(RollDefinition):
     Solar Shotgun, Pinpoint Slug Frame
     https://www.light.gg/db/items/3753063346
     """
-    item = Item(name='Legato-11', hash=3753063346)
+    item = Item('Legato-11', hash=3753063346)
     roll = Roll(
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -139,7 +139,7 @@ class CruorisFR4(RollDefinition):
     Arc Fusion Rifle, Aggressive Frame
     https://www.light.gg/db/items/891996636
     """
-    item = Item(name='Cruoris FR4', hash=891996636)
+    item = Item('Cruoris FR4', hash=891996636)
 
 
 # endregion
@@ -149,7 +149,7 @@ class BoondoggleMk55(RollDefinition):
     Kinetic Submachine Gun, Aggressive Frame
     https://www.light.gg/db/items/32287609
     """
-    item = Item(name='Boondoggle Mk. 55', hash=32287609)
+    item = Item('Boondoggle Mk. 55', hash=32287609)
     rolls = [
         Roll(
             'Hip-Fire',
@@ -168,7 +168,7 @@ class Suspectum4FR(RollDefinition):
     Stasis Linear Fusion Rifle, Precision Frame
     https://www.light.gg/db/items/3615421669
     """
-    item = Item(name='Suspectum-4FR', hash=3615421669)
+    item = Item('Suspectum-4FR', hash=3615421669)
     rolls = [
         Roll(
             'Damage dealing',

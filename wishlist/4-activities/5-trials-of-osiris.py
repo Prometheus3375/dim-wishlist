@@ -6,7 +6,7 @@ class AuricDisabler(RollDefinition):
     Strand Auto Rifle, Precision Frame
     https://www.light.gg/db/items/702001725
     """
-    item = Item(name='Auric Disabler', hash=702001725)
+    item = Item('Auric Disabler', hash=702001725)
     roll = Roll(
         'PvE',
         [barrel.ArrowheadBrake, AnyPerk],
@@ -21,7 +21,7 @@ class AureusNeutralizer(RollDefinition):
     Kinetic Hand Cannon, Spread Shot
     https://www.light.gg/db/items/3981920134
     """
-    item = Item(name='Aureus Neutralizer', hash=3981920134)
+    item = Item('Aureus Neutralizer', hash=3981920134)
     rolls = [
         Roll(
             'Damage dealing',
@@ -52,7 +52,7 @@ class EverburningGlitz(RollDefinition):
     Kinetic Auto Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/2857870254
     """
-    item = Item(name='Everburning Glitz', hash=2857870254)
+    item = Item('Everburning Glitz', hash=2857870254)
     rolls = [
         Roll(
             'Attrition Orbs',
@@ -76,7 +76,7 @@ class AishasEmbrace(RollDefinition):
     Void Scout Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/3709368142
     """
-    item = Item(name="Aisha's Embrace", hash=3709368142)
+    item = Item("Aisha's Embrace", hash=3709368142)
     rolls = [
         Roll(
             'Ad clear',
@@ -100,7 +100,7 @@ class Forgiveness(RollDefinition):
     Arc Sidearm, Heavy Burst
     https://www.light.gg/db/items/1552443158
     """
-    item = Item(name='Forgiveness', hash=1552443158)
+    item = Item('Forgiveness', hash=1552443158)
 
 
 # Special
@@ -111,7 +111,7 @@ class BurdenOfGuilt(RollDefinition):
     Stasis Fusion Rifle, Adaptive Frame
     https://www.light.gg/db/items/976459525
     """
-    item = Item(name='Burden Of Guilt', hash=976459525)
+    item = Item('Burden Of Guilt', hash=976459525)
     rolls = [
         Roll(
             'Stasis combo',
@@ -131,7 +131,7 @@ class UnwaveringDuty(RollDefinition):
     Solar Machine Gun, Adaptive Frame
     https://www.light.gg/db/items/3489054606
     """
-    item = Item(name='Unwavering Duty', hash=3489054606)
+    item = Item('Unwavering Duty', hash=3489054606)
     rolls = [
         Roll(
             'Ad clear',

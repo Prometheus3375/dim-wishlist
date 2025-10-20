@@ -6,7 +6,7 @@ class GiversBlessing(RollDefinition):
     Kinetic Auto Rifle, Rapid-Fire Frame
     https://www.light.gg/db/items/970034755
     """
-    item = Item(name="Giver's Blessing", hash=970034755)
+    item = Item("Giver's Blessing", hash=970034755)
     rolls = [
         Roll(
             'Kinetic Tremors',
@@ -37,7 +37,7 @@ class LastThursday(RollDefinition):
     Strand Pulse Rifle, Adaptive Frame
     https://www.light.gg/db/items/3813721211
     """
-    item = Item(name='Last Thursday', hash=3813721211)
+    item = Item('Last Thursday', hash=3813721211)
     rolls = [
         Roll(
             'Slice',
@@ -61,7 +61,7 @@ class Agape(RollDefinition):
     Solar Hand Cannon, Heavy Burst
     https://www.light.gg/db/items/4124362340
     """
-    item = Item(name='Agape', hash=4124362340)
+    item = Item('Agape', hash=4124362340)
     rolls = [
         Roll(
             'Lucky Pants combo',
@@ -85,7 +85,7 @@ class Sublimation(RollDefinition):
     Arc Scout Rifle, High-Impact Frame
     https://www.light.gg/db/items/1674692344
     """
-    item = Item(name='Sublimation', hash=1674692344)
+    item = Item('Sublimation', hash=1674692344)
 
 
 # Special
@@ -96,7 +96,7 @@ class Precipial(RollDefinition):
     Void Shotgun, Precision Frame
     https://www.light.gg/db/items/367772693
     """
-    item = Item(name='Precipial', hash=367772693)
+    item = Item('Precipial', hash=367772693)
 
 
 # Heavy
@@ -107,7 +107,7 @@ class UlteriorObservation(RollDefinition):
     Stasis Machine Gun, Aggressive Frame
     https://www.light.gg/db/items/1079872540
     """
-    item = Item(name='Ulterior Observation', hash=1079872540)
+    item = Item('Ulterior Observation', hash=1079872540)
     rolls = [
         Roll(
             'Stasis combo',

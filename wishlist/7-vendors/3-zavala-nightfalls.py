@@ -7,8 +7,8 @@ class Palindrome(RollDefinition):
     https://www.light.gg/db/items/2876244791
     """
     items = [
-        Item(name='The Palindrome', hash=2876244791),
-        Item(name='The Palindrome (Adept)', hash=4077588826),
+        Item('The Palindrome', hash=2876244791),
+        Item('The Palindrome (Adept)', hash=4077588826),
         ]
     roll = Roll(
         'PvE',
@@ -26,8 +26,8 @@ class CruelMercy(RollDefinition):
     https://www.light.gg/db/items/233635202
     """
     items = [
-        Item(name='Cruel Mercy', hash=233635202),
-        Item(name='Cruel Mercy (Adept)', hash=2347178967),
+        Item('Cruel Mercy', hash=233635202),
+        Item('Cruel Mercy (Adept)', hash=2347178967),
         ]
     rolls = [
         Roll(
@@ -56,8 +56,8 @@ class RakeAngle(RollDefinition):
     https://www.light.gg/db/items/2298039571
     """
     items = [
-        Item(name='Rake Angle', hash=2298039571),
-        Item(name='Rake Angle (Adept)', hash=3997086838),
+        Item('Rake Angle', hash=2298039571),
+        Item('Rake Angle (Adept)', hash=3997086838),
         ]
     roll = Roll(
         """
@@ -79,8 +79,8 @@ class LotusEater(RollDefinition):
     https://www.light.gg/db/items/3922217119
     """
     items = [
-        Item(name='Lotus-Eater', hash=3922217119),
-        Item(name='Lotus-Eater (Adept)', hash=2697143634),
+        Item('Lotus-Eater', hash=3922217119),
+        Item('Lotus-Eater (Adept)', hash=2697143634),
         ]
     rolls = [
         Roll(
@@ -116,8 +116,8 @@ class Scintillation(RollDefinition):
     https://www.light.gg/db/items/2591257541
     """
     items = [
-        Item(name='Scintillation', hash=2591257541),
-        Item(name='Scintillation (Adept)', hash=1492522228),
+        Item('Scintillation', hash=2591257541),
+        Item('Scintillation (Adept)', hash=1492522228),
         ]
     rolls = [
         Roll(

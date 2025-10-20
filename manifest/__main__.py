@@ -368,13 +368,13 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
             if len(li) == 1:
                 f.write(
                     f'    item = {Item.__name__}'
-                    f'(name={main_weapon.name!r}, hash={main_weapon.hash})\n'
+                    f'({main_weapon.name!r}, hash={main_weapon.hash})\n'
                     )
 
             else:
                 f.write(f'    items = [\n')
                 for w in li:
-                    f.write(f'        {Item.__name__}(name={w.name!r}, hash={w.hash}),\n')
+                    f.write(f'        {Item.__name__}({w.name!r}, hash={w.hash}),\n')
 
                 f.write('        ]\n')
 

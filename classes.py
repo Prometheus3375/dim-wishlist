@@ -7,7 +7,7 @@ from typing import Any, ClassVar, Self, TextIO, TypeGuard
 __all__ = 'Item', 'Perk', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
 
 
-@dataclass(frozen=True, kw_only=True, slots=True)
+@dataclass(frozen=True, slots=True)
 class Item:
     """
     A common class for armor, weapons, perks, categories, etc.
@@ -17,13 +17,15 @@ class Item:
     name: str
     hash: int
 
-    # noinspection PyDataclass
-    def __post_init__(self, /) -> None:
-        existing = self._hash2item.get(self.hash)
+    # noinspection PyShadowingBuiltins
+    def __init__(self, name: str, /, *, hash: int) -> None:
+        existing = self._hash2item.get(hash)
         if existing:
-            raise ValueError(f'item with hash {self.hash} already exists')
+            raise ValueError(f'item with hash {hash} already exists')
 
-        self._hash2item[self.hash] = self
+        object.__setattr__(self, 'name', name)
+        object.__setattr__(self, 'hash', hash)
+        self._hash2item[hash] = self
 
     @classmethod
     def from_hash(cls, hash_: int, /) -> Self | None:
@@ -81,8 +83,7 @@ class Perk(Item):
         return self.hash
 
     def __init__(self, name: str, /, *, regular: int, enhanced: int = 0) -> None:
-        super(Perk, self).__init__(name=name, hash=regular)
-        object.__setattr__(self, 'enhanced', enhanced)
+        super(Perk, self).__init__(name, hash=regular)
 
         if enhanced > 0:
             existing = self._hash2item.get(enhanced)
@@ -91,8 +92,10 @@ class Perk(Item):
 
             self._hash2item[enhanced] = self
 
+        object.__setattr__(self, 'enhanced', enhanced)
 
-AnyItem = Item(name='DIM Wildcard', hash=-69420)
+
+AnyItem = Item('DIM Wildcard', hash=-69420)
 """
 Special item for DIM to denote any item.
 """

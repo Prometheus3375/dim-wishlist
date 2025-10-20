@@ -6,7 +6,7 @@ class Bygones(RollDefinition):
     Kinetic Pulse Rifle, Adaptive Frame
     https://www.light.gg/db/items/2199554524
     """
-    item = Item(name='Bygones', hash=2199554524)
+    item = Item('Bygones', hash=2199554524)
     roll = Roll(
         'PvE',
         [trait.AttritionOrbs, trait.ShootToLoot],
@@ -19,7 +19,7 @@ class Backfang(RollDefinition):
     Arc Rapid-Fire Glaive
     https://www.light.gg/db/items/267672635
     """
-    item = Item(name='Backfang', hash=267672635)
+    item = Item('Backfang', hash=267672635)
     rolls = [
         Roll(
             'PvE',
