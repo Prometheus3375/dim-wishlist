@@ -21,6 +21,7 @@ class ListOptions(StrEnum):
     All available options for listing.
     """
     RELEASE_STRINGS = 'release-strings'
+    PERK_DUPES = 'perk-dupes'
 
 
 PROJECT_DIR = dirname(dirname(__file__))
@@ -174,6 +175,34 @@ def list_commands(manifest_: Manifest, args: Namespace, /) -> None:
     match args.list_option:
         case ListOptions.RELEASE_STRINGS:
             print(*sorted(manifest_.release_strings), sep='\n')
+
+        case ListOptions.PERK_DUPES:
+            from math import log10, floor
+
+            name_to_tuple_sets = manifest_.get_legendary_weapon_perks()
+            names_with_dupes = {
+                name
+                for name, tuple_set in name_to_tuple_sets.items()
+                if len(tuple_set) > 1
+                }
+
+            for name in sorted(names_with_dupes):
+                tuple_set = name_to_tuple_sets[name]
+                regular_l = max(
+                    (floor(log10(h)) for t in tuple_set if (h := t.regular)),
+                    default=0,
+                    ) + 1
+                enhanced_l = max(
+                    (floor(log10(h)) for t in tuple_set if (h := t.enhanced)),
+                    default=0,
+                    ) + 1
+
+                tuples_desc = '\n'.join(
+                    f'  (regular={t.regular:{regular_l}}, enhanced={t.enhanced:{enhanced_l}})'
+                    for t in sorted(tuple_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
+                    )
+
+                print(f'{name}:\n{tuples_desc}')
 
         case unknown:
             assert_never(unknown)
