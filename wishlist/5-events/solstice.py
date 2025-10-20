@@ -60,7 +60,7 @@ class YeartideApex(RollDefinition):
 
 class FestivalFlight(RollDefinition):
     """
-    Breechloaded Grenade Launcher, Area Denial Frame
+    Strand Breechloaded Grenade Launcher, Area Denial Frame
     https://www.light.gg/db/items/4019651319
     """
     items = [
