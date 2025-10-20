@@ -15,14 +15,14 @@ class Judgement(RollDefinition):
     rolls = [
         Roll(
             'PvE classic',
-            [sight.SteadyhandHCS, AnyPerk],
+            [sight.SteadyHandHCS, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
             [trait.RapidHit],
             [trait.TimedPayload],
             ),
         Roll(
             'Stasis Combo',
-            [sight.SteadyhandHCS, AnyPerk],
+            [sight.SteadyHandHCS, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
             [trait.Headstone],
             [trait.Rimestealer],
