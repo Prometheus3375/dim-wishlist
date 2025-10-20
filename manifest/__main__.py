@@ -391,7 +391,8 @@ def generate_perk_mapping(manifest_: Manifest, /) -> None:
 
     with open(PERK_MAPPING_FILE, 'w') as f:
         mapping = {
-            perk.regular: perk.enhanced
+            # Convert key to string, so it is sorted by json as string, not number
+            str(perk.regular): perk.enhanced
             for tuple_set in manifest_.get_legendary_weapon_perks().values()
             for perk in tuple_set
             if perk.is_complete
