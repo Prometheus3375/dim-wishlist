@@ -27,7 +27,7 @@ class ForcedMemorializer(RollDefinition):
             'PvE',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
-            [trait.ExplosivePayload],
+            [trait.ExplosivePayload, trait.BewilderingBurst],
             [trait.KineticTremors],
             ),
         Roll(

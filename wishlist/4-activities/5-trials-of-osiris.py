@@ -62,11 +62,11 @@ class EverburningGlitz(RollDefinition):
             [trait.KineticTremors, trait.OneForAll],
             ),
         Roll(
-            'Missile combo',
+            'Bewildering Burst',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.BewilderingBurst],
-            [trait.AncillaryOrdinance],
+            [trait.KineticTremors, trait.OneForAll, trait.AncillaryOrdinance],
             ),
         ]
 

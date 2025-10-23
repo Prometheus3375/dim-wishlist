@@ -35,7 +35,7 @@ class Gunburn(RollDefinition):
             'Kinetic Tremors',
             [barrel.ChamberedCompensator, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
-            [trait.ThreatDetector, trait.LeadFromLight],
+            [trait.ThreatDetector, trait.BewilderingBurst, trait.LeadFromLight],
             [trait.KineticTremors],
             ),
         Roll(
@@ -72,5 +72,5 @@ class ArcaneEmbrace(RollDefinition):
         [barrel.ArrowheadBrake, AnyPerk],
         [magazine.TacticalMag, AnyPerk],
         [trait.FourthTimesTheCharm],
-        [trait.PrecisionInstrument, trait.AggregateCharge, trait.Surrounded],
+        [trait.AggregateCharge, trait.PrecisionInstrument, trait.Surrounded],
         )
