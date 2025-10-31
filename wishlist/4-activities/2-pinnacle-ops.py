@@ -99,18 +99,18 @@ class MintRetrograde(RollDefinition):
     item = Item('Mint Retrograde', hash=42435996)
     rolls = [
         Roll(
-            'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.TacticalMag, magazine.FlaredMagwell, AnyPerk],
-            [trait.Hatchling],
-            [trait.OneForAll, trait.ChainReaction],
-            ),
-        Roll(
             'Damage dealing',
             [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
             [trait.RewindRounds],
             [trait.BaitAndSwitch, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Hatchling],
+            [trait.OneForAll, trait.ChainReaction],
             ),
         ]
 
