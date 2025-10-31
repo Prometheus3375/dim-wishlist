@@ -101,14 +101,14 @@ class MintRetrograde(RollDefinition):
         Roll(
             'Damage dealing',
             [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
             [trait.RewindRounds],
             [trait.BaitAndSwitch, trait.ElementalHoning],
             ),
         Roll(
             'Ad clear',
             [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
             [trait.Hatchling],
             [trait.OneForAll, trait.ChainReaction],
             ),
