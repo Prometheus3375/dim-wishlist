@@ -26,7 +26,7 @@ class AureusNeutralizer(RollDefinition):
         Roll(
             'Damage dealing',
             [barrel.BarrelShroud, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
             [trait.VorpalWeapon],
             [trait.TrenchBarrel, trait.CascadePoint],
             ),
