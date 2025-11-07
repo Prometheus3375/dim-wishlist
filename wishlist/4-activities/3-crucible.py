@@ -29,7 +29,7 @@ class ReturnedMemory(RollDefinition):
     rolls = [
         Roll(
             """
-            Heal Clip.
+            PvE.
             Note for Redirection: stacks are granted and consumed for every hit,
             i.e., 2 * (1 [impact] + #[targets hit by an explosion]).
             If a target dies to impact, explosion doesn't hit it.
@@ -37,15 +37,8 @@ class ReturnedMemory(RollDefinition):
             """,
             [launcher_barrel.VolatileLaunch, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
-            [trait.HealClip],
-            [trait.OneForAll, trait.Redirection, trait.Incandescent],
-            ),
-        Roll(
-            'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.ImpulseAmplifier],
-            [trait.OneForAll, trait.Redirection],
+            [trait.HealClip, trait.ImpulseAmplifier],
+            [trait.Incandescent, trait.OneForAll, trait.Redirection],
             ),
         ]
 
