@@ -110,7 +110,7 @@ class MintRetrograde(RollDefinition):
             [launcher_barrel.VolatileLaunch, AnyPerk],
             [magazine.HighVelocityRounds, AnyPerk],
             [trait.Hatchling],
-            [trait.OneForAll, trait.ChainReaction],
+            [trait.OneForAll],
             ),
         ]
 
