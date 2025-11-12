@@ -167,9 +167,12 @@ class OpaqueHourglass(RollDefinition):
             [trait.ElementalHoning, trait.Frenzy],
             ),
         Roll(
-            'Ad clear',
+            """
+            Ad clear.
+            Explosive Bolts prevent killing Elite combatants with precision hits.
+            """,
             [rail.LowProfileRail, AnyPerk],
-            [bolt.ExplosiveBolts, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
             [trait.Firefly],
             [trait.Dragonfly],
             ),

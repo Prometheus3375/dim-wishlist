@@ -201,24 +201,32 @@ class Submersion(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Ad clear',
-            [rail.LowProfileRail, AnyPerk],
-            [bolt.ExplosiveBolts, AnyPerk],
-            [trait.ImpulseAmplifier, trait.BoltScavenger, trait.AutoLoadingHolster],
-            [trait.Headstone],
-            ),
-        Roll(
-            'Chill Clip',
-            [rail.LowProfileRail, AnyPerk],
-            [bolt.SerratedBolts, AnyPerk],
-            [trait.ImpulseAmplifier, trait.BoltScavenger, trait.AutoLoadingHolster],
-            [trait.ChillClip],
-            ),
-        Roll(
             'Damage dealing',
             [rail.LowProfileRail, AnyPerk],
             [bolt.HeavyBolts, AnyPerk],
             [trait.ImpulseAmplifier, trait.BoltScavenger, trait.AutoLoadingHolster],
             [trait.AggregateCharge, trait.HighGround, trait.FiringLine],
+            ),
+        Roll(
+            """
+            Chill Clip.
+            Both Serrated Bolts and Explosive Bolts shatter targets frozen by Chill Clip.
+            """,
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.SerratedBolts, bolt.ExplosiveBolts, bolt.HeavyBolts, AnyPerk],
+            [trait.ImpulseAmplifier, trait.BoltScavenger, trait.AutoLoadingHolster],
+            [trait.ChillClip],
+            ),
+        Roll(
+            """
+            Headstone.
+            Explosive Bolts do not explode Stasis crystals on Ultimatum.
+            They also prevent killing Elite combatants with precision hits.
+            Anyway, crystals can explode instantly because of the movement of a killing bolt.
+            """,
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.ImpulseAmplifier, trait.BoltScavenger, trait.AutoLoadingHolster],
+            [trait.Headstone],
             ),
         ]
