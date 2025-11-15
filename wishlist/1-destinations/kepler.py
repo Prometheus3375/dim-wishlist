@@ -68,11 +68,11 @@ class Agape(RollDefinition):
             [barrel.ChamberedCompensator, AnyPerk],
             [magazine.AppendedMag, AnyPerk],
             [trait.RewindRounds],
-            [trait.PrecisionInstrument, trait.VorpalWeapon],
+            [trait.PrecisionInstrument],
             ),
         Roll(
             'Solar combo',
-            [barrel.ArrowheadBrake, AnyPerk],
+            [barrel.ChamberedCompensator, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.HealClip],
             [trait.Incandescent],
