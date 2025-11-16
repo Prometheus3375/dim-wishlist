@@ -36,7 +36,7 @@ class Antedate(RollDefinition):
             'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
-            [trait.Dragonfly],
+            [trait.Dragonfly, trait.Strategist],
             [trait.JoltingFeedback],
             ),
         Roll(
