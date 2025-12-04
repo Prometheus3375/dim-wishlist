@@ -24,7 +24,7 @@ RicochetRounds = Perk('Ricochet Rounds', regular=1885400500, enhanced=1968098204
 SpikeGrenades = Perk('Spike Grenades', regular=3301904089, enhanced=409713597)
 SteadyRounds = Perk('Steady Rounds', regular=3177308360, enhanced=1002206008)
 StickyGrenades = Perk('Sticky Grenades', regular=3373736292, enhanced=3061646252)
-SwapMag = Perk('Swap Mag', regular=3721627275)
+SwapMag = Perk('Swap Mag', regular=3721627275, enhanced=714384243)
 TacticalMag = Perk('Tactical Mag', regular=106909392, enhanced=1783397184)
 
 del Perk
