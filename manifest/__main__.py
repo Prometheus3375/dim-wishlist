@@ -1,10 +1,12 @@
 import os
 from argparse import ArgumentParser, Namespace, RawTextHelpFormatter
 from collections import defaultdict
+from collections.abc import Iterator
+from dataclasses import dataclass
 from enum import StrEnum
 from operator import attrgetter
 from os.path import dirname, join
-from typing import assert_never
+from typing import Self, assert_never
 
 import manifest
 from manifest.core import (
@@ -290,17 +292,96 @@ def name_to_python_identifier(name: str, /) -> str:
     return ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
 
 
-def perk_category_to_python_identifier(category: str, /) -> str:
+@dataclass(slots=True)
+class PerkHelper:
     """
-    Converts the given category of a perk to a proper Python identifier.
+    A simple wrapper around :class:`PerkTuple` to support additional methods.
     """
-    category = category.lower().replace(' ', '_')
+    perk_tuple: PerkTuple
+    identifier_postfix: str = ''
 
-    match category:
-        case 'origin_trait':
-            category = 'origin'
+    @property
+    def name(self, /) -> str:
+        """
+        Name of this perk.
+        """
+        return self.perk_tuple.name
 
-    return category
+    @property
+    def category(self, /) -> str:
+        """
+        Category of this perk.
+        """
+        return self.perk_tuple.category
+
+    @property
+    def regular(self, /) -> int:
+        """
+        Hash of regular perk version.
+        """
+        return self.perk_tuple.regular
+
+    @property
+    def enhanced(self, /) -> int:
+        """
+        Hash of enhanced perk version.
+        """
+        return self.perk_tuple.enhanced
+
+    def __lt__(self, other: Self, /) -> bool:
+        if isinstance(other, PerkHelper):
+            return self.perk_tuple < other.perk_tuple
+
+        return NotImplemented
+
+    def name_to_python_identifier(self, /) -> str:
+        """
+        Converts the name of this perk to a proper Python identifier
+        using function ``name_to_python_identifier``
+        and then adds identifier postfix if available.
+        """
+        identifier = name_to_python_identifier(self.perk_tuple.name)
+        if self.identifier_postfix:
+            identifier = f'{identifier}_{self.identifier_postfix}'
+
+        return identifier
+
+    def category_to_python_identifier(self, /) -> str:
+        """
+        Converts the category of this perk to a proper Python identifier.
+        """
+        category = self.perk_tuple.category.lower().replace(' ', '_')
+
+        match category:
+            case 'origin_trait':
+                category = 'origin'
+
+        return category
+
+
+def resolve_perk_tuple_duplicates(name: str, perk_set: set[PerkTuple], /) -> Iterator[PerkHelper]:
+    """
+    Properly processes a set of multiple :class:`PerkTuple`
+    and returns an iterator over instances of :class:`PerkHelper`.
+    """
+    match name:
+        case 'Accelerated Assault':
+            pt1: PerkTuple
+            pt2: PerkTuple
+            pt1, pt2 = perk_set
+            if pt1.regular == 2697390518:
+                yield PerkHelper(pt1)
+                yield PerkHelper(pt2, 'SingleShotMag')
+            elif pt2.regular == 2697390518:
+                yield PerkHelper(pt1, 'SingleShotMag')
+                yield PerkHelper(pt2)
+            else:
+                raise ValueError(
+                    f'there is no perk tuple with 2697390518 as regular hash for {name!r}'
+                    )
+
+        case _:
+            yield min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
 
 
 def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
@@ -313,11 +394,17 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
 
     os.makedirs(PERK_DATABASE_DIRECTORY, exist_ok=True)
 
-    name_to_perks = manifest_.get_legendary_weapon_perks(release)
-    category_to_perks: dict[str, list[PerkTuple]] = defaultdict(list)
-    for perk_set in name_to_perks.values():
-        perk = min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
-        category = perk_category_to_python_identifier(perk.category)
+    name_to_tuple_sets = manifest_.get_legendary_weapon_perks(release)
+    perks: list[PerkHelper] = []
+    for name, tuple_set in name_to_tuple_sets.items():
+        if len(tuple_set) == 1:
+            perks.append(PerkHelper(next(iter(tuple_set))))
+        else:
+            perks.extend(resolve_perk_tuple_duplicates(name, tuple_set))
+
+    category_to_perks: dict[str, list[PerkHelper]] = defaultdict(list)
+    for perk in perks:
+        category = perk.category_to_python_identifier()
         category_to_perks[category].append(perk)
 
     for category, perk_list in category_to_perks.items():
@@ -327,7 +414,7 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
 
             perk_list.sort()
             for perk in perk_list:
-                variable = name_to_python_identifier(perk.name)
+                variable = perk.name_to_python_identifier()
                 if perk.enhanced > 0:
                     hashes = f'regular={perk.regular}, enhanced={perk.enhanced}'
                 else:
