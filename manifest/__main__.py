@@ -273,12 +273,21 @@ def check_release_string(
     exit()
 
 
+SYMBOLS_TO_REPLACE = {
+    "'": '',
+    '-': ' ',
+    ',': ' ',
+    }
+
+
 def name_to_python_identifier(name: str, /) -> str:
     """
     Converts the given name of a weapon or a perk to a proper Python identifier.
     """
-    parts = name.replace("'", '').replace('-', ' ').split()
-    return ''.join(f'{part[0].upper()}{part[1:]}' for part in parts)
+    for char, repl in SYMBOLS_TO_REPLACE.items():
+        name = name.replace(char, repl)
+
+    return ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
 
 
 def perk_category_to_python_identifier(category: str, /) -> str:
