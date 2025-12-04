@@ -280,7 +280,7 @@ class PsiAeternaIV(RollDefinition):
             'Ad clear',
             [launcher_barrel.VolatileLaunch, AnyPerk],
             [magazine.HighVelocityRounds, AnyPerk],
-            [trait.StatsForAll, trait.EddyCurrent, trait.TrickleCharge],
+            [trait.StatsForAll, trait.EddyCurrent],
             [trait.OneForAll],
             ),
         Roll(
