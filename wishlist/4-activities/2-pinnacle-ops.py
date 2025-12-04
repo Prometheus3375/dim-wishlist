@@ -64,6 +64,106 @@ class SeraphineHaze(RollDefinition):
         ]
 
 
+class DutyBound(RollDefinition):
+    """
+    Kinetic Auto Rifle, Adaptive Frame
+    https://www.light.gg/db/items/260532765
+    """
+    items = [
+        Item('Duty Bound', hash=260532765),
+        Item('Duty Bound', hash=89693562),
+        ]
+
+
+class HorrorsLeast(RollDefinition):
+    """
+    Arc Pulse Rifle, Rapid-Fire Frame
+    https://www.light.gg/db/items/827835657
+    """
+    items = [
+        Item("Horror's Least", hash=827835657),
+        Item("Horror's Least", hash=1018012078),
+        ]
+    rolls = [
+        Roll(
+            'Arc combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            ),
+        ]
+
+
+class OxygenSR3(RollDefinition):
+    """
+    Solar Scout Rifle, Precision Frame
+    https://www.light.gg/db/items/4104613038
+    """
+    items = [
+        Item('Oxygen SR3', hash=4104613038),
+        Item('Oxygen SR3', hash=444627789),
+        ]
+    rolls = [
+        Roll(
+            'PvE',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.HealClip],
+            [trait.Meganeura],
+            ),
+        ]
+
+
+class SarpedonD(RollDefinition):
+    """
+    Arc Hand Cannon, Spread Shot
+    Random Perks: This item cannot be reacquired from Collections.
+    https://www.light.gg/db/items/1242785638
+    """
+    items = [
+        Item('Sarpedon-D', hash=1242785638),
+        Item('Sarpedon-D', hash=3318545829),
+        ]
+    rolls = [
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.EddyCurrent, trait.ImpromptuAmmunition],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.EddyCurrent, trait.ImpromptuAmmunition],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.TrickleCharge],
+            [trait.TrenchBarrel],
+            ),
+        # Roll(
+        #     'Melee regen',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.AppendedMag, AnyPerk],
+        #     [trait.EddyCurrent, trait.ImpromptuAmmunition, trait.TrickleCharge],
+        #     [trait.CollectivePugilism],
+        #     ),
+        # Roll(
+        #     'Infinite ammo',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.AppendedMag, AnyPerk],
+        #     [trait.TrickleCharge],
+        #     [trait.RollingStorm],
+        #     ),
+        ]
+
+
 # Special
 
 
@@ -162,5 +262,39 @@ class OutrageousFortune(RollDefinition):
             [magazine.HighExplosiveOrdnance, AnyPerk],
             [trait.Incandescent],
             [trait.ChainReaction],
+            ),
+        ]
+
+
+class AGoodShout(RollDefinition):
+    """
+    Void Crossbow, High-Impact Frame
+    https://www.light.gg/db/items/3615748501
+    """
+    items = [
+        Item('A Good Shout', hash=3615748501),
+        Item('A Good Shout', hash=649691506),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.BoltScavenger, trait.WitheringGaze],
+            [trait.Butterfly],
+            ),
+        Roll(
+            'Void combo',
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Damage dealing',
+            [rail.LowProfileRail, AnyPerk],
+            [bolt.HeavyBolts, AnyPerk],
+            [trait.EnviousArsenal, trait.WitheringGaze, trait.BoltScavenger],
+            [trait.BoxBreathing, trait.HighGround],
             ),
         ]

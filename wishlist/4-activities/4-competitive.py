@@ -25,3 +25,21 @@ class SolemnRemembrance(RollDefinition):
             [grip.PolymerGrip, AnyPerk],
             ),
         ]
+
+
+class PeculiarCharm(RollDefinition):
+    """
+    Kinetic Submachine Gun, Aggressive Burst
+    https://www.light.gg/db/items/3620277039
+    """
+    item = Item('Peculiar Charm', hash=3620277039)
+    rolls = [
+        Roll(
+            'Kinetic Tremors',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ImpromptuAmmunition, trait.AttritionOrbs],
+            [trait.KineticTremors],
+            [stock.FittedStock, AnyPerk],
+            )
+        ]

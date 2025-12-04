@@ -21,6 +21,43 @@ class StayFrosty(RollDefinition):
         )
 
 
+class FimbulwinterStitch(RollDefinition):
+    """
+    Arc Sidearm, Precision Frame
+    https://www.light.gg/db/items/3685829362
+    """
+    items = [
+        Item('Fimbulwinter Stitch', hash=3685829362),
+        Item('Fimbulwinter Stitch', hash=2645567209),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.SuperchargedMagazine],
+            [trait.Voltshot, trait.JoltingFeedback, trait.Redirection],
+            ),
+        # Roll(
+        #     'Melee regen',
+        #     [barrel.FlutedBarrel, AnyPerk],
+        #     [magazine.FlaredMagwell, AnyPerk],
+        #     [trait.CollectivePugilism],
+        #     [trait.Voltshot, trait.JoltingFeedback, trait.Redirection],
+        #     ),
+        # Roll(
+        #     'Collective combo',
+        #     [barrel.FlutedBarrel, AnyPerk],
+        #     [magazine.FlaredMagwell, AnyPerk],
+        #     [trait.CollectivePugilism],
+        #     [trait.CollectiveAction],
+        #     ),
+        ]
+
+
+# Special
+
+
 class Glacioclasm(RollDefinition):
     """
     Void Fusion Rifle, High-Impact Frame
@@ -57,19 +94,59 @@ class Glacioclasm(RollDefinition):
         ]
 
 
+class Permafrost(RollDefinition):
+    """
+    Stasis Breechloaded Grenade Launcher, Wave Frame
+    https://www.light.gg/db/items/2922964484
+    """
+    items = [
+        Item('Permafrost', hash=2922964484),
+        Item('Permafrost', hash=2316331767),
+        ]
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist, trait.ImpromptuAmmunition],
+            [trait.CrystallineCorpsebloom, trait.ReapersTithe, trait.OneForAll],
+            ),
+        Roll(
+            'Grenade combo',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
+
+
+# Heavy
+
+
 class MistralLift(RollDefinition):
     """
     Void Linear Fusion Rifle, Adaptive Burst
-    https://www.light.gg/db/items/3483485727
+    https://www.light.gg/db/items/766122634
     """
-    item = Item('Mistral Lift', hash=3483485727)
+    items = [
+        Item('Mistral Lift', hash=766122634),
+        Item('Mistral Lift', hash=270610849),
+        ]
     roll = Roll(
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],
         [battery.AcceleratedCoils, AnyPerk],
         [
             trait.EnviousArsenal,
-            trait.EnviousAssassin,
+            trait.Overflow,
             trait.Reconstruction,
             trait.WitheringGaze,
             ],

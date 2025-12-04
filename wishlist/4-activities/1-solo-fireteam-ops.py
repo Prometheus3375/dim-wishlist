@@ -99,6 +99,40 @@ class MIDAMiniTool(RollDefinition):
         )
 
 
+class EveningSI4(RollDefinition):
+    """
+    Solar Sidearm, Adaptive Burst
+    https://www.light.gg/db/items/1763361847
+    """
+    items = [
+        Item('Evening SI4', hash=1763361847),
+        Item('Evening SI4', hash=3618823368),
+        ]
+    rolls = [
+        Roll(
+            'Solar combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Impromptu Ammunition',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ImpromptuAmmunition],
+            [trait.Incandescent],
+            ),
+        # Roll(
+        #     'Melee regen',
+        #     [barrel.ArrowheadBrake, AnyPerk],
+        #     [magazine.FlaredMagwell, AnyPerk],
+        #     [trait.HealClip],
+        #     [trait.CollectivePugilism],
+        #     ),
+        ]
+
+
 # Special
 
 
@@ -138,6 +172,149 @@ class Unfall(RollDefinition):
             [trait.ImpulseAmplifier],
             [trait.Deconstruct],
             ),
+        ]
+
+
+class HawthornesFieldForgedShotgun(RollDefinition):
+    """
+    Stasis Shotgun, Lightweight Frame
+    https://www.light.gg/db/items/1402874079
+    """
+    item = Item("Hawthorne's Field-Forged Shotgun", hash=1402874079)
+    rolls = [
+        Roll(
+            'PvP',
+            [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],
+            [magazine.AccurizedRounds, magazine.LightMag],
+            [trait.ThreatDetector, trait.LoneWolf],
+            [trait.OpeningShot, trait.ClosingTime],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.CrystallineCorpsebloom],
+            ),
+        ]
+
+
+class Monody44(RollDefinition):
+    """
+    Void Fusion Rifle, High-Impact Frame
+    https://www.light.gg/db/items/3201200906
+    """
+    item = Item('Monody-44', hash=3201200906)
+
+
+class Motif41(RollDefinition):
+    """
+    Solar Breechloaded Grenade Launcher, Area Denial Frame
+    https://www.light.gg/db/items/1685533876
+    """
+    item = Item('Motif-41', hash=1685533876)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Demolitionist',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.Demolitionist],
+            ),
+        Roll(
+            'Attrition Orbs',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.AttritionOrbs],
+            ),
+        ]
+
+
+class NoxSiderealIV(RollDefinition):
+    """
+    Stasis Fusion Rifle, Aggressive Frame
+    Random Perks: This item cannot be reacquired from Collections.
+    https://www.light.gg/db/items/2875763009
+    """
+    items = [
+        Item('Nox Sidereal IV', hash=2875763009),
+        Item('Nox Sidereal IV', hash=74733286),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery],
+            [trait.AmbitiousAssassin, trait.ClownCartridge, trait.Demolitionist],
+            [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
+            ),
+        ]
+
+
+class PsiAeternaIV(RollDefinition):
+    """
+    Arc Pulse Rifle, Micro-Missile Frame
+    https://www.light.gg/db/items/3556730800
+    """
+    items = [
+        Item('Psi Aeterna IV', hash=3556730800),
+        Item('Psi Aeterna IV', hash=135971347),
+        ]
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.TrickleCharge],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.StatsForAll, trait.EddyCurrent, trait.TrickleCharge],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Blast Distributor',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.BlastDistributor],
+            [trait.OneForAll, trait.ElementalHoning],
+            ),
+        # Roll(
+        #     'Melee regen',
+        #     [launcher_barrel.VolatileLaunch, AnyPerk],
+        #     [magazine.HighVelocityRounds, AnyPerk],
+        #     [trait.BlastDistributor, trait.EddyCurrent, trait.StatsForAll, trait.TrickleCharge],
+        #     [trait.CollectivePugilism],
+        #     ),
+        # Roll(
+        #     'Infinite ammo',
+        #     [launcher_barrel.VolatileLaunch, AnyPerk],
+        #     [magazine.HighVelocityRounds, AnyPerk],
+        #     [trait.TrickleCharge],
+        #     [trait.RollingStorm],
+        #     ),
+        ]
+
+
+class SomethingSomething(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Aggressive Frame
+    https://www.light.gg/db/items/3421075982
+    """
+    items = [
+        Item('Something Something', hash=3421075982),
+        Item('Something Something', hash=690412397),
         ]
 
 
@@ -210,5 +387,36 @@ class Haliaetus(RollDefinition):
             [magazine.AlloyCasing, AnyPerk],
             [trait.ClusterBomb, trait.ImpulseAmplifier],
             [trait.Bipod],
+            ),
+        ]
+
+
+class EightySix(RollDefinition):
+    """
+    Strand Sword, Vortex Frame
+    https://www.light.gg/db/items/2344383760
+    """
+    item = Item('Eighty-Six', hash=2344383760)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard],
+            [trait.RelentlessStrikes],
+            [trait.Redirection, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard],
+            [trait.RelentlessStrikes, trait.TirelessBlade],
+            [trait.ChainReaction, trait.Hatchling],
+            ),
+        Roll(
+            'Damage blocking',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard],
+            [trait.FlashCounter],
+            [trait.Hatchling, trait.AttritionOrbs],
             ),
         ]

@@ -9,6 +9,17 @@ class StarsInShadow(RollDefinition):
     item = Item('Stars In Shadow', hash=3602242905)
 
 
+class MosAthanorIV(RollDefinition):
+    """
+    Void Hand Cannon, Aggressive Frame
+    https://www.light.gg/db/items/4118334987
+    """
+    items = [
+        Item('Mos Athanor IV', hash=4118334987),
+        Item('Mos Athanor IV', hash=1288422452),
+        ]
+
+
 # Special
 
 
@@ -56,3 +67,53 @@ class MIDAMacroTool(RollDefinition):
         [trait.ThreatDetector],
         [trait.ClosingTime, trait.OpeningShot],
         )
+
+
+class Riptide(RollDefinition):
+    """
+    Stasis Fusion Rifle, Rapid-Fire Frame
+    https://www.light.gg/db/items/2297554989
+    """
+    items = [
+        Item('Riptide', hash=2297554989),
+        Item('Riptide', hash=1323862250),
+        ]
+    rolls = [
+        Roll(
+            'Chill Clip',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Overflow, trait.AutoLoadingHolster],
+            [trait.ChillClip],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Overflow, trait.AutoLoadingHolster],
+            [trait.ControlledBurst],
+            ),
+        ]
+
+
+# Heavy
+
+
+class QuaVinctusIV(RollDefinition):
+    """
+    Strand Machine Gun, High-Impact Frame
+    https://www.light.gg/db/items/337893613
+    """
+    items = [
+        Item('Qua Vinctus IV', hash=337893613),
+        Item('Qua Vinctus IV', hash=4176551594),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Hatchling, trait.Demolitionist],
+            [trait.Meganeura, trait.KillingTally, trait.Tear],
+            ),
+        ]

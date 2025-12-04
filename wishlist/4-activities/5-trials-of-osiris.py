@@ -103,6 +103,73 @@ class Forgiveness(RollDefinition):
     item = Item('Forgiveness', hash=1552443158)
 
 
+class CorundumHammer(RollDefinition):
+    """
+    Strand Hand Cannon, Adaptive Frame
+    https://www.light.gg/db/items/2263462407
+    """
+    item = Item('Corundum Hammer', hash=2263462407)
+    rolls = [
+        Roll(
+            'Shoot to Loot',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Firefly],
+            [trait.Tear],
+            ),
+        ]
+
+
+class TheImmortal(RollDefinition):
+    """
+    Strand Submachine Gun, Aggressive Frame
+    https://www.light.gg/db/items/2872063099
+    """
+    item = Item('The Immortal', hash=2872063099)
+    rolls = [
+        Roll(
+            'PvE',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Hatchling, trait.ThreatDetector],
+            [trait.Demolitionist],
+            ),
+        Roll(
+            'PvP',
+            [barrel.HammerForgedRifling, barrel.ExtendedBarrel, barrel.Smallbore,
+             barrel.CorkscrewRifling],
+            [magazine.HighCaliberRounds, magazine.ArmorPiercingRounds, magazine.LightMag,
+             magazine.RicochetRounds],
+            [trait.DynamicSwayReduction, trait.Rangefinder],
+            [trait.LoneWolf],
+            ),
+        ]
+
+
+class TheMartlet(RollDefinition):
+    """
+    Void Pulse Rifle, Lightweight Frame
+    https://www.light.gg/db/items/877384
+    """
+    item = Item('The Martlet', hash=877384)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RepulsorBrace, trait.Firefly],
+            [trait.DestabilizingRounds],
+            ),
+        ]
+
+
 # Special
 
 
@@ -121,6 +188,14 @@ class BurdenOfGuilt(RollDefinition):
             [trait.CrystallineCorpsebloom],
             ),
         ]
+
+
+class AstralHorizon(RollDefinition):
+    """
+    Kinetic Shotgun, Aggressive Frame
+    https://www.light.gg/db/items/2269779982
+    """
+    item = Item('Astral Horizon', hash=2269779982)
 
 
 # Heavy
@@ -146,5 +221,29 @@ class UnwaveringDuty(RollDefinition):
             [magazine.AppendedMag, AnyPerk],
             [trait.Incandescent],
             [trait.BurningAmbition],
+            ),
+        ]
+
+
+class CataphractGL3(RollDefinition):
+    """
+    Strand Drum Grenade Launcher, Adaptive Frame
+    https://www.light.gg/db/items/3805679279
+    """
+    item = Item('Cataphract GL3', hash=3805679279)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousAssassin, trait.EnviousArsenal, trait.AutoLoadingHolster],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'High DPS',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal, trait.AutoLoadingHolster, trait.EnviousAssassin],
+            [trait.ExplosiveLight],
             ),
         ]
