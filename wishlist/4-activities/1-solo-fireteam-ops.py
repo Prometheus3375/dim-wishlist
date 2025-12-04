@@ -252,7 +252,7 @@ class NoxSiderealIV(RollDefinition):
         Roll(
             'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery],
+            [battery.EnhancedBattery, AnyPerk],
             [trait.AmbitiousAssassin, trait.ClownCartridge, trait.Demolitionist],
             [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
             ),
