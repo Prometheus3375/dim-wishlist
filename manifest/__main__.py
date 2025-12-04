@@ -277,6 +277,7 @@ def check_release_string(
 
 SYMBOLS_TO_REPLACE = {
     "'": '',
+    '"': ' ',
     '-': ' ',
     ',': ' ',
     }
