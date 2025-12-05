@@ -13,8 +13,8 @@ class AllOrNothing(RollDefinition):
     rolls = [
         Roll(
             'Precision combo',
-            [barrel.ArrowheadBrake],
-            [battery.IonizedHeatsink],
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.IonizedHeatsink, AnyPerk],
             [trait.Firefly],
             [trait.Hatchling, trait.Tear],
             ),
