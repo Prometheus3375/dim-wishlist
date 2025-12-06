@@ -140,8 +140,15 @@ class RefurbishedA499(RollDefinition):
             'Damage dealing',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
+            [trait.GutshotStraight, trait.SnapshotSights],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
             [trait.NoDistractions, trait.SnapshotSights],
-            [trait.BoxBreathing, trait.AggregateCharge],
+            [trait.BoxBreathing],
             ),
         Roll(
             'PvE',
