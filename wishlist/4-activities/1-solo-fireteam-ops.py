@@ -241,7 +241,6 @@ class Motif41(RollDefinition):
 class NoxSiderealIV(RollDefinition):
     """
     Stasis Fusion Rifle, Aggressive Frame
-    Random Perks: This item cannot be reacquired from Collections.
     https://www.light.gg/db/items/2875763009
     """
     items = [
