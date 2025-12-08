@@ -104,6 +104,7 @@ class TheHeron(RollDefinition):
         Item('The Heron', hash=617566159),
         ]
     rolls = [
+        # todo: probably add Proximity Power roll
         Roll(
             'Damage blocking',
             [haft.LowImpedanceWindings, AnyPerk],

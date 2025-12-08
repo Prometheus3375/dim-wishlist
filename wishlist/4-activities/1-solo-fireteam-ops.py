@@ -248,6 +248,7 @@ class NoxSiderealIV(RollDefinition):
         Item('Nox Sidereal IV', hash=74733286),
         ]
     rolls = [
+        # todo: probably add Proximity Power roll
         Roll(
             'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
