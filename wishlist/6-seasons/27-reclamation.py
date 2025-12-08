@@ -145,7 +145,6 @@ class Synanceia(RollDefinition):
         Item('Synanceia', hash=2765451291),
         ]
     rolls = [
-        # todo: probably add Proximity Power + Eager Edge/Surrounded roll
         Roll(
             'Movement',
             [blade.HonedEdge, AnyPerk],

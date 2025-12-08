@@ -68,6 +68,7 @@ class FestivalFlight(RollDefinition):
         Item('Festival Flight', hash=3977654524),
         ]
     rolls = [
+        # todo: add a roll with Blast Distributor next Solstice
         Roll(
             'Ad clear',
             [launcher_barrel.QuickLaunch, AnyPerk],
