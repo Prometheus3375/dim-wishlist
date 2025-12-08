@@ -59,7 +59,7 @@ class M17FastTalker(RollDefinition):
         Roll(
             'Damage dealing with Peacekeepers',
             [barrel.ChamberedCompensator, AnyPerk],
-            [battery.OverclockedHeatsink, AnyPerk],
+            [battery.OverclockedHeatsink, battery.IonizedHeatsink, AnyPerk],
             [trait.CoolingBaubles, trait.AttritionOrbs],
             [trait.TargetLock]
             ),
@@ -116,7 +116,7 @@ class UncivilDiscourse(RollDefinition):
         Roll(
             'Damage dealing with Lucky Pants',
             [barrel.ArrowheadBrake, AnyPerk],
-            [battery.OverclockedHeatsink, AnyPerk],
+            [battery.OverclockedHeatsink, battery.IonizedHeatsink, AnyPerk],
             [trait.CoolingBaubles],
             [trait.PrecisionInstrument]
             ),
