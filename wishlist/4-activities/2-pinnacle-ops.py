@@ -133,13 +133,6 @@ class SarpedonD(RollDefinition):
             [trait.ProximityPower, trait.ImpromptuAmmunition, trait.EddyCurrent],
             [trait.OneTwoPunch],
             ),
-        # Roll(
-        #     'Ad clear',
-        #     [barrel.BarrelShroud, AnyPerk],
-        #     [magazine.TacticalMag, AnyPerk],
-        #     [trait.ImpromptuAmmunition, trait.EddyCurrent],
-        #     [trait.Voltshot],
-        #     ),
         Roll(
             'Damage dealing',
             [barrel.BarrelShroud, AnyPerk],
@@ -147,6 +140,13 @@ class SarpedonD(RollDefinition):
             [trait.TrickleCharge],
             [trait.TrenchBarrel],
             ),
+        # Roll(
+        #     'Ad clear',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.TacticalMag, AnyPerk],
+        #     [trait.ImpromptuAmmunition, trait.EddyCurrent],
+        #     [trait.Voltshot],
+        #     ),
         # Roll(
         #     'Melee regen',
         #     [barrel.BarrelShroud, AnyPerk],
