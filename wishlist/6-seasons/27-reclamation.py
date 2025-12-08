@@ -18,7 +18,7 @@ class PhoneutriaFera(RollDefinition):
             'Melee damage increase',
             [barrel.FlutedBarrel, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
-            [trait.ThreatDetector],
+            [trait.ProximityPower, trait.ThreatDetector],
             [trait.OneTwoPunch],
             ),
         Roll(
@@ -28,13 +28,13 @@ class PhoneutriaFera(RollDefinition):
             [trait.ThreatDetector],
             [trait.Surrounded],
             ),
-        Roll(
-            'Ad clear',
-            [barrel.FlutedBarrel, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.ThreatDetector],
-            [trait.Incandescent],
-            ),
+        # Roll(
+        #     'Ad clear',
+        #     [barrel.FlutedBarrel, AnyPerk],
+        #     [magazine.TacticalMag, AnyPerk],
+        #     [trait.ThreatDetector],
+        #     [trait.Incandescent],
+        #     ),
         ]
 
 
