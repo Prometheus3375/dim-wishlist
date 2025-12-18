@@ -21,6 +21,7 @@ FrameOfReference = Perk('Frame of Reference', regular=2597494435, enhanced=94302
 GravityWell = Perk('Gravity Well', regular=59871045)
 GunAndRun = Perk('Gun and Run', regular=515704826)
 HakkeBreachArmaments = Perk('Hakke Breach Armaments', regular=1607056502, enhanced=250902314)
+ImperialAllegiance = Perk('Imperial Allegiance', regular=1164078247, enhanced=2957461671)
 NadirFocus = Perk('Nadir Focus', regular=2509860981)
 NailMeetHammer = Perk('Nail, Meet Hammer', regular=2152442764, enhanced=1209885908)
 OmolonFluidDynamics = Perk('Omolon Fluid Dynamics', regular=2839173408, enhanced=1186131696)
