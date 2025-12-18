@@ -9,24 +9,17 @@ class GiversBlessing(RollDefinition):
     item = Item("Giver's Blessing", hash=970034755)
     rolls = [
         Roll(
-            'Kinetic Tremors',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.RewindRounds, trait.Demolitionist],
-            [trait.KineticTremors],
-            ),
-        Roll(
-            'One for All',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.Demolitionist, trait.FeedingFrenzy],
-            [trait.OneForAll],
-            ),
-        Roll(
             'Ammo generation',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.ImpromptuAmmunition],
+            [trait.KineticTremors, trait.OneForAll],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Demolitionist, trait.FeedingFrenzy],
             [trait.KineticTremors, trait.OneForAll],
             ),
         ]

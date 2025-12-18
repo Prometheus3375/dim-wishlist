@@ -24,10 +24,10 @@ class ReghusksPledge(RollDefinition):
             [trait.RepulsorBrace],
             ),
         Roll(
-            'Impromptu Ammunition',
+            'Ammo generation',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.ImpromptuAmmunition],
-            [trait.AttritionOrbs],
+            [trait.KillClip, trait.AttritionOrbs],
             ),
         ]

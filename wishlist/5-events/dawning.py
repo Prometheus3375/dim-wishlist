@@ -115,7 +115,7 @@ class Permafrost(RollDefinition):
             'Ad clear',
             [launcher_barrel.VolatileLaunch, AnyPerk],
             [magazine.HighVelocityRounds],
-            [trait.Demolitionist, trait.ImpromptuAmmunition],
+            [trait.ImpromptuAmmunition, trait.Demolitionist],
             [trait.CrystallineCorpsebloom, trait.ReapersTithe, trait.OneForAll],
             ),
         Roll(
