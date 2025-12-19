@@ -9,11 +9,11 @@ class HighTyrant(RollDefinition):
     item = Item('High Tyrant', hash=2873508409)
     rolls = [
         Roll(
-            'PvE',
+            'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.DestabilizingRounds, trait.Demolitionist],
-            [trait.MasterOfArms, trait.Demoralize],
+            [trait.MasterOfArms, trait.Meganeura, trait.Demoralize],
             ),
         Roll(
             'Void combo',
