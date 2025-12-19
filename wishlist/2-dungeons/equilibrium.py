@@ -122,6 +122,13 @@ class SullenClaw(RollDefinition):
             [trait.WhirlwindBlade],
             ),
         Roll(
+            'Movement',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.EagerEdge],
+            [trait.AssassinsBlade],
+            ),
+        Roll(
             'Ad clear',
             [blade.JaggedEdge, AnyPerk],
             [guard.SwordmastersGuard, AnyPerk],
