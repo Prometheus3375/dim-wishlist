@@ -248,12 +248,18 @@ class NoxSiderealIV(RollDefinition):
         Item('Nox Sidereal IV', hash=74733286),
         ]
     rolls = [
-        # todo: probably add Proximity Power roll
         Roll(
             'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.EnhancedBattery, AnyPerk],
-            [trait.AmbitiousAssassin, trait.ClownCartridge, trait.Demolitionist],
+            [trait.AmbitiousAssassin, trait.Demolitionist],
+            [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
+            ),
+        Roll(
+            'Proximity Power',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.ProximityPower],
             [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
             ),
         ]
