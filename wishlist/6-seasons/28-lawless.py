@@ -104,12 +104,18 @@ class TheHeron(RollDefinition):
         Item('The Heron', hash=617566159),
         ]
     rolls = [
-        # todo: probably add Proximity Power roll
         Roll(
             'Damage blocking',
             [haft.LowImpedanceWindings, AnyPerk],
             [magazine.AlloyMagazine, AnyPerk],
             [trait.ReplenishingAegis],
+            [trait.Redirection, trait.AncillaryOrdinance, trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Proximity Power',
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.ProximityPower],
             [trait.Redirection, trait.AncillaryOrdinance, trait.DestabilizingRounds],
             ),
         ]
