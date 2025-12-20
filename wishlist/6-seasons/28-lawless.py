@@ -82,6 +82,13 @@ class GizmoWeft(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Movement',
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.AirTrigger],
+            [trait.Bipod],
+            ),
+        Roll(
             'Damage dealing',
             [launcher_barrel.HardLaunch, AnyPerk],
             [magazine.SpikeGrenades, AnyPerk],
