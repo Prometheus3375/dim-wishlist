@@ -36,22 +36,15 @@ class FimbulwinterStitch(RollDefinition):
             [barrel.FlutedBarrel, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.SuperchargedMagazine],
-            [trait.Voltshot, trait.JoltingFeedback, trait.Redirection],
+            [trait.JoltingFeedback, trait.Redirection],
             ),
-        # Roll(
-        #     'Melee regen',
-        #     [barrel.FlutedBarrel, AnyPerk],
-        #     [magazine.FlaredMagwell, AnyPerk],
-        #     [trait.CollectivePugilism],
-        #     [trait.Voltshot, trait.JoltingFeedback, trait.Redirection],
-        #     ),
-        # Roll(
-        #     'Collective combo',
-        #     [barrel.FlutedBarrel, AnyPerk],
-        #     [magazine.FlaredMagwell, AnyPerk],
-        #     [trait.CollectivePugilism],
-        #     [trait.CollectiveAction],
-        #     ),
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LooseChange],
+            [trait.Voltshot],
+            ),
         ]
 
 
