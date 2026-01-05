@@ -137,12 +137,7 @@ class MistralLift(RollDefinition):
         'Damage dealing',
         [barrel.ArrowheadBrake, AnyPerk],
         [battery.AcceleratedCoils, AnyPerk],
-        [
-            trait.EnviousArsenal,
-            trait.Overflow,
-            trait.Reconstruction,
-            trait.WitheringGaze,
-            ],
+        [trait.EnviousArsenal, trait.WitheringGaze],
         [trait.BaitAndSwitch],
         [origin.VeistStinger],
         )
