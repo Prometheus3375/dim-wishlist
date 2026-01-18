@@ -59,7 +59,7 @@ class M17FastTalker(RollDefinition):
         Roll(
             'Damage dealing with Peacekeepers',
             [barrel.ChamberedCompensator, AnyPerk],
-            [battery.OverclockedHeatsink, battery.IonizedHeatsink, AnyPerk],
+            [battery.IonizedHeatsink, AnyPerk],
             [trait.CoolingBaubles, trait.AttritionOrbs],
             [trait.TargetLock]
             ),
