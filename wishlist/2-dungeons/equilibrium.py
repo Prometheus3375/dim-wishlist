@@ -94,7 +94,7 @@ class BitterEnd(RollDefinition):
             'Ad clear',
             [barrel.ChamberedCompensator, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
-            [trait.EddyCurrent, trait.AttritionOrbs],
+            [trait.CoolingBaubles],
             [trait.KillingTally, trait.OneForAll, trait.JoltingFeedback],
             ),
         Roll(
