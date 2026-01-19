@@ -116,8 +116,8 @@ class UncivilDiscourse(RollDefinition):
         Roll(
             'Damage dealing with Lucky Pants',
             [barrel.ArrowheadBrake, AnyPerk],
-            [battery.OverclockedHeatsink, battery.IonizedHeatsink, AnyPerk],
-            [trait.CoolingBaubles],
+            [battery.IonizedHeatsink, AnyPerk],
+            [trait.CoolingBaubles, AnyPerk],
             [trait.PrecisionInstrument]
             ),
         ]
