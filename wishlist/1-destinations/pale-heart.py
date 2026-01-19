@@ -83,9 +83,10 @@ class Relativism(RollDefinition):
             Melee builds.
             Should be paired with Stylish Executioner aspect
             as it increases melee damage dealt from invisibility.
-            It also provides invisibility, making Spirit of the Assassin redundant
+            It also provides invisibility, making Spirit of the Assassin redundant.
+            Spirit of Inmost Light enables easy grapple spam.
             """,
-            [unique.SpiritOf.Caliban, unique.SpiritOf.Renewal],
+            [unique.SpiritOf.Caliban, unique.SpiritOf.InmostLight, unique.SpiritOf.Renewal],
             [unique.SpiritOf.Liar, unique.SpiritOf.Synthoceps],
             ),
         Roll(
