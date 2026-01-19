@@ -144,17 +144,10 @@ class RefurbishedA499(RollDefinition):
             [trait.AggregateCharge],
             ),
         Roll(
-            'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.NoDistractions],
-            [trait.BoxBreathing],
-            ),
-        Roll(
             'PvE',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
-            [trait.BewilderingBurst, trait.Outlaw],
+            [trait.BewilderingBurst],
             [trait.AmbitiousAssassin, trait.AncillaryOrdinance],
             ),
         ]
