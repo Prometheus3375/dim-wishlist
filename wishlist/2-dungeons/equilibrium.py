@@ -76,7 +76,7 @@ class ConspiracyHoned(RollDefinition):
         Roll(
             'Damage dealing',
             [barrel.ArrowheadBrake, AnyPerk],
-            [battery.OverclockedHeatsink, battery.IonizedHeatsink, AnyPerk],
+            [battery.IonizedHeatsink, AnyPerk],
             [trait.VorpalWeapon, trait.CoolingBaubles],
             [trait.BaitAndSwitch],
             ),
