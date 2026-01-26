@@ -35,7 +35,7 @@ class CompactDefender(RollDefinition):
         [barrel.ExtendedBarrel, AnyPerk],
         [battery.IonizedHeatsink, AnyPerk],
         [trait.DestabilizingRounds],
-        [trait.RepulsorBrace]
+        [trait.RepulsorBrace],
         )
 
 
@@ -54,14 +54,14 @@ class M17FastTalker(RollDefinition):
             [barrel.ChamberedCompensator, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Demolitionist],
-            [trait.CrystallineCorpsebloom]
+            [trait.CrystallineCorpsebloom],
             ),
         Roll(
             'Damage dealing with Peacekeepers',
             [barrel.ChamberedCompensator, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.CoolingBaubles, trait.AttritionOrbs],
-            [trait.TargetLock]
+            [trait.TargetLock],
             ),
         ]
 
@@ -81,21 +81,21 @@ class ModifiedB7Pistol(RollDefinition):
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Rimestealer],
-            [trait.CrystallineCorpsebloom, trait.Headstone]
+            [trait.CrystallineCorpsebloom, trait.Headstone],
             ),
         Roll(
             'Precision combo',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Firefly],
-            [trait.Headstone]
+            [trait.Headstone],
             ),
         Roll(
             'Demolitionist',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Demolitionist],
-            [trait.CrystallineCorpsebloom, trait.Headstone]
+            [trait.CrystallineCorpsebloom, trait.Headstone],
             ),
         ]
 
@@ -117,9 +117,16 @@ class UncivilDiscourse(RollDefinition):
             'Damage dealing with Lucky Pants',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
-            [trait.CoolingBaubles, AnyPerk],
-            [trait.PrecisionInstrument]
+            [trait.AirTrigger, AnyPerk],
+            [trait.PrecisionInstrument],
             ),
+        # Roll(
+        #     'Damage dealing',
+        #     [barrel.ArrowheadBrake, AnyPerk],
+        #     [battery.OverclockedHeatsink, AnyPerk],
+        #     [trait.CoolingBaubles],
+        #     [trait.PrecisionInstrument],
+        #     ),
         ]
 
 
