@@ -91,11 +91,15 @@ class BitterEnd(RollDefinition):
     item = Item('Bitter End', hash=954563454)
     rolls = [
         Roll(
-            'Ad clear',
+            """
+            Ad clear.
+            Using Overclocked over Ionized Heatsink
+            because Cooling Baubles keep the weapon cool.
+            """,
             [barrel.ChamberedCompensator, AnyPerk],
-            [battery.IonizedHeatsink, AnyPerk],
+            [battery.OverclockedHeatsink, AnyPerk],
             [trait.CoolingBaubles],
-            [trait.KillingTally, trait.OneForAll, trait.JoltingFeedback],
+            [trait.KillingTally, trait.JoltingFeedback, trait.OneForAll],
             ),
         Roll(
             'Damage dealing',
