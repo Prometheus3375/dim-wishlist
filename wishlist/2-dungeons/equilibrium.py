@@ -139,13 +139,13 @@ class SullenClaw(RollDefinition):
             [trait.ImpromptuAmmunition, trait.RepulsorBrace],
             [trait.DestabilizingRounds],
             ),
-        Roll(
-            'Damage blocking',
-            [blade.JaggedEdge, AnyPerk],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.FlashCounter],
-            [trait.DestabilizingRounds],
-            ),
+        # Roll(
+        #     'Damage blocking',
+        #     [blade.JaggedEdge, AnyPerk],
+        #     [guard.SwordmastersGuard, AnyPerk],
+        #     [trait.FlashCounter],
+        #     [trait.DestabilizingRounds],
+        #     ),
         # Roll(
         #     'Melee damage increase',
         #     [blade.HungryEdge, AnyPerk],
