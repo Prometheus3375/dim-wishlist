@@ -16,7 +16,7 @@ class AllOrNothing(RollDefinition):
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Firefly],
-            [trait.Hatchling, trait.Tear],
+            [trait.Hatchling],
             ),
         ]
 
