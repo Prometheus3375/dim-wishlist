@@ -126,13 +126,13 @@ class AbyssalEdge(RollDefinition):
             [trait.RelentlessStrikes],
             [trait.Surrounded],
             ),
-        Roll(
-            'Damage blocking',
-            [blade.JaggedEdge, AnyPerk],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.FlashCounter],
-            [trait.Redirection, trait.Hatchling],
-            ),
+        # Roll(
+        #     'Damage blocking',
+        #     [blade.JaggedEdge, AnyPerk],
+        #     [guard.SwordmastersGuard, AnyPerk],
+        #     [trait.FlashCounter],
+        #     [trait.Redirection, trait.Hatchling],
+        #     ),
         ]
 
 
