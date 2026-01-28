@@ -19,7 +19,7 @@ class KingOrfeo(RollDefinition):
             [bowstring.ElasticString, AnyPerk],
             [arrow.CompactArrowShaft, AnyPerk],
             [trait.ArchersTempo],
-            [trait.Dragonfly, trait.Meganeura, trait.JoltingFeedback],
+            [trait.Meganeura, trait.JoltingFeedback],
             ),
         Roll(
             'Ad clear',
