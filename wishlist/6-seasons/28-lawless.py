@@ -116,14 +116,14 @@ class TheHeron(RollDefinition):
             [haft.LowImpedanceWindings, AnyPerk],
             [magazine.AlloyMagazine, AnyPerk],
             [trait.ReplenishingAegis],
-            [trait.Redirection, trait.AncillaryOrdinance, trait.DestabilizingRounds],
+            [trait.Redirection, trait.DestabilizingRounds],
             ),
         Roll(
-            'Proximity Power',
+            'Melee damage',
             [haft.LowImpedanceWindings, AnyPerk],
             [magazine.AlloyMagazine, AnyPerk],
             [trait.ProximityPower],
-            [trait.Redirection, trait.AncillaryOrdinance, trait.DestabilizingRounds],
+            [trait.CloseToMelee],
             ),
         ]
 
