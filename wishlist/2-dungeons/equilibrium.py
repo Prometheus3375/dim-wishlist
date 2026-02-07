@@ -74,7 +74,10 @@ class ConspiracyHoned(RollDefinition):
     item = Item('Conspiracy Honed', hash=4062069077)
     rolls = [
         Roll(
-            'Damage dealing',
+            """
+            Damage dealing.
+            410 Heat Gen allows to shoot 4 rounds before overheating.
+            """,
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.VorpalWeapon, trait.CoolingBaubles],

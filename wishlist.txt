@@ -432,7 +432,7 @@ dimwishlist:item=1863583117&perks=3017780555,4293542123
 dimwishlist:item=1863583117&perks=3017780555,4049631843
 
 // Conspiracy Honed
-//notes:Damage dealing
+//notes:Damage dealing. 410 Heat Gen allows to shoot 4 rounds before overheating.
 dimwishlist:item=4062069077&perks=839105230,807993149,1546637391,3078487919
 dimwishlist:item=4062069077&perks=839105230,807993149,3932949589,3078487919
 dimwishlist:item=4062069077&perks=839105230,1546637391,3078487919
