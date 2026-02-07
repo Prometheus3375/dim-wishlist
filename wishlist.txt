@@ -196,21 +196,29 @@ dimwishlist:item=1872906663&perks=3523296417,2922950962
 dimwishlist:item=1872906663&perks=3523296417,124408337
 
 // Uncivil Discourse
-//notes:Damage dealing with Lucky Pants
+//notes:Damage dealing with Lucky Pants. Accelerated Assault with 130 Heat Gen allows to shoot 14 rounds before overheating. With 120 Heat Gen it allows to shoot 15 instead.
+dimwishlist:item=3146657389&perks=839105230,1080094173,1421772400,555281244
+dimwishlist:item=3146657389&perks=839105230,1080094173,555281244
 dimwishlist:item=3146657389&perks=839105230,807993149,1421772400,555281244
 dimwishlist:item=3146657389&perks=839105230,807993149,555281244
 dimwishlist:item=3146657389&perks=839105230,1421772400,555281244
 dimwishlist:item=3146657389&perks=839105230,555281244
+dimwishlist:item=3146657389&perks=1080094173,1421772400,555281244
+dimwishlist:item=3146657389&perks=1080094173,555281244
 dimwishlist:item=3146657389&perks=807993149,1421772400,555281244
 dimwishlist:item=3146657389&perks=807993149,555281244
 dimwishlist:item=3146657389&perks=1421772400,555281244
 dimwishlist:item=3146657389&perks=555281244
 
-//notes:Damage dealing with Lucky Pants
+//notes:Damage dealing with Lucky Pants. Accelerated Assault with 130 Heat Gen allows to shoot 14 rounds before overheating. With 120 Heat Gen it allows to shoot 15 instead.
+dimwishlist:item=2462965802&perks=839105230,1080094173,1421772400,555281244
+dimwishlist:item=2462965802&perks=839105230,1080094173,555281244
 dimwishlist:item=2462965802&perks=839105230,807993149,1421772400,555281244
 dimwishlist:item=2462965802&perks=839105230,807993149,555281244
 dimwishlist:item=2462965802&perks=839105230,1421772400,555281244
 dimwishlist:item=2462965802&perks=839105230,555281244
+dimwishlist:item=2462965802&perks=1080094173,1421772400,555281244
+dimwishlist:item=2462965802&perks=1080094173,555281244
 dimwishlist:item=2462965802&perks=807993149,1421772400,555281244
 dimwishlist:item=2462965802&perks=807993149,555281244
 dimwishlist:item=2462965802&perks=1421772400,555281244

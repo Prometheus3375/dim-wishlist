@@ -121,9 +121,14 @@ class UncivilDiscourse(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Damage dealing with Lucky Pants',
+            """
+            Damage dealing with Lucky Pants.
+            Accelerated Assault with 130 Heat Gen
+            allows to shoot 14 rounds before overheating.
+            With 120 Heat Gen it allows to shoot 15 instead.
+            """,
             [barrel.ArrowheadBrake, AnyPerk],
-            [battery.IonizedHeatsink, AnyPerk],
+            [battery.EnhancedHeatsink, battery.IonizedHeatsink, AnyPerk],
             [trait.AirTrigger, AnyPerk],
             [trait.PrecisionInstrument],
             ),
