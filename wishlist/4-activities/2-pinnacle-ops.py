@@ -182,7 +182,7 @@ class Lionfish4FR(RollDefinition):
             [trait.ChillClip],
             ),
         Roll(
-            'Damage Dealing',
+            'Damage dealing',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.EnhancedBattery, AnyPerk],
             [trait.Reconstruction],

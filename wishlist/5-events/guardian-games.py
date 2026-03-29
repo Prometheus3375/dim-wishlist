@@ -33,28 +33,132 @@ class Title(RollDefinition):
         ]
 
 
+class TripleLaureate(RollDefinition):
+    """
+    Stasis Hand Cannon, Spread Shot
+    https://www.light.gg/db/items/1605599021
+    """
+    items = [
+        Item('Triple Laureate', hash=1605599021),
+        Item('Triple Laureate', hash=2908653246),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.GraveRobber],
+            [trait.AmbitiousAssassin],
+            [trait.CrystallineCorpsebloom],
+            [trait.TrenchBarrel],
+            [trait.OneTwoPunch],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.GraveRobber],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.CrystallineCorpsebloom],
+            [trait.ChaosReshaped],
+            ),
+        ]
+
+
+# Special
+
+
 class Keraunios(RollDefinition):
     """
     Arc Trace Rifle, Adaptive Frame
-    https://www.light.gg/db/items/2029899814
+    https://www.light.gg/db/items/2386208942
     """
-    item = Item('Keraunios', hash=2029899814)
+    items = [
+        Item('Keraunios', hash=2386208942),
+        Item('Keraunios', hash=981450701),
+        ]
     rolls = [
         Roll(
-            'PvE',
+            'Super roll',
             [barrel.Smallbore, AnyPerk],
             [battery.TacticalBattery, AnyPerk],
-            [trait.Overflow, trait.TripleTap],
-            [trait.JoltingFeedback, trait.DetonatorBeam, trait.KillingTally],
+            [trait.ShootToLoot],
+            [trait.SuperchargedMagazine],
+            [trait.FourthTimesTheCharm],
+            [trait.DetonatorBeam],
+            [trait.ChainReaction],
+            [trait.TargetLock],
             ),
         Roll(
-            'Arc combo',
+            'Ad clear',
             [barrel.Smallbore, AnyPerk],
             [battery.TacticalBattery, AnyPerk],
-            [trait.EddyCurrent],
-            [trait.JoltingFeedback],
+            [trait.SuperchargedMagazine],
+            [trait.ChainReaction, trait.DetonatorBeam],
+            ),
+        Roll(
+            'Shoot To Loot',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.ChainReaction, trait.DetonatorBeam],
+            ),
+        Roll(
+            'Continuous damage',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.TargetLock],
             ),
         ]
+
+
+class TheBeacon(RollDefinition):
+    """
+    Solar Fusion Rifle, Rapid-Fire Frame
+    Source: Guardian Games
+    https://www.light.gg/db/items/2161618499
+    """
+    items = [
+        Item('The Beacon', hash=2161618499),
+        Item('The Beacon', hash=76739872),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.LeadFromGold],
+            [trait.RewindRounds],
+            [trait.Demolitionist],
+            [trait.Deconstruct],
+            [trait.ControlledBurst],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.BaitAndSwitch, trait.ControlledBurst],
+            ),
+        Roll(
+            'Deconstruct',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.Deconstruct],
+            ),
+        ]
+
+
+# Heavy
 
 
 class Hullabaloo(RollDefinition):
