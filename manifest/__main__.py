@@ -8,6 +8,8 @@ from operator import attrgetter
 from os.path import dirname, join
 from typing import Self, assert_never
 
+from unicodedata import normalize
+
 import manifest
 from manifest.core import (
     AmmunitionType,
@@ -290,6 +292,8 @@ def name_to_python_identifier(name: str, /) -> str:
     for char, repl in SYMBOLS_TO_REPLACE.items():
         name = name.replace(char, repl)
 
+    # Remove diacritics.
+    name = normalize('NFD', name).encode('ascii', 'ignore').decode()
     return ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
 
 
