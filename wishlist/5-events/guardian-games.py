@@ -107,7 +107,7 @@ class Keraunios(RollDefinition):
             [barrel.Smallbore, AnyPerk],
             [battery.TacticalBattery, AnyPerk],
             [trait.ShootToLoot],
-            [trait.JoltingFeedback, trait.DetonatorBeam],
+            [trait.DetonatorBeam, trait.JoltingFeedback],
             ),
         Roll(
             'Continuous damage',
