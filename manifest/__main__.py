@@ -382,7 +382,7 @@ def resolve_perk_tuple_duplicates(name: str, perk_set: set[PerkTuple], /) -> Ite
                     )
 
         case _:
-            yield min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS)
+            yield PerkHelper(min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS))
 
 
 def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
