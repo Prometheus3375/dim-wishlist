@@ -66,7 +66,7 @@ class TripleLaureate(RollDefinition):
             [barrel.BarrelShroud, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
             [trait.CrystallineCorpsebloom],
-            [trait.ChaosReshaped],
+            [trait.TrenchBarrel, trait.ChaosReshaped],
             ),
         ]
 
@@ -134,7 +134,6 @@ class TheBeacon(RollDefinition):
             'Super roll',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.EnhancedBattery, AnyPerk],
-            [trait.LeadFromGold],
             [trait.RewindRounds],
             [trait.Demolitionist],
             [trait.Deconstruct],
