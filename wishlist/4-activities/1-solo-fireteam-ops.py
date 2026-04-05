@@ -276,18 +276,20 @@ class PsiAeternaIV(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.BlastDistributor],
+            [trait.TrickleCharge],
+            [trait.ElementalHoning],
+            [trait.OneForAll],
+            ),
+        Roll(
             'Damage dealing',
             [launcher_barrel.QuickLaunch, AnyPerk],
             [magazine.HighVelocityRounds, AnyPerk],
             [trait.TrickleCharge],
             [trait.ElementalHoning],
-            ),
-        Roll(
-            'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
-            [trait.StatsForAll, trait.EddyCurrent],
-            [trait.OneForAll],
             ),
         Roll(
             'Blast Distributor',
@@ -296,20 +298,6 @@ class PsiAeternaIV(RollDefinition):
             [trait.BlastDistributor],
             [trait.OneForAll, trait.ElementalHoning],
             ),
-        # Roll(
-        #     'Melee regen',
-        #     [launcher_barrel.VolatileLaunch, AnyPerk],
-        #     [magazine.HighVelocityRounds, AnyPerk],
-        #     [trait.BlastDistributor, trait.EddyCurrent, trait.StatsForAll, trait.TrickleCharge],
-        #     [trait.CollectivePugilism],
-        #     ),
-        # Roll(
-        #     'Infinite ammo',
-        #     [launcher_barrel.VolatileLaunch, AnyPerk],
-        #     [magazine.HighVelocityRounds, AnyPerk],
-        #     [trait.TrickleCharge],
-        #     [trait.RollingStorm],
-        #     ),
         ]
 
 
