@@ -48,23 +48,33 @@ class ActionItem(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.Rimestealer],
+            [trait.Deconstruct],
+            [trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
+            [trait.DetonatorBeam],
+            ),
+        Roll(
             'Stasis combo',
             [barrel.Smallbore, AnyPerk],
-            [battery.LightBattery, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
             [trait.Rimestealer],
             [trait.CrystallineCorpsebloom],
             ),
         Roll(
-            'Ad clear',
+            'Demolitionist',
             [barrel.Smallbore, AnyPerk],
-            [battery.LightBattery, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
             [trait.Demolitionist],
             [trait.CrystallineCorpsebloom, trait.DetonatorBeam],
             ),
         Roll(
             'Deconstruct',
             [barrel.Smallbore, AnyPerk],
-            [battery.LightBattery, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
             [trait.Deconstruct],
             [trait.CrystallineCorpsebloom, trait.DetonatorBeam],
             ),
@@ -145,10 +155,19 @@ class Micromort(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb],
+            [trait.EnviousArsenal],
+            [trait.ClownCartridge],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
             'Damage dealing',
-            [launcher_barrel.QuickLaunch],
-            [magazine.ImpactCasing],
-            [trait.ExplosivePayload, trait.EnviousArsenal],
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb, trait.EnviousArsenal, trait.ClownCartridge],
             [trait.BaitAndSwitch],
             ),
         ]

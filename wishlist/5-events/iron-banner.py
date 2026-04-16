@@ -17,6 +17,15 @@ class ReghusksPledge(RollDefinition):
     item = Item("Reghusk's Pledge", hash=2370525224)
     rolls = [
         Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.DestabilizingRounds],
+            [trait.ImpromptuAmmunition],
+            [trait.RepulsorBrace],
+            [trait.AttritionOrbs],
+            ),
+        Roll(
             'Void combo',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],

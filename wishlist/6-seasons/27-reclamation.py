@@ -56,7 +56,7 @@ class Ribbontail(RollDefinition):
     roll = Roll(
         'Ad clear',
         [barrel.Smallbore, AnyPerk],
-        [battery.LightBattery, AnyPerk],
+        [battery.TacticalBattery, AnyPerk],
         [trait.Subsistence],
         [trait.Redirection, trait.DetonatorBeam],
         )
