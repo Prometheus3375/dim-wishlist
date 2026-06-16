@@ -336,7 +336,8 @@ dimwishlist:item=266021826&perks=3573490511,1476923955
 //notes:Grenade builds
 dimwishlist:item=266021826&perks=1476923953,1476923957
 dimwishlist:item=266021826&perks=1476923953,3573490500
-dimwishlist:item=266021826&perks=3573490505,1476923957
+
+//notes:Grenade builds
 dimwishlist:item=266021826&perks=3573490505,3573490500
 
 //notes:Melee builds

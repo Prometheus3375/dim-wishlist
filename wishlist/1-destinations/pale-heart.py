@@ -126,8 +126,13 @@ class Stoicism(RollDefinition):
             ),
         Roll(
             'Grenade builds',
-            [unique.SpiritOf.InmostLight, unique.SpiritOf.Bear],
+            [unique.SpiritOf.InmostLight],
             [unique.SpiritOf.Verity, unique.SpiritOf.Armamentarium],
+            ),
+        Roll(
+            'Grenade builds',
+            [unique.SpiritOf.Bear],
+            [unique.SpiritOf.Armamentarium],
             ),
         Roll(
             'Melee builds',
