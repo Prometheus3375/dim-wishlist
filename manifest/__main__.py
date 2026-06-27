@@ -382,6 +382,21 @@ def resolve_perk_tuple_duplicates(name: str, perk_set: set[PerkTuple], /) -> Ite
                     f'there is no perk tuple with 2697390518 as regular hash for {name!r}'
                     )
 
+        case 'Pulse Monitor':
+            pt1: PerkTuple
+            pt2: PerkTuple
+            pt1, pt2 = perk_set
+            if pt1.regular == 972757866:
+                yield PerkHelper(pt1)
+                yield PerkHelper(pt2, 'UnderdogReplacement')
+            elif pt2.regular == 972757866:
+                yield PerkHelper(pt1, 'UnderdogReplacement')
+                yield PerkHelper(pt2)
+            else:
+                raise ValueError(
+                    f'there is no perk tuple with 972757866 as regular hash for {name!r}'
+                    )
+
         case _:
             yield PerkHelper(min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS))
 
