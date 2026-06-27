@@ -426,7 +426,7 @@ def handle_exceptional_plug_sets(
                     PerkTuple(name, get_perk_category(hash2def[h2]), regular=h2),
                     ]
 
-            elif hash2def.keys() == {1685378950, 205890336, 972757866, 320071920}:
+            elif hash2def.keys() == {972757866, 1685378950, 205890336, 320071920}:
                 # Example of a weapon that rolls all these versions:
                 # https://www.light.gg/db/items/963732594/xenoclast-iv
                 h1 = 972757866
@@ -444,6 +444,24 @@ def handle_exceptional_plug_sets(
                         regular=h2,
                         enhanced=320071920,
                         ),
+                    ]
+
+        case 'Concussion Grenades':
+            # DestinyPlugSetDefinition.3299814502
+            if hash2def.keys() == {1716000303, 2406549743}:
+                h = 1716000303
+                return [
+                    PerkTuple(name, get_perk_category(hash2def[h]), regular=h, enhanced=2406549743)
+                    ]
+
+        case 'Drop Mag':
+            # DestinyPlugSetDefinition.811071122
+            # DestinyPlugSetDefinition.3985973594
+            # DestinyPlugSetDefinition.1942462581
+            if hash2def.keys() == {4134353779, 3678323611}:
+                h = 4134353779
+                return [
+                    PerkTuple(name, get_perk_category(hash2def[h]), regular=h, enhanced=3678323611)
                     ]
 
     return None
