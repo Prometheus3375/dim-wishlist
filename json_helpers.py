@@ -18,6 +18,7 @@ __all__ = (
     'BaseJSONWrapper',
     'JSONArrayWrapper',
     'JSONObjectWrapper',
+    'wrap_json_value',
     )
 
 type JSONObject = dict[str, JSONAny]
