@@ -2,7 +2,7 @@ import os
 from argparse import ArgumentParser, Namespace, RawTextHelpFormatter
 from collections import defaultdict
 from collections.abc import Iterator
-from dataclasses import dataclass
+from dataclasses import InitVar, dataclass, field
 from enum import StrEnum
 from operator import attrgetter
 from os.path import dirname, join
@@ -75,7 +75,7 @@ def parse_cmd_arguments() -> Namespace:
 
     subparsers = parser.add_subparsers(
         title='subcommands',
-        description=f'All of the subcommands use the most recent manifest '
+        description=f'All subcommands use the most recent manifest '
                     f'in directory {Manifest.CACHE_DIR!r}.\n'
                     f'If there is no cached manifest, '
                     f'then a command downloads one to that directory and uses it instead.\n'
@@ -297,13 +297,22 @@ def name_to_python_identifier(name: str, /) -> str:
     return ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
 
 
-@dataclass(slots=True)
+@dataclass(frozen=True, slots=True)
 class PerkHelper:
     """
     A simple wrapper around :class:`PerkTuple` to support additional methods.
     """
     perk_tuple: PerkTuple
-    identifier_postfix: str = ''
+    identifier_postfix: InitVar[str] = ''
+    python_identifier: str = field(init=False)
+
+    # noinspection PyDataclass
+    def __post_init__(self, identifier_postfix: str, /) -> None:
+        identifier = name_to_python_identifier(self.perk_tuple.name)
+        if identifier_postfix:
+            identifier = f'{identifier}_{identifier_postfix}'
+
+        object.__setattr__(self, 'python_identifier', identifier)
 
     @property
     def name(self, /) -> str:
@@ -335,21 +344,9 @@ class PerkHelper:
 
     def __lt__(self, other: Self, /) -> bool:
         if isinstance(other, PerkHelper):
-            return self.perk_tuple < other.perk_tuple
+            return self.python_identifier <= other.python_identifier
 
         return NotImplemented
-
-    def name_to_python_identifier(self, /) -> str:
-        """
-        Converts the name of this perk to a proper Python identifier
-        using function ``name_to_python_identifier``
-        and then adds identifier postfix if available.
-        """
-        identifier = name_to_python_identifier(self.perk_tuple.name)
-        if self.identifier_postfix:
-            identifier = f'{identifier}_{self.identifier_postfix}'
-
-        return identifier
 
     def category_to_python_identifier(self, /) -> str:
         """
@@ -419,13 +416,12 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
 
             perk_list.sort()
             for perk in perk_list:
-                variable = perk.name_to_python_identifier()
                 if perk.enhanced > 0:
                     hashes = f'regular={perk.regular}, enhanced={perk.enhanced}'
                 else:
                     hashes = f'regular={perk.regular}'
 
-                f.write(f'{variable} = {Perk.__name__}({perk.name!r}, {hashes})\n')
+                f.write(f'{perk.python_identifier} = {Perk.__name__}({perk.name!r}, {hashes})\n')
 
             f.write(f'\ndel {Perk.__name__}\n')
 
