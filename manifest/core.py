@@ -402,29 +402,48 @@ def is_perk_enhanced(definition: JSONObjectWrapper, /) -> bool:
     )
 
 
-def handle_exceptional_perk_pairs(
+def handle_exceptional_plug_sets(
         name: str,
-        def1: JSONObjectWrapper,
-        def2: JSONObjectWrapper,
+        definitions: list[JSONObjectWrapper],
         /,
         ) -> Sequence[PerkTuple] | None:
     """
-    Handles some exceptional pairings in plug sets,
-    providing correct instances of :class:`PerkTuple`.
+    Handles some exceptional cases in plug sets, providing correct instances of :class:`PerkTuple`.
 
     If the pairing is not exceptional, returns ``None``.
     """
+    hash2def = {d['hash']: d for d in definitions}
     match name:
         case 'Pulse Monitor':
-            # They are both regular versions.
-            # Example of a weapon that rolls both:
-            # https://www.light.gg/db/items/1402766122/retrofuturist
-            h1 = def1['hash']
-            h2 = def2['hash']
-            if {h1, h2} == {205890336, 972757866}:
+            if hash2def.keys() == {205890336, 972757866}:
+                # They are both regular versions.
+                # Example of a weapon that rolls both:
+                # https://www.light.gg/db/items/1402766122/retrofuturist
+                h1 = 972757866
+                h2 = 205890336
                 return [
-                    PerkTuple(name, get_perk_category(def1), regular=h1),
-                    PerkTuple(name, get_perk_category(def2), regular=h2),
+                    PerkTuple(name, get_perk_category(hash2def[h1]), regular=h1),
+                    PerkTuple(name, get_perk_category(hash2def[h2]), regular=h2),
+                    ]
+
+            elif hash2def.keys() == {1685378950, 205890336, 972757866, 320071920}:
+                # Example of a weapon that rolls all these versions:
+                # https://www.light.gg/db/items/963732594/xenoclast-iv
+                h1 = 972757866
+                h2 = 205890336
+                return [
+                    PerkTuple(
+                        name,
+                        get_perk_category(hash2def[h1]),
+                        regular=h1,
+                        enhanced=1685378950,
+                        ),
+                    PerkTuple(
+                        name,
+                        get_perk_category(hash2def[h2]),
+                        regular=h2,
+                        enhanced=320071920,
+                        ),
                     ]
 
     return None
@@ -510,10 +529,11 @@ class PlugSet:
                         yield PerkTuple(name, get_perk_category(def1), enhanced=def1['hash'])
                     else:
                         yield PerkTuple(name, get_perk_category(def1), regular=def1['hash'])
+
                 case 2:
-                    def1, def2 = definitions
-                    result = handle_exceptional_perk_pairs(name, def1, def2)
+                    result = handle_exceptional_plug_sets(name, definitions)
                     if result is None:
+                        def1, def2 = definitions
                         def1_hash = def1['hash']
                         def2_hash = def2['hash']
                         is_def1_enhanced = is_perk_enhanced(def1)
@@ -546,12 +566,16 @@ class PlugSet:
                         yield from result
 
                 case n:
-                    warn(
-                        f'plug set {self.identifier!r} has {n} perks named {name!r} '
-                        f'with hashes {', '.join(str(d['hash']) for d in definitions)}',
-                        category=PlugSetPerkDuplicationWarning,
-                        stacklevel=2,
-                        )
+                    result = handle_exceptional_plug_sets(name, definitions)
+                    if result is None:
+                        warn(
+                            f'plug set {self.identifier!r} has {n} perks named {name!r} '
+                            f'with hashes {', '.join(str(d['hash']) for d in definitions)}',
+                            category=PlugSetPerkDuplicationWarning,
+                            stacklevel=2,
+                            )
+                    else:
+                        yield from result
 
 
 class Weapon:
