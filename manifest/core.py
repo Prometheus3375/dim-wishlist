@@ -410,7 +410,7 @@ def handle_exceptional_plug_sets(
     """
     Handles some exceptional cases in plug sets, providing correct instances of :class:`PerkTuple`.
 
-    If the pairing is not exceptional, returns ``None``.
+    If the case is not exceptional, returns ``None``.
     """
     hash2def = {d['hash']: d for d in definitions}
     match name:
