@@ -44,7 +44,7 @@ class StayFrosty(RollDefinition):
 class TheTimeWornSpire(RollDefinition):
     """
     Stasis Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/2204165992
     https://destiny.report/w/2204165992
     """

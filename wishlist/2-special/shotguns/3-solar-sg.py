@@ -14,7 +14,7 @@ class CompassRose(RollDefinition):
 class FelwintersLie(RollDefinition):
     """
     Solar Shotgun, Shot Package, Anti-Unstoppable
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/218787950
     https://destiny.report/w/218787950
     """
@@ -24,7 +24,7 @@ class FelwintersLie(RollDefinition):
 class GunnorasAxe(RollDefinition):
     """
     Solar Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/218787951
     https://destiny.report/w/218787951
     """

@@ -14,7 +14,7 @@ class Adjudicator(RollDefinition):
 class MultimachCCX(RollDefinition):
     """
     Kinetic Submachine Gun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/3026836571
     https://destiny.report/w/3026836571
     """

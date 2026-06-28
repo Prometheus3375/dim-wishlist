@@ -47,7 +47,7 @@ class MercurialOverreach(RollDefinition):
 class OccludedFinality(RollDefinition):
     """
     Arc Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/3104013318
     https://destiny.report/w/3104013318
     """

@@ -50,7 +50,7 @@ class TemperedDynamo(RollDefinition):
 class TheWizenedRebuke(RollDefinition):
     """
     Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/293709641
     https://destiny.report/w/293709641
     """

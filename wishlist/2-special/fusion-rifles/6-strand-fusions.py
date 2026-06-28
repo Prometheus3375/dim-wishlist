@@ -27,7 +27,7 @@ class NoxPerennialV(RollDefinition):
 class PressurizedPrecision(RollDefinition):
     """
     Strand Fusion Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/293709640
     https://destiny.report/w/293709640
     """

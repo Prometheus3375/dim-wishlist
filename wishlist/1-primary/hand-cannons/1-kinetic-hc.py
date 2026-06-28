@@ -4,7 +4,7 @@ from wishlist import *
 class CrimilsDagger(RollDefinition):
     """
     Kinetic Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/1617917863
     https://destiny.report/w/1617917863
     """

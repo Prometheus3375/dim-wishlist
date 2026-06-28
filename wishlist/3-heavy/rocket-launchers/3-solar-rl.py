@@ -24,7 +24,7 @@ class PyroclasticFlow(RollDefinition):
 class RoarOfTheBear(RollDefinition):
     """
     Solar Rocket Launcher, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Iron Banner
     https://www.light.gg/db/items/2881109029
     https://destiny.report/w/2881109029
     """
