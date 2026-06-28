@@ -34,7 +34,7 @@ class TwilightOath(RollDefinition):
 class UzumeRR4(RollDefinition):
     """
     Solar Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/4037675261
     https://destiny.report/w/4037675261
     """

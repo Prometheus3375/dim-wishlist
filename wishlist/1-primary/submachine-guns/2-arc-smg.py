@@ -53,7 +53,7 @@ class SeventhSeraphVY7(RollDefinition):
 class Whatchamacallit(RollDefinition):
     """
     Arc Submachine Gun, Aggressive Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/357669417
     https://destiny.report/w/357669417
     """

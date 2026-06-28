@@ -34,7 +34,7 @@ class SubzeroSalvo(RollDefinition):
 class TheHothead(RollDefinition):
     """
     Arc Rocket Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/1692372662
     https://destiny.report/w/1692372662
     """

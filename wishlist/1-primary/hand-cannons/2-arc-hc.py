@@ -1,6 +1,56 @@
 from wishlist import *
 
 
+class SarpedonD(RollDefinition):
+    """
+    Arc Hand Cannon, Spread Shot, Anti-Overload
+    Source: Commander Zavala
+    https://www.light.gg/db/items/1242785638
+    https://destiny.report/w/1242785638
+    """
+    items = [
+        Item('Sarpedon-D', hash=1242785638),
+        Item('Sarpedon-D', hash=3318545829),
+        ]
+    rolls = [
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ProximityPower, trait.ImpromptuAmmunition, trait.EddyCurrent],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.TrickleCharge],
+            [trait.TrenchBarrel],
+            ),
+        # Roll(
+        #     'Ad clear',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.TacticalMag, AnyPerk],
+        #     [trait.ImpromptuAmmunition, trait.EddyCurrent],
+        #     [trait.Voltshot],
+        #     ),
+        # Roll(
+        #     'Melee regen',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.AppendedMag, AnyPerk],
+        #     [trait.EddyCurrent, trait.ImpromptuAmmunition, trait.TrickleCharge],
+        #     [trait.CollectivePugilism],
+        #     ),
+        # Roll(
+        #     'Infinite ammo',
+        #     [barrel.BarrelShroud, AnyPerk],
+        #     [magazine.AppendedMag, AnyPerk],
+        #     [trait.TrickleCharge],
+        #     [trait.RollingStorm],
+        #     ),
+        ]
+
+
 class SolemnLie(RollDefinition):
     """
     Arc Hand Cannon, Lightweight Frame, Anti-Overload
@@ -14,7 +64,7 @@ class SolemnLie(RollDefinition):
 class ThePalindrome(RollDefinition):
     """
     Arc Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/739029152
     https://destiny.report/w/739029152
     """

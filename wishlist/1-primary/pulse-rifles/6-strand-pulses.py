@@ -72,7 +72,7 @@ class LastThursday(RollDefinition):
 class Nightshade(RollDefinition):
     """
     Strand Pulse Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/34731066
     https://destiny.report/w/34731066
     """

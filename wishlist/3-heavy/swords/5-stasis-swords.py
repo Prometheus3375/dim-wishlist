@@ -37,7 +37,7 @@ class AuroraDawn(RollDefinition):
 class TheSlammer(RollDefinition):
     """
     Stasis Sword, Vortex Frame, Anti-Overload
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/2466028274
     https://destiny.report/w/2466028274
     """

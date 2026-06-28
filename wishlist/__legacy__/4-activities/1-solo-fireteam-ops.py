@@ -1,36 +1,6 @@
 from wishlist import *
 
 
-class MercuryA(RollDefinition):
-    """
-    Kinetic Combat Bow, High-Impact Longbow
-    https://www.light.gg/db/items/2838279629
-    """
-    item = Item('Mercury-A', hash=2838279629)
-    roll = Roll(
-        "Hit combo; hits with Kinetic Tremors grant progress for Attrition Orbs",
-        [bowstring.ElasticString, AnyPerk],
-        [arrow.CompactArrowShaft, AnyPerk],
-        [trait.AttritionOrbs],
-        [trait.KineticTremors],
-        )
-
-
-class QuaNilusII(RollDefinition):
-    """
-    Strand Submachine Gun, Adaptive Frame
-    https://www.light.gg/db/items/190747610
-    """
-    item = Item('Qua Nilus II', hash=190747610)
-    roll = Roll(
-        'PvE',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.Slice],
-        [trait.Hatchling, trait.Surrounded],
-        )
-
-
 class Jurisprudent(RollDefinition):
     """
     Stasis Scout Rifle, High-Impact Frame
@@ -99,40 +69,6 @@ class MIDAMiniTool(RollDefinition):
         )
 
 
-class EveningSI4(RollDefinition):
-    """
-    Solar Sidearm, Adaptive Burst
-    https://www.light.gg/db/items/1763361847
-    """
-    items = [
-        Item('Evening SI4', hash=1763361847),
-        Item('Evening SI4', hash=3618823368),
-        ]
-    rolls = [
-        Roll(
-            'Solar combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.HealClip],
-            [trait.Incandescent],
-            ),
-        Roll(
-            'Impromptu Ammunition',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.ImpromptuAmmunition],
-            [trait.Incandescent],
-            ),
-        # Roll(
-        #     'Melee regen',
-        #     [barrel.ArrowheadBrake, AnyPerk],
-        #     [magazine.FlaredMagwell, AnyPerk],
-        #     [trait.HealClip],
-        #     [trait.CollectivePugilism],
-        #     ),
-        ]
-
-
 # Special
 
 
@@ -149,30 +85,6 @@ class ShorelineDissident(RollDefinition):
         [trait.TripleTap],
         [trait.PrecisionInstrument],
         )
-
-
-class Unfall(RollDefinition):
-    """
-    Arc Sidearm, Rocket-Assisted Frame
-    https://www.light.gg/db/items/738446555
-    """
-    item = Item('Unfall', hash=738446555)
-    rolls = [
-        Roll(
-            'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.ImpulseAmplifier],
-            [trait.OneForAll, trait.JoltingFeedback],
-            ),
-        Roll(
-            'Deconstruct',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.ImpulseAmplifier],
-            [trait.Deconstruct],
-            ),
-        ]
 
 
 class HawthornesFieldForgedShotgun(RollDefinition):
@@ -238,96 +150,7 @@ class Motif41(RollDefinition):
         ]
 
 
-class NoxSiderealIV(RollDefinition):
-    """
-    Stasis Fusion Rifle, Aggressive Frame
-    https://www.light.gg/db/items/2875763009
-    """
-    items = [
-        Item('Nox Sidereal IV', hash=2875763009),
-        Item('Nox Sidereal IV', hash=74733286),
-        ]
-    rolls = [
-        Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.AmbitiousAssassin, trait.Demolitionist],
-            [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
-            ),
-        Roll(
-            'Proximity Power',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.ProximityPower],
-            [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
-            ),
-        ]
-
-
-class PsiAeternaIV(RollDefinition):
-    """
-    Arc Pulse Rifle, Micro-Missile Frame
-    https://www.light.gg/db/items/3556730800
-    """
-    items = [
-        Item('Psi Aeterna IV', hash=3556730800),
-        Item('Psi Aeterna IV', hash=135971347),
-        ]
-    rolls = [
-        Roll(
-            'Super roll',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
-            [trait.BlastDistributor],
-            [trait.TrickleCharge],
-            [trait.ElementalHoning],
-            [trait.OneForAll],
-            ),
-        Roll(
-            'Damage dealing',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
-            [trait.TrickleCharge],
-            [trait.ElementalHoning],
-            ),
-        Roll(
-            'Blast Distributor',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
-            [trait.BlastDistributor],
-            [trait.OneForAll, trait.ElementalHoning],
-            ),
-        ]
-
-
-class SomethingSomething(RollDefinition):
-    """
-    Kinetic Sniper Rifle, Aggressive Frame
-    https://www.light.gg/db/items/3421075982
-    """
-    items = [
-        Item('Something Something', hash=3421075982),
-        Item('Something Something', hash=690412397),
-        ]
-
-
 # Heavy
-
-
-class Boomslang4FR(RollDefinition):
-    """
-    Arc Linear Fusion Rifle, Adaptive Burst
-    https://www.light.gg/db/items/3926153598
-    """
-    item = Item('Boomslang-4FR', hash=3926153598)
-    roll = Roll(
-        'Damage dealing',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [battery.AcceleratedCoils, AnyPerk],
-        [trait.EnviousArsenal, trait.RapidHit],
-        [trait.PrecisionInstrument],
-        )
 
 
 class Haliaetus(RollDefinition):

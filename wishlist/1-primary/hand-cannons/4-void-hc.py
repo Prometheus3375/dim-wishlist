@@ -34,7 +34,7 @@ class IRONWOOD03(RollDefinition):
 class KindledOrchid(RollDefinition):
     """
     Void Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/3961462214
     https://destiny.report/w/3961462214
     """

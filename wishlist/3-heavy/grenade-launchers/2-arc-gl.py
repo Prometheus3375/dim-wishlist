@@ -24,7 +24,7 @@ class Hullabaloo(RollDefinition):
 class WendigoGL3(RollDefinition):
     """
     Arc Drum Grenade Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/4021098353
     https://destiny.report/w/4021098353
     """

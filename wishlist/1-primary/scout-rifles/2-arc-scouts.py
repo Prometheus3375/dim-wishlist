@@ -14,7 +14,7 @@ class LongArm(RollDefinition):
 class NoFeelings(RollDefinition):
     """
     Arc Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/1271275406
     https://destiny.report/w/1271275406
     """

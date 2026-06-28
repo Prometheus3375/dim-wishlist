@@ -17,7 +17,7 @@ class BaneOfSorrow(RollDefinition):
 class Hammerhead(RollDefinition):
     """
     Void Machine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/1346714574
     https://destiny.report/w/1346714574
     """

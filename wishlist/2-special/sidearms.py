@@ -21,10 +21,36 @@ class IndebtedKindness(RollDefinition):
     item = Item('Indebted Kindness', hash=2554513694)
 
 
+class Unfall(RollDefinition):
+    """
+    Arc Sidearm, Together Forever, Anti-Overload
+    Source: Commander Zavala
+    https://www.light.gg/db/items/738446555
+    https://destiny.report/w/738446555
+    """
+    item = Item('Unfall', hash=738446555)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier],
+            [trait.OneForAll, trait.JoltingFeedback],
+            ),
+        Roll(
+            'Deconstruct',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ImpulseAmplifier],
+            [trait.Deconstruct],
+            ),
+        ]
+
+
 class LotusEater(RollDefinition):
     """
     Void Sidearm, Micro-Missile Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/924095500
     https://destiny.report/w/924095500
     """

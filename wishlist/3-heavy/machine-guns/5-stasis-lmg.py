@@ -14,7 +14,7 @@ class ArchonsThunder(RollDefinition):
 class ChainOfCommand(RollDefinition):
     """
     Stasis Machine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/1716620044
     https://destiny.report/w/1716620044
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Adored(RollDefinition):
     """
     Arc Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/1405095983
     https://destiny.report/w/1405095983
     """
@@ -80,7 +80,7 @@ class SoleSurvivor(RollDefinition):
 class TataraGaze(RollDefinition):
     """
     Arc Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/2531614757
     https://destiny.report/w/2531614757
     """

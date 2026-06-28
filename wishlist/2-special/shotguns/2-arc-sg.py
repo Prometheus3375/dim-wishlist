@@ -44,7 +44,7 @@ class TheInquisitor(RollDefinition):
 class XenoclastIV(RollDefinition):
     """
     Arc Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/963732594
     https://destiny.report/w/963732594
     """

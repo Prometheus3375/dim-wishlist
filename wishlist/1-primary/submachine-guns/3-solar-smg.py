@@ -34,7 +34,7 @@ class Parabellum(RollDefinition):
 class PerfectPitch(RollDefinition):
     """
     Solar Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/2191451996
     https://destiny.report/w/2191451996
     """

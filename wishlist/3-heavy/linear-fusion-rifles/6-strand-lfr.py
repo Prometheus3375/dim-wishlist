@@ -14,7 +14,7 @@ class LaserPainter(RollDefinition):
 class Scintillation(RollDefinition):
     """
     Strand Linear Fusion Rifle, Adaptive Burst, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/1207321710
     https://destiny.report/w/1207321710
     """

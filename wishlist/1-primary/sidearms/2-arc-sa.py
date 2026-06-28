@@ -27,7 +27,7 @@ class TheKeening(RollDefinition):
 class TheLastDance(RollDefinition):
     """
     Arc Sidearm, Adaptive Burst, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/4045298483
     https://destiny.report/w/4045298483
     """

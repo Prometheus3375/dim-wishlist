@@ -34,6 +34,19 @@ class EyeOfSol(RollDefinition):
     item = Item('Eye of Sol', hash=2499834165)
 
 
+class SomethingSomething(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable
+    Source: Commander Zavala
+    https://www.light.gg/db/items/3421075982
+    https://destiny.report/w/3421075982
+    """
+    items = [
+        Item('Something Something', hash=3421075982),
+        Item('Something Something', hash=690412397),
+        ]
+
+
 class Succession(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable

@@ -1,6 +1,32 @@
 from wishlist import *
 
 
+class ForcedMemorializer(RollDefinition):
+    """
+    Kinetic Scout Rifle, Precision Frame, Anti-Barrier
+    Source: Commander Zavala
+    https://www.light.gg/db/items/1197073834
+    https://destiny.report/w/1197073834
+    """
+    item = Item('Forced Memorializer', hash=1197073834)
+    rolls = [
+        Roll(
+            'PvE',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ExplosivePayload, trait.BewilderingBurst],
+            [trait.KineticTremors],
+            ),
+        Roll(
+            'Missile combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
+            ),
+        ]
+
+
 class InboundSurveillance(RollDefinition):
     """
     Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable
@@ -24,7 +50,7 @@ class HungJurySR4(RollDefinition):
 class LastRite(RollDefinition):
     """
     Kinetic Scout Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/3708636616
     https://destiny.report/w/3708636616
     """
@@ -34,7 +60,7 @@ class LastRite(RollDefinition):
 class NamelessMidnight(RollDefinition):
     """
     Kinetic Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/1957301533
     https://destiny.report/w/1957301533
     """

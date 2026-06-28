@@ -4,7 +4,7 @@ from wishlist import *
 class LoadedQuestion(RollDefinition):
     """
     Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/852069910
     https://destiny.report/w/852069910
     """
@@ -14,7 +14,7 @@ class LoadedQuestion(RollDefinition):
 class MainIngredient(RollDefinition):
     """
     Arc Fusion Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/4046741099
     https://destiny.report/w/4046741099
     """
@@ -27,7 +27,7 @@ class MainIngredient(RollDefinition):
 class PLUGONE1(RollDefinition):
     """
     Arc Fusion Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/852069911
     https://destiny.report/w/852069911
     """
@@ -37,7 +37,7 @@ class PLUGONE1(RollDefinition):
 class TemperedDynamo(RollDefinition):
     """
     Arc Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/2274706510
     https://destiny.report/w/2274706510
     """

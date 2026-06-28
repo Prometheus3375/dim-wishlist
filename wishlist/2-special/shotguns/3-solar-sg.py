@@ -44,7 +44,7 @@ class LastManStanding(RollDefinition):
 class MindbendersAmbition(RollDefinition):
     """
     Solar Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/951529995
     https://destiny.report/w/951529995
     """

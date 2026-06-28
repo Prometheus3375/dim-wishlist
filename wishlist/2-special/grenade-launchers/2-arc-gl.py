@@ -24,11 +24,30 @@ class Psychopomp(RollDefinition):
 class SalvagersSalvo(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/1692109318
     https://destiny.report/w/1692109318
     """
     items = [
         Item("Salvager's Salvo", hash=1692109318),
         Item("Salvager's Salvo", hash=2461640837),
+        ]
+
+
+class Theodolite(RollDefinition):
+    """
+    Arc Breechloaded Grenade Launcher, Micro-Missile Frame, Anti-Unstoppable
+    Source: Commander Zavala
+    https://www.light.gg/db/items/4146673635
+    https://destiny.report/w/4146673635
+    """
+    item = Item('Theodolite', hash=4146673635)
+    rolls = [
+        Roll(
+            'PvE',
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.Reconstruction],
+            [trait.Frenzy, trait.ReapersTithe],
+            ),
         ]

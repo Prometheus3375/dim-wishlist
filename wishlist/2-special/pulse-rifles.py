@@ -1,6 +1,44 @@
 from wishlist import *
 
 
+class PsiAeternaIV(RollDefinition):
+    """
+    Arc Pulse Rifle, Micro-Missile Frame, Anti-Unstoppable
+    Source: Commander Zavala
+    https://www.light.gg/db/items/3556730800
+    https://destiny.report/w/3556730800
+    """
+    items = [
+        Item('Psi Aeterna IV', hash=3556730800),
+        Item('Psi Aeterna IV', hash=135971347),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.BlastDistributor],
+            [trait.TrickleCharge],
+            [trait.ElementalHoning],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.TrickleCharge],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Blast Distributor',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.BlastDistributor],
+            [trait.OneForAll, trait.ElementalHoning],
+            ),
+        ]
+
+
 class VeillantifD(RollDefinition):
     """
     Solar Pulse Rifle, Micro-Missile Frame, Anti-Unstoppable
@@ -17,7 +55,7 @@ class VeillantifD(RollDefinition):
 class MintRetrograde(RollDefinition):
     """
     Strand Pulse Rifle, Micro-Missile Frame, Anti-Unstoppable
-    Source:
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/1715391576
     https://destiny.report/w/1715391576
     """

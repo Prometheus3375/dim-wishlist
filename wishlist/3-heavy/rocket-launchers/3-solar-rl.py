@@ -4,7 +4,7 @@ from wishlist import *
 class Ascendancy(RollDefinition):
     """
     Solar Rocket Launcher, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/1713388226
     https://destiny.report/w/1713388226
     """

@@ -14,7 +14,7 @@ class BadOmens(RollDefinition):
 class BellowingGiant(RollDefinition):
     """
     Void Rocket Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/412265080
     https://destiny.report/w/412265080
     """

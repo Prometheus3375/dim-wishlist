@@ -100,7 +100,7 @@ class Premonition(RollDefinition):
 class VelesX(RollDefinition):
     """
     Void Pulse Rifle, Aggressive Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/438540299
     https://destiny.report/w/438540299
     """

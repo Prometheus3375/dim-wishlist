@@ -14,7 +14,7 @@ class CoriolisForce(RollDefinition):
 class NullComposure(RollDefinition):
     """
     Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/2150643740
     https://destiny.report/w/2150643740
     """

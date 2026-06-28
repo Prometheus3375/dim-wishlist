@@ -22,18 +22,3 @@ class WickedSister(RollDefinition):
             [trait.ExplosiveLight],
             ),
         ]
-
-
-class Cynosure(RollDefinition):
-    """
-    Strand Rocket launcher, Adaptive Frame
-    https://www.light.gg/db/items/694275488
-    """
-    item = Item('Cynosure', hash=694275488)
-    roll = Roll(
-        'Damage dealing',
-        [launcher_barrel.QuickLaunch, AnyPerk],
-        [magazine.ImpactCasing, AnyPerk],
-        [trait.Reconstruction, trait.ClownCartridge, trait.EnviousArsenal, trait.Demolitionist],
-        [trait.ExplosiveLight, trait.ElementalHoning],
-        )

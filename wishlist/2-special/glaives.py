@@ -34,7 +34,7 @@ class GreasyLuck(RollDefinition):
 class EclipticDistaff(RollDefinition):
     """
     Void Adaptive Glaive, Anti-Barrier
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/1942143745
     https://destiny.report/w/1942143745
     """
@@ -44,7 +44,7 @@ class EclipticDistaff(RollDefinition):
 class RakeAngle(RollDefinition):
     """
     Stasis Aggressive Glaive, Anti-Unstoppable
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/2201323795
     https://destiny.report/w/2201323795
     """

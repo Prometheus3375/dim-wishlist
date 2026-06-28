@@ -34,7 +34,7 @@ class NewPacificEpitaph(RollDefinition):
 class OusterEngine(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/2223968549
     https://destiny.report/w/2223968549
     """

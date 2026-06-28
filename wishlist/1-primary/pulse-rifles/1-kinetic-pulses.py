@@ -27,7 +27,7 @@ class BattleScar(RollDefinition):
 class BlastFurnace(RollDefinition):
     """
     Kinetic Pulse Rifle, Aggressive Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/52683113
     https://destiny.report/w/52683113
     """

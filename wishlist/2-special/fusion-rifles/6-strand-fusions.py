@@ -37,7 +37,7 @@ class PressurizedPrecision(RollDefinition):
 class Resounding(RollDefinition):
     """
     Strand Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/3273807888
     https://destiny.report/w/3273807888
     """

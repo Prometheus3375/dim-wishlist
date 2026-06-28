@@ -27,7 +27,7 @@ class CruxCeleritasIV(RollDefinition):
 class Cynosure(RollDefinition):
     """
     Strand Rocket Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/2827141087
     https://destiny.report/w/2827141087
     """

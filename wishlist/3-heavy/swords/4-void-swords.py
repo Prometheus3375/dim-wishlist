@@ -4,7 +4,7 @@ from wishlist import *
 class ChivalricFire(RollDefinition):
     """
     Void Sword, Caster Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/938936806
     https://destiny.report/w/938936806
     """
@@ -24,7 +24,7 @@ class FallingGuillotine(RollDefinition):
 class StrykersSureHand(RollDefinition):
     """
     Void Sword, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Arena Ops
     https://www.light.gg/db/items/2490460292
     https://destiny.report/w/2490460292
     """

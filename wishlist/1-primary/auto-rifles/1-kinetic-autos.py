@@ -21,6 +21,19 @@ class ChromaRush(RollDefinition):
     item = Item('Chroma Rush', hash=771811871)
 
 
+class DutyBound(RollDefinition):
+    """
+    Kinetic Auto Rifle, Adaptive Frame, Anti-Barrier
+    Source: Commander Zavala
+    https://www.light.gg/db/items/260532765
+    https://destiny.report/w/260532765
+    """
+    items = [
+        Item('Duty Bound', hash=260532765),
+        Item('Duty Bound', hash=89693562),
+        ]
+
+
 class GiversBlessing(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload

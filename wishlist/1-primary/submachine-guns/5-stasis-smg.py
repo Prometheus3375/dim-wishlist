@@ -50,13 +50,39 @@ class M17FastTalker(RollDefinition):
 class ProlongedEngagement(RollDefinition):
     """
     Stasis Submachine Gun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/2624561525
     https://destiny.report/w/2624561525
     """
     items = [
         Item('Prolonged Engagement', hash=2624561525),
         Item('Prolonged Engagement', hash=1066772626),
+        ]
+
+
+class SeraphineHaze(RollDefinition):
+    """
+    Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable
+    Source: Commander Zavala
+    https://www.light.gg/db/items/1524387902
+    https://destiny.report/w/1524387902
+    """
+    item = Item('Seraphine Haze', hash=1524387902)
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Rimestealer, trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Orb combo',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LeadFromLight],
+            [trait.AttritionOrbs],
+            ),
         ]
 
 

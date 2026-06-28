@@ -14,7 +14,7 @@ class CrimilsDagger(RollDefinition):
 class DFA(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Pinnacle Ops
     https://www.light.gg/db/items/739029153
     https://destiny.report/w/739029153
     """
@@ -27,7 +27,7 @@ class DFA(RollDefinition):
 class Malediction(RollDefinition):
     """
     Kinetic Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/979721268
     https://destiny.report/w/979721268
     """
@@ -57,7 +57,7 @@ class Rose(RollDefinition):
 class ServiceRevolver(RollDefinition):
     """
     Kinetic Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Fireteam Ops
     https://www.light.gg/db/items/3796682229
     https://destiny.report/w/3796682229
     """
@@ -93,7 +93,7 @@ class SurvivorsEpitaph(RollDefinition):
 class WardensLaw(RollDefinition):
     """
     Kinetic Hand Cannon, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/2363113134
     https://destiny.report/w/2363113134
     """

@@ -14,7 +14,7 @@ class Blasphemer(RollDefinition):
 class Fortissimo11(RollDefinition):
     """
     Kinetic Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/963732595
     https://destiny.report/w/963732595
     """
@@ -34,7 +34,7 @@ class PerfectParadox(RollDefinition):
 class RecklessEndangerment(RollDefinition):
     """
     Kinetic Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Solo Ops
     https://www.light.gg/db/items/3085559077
     https://destiny.report/w/3085559077
     """

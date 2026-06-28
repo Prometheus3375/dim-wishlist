@@ -14,7 +14,7 @@ class AlliedDemand(RollDefinition):
 class Buzzard(RollDefinition):
     """
     Kinetic Sidearm, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/4237970862
     https://destiny.report/w/4237970862
     """
@@ -34,7 +34,7 @@ class Lonesome(RollDefinition):
 class SpoilerAlert(RollDefinition):
     """
     Kinetic Sidearm, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Commander Zavala
     https://www.light.gg/db/items/4045298482
     https://destiny.report/w/4045298482
     """
