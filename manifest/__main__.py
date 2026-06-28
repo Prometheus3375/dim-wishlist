@@ -4,7 +4,6 @@ from collections import defaultdict
 from collections.abc import Iterator
 from dataclasses import InitVar, dataclass, field
 from enum import StrEnum
-from operator import attrgetter
 from os.path import dirname, join
 from typing import Self, assert_never
 
@@ -465,7 +464,10 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
     print(f'Generating perk database is complete.')
 
 
-_sort_key_for_weapon = attrgetter('source')
+def _sort_key_for_weapon(w: Weapon, /) -> tuple:
+    # A list of identically named weapons
+    # must have the latest weapon with source at the start.
+    return bool(w.source), w.release_string
 
 
 def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
