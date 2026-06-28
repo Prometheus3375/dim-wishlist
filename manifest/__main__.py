@@ -526,7 +526,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
             main_weapon = li[0]
             source = main_weapon.source
             if source.startswith('Random Perks'):
-                source = ''
+                source = 'Unspecified'
             elif source.startswith('Source:'):
                 source = source[8:]
 
