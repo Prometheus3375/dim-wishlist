@@ -1,1 +1,54 @@
 from wishlist import *
+
+
+class BottomDollar(RollDefinition):
+    """
+    Void Hand Cannon, Aggressive Frame, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/2953199259
+    https://destiny.report/w/2953199259
+    """
+    item = Item('Bottom Dollar', hash=2953199259)
+
+
+class ExaltedTruth(RollDefinition):
+    """
+    Void Hand Cannon, Adaptive Frame, Anti-Barrier
+    Source: Unspecified
+    https://www.light.gg/db/items/2776092653
+    https://destiny.report/w/2776092653
+    """
+    item = Item('Exalted Truth', hash=2776092653)
+
+
+class IRONWOOD03(RollDefinition):
+    """
+    Void Hand Cannon, Spread Shot, Anti-Overload
+    Source: Unspecified
+    https://www.light.gg/db/items/2041617874
+    https://destiny.report/w/2041617874
+    """
+    item = Item('IRONWOOD 03', hash=2041617874)
+
+
+class KindledOrchid(RollDefinition):
+    """
+    Void Hand Cannon, Adaptive Frame, Anti-Barrier
+    Source: Unspecified
+    https://www.light.gg/db/items/3961462214
+    https://destiny.report/w/3961462214
+    """
+    items = [
+        Item('Kindled Orchid', hash=3961462214),
+        Item('Kindled Orchid', hash=334964261),
+        ]
+
+
+class MaahesHC4(RollDefinition):
+    """
+    Void Hand Cannon, Heavy Burst, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/734476286
+    https://destiny.report/w/734476286
+    """
+    item = Item('Maahes HC4', hash=734476286)

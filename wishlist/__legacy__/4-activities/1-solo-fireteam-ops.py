@@ -330,37 +330,6 @@ class Boomslang4FR(RollDefinition):
         )
 
 
-class AuroraDawn(RollDefinition):
-    """
-    Stasis Sword, Wave Sword Frame
-    https://www.light.gg/db/items/2111625436
-    """
-    item = Item('Aurora Dawn', hash=2111625436)
-    rolls = [
-        Roll(
-            'Ad clear',
-            [blade.JaggedEdge, AnyPerk],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.TirelessBlade, trait.Unrelenting],
-            [trait.OneForAll, trait.ColdSteel],
-            ),
-        Roll(
-            'Damage dealing with Ergo Sum',
-            [blade.JaggedEdge, AnyPerk],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.SharpHarvest],
-            [trait.WhirlwindBlade],
-            ),
-        Roll(
-            'Damage blocking. Flash Counter applies Cold Steel',
-            [blade.JaggedEdge, AnyPerk],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.FlashCounter],
-            [trait.ColdSteel],
-            ),
-        ]
-
-
 class Haliaetus(RollDefinition):
     """
     Strand Rocket Launcher, High-Impact Frame

@@ -1,6 +1,36 @@
 from wishlist import *
 
 
+class Eyasluna(RollDefinition):
+    """
+    Stasis Hand Cannon, Adaptive Frame, Anti-Barrier
+    Source: "Grasp of Avarice" Dungeon
+    https://www.light.gg/db/items/386864872
+    https://destiny.report/w/386864872
+    """
+    item = Item('Eyasluna', hash=386864872)
+
+
+class Judgment(RollDefinition):
+    """
+    Stasis Hand Cannon, Adaptive Frame, Anti-Barrier
+    Source: "Prophecy" Dungeon
+    https://www.light.gg/db/items/1567585973
+    https://destiny.report/w/1567585973
+    """
+    item = Item('Judgment', hash=1567585973)
+
+
+class LoudLullaby(RollDefinition):
+    """
+    Stasis Hand Cannon, Aggressive Frame, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/868076517
+    https://destiny.report/w/868076517
+    """
+    item = Item('Loud Lullaby', hash=868076517)
+
+
 class ModifiedB7Pistol(RollDefinition):
     """
     Stasis Hand Cannon, Dynamic Heat Weapon, Anti-Overload
@@ -35,3 +65,36 @@ class ModifiedB7Pistol(RollDefinition):
             [trait.CrystallineCorpsebloom, trait.Headstone],
             ),
         ]
+
+
+class SomethingNew(RollDefinition):
+    """
+    Stasis Hand Cannon, Aggressive Frame, Anti-Unstoppable
+    Source:
+    https://www.light.gg/db/items/1705150753
+    https://destiny.report/w/1705150753
+    """
+    items = [
+        Item('Something New', hash=1705150753),
+        Item('Something New', hash=2877020298),
+        ]
+
+
+class SpareRations(RollDefinition):
+    """
+    Stasis Hand Cannon, Lightweight Frame, Anti-Overload
+    Source: Unspecified
+    https://www.light.gg/db/items/810474119
+    https://destiny.report/w/810474119
+    """
+    item = Item('Spare Rations', hash=810474119)
+
+
+class Vulpecula(RollDefinition):
+    """
+    Stasis Hand Cannon, Precision Frame, Anti-Barrier
+    Source:
+    https://www.light.gg/db/items/3245446311
+    https://destiny.report/w/3245446311
+    """
+    item = Item('Vulpecula', hash=3245446311)

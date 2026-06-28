@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class ColdComfort(RollDefinition):
+    """
+    Stasis Rocket Launcher, Aggressive Frame, Anti-Unstoppable
+    Source: "Ghosts of the Deep" Dungeon
+    https://www.light.gg/db/items/2287287549
+    https://destiny.report/w/2287287549
+    """
+    item = Item('Cold Comfort', hash=2287287549)
+
+
 class TheWhenAndWhere(RollDefinition):
     """
     Stasis Rocket Launcher, Adaptive Frame, Anti-Barrier

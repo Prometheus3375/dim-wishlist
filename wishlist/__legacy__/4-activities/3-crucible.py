@@ -97,23 +97,3 @@ class Riptide(RollDefinition):
 
 
 # Heavy
-
-
-class QuaVinctusIV(RollDefinition):
-    """
-    Strand Machine Gun, High-Impact Frame
-    https://www.light.gg/db/items/337893613
-    """
-    items = [
-        Item('Qua Vinctus IV', hash=337893613),
-        Item('Qua Vinctus IV', hash=4176551594),
-        ]
-    rolls = [
-        Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
-            [trait.Hatchling, trait.Demolitionist],
-            [trait.Meganeura, trait.KillingTally, trait.Tear],
-            ),
-        ]

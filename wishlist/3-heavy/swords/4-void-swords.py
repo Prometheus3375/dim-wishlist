@@ -1,6 +1,40 @@
 from wishlist import *
 
 
+class ChivalricFire(RollDefinition):
+    """
+    Void Sword, Caster Frame, Anti-Barrier
+    Source: Unspecified
+    https://www.light.gg/db/items/938936806
+    https://destiny.report/w/938936806
+    """
+    item = Item('Chivalric Fire', hash=938936806)
+
+
+class FallingGuillotine(RollDefinition):
+    """
+    Void Sword, Vortex Frame, Anti-Overload
+    Source: Unspecified
+    https://www.light.gg/db/items/2480871539
+    https://destiny.report/w/2480871539
+    """
+    item = Item('Falling Guillotine', hash=2480871539)
+
+
+class StrykersSureHand(RollDefinition):
+    """
+    Void Sword, Aggressive Frame, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/2490460292
+    https://destiny.report/w/2490460292
+    """
+    items = [
+        Item("Stryker's Sure-Hand", hash=2490460292),
+        Item("Stryker's Sure-Hand", hash=2158575991),
+        ]
+
+
+
 class SullenClaw(RollDefinition):
     """
     Void Sword, Lightweight Frame, Anti-Overload

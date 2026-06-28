@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AishasCare(RollDefinition):
+    """
+    Strand Pulse Rifle, Heavy Burst, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/3614211586
+    https://destiny.report/w/3614211586
+    """
+    item = Item("Aisha's Care", hash=3614211586)
+
+
 class AllOrNothing(RollDefinition):
     """
     Strand Pulse Rifle, Dynamic Heat Weapon, Anti-Overload
@@ -21,6 +31,16 @@ class AllOrNothing(RollDefinition):
             [trait.Hatchling],
             ),
         ]
+
+
+class BelisariusD(RollDefinition):
+    """
+    Strand Pulse Rifle, Aggressive Burst, Anti-Unstoppable
+    Source: Unspecified
+    https://www.light.gg/db/items/747743637
+    https://destiny.report/w/747743637
+    """
+    item = Item('Belisarius-D', hash=747743637)
 
 
 class LastThursday(RollDefinition):
@@ -47,3 +67,26 @@ class LastThursday(RollDefinition):
             [trait.Hatchling],
             ),
         ]
+
+
+class Nightshade(RollDefinition):
+    """
+    Strand Pulse Rifle, Lightweight Frame, Anti-Overload
+    Source: Unspecified
+    https://www.light.gg/db/items/34731066
+    https://destiny.report/w/34731066
+    """
+    items = [
+        Item('Nightshade', hash=34731066),
+        Item('Nightshade', hash=1559068369),
+        ]
+
+
+class Relentless(RollDefinition):
+    """
+    Strand Pulse Rifle, High-Impact Frame, Anti-Unstoppable
+    Source: "Prophecy" Dungeon
+    https://www.light.gg/db/items/2831259643
+    https://destiny.report/w/2831259643
+    """
+    item = Item('Relentless', hash=2831259643)

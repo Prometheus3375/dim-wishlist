@@ -1,6 +1,46 @@
 from wishlist import *
 
 
+class DECATUR02(RollDefinition):
+    """
+    Stasis Auto Rifle, Support Frame, Anti-Overload
+    Source: Distortions
+    https://www.light.gg/db/items/1850748385
+    https://destiny.report/w/1850748385
+    """
+    item = Item('DECATUR 02', hash=1850748385)
+
+
+class FairJudgment(RollDefinition):
+    """
+    Stasis Auto Rifle, Precision Frame, Anti-Barrier
+    Source: Solo Ops
+    https://www.light.gg/db/items/4113452819
+    https://destiny.report/w/4113452819
+    """
+    item = Item('Fair Judgment', hash=4113452819)
+
+
+class HerodC(RollDefinition):
+    """
+    Stasis Auto Rifle, High-Impact Frame, Anti-Unstoppable
+    Source: The Drifter
+    https://www.light.gg/db/items/2065366342
+    https://destiny.report/w/2065366342
+    """
+    item = Item('Herod-C', hash=2065366342)
+
+
+class HorrorStory(RollDefinition):
+    """
+    Stasis Auto Rifle, Precision Frame, Anti-Barrier
+    Source:
+    https://www.light.gg/db/items/2884070594
+    https://destiny.report/w/2884070594
+    """
+    item = Item('Horror Story', hash=2884070594)
+
+
 class Intercalary(RollDefinition):
     """
     Stasis Auto Rifle, Adaptive Frame, Anti-Barrier
