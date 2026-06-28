@@ -1,6 +1,7 @@
 # Project
 /.manifest-cache/
-/new-weapons.py
+/all-weapons.py
+/all-weapons.py
 /regular-to-enhanced.json
 
 # Python
