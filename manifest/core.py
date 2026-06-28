@@ -743,7 +743,7 @@ class Weapon:
             self._manifest.get_sandbox_perk(p['perkHash'])
             for p in self.intrinsic_object['perks']
             ]
-        breaker_types = [ d for d in perks if d['displayProperties.name'].startswith('[')]
+        breaker_types = [d for d in perks if d['displayProperties.name'].startswith('[')]
         if len(breaker_types) > 1:
             warn(
                 f'weapon {self.name!r} ({self.hash}) has {len(breaker_types)} breaker types '

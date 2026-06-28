@@ -34,7 +34,6 @@ class StrykersSureHand(RollDefinition):
         ]
 
 
-
 class SullenClaw(RollDefinition):
     """
     Void Sword, Lightweight Frame, Anti-Overload
