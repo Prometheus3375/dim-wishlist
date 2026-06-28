@@ -67,6 +67,34 @@ class ModifiedB7Pistol(RollDefinition):
         ]
 
 
+class SolemnRemembrance(RollDefinition):
+    """
+    Stasis Hand Cannon, Precision Frame, Anti-Barrier
+    Source: Competitive Crucible
+    https://www.light.gg/db/items/4116518582
+    https://destiny.report/w/4116518582
+    """
+    item = Item('Solemn Remembrance', hash=4116518582)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Firefly],
+            [grip.PolymerGrip, AnyPerk],
+            ),
+        Roll(
+            'Stasis combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Headstone],
+            [trait.Rimestealer],
+            [grip.PolymerGrip, AnyPerk],
+            ),
+        ]
+
+
 class SomethingNew(RollDefinition):
     """
     Stasis Hand Cannon, Aggressive Frame, Anti-Unstoppable

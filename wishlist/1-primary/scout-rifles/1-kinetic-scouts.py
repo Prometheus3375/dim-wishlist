@@ -93,7 +93,7 @@ class PatronOfLostCauses(RollDefinition):
 class RandysThrowingKnife(RollDefinition):
     """
     Kinetic Scout Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/4176824345
     https://destiny.report/w/4176824345
     """

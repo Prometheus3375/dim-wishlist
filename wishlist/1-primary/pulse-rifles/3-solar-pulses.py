@@ -29,3 +29,13 @@ class OgmaPR6(RollDefinition):
     https://destiny.report/w/324584912
     """
     item = Item('Ogma PR6', hash=324584912)
+
+
+class StarsInShadow(RollDefinition):
+    """
+    Solar Pulse Rifle, High-Impact Frame, Anti-Unstoppable
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/3602242905
+    https://destiny.report/w/3602242905
+    """
+    item = Item('Stars In Shadow', hash=3602242905)

@@ -4,7 +4,7 @@ from wishlist import *
 class AutumnWind(RollDefinition):
     """
     Kinetic Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source:
+    Source: Crucible
     https://www.light.gg/db/items/2150012407
     https://destiny.report/w/2150012407
     """

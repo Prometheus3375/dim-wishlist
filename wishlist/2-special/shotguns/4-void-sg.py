@@ -41,6 +41,16 @@ class Precipial(RollDefinition):
     item = Item('Precipial', hash=367772693)
 
 
+class PureRecollection(RollDefinition):
+    """
+    Void Shotgun, Heavy Burst, Anti-Unstoppable
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/1956186483
+    https://destiny.report/w/1956186483
+    """
+    item = Item('Void Shotgun', hash=1956186483)
+
+
 class Python(RollDefinition):
     """
     Void Shotgun, Aggressive Frame, Anti-Unstoppable
@@ -64,7 +74,7 @@ class RetoldTale(RollDefinition):
 class Retrofuturist(RollDefinition):
     """
     Void Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Lord Shaxx
     https://www.light.gg/db/items/3688176697
     https://destiny.report/w/3688176697
     """

@@ -89,7 +89,7 @@ class SeraphineHaze(RollDefinition):
 class UnendingTempest(RollDefinition):
     """
     Stasis Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/2579239009
     https://destiny.report/w/2579239009
     """

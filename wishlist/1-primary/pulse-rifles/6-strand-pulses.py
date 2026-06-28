@@ -36,7 +36,7 @@ class AllOrNothing(RollDefinition):
 class BelisariusD(RollDefinition):
     """
     Strand Pulse Rifle, Aggressive Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/747743637
     https://destiny.report/w/747743637
     """

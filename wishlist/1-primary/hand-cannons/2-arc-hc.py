@@ -54,7 +54,7 @@ class SarpedonD(RollDefinition):
 class SolemnLie(RollDefinition):
     """
     Arc Hand Cannon, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/1041028435
     https://destiny.report/w/1041028435
     """

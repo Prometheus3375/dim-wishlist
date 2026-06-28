@@ -4,7 +4,7 @@ from wishlist import *
 class Deadlock(RollDefinition):
     """
     Stasis Shotgun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/3926987546
     https://destiny.report/w/3926987546
     """

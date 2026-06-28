@@ -47,7 +47,7 @@ class MidnightCoup(RollDefinition):
 class Rose(RollDefinition):
     """
     Kinetic Hand Cannon, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/1041028434
     https://destiny.report/w/1041028434
     """
@@ -80,7 +80,7 @@ class SeventhSeraphOfficerRevolver(RollDefinition):
 class SurvivorsEpitaph(RollDefinition):
     """
     Kinetic Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/4059111040
     https://destiny.report/w/4059111040
     """

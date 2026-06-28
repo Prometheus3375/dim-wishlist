@@ -24,7 +24,7 @@ class NewPurpose(RollDefinition):
 class RedrixsEstoc(RollDefinition):
     """
     Stasis Pulse Rifle, Legacy PR-55 Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/747743636
     https://destiny.report/w/747743636
     """

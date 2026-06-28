@@ -47,6 +47,31 @@ class Unfall(RollDefinition):
         ]
 
 
+class ReturnedMemory(RollDefinition):
+    """
+    Solar Sidearm, Micro-Missile Frame, Anti-Unstoppable
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/4049127142
+    https://destiny.report/w/4049127142
+    """
+    item = Item('Returned Memory', hash=4049127142)
+    rolls = [
+        Roll(
+            """
+            PvE.
+            Note for Redirection: stacks are granted and consumed for every hit,
+            i.e., 2 * (1 [impact] + #[targets hit by an explosion]).
+            If a target dies to impact, explosion doesn't hit it.
+            Multiplier 2 is replaced with 3 for consumption if perk is not enhanced.
+            """,
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.HealClip, trait.ImpulseAmplifier],
+            [trait.Incandescent, trait.OneForAll, trait.Redirection],
+            ),
+        ]
+
+
 class LotusEater(RollDefinition):
     """
     Void Sidearm, Micro-Missile Frame, Anti-Unstoppable

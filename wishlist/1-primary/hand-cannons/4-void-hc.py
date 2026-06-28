@@ -52,3 +52,16 @@ class MaahesHC4(RollDefinition):
     https://destiny.report/w/734476286
     """
     item = Item('Maahes HC4', hash=734476286)
+
+
+class MosAthanorIV(RollDefinition):
+    """
+    Void Hand Cannon, Aggressive Frame, Anti-Unstoppable
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/4118334987
+    https://destiny.report/w/4118334987
+    """
+    items = [
+        Item('Mos Athanor IV', hash=4118334987),
+        Item('Mos Athanor IV', hash=1288422452),
+        ]

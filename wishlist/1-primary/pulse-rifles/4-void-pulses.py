@@ -67,7 +67,7 @@ class HighTyrant(RollDefinition):
 class JoxersLongsword(RollDefinition):
     """
     Void Pulse Rifle, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/2150012406
     https://destiny.report/w/2150012406
     """
@@ -80,7 +80,7 @@ class JoxersLongsword(RollDefinition):
 class LastPerdition(RollDefinition):
     """
     Void Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Shaxx
     https://www.light.gg/db/items/3364253967
     https://destiny.report/w/3364253967
     """

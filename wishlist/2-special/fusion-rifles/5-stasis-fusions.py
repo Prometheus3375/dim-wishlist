@@ -64,3 +64,32 @@ class NoxSiderealIV(RollDefinition):
             [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
             ),
         ]
+
+
+class Riptide(RollDefinition):
+    """
+    Stasis Fusion Rifle, Rapid-Fire Frame, Anti-Overload
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/2297554989
+    https://destiny.report/w/2297554989
+    """
+    items = [
+        Item('Riptide', hash=2297554989),
+        Item('Riptide', hash=1323862250),
+        ]
+    rolls = [
+        Roll(
+            'Chill Clip',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Overflow, trait.AutoLoadingHolster],
+            [trait.ChillClip],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.Overflow, trait.AutoLoadingHolster],
+            [trait.ControlledBurst],
+            ),
+        ]

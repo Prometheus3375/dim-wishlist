@@ -14,7 +14,7 @@ class A1000YardStare(RollDefinition):
 class FrozenOrbit(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/1516542120
     https://destiny.report/w/1516542120
     """

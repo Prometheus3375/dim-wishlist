@@ -30,7 +30,7 @@ class Antedate(RollDefinition):
 class OutOfBounds(RollDefinition):
     """
     Arc Submachine Gun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/2579239008
     https://destiny.report/w/2579239008
     """

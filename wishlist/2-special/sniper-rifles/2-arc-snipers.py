@@ -37,7 +37,7 @@ class Mechabre(RollDefinition):
 class MercurialOverreach(RollDefinition):
     """
     Arc Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Competitive Crucible
     https://www.light.gg/db/items/4257236930
     https://destiny.report/w/4257236930
     """
@@ -93,7 +93,7 @@ class TataraGaze(RollDefinition):
 class TheHelmsman(RollDefinition):
     """
     Arc Sniper Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/2325078119
     https://destiny.report/w/2325078119
     """

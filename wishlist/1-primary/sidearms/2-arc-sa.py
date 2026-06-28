@@ -4,7 +4,7 @@ from wishlist import *
 class AnonymousAutumn(RollDefinition):
     """
     Arc Sidearm, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Lord Shaxx
     https://www.light.gg/db/items/1644501332
     https://destiny.report/w/1644501332
     """
@@ -14,7 +14,7 @@ class AnonymousAutumn(RollDefinition):
 class TheKeening(RollDefinition):
     """
     Arc Sidearm, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/3902351469
     https://destiny.report/w/3902351469
     """

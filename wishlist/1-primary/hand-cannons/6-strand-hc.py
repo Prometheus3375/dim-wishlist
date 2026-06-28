@@ -4,7 +4,7 @@ from wishlist import *
 class BetterDevils(RollDefinition):
     """
     Strand Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Crucible
     https://www.light.gg/db/items/4059111041
     https://destiny.report/w/4059111041
     """

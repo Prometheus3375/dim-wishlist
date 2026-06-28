@@ -21,6 +21,23 @@ class Matador64(RollDefinition):
     item = Item('Matador 64', hash=1518956169)
 
 
+class MIDAMacroTool(RollDefinition):
+    """
+    Arc Shotgun, MIDA Synergy, Anti-Unstoppable
+    Source: Lord Shaxx
+    https://www.light.gg/db/items/2699423382
+    https://destiny.report/w/2699423382
+    """
+    item = Item('MIDA Macro-Tool', hash=2699423382)
+    roll = Roll(
+        'PvP',
+        [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],
+        [magazine.AccurizedRounds, magazine.LightMag],
+        [trait.ThreatDetector],
+        [trait.ClosingTime, trait.OpeningShot],
+        )
+
+
 class TheDeicide(RollDefinition):
     """
     Arc Shotgun, Rapid-Fire Frame, Anti-Overload
