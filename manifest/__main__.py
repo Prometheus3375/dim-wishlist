@@ -470,7 +470,7 @@ _sort_key_for_weapon = attrgetter('source')
 
 def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
     w = li[0]
-    return w.release_string, w.source, w.ammo_type, w.name
+    return w.release_string, w.ammo_type, w.weapon_type, w.damage_types, w.name
 
 
 def get_weapon_type_with_intrinsic(w: Weapon, /) -> str:
