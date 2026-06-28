@@ -739,12 +739,11 @@ class Weapon:
         """
         Breaker type of this weapon.
         """
-        breaker_types = [
-            d
+        perks = [
+            self._manifest.get_sandbox_perk(p['perkHash'])
             for p in self.intrinsic_object['perks']
-            if
-            '[' in (d := self._manifest.get_sandbox_perk(p['perkHash']))['displayProperties.name']
             ]
+        breaker_types = [ d for d in perks if d['displayProperties.name'].startswith('[')]
         if len(breaker_types) > 1:
             warn(
                 f'weapon {self.name!r} ({self.hash}) has {len(breaker_types)} breaker types '
