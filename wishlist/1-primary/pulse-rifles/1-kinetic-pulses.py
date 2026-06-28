@@ -40,7 +40,7 @@ class BlastFurnace(RollDefinition):
 class Bygones(RollDefinition):
     """
     Kinetic Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/767170345
     https://destiny.report/w/767170345
     """

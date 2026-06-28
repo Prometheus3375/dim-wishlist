@@ -54,7 +54,7 @@ class PureRecollection(RollDefinition):
 class Python(RollDefinition):
     """
     Void Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/4276696962
     https://destiny.report/w/4276696962
     """

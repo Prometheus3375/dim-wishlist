@@ -4,7 +4,7 @@ from wishlist import *
 class BugOutBag(RollDefinition):
     """
     Void Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/3327901954
     https://destiny.report/w/3327901954
     """

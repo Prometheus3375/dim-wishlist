@@ -73,7 +73,7 @@ class NamelessMidnight(RollDefinition):
 class NightWatch(RollDefinition):
     """
     Kinetic Scout Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: The Drifter
     https://www.light.gg/db/items/2916547559
     https://destiny.report/w/2916547559
     """

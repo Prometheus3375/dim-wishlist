@@ -24,7 +24,7 @@ class Buzzard(RollDefinition):
 class Lonesome(RollDefinition):
     """
     Kinetic Sidearm, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Drifter
     https://www.light.gg/db/items/843171043
     https://destiny.report/w/843171043
     """

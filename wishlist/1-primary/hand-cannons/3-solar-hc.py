@@ -80,7 +80,7 @@ class LunasHowl(RollDefinition):
 class Trust(RollDefinition):
     """
     Solar Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/810474118
     https://destiny.report/w/810474118
     """

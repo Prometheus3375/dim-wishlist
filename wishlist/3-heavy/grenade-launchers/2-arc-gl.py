@@ -4,7 +4,7 @@ from wishlist import *
 class Doomsday(RollDefinition):
     """
     Arc Drum Grenade Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/713132408
     https://destiny.report/w/713132408
     """

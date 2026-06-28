@@ -4,7 +4,7 @@ from wishlist import *
 class A21Delirium(RollDefinition):
     """
     Arc Machine Gun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/3001598094
     https://destiny.report/w/3001598094
     """

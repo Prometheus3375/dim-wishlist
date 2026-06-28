@@ -4,7 +4,7 @@ from wishlist import *
 class BottomDollar(RollDefinition):
     """
     Void Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: The Drifter
     https://www.light.gg/db/items/2953199259
     https://destiny.report/w/2953199259
     """

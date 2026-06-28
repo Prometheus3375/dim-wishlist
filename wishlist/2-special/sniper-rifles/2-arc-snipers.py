@@ -70,7 +70,7 @@ class RapidGrowth(RollDefinition):
 class SoleSurvivor(RollDefinition):
     """
     Arc Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/2920648677
     https://destiny.report/w/2920648677
     """

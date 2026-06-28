@@ -111,7 +111,7 @@ class SomethingNew(RollDefinition):
 class SpareRations(RollDefinition):
     """
     Stasis Hand Cannon, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/810474119
     https://destiny.report/w/810474119
     """

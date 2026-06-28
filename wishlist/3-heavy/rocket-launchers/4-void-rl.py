@@ -4,7 +4,7 @@ from wishlist import *
 class BadOmens(RollDefinition):
     """
     Void Rocket Launcher, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/1996201272
     https://destiny.report/w/1996201272
     """

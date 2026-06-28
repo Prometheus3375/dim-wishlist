@@ -110,7 +110,7 @@ class VelesX(RollDefinition):
 class Yesteryear(RollDefinition):
     """
     Void Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Drifter
     https://www.light.gg/db/items/4028000428
     https://destiny.report/w/4028000428
     """

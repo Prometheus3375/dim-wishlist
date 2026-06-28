@@ -4,7 +4,7 @@ from wishlist import *
 class LaserPainter(RollDefinition):
     """
     Strand Linear Fusion Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Drifter
     https://www.light.gg/db/items/1439354195
     https://destiny.report/w/1439354195
     """

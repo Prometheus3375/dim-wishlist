@@ -34,7 +34,7 @@ class GunnorasAxe(RollDefinition):
 class LastManStanding(RollDefinition):
     """
     Solar Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Gambit
     https://www.light.gg/db/items/4276696963
     https://destiny.report/w/4276696963
     """
