@@ -35,3 +35,29 @@ class Cynosure(RollDefinition):
         Item('Cynosure', hash=2827141087),
         Item('Cynosure', hash=2511482352),
         ]
+
+
+class Haliaetus(RollDefinition):
+    """
+    Strand Rocket Launcher, High-Impact Frame, Anti-Unstoppable
+    Source: Banshee-44
+    https://www.light.gg/db/items/2155534128
+    https://destiny.report/w/2155534128
+    """
+    item = Item('Haliaetus', hash=2155534128)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb, trait.AutoLoadingHolster],
+            [trait.AggregateCharge, trait.ReapersTithe, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.AlloyCasing, AnyPerk],
+            [trait.ClusterBomb, trait.ImpulseAmplifier],
+            [trait.Bipod],
+            ),
+        ]

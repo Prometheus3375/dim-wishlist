@@ -19,3 +19,43 @@ class DragoncultSickle(RollDefinition):
     https://destiny.report/w/2525261820
     """
     item = Item('Dragoncult Sickle', hash=2525261820)
+
+
+class EightySix(RollDefinition):
+    """
+    Strand Sword, Vortex Frame, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/2344383760
+    https://destiny.report/w/2344383760
+    """
+    item = Item('Eighty-Six', hash=2344383760)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.Redirection, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ability regen',
+            [blade.JaggedEdge, AnyPerk],
+            [guard.SwordmastersGuard, AnyPerk],
+            [trait.RelentlessStrikes],
+            [trait.AttritionOrbs],
+            ),
+        # Roll(
+        #     'Ad clear',
+        #     [blade.JaggedEdge, AnyPerk],
+        #     [guard.SwordmastersGuard, AnyPerk],
+        #     [trait.RelentlessStrikes, trait.TirelessBlade],
+        #     [trait.ChainReaction, trait.Hatchling],
+        #     ),
+        # Roll(
+        #     'Damage blocking',
+        #     [blade.JaggedEdge, AnyPerk],
+        #     [guard.SwordmastersGuard, AnyPerk],
+        #     [trait.FlashCounter],
+        #     [trait.Hatchling, trait.AttritionOrbs],
+        #     ),
+        ]

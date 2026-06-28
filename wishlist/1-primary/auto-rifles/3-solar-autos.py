@@ -1,6 +1,23 @@
 from wishlist import *
 
 
+class AhabChar(RollDefinition):
+    """
+    Solar Auto Rifle, Rapid-Fire Frame, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/1411560894
+    https://destiny.report/w/1411560894
+    """
+    item = Item('Ahab Char', hash=1411560894)
+    roll = Roll(
+        'PvE',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.HealClip],
+        [trait.BurningAmbition, trait.KillClip],
+        )
+
+
 class ArcticHaze(RollDefinition):
     """
     Solar Auto Rifle, Rapid-Fire Frame, Anti-Overload

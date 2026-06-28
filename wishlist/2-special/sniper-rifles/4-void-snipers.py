@@ -24,6 +24,23 @@ class FrozenOrbit(RollDefinition):
         ]
 
 
+class ShorelineDissident(RollDefinition):
+    """
+    Void Sniper Rifle, Rapid-Fire Frame, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/1193318082
+    https://destiny.report/w/1193318082
+    """
+    item = Item('Shoreline Dissident', hash=1193318082)
+    roll = Roll(
+        'Damage dealing',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.TripleTap],
+        [trait.PrecisionInstrument],
+        )
+
+
 class TrophyHunter(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame, Anti-Unstoppable

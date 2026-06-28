@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class Jurisprudent(RollDefinition):
+    """
+    Stasis Scout Rifle, High-Impact Frame, Anti-Unstoppable
+    Source: Banshee-44
+    https://www.light.gg/db/items/4090134063
+    https://destiny.report/w/4090134063
+    """
+    item = Item('Jurisprudent', hash=4090134063)
+
+
 class LiveFire(RollDefinition):
     """
     Stasis Scout Rifle, Precision Frame, Anti-Barrier

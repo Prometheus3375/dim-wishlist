@@ -11,6 +11,23 @@ class DeathAdder(RollDefinition):
     item = Item('Death Adder', hash=2130249527)
 
 
+class MIDAMiniTool(RollDefinition):
+    """
+    Solar Submachine Gun, MIDA Synergy, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/3946054154
+    https://destiny.report/w/3946054154
+    """
+    item = Item('MIDA Mini-Tool', hash=3946054154)
+    roll = Roll(
+        'Solar combo',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
+
+
 class NoSurvivors(RollDefinition):
     """
     Solar Submachine Gun, Aggressive Frame, Anti-Unstoppable

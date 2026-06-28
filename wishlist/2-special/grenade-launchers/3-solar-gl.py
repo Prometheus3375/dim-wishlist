@@ -11,6 +11,39 @@ class EmptyVessel(RollDefinition):
     item = Item('Empty Vessel', hash=198068259)
 
 
+class Motif41(RollDefinition):
+    """
+    Solar Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/1685533876
+    https://destiny.report/w/1685533876
+    """
+    item = Item('Motif-41', hash=1685533876)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Demolitionist',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.Demolitionist],
+            ),
+        Roll(
+            'Attrition Orbs',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.HealClip, trait.AutoLoadingHolster],
+            [trait.AttritionOrbs],
+            ),
+        ]
+
+
 class WildStyle(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Double Fire, Anti-Unstoppable

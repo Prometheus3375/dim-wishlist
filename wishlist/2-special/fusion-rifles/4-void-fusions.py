@@ -11,6 +11,16 @@ class CoriolisForce(RollDefinition):
     item = Item('Coriolis Force', hash=856316142)
 
 
+class Monody44(RollDefinition):
+    """
+    Void Fusion Rifle, High-Impact Frame, Anti-Unstoppable
+    Source: Banshee-44
+    https://www.light.gg/db/items/3201200906
+    https://destiny.report/w/3201200906
+    """
+    item = Item('Monody-44', hash=3201200906)
+
+
 class NullComposure(RollDefinition):
     """
     Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload

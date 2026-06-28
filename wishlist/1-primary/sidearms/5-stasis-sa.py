@@ -1,6 +1,23 @@
 from wishlist import *
 
 
+class FaustusDecline(RollDefinition):
+    """
+    Stasis Sidearm, Lightweight Frame, Anti-Overload
+    Source: Banshee-44
+    https://www.light.gg/db/items/1663482635
+    https://destiny.report/w/1663482635
+    """
+    item = Item('Faustus Decline', hash=1663482635)
+    roll = Roll(
+        'PvE',
+        [barrel.Smallbore, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Demolitionist, trait.Rimestealer],
+        [trait.Headstone],
+        )
+
+
 class LiminalVigil(RollDefinition):
     """
     Stasis Sidearm, Heavy Burst, Anti-Unstoppable

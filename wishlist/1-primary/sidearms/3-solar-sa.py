@@ -1,6 +1,23 @@
 from wishlist import *
 
 
+class Drang(RollDefinition):
+    """
+    Solar Sidearm, Together Forever, Anti-Barrier
+    Source: Banshee-44
+    https://www.light.gg/db/items/358190158
+    https://destiny.report/w/358190158
+    """
+    item = Item('Drang', hash=358190158)
+    roll = Roll(
+        'Solar combo',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
+
+
 class EveningSI4(RollDefinition):
     """
     Solar Sidearm, Adaptive Burst, Anti-Barrier
