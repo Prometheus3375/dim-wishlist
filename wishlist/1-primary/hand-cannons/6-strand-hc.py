@@ -14,6 +14,32 @@ class BetterDevils(RollDefinition):
         ]
 
 
+class CorundumHammer(RollDefinition):
+    """
+    Strand Hand Cannon, Adaptive Frame, Anti-Barrier
+    Source: Saint-14
+    https://www.light.gg/db/items/2263462407
+    https://destiny.report/w/2263462407
+    """
+    item = Item('Corundum Hammer', hash=2263462407)
+    rolls = [
+        Roll(
+            'Shoot to Loot',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Firefly],
+            [trait.Tear],
+            ),
+        ]
+
+
 class SixthSense(RollDefinition):
     """
     Strand Hand Cannon, Aggressive Frame, Anti-Unstoppable

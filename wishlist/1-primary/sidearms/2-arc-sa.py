@@ -11,6 +11,16 @@ class AnonymousAutumn(RollDefinition):
     item = Item('Anonymous Autumn', hash=1644501332)
 
 
+class Forgiveness(RollDefinition):
+    """
+    Arc Sidearm, Heavy Burst, Anti-Unstoppable
+    Source: Saint-14
+    https://www.light.gg/db/items/1552443158
+    https://destiny.report/w/1552443158
+    """
+    item = Item('Forgiveness', hash=1552443158)
+
+
 class TheKeening(RollDefinition):
     """
     Arc Sidearm, Adaptive Frame, Anti-Barrier

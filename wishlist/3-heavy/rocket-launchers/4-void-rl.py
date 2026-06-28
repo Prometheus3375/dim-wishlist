@@ -27,7 +27,7 @@ class BellowingGiant(RollDefinition):
 class TomorrowsAnswer(RollDefinition):
     """
     Void Rocket Launcher, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/1940352487
     https://destiny.report/w/1940352487
     """

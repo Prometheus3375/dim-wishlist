@@ -24,7 +24,7 @@ class Taraxippos(RollDefinition):
 class TheScholar(RollDefinition):
     """
     Strand Scout Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/3790632261
     https://destiny.report/w/3790632261
     """

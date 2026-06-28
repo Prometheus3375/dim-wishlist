@@ -1,6 +1,39 @@
 from wishlist import *
 
 
+class AureusNeutralizer(RollDefinition):
+    """
+    Kinetic Hand Cannon, Spread Shot, Anti-Overload
+    Source: Saint-14
+    https://www.light.gg/db/items/3981920134
+    https://destiny.report/w/3981920134
+    """
+    item = Item('Aureus Neutralizer', hash=3981920134)
+    rolls = [
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ProximityPower, trait.GraveRobber, trait.ThreatDetector],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.VorpalWeapon],
+            [trait.TrenchBarrel, trait.CascadePoint],
+            ),
+        Roll(
+            'PvP',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.OpeningShot, trait.ClosingTime],
+            ),
+        ]
+
+
 class CrimilsDagger(RollDefinition):
     """
     Kinetic Hand Cannon, Aggressive Frame, Anti-Unstoppable

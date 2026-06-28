@@ -11,6 +11,23 @@ class Adamantite(RollDefinition):
     item = Item('Adamantite', hash=621450049)
 
 
+class AuricDisabler(RollDefinition):
+    """
+    Strand Auto Rifle, Precision Frame, Anti-Barrier
+    Source: Saint-14
+    https://www.light.gg/db/items/702001725
+    https://destiny.report/w/702001725
+    """
+    item = Item('Auric Disabler', hash=702001725)
+    roll = Roll(
+        'PvE',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.FlaredMagwell, AnyPerk],
+        [trait.Hatchling],
+        [trait.Tear, trait.SwordLogic, trait.DesperateMeasures],
+        )
+
+
 class LethalAbundance(RollDefinition):
     """
     Strand Auto Rifle, High-Impact Frame, Anti-Unstoppable

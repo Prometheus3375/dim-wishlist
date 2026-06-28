@@ -14,7 +14,7 @@ class AbideTheReturn(RollDefinition):
 class SolasScar(RollDefinition):
     """
     Solar Sword, Caster Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/4089030727
     https://destiny.report/w/4089030727
     """

@@ -73,7 +73,7 @@ class ColdDenial(RollDefinition):
 class TheMessenger(RollDefinition):
     """
     Kinetic Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/4277548087
     https://destiny.report/w/4277548087
     """

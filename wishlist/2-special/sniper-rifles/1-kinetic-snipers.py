@@ -27,7 +27,7 @@ class BiteOfTheFox(RollDefinition):
 class EyeOfSol(RollDefinition):
     """
     Kinetic Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/2499834165
     https://destiny.report/w/2499834165
     """

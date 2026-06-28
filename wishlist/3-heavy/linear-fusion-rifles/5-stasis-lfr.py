@@ -4,7 +4,7 @@ from wishlist import *
 class ReedsRegret(RollDefinition):
     """
     Stasis Linear Fusion Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Saint-14
     https://www.light.gg/db/items/3267997292
     https://destiny.report/w/3267997292
     """

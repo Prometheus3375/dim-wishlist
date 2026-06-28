@@ -1,6 +1,32 @@
 from wishlist import *
 
 
+class CataphractGL3(RollDefinition):
+    """
+    Strand Drum Grenade Launcher, Adaptive Frame, Anti-Barrier
+    Source: Saint-14
+    https://www.light.gg/db/items/3805679279
+    https://destiny.report/w/3805679279
+    """
+    item = Item('Cataphract GL3', hash=3805679279)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.HardLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousAssassin, trait.EnviousArsenal, trait.AutoLoadingHolster],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'High DPS',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.SpikeGrenades, AnyPerk],
+            [trait.EnviousArsenal, trait.AutoLoadingHolster, trait.EnviousAssassin],
+            [trait.ExplosiveLight],
+            ),
+        ]
+
+
 class TheEverPresent(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload

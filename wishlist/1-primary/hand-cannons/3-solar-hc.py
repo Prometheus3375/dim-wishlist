@@ -60,7 +60,7 @@ class FrontiersCry(RollDefinition):
 class IgneousHammer(RollDefinition):
     """
     Solar Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/2776092652
     https://destiny.report/w/2776092652
     """

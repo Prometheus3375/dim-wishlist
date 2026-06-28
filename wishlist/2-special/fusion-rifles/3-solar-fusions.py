@@ -24,7 +24,7 @@ class DreamBreaker(RollDefinition):
 class ExilesCurse(RollDefinition):
     """
     Solar Fusion Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/1117787139
     https://destiny.report/w/1117787139
     """

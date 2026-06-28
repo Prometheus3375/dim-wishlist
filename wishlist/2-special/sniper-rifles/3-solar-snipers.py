@@ -4,7 +4,7 @@ from wishlist import *
 class KeenThistle(RollDefinition):
     """
     Solar Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/2499834164
     https://destiny.report/w/2499834164
     """

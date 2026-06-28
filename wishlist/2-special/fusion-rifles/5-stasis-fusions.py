@@ -11,6 +11,25 @@ class AurvandilFR6(RollDefinition):
     item = Item('Aurvandil FR6', hash=3786215462)
 
 
+class BurdenOfGuilt(RollDefinition):
+    """
+    Stasis Fusion Rifle, Adaptive Frame, Anti-Barrier
+    Source: Saint-14
+    https://www.light.gg/db/items/976459525
+    https://destiny.report/w/976459525
+    """
+    item = Item('Burden Of Guilt', hash=976459525)
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.AcceleratedCoils, AnyPerk],
+            [trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
+            ),
+        ]
+
+
 class Lionfish4FR(RollDefinition):
     """
     Stasis Fusion Rifle, Rapid-Fire Frame, Anti-Overload

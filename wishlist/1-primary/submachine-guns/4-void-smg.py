@@ -24,7 +24,7 @@ class EveryWakingMoment(RollDefinition):
 class ShayurasWrath(RollDefinition):
     """
     Void Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/3747667917
     https://destiny.report/w/3747667917
     """

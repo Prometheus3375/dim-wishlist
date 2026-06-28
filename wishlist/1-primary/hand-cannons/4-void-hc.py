@@ -14,7 +14,7 @@ class BottomDollar(RollDefinition):
 class ExaltedTruth(RollDefinition):
     """
     Void Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/2776092653
     https://destiny.report/w/2776092653
     """

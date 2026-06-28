@@ -97,7 +97,7 @@ class WakingVigil(RollDefinition):
 class YesterdaysQuestion(RollDefinition):
     """
     Arc Hand Cannon, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Saint-14
     https://www.light.gg/db/items/1803480512
     https://destiny.report/w/1803480512
     """

@@ -51,7 +51,7 @@ class TheDeicide(RollDefinition):
 class TheInquisitor(RollDefinition):
     """
     Arc Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/1185633760
     https://destiny.report/w/1185633760
     """

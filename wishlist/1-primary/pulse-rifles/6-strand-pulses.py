@@ -4,7 +4,7 @@ from wishlist import *
 class AishasCare(RollDefinition):
     """
     Strand Pulse Rifle, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/3614211586
     https://destiny.report/w/3614211586
     """

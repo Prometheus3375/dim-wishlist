@@ -32,3 +32,29 @@ class ThermalErosion(RollDefinition):
     https://destiny.report/w/642545454
     """
     item = Item('Thermal Erosion', hash=642545454)
+
+
+class UnwaveringDuty(RollDefinition):
+    """
+    Solar Machine Gun, Adaptive Frame, Anti-Barrier
+    Source: Saint-14
+    https://www.light.gg/db/items/3489054606
+    https://destiny.report/w/3489054606
+    """
+    item = Item('Unwavering Duty', hash=3489054606)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Incandescent, trait.Rampage, trait.Incandescent],
+            [trait.KillingTally],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.Incandescent],
+            [trait.BurningAmbition],
+            ),
+        ]

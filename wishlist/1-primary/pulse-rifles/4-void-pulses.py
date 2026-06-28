@@ -97,6 +97,25 @@ class Premonition(RollDefinition):
     item = Item('Premonition', hash=1969802090)
 
 
+class TheMartlet(RollDefinition):
+    """
+    Void Pulse Rifle, Lightweight Frame, Anti-Overload
+    Source: Saint-14
+    https://www.light.gg/db/items/877384
+    https://destiny.report/w/877384
+    """
+    item = Item('The Martlet', hash=877384)
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.RepulsorBrace, trait.Firefly],
+            [trait.DestabilizingRounds],
+            ),
+        ]
+
+
 class VelesX(RollDefinition):
     """
     Void Pulse Rifle, Aggressive Burst, Anti-Unstoppable

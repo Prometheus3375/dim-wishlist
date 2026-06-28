@@ -27,7 +27,7 @@ class TheRingingNail(RollDefinition):
 class TheSummoner(RollDefinition):
     """
     Solar Auto Rifle, Adaptive Frame, Anti-Barrier
-    Source: Trials of Osiris Wins
+    Source: Trials of Osiris
     https://www.light.gg/db/items/2884908760
     https://destiny.report/w/2884908760
     """

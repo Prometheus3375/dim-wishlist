@@ -31,7 +31,7 @@ class Stormchaser(RollDefinition):
 class WillfulHamartia(RollDefinition):
     """
     Arc Linear Fusion Rifle, Adaptive Burst, Anti-Barrier
-    Source: Unspecified
+    Source: Trials of Osiris
     https://www.light.gg/db/items/1952295804
     https://destiny.report/w/1952295804
     """

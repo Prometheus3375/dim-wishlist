@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AstralHorizon(RollDefinition):
+    """
+    Kinetic Shotgun, Aggressive Frame, Anti-Unstoppable
+    Source: Saint-14
+    https://www.light.gg/db/items/2269779982
+    https://destiny.report/w/2269779982
+    """
+    item = Item('Astral Horizon', hash=2269779982)
+
+
 class Blasphemer(RollDefinition):
     """
     Kinetic Shotgun, Pinpoint Slug Frame, Anti-Barrier

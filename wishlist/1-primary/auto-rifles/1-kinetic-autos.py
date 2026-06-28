@@ -34,6 +34,32 @@ class DutyBound(RollDefinition):
         ]
 
 
+class EverburningGlitz(RollDefinition):
+    """
+    Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload
+    Source: Saint-14
+    https://www.light.gg/db/items/2857870254
+    https://destiny.report/w/2857870254
+    """
+    item = Item('Everburning Glitz', hash=2857870254)
+    rolls = [
+        Roll(
+            'Attrition Orbs',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.AttritionOrbs],
+            [trait.KineticTremors, trait.OneForAll],
+            ),
+        Roll(
+            'Bewildering Burst',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.KineticTremors, trait.OneForAll, trait.AncillaryOrdinance],
+            ),
+        ]
+
+
 class GiversBlessing(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload
