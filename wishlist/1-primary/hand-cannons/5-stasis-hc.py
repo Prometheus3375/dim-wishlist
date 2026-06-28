@@ -118,6 +118,46 @@ class SpareRations(RollDefinition):
     item = Item('Spare Rations', hash=810474119)
 
 
+class TripleLaureate(RollDefinition):
+    """
+    Stasis Hand Cannon, Spread Shot, Anti-Overload
+    Source: Guardian Games
+    https://www.light.gg/db/items/1605599021
+    https://destiny.report/w/1605599021
+    """
+    items = [
+        Item('Triple Laureate', hash=1605599021),
+        Item('Triple Laureate', hash=2908653246),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.GraveRobber],
+            [trait.AmbitiousAssassin],
+            [trait.CrystallineCorpsebloom],
+            [trait.TrenchBarrel],
+            [trait.OneTwoPunch],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.GraveRobber],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.CrystallineCorpsebloom],
+            [trait.TrenchBarrel, trait.ChaosReshaped],
+            ),
+        ]
+
+
 class Vulpecula(RollDefinition):
     """
     Stasis Hand Cannon, Precision Frame, Anti-Barrier

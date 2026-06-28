@@ -54,7 +54,7 @@ class TheRecluse(RollDefinition):
 class TheTitle(RollDefinition):
     """
     Void Submachine Gun, Aggressive Frame, Anti-Unstoppable
-    Source:
+    Source: Guardian Games
     https://www.light.gg/db/items/4106258882
     https://destiny.report/w/4106258882
     """

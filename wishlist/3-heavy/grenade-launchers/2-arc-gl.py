@@ -14,7 +14,7 @@ class Doomsday(RollDefinition):
 class Hullabaloo(RollDefinition):
     """
     Arc Drum Grenade Launcher, Compressed Wave Frame, Anti-Unstoppable
-    Source:
+    Source: Guardian Games
     https://www.light.gg/db/items/2449096504
     https://destiny.report/w/2449096504
     """

@@ -1,6 +1,53 @@
 from wishlist import *
 
 
+class Keraunios(RollDefinition):
+    """
+    Arc Trace Rifle, Adaptive Frame, Anti-Barrier
+    Source: Guardian Games
+    https://www.light.gg/db/items/2386208942
+    https://destiny.report/w/2386208942
+    """
+    items = [
+        Item('Keraunios', hash=2386208942),
+        Item('Keraunios', hash=981450701),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.SuperchargedMagazine],
+            [trait.ShootToLoot],
+            [trait.TargetLock],
+            [trait.JoltingFeedback],
+            [trait.DetonatorBeam],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.DetonatorBeam],
+            ),
+        Roll(
+            'Shoot To Loot',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.DetonatorBeam, trait.JoltingFeedback],
+            ),
+        Roll(
+            'Continuous damage',
+            [barrel.Smallbore, AnyPerk],
+            [battery.TacticalBattery, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.TargetLock],
+            ),
+        ]
+
+
 class ActionItem(RollDefinition):
     """
     Stasis Trace Rifle, Adaptive Frame, Anti-Barrier

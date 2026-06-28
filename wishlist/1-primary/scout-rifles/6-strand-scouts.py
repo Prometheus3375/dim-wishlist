@@ -14,7 +14,7 @@ class Glissando47(RollDefinition):
 class Taraxippos(RollDefinition):
     """
     Strand Scout Rifle, Lightweight Frame, Anti-Overload
-    Source:
+    Source: Guardian Games
     https://www.light.gg/db/items/4148460558
     https://destiny.report/w/4148460558
     """

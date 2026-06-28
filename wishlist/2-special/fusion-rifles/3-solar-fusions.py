@@ -55,3 +55,42 @@ class FiniteMaybe(RollDefinition):
             [trait.BaitAndSwitch, trait.ControlledBurst],
             ),
         ]
+
+
+class TheBeacon(RollDefinition):
+    """
+    Solar Fusion Rifle, Rapid-Fire Frame, Anti-Overload
+    Source: Guardian Games
+    https://www.light.gg/db/items/2161618499
+    https://destiny.report/w/2161618499
+    """
+    items = [
+        Item('The Beacon', hash=2161618499),
+        Item('The Beacon', hash=76739872),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.Demolitionist],
+            [trait.Deconstruct],
+            [trait.ControlledBurst],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.BaitAndSwitch, trait.ControlledBurst],
+            ),
+        Roll(
+            'Deconstruct',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.RewindRounds],
+            [trait.Deconstruct],
+            ),
+        ]
