@@ -14,7 +14,7 @@ class LingeringDread(RollDefinition):
 class Liturgy(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Double Fire, Anti-Unstoppable
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/3377522331
     https://destiny.report/w/3377522331
     """

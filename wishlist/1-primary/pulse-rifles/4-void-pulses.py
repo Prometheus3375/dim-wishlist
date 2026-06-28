@@ -24,7 +24,7 @@ class ElsiesRifle(RollDefinition):
 class Gridskipper(RollDefinition):
     """
     Void Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/3176697589
     https://destiny.report/w/3176697589
     """

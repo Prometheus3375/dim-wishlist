@@ -17,7 +17,7 @@ class Accelerando42(RollDefinition):
 class NoxPerennialV(RollDefinition):
     """
     Strand Fusion Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/2366022261
     https://destiny.report/w/2366022261
     """

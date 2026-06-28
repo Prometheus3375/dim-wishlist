@@ -4,7 +4,7 @@ from wishlist import *
 class BrassAttacks(RollDefinition):
     """
     Void Sidearm, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/1291040554
     https://destiny.report/w/1291040554
     """

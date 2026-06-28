@@ -40,7 +40,7 @@ class EveningSI4(RollDefinition):
 class HeliocentricQSc(RollDefinition):
     """
     Solar Sidearm, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/1291040555
     https://destiny.report/w/1291040555
     """

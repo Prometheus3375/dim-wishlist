@@ -50,7 +50,7 @@ class NightTerror(RollDefinition):
 class TemptationsHook(RollDefinition):
     """
     Arc Sword, Caster Frame, Anti-Barrier
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/3977827673
     https://destiny.report/w/3977827673
     """

@@ -54,36 +54,6 @@ class PatronOfLostCauses(RollDefinition):
         ]
 
 
-class PerfectParadox(RollDefinition):
-    """
-    Kinetic Shotgun, Rapid-Fire Frame
-    https://www.light.gg/db/items/1298672084
-    """
-    item = Item('Perfect Paradox', hash=1298672084)
-    _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
-    _mags = [magazine.TacticalMag, magazine.LightMag]
-    rolls = [
-        Roll(
-            """
-            Melee damage increase.
-            Ready/Stow speed-wise Pugilist is better than Threat Detector x1,
-            but is worse than Threat Detector x2
-            """,
-            _barrels,
-            _mags,
-            [trait.Pugilist, trait.ThreatDetector],
-            [trait.OneTwoPunch],
-            ),
-        Roll(
-            'Damage dealing',
-            _barrels,
-            _mags,
-            [trait.DualLoader, trait.Pugilist],
-            [trait.TrenchBarrel],
-            )
-        ]
-
-
 class MartyrsRetribution(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Wave Frame

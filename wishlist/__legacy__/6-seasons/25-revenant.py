@@ -38,23 +38,6 @@ class VantagePoint(RollDefinition):
         )
 
 
-class Liturgy(RollDefinition):
-    """
-    Stasis Breechloaded Grenade Launcher, Double Fire
-    https://www.light.gg/db/items/2599338624
-    """
-    item = Item('Liturgy', hash=2599338624)
-    rolls = [
-        Roll(
-            'Damage rotations combo',
-            [launcher_barrel.HardLaunch, AnyPerk],
-            [magazine.SpikeGrenades],
-            [trait.EnviousArsenal],
-            [trait.ChillClip],
-            ),
-        ]
-
-
 class Sovereignty(RollDefinition):
     """
     Void Sniper Rifle, Adaptive Frame
@@ -131,37 +114,6 @@ class ScavengersFate(RollDefinition):
         )
 
 
-class RedTape(RollDefinition):
-    """
-    Stasis Scout Rifle, Lightweight Frame
-    https://www.light.gg/db/items/3423493037
-    """
-    item = Item('Red Tape', hash=3423493037)
-    _barrels = [barrel.ArrowheadBrake, AnyPerk]
-    _mags = [
-        magazine.TacticalMag,
-        magazine.AppendedMag,
-        magazine.AlloyMagazine,
-        magazine.FlaredMagwell,
-        ]
-    rolls = [
-        Roll(
-            'Explosive Payload',
-            _barrels,
-            _mags,
-            [trait.Demolitionist],
-            [trait.ExplosivePayload],
-            ),
-        Roll(
-            'Headstone',
-            _barrels,
-            _mags,
-            [trait.Demolitionist, trait.Rimestealer],
-            [trait.Headstone],
-            ),
-        ]
-
-
 class HereticsFervor(RollDefinition):
     """
     Stasis Rocket Launcher, Aggressive Frame
@@ -174,51 +126,6 @@ class HereticsFervor(RollDefinition):
         [magazine.ImpactCasing, AnyPerk],
         [trait.AutoLoadingHolster],
         [trait.ExplosiveLight],
-        )
-
-
-class ChromaRush(RollDefinition):
-    """
-    Kinetic Auto Rifle, Rapid-Fire Frame
-    https://www.light.gg/db/items/2598420927
-    """
-    item = Item('Chroma Rush', hash=2598420927)
-    _mags = [
-        magazine.AlloyMagazine,
-        magazine.FlaredMagwell,
-        magazine.TacticalMag,
-        magazine.AppendedMag,
-        ]
-    rolls = [
-        Roll(
-            'Kinetic Tremor roll',
-            [barrel.ArrowheadBrake, AnyPerk],
-            _mags,
-            [trait.Subsistence],
-            [trait.KineticTremors],
-            ),
-        Roll(
-            "Good ol' roll",
-            [barrel.ArrowheadBrake, AnyPerk],
-            _mags,
-            [trait.Subsistence],
-            [trait.Rampage],
-            ),
-        ]
-
-
-class Gridskipper(RollDefinition):
-    """
-    Void Pulse Rifle, Rapid-Fire Frame
-    https://www.light.gg/db/items/3433930495
-    """
-    item = Item('Gridskipper', hash=3433930495)
-    roll = Roll(
-        'PvE',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.RepulsorBrace],
-        [trait.DestabilizingRounds],
         )
 
 

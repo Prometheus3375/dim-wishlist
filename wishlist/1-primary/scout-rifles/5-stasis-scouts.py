@@ -14,7 +14,7 @@ class LiveFire(RollDefinition):
 class RedTape(RollDefinition):
     """
     Stasis Scout Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/736362511
     https://destiny.report/w/736362511
     """

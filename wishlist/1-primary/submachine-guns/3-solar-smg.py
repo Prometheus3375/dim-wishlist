@@ -4,7 +4,7 @@ from wishlist import *
 class DeathAdder(RollDefinition):
     """
     Solar Submachine Gun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/2130249527
     https://destiny.report/w/2130249527
     """

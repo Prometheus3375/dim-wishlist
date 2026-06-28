@@ -14,7 +14,7 @@ class Breakneck(RollDefinition):
 class ChromaRush(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: World
     https://www.light.gg/db/items/771811871
     https://destiny.report/w/771811871
     """
@@ -129,7 +129,7 @@ class SeventhSeraphCarbine(RollDefinition):
 class SteelfeatherRepeater(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: World
     https://www.light.gg/db/items/771811870
     https://destiny.report/w/771811870
     """

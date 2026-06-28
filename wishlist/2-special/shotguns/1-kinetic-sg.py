@@ -34,7 +34,7 @@ class Fortissimo11(RollDefinition):
 class PerfectParadox(RollDefinition):
     """
     Kinetic Shotgun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/4108648762
     https://destiny.report/w/4108648762
     """

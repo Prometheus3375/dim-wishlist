@@ -300,34 +300,3 @@ class HollowWords(RollDefinition):
     https://www.light.gg/db/items/342027677
     """
     item = Item('Hollow Words', hash=342027677)
-
-
-class TemptationsHook(RollDefinition):
-    """
-    Arc Sword, Caster Frame
-    https://www.light.gg/db/items/1587953057
-    """
-    item = Item("Temptation's Hook", hash=1587953057)
-    rolls = [
-        Roll(
-            'PvP, ad clear',
-            [blade.JaggedEdge],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.TirelessBlade],
-            [trait.ChainReaction],
-            ),
-        Roll(
-            'Damage dealing',
-            [blade.JaggedEdge],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.RelentlessStrikes],
-            [trait.WhirlwindBlade],
-            ),
-        Roll(
-            'Attrition Orbs',
-            [blade.JaggedEdge],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.AttritionOrbs],
-            [trait.WhirlwindBlade],
-            ),
-        ]

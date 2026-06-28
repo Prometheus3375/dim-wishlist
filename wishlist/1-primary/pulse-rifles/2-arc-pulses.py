@@ -36,7 +36,7 @@ class HorrorsLeast(RollDefinition):
 class InfinitePaths8(RollDefinition):
     """
     Arc Pulse Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: World
     https://www.light.gg/db/items/3176697588
     https://destiny.report/w/3176697588
     """

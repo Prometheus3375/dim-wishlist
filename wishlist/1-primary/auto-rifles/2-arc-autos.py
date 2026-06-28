@@ -70,7 +70,7 @@ class SorrowsVerse(RollDefinition):
 class Trendsetter(RollDefinition):
     """
     Arc Auto Rifle, Adaptive Frame, Anti-Barrier
-    Source: Equilibrium
+    Source: World
     https://www.light.gg/db/items/2863808104
     https://destiny.report/w/2863808104
     """

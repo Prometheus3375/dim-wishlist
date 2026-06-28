@@ -30,7 +30,7 @@ class ForcedMemorializer(RollDefinition):
 class InboundSurveillance(RollDefinition):
     """
     Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: The Edge of Fate Campaign
+    Source: World
     https://www.light.gg/db/items/2776506837
     https://destiny.report/w/2776506837
     """
