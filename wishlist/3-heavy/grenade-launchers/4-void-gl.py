@@ -4,7 +4,7 @@ from wishlist import *
 class Acosmic(RollDefinition):
     """
     Void Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload
-    Source:
+    Source: Festival of the Lost
     https://www.light.gg/db/items/1106017703
     https://destiny.report/w/1106017703
     """

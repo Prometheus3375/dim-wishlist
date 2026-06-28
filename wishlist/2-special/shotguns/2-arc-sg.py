@@ -1,6 +1,26 @@
 from wishlist import *
 
 
+class ArcaneEmbrace(RollDefinition):
+    """
+    Arc Shotgun, Heavy Burst, Anti-Unstoppable
+    Source: Festival of the Lost
+    https://www.light.gg/db/items/1813474267
+    https://destiny.report/w/1813474267
+    """
+    items = [
+        Item('Arcane Embrace', hash=3328019216),
+        Item('Arcane Embrace', hash=1813474267),
+        ]
+    roll = Roll(
+        'Damage dealing',
+        [barrel.ArrowheadBrake, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.FourthTimesTheCharm],
+        [trait.AggregateCharge, trait.PrecisionInstrument, trait.Surrounded],
+        )
+
+
 class DedGramaryeIV(RollDefinition):
     """
     Arc Shotgun, Lightweight Frame, Anti-Overload

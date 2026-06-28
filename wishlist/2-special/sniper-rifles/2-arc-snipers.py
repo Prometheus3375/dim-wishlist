@@ -27,7 +27,7 @@ class Apostate(RollDefinition):
 class Mechabre(RollDefinition):
     """
     Arc Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source:
+    Source: Festival of the Lost
     https://www.light.gg/db/items/3023280734
     https://destiny.report/w/3023280734
     """

@@ -34,7 +34,7 @@ class HerodC(RollDefinition):
 class HorrorStory(RollDefinition):
     """
     Stasis Auto Rifle, Precision Frame, Anti-Barrier
-    Source:
+    Source: Festival of the Lost
     https://www.light.gg/db/items/2884070594
     https://destiny.report/w/2884070594
     """

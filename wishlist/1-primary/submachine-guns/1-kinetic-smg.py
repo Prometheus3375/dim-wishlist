@@ -11,6 +11,42 @@ class Adjudicator(RollDefinition):
     item = Item('Adjudicator', hash=140914741)
 
 
+class Gunburn(RollDefinition):
+    """
+    Kinetic Submachine Gun, Lightweight Frame, Anti-Overload
+    Source: Festival of the Lost
+    https://www.light.gg/db/items/3431536253
+    https://destiny.report/w/3431536253
+    """
+    items = [
+        Item('Gunburn', hash=3431536253),
+        Item('Gunburn', hash=72775246),
+        ]
+    rolls = [
+        Roll(
+            'Kinetic Tremors',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.ThreatDetector, trait.BewilderingBurst, trait.LeadFromLight],
+            [trait.KineticTremors],
+            ),
+        Roll(
+            'Orb combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LeadFromLight],
+            [trait.AttritionOrbs],
+            ),
+        Roll(
+            'Missile combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
+            ),
+        ]
+
+
 class MultimachCCX(RollDefinition):
     """
     Kinetic Submachine Gun, Lightweight Frame, Anti-Overload
