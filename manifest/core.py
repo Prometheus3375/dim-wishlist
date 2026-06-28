@@ -603,6 +603,18 @@ class PlugSet:
                         yield from result
 
 
+class WeaponMultipleIntrinsicsWarning(Warning):
+    """
+    Warnings about weapons that have multiple intrinsics.
+    """
+
+
+class WeaponMultipleBreakerTypesWarning(Warning):
+    """
+    Warnings about weapons that have multiple breaker types.
+    """
+
+
 class Weapon:
     """
     A convenience wrapper around a weapon definition.
@@ -695,17 +707,53 @@ class Weapon:
         return indexes
 
     @cached_property
-    def intrinsics(self, /) -> Sequence[str]:
+    def intrinsic_object(self, /) -> JSONObjectWrapper:
         """
-        Names of intrinsics of this weapon.
+        Intrinsic definition of this weapon.
         """
         socket_indexes = self._get_socket_indexes_by_category_name('INTRINSIC TRAITS')
         socket_entries = self._definition['sockets.socketEntries']
-        return tuple(
-            self._manifest.get_item(hash_)['displayProperties.name']
+        intrinsics = tuple(
+            self._manifest.get_item(socket_entries[index, 'singleInitialItemHash'])
             for index in socket_indexes
-            if (hash_ := socket_entries[index, 'singleInitialItemHash']) > 0
             )
+        if len(intrinsics) > 1:
+            warn(
+                f'weapon {self.name!r} ({self.hash}) has {len(intrinsics)} intrinsics '
+                f'with hashes {', '.join(str(d['hash']) for d in intrinsics)}',
+                category=WeaponMultipleIntrinsicsWarning,
+                stacklevel=2,
+                )
+
+        return intrinsics[0]
+
+    @property
+    def intrinsic(self, /) -> str:
+        """
+        Names of the intrinsic trait of this weapon.
+        """
+        return self.intrinsic_object['displayProperties.name']
+
+    @cached_property
+    def breaker_type(self, /) -> str:
+        """
+        Breaker type of this weapon.
+        """
+        breaker_types = [
+            d
+            for p in self.intrinsic_object['perks']
+            if
+            '[' in (d := self._manifest.get_sandbox_perk(p['perkHash']))['displayProperties.name']
+            ]
+        if len(breaker_types) > 1:
+            warn(
+                f'weapon {self.name!r} ({self.hash}) has {len(breaker_types)} breaker types '
+                f'with hashes {', '.join(str(d['hash']) for d in breaker_types)}',
+                category=WeaponMultipleBreakerTypesWarning,
+                stacklevel=2,
+                )
+
+        return breaker_types[0]['displayProperties.name']
 
     def iterate_perk_plug_sets(self, /) -> Iterator[PlugSet]:
         """
