@@ -286,6 +286,7 @@ SYMBOLS_TO_REPLACE = {
     '%': ' ',
     '(': ' ',
     ')': ' ',
+    '/': ' ',
     }
 
 
@@ -469,7 +470,7 @@ _sort_key_for_weapon = attrgetter('source')
 
 def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
     w = li[0]
-    return w.source, w.ammo_type, w.name
+    return w.release_string, w.source, w.ammo_type, w.name
 
 
 def get_weapon_type_with_intrinsic(w: Weapon, /) -> str:
@@ -522,7 +523,6 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
         # Place the weapon with source at start.
         li.sort(key=_sort_key_for_weapon, reverse=True)
 
-    # Sort weapon lists by the source.
     weapon_lists = sorted(name2weapons.values(), key=_sort_key_for_weapon_list)
     with open(WEAPON_DEFINITIONS_FILE, 'w') as f:
         f.write(f'from {wishlist.__name__} import *\n')
