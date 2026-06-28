@@ -9,14 +9,6 @@ class Exuviae(RollDefinition):
     item = Item('Exuviae', hash=2823644677)
 
 
-class Insurmountable(RollDefinition):
-    """
-    Void Sidearm, Precision Frame
-    https://www.light.gg/db/items/414045521
-    """
-    item = Item('Insurmountable', hash=414045521)
-
-
 class VantagePoint(RollDefinition):
     """
     Arc Pulse Rifle, Adaptive Frame

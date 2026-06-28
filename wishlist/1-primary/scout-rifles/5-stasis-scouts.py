@@ -14,7 +14,7 @@ class Jurisprudent(RollDefinition):
 class LiveFire(RollDefinition):
     """
     Stasis Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/3156551031
     https://destiny.report/w/3156551031
     """

@@ -47,7 +47,7 @@ class KindledOrchid(RollDefinition):
 class MaahesHC4(RollDefinition):
     """
     Void Hand Cannon, Heavy Burst, Anti-Unstoppable
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/734476286
     https://destiny.report/w/734476286
     """

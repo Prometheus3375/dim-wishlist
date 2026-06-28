@@ -30,30 +30,6 @@ class Breachlight(RollDefinition):
         ]
 
 
-class PatronOfLostCauses(RollDefinition):
-    """
-    Kinetic Scout Rifle, Lightweight Frame
-    https://www.light.gg/db/items/2249996761
-    """
-    item = Item('Patron of Lost Causes', hash=2249996761)
-    rolls = [
-        Roll(
-            'Classic PvE combo for a scout rifle',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
-            [trait.RapidHit],
-            [trait.KineticTremors, trait.ExplosivePayload],
-            ),
-        Roll(
-            'Strategist',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk],
-            [trait.Strategist],
-            [trait.KineticTremors, trait.ExplosivePayload],
-            ),
-        ]
-
-
 class MartyrsRetribution(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Wave Frame

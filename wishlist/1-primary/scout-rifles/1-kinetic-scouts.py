@@ -83,7 +83,7 @@ class NightWatch(RollDefinition):
 class PatronOfLostCauses(RollDefinition):
     """
     Kinetic Scout Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/3156551030
     https://destiny.report/w/3156551030
     """

@@ -74,7 +74,7 @@ class TerminusHorizon(RollDefinition):
 class WatchfulEye(RollDefinition):
     """
     Arc Machine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/3058845782
     https://destiny.report/w/3058845782
     """

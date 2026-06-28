@@ -24,7 +24,7 @@ class JorumsClaw(RollDefinition):
 class OgmaPR6(RollDefinition):
     """
     Solar Pulse Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/324584912
     https://destiny.report/w/324584912
     """

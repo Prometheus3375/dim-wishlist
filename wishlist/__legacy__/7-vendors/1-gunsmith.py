@@ -1,38 +1,6 @@
 from wishlist import *
 
 
-# region Cassoid
-class DedGramaryeIV(RollDefinition):
-    """
-    Ark Shotgun, Lightweight Frame
-    https://www.light.gg/db/items/499245245
-    """
-    item = Item('Ded Gramarye IV', hash=499245245)
-    _barrels = [barrel.BarrelShroud, barrel.CorkscrewRifling, barrel.Smallbore]
-    rolls = [
-        Roll(
-            'Ad clear',
-            _barrels,
-            [magazine.AssaultMag, magazine.LightMag, magazine.TacticalMag],
-            [trait.Discord, trait.ThreatDetector],
-            [trait.ChainReaction],
-            ),
-        Roll(
-            """
-            Voltshot.
-            Mag increasing perks are not good with Voltshot
-            as with them reserves deplete earlier.
-            Discord is not an option as it refills mag, does not reload;
-            thus, it does not activate Voltshot
-            """,
-            _barrels,
-            [magazine.AssaultMag, magazine.LightMag],
-            [trait.ThreatDetector],
-            [trait.Voltshot],
-            ),
-        ]
-
-
 class QuaFurorV(RollDefinition):
     """
     Stasis Machine Gun, Aggressive Frame
@@ -48,30 +16,6 @@ class QuaFurorV(RollDefinition):
         )
 
 
-# endregion
-# region Field forged
-class LiveFire(RollDefinition):
-    """
-    Stasis Scout Rifle, Precision Frame
-    https://www.light.gg/db/items/3612142623
-    """
-    item = Item('Live Fire', hash=3612142623)
-    rolls = [
-        Roll(
-            'Shoot to Loot',
-            [trait.RapidHit],
-            [trait.ShootToLoot],
-            ),
-        Roll(
-            'Headstone. Prefer Red Tape for Rimestealer + Headstone',
-            [trait.Rimestealer, trait.RapidHit],
-            [trait.Headstone],
-            ),
-        ]
-
-
-# endregion
-# region Hakke
 class VeledaF(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame
@@ -87,23 +31,6 @@ class VeledaF(RollDefinition):
         )
 
 
-class AdmetusD(RollDefinition):
-    """
-    Void Scout Rifle, High-Impact Frame
-    https://www.light.gg/db/items/3776430252
-    """
-    item = Item('Admetus-D', hash=3776430252)
-    roll = Roll(
-        'Withering Gaze',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.RepulsorBrace, trait.RapidHit],
-        [trait.WitheringGaze],
-        )
-
-
-# endregion
-# region Omolon
 class YarovitMG4(RollDefinition):
     """
     Stasis Submachine Gun, Lightweight Frame
@@ -117,8 +44,6 @@ class YarovitMG4(RollDefinition):
         )
 
 
-# endregion
-# SUROS
 class Legato11(RollDefinition):
     """
     Solar Shotgun, Pinpoint Slug Frame
@@ -142,8 +67,6 @@ class CruorisFR4(RollDefinition):
     item = Item('Cruoris FR4', hash=891996636)
 
 
-# endregion
-# region Tex Mechanica
 class BoondoggleMk55(RollDefinition):
     """
     Kinetic Submachine Gun, Aggressive Frame
@@ -161,8 +84,6 @@ class BoondoggleMk55(RollDefinition):
         ]
 
 
-# endregion
-# region Veist
 class Suspectum4FR(RollDefinition):
     """
     Stasis Linear Fusion Rifle, Precision Frame
@@ -184,4 +105,3 @@ class Suspectum4FR(RollDefinition):
             is_trash=True,
             ),
         ]
-# endregion

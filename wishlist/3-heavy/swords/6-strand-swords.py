@@ -4,7 +4,7 @@ from wishlist import *
 class AbyssalEdge(RollDefinition):
     """
     Strand Sword, Wave Sword Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/2599520828
     https://destiny.report/w/2599520828
     """

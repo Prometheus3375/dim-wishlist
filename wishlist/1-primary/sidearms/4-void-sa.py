@@ -34,7 +34,7 @@ class CompactDefender(RollDefinition):
 class Insurmountable(RollDefinition):
     """
     Void Sidearm, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/2596736862
     https://destiny.report/w/2596736862
     """

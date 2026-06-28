@@ -76,66 +76,6 @@ class EyesUnveiled(RollDefinition):
         ]
 
 
-class WatchfulEye(RollDefinition):
-    """
-    Arc Machine Gun, Aggressive Frame
-    https://www.light.gg/db/items/1757177186
-    """
-    items = [
-        Item('Watchful Eye', hash=1757177186),
-        Item('Watchful Eye (Adept)', hash=737409399),
-        # With Runneth Over
-        Item('Watchful Eye', hash=768610585),
-        Item('Watchful Eye (Adept)', hash=2856225832),
-        ]
-    rolls = [
-        Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
-            [trait.Overflow],
-            [trait.KillingTally, trait.JoltingFeedback],
-            ),
-        Roll(
-            'Arc combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.EddyCurrent],
-            [trait.JoltingFeedback],
-            ),
-        ]
-
-
-class AbyssalEdge(RollDefinition):
-    """
-    Strand Sword, Wave Sword Frame
-    https://www.light.gg/db/items/547165496
-    """
-    items = [
-        Item('Abyssal Edge', hash=547165496),
-        Item('Abyssal Edge (Adept)', hash=2712683313),
-        # With Runneth Over
-        Item('Abyssal Edge', hash=4221591387),
-        Item('Abyssal Edge (Adept)', hash=3054597646),
-        ]
-    rolls = [
-        Roll(
-            'Damage dealing',
-            [blade.JaggedEdge],
-            [guard.SwordmastersGuard, AnyPerk],
-            [trait.RelentlessStrikes],
-            [trait.Surrounded],
-            ),
-        # Roll(
-        #     'Damage blocking',
-        #     [blade.JaggedEdge, AnyPerk],
-        #     [guard.SwordmastersGuard, AnyPerk],
-        #     [trait.FlashCounter],
-        #     [trait.Redirection, trait.Hatchling],
-        #     ),
-        ]
-
-
 class RefusalOfTheCall(RollDefinition):
     """
     Strand Adaptive Glaive
@@ -266,30 +206,6 @@ class WhisperingSlab(RollDefinition):
             [arrow.FiberglassArrowShaft, AnyPerk],
             [trait.ArchersTempo],
             [trait.VorpalWeapon],
-            ),
-        ]
-
-
-class ColdDenial(RollDefinition):
-    """
-    Kinetic Pulse Rifle, High-Impact Frame
-    https://www.light.gg/db/items/558794124
-    """
-    item = Item('Cold Denial', hash=558794124)
-    rolls = [
-        Roll(
-            'PvP',
-            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
-            [magazine.RicochetRounds, AnyPerk],
-            [trait.ZenMoment],
-            [trait.Headseeker],
-            ),
-        Roll(
-            'Desperado',
-            [barrel.ArrowheadBrake, barrel.ExtendedBarrel],
-            [magazine.RicochetRounds, AnyPerk],
-            [trait.TunnelVision],
-            [trait.Desperado],
             ),
         ]
 

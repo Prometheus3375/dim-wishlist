@@ -63,7 +63,7 @@ class ChatteringBone(RollDefinition):
 class ColdDenial(RollDefinition):
     """
     Kinetic Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/324584913
     https://destiny.report/w/324584913
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class AdmetusD(RollDefinition):
     """
     Solar Scout Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/3156551029
     https://destiny.report/w/3156551029
     """

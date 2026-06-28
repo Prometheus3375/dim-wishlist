@@ -4,7 +4,7 @@ from wishlist import *
 class DedGramaryeIV(RollDefinition):
     """
     Arc Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Banshee-44
     https://www.light.gg/db/items/870893339
     https://destiny.report/w/870893339
     """
