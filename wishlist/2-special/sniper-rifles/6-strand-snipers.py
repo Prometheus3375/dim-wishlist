@@ -4,7 +4,7 @@ from wishlist import *
 class ALLEN05(RollDefinition):
     """
     Strand Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Distortions
     https://www.light.gg/db/items/423677697
     https://destiny.report/w/423677697
     """

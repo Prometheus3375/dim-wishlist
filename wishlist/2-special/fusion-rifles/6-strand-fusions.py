@@ -47,7 +47,7 @@ class Resounding(RollDefinition):
 class TAHOMA01(RollDefinition):
     """
     Strand Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Distortions
     https://www.light.gg/db/items/1225851434
     https://destiny.report/w/1225851434
     """

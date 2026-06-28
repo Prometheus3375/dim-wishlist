@@ -4,7 +4,7 @@ from wishlist import *
 class DEADHORSE04(RollDefinition):
     """
     Stasis Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Distortions
     https://www.light.gg/db/items/822872238
     https://destiny.report/w/822872238
     """

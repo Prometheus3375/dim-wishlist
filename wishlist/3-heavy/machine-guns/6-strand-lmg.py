@@ -14,7 +14,7 @@ class CircularLogic(RollDefinition):
 class DIABLERETS06(RollDefinition):
     """
     Strand Machine Gun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Distortions
     https://www.light.gg/db/items/1120206506
     https://destiny.report/w/1120206506
     """

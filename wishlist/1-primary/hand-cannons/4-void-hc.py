@@ -24,7 +24,7 @@ class ExaltedTruth(RollDefinition):
 class IRONWOOD03(RollDefinition):
     """
     Void Hand Cannon, Spread Shot, Anti-Overload
-    Source: Unspecified
+    Source: Distortions
     https://www.light.gg/db/items/2041617874
     https://destiny.report/w/2041617874
     """
