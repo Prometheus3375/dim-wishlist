@@ -14,7 +14,7 @@ class ChivalricFire(RollDefinition):
 class FallingGuillotine(RollDefinition):
     """
     Void Sword, Vortex Frame, Anti-Overload
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/2480871539
     https://destiny.report/w/2480871539
     """
