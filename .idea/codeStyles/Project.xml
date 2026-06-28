@@ -13,9 +13,6 @@
       <option name="DICT_WRAPPING" value="5" />
       <option name="DICT_NEW_LINE_AFTER_LEFT_BRACE" value="true" />
       <option name="DICT_NEW_LINE_BEFORE_RIGHT_BRACE" value="true" />
-      <option name="LIST_WRAPPING" value="5" />
-      <option name="LIST_NEW_LINE_AFTER_LEFT_BRACKET" value="true" />
-      <option name="LIST_NEW_LINE_BEFORE_RIGHT_BRACKET" value="true" />
       <option name="SET_WRAPPING" value="5" />
       <option name="SET_NEW_LINE_AFTER_LEFT_BRACE" value="true" />
       <option name="SET_NEW_LINE_BEFORE_RIGHT_BRACE" value="true" />
