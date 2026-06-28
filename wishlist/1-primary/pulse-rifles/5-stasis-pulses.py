@@ -34,7 +34,7 @@ class RedrixsEstoc(RollDefinition):
 class StayFrosty(RollDefinition):
     """
     Stasis Pulse Rifle, Lightweight Frame, Anti-Overload
-    Source:
+    Source: The Dawning
     https://www.light.gg/db/items/3910523587
     https://destiny.report/w/3910523587
     """

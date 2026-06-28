@@ -50,7 +50,7 @@ class TheSlammer(RollDefinition):
 class Zephyr(RollDefinition):
     """
     Stasis Sword, Adaptive Frame, Anti-Barrier
-    Source:
+    Source: The Dawning
     https://www.light.gg/db/items/3003492238
     https://destiny.report/w/3003492238
     """

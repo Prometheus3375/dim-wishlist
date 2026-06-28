@@ -4,7 +4,7 @@ from wishlist import *
 class AlbedoWing(RollDefinition):
     """
     Arc Aggressive Glaive, Anti-Unstoppable
-    Source:
+    Source: The Dawning
     https://www.light.gg/db/items/2274629609
     https://destiny.report/w/2274629609
     """

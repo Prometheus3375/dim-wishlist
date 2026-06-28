@@ -42,3 +42,39 @@ class OusterEngine(RollDefinition):
         Item('Ouster Engine', hash=2223968549),
         Item('Ouster Engine', hash=3718184802),
         ]
+
+
+class Permafrost(RollDefinition):
+    """
+    Stasis Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable
+    Source: The Dawning
+    https://www.light.gg/db/items/2922964484
+    https://destiny.report/w/2922964484
+    """
+    items = [
+        Item('Permafrost', hash=2922964484),
+        Item('Permafrost', hash=2316331767),
+        ]
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Ad clear',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.ImpromptuAmmunition, trait.Demolitionist],
+            [trait.CrystallineCorpsebloom, trait.ReapersTithe, trait.OneForAll],
+            ),
+        Roll(
+            'Grenade combo',
+            [launcher_barrel.VolatileLaunch, AnyPerk],
+            [magazine.HighVelocityRounds],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]

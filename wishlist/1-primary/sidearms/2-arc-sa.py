@@ -11,6 +11,35 @@ class AnonymousAutumn(RollDefinition):
     item = Item('Anonymous Autumn', hash=1644501332)
 
 
+class FimbulwinterStitch(RollDefinition):
+    """
+    Arc Sidearm, Precision Frame, Anti-Barrier
+    Source: The Dawning
+    https://www.light.gg/db/items/3685829362
+    https://destiny.report/w/3685829362
+    """
+    items = [
+        Item('Fimbulwinter Stitch', hash=3685829362),
+        Item('Fimbulwinter Stitch', hash=2645567209),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.Redirection],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.LooseChange],
+            [trait.Voltshot],
+            ),
+        ]
+
+
 class Forgiveness(RollDefinition):
     """
     Arc Sidearm, Heavy Burst, Anti-Unstoppable
