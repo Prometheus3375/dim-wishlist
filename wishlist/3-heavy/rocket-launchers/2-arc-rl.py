@@ -11,6 +11,40 @@ class Heretic(RollDefinition):
     item = Item('Heretic', hash=2136808079)
 
 
+class Micromort(RollDefinition):
+    """
+    Arc Rocket Launcher, Precision Frame, Anti-Barrier
+    Source: Lawless Events
+    https://www.light.gg/db/items/474671201
+    https://destiny.report/w/474671201
+    """
+    items = [
+        Item('Micromort', hash=474671201),
+        Item('Micromort', hash=602331464),
+        Item('Micromort', hash=602331465),
+        Item('Micromort', hash=602331466),
+        Item('Micromort', hash=602331467),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb],
+            [trait.EnviousArsenal],
+            [trait.ClownCartridge],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            [launcher_barrel.QuickLaunch, AnyPerk],
+            [magazine.ImpactCasing, AnyPerk],
+            [trait.ClusterBomb, trait.EnviousArsenal, trait.ClownCartridge],
+            [trait.BaitAndSwitch],
+            ),
+        ]
+
+
 class Sleepless(RollDefinition):
     """
     Arc Rocket Launcher, High-Impact Frame, Anti-Unstoppable

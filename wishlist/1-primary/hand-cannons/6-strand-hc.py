@@ -43,7 +43,7 @@ class CorundumHammer(RollDefinition):
 class SixthSense(RollDefinition):
     """
     Strand Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Monument of Triumph
+    Source: Lawless Events
     https://www.light.gg/db/items/3163473092
     https://destiny.report/w/3163473092
     """

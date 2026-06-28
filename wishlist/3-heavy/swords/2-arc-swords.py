@@ -4,7 +4,7 @@ from wishlist import *
 class HardlineCut(RollDefinition):
     """
     Arc Sword, Adaptive Frame, Anti-Barrier
-    Source: Monument of Triumph
+    Source: Lawless Events
     https://www.light.gg/db/items/3461043766
     https://destiny.report/w/3461043766
     """

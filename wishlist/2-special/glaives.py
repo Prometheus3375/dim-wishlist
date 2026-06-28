@@ -41,6 +41,38 @@ class EclipticDistaff(RollDefinition):
     item = Item('Ecliptic Distaff', hash=1942143745)
 
 
+class TheHeron(RollDefinition):
+    """
+    Void Aggressive Glaive, Anti-Unstoppable
+    Source: Lawless Events
+    https://www.light.gg/db/items/2246386812
+    https://destiny.report/w/2246386812
+    """
+    items = [
+        Item('The Heron', hash=2246386812),
+        Item('The Heron', hash=617566156),
+        Item('The Heron', hash=617566157),
+        Item('The Heron', hash=617566158),
+        Item('The Heron', hash=617566159),
+        ]
+    rolls = [
+        Roll(
+            'Damage blocking',
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.ReplenishingAegis],
+            [trait.Redirection, trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Melee damage',
+            [haft.LowImpedanceWindings, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.ProximityPower],
+            [trait.CloseToMelee],
+            ),
+        ]
+
+
 class RakeAngle(RollDefinition):
     """
     Stasis Aggressive Glaive, Anti-Unstoppable
