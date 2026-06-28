@@ -13,6 +13,15 @@
       <option name="DICT_WRAPPING" value="5" />
       <option name="DICT_NEW_LINE_AFTER_LEFT_BRACE" value="true" />
       <option name="DICT_NEW_LINE_BEFORE_RIGHT_BRACE" value="true" />
+      <option name="LIST_WRAPPING" value="5" />
+      <option name="LIST_NEW_LINE_AFTER_LEFT_BRACKET" value="true" />
+      <option name="LIST_NEW_LINE_BEFORE_RIGHT_BRACKET" value="true" />
+      <option name="SET_WRAPPING" value="5" />
+      <option name="SET_NEW_LINE_AFTER_LEFT_BRACE" value="true" />
+      <option name="SET_NEW_LINE_BEFORE_RIGHT_BRACE" value="true" />
+      <option name="TUPLE_WRAPPING" value="5" />
+      <option name="TUPLE_NEW_LINE_AFTER_LEFT_PARENTHESIS" value="true" />
+      <option name="TUPLE_NEW_LINE_BEFORE_RIGHT_PARENTHESIS" value="true" />
       <option name="BLANK_LINES_AFTER_LOCAL_IMPORTS" value="1" />
       <option name="OPTIMIZE_IMPORTS_SORT_NAMES_IN_FROM_IMPORTS" value="true" />
       <option name="OPTIMIZE_IMPORTS_JOIN_FROM_IMPORTS_WITH_SAME_SOURCE" value="true" />
@@ -22,6 +31,7 @@
       <option name="FROM_IMPORT_PARENTHESES_FORCE_IF_MULTILINE" value="true" />
       <option name="FROM_IMPORT_TRAILING_COMMA_IF_MULTILINE" value="true" />
       <option name="HANG_CLOSING_BRACKETS" value="true" />
+      <option name="USE_TRAILING_COMMA_IN_PARAMETER_LIST" value="true" />
     </Python>
     <ScalaCodeStyleSettings>
       <option name="sortAsScalastyle" value="true" />
