@@ -273,7 +273,7 @@ class BaseJSONWrapper:
 
     def get[T](self, item: WrapperSubscript, default: T | None = None, /) -> JSONWrappedAny | T:
         """
-        Returns ``self[item]``, but if :class:`LookupError` occurs, returns ``default``.
+        Returns ``self[item]``, but if :class:`LookupError` occurs, returns *default*.
         """
         try:
             return self[item]
