@@ -56,3 +56,32 @@ class PerfectPitch(RollDefinition):
     https://destiny.report/w/2191451996
     """
     item = Item('Perfect Pitch', hash=2191451996)
+
+
+class YeartideApex(RollDefinition):
+    """
+    Solar Submachine Gun, Lightweight Frame, Anti-Overload
+    Source: Solstice
+    https://www.light.gg/db/items/3293207827
+    https://destiny.report/w/3293207827
+    """
+    items = [
+        Item('Yeartide Apex', hash=3293207827),
+        Item('Yeartide Apex', hash=2965080304),
+        ]
+    rolls = [
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.HealClip, trait.Demolitionist],
+            [trait.Incandescent, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Super regen',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.AttritionOrbs],
+            [trait.ChaosReshaped, trait.TargetLock],
+            ),
+        ]

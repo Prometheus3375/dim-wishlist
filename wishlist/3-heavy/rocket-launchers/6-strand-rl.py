@@ -4,7 +4,7 @@ from wishlist import *
 class CrowningDuologue(RollDefinition):
     """
     Strand Rocket Launcher, Precision Frame, Anti-Barrier
-    Source:
+    Source: Solstice
     https://www.light.gg/db/items/1151307006
     https://destiny.report/w/1151307006
     """

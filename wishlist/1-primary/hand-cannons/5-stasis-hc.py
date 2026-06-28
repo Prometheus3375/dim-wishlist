@@ -98,7 +98,7 @@ class SolemnRemembrance(RollDefinition):
 class SomethingNew(RollDefinition):
     """
     Stasis Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source:
+    Source: Solstice
     https://www.light.gg/db/items/1705150753
     https://destiny.report/w/1705150753
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class CompassRose(RollDefinition):
     """
     Solar Shotgun, Precision Frame, Anti-Barrier
-    Source:
+    Source: Solstice
     https://www.light.gg/db/items/2723419129
     https://destiny.report/w/2723419129
     """

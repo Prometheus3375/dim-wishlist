@@ -4,7 +4,7 @@ from wishlist import *
 class DawnFarOff(RollDefinition):
     """
     Solar Machine Gun, Aggressive Frame, Anti-Unstoppable
-    Source:
+    Source: Solstice
     https://www.light.gg/db/items/1484294659
     https://destiny.report/w/1484294659
     """

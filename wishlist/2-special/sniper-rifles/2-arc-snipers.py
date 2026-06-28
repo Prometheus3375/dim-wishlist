@@ -57,7 +57,7 @@ class OccludedFinality(RollDefinition):
 class RapidGrowth(RollDefinition):
     """
     Arc Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source:
+    Source: Solstice
     https://www.light.gg/db/items/3448712083
     https://destiny.report/w/3448712083
     """
