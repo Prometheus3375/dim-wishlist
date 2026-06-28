@@ -1,3 +1,16 @@
+__all__ = (
+    'AmmunitionType',
+    'PerkTuple',
+    'PERK_TUPLE_SORT_BY_COMPLETENESS',
+    'PerkTupleDuplicationWarning',
+    'get_perk_category',
+    'is_perk_enhanced',
+    'PlugSet',
+    'PlugSetPerkDuplicationWarning',
+    'Weapon',
+    'Manifest',
+    )
+
 import json
 import os
 from collections import defaultdict
@@ -12,19 +25,6 @@ from urllib.request import Request, urlopen
 from warnings import warn
 
 from json_helpers import *
-
-__all__ = (
-    'AmmunitionType',
-    'PerkTuple',
-    'PERK_TUPLE_SORT_BY_COMPLETENESS',
-    'PerkTupleDuplicationWarning',
-    'get_perk_category',
-    'is_perk_enhanced',
-    'PlugSet',
-    'PlugSetPerkDuplicationWarning',
-    'Weapon',
-    'Manifest',
-    )
 
 
 class AmmunitionType(IntEnum):

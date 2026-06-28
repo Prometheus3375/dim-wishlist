@@ -1,10 +1,10 @@
+__all__ = 'Item', 'Perk', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
+
 from collections import Counter
 from collections.abc import Iterable, Sequence
 from dataclasses import InitVar, dataclass, field
 from itertools import product
 from typing import Any, ClassVar, Self, TextIO, TypeGuard
-
-__all__ = 'Item', 'Perk', 'AnyItem', 'AnyPerk', 'Wishlist', 'Roll', 'RollDefinition'
 
 
 @dataclass(frozen=True, slots=True)

@@ -1,9 +1,9 @@
+__all__ = 'define_wishlist',
+
 import os
 from importlib import import_module
 
 from classes import RollDefinition, Wishlist
-
-__all__ = 'define_wishlist',
 
 
 def define_wishlist() -> Wishlist:

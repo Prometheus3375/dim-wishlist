@@ -1,7 +1,3 @@
-from collections import deque
-from collections.abc import Iterator
-from typing import Any, TypeGuard, overload
-
 __all__ = (
     'JSONObject',
     'JSONArray',
@@ -20,6 +16,10 @@ __all__ = (
     'JSONObjectWrapper',
     'wrap_json_value',
     )
+
+from collections import deque
+from collections.abc import Iterator
+from typing import Any, TypeGuard, overload
 
 type JSONObject = dict[str, JSONAny]
 type JSONArray = list[JSONAny]
@@ -62,7 +62,7 @@ def json_search_old(
         obj: JSONAny,
         search_value: JSONAny,
         /,
-        *path_parts: str | int
+        *path_parts: str | int,
         ) -> Iterator[JSONPath]:
     """
     Recursively searches for the given search value inside the given JSON container.
