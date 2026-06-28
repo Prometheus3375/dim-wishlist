@@ -167,12 +167,13 @@ class Manifest(JSONObjectWrapper):
         return cls(manifest)
 
     TABLES_TO_COPY: ClassVar[list[str]] = [
-        'DestinyInventoryItemDefinition',
-        'DestinyPlugSetDefinition',
         'DestinyCollectibleDefinition',
-        'DestinyItemCategoryDefinition',
-        'DestinySocketCategoryDefinition',
         'DestinyDamageTypeDefinition',
+        'DestinyInventoryItemDefinition',
+        'DestinyItemCategoryDefinition',
+        'DestinyPlugSetDefinition',
+        'DestinySandboxPerkDefinition',
+        'DestinySocketCategoryDefinition',
         ]
 
     @classmethod
@@ -259,6 +260,12 @@ class Manifest(JSONObjectWrapper):
         Returns definition of the collectible with the given hash.
         """
         return self['DestinyCollectibleDefinition', hash_]
+
+    def get_sandbox_perk(self, hash_: int, /) -> JSONObjectWrapper:
+        """
+        Returns definition of the sandbox perk with the given hash.
+        """
+        return self['DestinySandboxPerkDefinition', hash_]
 
     def _get_mapping_between_hashes_and_names(self, table_name: str, /) -> Mapping[int, str]:
         return {
