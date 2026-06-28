@@ -55,3 +55,42 @@ class OneSmallStep(RollDefinition):
     https://destiny.report/w/2527058296
     """
     item = Item('One Small Step', hash=2527058296)
+
+
+class Trachinus(RollDefinition):
+    """
+    Stasis Shotgun, Rapid Fire Slug, Anti-Overload
+    Source: Reclamation Events
+    https://www.light.gg/db/items/3635232671
+    https://destiny.report/w/3635232671
+    """
+    items = [
+        Item('Trachinus', hash=3635232671),
+        Item('Trachinus', hash=2888021252),
+        Item('Trachinus', hash=2888021253),
+        Item('Trachinus', hash=2888021254),
+        Item('Trachinus', hash=2888021255),
+        ]
+    rolls = [
+        Roll(
+            'Stasis combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        Roll(
+            'Chill Clip',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.RapidHit, trait.LeadFromGold],
+            [trait.ChillClip],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.RapidHit, trait.LeadFromGold],
+            [trait.PrecisionInstrument],
+            ),
+        ]

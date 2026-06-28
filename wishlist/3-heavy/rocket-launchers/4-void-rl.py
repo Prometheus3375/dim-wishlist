@@ -24,6 +24,29 @@ class BellowingGiant(RollDefinition):
         ]
 
 
+class FoldedRoot(RollDefinition):
+    """
+    Void Rocket Launcher, Aggressive Frame, Anti-Unstoppable
+    Source: Reclamation Events
+    https://www.light.gg/db/items/2725894221
+    https://destiny.report/w/2725894221
+    """
+    items = [
+        Item('Folded Root', hash=2725894221),
+        Item('Folded Root', hash=3184457500),
+        Item('Folded Root', hash=3184457501),
+        Item('Folded Root', hash=3184457502),
+        Item('Folded Root', hash=3184457503),
+        ]
+    roll = Roll(
+        'Damage dealing',
+        [launcher_barrel.QuickLaunch, AnyPerk],
+        [magazine.ImpactCasing, AnyPerk],
+        [trait.ClusterBomb],
+        [trait.LastingImpression, trait.Frenzy],
+        )
+
+
 class TomorrowsAnswer(RollDefinition):
     """
     Void Rocket Launcher, High-Impact Frame, Anti-Unstoppable

@@ -77,6 +77,45 @@ class LunasHowl(RollDefinition):
     item = Item("Luna's Howl", hash=2033531688)
 
 
+class PhoneutriaFera(RollDefinition):
+    """
+    Solar Hand Cannon, Spread Shot, Anti-Overload
+    Source: Reclamation Events
+    https://www.light.gg/db/items/3496887154
+    https://destiny.report/w/3496887154
+    """
+    items = [
+        Item('Phoneutria Fera', hash=3496887154),
+        Item('Phoneutria Fera', hash=3804242792),
+        Item('Phoneutria Fera', hash=3804242793),
+        Item('Phoneutria Fera', hash=3804242794),
+        Item('Phoneutria Fera', hash=3804242795),
+        ]
+    rolls = [
+        Roll(
+            'Melee damage increase',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ProximityPower, trait.ThreatDetector],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.FlutedBarrel, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Surrounded],
+            ),
+        # Roll(
+        #     'Ad clear',
+        #     [barrel.FlutedBarrel, AnyPerk],
+        #     [magazine.TacticalMag, AnyPerk],
+        #     [trait.ThreatDetector],
+        #     [trait.Incandescent],
+        #     ),
+        ]
+
+
 class Trust(RollDefinition):
     """
     Solar Hand Cannon, Precision Frame, Anti-Barrier
