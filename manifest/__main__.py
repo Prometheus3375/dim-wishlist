@@ -284,6 +284,8 @@ SYMBOLS_TO_REPLACE = {
     ',': ' ',
     '.': ' ',
     '%': ' ',
+    '(': ' ',
+    ')': ' ',
     }
 
 
@@ -470,29 +472,32 @@ def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
     return w.source, w.ammo_type, w.name
 
 
-def get_weapon_type(w: Weapon, /) -> str:
+def get_weapon_type_with_intrinsic(w: Weapon, /) -> str:
     """
-    Return a proper name of the weapon type.
+    Return a proper name of the weapon type with intrinsic trait.
     """
     match w.weapon_type:
+        case 'Combat Bow' if w.ammo_type is AmmunitionType.Heavy:
+            return f'Crossbow, {w.intrinsic}'
+
+        case 'Glaive':
+            return w.intrinsic
+
         case 'Grenade Launcher' if w.ammo_type is AmmunitionType.Special:
-            return 'Breechloaded Grenade Launcher'
+            return f'Breechloaded Grenade Launcher, {w.intrinsic}'
 
         case 'Grenade Launcher' if w.ammo_type is AmmunitionType.Heavy:
-            return 'Drum Grenade Launcher'
-
-        case 'Combat Bow' if w.ammo_type is AmmunitionType.Heavy:
-            return 'Crossbow'
+            return f'Drum Grenade Launcher, {w.intrinsic}'
 
         case other:
-            return other
+            return f'{other}, {w.intrinsic}'
 
 
 WEAPON_DEFINITION_CODE = """
 
 class {identifier}({base_class}):
     \"""
-    {damage_type} {weapon_type}, {intrinsic}, {breaker}
+    {damage_type} {weapon_type_with_intrinsic}, {breaker}
     Source: {source}
     https://www.light.gg/db/items/{hash}
     https://destiny.report/w/{hash}
@@ -524,6 +529,8 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
 
         for li in weapon_lists:
             main_weapon = li[0]
+
+            breaker = f'Anti-{main_weapon.breaker_type.split()[-1]}'
             source = main_weapon.source
             if source.startswith('Random Perks'):
                 source = 'Unspecified'
@@ -534,9 +541,8 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
                 identifier=name_to_python_identifier(main_weapon.name),
                 base_class=RollDefinition.__name__,
                 damage_type='-'.join(main_weapon.damage_types),
-                weapon_type=get_weapon_type(main_weapon),
-                intrinsic=main_weapon.intrinsic,
-                breaker=main_weapon.breaker_type.split()[-1],
+                weapon_type_with_intrinsic=get_weapon_type_with_intrinsic(main_weapon),
+                breaker=breaker,
                 source=source,
                 hash=main_weapon.hash,
                 )
