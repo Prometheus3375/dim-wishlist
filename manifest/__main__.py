@@ -282,6 +282,8 @@ SYMBOLS_TO_REPLACE = {
     '"': ' ',
     '-': ' ',
     ',': ' ',
+    '.': ' ',
+    '%': ' ',
     }
 
 
@@ -294,7 +296,11 @@ def name_to_python_identifier(name: str, /) -> str:
 
     # Remove diacritics.
     name = normalize('NFD', name).encode('ascii', 'ignore').decode()
-    return ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
+    result = ''.join(f'{part[0].upper()}{part[1:]}' for part in name.split())
+    if '0' <= result[0] <= '9':
+        result = f'A{result}'
+
+    return result
 
 
 @dataclass(frozen=True, slots=True)
@@ -486,9 +492,10 @@ WEAPON_DEFINITION_CODE = """
 
 class {identifier}({base_class}):
     \"""
-    {damage_type} {weapon_type}, {intrinsic}
+    {damage_type} {weapon_type}, {intrinsic}, {breaker}
     {source}
     https://www.light.gg/db/items/{hash}
+    https://destiny.report/w/{hash}
     \"""
 """
 
@@ -522,7 +529,8 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
                 base_class=RollDefinition.__name__,
                 damage_type='-'.join(main_weapon.damage_types),
                 weapon_type=get_weapon_type(main_weapon),
-                intrinsic=', '.join(main_weapon.intrinsics),
+                intrinsic=main_weapon.intrinsic,
+                breaker=main_weapon.breaker_type.split()[-1],
                 source=main_weapon.source,
                 hash=main_weapon.hash,
                 )
