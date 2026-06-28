@@ -40,7 +40,7 @@ class InboundSurveillance(RollDefinition):
 class HungJurySR4(RollDefinition):
     """
     Kinetic Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/697459665
     https://destiny.report/w/697459665
     """

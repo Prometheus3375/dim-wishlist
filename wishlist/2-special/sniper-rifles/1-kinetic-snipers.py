@@ -47,10 +47,10 @@ class SomethingSomething(RollDefinition):
         ]
 
 
-class Succession(RollDefinition):
+class SuccessionOnslaught(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/2731922624
     https://destiny.report/w/2731922624
     """

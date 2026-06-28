@@ -14,7 +14,7 @@ class ClawsOfTheWolf(RollDefinition):
 class ElsiesRifle(RollDefinition):
     """
     Void Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/381446446
     https://destiny.report/w/381446446
     """

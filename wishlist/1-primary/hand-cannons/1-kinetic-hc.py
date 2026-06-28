@@ -37,7 +37,7 @@ class Malediction(RollDefinition):
 class MidnightCoup(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/2033531689
     https://destiny.report/w/2033531689
     """

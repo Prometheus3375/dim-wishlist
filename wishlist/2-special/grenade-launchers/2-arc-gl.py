@@ -1,10 +1,10 @@
 from wishlist import *
 
 
-class Forbearance(RollDefinition):
+class ForbearanceOnslaught(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/3736001860
     https://destiny.report/w/3736001860
     """

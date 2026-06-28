@@ -14,7 +14,7 @@ class Acosmic(RollDefinition):
 class EdgeTransit(RollDefinition):
     """
     Void Drum Grenade Launcher, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/3736001863
     https://destiny.report/w/3736001863
     """

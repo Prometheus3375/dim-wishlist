@@ -70,7 +70,7 @@ class IgneousHammer(RollDefinition):
 class LunasHowl(RollDefinition):
     """
     Solar Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/2033531688
     https://destiny.report/w/2033531688
     """

@@ -44,7 +44,7 @@ class TheHerosBurden(RollDefinition):
 class TheRecluse(RollDefinition):
     """
     Void Submachine Gun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Onslaught
     https://www.light.gg/db/items/3257283337
     https://destiny.report/w/3257283337
     """
