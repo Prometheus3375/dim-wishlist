@@ -493,7 +493,7 @@ WEAPON_DEFINITION_CODE = """
 class {identifier}({base_class}):
     \"""
     {damage_type} {weapon_type}, {intrinsic}, {breaker}
-    {source}
+    Source: {source}
     https://www.light.gg/db/items/{hash}
     https://destiny.report/w/{hash}
     \"""
@@ -524,6 +524,12 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
 
         for li in weapon_lists:
             main_weapon = li[0]
+            source = main_weapon.source
+            if source.startswith('Random Perks'):
+                source = ''
+            elif source.startswith('Source:'):
+                source = source[8:]
+
             format_params = dict(
                 identifier=name_to_python_identifier(main_weapon.name),
                 base_class=RollDefinition.__name__,
@@ -531,7 +537,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
                 weapon_type=get_weapon_type(main_weapon),
                 intrinsic=main_weapon.intrinsic,
                 breaker=main_weapon.breaker_type.split()[-1],
-                source=main_weapon.source,
+                source=source,
                 hash=main_weapon.hash,
                 )
             f.write(WEAPON_DEFINITION_CODE.format_map(format_params))

@@ -669,7 +669,7 @@ class Weapon:
         """
         return self._definition['itemTypeDisplayName']
 
-    @property
+    @cached_property
     def source(self, /) -> str:
         """
         From where this weapon can be obtained.
