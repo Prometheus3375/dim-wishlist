@@ -2,6 +2,7 @@
 /.manifest-cache/
 /all-weapons.py
 /new-weapons.py
+/source-mapping.json
 /regular-to-enhanced.json
 
 # Python
