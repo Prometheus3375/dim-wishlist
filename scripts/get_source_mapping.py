@@ -8,7 +8,7 @@ sources = set()
 hash2weapon = {}
 for cls in RollDefinition.__subclasses__():
     docs = cls.__doc__.strip().splitlines()
-    if len(docs) != 4:
+    if len(docs) < 4:
         print(f'Class {cls.__module__}.{cls.__qualname__} has old description.')
         continue
 
@@ -18,5 +18,11 @@ for cls in RollDefinition.__subclasses__():
         hash2weapon[str(item.hash)] = dict(name=item.name, source=source_line)
 
 with open('source-mapping.json', 'w') as f:
-    json.dump(dict(sources=sorted(sources), weapons=hash2weapon), f, ensure_ascii=False, indent=2)
+    json.dump(
+        dict(sources=sorted(sources), weapons=hash2weapon),
+        f,
+        ensure_ascii=False,
+        indent=2,
+        sort_keys=True,
+        )
     f.write('\n')
