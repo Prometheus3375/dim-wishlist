@@ -4,7 +4,7 @@ from wishlist import *
 class Eyasluna(RollDefinition):
     """
     Stasis Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: "Grasp of Avarice" Dungeon
+    Source: Grasp of Avarice
     https://www.light.gg/db/items/386864872
     https://destiny.report/w/386864872
     """
@@ -14,7 +14,7 @@ class Eyasluna(RollDefinition):
 class Judgment(RollDefinition):
     """
     Stasis Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/1567585973
     https://destiny.report/w/1567585973
     """
@@ -34,7 +34,7 @@ class LoudLullaby(RollDefinition):
 class ModifiedB7Pistol(RollDefinition):
     """
     Stasis Hand Cannon, Dynamic Heat Weapon, Anti-Overload
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/3146657388
     https://destiny.report/w/3146657388
     """

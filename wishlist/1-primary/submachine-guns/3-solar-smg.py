@@ -31,7 +31,7 @@ class MIDAMiniTool(RollDefinition):
 class NoSurvivors(RollDefinition):
     """
     Solar Submachine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: "Ghosts of the Deep" Dungeon
+    Source: Ghosts of the Deep
     https://www.light.gg/db/items/3625452995
     https://destiny.report/w/3625452995
     """

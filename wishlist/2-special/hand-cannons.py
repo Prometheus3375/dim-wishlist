@@ -4,7 +4,7 @@ from wishlist import *
 class UncivilDiscourse(RollDefinition):
     """
     Arc Hand Cannon, Dynamic Heat Weapon, Anti-Overload
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/3146657389
     https://destiny.report/w/3146657389
     """

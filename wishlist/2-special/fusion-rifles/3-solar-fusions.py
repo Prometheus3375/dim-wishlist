@@ -34,7 +34,7 @@ class ExilesCurse(RollDefinition):
 class FiniteMaybe(RollDefinition):
     """
     Solar Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: "The Desert Perpetual" Raid
+    Source: The Desert Perpetual (Both)
     https://www.light.gg/db/items/3241217409
     https://destiny.report/w/3241217409
     """

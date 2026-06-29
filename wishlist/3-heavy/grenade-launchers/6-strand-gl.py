@@ -30,7 +30,7 @@ class CataphractGL3(RollDefinition):
 class TheEverPresent(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload
-    Source: "The Desert Perpetual" Epic Raid
+    Source: The Desert Perpetual (Epic)
     https://www.light.gg/db/items/3177074192
     https://destiny.report/w/3177074192
     """

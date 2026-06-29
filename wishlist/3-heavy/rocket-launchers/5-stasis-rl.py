@@ -4,7 +4,7 @@ from wishlist import *
 class ColdComfort(RollDefinition):
     """
     Stasis Rocket Launcher, Aggressive Frame, Anti-Unstoppable
-    Source: "Ghosts of the Deep" Dungeon
+    Source: Ghosts of the Deep
     https://www.light.gg/db/items/2287287549
     https://destiny.report/w/2287287549
     """
@@ -14,7 +14,7 @@ class ColdComfort(RollDefinition):
 class TheWhenAndWhere(RollDefinition):
     """
     Stasis Rocket Launcher, Adaptive Frame, Anti-Barrier
-    Source: "The Desert Perpetual" Raid
+    Source: The Desert Perpetual (Both)
     https://www.light.gg/db/items/1090936013
     https://destiny.report/w/1090936013
     """

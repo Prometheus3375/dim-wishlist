@@ -64,7 +64,7 @@ class SeventhSeraphCQC12(RollDefinition):
 class StarscapeNull(RollDefinition):
     """
     Solar Shotgun, Lightweight Frame, Anti-Overload
-    Source: "The Desert Perpetual" Epic Raid
+    Source: The Desert Perpetual (Epic)
     https://www.light.gg/db/items/3868973291
     https://destiny.report/w/3868973291
     """

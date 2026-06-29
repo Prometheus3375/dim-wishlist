@@ -58,7 +58,7 @@ class Sleepless(RollDefinition):
 class SubzeroSalvo(RollDefinition):
     """
     Arc Rocket Launcher, Precision Frame, Anti-Barrier
-    Source: Europe
+    Source: Europa
     https://www.light.gg/db/items/978122008
     https://destiny.report/w/978122008
     """

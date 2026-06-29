@@ -14,7 +14,7 @@ class AlbedoWing(RollDefinition):
 class Backfang(RollDefinition):
     """
     Arc Rapid-Fire Glaive, Anti-Overload
-    Source: The Drifter (unavailable right now)
+    Source: Gambit
     https://www.light.gg/db/items/1277470844
     https://destiny.report/w/1277470844
     """
@@ -24,7 +24,7 @@ class Backfang(RollDefinition):
 class GreasyLuck(RollDefinition):
     """
     Solar Rapid-Fire Glaive, Anti-Overload
-    Source: "Ghosts of the Deep" Dungeon
+    Source: Ghosts of the Deep
     https://www.light.gg/db/items/4274165888
     https://destiny.report/w/4274165888
     """

@@ -14,7 +14,7 @@ class Deadlock(RollDefinition):
 class Fractethyst(RollDefinition):
     """
     Stasis Shotgun, Precision Frame, Anti-Barrier
-    Source: Shattered Throne
+    Source: The Shattered Throne
     https://www.light.gg/db/items/2993995118
     https://destiny.report/w/2993995118
     """

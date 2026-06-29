@@ -14,7 +14,7 @@ class AbyssalEdge(RollDefinition):
 class DragoncultSickle(RollDefinition):
     """
     Strand Sword, Caster Frame, Anti-Barrier
-    Source: "Warlord's Ruin" Dungeon
+    Source: Warlord's Ruin
     https://www.light.gg/db/items/2525261820
     https://destiny.report/w/2525261820
     """

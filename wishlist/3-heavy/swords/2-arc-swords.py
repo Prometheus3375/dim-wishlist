@@ -20,7 +20,7 @@ class HardlineCut(RollDefinition):
 class HeroOfAges(RollDefinition):
     """
     Arc Sword, Aggressive Frame, Anti-Unstoppable
-    Source: "Grasp of Avarice" Dungeon
+    Source: Grasp of Avarice
     https://www.light.gg/db/items/944708986
     https://destiny.report/w/944708986
     """

@@ -14,7 +14,7 @@ class ALLEN05(RollDefinition):
 class LanceEphemeral(RollDefinition):
     """
     Strand Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: "The Desert Perpetual" Raid
+    Source: The Desert Perpetual (Both)
     https://www.light.gg/db/items/688593230
     https://destiny.report/w/688593230
     """
@@ -33,7 +33,7 @@ class LanceEphemeral(RollDefinition):
 class NaeemsLance(RollDefinition):
     """
     Strand Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: "Warlord's Ruin" Dungeon
+    Source: Warlord's Ruin
     https://www.light.gg/db/items/4119503981
     https://destiny.report/w/4119503981
     """

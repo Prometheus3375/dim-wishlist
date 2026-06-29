@@ -64,7 +64,7 @@ class SeventhSeraphSAW(RollDefinition):
 class TerminusHorizon(RollDefinition):
     """
     Arc Machine Gun, High-Impact Frame, Anti-Unstoppable
-    Source: "Spire of the Watcher" Dungeon
+    Source: Spire of the Watcher
     https://www.light.gg/db/items/3814261872
     https://destiny.report/w/3814261872
     """

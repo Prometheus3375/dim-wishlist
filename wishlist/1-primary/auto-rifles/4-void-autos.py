@@ -4,7 +4,7 @@ from wishlist import *
 class CuspSempiternal(RollDefinition):
     """
     Void Auto Rifle, Support Frame, Anti-Overload
-    Source: "The Desert Perpetual" Epic Raid
+    Source: The Desert Perpetual (Epic)
     https://www.light.gg/db/items/2579693381
     https://destiny.report/w/2579693381
     """

@@ -14,7 +14,7 @@ class AishasCare(RollDefinition):
 class AllOrNothing(RollDefinition):
     """
     Strand Pulse Rifle, Dynamic Heat Weapon, Anti-Overload
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/3984776322
     https://destiny.report/w/3984776322
     """
@@ -46,7 +46,7 @@ class BelisariusD(RollDefinition):
 class LastThursday(RollDefinition):
     """
     Strand Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/3813721211
     https://destiny.report/w/3813721211
     """
@@ -85,7 +85,7 @@ class Nightshade(RollDefinition):
 class Relentless(RollDefinition):
     """
     Strand Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/2831259643
     https://destiny.report/w/2831259643
     """

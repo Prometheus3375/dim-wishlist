@@ -21,7 +21,7 @@ class FaustusDecline(RollDefinition):
 class LiminalVigil(RollDefinition):
     """
     Stasis Sidearm, Heavy Burst, Anti-Unstoppable
-    Source: "Spire of the Watcher" Dungeon
+    Source: Spire of the Watcher
     https://www.light.gg/db/items/355893876
     https://destiny.report/w/355893876
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Adjudicator(RollDefinition):
     """
     Kinetic Submachine Gun, Precision Frame, Anti-Barrier
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/140914741
     https://destiny.report/w/140914741
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Antedate(RollDefinition):
     """
     Arc Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: "The Desert Perpetual" Raid
+    Source: The Desert Perpetual (Both)
     https://www.light.gg/db/items/1435808083
     https://destiny.report/w/1435808083
     """

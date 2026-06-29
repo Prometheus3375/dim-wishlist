@@ -46,7 +46,7 @@ class VSVelocityBaton(RollDefinition):
 class Wilderflight(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Double Fire, Anti-Unstoppable
-    Source: "Spire of the Watcher" Dungeon
+    Source: Spire of the Watcher
     https://www.light.gg/db/items/408862798
     https://destiny.report/w/408862798
     """

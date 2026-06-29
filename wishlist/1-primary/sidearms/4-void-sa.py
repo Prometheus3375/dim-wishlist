@@ -14,7 +14,7 @@ class BrassAttacks(RollDefinition):
 class CompactDefender(RollDefinition):
     """
     Void Sidearm, Dynamic Heat Weapon, Anti-Overload
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/2819552809
     https://destiny.report/w/2819552809
     """

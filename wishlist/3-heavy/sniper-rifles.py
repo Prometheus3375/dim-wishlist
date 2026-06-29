@@ -4,7 +4,7 @@ from wishlist import *
 class RefurbishedA499(RollDefinition):
     """
     Kinetic Sniper Rifle, Disruption Weapon, Anti-Barrier
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/3661051060
     https://destiny.report/w/3661051060
     """

@@ -14,7 +14,7 @@ class DEADHORSE04(RollDefinition):
 class M17FastTalker(RollDefinition):
     """
     Stasis Submachine Gun, Balanced Heat Weapon, Anti-Overload
-    Source: Renegades
+    Source: Lawless Frontier
     https://www.light.gg/db/items/1419158093
     https://destiny.report/w/1419158093
     """

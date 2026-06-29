@@ -4,7 +4,7 @@ from wishlist import *
 class LongArm(RollDefinition):
     """
     Arc Scout Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: "Spire of the Watcher" Dungeon
+    Source: Spire of the Watcher
     https://www.light.gg/db/items/3418719964
     https://destiny.report/w/3418719964
     """
@@ -27,7 +27,7 @@ class NoFeelings(RollDefinition):
 class Sublimation(RollDefinition):
     """
     Arc Scout Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/1674692344
     https://destiny.report/w/1674692344
     """

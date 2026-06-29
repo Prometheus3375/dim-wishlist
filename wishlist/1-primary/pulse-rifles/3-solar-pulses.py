@@ -4,7 +4,7 @@ from wishlist import *
 class DarkestBefore(RollDefinition):
     """
     Solar Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/2831259642
     https://destiny.report/w/2831259642
     """

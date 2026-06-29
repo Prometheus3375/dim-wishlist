@@ -4,7 +4,7 @@ from wishlist import *
 class A1000YardStare(RollDefinition):
     """
     Void Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: "Grasp of Avarice" Dungeon
+    Source: Grasp of Avarice
     https://www.light.gg/db/items/1648948519
     https://destiny.report/w/1648948519
     """

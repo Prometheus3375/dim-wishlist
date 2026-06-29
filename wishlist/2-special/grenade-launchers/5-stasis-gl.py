@@ -24,7 +24,7 @@ class Liturgy(RollDefinition):
 class NewPacificEpitaph(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable
-    Source: "Ghosts of the Deep" Dungeon
+    Source: Ghosts of the Deep
     https://www.light.gg/db/items/2988180391
     https://destiny.report/w/2988180391
     """

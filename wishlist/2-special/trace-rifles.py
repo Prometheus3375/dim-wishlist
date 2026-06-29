@@ -123,7 +123,7 @@ class Ribbontail(RollDefinition):
 class Unsworn(RollDefinition):
     """
     Strand Trace Rifle, Adaptive Frame, Anti-Barrier
-    Source: Guardian Games 2025
+    Source: Sundered Doctrine
     https://www.light.gg/db/items/3462679024
     https://destiny.report/w/3462679024
     """

@@ -63,7 +63,7 @@ class EverburningGlitz(RollDefinition):
 class GiversBlessing(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/970034755
     https://destiny.report/w/970034755
     """

@@ -24,7 +24,7 @@ class ChainOfCommand(RollDefinition):
 class UlteriorObservation(RollDefinition):
     """
     Stasis Machine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/1079872540
     https://destiny.report/w/1079872540
     """

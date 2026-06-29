@@ -34,7 +34,7 @@ class DedGramaryeIV(RollDefinition):
 class Matador64(RollDefinition):
     """
     Arc Shotgun, Precision Frame, Anti-Barrier
-    Source: "Grasp of Avarice" Dungeon
+    Source: Grasp of Avarice
     https://www.light.gg/db/items/1518956169
     https://destiny.report/w/1518956169
     """

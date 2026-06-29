@@ -4,7 +4,7 @@ from wishlist import *
 class ASuddenDeath(RollDefinition):
     """
     Void Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/2489016648
     https://destiny.report/w/2489016648
     """
@@ -34,7 +34,7 @@ class Bonechiller(RollDefinition):
 class Precipial(RollDefinition):
     """
     Void Shotgun, Precision Frame, Anti-Barrier
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/367772693
     https://destiny.report/w/367772693
     """

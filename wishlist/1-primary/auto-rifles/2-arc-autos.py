@@ -24,7 +24,7 @@ class ChrysuraMelo(RollDefinition):
 class Prosecutor(RollDefinition):
     """
     Arc Auto Rifle, Precision Frame, Anti-Barrier
-    Source: "Prophecy" Dungeon
+    Source: Dungeon "Prophecy"
     https://www.light.gg/db/items/1091550016
     https://destiny.report/w/1091550016
     """

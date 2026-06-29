@@ -4,7 +4,7 @@ from wishlist import *
 class Agape(RollDefinition):
     """
     Solar Hand Cannon, Heavy Burst, Anti-Unstoppable
-    Source: Exploring Kepler
+    Source: Kepler
     https://www.light.gg/db/items/4124362340
     https://destiny.report/w/4124362340
     """
