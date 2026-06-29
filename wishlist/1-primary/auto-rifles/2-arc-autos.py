@@ -14,7 +14,7 @@ class ArcLogic(RollDefinition):
 class ChrysuraMelo(RollDefinition):
     """
     Arc Auto Rifle, Support Frame, Anti-Overload
-    Source:
+    Source: The Shattered Throne
     https://www.light.gg/db/items/1750388538
     https://destiny.report/w/1750388538
     """

@@ -86,7 +86,7 @@ class RakeAngle(RollDefinition):
 class RefusalOfTheCall(RollDefinition):
     """
     Strand Adaptive Glaive, Anti-Barrier
-    Source:
+    Source: Pit of Heresy
     https://www.light.gg/db/items/1541324871
     https://destiny.report/w/1541324871
     """

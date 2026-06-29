@@ -14,7 +14,7 @@ class ForbearanceOnslaught(RollDefinition):
 class Psychopomp(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
-    Source:
+    Source: Pit of Heresy
     https://www.light.gg/db/items/1835232052
     https://destiny.report/w/1835232052
     """

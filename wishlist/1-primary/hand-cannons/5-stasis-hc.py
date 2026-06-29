@@ -161,7 +161,7 @@ class TripleLaureate(RollDefinition):
 class Vulpecula(RollDefinition):
     """
     Stasis Hand Cannon, Precision Frame, Anti-Barrier
-    Source:
+    Source: The Shattered Throne
     https://www.light.gg/db/items/3245446311
     https://destiny.report/w/3245446311
     """

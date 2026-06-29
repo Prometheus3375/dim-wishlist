@@ -4,7 +4,7 @@ from wishlist import *
 class ASuddenDeath(RollDefinition):
     """
     Void Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source:
+    Source: Prophecy
     https://www.light.gg/db/items/2489016648
     https://destiny.report/w/2489016648
     """

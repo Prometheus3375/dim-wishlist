@@ -4,7 +4,7 @@ from wishlist import *
 class CanisMajor(RollDefinition):
     """
     Solar Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload
-    Source:
+    Source: The Shattered Throne
     https://www.light.gg/db/items/2966714447
     https://destiny.report/w/2966714447
     """
