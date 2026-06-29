@@ -54,7 +54,7 @@ class MindbendersAmbition(RollDefinition):
 class SeventhSeraphCQC12(RollDefinition):
     """
     Solar Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Cosmodrome
     https://www.light.gg/db/items/2308010345
     https://destiny.report/w/2308010345
     """

@@ -31,7 +31,7 @@ class LiminalVigil(RollDefinition):
 class Peacebond(RollDefinition):
     """
     Stasis Sidearm, Adaptive Burst, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/247984829
     https://destiny.report/w/247984829
     """

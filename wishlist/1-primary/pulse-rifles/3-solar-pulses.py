@@ -14,7 +14,7 @@ class DarkestBefore(RollDefinition):
 class JorumsClaw(RollDefinition):
     """
     Solar Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/3634548598
     https://destiny.report/w/3634548598
     """

@@ -30,7 +30,7 @@ class HeroOfAges(RollDefinition):
 class Nasreddin(RollDefinition):
     """
     Arc Sword, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: European Dead Zone
     https://www.light.gg/db/items/1979417829
     https://destiny.report/w/1979417829
     """
@@ -40,7 +40,7 @@ class Nasreddin(RollDefinition):
 class NightTerror(RollDefinition):
     """
     Arc Sword, Caster Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/2729232863
     https://destiny.report/w/2729232863
     """

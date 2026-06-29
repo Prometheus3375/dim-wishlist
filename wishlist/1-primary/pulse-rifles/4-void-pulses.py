@@ -4,7 +4,7 @@ from wishlist import *
 class ClawsOfTheWolf(RollDefinition):
     """
     Void Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/3634548599
     https://destiny.report/w/3634548599
     """
@@ -90,7 +90,7 @@ class LastPerdition(RollDefinition):
 class Premonition(RollDefinition):
     """
     Void Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/1969802090
     https://destiny.report/w/1969802090
     """

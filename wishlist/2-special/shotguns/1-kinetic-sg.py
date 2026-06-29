@@ -14,7 +14,7 @@ class AstralHorizon(RollDefinition):
 class Blasphemer(RollDefinition):
     """
     Kinetic Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Altars of Sorrow
     https://www.light.gg/db/items/2527058297
     https://destiny.report/w/2527058297
     """
@@ -54,7 +54,7 @@ class RecklessEndangerment(RollDefinition):
 class Riiswalker(RollDefinition):
     """
     Kinetic Shotgun, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/1435062001
     https://destiny.report/w/1435062001
     """

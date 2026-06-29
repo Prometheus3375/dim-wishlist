@@ -4,7 +4,7 @@ from wishlist import *
 class CartesianCoordinate(RollDefinition):
     """
     Solar Fusion Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: European Dead Zone
     https://www.light.gg/db/items/3719824177
     https://destiny.report/w/3719824177
     """
@@ -14,7 +14,7 @@ class CartesianCoordinate(RollDefinition):
 class DreamBreaker(RollDefinition):
     """
     Solar Fusion Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/219610523
     https://destiny.report/w/219610523
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class ASuddenDeath(RollDefinition):
     """
     Void Shotgun, Aggressive Frame, Anti-Unstoppable
-    Source: Prophecy
+    Source: "Prophecy" Dungeon
     https://www.light.gg/db/items/2489016648
     https://destiny.report/w/2489016648
     """
@@ -14,7 +14,7 @@ class ASuddenDeath(RollDefinition):
 class BassoOstinato(RollDefinition):
     """
     Void Shotgun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Terminal Overload
     https://www.light.gg/db/items/2353274446
     https://destiny.report/w/2353274446
     """
@@ -24,7 +24,7 @@ class BassoOstinato(RollDefinition):
 class Bonechiller(RollDefinition):
     """
     Void Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Europa
     https://www.light.gg/db/items/1529367715
     https://destiny.report/w/1529367715
     """
@@ -64,7 +64,7 @@ class Python(RollDefinition):
 class RetoldTale(RollDefinition):
     """
     Void Shotgun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/3442151842
     https://destiny.report/w/3442151842
     """

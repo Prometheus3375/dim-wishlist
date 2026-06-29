@@ -30,7 +30,7 @@ class AishasEmbrace(RollDefinition):
 class Vouchsafe(RollDefinition):
     """
     Void Scout Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/3218302023
     https://destiny.report/w/3218302023
     """

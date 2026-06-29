@@ -4,7 +4,7 @@ from wishlist import *
 class CoriolisForce(RollDefinition):
     """
     Void Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Europa
     https://www.light.gg/db/items/856316142
     https://destiny.report/w/856316142
     """

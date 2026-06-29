@@ -61,7 +61,7 @@ class MIDAMacroTool(RollDefinition):
 class TheDeicide(RollDefinition):
     """
     Arc Shotgun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Nessus, Unstable Centaur
     https://www.light.gg/db/items/1517780158
     https://destiny.report/w/1517780158
     """

@@ -103,7 +103,7 @@ class ServiceRevolver(RollDefinition):
 class SeventhSeraphOfficerRevolver(RollDefinition):
     """
     Kinetic Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Cosmodrome
     https://www.light.gg/db/items/3490736392
     https://destiny.report/w/3490736392
     """

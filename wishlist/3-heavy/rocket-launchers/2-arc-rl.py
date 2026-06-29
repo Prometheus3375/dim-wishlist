@@ -4,7 +4,7 @@ from wishlist import *
 class Heretic(RollDefinition):
     """
     Arc Rocket Launcher, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Altars of Sorrow
     https://www.light.gg/db/items/2136808079
     https://destiny.report/w/2136808079
     """
@@ -48,7 +48,7 @@ class Micromort(RollDefinition):
 class Sleepless(RollDefinition):
     """
     Arc Rocket Launcher, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/1738552769
     https://destiny.report/w/1738552769
     """
@@ -58,7 +58,7 @@ class Sleepless(RollDefinition):
 class SubzeroSalvo(RollDefinition):
     """
     Arc Rocket Launcher, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Europe
     https://www.light.gg/db/items/978122008
     https://destiny.report/w/978122008
     """

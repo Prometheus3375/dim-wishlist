@@ -30,7 +30,7 @@ class Agape(RollDefinition):
 class EpochalIntegration(RollDefinition):
     """
     Solar Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Terminal Overload
     https://www.light.gg/db/items/3851394887
     https://destiny.report/w/3851394887
     """
@@ -50,7 +50,7 @@ class FiniteImpactor(RollDefinition):
 class FrontiersCry(RollDefinition):
     """
     Solar Hand Cannon, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/3203303472
     https://destiny.report/w/3203303472
     """

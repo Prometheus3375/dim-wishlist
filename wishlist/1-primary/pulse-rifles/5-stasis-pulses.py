@@ -4,7 +4,7 @@ from wishlist import *
 class HailingConfusion(RollDefinition):
     """
     Stasis Pulse Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Europa
     https://www.light.gg/db/items/4236134153
     https://destiny.report/w/4236134153
     """

@@ -17,7 +17,7 @@ class Adored(RollDefinition):
 class Apostate(RollDefinition):
     """
     Arc Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Altars of Sorrow
     https://www.light.gg/db/items/846241149
     https://destiny.report/w/846241149
     """

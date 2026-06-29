@@ -14,7 +14,7 @@ class Ascendancy(RollDefinition):
 class PyroclasticFlow(RollDefinition):
     """
     Solar Rocket Launcher, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Nessus, Unstable Centaur
     https://www.light.gg/db/items/3161496501
     https://destiny.report/w/3161496501
     """

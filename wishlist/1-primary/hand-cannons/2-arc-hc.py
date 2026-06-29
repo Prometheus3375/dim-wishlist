@@ -77,7 +77,7 @@ class ThePalindrome(RollDefinition):
 class TrueProphecy(RollDefinition):
     """
     Arc Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Nessus, Unstable Centaur
     https://www.light.gg/db/items/960948343
     https://destiny.report/w/960948343
     """
@@ -87,7 +87,7 @@ class TrueProphecy(RollDefinition):
 class WakingVigil(RollDefinition):
     """
     Arc Hand Cannon, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/1727550459
     https://destiny.report/w/1727550459
     """

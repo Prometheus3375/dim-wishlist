@@ -50,7 +50,7 @@ class HawthornesFieldForgedShotgun(RollDefinition):
 class OneSmallStep(RollDefinition):
     """
     Stasis Shotgun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/2527058296
     https://destiny.report/w/2527058296
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class ArchonsThunder(RollDefinition):
     """
     Stasis Machine Gun, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/91672792
     https://destiny.report/w/91672792
     """

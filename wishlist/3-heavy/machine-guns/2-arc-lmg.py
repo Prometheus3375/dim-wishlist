@@ -14,7 +14,7 @@ class A21Delirium(RollDefinition):
 class AFineMemorial(RollDefinition):
     """
     Arc Machine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/3211332727
     https://destiny.report/w/3211332727
     """
@@ -54,7 +54,7 @@ class BitterEnd(RollDefinition):
 class SeventhSeraphSAW(RollDefinition):
     """
     Arc Machine Gun, High-Impact Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Cosmodrome
     https://www.light.gg/db/items/2584201248
     https://destiny.report/w/2584201248
     """

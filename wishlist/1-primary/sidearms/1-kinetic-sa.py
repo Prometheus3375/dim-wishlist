@@ -4,7 +4,7 @@ from wishlist import *
 class AlliedDemand(RollDefinition):
     """
     Kinetic Sidearm, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/247984830
     https://destiny.report/w/247984830
     """

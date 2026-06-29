@@ -17,7 +17,7 @@ class DawnFarOff(RollDefinition):
 class TemporalClause(RollDefinition):
     """
     Solar Machine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Nessus, Unstable Centaur
     https://www.light.gg/db/items/3132669561
     https://destiny.report/w/3132669561
     """
@@ -27,7 +27,7 @@ class TemporalClause(RollDefinition):
 class ThermalErosion(RollDefinition):
     """
     Solar Machine Gun, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: Europa
     https://www.light.gg/db/items/642545454
     https://destiny.report/w/642545454
     """

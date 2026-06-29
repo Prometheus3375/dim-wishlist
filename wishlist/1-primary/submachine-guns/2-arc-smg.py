@@ -43,7 +43,7 @@ class OutOfBounds(RollDefinition):
 class SeventhSeraphVY7(RollDefinition):
     """
     Arc Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Cosmodrome
     https://www.light.gg/db/items/1719169808
     https://destiny.report/w/1719169808
     """

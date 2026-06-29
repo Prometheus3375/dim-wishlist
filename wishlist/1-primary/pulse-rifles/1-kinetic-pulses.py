@@ -17,7 +17,7 @@ class AutumnWind(RollDefinition):
 class BattleScar(RollDefinition):
     """
     Kinetic Pulse Rifle, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: European Dead Zone
     https://www.light.gg/db/items/1525080480
     https://destiny.report/w/1525080480
     """

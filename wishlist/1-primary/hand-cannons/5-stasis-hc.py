@@ -24,7 +24,7 @@ class Judgment(RollDefinition):
 class LoudLullaby(RollDefinition):
     """
     Stasis Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/868076517
     https://destiny.report/w/868076517
     """

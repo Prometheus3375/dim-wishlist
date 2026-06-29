@@ -4,7 +4,7 @@ from wishlist import *
 class AbideTheReturn(RollDefinition):
     """
     Solar Sword, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/1291270049
     https://destiny.report/w/1291270049
     """

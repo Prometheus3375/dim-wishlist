@@ -4,7 +4,7 @@ from wishlist import *
 class CircularLogic(RollDefinition):
     """
     Strand Machine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Terminal Overload
     https://www.light.gg/db/items/2528793321
     https://destiny.report/w/2528793321
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class HighAlbedo(RollDefinition):
     """
     Kinetic Sidearm, Micro-Missile Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Europa
     https://www.light.gg/db/items/2662459958
     https://destiny.report/w/2662459958
     """
@@ -88,7 +88,7 @@ class LotusEater(RollDefinition):
 class TinashasMastery(RollDefinition):
     """
     Stasis Sidearm, Micro-Missile Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/247984828
     https://destiny.report/w/247984828
     """

@@ -21,7 +21,7 @@ class QuaNilusII(RollDefinition):
 class SynchronicRoulette(RollDefinition):
     """
     Strand Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Terminal Overload
     https://www.light.gg/db/items/3752860091
     https://destiny.report/w/3752860091
     """

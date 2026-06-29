@@ -14,7 +14,7 @@ class KeenThistle(RollDefinition):
 class LastForay(RollDefinition):
     """
     Solar Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: European Dead Zone
     https://www.light.gg/db/items/4118936670
     https://destiny.report/w/4118936670
     """
@@ -24,7 +24,7 @@ class LastForay(RollDefinition):
 class TwilightOath(RollDefinition):
     """
     Solar Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Unspecified
+    Source: The Dreaming City
     https://www.light.gg/db/items/268357178
     https://destiny.report/w/268357178
     """

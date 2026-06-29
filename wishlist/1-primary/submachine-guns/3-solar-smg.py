@@ -41,7 +41,7 @@ class NoSurvivors(RollDefinition):
 class Parabellum(RollDefinition):
     """
     Solar Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: European Dead Zone
     https://www.light.gg/db/items/3769072067
     https://destiny.report/w/3769072067
     """

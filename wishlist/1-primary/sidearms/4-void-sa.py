@@ -44,7 +44,7 @@ class Insurmountable(RollDefinition):
 class SeventhSeraphSI2(RollDefinition):
     """
     Void Sidearm, Lightweight Frame, Anti-Overload
-    Source: Unspecified
+    Source: Cosmodrome
     https://www.light.gg/db/items/453798564
     https://destiny.report/w/453798564
     """

@@ -24,7 +24,7 @@ class CryMutiny(RollDefinition):
 class LoveAndDeath(RollDefinition):
     """
     Solar Drum Grenade Launcher, Compressed Wave Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/3482299617
     https://destiny.report/w/3482299617
     """

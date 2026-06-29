@@ -17,7 +17,7 @@ class AloneAsAGod(RollDefinition):
 class BiteOfTheFox(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/2851703775
     https://destiny.report/w/2851703775
     """
@@ -60,7 +60,7 @@ class SuccessionOnslaught(RollDefinition):
 class Tranquility(RollDefinition):
     """
     Kinetic Sniper Rifle, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/846241148
     https://destiny.report/w/846241148
     """

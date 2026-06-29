@@ -14,7 +14,7 @@ class BugOutBag(RollDefinition):
 class EveryWakingMoment(RollDefinition):
     """
     Void Submachine Gun, Precision Frame, Anti-Barrier
-    Source: Unspecified
+    Source: The Moon
     https://www.light.gg/db/items/1487476133
     https://destiny.report/w/1487476133
     """
@@ -34,7 +34,7 @@ class ShayurasWrath(RollDefinition):
 class TheHerosBurden(RollDefinition):
     """
     Void Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: Unspecified
+    Source: Lord Saladin
     https://www.light.gg/db/items/4222913208
     https://destiny.report/w/4222913208
     """

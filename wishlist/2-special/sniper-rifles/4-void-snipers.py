@@ -44,7 +44,7 @@ class ShorelineDissident(RollDefinition):
 class TrophyHunter(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Unspecified
+    Source: Nessus, Unstable Centaur
     https://www.light.gg/db/items/2566169398
     https://destiny.report/w/2566169398
     """
