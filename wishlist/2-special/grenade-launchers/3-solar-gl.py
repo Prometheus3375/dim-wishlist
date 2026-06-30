@@ -11,6 +11,16 @@ class EmptyVessel(RollDefinition):
     item = Item('Empty Vessel', hash=198068259)
 
 
+class ExplosivePersonality(RollDefinition):
+    """
+    Solar Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable, Craftable
+    Source: Season of the Risen
+    https://www.light.gg/db/items/4096943616
+    https://destiny.report/w/4096943616
+    """
+    item = Item('Explosive Personality', hash=4096943616)
+
+
 class Motif41(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload

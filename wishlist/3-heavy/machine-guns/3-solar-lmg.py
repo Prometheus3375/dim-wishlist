@@ -14,6 +14,26 @@ class DawnFarOff(RollDefinition):
         ]
 
 
+class FixedOdds(RollDefinition):
+    """
+    Solar Machine Gun, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Dungeon "Duality"
+    https://www.light.gg/db/items/2194955522
+    https://destiny.report/w/2194955522
+    """
+    item = Item('Fixed Odds', hash=2194955522)
+
+
+class Speleologist(RollDefinition):
+    """
+    Solar Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/412251536
+    https://destiny.report/w/412251536
+    """
+    item = Item('Speleologist', hash=412251536)
+
+
 class TemporalClause(RollDefinition):
     """
     Solar Machine Gun, Aggressive Frame, Anti-Unstoppable

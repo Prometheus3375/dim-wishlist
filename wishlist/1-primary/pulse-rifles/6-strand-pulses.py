@@ -43,6 +43,16 @@ class BelisariusD(RollDefinition):
     item = Item('Belisarius-D', hash=747743637)
 
 
+class DifferentTimes(RollDefinition):
+    """
+    Strand Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source:
+    https://www.light.gg/db/items/3016891299
+    https://destiny.report/w/3016891299
+    """
+    item = Item('Different Times', hash=3016891299)
+
+
 class LastThursday(RollDefinition):
     """
     Strand Pulse Rifle, Adaptive Frame, Anti-Barrier

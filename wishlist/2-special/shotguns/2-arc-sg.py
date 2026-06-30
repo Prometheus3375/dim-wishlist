@@ -31,6 +31,19 @@ class DedGramaryeIV(RollDefinition):
     item = Item('Ded Gramarye IV', hash=870893339)
 
 
+class FoundVerdict(RollDefinition):
+    """
+    Arc Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: "Vault of Glass" Raid
+    https://www.light.gg/db/items/694500607
+    https://destiny.report/w/694500607
+    """
+    items = [
+        Item('Found Verdict', hash=694500607),
+        Item('Found Verdict (Timelost)', hash=851296754),
+        ]
+
+
 class Matador64(RollDefinition):
     """
     Arc Shotgun, Precision Frame, Anti-Barrier
@@ -56,6 +69,16 @@ class MIDAMacroTool(RollDefinition):
         [trait.ThreatDetector],
         [trait.ClosingTime, trait.OpeningShot],
         )
+
+
+class ProphetOfDoom(RollDefinition):
+    """
+    Arc Shotgun, Precision Frame, Anti-Barrier, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/2145441168
+    https://destiny.report/w/2145441168
+    """
+    item = Item('Prophet of Doom', hash=2145441168)
 
 
 class TheDeicide(RollDefinition):

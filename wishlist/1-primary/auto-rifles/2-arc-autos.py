@@ -11,6 +11,16 @@ class ArcLogic(RollDefinition):
     item = Item('Arc Logic', hash=38064944)
 
 
+class ComeToPass(RollDefinition):
+    """
+    Arc Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Wellspring Boss Golmag, Warden of the Spring
+    https://www.light.gg/db/items/927567426
+    https://destiny.report/w/927567426
+    """
+    item = Item('Come to Pass', hash=927567426)
+
+
 class ChrysuraMelo(RollDefinition):
     """
     Arc Auto Rifle, Support Frame, Anti-Overload
@@ -65,6 +75,16 @@ class SorrowsVerse(RollDefinition):
         Item("Sorrow's Verse", hash=775830132),
         Item("Sorrow's Verse", hash=2557966895),
         ]
+
+
+class SweetSorrow(RollDefinition):
+    """
+    Arc Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Risen
+    https://www.light.gg/db/items/1248372789
+    https://destiny.report/w/1248372789
+    """
+    item = Item('Sweet Sorrow', hash=1248372789)
 
 
 class Trendsetter(RollDefinition):

@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class NationOfBeasts(RollDefinition):
+    """
+    Arc Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
+    Source:
+    https://www.light.gg/db/items/70083888
+    https://destiny.report/w/70083888
+    """
+    item = Item('Nation of Beasts', hash=70083888)
+
+
 class SarpedonD(RollDefinition):
     """
     Arc Hand Cannon, Spread Shot, Anti-Overload
@@ -49,6 +59,16 @@ class SarpedonD(RollDefinition):
         #     [trait.RollingStorm],
         #     ),
         ]
+
+
+class SightlineSurvey(RollDefinition):
+    """
+    Arc Hand Cannon, Precision Frame, Anti-Barrier, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/2350330520
+    https://destiny.report/w/2350330520
+    """
+    item = Item('Sightline Survey', hash=2350330520)
 
 
 class SolemnLie(RollDefinition):

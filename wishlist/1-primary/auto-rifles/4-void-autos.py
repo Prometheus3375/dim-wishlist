@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AgeOldBond(RollDefinition):
+    """
+    Void Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source:
+    https://www.light.gg/db/items/424291879
+    https://destiny.report/w/424291879
+    """
+    item = Item('Age-Old Bond', hash=424291879)
+
+
 class CuspSempiternal(RollDefinition):
     """
     Void Auto Rifle, Support Frame, Anti-Overload
@@ -58,6 +68,16 @@ class PositiveOutlook(RollDefinition):
 
 
 class RecklessOracle(RollDefinition):
+    """
+    Void Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/1992309064
+    https://destiny.report/w/1992309064
+    """
+    item = Item('Reckless Oracle', hash=1992309064)
+
+
+class RecklessOraclePantheon(RollDefinition):
     """
     Void Auto Rifle, Rapid-Fire Frame, Anti-Overload
     Source: Pantheon

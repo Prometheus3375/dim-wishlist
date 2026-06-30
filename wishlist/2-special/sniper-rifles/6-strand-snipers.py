@@ -38,3 +38,13 @@ class NaeemsLance(RollDefinition):
     https://destiny.report/w/4119503981
     """
     item = Item("Naeem's Lance", hash=4119503981)
+
+
+class VoltaBracket(RollDefinition):
+    """
+    Strand Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Lightfall Campaign
+    https://www.light.gg/db/items/3920310144
+    https://destiny.report/w/3920310144
+    """
+    item = Item('Volta Bracket', hash=3920310144)

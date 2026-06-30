@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class Disparity(RollDefinition):
+    """
+    Stasis Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
+    Source: Season of the Seraph Activities
+    https://www.light.gg/db/items/1751893422
+    https://destiny.report/w/1751893422
+    """
+    item = Item('Disparity', hash=1751893422)
+
+
 class HailingConfusion(RollDefinition):
     """
     Stasis Pulse Rifle, Adaptive Frame, Anti-Barrier
@@ -39,6 +49,16 @@ class StayFrosty(RollDefinition):
     https://destiny.report/w/3910523587
     """
     item = Item('Stay Frosty', hash=3910523587)
+
+
+class Syncopation53(RollDefinition):
+    """
+    Stasis Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Open Legendary engrams and earn faction rank-up packages.
+    https://www.light.gg/db/items/2856514843
+    https://destiny.report/w/2856514843
+    """
+    item = Item('Syncopation-53', hash=2856514843)
 
 
 class TheTimeWornSpire(RollDefinition):

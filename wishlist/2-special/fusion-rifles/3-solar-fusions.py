@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AxialLacuna(RollDefinition):
+    """
+    Solar Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/3867373351
+    https://destiny.report/w/3867373351
+    """
+    item = Item('Axial Lacuna', hash=3867373351)
+
+
 class CartesianCoordinate(RollDefinition):
     """
     Solar Fusion Rifle, Rapid-Fire Frame, Anti-Overload
@@ -57,6 +67,16 @@ class FiniteMaybe(RollDefinition):
         ]
 
 
+class RoyalExecutioner(RollDefinition):
+    """
+    Solar Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of Defiance
+    https://www.light.gg/db/items/1720503118
+    https://destiny.report/w/1720503118
+    """
+    item = Item('Royal Executioner', hash=1720503118)
+
+
 class TheBeacon(RollDefinition):
     """
     Solar Fusion Rifle, Rapid-Fire Frame, Anti-Overload
@@ -94,3 +114,13 @@ class TheBeacon(RollDefinition):
             [trait.Deconstruct],
             ),
         ]
+
+
+class TheEremite(RollDefinition):
+    """
+    Solar Fusion Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Season of the Witch
+    https://www.light.gg/db/items/3347946548
+    https://destiny.report/w/3347946548
+    """
+    item = Item('The Eremite', hash=3347946548)

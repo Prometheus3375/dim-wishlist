@@ -21,6 +21,16 @@ class Hullabaloo(RollDefinition):
     item = Item('Hullabaloo', hash=2449096504)
 
 
+class Tarnation(RollDefinition):
+    """
+    Arc Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Wellspring Boss Vezuul, Lightflayer
+    https://www.light.gg/db/items/2721157927
+    https://destiny.report/w/2721157927
+    """
+    item = Item('Tarnation', hash=2721157927)
+
+
 class WendigoGL3(RollDefinition):
     """
     Arc Drum Grenade Launcher, Adaptive Frame, Anti-Barrier

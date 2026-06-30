@@ -34,6 +34,16 @@ class AuroraDawn(RollDefinition):
         ]
 
 
+class IllOmen(RollDefinition):
+    """
+    Stasis Sword, Caster Frame, Anti-Barrier, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/3794274730
+    https://destiny.report/w/3794274730
+    """
+    item = Item('Ill Omen', hash=3794274730)
+
+
 class TheSlammer(RollDefinition):
     """
     Stasis Sword, Vortex Frame, Anti-Overload

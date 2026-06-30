@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class IterativeLoop(RollDefinition):
+    """
+    Arc Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Exploring Neomuna
+    https://www.light.gg/db/items/1289796511
+    https://destiny.report/w/1289796511
+    """
+    item = Item('Iterative Loop', hash=1289796511)
+
+
 class LoadedQuestion(RollDefinition):
     """
     Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable
@@ -9,6 +19,19 @@ class LoadedQuestion(RollDefinition):
     https://destiny.report/w/852069910
     """
     item = Item('Loaded Question', hash=852069910)
+
+
+class MidhasReckoning(RollDefinition):
+    """
+    Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/3969066556
+    https://destiny.report/w/3969066556
+    """
+    items = [
+        Item("Midha's Reckoning", hash=3969066556),
+        Item("Midha's Reckoning (Harrowed)", hash=3904516037),
+        ]
 
 
 class MainIngredient(RollDefinition):
@@ -32,6 +55,16 @@ class PLUGONE1(RollDefinition):
     https://destiny.report/w/852069911
     """
     item = Item('PLUG ONE.1', hash=852069911)
+
+
+class TecheunForce(RollDefinition):
+    """
+    Arc Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source:
+    https://www.light.gg/db/items/3591141932
+    https://destiny.report/w/3591141932
+    """
+    item = Item('Techeun Force', hash=3591141932)
 
 
 class TemperedDynamo(RollDefinition):

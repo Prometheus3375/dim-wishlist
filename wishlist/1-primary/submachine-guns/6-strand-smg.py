@@ -1,6 +1,19 @@
 from wishlist import *
 
 
+class Imminence(RollDefinition):
+    """
+    Strand Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
+    Source: "Salvation's Edge" Raid
+    https://www.light.gg/db/items/1258168956
+    https://destiny.report/w/1258168956
+    """
+    items = [
+        Item('Imminence', hash=1258168956),
+        Item('Imminence (Adept)', hash=3951511045),
+        ]
+
+
 class QuaNilusII(RollDefinition):
     """
     Strand Submachine Gun, Adaptive Frame, Anti-Barrier

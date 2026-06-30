@@ -21,6 +21,16 @@ class Backfang(RollDefinition):
     item = Item('Backfang', hash=1277470844)
 
 
+class NezarecsWhisper(RollDefinition):
+    """
+    Arc Adaptive Glaive, Anti-Barrier, Craftable
+    Source: Season of the Haunted Activities
+    https://www.light.gg/db/items/254636484
+    https://destiny.report/w/254636484
+    """
+    item = Item("Nezarec's Whisper", hash=254636484)
+
+
 class GreasyLuck(RollDefinition):
     """
     Solar Rapid-Fire Glaive, Anti-Overload
@@ -31,6 +41,29 @@ class GreasyLuck(RollDefinition):
     item = Item('Greasy Luck', hash=4274165888)
 
 
+class JudgmentOfKelgorath(RollDefinition):
+    """
+    Solar Aggressive Glaive, Anti-Unstoppable, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/2978226043
+    https://destiny.report/w/2978226043
+    """
+    item = Item('Judgment of Kelgorath', hash=2978226043)
+
+
+class LubraesRuin(RollDefinition):
+    """
+    Solar Adaptive Glaive, Anti-Barrier, Craftable
+    Source: "Vow of the Disciple" Raid
+    https://www.light.gg/db/items/2534546147
+    https://destiny.report/w/2534546147
+    """
+    items = [
+        Item("Lubrae's Ruin", hash=2534546147),
+        Item("Lubrae's Ruin (Adept)", hash=1466006054),
+        ]
+
+
 class EclipticDistaff(RollDefinition):
     """
     Void Adaptive Glaive, Anti-Barrier
@@ -39,6 +72,29 @@ class EclipticDistaff(RollDefinition):
     https://destiny.report/w/1942143745
     """
     item = Item('Ecliptic Distaff', hash=1942143745)
+
+
+class ForthcomingDeviance(RollDefinition):
+    """
+    Void Rapid-Fire Glaive, Anti-Overload, Craftable
+    Source: "Salvation's Edge" Raid
+    https://www.light.gg/db/items/535198113
+    https://destiny.report/w/535198113
+    """
+    items = [
+        Item('Forthcoming Deviance', hash=535198113),
+        Item('Forthcoming Deviance (Adept)', hash=3123651616),
+        ]
+
+
+class TheEnigma(RollDefinition):
+    """
+    Void Adaptive Glaive, Anti-Barrier, Craftable
+    Source: The Witch Queen Campaign
+    https://www.light.gg/db/items/2595497736
+    https://destiny.report/w/2595497736
+    """
+    item = Item('The Enigma', hash=2595497736)
 
 
 class TheHeron(RollDefinition):

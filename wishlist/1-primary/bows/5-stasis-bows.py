@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class Raconteur(RollDefinition):
+    """
+    Stasis Combat Bow, Precision Frame, Anti-Barrier, Craftable
+    Source: Season of Defiance
+    https://www.light.gg/db/items/45643573
+    https://destiny.report/w/45643573
+    """
+    item = Item('Raconteur', hash=45643573)
+
+
 class TheSpitefulFang(RollDefinition):
     """
     Stasis Combat Bow, Lightweight Frame, Anti-Overload

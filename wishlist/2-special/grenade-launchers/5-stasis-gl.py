@@ -21,6 +21,16 @@ class Liturgy(RollDefinition):
     item = Item('Liturgy', hash=3377522331)
 
 
+class LostSignal(RollDefinition):
+    """
+    Stasis Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/1197771438
+    https://destiny.report/w/1197771438
+    """
+    item = Item('Lost Signal', hash=1197771438)
+
+
 class NewPacificEpitaph(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable

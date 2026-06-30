@@ -1,6 +1,26 @@
 from wishlist import *
 
 
+class Adhortative(RollDefinition):
+    """
+    Solar Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of the Wish Activities
+    https://www.light.gg/db/items/2993554824
+    https://destiny.report/w/2993554824
+    """
+    item = Item('Adhortative', hash=2993554824)
+
+
+class BxR55Battler(RollDefinition):
+    """
+    Solar Pulse Rifle, Legacy PR-55 Frame, Anti-Barrier, Craftable
+    Source: Xûr's Treasure Hoard in Eternity
+    https://www.light.gg/db/items/2708806099
+    https://destiny.report/w/2708806099
+    """
+    item = Item('BxR-55 Battler', hash=2708806099)
+
+
 class DarkestBefore(RollDefinition):
     """
     Solar Pulse Rifle, Rapid-Fire Frame, Anti-Overload
@@ -19,6 +39,19 @@ class JorumsClaw(RollDefinition):
     https://destiny.report/w/3634548598
     """
     item = Item("Jorum's Claw", hash=3634548598)
+
+
+class Nullify(RollDefinition):
+    """
+    Solar Pulse Rifle, Heavy Burst, Anti-Unstoppable, Craftable
+    Source: "Salvation's Edge" Raid
+    https://www.light.gg/db/items/859869931
+    https://destiny.report/w/859869931
+    """
+    items = [
+        Item('Nullify', hash=859869931),
+        Item('Nullify (Adept)', hash=892183998),
+        ]
 
 
 class OgmaPR6(RollDefinition):

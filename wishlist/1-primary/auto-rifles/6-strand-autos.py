@@ -38,6 +38,29 @@ class LethalAbundance(RollDefinition):
     item = Item('Lethal Abundance', hash=1884897339)
 
 
+class Perpetualis(RollDefinition):
+    """
+    Strand Auto Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of Defiance
+    https://www.light.gg/db/items/392008588
+    https://destiny.report/w/392008588
+    """
+    item = Item('Perpetualis', hash=392008588)
+
+
+class RufussFury(RollDefinition):
+    """
+    Strand Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Root of Nightmares" Raid
+    https://www.light.gg/db/items/484515708
+    https://destiny.report/w/484515708
+    """
+    items = [
+        Item("Rufus's Fury", hash=484515708),
+        Item("Rufus's Fury (Adept)", hash=342514437),
+        ]
+
+
 class TheForwardPath(RollDefinition):
     """
     Strand Auto Rifle, Adaptive Frame, Anti-Barrier

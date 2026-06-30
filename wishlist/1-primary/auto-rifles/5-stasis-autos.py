@@ -65,3 +65,13 @@ class Intercalary(RollDefinition):
             [trait.OneForAll],
             ),
         ]
+
+
+class VeiledThreat(RollDefinition):
+    """
+    Stasis Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/3685470415
+    https://destiny.report/w/3685470415
+    """
+    item = Item('Veiled Threat', hash=3685470415)

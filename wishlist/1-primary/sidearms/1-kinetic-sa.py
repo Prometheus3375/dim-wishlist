@@ -21,6 +21,16 @@ class Buzzard(RollDefinition):
     item = Item('Buzzard', hash=4237970862)
 
 
+class EmpiricalEvidence(RollDefinition):
+    """
+    Kinetic Sidearm, Heavy Burst, Anti-Unstoppable, Craftable
+    Source: The Witch Queen Campaign
+    https://www.light.gg/db/items/2607304614
+    https://destiny.report/w/2607304614
+    """
+    item = Item('Empirical Evidence', hash=2607304614)
+
+
 class Lonesome(RollDefinition):
     """
     Kinetic Sidearm, Precision Frame, Anti-Barrier

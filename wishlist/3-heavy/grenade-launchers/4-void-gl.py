@@ -19,3 +19,13 @@ class EdgeTransit(RollDefinition):
     https://destiny.report/w/3736001863
     """
     item = Item('Edge Transit', hash=3736001863)
+
+
+class Regnant(RollDefinition):
+    """
+    Void Drum Grenade Launcher, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of Defiance
+    https://www.light.gg/db/items/268260372
+    https://destiny.report/w/268260372
+    """
+    item = Item('Regnant', hash=268260372)

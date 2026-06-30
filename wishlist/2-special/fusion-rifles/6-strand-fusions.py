@@ -44,6 +44,16 @@ class Resounding(RollDefinition):
     item = Item('Resounding', hash=3273807888)
 
 
+class ScatterSignal(RollDefinition):
+    """
+    Strand Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Wish Activities
+    https://www.light.gg/db/items/2558925366
+    https://destiny.report/w/2558925366
+    """
+    item = Item('Scatter Signal', hash=2558925366)
+
+
 class TAHOMA01(RollDefinition):
     """
     Strand Fusion Rifle, Aggressive Frame, Anti-Unstoppable

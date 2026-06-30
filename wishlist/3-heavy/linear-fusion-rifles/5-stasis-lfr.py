@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class FireAndForget(RollDefinition):
+    """
+    Stasis Linear Fusion Rifle, Adaptive Burst, Anti-Barrier, Craftable
+    Source: Season of the Seraph Activities
+    https://www.light.gg/db/items/2272041093
+    https://destiny.report/w/2272041093
+    """
+    item = Item('Fire and Forget', hash=2272041093)
+
+
 class ReedsRegret(RollDefinition):
     """
     Stasis Linear Fusion Rifle, Precision Frame, Anti-Barrier

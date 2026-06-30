@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class DoomedPetitioner(RollDefinition):
+    """
+    Void Linear Fusion Rifle, Adaptive Burst, Anti-Barrier, Craftable
+    Source: Season of the Wish Activities
+    https://www.light.gg/db/items/1501688142
+    https://destiny.report/w/1501688142
+    """
+    item = Item('Doomed Petitioner', hash=1501688142)
+
+
 class EyesUnveiled(RollDefinition):
     """
     Void Linear Fusion Rifle, Precision Frame, Anti-Barrier
@@ -30,3 +40,13 @@ class MistralLift(RollDefinition):
         [trait.BaitAndSwitch],
         [origin.VeistStinger],
         )
+
+
+class Taipan4fr(RollDefinition):
+    """
+    Void Linear Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Open Legendary engrams and earn faction rank-up packages.
+    https://www.light.gg/db/items/1911060537
+    https://destiny.report/w/1911060537
+    """
+    item = Item('Taipan-4fr', hash=1911060537)

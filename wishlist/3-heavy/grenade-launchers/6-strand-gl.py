@@ -27,6 +27,19 @@ class CataphractGL3(RollDefinition):
         ]
 
 
+class KoraxissDistress(RollDefinition):
+    """
+    Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Root of Nightmares" Raid
+    https://www.light.gg/db/items/2972949637
+    https://destiny.report/w/2972949637
+    """
+    items = [
+        Item("Koraxis's Distress", hash=2972949637),
+        Item("Koraxis's Distress (Adept)", hash=495442100),
+        ]
+
+
 class TheEverPresent(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload

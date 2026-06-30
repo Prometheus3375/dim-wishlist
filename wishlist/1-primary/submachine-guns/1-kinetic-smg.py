@@ -75,3 +75,16 @@ class PeculiarCharm(RollDefinition):
             [stock.FittedStock, AnyPerk],
             )
         ]
+
+
+class Submission(RollDefinition):
+    """
+    Kinetic Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
+    Source: "Vow of the Disciple" Raid
+    https://www.light.gg/db/items/3886416794
+    https://destiny.report/w/3886416794
+    """
+    items = [
+        Item('Submission', hash=3886416794),
+        Item('Submission (Adept)', hash=1941816543),
+        ]

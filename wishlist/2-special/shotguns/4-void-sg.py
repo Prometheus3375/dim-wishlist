@@ -31,6 +31,19 @@ class Bonechiller(RollDefinition):
     item = Item('Bonechiller', hash=1529367715)
 
 
+class NessasOblation(RollDefinition):
+    """
+    Void Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
+    Source: "Root of Nightmares" Raid
+    https://www.light.gg/db/items/135029084
+    https://destiny.report/w/135029084
+    """
+    items = [
+        Item("Nessa's Oblation", hash=135029084),
+        Item("Nessa's Oblation (Adept)", hash=522366885),
+        ]
+
+
 class Precipial(RollDefinition):
     """
     Void Shotgun, Precision Frame, Anti-Barrier

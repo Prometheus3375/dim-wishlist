@@ -49,6 +49,16 @@ class Bygones(RollDefinition):
 
 class ChatteringBone(RollDefinition):
     """
+    Kinetic Pulse Rifle, Lightweight Frame, Anti-Overload, Craftable
+    Source:
+    https://www.light.gg/db/items/501329015
+    https://destiny.report/w/501329015
+    """
+    item = Item('Chattering Bone', hash=501329015)
+
+
+class ChatteringBonePantheon(RollDefinition):
+    """
     Kinetic Pulse Rifle, Lightweight Frame, Anti-Overload
     Source: Pantheon
     https://www.light.gg/db/items/830651379
@@ -68,6 +78,39 @@ class ColdDenial(RollDefinition):
     https://destiny.report/w/324584913
     """
     item = Item('Cold Denial', hash=324584913)
+
+
+class PieceOfMind(RollDefinition):
+    """
+    Kinetic Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/2097055732
+    https://destiny.report/w/2097055732
+    """
+    item = Item('Piece of Mind', hash=2097055732)
+
+
+class SacredProvenance(RollDefinition):
+    """
+    Kinetic Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/2241507890
+    https://destiny.report/w/2241507890
+    """
+    item = Item('Sacred Provenance', hash=2241507890)
+
+
+class SmiteOfMerain(RollDefinition):
+    """
+    Kinetic Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/2221264583
+    https://destiny.report/w/2221264583
+    """
+    items = [
+        Item('Smite of Merain', hash=2221264583),
+        Item('Smite of Merain (Harrowed)', hash=3407395594),
+        ]
 
 
 class TheMessenger(RollDefinition):

@@ -59,3 +59,13 @@ class EightySix(RollDefinition):
         #     [trait.Hatchling, trait.AttritionOrbs],
         #     ),
         ]
+
+
+class ThinPrecipice(RollDefinition):
+    """
+    Strand Sword, Vortex Frame, Anti-Overload, Craftable
+    Source:
+    https://www.light.gg/db/items/4066778670
+    https://destiny.report/w/4066778670
+    """
+    item = Item('Thin Precipice', hash=4066778670)

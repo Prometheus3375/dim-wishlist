@@ -1,6 +1,19 @@
 from wishlist import *
 
 
+class FangOfIrYut(RollDefinition):
+    """
+    Strand Scout Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Crota's End" Raid
+    https://www.light.gg/db/items/1432682459
+    https://destiny.report/w/1432682459
+    """
+    items = [
+        Item('Fang of Ir Yût', hash=1432682459),
+        Item('Fang of Ir Yût (Adept)', hash=128782990),
+        ]
+
+
 class Glissando47(RollDefinition):
     """
     Strand Scout Rifle, Precision Frame, Anti-Barrier

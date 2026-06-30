@@ -11,6 +11,26 @@ class AbideTheReturn(RollDefinition):
     item = Item('Abide the Return', hash=1291270049)
 
 
+class Caretaker(RollDefinition):
+    """
+    Solar Sword, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of Defiance
+    https://www.light.gg/db/items/2508948099
+    https://destiny.report/w/2508948099
+    """
+    item = Item('Caretaker', hash=2508948099)
+
+
+class FalseIdols(RollDefinition):
+    """
+    Solar Sword, Vortex Frame, Anti-Overload, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/4207120603
+    https://destiny.report/w/4207120603
+    """
+    item = Item('False Idols', hash=4207120603)
+
+
 class SolasScar(RollDefinition):
     """
     Solar Sword, Caster Frame, Anti-Barrier
@@ -71,3 +91,13 @@ class Terciopelo4bl(RollDefinition):
         Item('Terciopelo-4bl', hash=393652859),
         Item('Terciopelo-4bl', hash=2775462168),
         ]
+
+
+class ThroneCleaver(RollDefinition):
+    """
+    Solar Sword, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Open Legendary engrams and earn faction rank-up packages.
+    https://www.light.gg/db/items/3371413059
+    https://destiny.report/w/3371413059
+    """
+    item = Item('Throne-Cleaver', hash=3371413059)

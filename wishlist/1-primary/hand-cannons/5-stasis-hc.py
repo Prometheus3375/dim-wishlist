@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class BoldEndings(RollDefinition):
+    """
+    Stasis Hand Cannon, Heavy Burst, Anti-Unstoppable, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/496728945
+    https://destiny.report/w/496728945
+    """
+    item = Item('Bold Endings', hash=496728945)
+
+
 class Eyasluna(RollDefinition):
     """
     Stasis Hand Cannon, Adaptive Frame, Anti-Barrier

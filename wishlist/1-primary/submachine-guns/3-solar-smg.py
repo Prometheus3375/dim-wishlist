@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class CALUSMiniTool(RollDefinition):
+    """
+    Solar Submachine Gun, MIDA Synergy, Anti-Overload, Craftable
+    Source: The Derelict Leviathan
+    https://www.light.gg/db/items/2490988246
+    https://destiny.report/w/2490988246
+    """
+    item = Item('CALUS Mini-Tool', hash=2490988246)
+
+
 class DeathAdder(RollDefinition):
     """
     Solar Submachine Gun, Lightweight Frame, Anti-Overload

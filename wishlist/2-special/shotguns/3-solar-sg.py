@@ -31,6 +31,16 @@ class GunnorasAxe(RollDefinition):
     item = Item("Gunnora's Axe", hash=218787951)
 
 
+class IKELOS_SG_v103(RollDefinition):
+    """
+    Solar Shotgun, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Seraph
+    https://www.light.gg/db/items/1168625549
+    https://destiny.report/w/1168625549
+    """
+    item = Item('IKELOS_SG_v1.0.3', hash=1168625549)
+
+
 class LastManStanding(RollDefinition):
     """
     Solar Shotgun, Aggressive Frame, Anti-Unstoppable
@@ -69,3 +79,13 @@ class StarscapeNull(RollDefinition):
     https://destiny.report/w/3868973291
     """
     item = Item('Starscape Null', hash=3868973291)
+
+
+class WithoutRemorse(RollDefinition):
+    """
+    Solar Shotgun, Lightweight Frame, Anti-Overload, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/1478986057
+    https://destiny.report/w/1478986057
+    """
+    item = Item('Without Remorse', hash=1478986057)

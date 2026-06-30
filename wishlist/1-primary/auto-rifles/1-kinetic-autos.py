@@ -60,6 +60,16 @@ class EverburningGlitz(RollDefinition):
         ]
 
 
+class Firefright(RollDefinition):
+    """
+    Kinetic Auto Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/2778013407
+    https://destiny.report/w/2778013407
+    """
+    item = Item('Firefright', hash=2778013407)
+
+
 class GiversBlessing(RollDefinition):
     """
     Kinetic Auto Rifle, Rapid-Fire Frame, Anti-Overload

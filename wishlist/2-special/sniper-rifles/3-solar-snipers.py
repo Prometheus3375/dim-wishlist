@@ -1,6 +1,26 @@
 from wishlist import *
 
 
+class Beloved(RollDefinition):
+    """
+    Solar Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: The Derelict Leviathan
+    https://www.light.gg/db/items/3107853529
+    https://destiny.report/w/3107853529
+    """
+    item = Item('Beloved', hash=3107853529)
+
+
+class IKELOS_SR_v103(RollDefinition):
+    """
+    Solar Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Seraph
+    https://www.light.gg/db/items/2302346155
+    https://destiny.report/w/2302346155
+    """
+    item = Item('IKELOS_SR_v1.0.3', hash=2302346155)
+
+
 class KeenThistle(RollDefinition):
     """
     Solar Sniper Rifle, Aggressive Frame, Anti-Unstoppable
@@ -19,6 +39,16 @@ class LastForay(RollDefinition):
     https://destiny.report/w/4118936670
     """
     item = Item('Last Foray', hash=4118936670)
+
+
+class OmniscientEye(RollDefinition):
+    """
+    Solar Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/147444292
+    https://destiny.report/w/147444292
+    """
+    item = Item('Omniscient Eye', hash=147444292)
 
 
 class TwilightOath(RollDefinition):

@@ -34,6 +34,16 @@ class Sublimation(RollDefinition):
     item = Item('Sublimation', hash=1674692344)
 
 
+class TarnishedMettle(RollDefinition):
+    """
+    Arc Scout Rifle, Lightweight Frame, Anti-Overload, Craftable
+    Source: Season of Plunder Activities
+    https://www.light.gg/db/items/2218569744
+    https://destiny.report/w/2218569744
+    """
+    item = Item('Tarnished Mettle', hash=2218569744)
+
+
 class Unworthy(RollDefinition):
     """
     Arc Scout Rifle, Rapid-Fire Frame, Anti-Overload

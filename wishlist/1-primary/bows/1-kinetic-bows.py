@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AccruedRedemption(RollDefinition):
+    """
+    Kinetic Combat Bow, Precision Frame, Anti-Barrier, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/3621336854
+    https://destiny.report/w/3621336854
+    """
+    item = Item('Accrued Redemption', hash=3621336854)
+
+
 class BitingWinds(RollDefinition):
     """
     Kinetic Combat Bow, Precision Frame, Anti-Barrier
@@ -9,6 +19,16 @@ class BitingWinds(RollDefinition):
     https://destiny.report/w/2485400469
     """
     item = Item('Biting Winds', hash=2485400469)
+
+
+class FelTaradiddle(RollDefinition):
+    """
+    Kinetic Combat Bow, Lightweight Frame, Anti-Overload, Craftable
+    Source: Wellspring Boss Bor'gong, Warden of the Spring
+    https://www.light.gg/db/items/1399109800
+    https://destiny.report/w/1399109800
+    """
+    item = Item('Fel Taradiddle', hash=1399109800)
 
 
 class MercuryA(RollDefinition):

@@ -11,6 +11,16 @@ class ChivalricFire(RollDefinition):
     item = Item('Chivalric Fire', hash=938936806)
 
 
+class DeathsRazor(RollDefinition):
+    """
+    Void Sword, Vortex Frame, Anti-Overload, Craftable
+    Source: Open Legendary engrams and earn faction rank-up packages.
+    https://www.light.gg/db/items/3371413056
+    https://destiny.report/w/3371413056
+    """
+    item = Item("Death's Razor", hash=3371413056)
+
+
 class FallingGuillotine(RollDefinition):
     """
     Void Sword, Vortex Frame, Anti-Overload
@@ -79,3 +89,13 @@ class SullenClaw(RollDefinition):
         #     [trait.DestabilizingRounds],
         #     ),
         ]
+
+
+class TheOtherHalf(RollDefinition):
+    """
+    Void Sword, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Xûr's Treasure Hoard in Eternity
+    https://www.light.gg/db/items/3257091167
+    https://destiny.report/w/3257091167
+    """
+    item = Item('The Other Half', hash=3257091167)

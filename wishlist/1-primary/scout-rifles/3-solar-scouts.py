@@ -31,3 +31,26 @@ class OxygenSR3(RollDefinition):
             [trait.Meganeura],
             ),
         ]
+
+
+class TimewornWayfarer(RollDefinition):
+    """
+    Solar Scout Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/1058098236
+    https://destiny.report/w/1058098236
+    """
+    item = Item('Timeworn Wayfarer', hash=1058098236)
+
+
+class VisionOfConfluence(RollDefinition):
+    """
+    Solar Scout Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: "Vault of Glass" Raid
+    https://www.light.gg/db/items/3444688218
+    https://destiny.report/w/3444688218
+    """
+    items = [
+        Item('Vision of Confluence', hash=3444688218),
+        Item('Vision of Confluence (Timelost)', hash=337578911),
+        ]

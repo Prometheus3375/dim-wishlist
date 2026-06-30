@@ -24,6 +24,19 @@ class BiteOfTheFox(RollDefinition):
     item = Item('Bite of the Fox', hash=2851703775)
 
 
+class DefianceOfYasmin(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/3228096719
+    https://destiny.report/w/3228096719
+    """
+    items = [
+        Item('Defiance of Yasmin', hash=3228096719),
+        Item('Defiance of Yasmin (Harrowed)', hash=3503019618),
+        ]
+
+
 class EyeOfSol(RollDefinition):
     """
     Kinetic Sniper Rifle, Adaptive Frame, Anti-Barrier
@@ -32,6 +45,19 @@ class EyeOfSol(RollDefinition):
     https://destiny.report/w/2499834165
     """
     item = Item('Eye of Sol', hash=2499834165)
+
+
+class PraedythsRevenge(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Vault of Glass" Raid
+    https://www.light.gg/db/items/3844610113
+    https://destiny.report/w/3844610113
+    """
+    items = [
+        Item("Praedyth's Revenge", hash=3844610113),
+        Item("Praedyth's Revenge (Timelost)", hash=2362652544),
+        ]
 
 
 class SomethingSomething(RollDefinition):
@@ -55,6 +81,16 @@ class SuccessionOnslaught(RollDefinition):
     https://destiny.report/w/2731922624
     """
     item = Item('Succession', hash=2731922624)
+
+
+class TheSupremacy(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source:
+    https://www.light.gg/db/items/2884596447
+    https://destiny.report/w/2884596447
+    """
+    item = Item('The Supremacy', hash=2884596447)
 
 
 class Tranquility(RollDefinition):

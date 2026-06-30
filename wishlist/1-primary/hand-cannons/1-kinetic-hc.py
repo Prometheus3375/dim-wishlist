@@ -34,6 +34,16 @@ class AureusNeutralizer(RollDefinition):
         ]
 
 
+class Austringer(RollDefinition):
+    """
+    Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
+    Source: The Derelict Leviathan
+    https://www.light.gg/db/items/3055790362
+    https://destiny.report/w/3055790362
+    """
+    item = Item('Austringer', hash=3055790362)
+
+
 class CrimilsDagger(RollDefinition):
     """
     Kinetic Hand Cannon, Aggressive Frame, Anti-Unstoppable
@@ -54,6 +64,19 @@ class DFA(RollDefinition):
     items = [
         Item('D.F.A.', hash=739029153),
         Item('D.F.A.', hash=2920548486),
+        ]
+
+
+class Fatebringer(RollDefinition):
+    """
+    Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "Vault of Glass" Raid
+    https://www.light.gg/db/items/4184168210
+    https://destiny.report/w/4184168210
+    """
+    items = [
+        Item('Fatebringer', hash=4184168210),
+        Item('Fatebringer (Timelost)', hash=4219826183),
         ]
 
 

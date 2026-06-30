@@ -47,6 +47,16 @@ class Unfall(RollDefinition):
         ]
 
 
+class AberrantAction(RollDefinition):
+    """
+    Solar Sidearm, Micro-Missile Frame, Anti-Unstoppable, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/2198166292
+    https://destiny.report/w/2198166292
+    """
+    item = Item('Aberrant Action', hash=2198166292)
+
+
 class ReturnedMemory(RollDefinition):
     """
     Solar Sidearm, Micro-Missile Frame, Anti-Unstoppable
@@ -93,3 +103,13 @@ class TinashasMastery(RollDefinition):
     https://destiny.report/w/247984828
     """
     item = Item("Tinasha's Mastery", hash=247984828)
+
+
+class TheCall(RollDefinition):
+    """
+    Strand Sidearm, Micro-Missile Frame, Anti-Unstoppable, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/3947966653
+    https://destiny.report/w/3947966653
+    """
+    item = Item('The Call', hash=3947966653)

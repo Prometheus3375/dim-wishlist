@@ -33,6 +33,19 @@ class KingOrfeo(RollDefinition):
         ]
 
 
+class NonDenouement(RollDefinition):
+    """
+    Arc Combat Bow, Precision Frame, Anti-Barrier, Craftable
+    Source: "Salvation's Edge" Raid
+    https://www.light.gg/db/items/1770490683
+    https://destiny.report/w/1770490683
+    """
+    items = [
+        Item('Non-Denouement', hash=1770490683),
+        Item('Non-Denouement (Adept)', hash=1039915310),
+        ]
+
+
 class PointOfTheStag(RollDefinition):
     """
     Arc Combat Bow, Precision Frame, Anti-Barrier
@@ -41,3 +54,13 @@ class PointOfTheStag(RollDefinition):
     https://destiny.report/w/911019136
     """
     item = Item('Point of the Stag', hash=911019136)
+
+
+class TripwireCanary(RollDefinition):
+    """
+    Arc Combat Bow, Lightweight Frame, Anti-Overload, Craftable
+    Source: Season of the Seraph Activities
+    https://www.light.gg/db/items/3849444474
+    https://destiny.report/w/3849444474
+    """
+    item = Item('Tripwire Canary', hash=3849444474)

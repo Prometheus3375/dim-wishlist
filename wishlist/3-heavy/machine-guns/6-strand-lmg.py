@@ -21,6 +21,16 @@ class DIABLERETS06(RollDefinition):
     item = Item('DIABLERETS 06', hash=1120206506)
 
 
+class ProMemoria(RollDefinition):
+    """
+    Strand Machine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/3605603507
+    https://destiny.report/w/3605603507
+    """
+    item = Item('Pro Memoria', hash=3605603507)
+
+
 class QuaVinctusIV(RollDefinition):
     """
     Strand Machine Gun, High-Impact Frame, Anti-Unstoppable

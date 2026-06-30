@@ -51,6 +51,26 @@ class BitterEnd(RollDefinition):
         ]
 
 
+class EleaticPrinciple(RollDefinition):
+    """
+    Arc Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Witch
+    https://www.light.gg/db/items/105306149
+    https://destiny.report/w/105306149
+    """
+    item = Item('Eleatic Principle', hash=105306149)
+
+
+class PlancksStride(RollDefinition):
+    """
+    Arc Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/820890091
+    https://destiny.report/w/820890091
+    """
+    item = Item("Planck's Stride", hash=820890091)
+
+
 class SeventhSeraphSAW(RollDefinition):
     """
     Arc Machine Gun, High-Impact Frame, Anti-Unstoppable
@@ -59,6 +79,19 @@ class SeventhSeraphSAW(RollDefinition):
     https://destiny.report/w/2584201248
     """
     item = Item('Seventh Seraph SAW', hash=2584201248)
+
+
+class SongOfIrYut(RollDefinition):
+    """
+    Arc Machine Gun, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "Crota's End" Raid
+    https://www.light.gg/db/items/2828278545
+    https://destiny.report/w/2828278545
+    """
+    items = [
+        Item('Song of Ir Yût', hash=2828278545),
+        Item('Song of Ir Yût (Adept)', hash=407511664),
+        ]
 
 
 class TerminusHorizon(RollDefinition):

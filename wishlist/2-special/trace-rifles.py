@@ -48,6 +48,59 @@ class Keraunios(RollDefinition):
         ]
 
 
+class PathOfLeastResistance(RollDefinition):
+    """
+    Arc Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of the Seraph Activities
+    https://www.light.gg/db/items/2827764482
+    https://destiny.report/w/2827764482
+    """
+    item = Item('Path of Least Resistance', hash=2827764482)
+
+
+class AcasiasDejection(RollDefinition):
+    """
+    Solar Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "Root of Nightmares" Raid
+    https://www.light.gg/db/items/1471212226
+    https://destiny.report/w/1471212226
+    """
+    items = [
+        Item("Acasia's Dejection", hash=1471212226),
+        Item("Acasia's Dejection (Adept)", hash=3493494807),
+        ]
+
+
+class RetracedPath(RollDefinition):
+    """
+    Solar Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Xûr's Treasure Hoard in Eternity
+    https://www.light.gg/db/items/548958835
+    https://destiny.report/w/548958835
+    """
+    item = Item('Retraced Path', hash=548958835)
+
+
+class Chronophage(RollDefinition):
+    """
+    Void Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/1886840007
+    https://destiny.report/w/1886840007
+    """
+    item = Item('Chronophage', hash=1886840007)
+
+
+class HollowDenial(RollDefinition):
+    """
+    Void Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of the Haunted Activities
+    https://www.light.gg/db/items/2323544076
+    https://destiny.report/w/2323544076
+    """
+    item = Item('Hollow Denial', hash=2323544076)
+
+
 class ActionItem(RollDefinition):
     """
     Stasis Trace Rifle, Adaptive Frame, Anti-Barrier
@@ -95,6 +148,16 @@ class ActionItem(RollDefinition):
             [trait.CrystallineCorpsebloom, trait.DetonatorBeam],
             ),
         ]
+
+
+class Appetence(RollDefinition):
+    """
+    Stasis Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/4153087276
+    https://destiny.report/w/4153087276
+    """
+    item = Item('Appetence', hash=4153087276)
 
 
 class Ribbontail(RollDefinition):

@@ -30,6 +30,19 @@ class BurdenOfGuilt(RollDefinition):
         ]
 
 
+class Deliverance(RollDefinition):
+    """
+    Stasis Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: "Vow of the Disciple" Raid
+    https://www.light.gg/db/items/768621510
+    https://destiny.report/w/768621510
+    """
+    items = [
+        Item('Deliverance', hash=768621510),
+        Item('Deliverance (Adept)', hash=2943293195),
+        ]
+
+
 class Lionfish4FR(RollDefinition):
     """
     Stasis Fusion Rifle, Rapid-Fire Frame, Anti-Overload

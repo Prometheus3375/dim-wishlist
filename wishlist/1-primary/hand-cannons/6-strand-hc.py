@@ -40,6 +40,26 @@ class CorundumHammer(RollDefinition):
         ]
 
 
+class KeptConfidence(RollDefinition):
+    """
+    Strand Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Season of the Witch
+    https://www.light.gg/db/items/1875512595
+    https://destiny.report/w/1875512595
+    """
+    item = Item('Kept Confidence', hash=1875512595)
+
+
+class RoundRobin(RollDefinition):
+    """
+    Strand Hand Cannon, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Exploring Neomuna
+    https://www.light.gg/db/items/2034215657
+    https://destiny.report/w/2034215657
+    """
+    item = Item('Round Robin', hash=2034215657)
+
+
 class SixthSense(RollDefinition):
     """
     Strand Hand Cannon, Aggressive Frame, Anti-Unstoppable

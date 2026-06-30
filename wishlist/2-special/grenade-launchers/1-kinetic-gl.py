@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class PardonOurDust(RollDefinition):
+    """
+    Kinetic Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload, Craftable
+    Source: Xûr's Treasure Hoard in Eternity
+    https://www.light.gg/db/items/3849810018
+    https://destiny.report/w/3849810018
+    """
+    item = Item('Pardon Our Dust', hash=3849810018)
+
+
 class TheMountaintop(RollDefinition):
     """
     Kinetic Breechloaded Grenade Launcher, Micro-Missile Frame, Anti-Unstoppable

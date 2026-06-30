@@ -21,6 +21,29 @@ class ChainOfCommand(RollDefinition):
     item = Item('Chain of Command', hash=1716620044)
 
 
+class QullimsTerminus(RollDefinition):
+    """
+    Stasis Machine Gun, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/1321506184
+    https://destiny.report/w/1321506184
+    """
+    items = [
+        Item("Qullim's Terminus", hash=1321506184),
+        Item("Qullim's Terminus (Harrowed)", hash=3248429089),
+        ]
+
+
+class RecurrentImpact(RollDefinition):
+    """
+    Stasis Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season of the Risen
+    https://www.light.gg/db/items/1572896086
+    https://destiny.report/w/1572896086
+    """
+    item = Item('Recurrent Impact', hash=1572896086)
+
+
 class UlteriorObservation(RollDefinition):
     """
     Stasis Machine Gun, Aggressive Frame, Anti-Unstoppable

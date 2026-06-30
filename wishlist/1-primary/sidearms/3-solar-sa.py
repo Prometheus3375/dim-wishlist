@@ -18,6 +18,16 @@ class Drang(RollDefinition):
         )
 
 
+class DrangBaroque(RollDefinition):
+    """
+    Solar Sidearm, Together Forever, Anti-Barrier, Craftable
+    Source: The Derelict Leviathan
+    https://www.light.gg/db/items/502356570
+    https://destiny.report/w/502356570
+    """
+    item = Item('Drang (Baroque)', hash=502356570)
+
+
 class EveningSI4(RollDefinition):
     """
     Solar Sidearm, Adaptive Burst, Anti-Barrier

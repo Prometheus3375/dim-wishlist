@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class AbyssDefiant(RollDefinition):
+    """
+    Solar Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: "Crota's End" Raid
+    https://www.light.gg/db/items/833898322
+    https://destiny.report/w/833898322
+    """
+    item = Item('Abyss Defiant', hash=833898322)
+
+
 class AhabChar(RollDefinition):
     """
     Solar Auto Rifle, Rapid-Fire Frame, Anti-Overload
@@ -16,6 +26,16 @@ class AhabChar(RollDefinition):
         [trait.HealClip],
         [trait.BurningAmbition, trait.KillClip],
         )
+
+
+class AmmitAR2(RollDefinition):
+    """
+    Solar Auto Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Open Legendary engrams and earn faction rank-up packages.
+    https://www.light.gg/db/items/2119346509
+    https://destiny.report/w/2119346509
+    """
+    item = Item('Ammit AR2', hash=2119346509)
 
 
 class ArcticHaze(RollDefinition):
@@ -39,6 +59,16 @@ class TheRingingNail(RollDefinition):
         Item('The Ringing Nail', hash=3326135421),
         Item('The Ringing Nail', hash=4206550094),
         ]
+
+
+class NoHesitation(RollDefinition):
+    """
+    Solar Auto Rifle, Support Frame, Anti-Overload, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/1801007332
+    https://destiny.report/w/1801007332
+    """
+    item = Item('No Hesitation', hash=1801007332)
 
 
 class TheSummoner(RollDefinition):

@@ -128,6 +128,19 @@ class Trust(RollDefinition):
 
 class ZaoulisBane(RollDefinition):
     """
+    Solar Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/431721920
+    https://destiny.report/w/431721920
+    """
+    items = [
+        Item("Zaouli's Bane", hash=431721920),
+        Item("Zaouli's Bane (Harrowed)", hash=291092617),
+        ]
+
+
+class ZaoulisBanePantheon(RollDefinition):
+    """
     Solar Hand Cannon, Adaptive Frame, Anti-Barrier
     Source: Pantheon
     https://www.light.gg/db/items/3647341740

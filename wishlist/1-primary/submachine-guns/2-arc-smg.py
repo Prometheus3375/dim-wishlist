@@ -27,6 +27,16 @@ class Antedate(RollDefinition):
         ]
 
 
+class IKELOS_SMG_v103(RollDefinition):
+    """
+    Arc Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Season of the Seraph
+    https://www.light.gg/db/items/2149683300
+    https://destiny.report/w/2149683300
+    """
+    item = Item('IKELOS_SMG_v1.0.3', hash=2149683300)
+
+
 class OutOfBounds(RollDefinition):
     """
     Arc Submachine Gun, Lightweight Frame, Anti-Overload
@@ -48,6 +58,16 @@ class SeventhSeraphVY7(RollDefinition):
     https://destiny.report/w/1719169808
     """
     item = Item('Seventh Seraph VY-7', hash=1719169808)
+
+
+class Subjunctive(RollDefinition):
+    """
+    Arc Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
+    Source: Season of the Wish Activities
+    https://www.light.gg/db/items/1447836603
+    https://destiny.report/w/1447836603
+    """
+    item = Item('Subjunctive', hash=1447836603)
 
 
 class Whatchamacallit(RollDefinition):

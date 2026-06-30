@@ -27,6 +27,16 @@ class ForcedMemorializer(RollDefinition):
         ]
 
 
+class Imperative(RollDefinition):
+    """
+    Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Season of the Wish Activities
+    https://www.light.gg/db/items/2045811635
+    https://destiny.report/w/2045811635
+    """
+    item = Item('Imperative', hash=2045811635)
+
+
 class InboundSurveillance(RollDefinition):
     """
     Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable
@@ -101,3 +111,23 @@ class RandysThrowingKnife(RollDefinition):
         Item("Randy's Throwing Knife", hash=4176824345),
         Item("Randy's Throwing Knife", hash=3975115486),
         ]
+
+
+class TearsOfContrition(RollDefinition):
+    """
+    Kinetic Scout Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Season of the Haunted Activities
+    https://www.light.gg/db/items/1366394399
+    https://destiny.report/w/1366394399
+    """
+    item = Item('Tears of Contrition', hash=1366394399)
+
+
+class Transfiguration(RollDefinition):
+    """
+    Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source:
+    https://www.light.gg/db/items/3885259140
+    https://destiny.report/w/3885259140
+    """
+    item = Item('Transfiguration', hash=3885259140)

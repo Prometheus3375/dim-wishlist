@@ -18,6 +18,16 @@ class Boomslang4FR(RollDefinition):
         )
 
 
+class SailspyPitchglass(RollDefinition):
+    """
+    Arc Linear Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Season of Plunder Activities
+    https://www.light.gg/db/items/1184309824
+    https://destiny.report/w/1184309824
+    """
+    item = Item('Sailspy Pitchglass', hash=1184309824)
+
+
 class Stormchaser(RollDefinition):
     """
     Arc Linear Fusion Rifle, Adaptive Burst, Anti-Barrier

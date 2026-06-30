@@ -24,6 +24,16 @@ class BellowingGiant(RollDefinition):
         ]
 
 
+class FaithKeeper(RollDefinition):
+    """
+    Void Rocket Launcher, Precision Frame, Anti-Barrier, Craftable
+    Source: Episode: Echoes Activities
+    https://www.light.gg/db/items/4195186942
+    https://destiny.report/w/4195186942
+    """
+    item = Item('Faith-Keeper', hash=4195186942)
+
+
 class FoldedRoot(RollDefinition):
     """
     Void Rocket Launcher, Aggressive Frame, Anti-Unstoppable
@@ -45,6 +55,16 @@ class FoldedRoot(RollDefinition):
         [trait.ClusterBomb],
         [trait.LastingImpression, trait.Frenzy],
         )
+
+
+class RedHerring(RollDefinition):
+    """
+    Void Rocket Launcher, Adaptive Frame, Anti-Barrier, Craftable
+    Source: The Witch Queen Campaign
+    https://www.light.gg/db/items/3175851496
+    https://destiny.report/w/3175851496
+    """
+    item = Item('Red Herring', hash=3175851496)
 
 
 class TomorrowsAnswer(RollDefinition):

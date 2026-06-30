@@ -61,3 +61,13 @@ class Haliaetus(RollDefinition):
             [trait.Bipod],
             ),
         ]
+
+
+class Semiotician(RollDefinition):
+    """
+    Strand Rocket Launcher, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Season of the Witch
+    https://www.light.gg/db/items/2922749929
+    https://destiny.report/w/2922749929
+    """
+    item = Item('Semiotician', hash=2922749929)

@@ -11,6 +11,16 @@ class CoriolisForce(RollDefinition):
     item = Item('Coriolis Force', hash=856316142)
 
 
+class LikelySuspect(RollDefinition):
+    """
+    Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Exploring the Throne World
+    https://www.light.gg/db/items/1994645182
+    https://destiny.report/w/1994645182
+    """
+    item = Item('Likely Suspect', hash=1994645182)
+
+
 class Monody44(RollDefinition):
     """
     Void Fusion Rifle, High-Impact Frame, Anti-Unstoppable
@@ -34,6 +44,16 @@ class NullComposure(RollDefinition):
         ]
 
 
+class TheEpicurean(RollDefinition):
+    """
+    Void Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Dungeon "Duality"
+    https://www.light.gg/db/items/2263839058
+    https://destiny.report/w/2263839058
+    """
+    item = Item('The Epicurean', hash=2263839058)
+
+
 class VSGraviticArrest(RollDefinition):
     """
     Void Fusion Rifle, Adaptive Frame, Anti-Barrier
@@ -42,3 +62,13 @@ class VSGraviticArrest(RollDefinition):
     https://destiny.report/w/3102162710
     """
     item = Item('VS Gravitic Arrest', hash=3102162710)
+
+
+class ZealotsReward(RollDefinition):
+    """
+    Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: "Garden of Salvation" Raid
+    https://www.light.gg/db/items/2720651699
+    https://destiny.report/w/2720651699
+    """
+    item = Item("Zealot's Reward", hash=2720651699)

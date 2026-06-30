@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class BloodFeud(RollDefinition):
+    """
+    Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Season of Plunder Activities
+    https://www.light.gg/db/items/1509167284
+    https://destiny.report/w/1509167284
+    """
+    item = Item('Blood Feud', hash=1509167284)
+
+
 class DEADHORSE04(RollDefinition):
     """
     Stasis Submachine Gun, Adaptive Frame, Anti-Barrier
@@ -9,6 +19,16 @@ class DEADHORSE04(RollDefinition):
     https://destiny.report/w/822872238
     """
     item = Item('DEADHORSE 04', hash=822872238)
+
+
+class ForensicNightmare(RollDefinition):
+    """
+    Stasis Submachine Gun, Precision Frame, Anti-Barrier, Craftable
+    Source: "Chief Investigator" Triumph
+    https://www.light.gg/db/items/1526296434
+    https://destiny.report/w/1526296434
+    """
+    item = Item('Forensic Nightmare', hash=1526296434)
 
 
 class M17FastTalker(RollDefinition):
@@ -58,6 +78,16 @@ class ProlongedEngagement(RollDefinition):
         Item('Prolonged Engagement', hash=2624561525),
         Item('Prolonged Engagement', hash=1066772626),
         ]
+
+
+class RapaciousAppetite(RollDefinition):
+    """
+    Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: "Ghosts of the Deep" Dungeon
+    https://www.light.gg/db/items/1081724548
+    https://destiny.report/w/1081724548
+    """
+    item = Item('Rapacious Appetite', hash=1081724548)
 
 
 class SeraphineHaze(RollDefinition):

@@ -11,6 +11,16 @@ class AnonymousAutumn(RollDefinition):
     item = Item('Anonymous Autumn', hash=1644501332)
 
 
+class BrigandsLaw(RollDefinition):
+    """
+    Arc Sidearm, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Season Pass Reward
+    https://www.light.gg/db/items/1298815317
+    https://destiny.report/w/1298815317
+    """
+    item = Item("Brigand's Law", hash=1298815317)
+
+
 class FimbulwinterStitch(RollDefinition):
     """
     Arc Sidearm, Precision Frame, Anti-Barrier

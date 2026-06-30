@@ -27,6 +27,39 @@ class AishasEmbrace(RollDefinition):
         ]
 
 
+class BryasLove(RollDefinition):
+    """
+    Void Scout Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: Season of the Witch
+    https://www.light.gg/db/items/2779821308
+    https://destiny.report/w/2779821308
+    """
+    item = Item("Brya's Love", hash=2779821308)
+
+
+class DoomOfChelchis(RollDefinition):
+    """
+    Void Scout Rifle, Precision Frame, Anti-Barrier, Craftable
+    Source: "King's Fall" Raid
+    https://www.light.gg/db/items/1937552980
+    https://destiny.report/w/1937552980
+    """
+    items = [
+        Item('Doom of Chelchis', hash=1937552980),
+        Item('Doom of Chelchis (Harrowed)', hash=1184692845),
+        ]
+
+
+class PointedInquiry(RollDefinition):
+    """
+    Void Scout Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
+    Source: Exploring the Throne World
+    https://www.light.gg/db/items/297296830
+    https://destiny.report/w/297296830
+    """
+    item = Item('Pointed Inquiry', hash=297296830)
+
+
 class Vouchsafe(RollDefinition):
     """
     Void Scout Rifle, Lightweight Frame, Anti-Overload

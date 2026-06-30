@@ -11,6 +11,26 @@ class A1000YardStare(RollDefinition):
     item = Item('1000 Yard Stare', hash=1648948519)
 
 
+class EmbracedIdentity(RollDefinition):
+    """
+    Void Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Exploring the Pale Heart
+    https://www.light.gg/db/items/2821677368
+    https://destiny.report/w/2821677368
+    """
+    item = Item('Embraced Identity', hash=2821677368)
+
+
+class FathersSins(RollDefinition):
+    """
+    Void Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Wellspring Boss Zeerik, Lightflayer
+    https://www.light.gg/db/items/3865728990
+    https://destiny.report/w/3865728990
+    """
+    item = Item("Father's Sins", hash=3865728990)
+
+
 class FrozenOrbit(RollDefinition):
     """
     Void Sniper Rifle, Aggressive Frame, Anti-Unstoppable
