@@ -634,6 +634,9 @@ class Weapon:
         self._definition = definition
         self._manifest = manifest
 
+    def __repr__(self, /) -> str:
+        return f'<{self.__class__.__name__} {self.name!r} hash={self.hash}>'
+
     @property
     def hash(self, /) -> int:
         """
@@ -658,6 +661,13 @@ class Weapon:
             name = name[:name.rindex('(')].strip()
 
         return name
+
+    @property
+    def is_adept(self, /) -> str:
+        """
+        Whether this weapon is adept.
+        """
+        return self._definition['isAdept']
 
     @cached_property
     def damage_types(self, /) -> Sequence[str]:
@@ -694,6 +704,17 @@ class Weapon:
             return ''
 
         return self._manifest.get_collectible(collectible_hash)['sourceString']
+
+    @cached_property
+    def is_craftable(self, /) -> bool:
+        """
+        Whether this weapon is craftable.
+        """
+        return any(
+            # https://data.destinysets.com/i/InventoryItem:1961918267
+            socket_entry['singleInitialItemHash'] == 1961918267
+            for socket_entry in self._definition['sockets.socketEntries']
+            )
 
     @cached_property
     def release_string(self, /) -> str:
@@ -797,5 +818,13 @@ class Weapon:
                     )
                 yield PlugSet(plug_hashes, identifier)
 
-    def __repr__(self, /) -> str:
-        return f'<{self.__class__.__name__} {self.name!r} hash={self.hash}>'
+    @cached_property
+    def perks(self, /) -> frozenset[PerkTuple]:
+        """
+        Set of perks with which this weapon can roll.
+        """
+        return frozenset(
+            perk
+            for plug_set in self.iterate_perk_plug_sets()
+            for perk in plug_set.iterate_perks(self._manifest)
+            )
