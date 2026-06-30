@@ -615,6 +615,9 @@ class WeaponMultipleBreakerTypesWarning(Warning):
     """
 
 
+WEAPON_NAME_POSTFIXES = ('(Adept)', '(Harrowed)', '(Timelost)')
+
+
 class Weapon:
     """
     A convenience wrapper around a weapon definition.
@@ -639,11 +642,22 @@ class Weapon:
         return self._definition['hash']
 
     @property
-    def name(self, /) -> str:
+    def fullname(self, /) -> str:
         """
-        Name of this weapon.
+        Full name of this weapon.
         """
         return self._definition['displayProperties.name']
+
+    @cached_property
+    def name(self, /) -> str:
+        """
+        Name of this weapon without postfix.
+        """
+        name = self.fullname
+        if name.endswith(WEAPON_NAME_POSTFIXES):
+            name = name[:name.rindex('(')].strip()
+
+        return name
 
     @cached_property
     def damage_types(self, /) -> Sequence[str]:

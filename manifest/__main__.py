@@ -558,7 +558,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
             else:
                 f.write(f'    items = [\n')
                 for w in li:
-                    f.write(f'        {Item.__name__}({w.name!r}, hash={w.hash}),\n')
+                    f.write(f'        {Item.__name__}({w.fullname!r}, hash={w.hash}),\n')
 
                 f.write('        ]\n')
 
