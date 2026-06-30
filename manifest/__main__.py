@@ -500,7 +500,7 @@ WEAPON_DEFINITION_CODE = """
 
 class {identifier}({base_class}):
     \"""
-    {damage_type} {weapon_type_with_intrinsic}, {breaker}
+    {damage_type} {weapon_type_with_intrinsic}, {breaker}{craftable}
     Source: {source}
     https://www.light.gg/db/items/{hash}
     https://destiny.report/w/{hash}
@@ -546,6 +546,7 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
                 breaker=breaker,
                 source=source,
                 hash=main_weapon.hash,
+                craftable=', Craftable' * any(w.is_craftable for w in li),
                 )
             f.write(WEAPON_DEFINITION_CODE.format_map(format_params))
             if len(li) == 1:
