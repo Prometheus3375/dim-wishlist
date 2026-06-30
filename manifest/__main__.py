@@ -517,9 +517,9 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
     import wishlist
     from classes import Item, RollDefinition
 
-    weapons_mapping: dict[tuple[str, frozenset[PerkTuple]], list[Weapon]] = defaultdict(list)
+    weapons_mapping: dict[tuple[str, frozenset[int]], list[Weapon]] = defaultdict(list)
     for weapon in manifest_.iterate_legendary_weapons_since_release(release):
-        weapons_mapping[weapon.name, weapon.perks].append(weapon)
+        weapons_mapping[weapon.name, weapon.perk_hashes].append(weapon)
 
     for li in weapons_mapping.values():
         li.sort(key=_sort_key_for_weapon, reverse=True)

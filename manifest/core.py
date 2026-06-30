@@ -819,12 +819,12 @@ class Weapon:
                 yield PlugSet(plug_hashes, identifier)
 
     @cached_property
-    def perks(self, /) -> frozenset[PerkTuple]:
+    def perk_hashes(self, /) -> frozenset[int]:
         """
-        Set of perks with which this weapon can roll.
+        Set of regular perk hashes with which this weapon can roll.
         """
         return frozenset(
-            perk
+            perk.regular
             for plug_set in self.iterate_perk_plug_sets()
             for perk in plug_set.iterate_perks(self._manifest)
             )
