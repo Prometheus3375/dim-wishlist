@@ -466,13 +466,13 @@ def generate_perk_database(manifest_: Manifest, release: str, /) -> None:
 
 def _sort_key_for_weapon(w: Weapon, /) -> tuple:
     # A list of identically named weapons
-    # must have the latest weapon with source at the start.
+    # must have the latest weapon with the source at the start.
     return bool(w.source), w.release_string
 
 
 def _sort_key_for_weapon_list(li: list[Weapon], /) -> tuple:
     w = li[0]
-    return w.release_string, w.ammo_type, w.weapon_type, w.damage_types, w.name
+    return w.ammo_type, w.weapon_type, w.damage_types, w.name
 
 
 def get_weapon_type_with_intrinsic(w: Weapon, /) -> str:
