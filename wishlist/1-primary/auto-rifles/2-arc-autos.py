@@ -80,7 +80,7 @@ class SorrowsVerse(RollDefinition):
 class SweetSorrow(RollDefinition):
     """
     Arc Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Risen
+    Source: Vox Obscura
     https://www.light.gg/db/items/1248372789
     https://destiny.report/w/1248372789
     """

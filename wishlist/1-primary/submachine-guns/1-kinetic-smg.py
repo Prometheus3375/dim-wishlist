@@ -80,7 +80,7 @@ class PeculiarCharm(RollDefinition):
 class Submission(RollDefinition):
     """
     Kinetic Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
-    Source: "Vow of the Disciple" Raid
+    Source: Vow of the Disciple
     https://www.light.gg/db/items/3886416794
     https://destiny.report/w/3886416794
     """

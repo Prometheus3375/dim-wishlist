@@ -27,7 +27,7 @@ class BellowingGiant(RollDefinition):
 class FaithKeeper(RollDefinition):
     """
     Void Rocket Launcher, Precision Frame, Anti-Barrier, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/4195186942
     https://destiny.report/w/4195186942
     """
@@ -60,7 +60,7 @@ class FoldedRoot(RollDefinition):
 class RedHerring(RollDefinition):
     """
     Void Rocket Launcher, Adaptive Frame, Anti-Barrier, Craftable
-    Source: The Witch Queen Campaign
+    Source: Savathûn's Throne World
     https://www.light.gg/db/items/3175851496
     https://destiny.report/w/3175851496
     """

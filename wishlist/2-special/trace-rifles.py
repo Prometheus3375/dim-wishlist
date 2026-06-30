@@ -51,7 +51,7 @@ class Keraunios(RollDefinition):
 class PathOfLeastResistance(RollDefinition):
     """
     Arc Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of the Seraph Activities
+    Source: Seraph's Shield
     https://www.light.gg/db/items/2827764482
     https://destiny.report/w/2827764482
     """
@@ -61,7 +61,7 @@ class PathOfLeastResistance(RollDefinition):
 class AcasiasDejection(RollDefinition):
     """
     Solar Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: "Root of Nightmares" Raid
+    Source: Root of Nightmares
     https://www.light.gg/db/items/1471212226
     https://destiny.report/w/1471212226
     """
@@ -74,7 +74,7 @@ class AcasiasDejection(RollDefinition):
 class RetracedPath(RollDefinition):
     """
     Solar Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Xûr's Treasure Hoard in Eternity
+    Source: Eternity
     https://www.light.gg/db/items/548958835
     https://destiny.report/w/548958835
     """
@@ -84,7 +84,7 @@ class RetracedPath(RollDefinition):
 class Chronophage(RollDefinition):
     """
     Void Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/1886840007
     https://destiny.report/w/1886840007
     """
@@ -94,7 +94,7 @@ class Chronophage(RollDefinition):
 class HollowDenial(RollDefinition):
     """
     Void Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of the Haunted Activities
+    Source: Presage
     https://www.light.gg/db/items/2323544076
     https://destiny.report/w/2323544076
     """
@@ -153,7 +153,7 @@ class ActionItem(RollDefinition):
 class Appetence(RollDefinition):
     """
     Stasis Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season Pass Reward
+    Source: Starcrossed
     https://www.light.gg/db/items/4153087276
     https://destiny.report/w/4153087276
     """

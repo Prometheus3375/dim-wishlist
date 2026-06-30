@@ -4,7 +4,7 @@ from wishlist import *
 class PardonOurDust(RollDefinition):
     """
     Kinetic Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload, Craftable
-    Source: Xûr's Treasure Hoard in Eternity
+    Source: Eternity
     https://www.light.gg/db/items/3849810018
     https://destiny.report/w/3849810018
     """

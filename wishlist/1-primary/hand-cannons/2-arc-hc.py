@@ -4,7 +4,7 @@ from wishlist import *
 class NationOfBeasts(RollDefinition):
     """
     Arc Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/70083888
     https://destiny.report/w/70083888
     """
@@ -64,7 +64,7 @@ class SarpedonD(RollDefinition):
 class SightlineSurvey(RollDefinition):
     """
     Arc Hand Cannon, Precision Frame, Anti-Barrier, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/2350330520
     https://destiny.report/w/2350330520
     """

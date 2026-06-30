@@ -37,7 +37,7 @@ class AuroraDawn(RollDefinition):
 class IllOmen(RollDefinition):
     """
     Stasis Sword, Caster Frame, Anti-Barrier, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/3794274730
     https://destiny.report/w/3794274730
     """

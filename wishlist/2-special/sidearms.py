@@ -50,7 +50,7 @@ class Unfall(RollDefinition):
 class AberrantAction(RollDefinition):
     """
     Solar Sidearm, Micro-Missile Frame, Anti-Unstoppable, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/2198166292
     https://destiny.report/w/2198166292
     """
@@ -108,7 +108,7 @@ class TinashasMastery(RollDefinition):
 class TheCall(RollDefinition):
     """
     Strand Sidearm, Micro-Missile Frame, Anti-Unstoppable, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/3947966653
     https://destiny.report/w/3947966653
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class AgeOldBond(RollDefinition):
     """
     Void Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/424291879
     https://destiny.report/w/424291879
     """
@@ -70,7 +70,7 @@ class PositiveOutlook(RollDefinition):
 class RecklessOracle(RollDefinition):
     """
     Void Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Garden of Salvation" Raid
+    Source: Garden of Salvation
     https://www.light.gg/db/items/1992309064
     https://destiny.report/w/1992309064
     """

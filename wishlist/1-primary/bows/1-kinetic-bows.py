@@ -4,7 +4,7 @@ from wishlist import *
 class AccruedRedemption(RollDefinition):
     """
     Kinetic Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: "Garden of Salvation" Raid
+    Source: Garden of Salvation
     https://www.light.gg/db/items/3621336854
     https://destiny.report/w/3621336854
     """

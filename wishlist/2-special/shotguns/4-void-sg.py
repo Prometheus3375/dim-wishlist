@@ -34,7 +34,7 @@ class Bonechiller(RollDefinition):
 class NessasOblation(RollDefinition):
     """
     Void Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: "Root of Nightmares" Raid
+    Source: Root of Nightmares
     https://www.light.gg/db/items/135029084
     https://destiny.report/w/135029084
     """

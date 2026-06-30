@@ -46,7 +46,7 @@ class FortunateStar(RollDefinition):
 class Lethophobia(RollDefinition):
     """
     Void Combat Bow, Lightweight Frame, Anti-Overload, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/3710082365
     https://destiny.report/w/3710082365
     """
@@ -56,7 +56,7 @@ class Lethophobia(RollDefinition):
 class UnderYourSkin(RollDefinition):
     """
     Void Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: Season of the Risen
+    Source: Vox Obscura
     https://www.light.gg/db/items/232928045
     https://destiny.report/w/232928045
     """

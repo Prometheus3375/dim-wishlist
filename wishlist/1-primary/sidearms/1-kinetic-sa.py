@@ -24,7 +24,7 @@ class Buzzard(RollDefinition):
 class EmpiricalEvidence(RollDefinition):
     """
     Kinetic Sidearm, Heavy Burst, Anti-Unstoppable, Craftable
-    Source: The Witch Queen Campaign
+    Source: Savathûn's Throne World
     https://www.light.gg/db/items/2607304614
     https://destiny.report/w/2607304614
     """

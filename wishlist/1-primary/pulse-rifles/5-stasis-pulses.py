@@ -4,7 +4,7 @@ from wishlist import *
 class Disparity(RollDefinition):
     """
     Stasis Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
-    Source: Season of the Seraph Activities
+    Source: Seraph's Shield
     https://www.light.gg/db/items/1751893422
     https://destiny.report/w/1751893422
     """
@@ -54,7 +54,7 @@ class StayFrosty(RollDefinition):
 class Syncopation53(RollDefinition):
     """
     Stasis Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Banshee-44
     https://www.light.gg/db/items/2856514843
     https://destiny.report/w/2856514843
     """

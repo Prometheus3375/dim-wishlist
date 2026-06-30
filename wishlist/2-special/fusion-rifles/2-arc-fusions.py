@@ -4,7 +4,7 @@ from wishlist import *
 class IterativeLoop(RollDefinition):
     """
     Arc Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Exploring Neomuna
+    Source: Neomuna
     https://www.light.gg/db/items/1289796511
     https://destiny.report/w/1289796511
     """
@@ -24,7 +24,7 @@ class LoadedQuestion(RollDefinition):
 class MidhasReckoning(RollDefinition):
     """
     Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: "King's Fall" Raid
+    Source: King's Fall
     https://www.light.gg/db/items/3969066556
     https://destiny.report/w/3969066556
     """
@@ -60,7 +60,7 @@ class PLUGONE1(RollDefinition):
 class TecheunForce(RollDefinition):
     """
     Arc Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/3591141932
     https://destiny.report/w/3591141932
     """

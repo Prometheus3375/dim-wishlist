@@ -33,7 +33,7 @@ class BurdenOfGuilt(RollDefinition):
 class Deliverance(RollDefinition):
     """
     Stasis Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: "Vow of the Disciple" Raid
+    Source: Vow of the Disciple
     https://www.light.gg/db/items/768621510
     https://destiny.report/w/768621510
     """

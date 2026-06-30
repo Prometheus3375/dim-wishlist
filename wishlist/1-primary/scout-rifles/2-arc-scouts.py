@@ -37,7 +37,7 @@ class Sublimation(RollDefinition):
 class TarnishedMettle(RollDefinition):
     """
     Arc Scout Rifle, Lightweight Frame, Anti-Overload, Craftable
-    Source: Season of Plunder Activities
+    Source: Xûr
     https://www.light.gg/db/items/2218569744
     https://destiny.report/w/2218569744
     """

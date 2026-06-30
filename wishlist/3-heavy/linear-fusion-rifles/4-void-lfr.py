@@ -4,7 +4,7 @@ from wishlist import *
 class DoomedPetitioner(RollDefinition):
     """
     Void Linear Fusion Rifle, Adaptive Burst, Anti-Barrier, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/1501688142
     https://destiny.report/w/1501688142
     """
@@ -45,7 +45,7 @@ class MistralLift(RollDefinition):
 class Taipan4fr(RollDefinition):
     """
     Void Linear Fusion Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Quest "Foundry Resonance"
     https://www.light.gg/db/items/1911060537
     https://destiny.report/w/1911060537
     """

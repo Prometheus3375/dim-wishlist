@@ -50,7 +50,7 @@ class HawthornesFieldForgedShotgun(RollDefinition):
 class NoReprieve(RollDefinition):
     """
     Stasis Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: Season of Plunder Activities
+    Source: Xûr
     https://www.light.gg/db/items/2531963421
     https://destiny.report/w/2531963421
     """

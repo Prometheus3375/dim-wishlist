@@ -34,7 +34,7 @@ class DedGramaryeIV(RollDefinition):
 class FoundVerdict(RollDefinition):
     """
     Arc Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: "Vault of Glass" Raid
+    Source: Vault of Glass
     https://www.light.gg/db/items/694500607
     https://destiny.report/w/694500607
     """
@@ -74,7 +74,7 @@ class MIDAMacroTool(RollDefinition):
 class ProphetOfDoom(RollDefinition):
     """
     Arc Shotgun, Precision Frame, Anti-Barrier, Craftable
-    Source: "Garden of Salvation" Raid
+    Source: Garden of Salvation
     https://www.light.gg/db/items/2145441168
     https://destiny.report/w/2145441168
     """

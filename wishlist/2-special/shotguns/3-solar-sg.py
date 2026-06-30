@@ -34,7 +34,7 @@ class GunnorasAxe(RollDefinition):
 class IKELOS_SG_v103(RollDefinition):
     """
     Solar Shotgun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Seraph
+    Source: Seraph's Shield
     https://www.light.gg/db/items/1168625549
     https://destiny.report/w/1168625549
     """
@@ -84,7 +84,7 @@ class StarscapeNull(RollDefinition):
 class WithoutRemorse(RollDefinition):
     """
     Solar Shotgun, Lightweight Frame, Anti-Overload, Craftable
-    Source: Season Pass Reward
+    Source: Presage
     https://www.light.gg/db/items/1478986057
     https://destiny.report/w/1478986057
     """

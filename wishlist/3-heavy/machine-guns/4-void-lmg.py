@@ -17,7 +17,7 @@ class BaneOfSorrow(RollDefinition):
 class CorrectiveMeasure(RollDefinition):
     """
     Void Machine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: "Vault of Glass" Raid
+    Source: Vault of Glass
     https://www.light.gg/db/items/3654744298
     https://destiny.report/w/3654744298
     """
@@ -43,7 +43,7 @@ class Hammerhead(RollDefinition):
 class RetrofitEscapade(RollDefinition):
     """
     Void Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season Pass Reward
+    Source: Seraph's Shield
     https://www.light.gg/db/items/3103325054
     https://destiny.report/w/3103325054
     """

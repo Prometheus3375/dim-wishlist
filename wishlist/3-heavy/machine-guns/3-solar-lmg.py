@@ -27,7 +27,7 @@ class FixedOdds(RollDefinition):
 class Speleologist(RollDefinition):
     """
     Solar Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/412251536
     https://destiny.report/w/412251536
     """

@@ -14,7 +14,7 @@ class AbideTheReturn(RollDefinition):
 class Caretaker(RollDefinition):
     """
     Solar Sword, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of Defiance
+    Source: NODE.OVRD.AVALON
     https://www.light.gg/db/items/2508948099
     https://destiny.report/w/2508948099
     """
@@ -24,7 +24,7 @@ class Caretaker(RollDefinition):
 class FalseIdols(RollDefinition):
     """
     Solar Sword, Vortex Frame, Anti-Overload, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/4207120603
     https://destiny.report/w/4207120603
     """
@@ -96,7 +96,7 @@ class Terciopelo4bl(RollDefinition):
 class ThroneCleaver(RollDefinition):
     """
     Solar Sword, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Xûr
     https://www.light.gg/db/items/3371413059
     https://destiny.report/w/3371413059
     """

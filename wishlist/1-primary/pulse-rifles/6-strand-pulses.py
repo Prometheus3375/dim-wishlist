@@ -46,7 +46,7 @@ class BelisariusD(RollDefinition):
 class DifferentTimes(RollDefinition):
     """
     Strand Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source:
+    Source: Xûr
     https://www.light.gg/db/items/3016891299
     https://destiny.report/w/3016891299
     """

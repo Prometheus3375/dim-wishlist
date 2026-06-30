@@ -24,7 +24,7 @@ class EdgeTransit(RollDefinition):
 class Regnant(RollDefinition):
     """
     Void Drum Grenade Launcher, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of Defiance
+    Source: NODE.OVRD.AVALON
     https://www.light.gg/db/items/268260372
     https://destiny.report/w/268260372
     """

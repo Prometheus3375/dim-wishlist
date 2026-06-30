@@ -4,7 +4,7 @@ from wishlist import *
 class CALUSMiniTool(RollDefinition):
     """
     Solar Submachine Gun, MIDA Synergy, Anti-Overload, Craftable
-    Source: The Derelict Leviathan
+    Source: Presage
     https://www.light.gg/db/items/2490988246
     https://destiny.report/w/2490988246
     """

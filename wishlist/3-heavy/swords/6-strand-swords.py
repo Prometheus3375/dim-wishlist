@@ -64,7 +64,7 @@ class EightySix(RollDefinition):
 class ThinPrecipice(RollDefinition):
     """
     Strand Sword, Vortex Frame, Anti-Overload, Craftable
-    Source:
+    Source: Xûr
     https://www.light.gg/db/items/4066778670
     https://destiny.report/w/4066778670
     """

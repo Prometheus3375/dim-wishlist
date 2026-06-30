@@ -24,7 +24,7 @@ class Liturgy(RollDefinition):
 class LostSignal(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/1197771438
     https://destiny.report/w/1197771438
     """

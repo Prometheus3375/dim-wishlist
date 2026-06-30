@@ -4,7 +4,7 @@ from wishlist import *
 class Supercluster(RollDefinition):
     """
     Strand Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/92459755
     https://destiny.report/w/92459755
     """
@@ -14,7 +14,7 @@ class Supercluster(RollDefinition):
 class Swordbreaker(RollDefinition):
     """
     Strand Shotgun, Lightweight Frame, Anti-Overload, Craftable
-    Source: "Crota's End" Raid
+    Source: Crota's End
     https://www.light.gg/db/items/3163900678
     https://destiny.report/w/3163900678
     """
@@ -27,7 +27,7 @@ class Swordbreaker(RollDefinition):
 class UntilItsReturn(RollDefinition):
     """
     Strand Shotgun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Deep Activities
+    Source: Xûr
     https://www.light.gg/db/items/2883484461
     https://destiny.report/w/2883484461
     """

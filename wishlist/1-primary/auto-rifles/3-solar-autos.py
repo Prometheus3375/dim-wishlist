@@ -4,7 +4,7 @@ from wishlist import *
 class AbyssDefiant(RollDefinition):
     """
     Solar Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: "Crota's End" Raid
+    Source: Crota's End
     https://www.light.gg/db/items/833898322
     https://destiny.report/w/833898322
     """
@@ -31,7 +31,7 @@ class AhabChar(RollDefinition):
 class AmmitAR2(RollDefinition):
     """
     Solar Auto Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Quest "Foundry Resonance"
     https://www.light.gg/db/items/2119346509
     https://destiny.report/w/2119346509
     """
@@ -64,7 +64,7 @@ class TheRingingNail(RollDefinition):
 class NoHesitation(RollDefinition):
     """
     Solar Auto Rifle, Support Frame, Anti-Overload, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/1801007332
     https://destiny.report/w/1801007332
     """

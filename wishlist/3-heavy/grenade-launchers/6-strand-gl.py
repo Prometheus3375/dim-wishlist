@@ -30,7 +30,7 @@ class CataphractGL3(RollDefinition):
 class KoraxissDistress(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Root of Nightmares" Raid
+    Source: Root of Nightmares
     https://www.light.gg/db/items/2972949637
     https://destiny.report/w/2972949637
     """

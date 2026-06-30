@@ -4,7 +4,7 @@ from wishlist import *
 class ApexPredator(RollDefinition):
     """
     Solar Rocket Launcher, Adaptive Frame, Anti-Barrier, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/1851777734
     https://destiny.report/w/1851777734
     """
@@ -24,7 +24,7 @@ class Ascendancy(RollDefinition):
 class HezenVengeance(RollDefinition):
     """
     Solar Rocket Launcher, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: "Vault of Glass" Raid
+    Source: Vault of Glass
     https://www.light.gg/db/items/2265407516
     https://destiny.report/w/2265407516
     """

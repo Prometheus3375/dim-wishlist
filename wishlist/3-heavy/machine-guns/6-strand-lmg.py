@@ -24,7 +24,7 @@ class DIABLERETS06(RollDefinition):
 class ProMemoria(RollDefinition):
     """
     Strand Machine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/3605603507
     https://destiny.report/w/3605603507
     """

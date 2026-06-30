@@ -4,7 +4,7 @@ from wishlist import *
 class FireAndForget(RollDefinition):
     """
     Stasis Linear Fusion Rifle, Adaptive Burst, Anti-Barrier, Craftable
-    Source: Season of the Seraph Activities
+    Source: Seraph's Shield
     https://www.light.gg/db/items/2272041093
     https://destiny.report/w/2272041093
     """

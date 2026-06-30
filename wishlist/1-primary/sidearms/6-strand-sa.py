@@ -4,7 +4,7 @@ from wishlist import *
 class MykelsReverence(RollDefinition):
     """
     Strand Sidearm, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Root of Nightmares" Raid
+    Source: Root of Nightmares
     https://www.light.gg/db/items/231031173
     https://destiny.report/w/231031173
     """

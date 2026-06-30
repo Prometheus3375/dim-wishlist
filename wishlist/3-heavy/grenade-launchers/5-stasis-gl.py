@@ -4,7 +4,7 @@ from wishlist import *
 class DimensionalHypotrochoid(RollDefinition):
     """
     Stasis Drum Grenade Launcher, Compressed Wave Frame, Anti-Unstoppable, Craftable
-    Source: Lightfall Campaign
+    Source: Neomuna
     https://www.light.gg/db/items/1311684613
     https://destiny.report/w/1311684613
     """

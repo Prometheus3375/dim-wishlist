@@ -54,7 +54,7 @@ class BitterEnd(RollDefinition):
 class EleaticPrinciple(RollDefinition):
     """
     Arc Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Witch
+    Source: Xûr
     https://www.light.gg/db/items/105306149
     https://destiny.report/w/105306149
     """
@@ -64,7 +64,7 @@ class EleaticPrinciple(RollDefinition):
 class PlancksStride(RollDefinition):
     """
     Arc Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season Pass Reward
+    Source: Xûr
     https://www.light.gg/db/items/820890091
     https://destiny.report/w/820890091
     """
@@ -84,7 +84,7 @@ class SeventhSeraphSAW(RollDefinition):
 class SongOfIrYut(RollDefinition):
     """
     Arc Machine Gun, Adaptive Frame, Anti-Barrier, Craftable
-    Source: "Crota's End" Raid
+    Source: Crota's End
     https://www.light.gg/db/items/2828278545
     https://destiny.report/w/2828278545
     """

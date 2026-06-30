@@ -14,7 +14,7 @@ class EmptyVessel(RollDefinition):
 class ExplosivePersonality(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable, Craftable
-    Source: Season of the Risen
+    Source: Vox Obscura
     https://www.light.gg/db/items/4096943616
     https://destiny.report/w/4096943616
     """

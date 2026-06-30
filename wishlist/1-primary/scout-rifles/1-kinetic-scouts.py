@@ -30,7 +30,7 @@ class ForcedMemorializer(RollDefinition):
 class Imperative(RollDefinition):
     """
     Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/2045811635
     https://destiny.report/w/2045811635
     """
@@ -116,7 +116,7 @@ class RandysThrowingKnife(RollDefinition):
 class TearsOfContrition(RollDefinition):
     """
     Kinetic Scout Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: Season of the Haunted Activities
+    Source: Presage
     https://www.light.gg/db/items/1366394399
     https://destiny.report/w/1366394399
     """
@@ -126,7 +126,7 @@ class TearsOfContrition(RollDefinition):
 class Transfiguration(RollDefinition):
     """
     Kinetic Scout Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/3885259140
     https://destiny.report/w/3885259140
     """

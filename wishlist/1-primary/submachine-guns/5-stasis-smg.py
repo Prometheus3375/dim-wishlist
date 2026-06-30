@@ -4,7 +4,7 @@ from wishlist import *
 class BloodFeud(RollDefinition):
     """
     Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Season of Plunder Activities
+    Source: Xûr
     https://www.light.gg/db/items/1509167284
     https://destiny.report/w/1509167284
     """
@@ -24,7 +24,7 @@ class DEADHORSE04(RollDefinition):
 class ForensicNightmare(RollDefinition):
     """
     Stasis Submachine Gun, Precision Frame, Anti-Barrier, Craftable
-    Source: "Chief Investigator" Triumph
+    Source: Savathûn's Throne World
     https://www.light.gg/db/items/1526296434
     https://destiny.report/w/1526296434
     """
@@ -83,7 +83,7 @@ class ProlongedEngagement(RollDefinition):
 class RapaciousAppetite(RollDefinition):
     """
     Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: "Ghosts of the Deep" Dungeon
+    Source: Xûr
     https://www.light.gg/db/items/1081724548
     https://destiny.report/w/1081724548
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Imminence(RollDefinition):
     """
     Strand Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
-    Source: "Salvation's Edge" Raid
+    Source: Salvation's Edge
     https://www.light.gg/db/items/1258168956
     https://destiny.report/w/1258168956
     """

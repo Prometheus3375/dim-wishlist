@@ -36,7 +36,7 @@ class OxygenSR3(RollDefinition):
 class TimewornWayfarer(RollDefinition):
     """
     Solar Scout Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/1058098236
     https://destiny.report/w/1058098236
     """
@@ -46,7 +46,7 @@ class TimewornWayfarer(RollDefinition):
 class VisionOfConfluence(RollDefinition):
     """
     Solar Scout Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: "Vault of Glass" Raid
+    Source: Vault of Glass
     https://www.light.gg/db/items/3444688218
     https://destiny.report/w/3444688218
     """

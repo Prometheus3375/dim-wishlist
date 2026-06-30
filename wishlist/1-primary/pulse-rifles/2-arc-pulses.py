@@ -4,7 +4,7 @@ from wishlist import *
 class Corrasion(RollDefinition):
     """
     Arc Pulse Rifle, Heavy Burst, Anti-Unstoppable, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/2126178511
     https://destiny.report/w/2126178511
     """
@@ -56,7 +56,7 @@ class InfinitePaths8(RollDefinition):
 class Insidious(RollDefinition):
     """
     Arc Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
-    Source: "Vow of the Disciple" Raid
+    Source: Vow of the Disciple
     https://www.light.gg/db/items/3428521585
     https://destiny.report/w/3428521585
     """
@@ -66,7 +66,7 @@ class Insidious(RollDefinition):
 class OversoulEdict(RollDefinition):
     """
     Arc Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Crota's End" Raid
+    Source: Crota's End
     https://www.light.gg/db/items/1098171824
     https://destiny.report/w/1098171824
     """
@@ -76,7 +76,7 @@ class OversoulEdict(RollDefinition):
 class PhyllotacticSpiral(RollDefinition):
     """
     Arc Pulse Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: Lightfall Campaign
+    Source: Neomuna
     https://www.light.gg/db/items/3635821806
     https://destiny.report/w/3635821806
     """
@@ -86,7 +86,7 @@ class PhyllotacticSpiral(RollDefinition):
 class ScalarPotential(RollDefinition):
     """
     Arc Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season Pass Reward
+    Source: Starcrossed
     https://www.light.gg/db/items/2563668388
     https://destiny.report/w/2563668388
     """

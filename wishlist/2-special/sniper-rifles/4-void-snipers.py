@@ -14,7 +14,7 @@ class A1000YardStare(RollDefinition):
 class EmbracedIdentity(RollDefinition):
     """
     Void Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/2821677368
     https://destiny.report/w/2821677368
     """

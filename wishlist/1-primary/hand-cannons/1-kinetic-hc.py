@@ -37,7 +37,7 @@ class AureusNeutralizer(RollDefinition):
 class Austringer(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: The Derelict Leviathan
+    Source: Presage
     https://www.light.gg/db/items/3055790362
     https://destiny.report/w/3055790362
     """
@@ -70,7 +70,7 @@ class DFA(RollDefinition):
 class Fatebringer(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: "Vault of Glass" Raid
+    Source: Vault of Glass
     https://www.light.gg/db/items/4184168210
     https://destiny.report/w/4184168210
     """

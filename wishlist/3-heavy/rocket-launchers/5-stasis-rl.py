@@ -4,7 +4,7 @@ from wishlist import *
 class BumpInTheNight(RollDefinition):
     """
     Stasis Rocket Launcher, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Season of the Haunted Activities
+    Source: Presage
     https://www.light.gg/db/items/1959650777
     https://destiny.report/w/1959650777
     """
@@ -24,7 +24,7 @@ class ColdComfort(RollDefinition):
 class PalmyraB(RollDefinition):
     """
     Stasis Rocket Launcher, Precision Frame, Anti-Barrier, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Banshee-44
     https://www.light.gg/db/items/3489657138
     https://destiny.report/w/3489657138
     """

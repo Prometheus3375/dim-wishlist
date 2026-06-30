@@ -4,7 +4,7 @@ from wishlist import *
 class ADistantPull(RollDefinition):
     """
     Stasis Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source:
+    Source: Xûr
     https://www.light.gg/db/items/1769847435
     https://destiny.report/w/1769847435
     """
@@ -36,7 +36,7 @@ class ConspiracyHoned(RollDefinition):
 class CriticalAnomaly(RollDefinition):
     """
     Stasis Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: "Salvation's Edge" Raid
+    Source: Salvation's Edge
     https://www.light.gg/db/items/445197843
     https://destiny.report/w/445197843
     """
@@ -49,7 +49,7 @@ class CriticalAnomaly(RollDefinition):
 class LocusLocutus(RollDefinition):
     """
     Stasis Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of the Witch
+    Source: Xûr
     https://www.light.gg/db/items/4132072834
     https://destiny.report/w/4132072834
     """
@@ -59,7 +59,7 @@ class LocusLocutus(RollDefinition):
 class Thoughtless(RollDefinition):
     """
     Stasis Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season Pass Reward
+    Source: Vox Obscura
     https://www.light.gg/db/items/4067556514
     https://destiny.report/w/4067556514
     """

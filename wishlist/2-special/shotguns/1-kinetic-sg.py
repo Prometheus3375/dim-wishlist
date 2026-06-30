@@ -34,7 +34,7 @@ class Fortissimo11(RollDefinition):
 class ImperialDecree(RollDefinition):
     """
     Kinetic Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Xûr
     https://www.light.gg/db/items/318443586
     https://destiny.report/w/318443586
     """
@@ -54,7 +54,7 @@ class PerfectParadox(RollDefinition):
 class RagnhildD(RollDefinition):
     """
     Kinetic Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Banshee-44
     https://www.light.gg/db/items/4225322581
     https://destiny.report/w/4225322581
     """
@@ -84,7 +84,7 @@ class Riiswalker(RollDefinition):
 class Someday(RollDefinition):
     """
     Kinetic Shotgun, Precision Frame, Anti-Barrier, Craftable
-    Source: Exploring the Pale Heart
+    Source: The Pale Heart
     https://www.light.gg/db/items/3232203524
     https://destiny.report/w/3232203524
     """
@@ -107,7 +107,7 @@ class ThreatLevel(RollDefinition):
 class WastelanderM5(RollDefinition):
     """
     Kinetic Shotgun, Lightweight Frame, Anti-Overload, Craftable
-    Source: Xûr's Treasure Hoard in Eternity
+    Source: Eternity
     https://www.light.gg/db/items/1679868061
     https://destiny.report/w/1679868061
     """

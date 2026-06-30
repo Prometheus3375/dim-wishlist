@@ -129,7 +129,7 @@ class Trust(RollDefinition):
 class ZaoulisBane(RollDefinition):
     """
     Solar Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: "King's Fall" Raid
+    Source: King's Fall
     https://www.light.gg/db/items/431721920
     https://destiny.report/w/431721920
     """

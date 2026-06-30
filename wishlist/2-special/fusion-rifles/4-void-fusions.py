@@ -14,7 +14,7 @@ class CoriolisForce(RollDefinition):
 class LikelySuspect(RollDefinition):
     """
     Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Exploring the Throne World
+    Source: Savathûn's Throne World
     https://www.light.gg/db/items/1994645182
     https://destiny.report/w/1994645182
     """
@@ -67,7 +67,7 @@ class VSGraviticArrest(RollDefinition):
 class ZealotsReward(RollDefinition):
     """
     Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Garden of Salvation" Raid
+    Source: Garden of Salvation
     https://www.light.gg/db/items/2720651699
     https://destiny.report/w/2720651699
     """

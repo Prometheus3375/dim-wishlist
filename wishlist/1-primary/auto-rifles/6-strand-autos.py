@@ -41,7 +41,7 @@ class LethalAbundance(RollDefinition):
 class Perpetualis(RollDefinition):
     """
     Strand Auto Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of Defiance
+    Source: NODE.OVRD.AVALON
     https://www.light.gg/db/items/392008588
     https://destiny.report/w/392008588
     """
@@ -51,7 +51,7 @@ class Perpetualis(RollDefinition):
 class RufussFury(RollDefinition):
     """
     Strand Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Root of Nightmares" Raid
+    Source: Root of Nightmares
     https://www.light.gg/db/items/484515708
     https://destiny.report/w/484515708
     """

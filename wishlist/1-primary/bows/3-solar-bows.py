@@ -31,7 +31,7 @@ class PreAstyanaxIV(RollDefinition):
 class TyrannyOfHeaven(RollDefinition):
     """
     Solar Combat Bow, Lightweight Frame, Anti-Overload, Craftable
-    Source:
+    Source: Last Wish
     https://www.light.gg/db/items/3388655311
     https://destiny.report/w/3388655311
     """

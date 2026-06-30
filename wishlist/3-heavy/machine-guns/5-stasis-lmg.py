@@ -24,7 +24,7 @@ class ChainOfCommand(RollDefinition):
 class QullimsTerminus(RollDefinition):
     """
     Stasis Machine Gun, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: "King's Fall" Raid
+    Source: King's Fall
     https://www.light.gg/db/items/1321506184
     https://destiny.report/w/1321506184
     """
@@ -37,7 +37,7 @@ class QullimsTerminus(RollDefinition):
 class RecurrentImpact(RollDefinition):
     """
     Stasis Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Risen
+    Source: Vox Obscura
     https://www.light.gg/db/items/1572896086
     https://destiny.report/w/1572896086
     """

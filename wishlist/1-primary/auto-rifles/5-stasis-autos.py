@@ -70,7 +70,7 @@ class Intercalary(RollDefinition):
 class VeiledThreat(RollDefinition):
     """
     Stasis Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Episode: Echoes Activities
+    Source: Exotic mission "Encore"
     https://www.light.gg/db/items/3685470415
     https://destiny.report/w/3685470415
     """

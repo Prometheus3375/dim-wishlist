@@ -24,7 +24,7 @@ class Backfang(RollDefinition):
 class NezarecsWhisper(RollDefinition):
     """
     Arc Adaptive Glaive, Anti-Barrier, Craftable
-    Source: Season of the Haunted Activities
+    Source: Presage
     https://www.light.gg/db/items/254636484
     https://destiny.report/w/254636484
     """
@@ -44,7 +44,7 @@ class GreasyLuck(RollDefinition):
 class JudgmentOfKelgorath(RollDefinition):
     """
     Solar Aggressive Glaive, Anti-Unstoppable, Craftable
-    Source: Season Pass Reward
+    Source: Seraph's Shield
     https://www.light.gg/db/items/2978226043
     https://destiny.report/w/2978226043
     """
@@ -54,7 +54,7 @@ class JudgmentOfKelgorath(RollDefinition):
 class LubraesRuin(RollDefinition):
     """
     Solar Adaptive Glaive, Anti-Barrier, Craftable
-    Source: "Vow of the Disciple" Raid
+    Source: Vow of the Disciple
     https://www.light.gg/db/items/2534546147
     https://destiny.report/w/2534546147
     """
@@ -77,7 +77,7 @@ class EclipticDistaff(RollDefinition):
 class ForthcomingDeviance(RollDefinition):
     """
     Void Rapid-Fire Glaive, Anti-Overload, Craftable
-    Source: "Salvation's Edge" Raid
+    Source: Salvation's Edge
     https://www.light.gg/db/items/535198113
     https://destiny.report/w/535198113
     """
@@ -90,7 +90,7 @@ class ForthcomingDeviance(RollDefinition):
 class TheEnigma(RollDefinition):
     """
     Void Adaptive Glaive, Anti-Barrier, Craftable
-    Source: The Witch Queen Campaign
+    Source: Savathûn's Throne World
     https://www.light.gg/db/items/2595497736
     https://destiny.report/w/2595497736
     """

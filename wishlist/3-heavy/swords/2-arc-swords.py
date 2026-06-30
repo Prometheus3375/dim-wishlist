@@ -4,7 +4,7 @@ from wishlist import *
 class Goldtusk(RollDefinition):
     """
     Arc Sword, Lightweight Frame, Anti-Overload, Craftable
-    Source: Open Legendary engrams and earn faction rank-up packages.
+    Source: Xûr
     https://www.light.gg/db/items/3371413057
     https://destiny.report/w/3371413057
     """
@@ -30,7 +30,7 @@ class HardlineCut(RollDefinition):
 class HalfTruths(RollDefinition):
     """
     Arc Sword, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Xûr's Treasure Hoard in Eternity
+    Source: Eternity
     https://www.light.gg/db/items/3257091166
     https://destiny.report/w/3257091166
     """
@@ -70,7 +70,7 @@ class NightTerror(RollDefinition):
 class SummumBonum(RollDefinition):
     """
     Arc Sword, Wave Sword Frame, Anti-Unstoppable, Craftable
-    Source: "Salvation's Edge" Raid
+    Source: Salvation's Edge
     https://www.light.gg/db/items/3569407878
     https://destiny.report/w/3569407878
     """

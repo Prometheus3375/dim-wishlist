@@ -21,7 +21,7 @@ class Drang(RollDefinition):
 class DrangBaroque(RollDefinition):
     """
     Solar Sidearm, Together Forever, Anti-Barrier, Craftable
-    Source: The Derelict Leviathan
+    Source: Presage
     https://www.light.gg/db/items/502356570
     https://destiny.report/w/502356570
     """

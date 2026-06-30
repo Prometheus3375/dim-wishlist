@@ -4,7 +4,7 @@ from wishlist import *
 class Raconteur(RollDefinition):
     """
     Stasis Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: Season of Defiance
+    Source: NODE.OVRD.AVALON
     https://www.light.gg/db/items/45643573
     https://destiny.report/w/45643573
     """

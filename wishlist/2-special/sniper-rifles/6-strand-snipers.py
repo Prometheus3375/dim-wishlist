@@ -43,7 +43,7 @@ class NaeemsLance(RollDefinition):
 class VoltaBracket(RollDefinition):
     """
     Strand Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Lightfall Campaign
+    Source: Neomuna
     https://www.light.gg/db/items/3920310144
     https://destiny.report/w/3920310144
     """

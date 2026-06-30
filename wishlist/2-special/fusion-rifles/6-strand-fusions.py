@@ -47,7 +47,7 @@ class Resounding(RollDefinition):
 class ScatterSignal(RollDefinition):
     """
     Strand Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/2558925366
     https://destiny.report/w/2558925366
     """

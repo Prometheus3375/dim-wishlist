@@ -4,7 +4,7 @@ from wishlist import *
 class FangOfIrYut(RollDefinition):
     """
     Strand Scout Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: "Crota's End" Raid
+    Source: Crota's End
     https://www.light.gg/db/items/1432682459
     https://destiny.report/w/1432682459
     """

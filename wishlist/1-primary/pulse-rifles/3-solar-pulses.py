@@ -4,7 +4,7 @@ from wishlist import *
 class Adhortative(RollDefinition):
     """
     Solar Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Season of the Wish Activities
+    Source: Starcrossed
     https://www.light.gg/db/items/2993554824
     https://destiny.report/w/2993554824
     """
@@ -14,7 +14,7 @@ class Adhortative(RollDefinition):
 class BxR55Battler(RollDefinition):
     """
     Solar Pulse Rifle, Legacy PR-55 Frame, Anti-Barrier, Craftable
-    Source: Xûr's Treasure Hoard in Eternity
+    Source: Eternity
     https://www.light.gg/db/items/2708806099
     https://destiny.report/w/2708806099
     """
@@ -44,7 +44,7 @@ class JorumsClaw(RollDefinition):
 class Nullify(RollDefinition):
     """
     Solar Pulse Rifle, Heavy Burst, Anti-Unstoppable, Craftable
-    Source: "Salvation's Edge" Raid
+    Source: Salvation's Edge
     https://www.light.gg/db/items/859869931
     https://destiny.report/w/859869931
     """
