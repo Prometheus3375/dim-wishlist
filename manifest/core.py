@@ -78,15 +78,15 @@ class PerkTuple(NamedTuple):
         add_self = True
         for other in tuple_set:
             if self.regular == other.regular:
-                if self.enhanced > 0 and other.enhanced == 0:
+                if self.enhanced > 0 >= other.enhanced:
                     to_remove.append(other)
-                elif other.enhanced > 0 and self.enhanced == 0:
+                elif other.enhanced > 0 >= self.enhanced:
                     add_self = False
 
             elif self.enhanced == other.enhanced:
-                if self.regular > 0 and other.regular == 0:
+                if self.regular > 0 >= other.regular:
                     to_remove.append(other)
-                elif other.regular > 0 and self.regular == 0:
+                elif other.regular > 0 >= self.regular:
                     add_self = False
 
         for other in to_remove:
