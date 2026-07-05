@@ -1,5 +1,8 @@
 from wishlist import *
 
+_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
+_default_mags = [magazine.FlaredMagwell, AnyPerk]
+
 
 class AuricDisabler(RollDefinition):
     """
@@ -9,13 +12,24 @@ class AuricDisabler(RollDefinition):
     https://destiny.report/w/702001725
     """
     item = Item('Auric Disabler', hash=702001725)
-    roll = Roll(
-        'PvE',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.Hatchling],
-        [trait.Tear, trait.SwordLogic, trait.DesperateMeasures],
-        )
+    roll = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Dragonfly],
+            [trait.Hatchling],
+            [trait.Slice],
+            [trait.Tear],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.FlaredMagwell, AnyPerk],
+            [trait.Dragonfly, trait.Hatchling],
+            [trait.Tear],
+            ),
+        ]
 
 
 class LethalAbundance(RollDefinition):
@@ -26,6 +40,24 @@ class LethalAbundance(RollDefinition):
     https://destiny.report/w/1884897339
     """
     item = Item('Lethal Abundance', hash=1884897339)
+    roll = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Dragonfly],
+            [trait.Hatchling],
+            [trait.Slice],
+            [trait.Tear],
+            ),
+        Roll(
+            'Ad clear',
+            _default_barrels,
+            _default_mags,
+            [trait.Dragonfly, trait.Hatchling],
+            [trait.Tear],
+            ),
+        ]
 
 
 class Perpetualis(RollDefinition):
@@ -49,6 +81,34 @@ class RufussFury(RollDefinition):
         Item("Rufus's Fury", hash=484515708),
         Item("Rufus's Fury (Adept)", hash=342514437),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Reconstruction],
+            [trait.Demolitionist],
+            [trait.Slice],
+            [trait.AdrenalineJunkie],
+            [trait.Hatchling],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            _default_barrels,
+            _default_mags,
+            [trait.Reconstruction],
+            [trait.Hatchling, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Grenade combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class TheForwardPath(RollDefinition):
@@ -59,3 +119,21 @@ class TheForwardPath(RollDefinition):
     https://destiny.report/w/1884897338
     """
     item = Item('The Forward Path', hash=1884897338)
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Slice],
+            [trait.Demolitionist],
+            [trait.Hatchling],
+            [trait.Tear],
+            ),
+        Roll(
+            'Strand combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Slice],
+            [trait.Hatchling, trait.Tear],
+            ),
+        ]

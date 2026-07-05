@@ -156,6 +156,7 @@ class Adamantite(RollDefinition):
             [trait.Reciprocity],
             [trait.ImpromptuAmmunition],
             [trait.Hatchling],
+            [trait.Tear],
             ),
         Roll(
             'Self-healing',
