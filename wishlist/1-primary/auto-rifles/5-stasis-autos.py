@@ -1,16 +1,6 @@
 from wishlist import *
 
 
-class DECATUR02(RollDefinition):
-    """
-    Stasis Auto Rifle, Support Frame, Anti-Overload
-    Source: Distortions
-    https://www.light.gg/db/items/1850748385
-    https://destiny.report/w/1850748385
-    """
-    item = Item('DECATUR 02', hash=1850748385)
-
-
 class FairJudgment(RollDefinition):
     """
     Stasis Auto Rifle, Precision Frame, Anti-Barrier

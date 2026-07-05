@@ -21,16 +21,6 @@ class ComeToPass(RollDefinition):
     item = Item('Come to Pass', hash=927567426)
 
 
-class ChrysuraMelo(RollDefinition):
-    """
-    Arc Auto Rifle, Support Frame, Anti-Overload
-    Source: The Shattered Throne
-    https://www.light.gg/db/items/1750388538
-    https://destiny.report/w/1750388538
-    """
-    item = Item('Chrysura Melo', hash=1750388538)
-
-
 class Prosecutor(RollDefinition):
     """
     Arc Auto Rifle, Precision Frame, Anti-Barrier

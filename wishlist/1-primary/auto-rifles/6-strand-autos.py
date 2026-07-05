@@ -1,16 +1,6 @@
 from wishlist import *
 
 
-class Adamantite(RollDefinition):
-    """
-    Strand Auto Rifle, Support Frame, Anti-Overload
-    Source: Pit of Heresy
-    https://www.light.gg/db/items/621450049
-    https://destiny.report/w/621450049
-    """
-    item = Item('Adamantite', hash=621450049)
-
-
 class AuricDisabler(RollDefinition):
     """
     Strand Auto Rifle, Precision Frame, Anti-Barrier

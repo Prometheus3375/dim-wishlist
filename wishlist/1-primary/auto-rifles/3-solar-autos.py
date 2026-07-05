@@ -61,16 +61,6 @@ class TheRingingNail(RollDefinition):
         ]
 
 
-class NoHesitation(RollDefinition):
-    """
-    Solar Auto Rifle, Support Frame, Anti-Overload, Craftable
-    Source: The Pale Heart
-    https://www.light.gg/db/items/1801007332
-    https://destiny.report/w/1801007332
-    """
-    item = Item('No Hesitation', hash=1801007332)
-
-
 class TheSummoner(RollDefinition):
     """
     Solar Auto Rifle, Adaptive Frame, Anti-Barrier
