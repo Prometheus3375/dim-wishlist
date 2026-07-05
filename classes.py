@@ -327,6 +327,11 @@ class RollDefinition:
     A set of roll definitions for the item. Cannot be specified with ``roll``.
     """
 
+    is_chosen: bool = False
+    """
+    Whether this definition is considered as one of the best.
+    """
+
     def __init_subclass__(cls, /) -> None:
         item = getattr(cls, 'item', None)
         items = getattr(cls, 'items', None)
