@@ -1,5 +1,8 @@
 from wishlist import *
 
+_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
+_default_mags = [magazine.FlaredMagwell, AnyPerk]
+
 
 class AgeOldBond(RollDefinition):
     """
@@ -9,6 +12,13 @@ class AgeOldBond(RollDefinition):
     https://destiny.report/w/424291879
     """
     item = Item('Age-Old Bond', hash=424291879)
+    roll = Roll(
+        'Grenade combo',
+        _default_barrels,
+        _default_mags,
+        [trait.Demolitionist],
+        [trait.AdrenalineJunkie],
+        )
 
 
 class GnawingHunger(RollDefinition):
@@ -19,6 +29,25 @@ class GnawingHunger(RollDefinition):
     https://destiny.report/w/214545213
     """
     item = Item('Gnawing Hunger', hash=214545213)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Demolitionist],
+            [trait.WitheringGaze],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Void combo',
+            _default_barrels,
+            _default_mags,
+            [trait.RepulsorBrace, trait.WitheringGaze],
+            [trait.DestabilizingRounds],
+            ),
+        ]
 
 
 class PositiveOutlook(RollDefinition):
@@ -31,6 +60,33 @@ class PositiveOutlook(RollDefinition):
     items = [
         Item('Positive Outlook', hash=3625635456),
         Item('Positive Outlook', hash=1832481283),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.AmbitiousAssassin],
+            [trait.RepulsorBrace],
+            [trait.WitheringGaze],
+            [trait.DestabilizingRounds],
+            [trait.MegaKillClip],
+            [trait.Dragonfly],
+            ),
+        Roll(
+            'Void combo',
+            _default_barrels,
+            _default_mags,
+            [trait.RepulsorBrace, trait.WitheringGaze],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Kill combo',
+            _default_barrels,
+            _default_mags,
+            [trait.AmbitiousAssassin],
+            [trait.MegaKillClip],
+            ),
         ]
 
 
@@ -55,6 +111,33 @@ class RecklessOraclePantheon(RollDefinition):
         Item('Reckless Oracle', hash=4158265643),
         Item('Reckless Oracle', hash=1802315656),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.DestabilizingRounds],
+            [trait.CollectiveAction],
+            [trait.RepulsorBrace],
+            [trait.ChaosReshaped],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Ad clear',
+            _default_barrels,
+            _default_mags,
+            [trait.DestabilizingRounds],
+            [trait.ChaosReshaped, trait.OneForAll],
+            ),
+        Roll(
+            'Void combo',
+            _default_barrels,
+            _default_mags,
+            [trait.DestabilizingRounds],
+            [trait.RepulsorBrace],
+            ),
+        ]
 
 
 class ReghusksPledge(RollDefinition):
@@ -65,29 +148,32 @@ class ReghusksPledge(RollDefinition):
     https://destiny.report/w/2370525224
     """
     item = Item("Reghusk's Pledge", hash=2370525224)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            _default_barrels,
+            _default_mags,
+            [trait.Demoralize],
             [trait.DestabilizingRounds],
             [trait.ImpromptuAmmunition],
-            [trait.RepulsorBrace],
             [trait.AttritionOrbs],
+            [trait.GoldenTricorn],
+            [trait.RepulsorBrace],
             ),
         Roll(
             'Void combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.DestabilizingRounds],
+            _default_barrels,
+            _default_mags,
+            [trait.DestabilizingRounds, trait.Demoralize],
             [trait.RepulsorBrace],
             ),
         Roll(
             'Ammo generation',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            _default_barrels,
+            _default_mags,
             [trait.ImpromptuAmmunition],
-            [trait.KillClip, trait.AttritionOrbs],
+            [trait.AttritionOrbs, trait.GoldenTricorn],
             ),
         ]
 
@@ -100,3 +186,13 @@ class TheRiposte(RollDefinition):
     https://destiny.report/w/866434750
     """
     item = Item('The Riposte', hash=866434750)
+    rolls = [
+        Roll(
+            'Void combo',
+            _default_barrels,
+            _default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            [stock.HandLaidStock, AnyPerk],
+            ),
+        ]
