@@ -1,5 +1,8 @@
 from wishlist import *
 
+_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
+_default_mags = [magazine.FlaredMagwell, AnyPerk]
+
 
 class AbyssDefiant(RollDefinition):
     """
@@ -8,7 +11,10 @@ class AbyssDefiant(RollDefinition):
     https://www.light.gg/db/items/833898322
     https://destiny.report/w/833898322
     """
-    item = Item('Abyss Defiant', hash=833898322)
+    items = [
+        Item('Abyss Defiant', hash=833898322),
+        Item('Abyss Defiant (Adept)', hash=3782662983),
+        ]
 
 
 class AhabChar(RollDefinition):
@@ -19,13 +25,23 @@ class AhabChar(RollDefinition):
     https://destiny.report/w/1411560894
     """
     item = Item('Ahab Char', hash=1411560894)
-    roll = Roll(
-        'PvE',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.HealClip],
-        [trait.BurningAmbition, trait.KillClip],
-        )
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.HealClip],
+            [trait.KillClip],
+            [trait.BurningAmbition],
+            ),
+        Roll(
+            'Ad clear',
+            _default_barrels,
+            _default_mags,
+            [trait.HealClip],
+            [trait.BurningAmbition, trait.KillClip],
+            ),
+        ]
 
 
 class AmmitAR2(RollDefinition):
@@ -46,6 +62,33 @@ class ArcticHaze(RollDefinition):
     https://destiny.report/w/2187337757
     """
     item = Item('Arctic Haze', hash=2187337757)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Incandescent],
+            [trait.HealClip],
+            [trait.Demolitionist],
+            [trait.BurningAmbition],
+            [trait.KillClip],
+            ),
+        Roll(
+            'Solar combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Incandescent],
+            [trait.BurningAmbition],
+            ),
+        Roll(
+            'Clip combo',
+            _default_barrels,
+            _default_mags,
+            [trait.HealClip],
+            [trait.KillClip],
+            ),
+        ]
 
 
 class TheRingingNail(RollDefinition):
@@ -58,6 +101,33 @@ class TheRingingNail(RollDefinition):
     items = [
         Item('The Ringing Nail', hash=3326135421),
         Item('The Ringing Nail', hash=4206550094),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Incandescent],
+            [trait.ImpromptuAmmunition],
+            [trait.HealClip],
+            [trait.BurningAmbition],
+            [trait.Firefly],
+            ),
+        Roll(
+            'Solar combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Incandescent],
+            [trait.BurningAmbition, trait.Firefly],
+            ),
+        Roll(
+            'Solar combo',
+            _default_barrels,
+            _default_mags,
+            [trait.HealClip],
+            [trait.Firefly],
+            ),
         ]
 
 
@@ -79,10 +149,21 @@ class ZealousIdeal(RollDefinition):
     https://destiny.report/w/1863583117
     """
     item = Item('Zealous Ideal', hash=1863583117)
+    is_chosen = True
     rolls = [
         Roll(
+            'Super roll',
+            [barrel.PolygonalRifling, AnyPerk],
+            [battery.IonizedHeatsink, AnyPerk],
+            [trait.HealClip],
+            [trait.CoolingBaubles],
+            [trait.AttritionOrbs],
+            [trait.OneForAll],
+            [trait.Incandescent],
+            ),
+        Roll(
             'Ad clear',
-            [barrel.ChamberedCompensator, AnyPerk],
+            [barrel.PolygonalRifling, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.HealClip],
             [trait.Incandescent, trait.OneForAll],
