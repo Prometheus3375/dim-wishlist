@@ -1,5 +1,8 @@
 from wishlist import *
 
+_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
+_default_mags = [magazine.FlaredMagwell, AnyPerk]
+
 
 class ArcLogic(RollDefinition):
     """
@@ -9,6 +12,25 @@ class ArcLogic(RollDefinition):
     https://destiny.report/w/38064944
     """
     item = Item('Arc Logic', hash=38064944)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.Demolitionist],
+            [trait.JoltingFeedback],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Arc combo',
+            _default_barrels,
+            _default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.GearShift],
+            ),
+        ]
 
 
 class ComeToPass(RollDefinition):
@@ -19,6 +41,13 @@ class ComeToPass(RollDefinition):
     https://destiny.report/w/927567426
     """
     item = Item('Come to Pass', hash=927567426)
+    roll = Roll(
+        'Arc combo',
+        _default_barrels,
+        _default_mags,
+        [trait.SuperchargedMagazine],
+        [trait.JoltingFeedback],
+        )
 
 
 class Prosecutor(RollDefinition):
@@ -51,6 +80,33 @@ class SnipehuntMk47(RollDefinition):
     items = [
         Item('Snipehunt Mk. 47', hash=193009988),
         Item('Snipehunt Mk. 47', hash=2587567543),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            [trait.GearShift],
+            [trait.AttritionOrbs],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Arc combo',
+            _default_barrels,
+            _default_mags,
+            [trait.JoltingFeedback, trait.SuperchargedMagazine],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Ad clear',
+            _default_barrels,
+            _default_mags,
+            [trait.JoltingFeedback],
+            [trait.ChaosReshaped],
+            ),
         ]
 
 
@@ -85,6 +141,23 @@ class Trendsetter(RollDefinition):
     https://destiny.report/w/2863808104
     """
     item = Item('Trendsetter', hash=2863808104)
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Arc combo',
+            _default_barrels,
+            _default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.GearShift],
+            ),
+        ]
 
 
 class VSPyroelectricPropellant(RollDefinition):
@@ -95,3 +168,31 @@ class VSPyroelectricPropellant(RollDefinition):
     https://destiny.report/w/2460368549
     """
     item = Item('VS Pyroelectric Propellant', hash=2460368549)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.AttritionOrbs],
+            [trait.EddyCurrent],
+            [trait.Strategist],
+            [trait.JoltingFeedback],
+            [trait.GearShift],
+            [trait.Onslaught],
+            ),
+        Roll(
+            'Arc combo',
+            _default_barrels,
+            _default_mags,
+            [trait.EddyCurrent],
+            [trait.JoltingFeedback, trait.GearShift],
+            ),
+        Roll(
+            'Ability regen',
+            _default_barrels,
+            _default_mags,
+            [trait.Strategist],
+            [trait.Onslaught],
+            ),
+        ]
