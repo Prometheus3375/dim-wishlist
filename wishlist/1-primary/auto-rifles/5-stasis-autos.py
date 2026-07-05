@@ -1,5 +1,8 @@
 from wishlist import *
 
+_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
+_default_mags = [magazine.FlaredMagwell, AnyPerk]
+
 
 class FairJudgment(RollDefinition):
     """
@@ -9,6 +12,23 @@ class FairJudgment(RollDefinition):
     https://destiny.report/w/4113452819
     """
     item = Item('Fair Judgment', hash=4113452819)
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Rimestealer],
+            [trait.Deconstruct],
+            [trait.Headstone],
+            ),
+        Roll(
+            'Stasis combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        ]
 
 
 class HerodC(RollDefinition):
@@ -29,6 +49,23 @@ class HorrorStory(RollDefinition):
     https://destiny.report/w/2884070594
     """
     item = Item('Horror Story', hash=2884070594)
+    rolls = [
+        Roll(
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Demolitionist],
+            [trait.Headstone],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
+            'Grenade combo',
+            _default_barrels,
+            _default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class Intercalary(RollDefinition):
@@ -39,9 +76,19 @@ class Intercalary(RollDefinition):
     https://destiny.report/w/2725426834
     """
     item = Item('Intercalary', hash=2725426834)
+    is_chosen = True
     rolls = [
         Roll(
-            'Stasis Combo',
+            'Super roll',
+            _default_barrels,
+            _default_mags,
+            [trait.Headstone],
+            [trait.Demolitionist],
+            [trait.Rimestealer],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Stasis combo',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.FlaredMagwell, AnyPerk],
             [trait.Headstone],
