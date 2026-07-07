@@ -70,7 +70,10 @@ class OversoulEdict(RollDefinition):
     https://www.light.gg/db/items/1098171824
     https://destiny.report/w/1098171824
     """
-    item = Item('Oversoul Edict', hash=1098171824)
+    items = [
+        Item('Oversoul Edict', hash=1098171824),
+        Item('Oversoul Edict (Adept)', hash=578105049),
+        ]
 
 
 class PhyllotacticSpiral(RollDefinition):
