@@ -1,5 +1,10 @@
 from wishlist import *
 
+_precision_strings = [bowstring.ElasticString, AnyPerk]
+_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
+_lightweight_strings = [bowstring.PolymerString, AnyPerk]
+_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+
 
 class KingOrfeo(RollDefinition):
     """
@@ -17,16 +22,25 @@ class KingOrfeo(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            _precision_strings,
+            _precision_arrows,
+            [trait.ArchersTempo],
+            [trait.ExplosiveHead],
+            [trait.Meganeura],
+            [trait.JoltingFeedback],
+            ),
+        Roll(
             'Ad clear',
-            [bowstring.ElasticString, AnyPerk],
-            [arrow.CompactArrowShaft, AnyPerk],
+            _precision_strings,
+            _precision_arrows,
             [trait.ArchersTempo],
             [trait.Meganeura, trait.JoltingFeedback],
             ),
         Roll(
             'Ad clear',
-            [bowstring.ElasticString, AnyPerk],
-            [arrow.CompactArrowShaft, AnyPerk],
+            _precision_strings,
+            _precision_arrows,
             [trait.ExplosiveHead],
             [trait.JoltingFeedback],
             ),
@@ -44,6 +58,26 @@ class NonDenouement(RollDefinition):
         Item('Non-Denouement', hash=1770490683),
         Item('Non-Denouement (Adept)', hash=1039915310),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _precision_strings,
+            _precision_arrows,
+            [trait.Dragonfly],
+            [trait.ArchersTempo],
+            [trait.ChaosReshaped],
+            [trait.Voltshot],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            _precision_strings,
+            _precision_arrows,
+            [trait.ArchersTempo],
+            [trait.Voltshot, trait.Meganeura],
+            ),
+        ]
 
 
 class PointOfTheStag(RollDefinition):
@@ -54,6 +88,33 @@ class PointOfTheStag(RollDefinition):
     https://destiny.report/w/911019136
     """
     item = Item('Point of the Stag', hash=911019136)
+    rolls = [
+        Roll(
+            'Super roll',
+            _precision_strings,
+            _precision_arrows,
+            [trait.ArchersTempo],
+            [trait.Dragonfly],
+            [trait.HipFireGrip],
+            [trait.Voltshot],
+            [trait.VorpalWeapon],
+            [trait.ArchersGambit],
+            ),
+        Roll(
+            'Ad clear',
+            _precision_strings,
+            _precision_arrows,
+            [trait.ArchersTempo],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Hip-fire combo',
+            _precision_strings,
+            [arrow.FiberglassArrowShaft, AnyPerk],
+            [trait.HipFireGrip],
+            [trait.ArchersGambit],
+            ),
+        ]
 
 
 class TripwireCanary(RollDefinition):
@@ -64,3 +125,10 @@ class TripwireCanary(RollDefinition):
     https://destiny.report/w/3849444474
     """
     item = Item('Tripwire Canary', hash=3849444474)
+    roll = Roll(
+        'Ad clear',
+        _lightweight_strings,
+        _lightweight_arrows,
+        [trait.ArchersTempo],
+        [trait.ExplosiveHead],
+        )
