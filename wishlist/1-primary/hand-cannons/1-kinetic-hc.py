@@ -1,4 +1,5 @@
 from wishlist import *
+from . import default_mags
 
 
 class Austringer(RollDefinition):
@@ -32,6 +33,23 @@ class DFA(RollDefinition):
         Item('D.F.A.', hash=739029153),
         Item('D.F.A.', hash=2920548486),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.ExplosivePayload],
+            [trait.OneForAll],
+            [trait.AttritionOrbs],
+            ),
+        Roll(
+            'Hit combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.ExplosivePayload],
+            [trait.AttritionOrbs],
+            ),
+        ]
 
 
 class Fatebringer(RollDefinition):
@@ -44,6 +62,33 @@ class Fatebringer(RollDefinition):
     items = [
         Item('Fatebringer', hash=4184168210),
         Item('Fatebringer (Timelost)', hash=4219826183),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.FlutedBarrel, AnyPerk],
+            default_mags,
+            [trait.KineticTremors],
+            [trait.ExplosivePayload],
+            [trait.ImpromptuAmmunition],
+            [trait.Firefly],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            default_mags,
+            [trait.KineticTremors],
+            [trait.Firefly],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.FlutedBarrel, AnyPerk],
+            default_mags,
+            [trait.KineticTremors, trait.ExplosivePayload],
+            [trait.OneForAll],
+            ),
         ]
 
 
@@ -65,6 +110,33 @@ class MidnightCoup(RollDefinition):
     https://destiny.report/w/2033531689
     """
     item = Item('Midnight Coup', hash=2033531689)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.Firefly],
+            [trait.ExplosivePayload],
+            [trait.AttritionOrbs],
+            [trait.KineticTremors],
+            [trait.OneForAll],
+            [trait.AncillaryOrdinance],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.Firefly, trait.ExplosivePayload],
+            [trait.KineticTremors, trait.OneForAll],
+            ),
+        Roll(
+            'Hit combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.KineticTremors],
+            ),
+        ]
 
 
 class Rose(RollDefinition):
@@ -98,6 +170,33 @@ class SeventhSeraphOfficerRevolver(RollDefinition):
     https://destiny.report/w/3490736392
     """
     item = Item('Seventh Seraph Officer Revolver', hash=3490736392)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.Reconstruction],
+            [trait.BewilderingBurst],
+            [trait.ShootToLoot],
+            [trait.Redirection],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.Reconstruction, trait.BewilderingBurst],
+            [trait.Redirection, trait.ExplosivePayload],
+            ),
+        Roll(
+            'Shoot to Loot',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]
 
 
 class SurvivorsEpitaph(RollDefinition):
@@ -121,3 +220,12 @@ class WardensLaw(RollDefinition):
     https://destiny.report/w/2363113134
     """
     item = Item("Warden's Law", hash=2363113134)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [barrel.FlutedBarrel, AnyPerk],
+            default_mags,
+            [trait.FourthTimesTheCharm],
+            [trait.VorpalWeapon],
+            ),
+        ]
