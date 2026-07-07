@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class Breakneck(RollDefinition):
@@ -26,7 +24,7 @@ class ChromaRush(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
+            default_barrels,
             [magazine.AlloyMagazine, AnyPerk],
             [trait.Subsistence],
             [trait.StoppingPower],
@@ -37,14 +35,14 @@ class ChromaRush(RollDefinition):
             ),
         Roll(
             'Bewildering Burst',
-            _default_barrels,
+            default_barrels,
             [magazine.AlloyMagazine, AnyPerk],
             [trait.BewilderingBurst],
             [trait.KineticTremors, trait.Rampage],
             ),
         Roll(
             'Classic combo',
-            _default_barrels,
+            default_barrels,
             [magazine.AlloyMagazine, AnyPerk],
             [trait.Subsistence],
             [trait.Rampage],
@@ -76,8 +74,8 @@ class EverburningGlitz(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.AttritionOrbs],
             [trait.BewilderingBurst],
             [trait.KineticTremors],
@@ -85,15 +83,15 @@ class EverburningGlitz(RollDefinition):
             ),
         Roll(
             'Attrition Orbs',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.AttritionOrbs],
             [trait.KineticTremors, trait.OneForAll],
             ),
         Roll(
             'Bewildering Burst',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.BewilderingBurst],
             [trait.KineticTremors, trait.OneForAll],
             ),
@@ -122,8 +120,8 @@ class GiversBlessing(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.ImpromptuAmmunition],
             [trait.Demolitionist],
             [trait.KineticTremors],
@@ -132,15 +130,15 @@ class GiversBlessing(RollDefinition):
             ),
         Roll(
             'Ammo generation',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.ImpromptuAmmunition],
             [trait.KineticTremors, trait.OneForAll],
             ),
         Roll(
             'Grenade combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demolitionist],
             [trait.AdrenalineJunkie],
             ),
@@ -179,8 +177,8 @@ class Scathelocke(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Subsistence],
             [trait.Overflow],
             [trait.AttritionOrbs],
@@ -190,8 +188,8 @@ class Scathelocke(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Overflow, trait.AttritionOrbs],
             [trait.KineticTremors, trait.OneForAll],
             ),
@@ -209,7 +207,7 @@ class SeventhSeraphCarbine(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
+            default_barrels,
             [magazine.SeraphRounds, AnyPerk],
             [trait.Reconstruction],
             [trait.StoppingPower],
@@ -219,7 +217,7 @@ class SeventhSeraphCarbine(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
+            default_barrels,
             [magazine.SeraphRounds, AnyPerk],
             [trait.Reconstruction, trait.AttritionOrbs, trait.StoppingPower],
             [trait.KineticTremors],
@@ -238,8 +236,8 @@ class SteelfeatherRepeater(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.BewilderingBurst],
             [trait.ProximityPower],
             [trait.Surrounded],
@@ -247,8 +245,8 @@ class SteelfeatherRepeater(RollDefinition):
             ),
         Roll(
             'Melee combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.ProximityPower],
             [trait.Swashbuckler, trait.Surrounded],
             ),
@@ -266,8 +264,8 @@ class Tigerspite(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Overflow],
             [trait.BewilderingBurst],
             [trait.StoppingPower],
@@ -276,8 +274,8 @@ class Tigerspite(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Overflow, trait.BewilderingBurst],
             [trait.KineticTremors, trait.OneForAll],
             ),

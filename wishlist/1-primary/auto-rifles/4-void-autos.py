@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class AgeOldBond(RollDefinition):
@@ -14,8 +12,8 @@ class AgeOldBond(RollDefinition):
     item = Item('Age-Old Bond', hash=424291879)
     roll = Roll(
         'Grenade combo',
-        _default_barrels,
-        _default_mags,
+        default_barrels,
+        default_mags,
         [trait.Demolitionist],
         [trait.AdrenalineJunkie],
         )
@@ -33,8 +31,8 @@ class GnawingHunger(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demolitionist],
             [trait.WitheringGaze],
             [trait.RepulsorBrace],
@@ -42,8 +40,8 @@ class GnawingHunger(RollDefinition):
             ),
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.RepulsorBrace, trait.WitheringGaze],
             [trait.DestabilizingRounds],
             ),
@@ -64,8 +62,8 @@ class PositiveOutlook(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.AmbitiousAssassin],
             [trait.RepulsorBrace],
             [trait.WitheringGaze],
@@ -75,15 +73,15 @@ class PositiveOutlook(RollDefinition):
             ),
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.RepulsorBrace, trait.WitheringGaze],
             [trait.DestabilizingRounds],
             ),
         Roll(
             'Kill combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.AmbitiousAssassin],
             [trait.MegaKillClip],
             ),
@@ -115,8 +113,8 @@ class RecklessOraclePantheon(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.DestabilizingRounds],
             [trait.CollectiveAction],
             [trait.RepulsorBrace],
@@ -125,15 +123,15 @@ class RecklessOraclePantheon(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.DestabilizingRounds],
             [trait.ChaosReshaped, trait.OneForAll],
             ),
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.DestabilizingRounds],
             [trait.RepulsorBrace],
             ),
@@ -152,8 +150,8 @@ class ReghusksPledge(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demoralize],
             [trait.DestabilizingRounds],
             [trait.ImpromptuAmmunition],
@@ -163,15 +161,15 @@ class ReghusksPledge(RollDefinition):
             ),
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.DestabilizingRounds, trait.Demoralize],
             [trait.RepulsorBrace],
             ),
         Roll(
             'Ammo generation',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.ImpromptuAmmunition],
             [trait.AttritionOrbs, trait.GoldenTricorn],
             ),
@@ -189,8 +187,8 @@ class TheRiposte(RollDefinition):
     rolls = [
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.RepulsorBrace],
             [trait.DestabilizingRounds],
             [stock.HandLaidStock, AnyPerk],

@@ -1,9 +1,5 @@
 from wishlist import *
-
-_precision_strings = [bowstring.ElasticString, AnyPerk]
-_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
-_lightweight_strings = [bowstring.PolymerString, AnyPerk]
-_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+from . import *
 
 
 class AccruedRedemption(RollDefinition):
@@ -16,8 +12,8 @@ class AccruedRedemption(RollDefinition):
     item = Item('Accrued Redemption', hash=3621336854)
     roll = Roll(
         'Ad clear',
-        _precision_strings,
-        _precision_arrows,
+        precision_strings,
+        precision_arrows,
         [trait.ArchersTempo, trait.AttritionOrbs],
         [trait.KineticTremors],
         )
@@ -35,8 +31,8 @@ class BitingWinds(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.BewilderingBurst],
             [trait.ImpromptuAmmunition],
@@ -56,8 +52,8 @@ class FelTaradiddle(RollDefinition):
     item = Item('Fel Taradiddle', hash=1399109800)
     roll = Roll(
         'Ad clear',
-        _lightweight_strings,
-        _lightweight_arrows,
+        lightweight_strings,
+        lightweight_arrows,
         [trait.ArchersTempo],
         [trait.OneForAll],
         )
@@ -75,8 +71,8 @@ class MercuryA(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.Demolitionist],
             [trait.AttritionOrbs],
             [trait.KineticTremors],
@@ -84,15 +80,15 @@ class MercuryA(RollDefinition):
             ),
         Roll(
             "Hit combo; hits with Kinetic Tremors grant progress for Attrition Orbs",
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.AttritionOrbs],
             [trait.KineticTremors],
             ),
         Roll(
             'Grenade combo',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.Demolitionist],
             [trait.AdrenalineJunkie],
             ),

@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class AbyssDefiant(RollDefinition):
@@ -28,16 +26,16 @@ class AhabChar(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.HealClip],
             [trait.KillClip],
             [trait.BurningAmbition],
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.HealClip],
             [trait.BurningAmbition, trait.KillClip],
             ),
@@ -66,8 +64,8 @@ class ArcticHaze(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.HealClip],
             [trait.Demolitionist],
@@ -76,15 +74,15 @@ class ArcticHaze(RollDefinition):
             ),
         Roll(
             'Solar combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.BurningAmbition],
             ),
         Roll(
             'Clip combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.HealClip],
             [trait.KillClip],
             ),
@@ -106,8 +104,8 @@ class TheRingingNail(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.ImpromptuAmmunition],
             [trait.HealClip],
@@ -116,15 +114,15 @@ class TheRingingNail(RollDefinition):
             ),
         Roll(
             'Solar combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.BurningAmbition, trait.Firefly],
             ),
         Roll(
             'Solar combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.HealClip],
             [trait.Firefly],
             ),

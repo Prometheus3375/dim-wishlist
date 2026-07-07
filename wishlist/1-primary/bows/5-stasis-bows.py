@@ -1,9 +1,5 @@
 from wishlist import *
-
-_precision_strings = [bowstring.ElasticString, AnyPerk]
-_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
-_lightweight_strings = [bowstring.PolymerString, AnyPerk]
-_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+from . import *
 
 
 class Raconteur(RollDefinition):
@@ -16,8 +12,8 @@ class Raconteur(RollDefinition):
     item = Item('Raconteur', hash=45643573)
     roll = Roll(
         'Stasis combo',
-        _precision_strings,
-        _precision_arrows,
+        precision_strings,
+        precision_arrows,
         [trait.ArchersTempo],
         [trait.Headstone],
         )
@@ -38,8 +34,8 @@ class TheSpitefulFang(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _lightweight_strings,
-            _lightweight_arrows,
+            lightweight_strings,
+            lightweight_arrows,
             [trait.Rimestealer],
             [trait.ImpromptuAmmunition],
             [trait.Headstone],
@@ -48,15 +44,15 @@ class TheSpitefulFang(RollDefinition):
             ),
         Roll(
             'Stasis combo',
-            _lightweight_strings,
-            _lightweight_arrows,
+            lightweight_strings,
+            lightweight_arrows,
             [trait.Rimestealer, trait.Headstone],
             [trait.CrystallineCorpsebloom],
             ),
         Roll(
             'Precision combo',
-            _lightweight_strings,
-            _lightweight_arrows,
+            lightweight_strings,
+            lightweight_arrows,
             [trait.Headstone],
             [trait.Firefly],
             ),

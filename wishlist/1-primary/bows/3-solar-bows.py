@@ -1,9 +1,5 @@
 from wishlist import *
-
-_precision_strings = [bowstring.ElasticString, AnyPerk]
-_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
-_lightweight_strings = [bowstring.PolymerString, AnyPerk]
-_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+from . import *
 
 
 class Hush(RollDefinition):
@@ -18,8 +14,8 @@ class Hush(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.HipFireGrip],
             [trait.Firefly],
@@ -29,15 +25,15 @@ class Hush(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo, trait.Firefly],
             [trait.Incandescent, trait.Meganeura],
             ),
         Roll(
             'Hip-fire combo',
-            _precision_strings,
-            [arrow.FiberglassArrowShaft, AnyPerk],
+            precision_strings,
+            hipfire_arrows,
             [trait.HipFireGrip],
             [trait.ArchersGambit],
             ),
@@ -55,8 +51,8 @@ class PreAstyanaxIV(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.Firefly],
             [trait.Incandescent],
             [trait.BurningAmbition],
@@ -64,8 +60,8 @@ class PreAstyanaxIV(RollDefinition):
             ),
         Roll(
             'Solar combo',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.Incandescent],
             [trait.BurningAmbition],
             ),
@@ -82,8 +78,8 @@ class TyrannyOfHeaven(RollDefinition):
     item = Item('Tyranny of Heaven', hash=3388655311)
     roll = Roll(
         'Solar combo',
-        _lightweight_strings,
-        _lightweight_arrows,
+        lightweight_strings,
+        lightweight_arrows,
         [trait.BurningAmbition],
         [trait.Incandescent],
         )

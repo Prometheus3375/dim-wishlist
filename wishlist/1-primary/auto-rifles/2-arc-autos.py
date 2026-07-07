@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class ArcLogic(RollDefinition):
@@ -16,8 +14,8 @@ class ArcLogic(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.Demolitionist],
             [trait.JoltingFeedback],
@@ -25,8 +23,8 @@ class ArcLogic(RollDefinition):
             ),
         Roll(
             'Arc combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback, trait.GearShift],
             ),
@@ -43,8 +41,8 @@ class ComeToPass(RollDefinition):
     item = Item('Come to Pass', hash=927567426)
     roll = Roll(
         'Arc combo',
-        _default_barrels,
-        _default_mags,
+        default_barrels,
+        default_mags,
         [trait.SuperchargedMagazine],
         [trait.JoltingFeedback],
         )
@@ -85,8 +83,8 @@ class SnipehuntMk47(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback],
             [trait.GearShift],
@@ -95,15 +93,15 @@ class SnipehuntMk47(RollDefinition):
             ),
         Roll(
             'Arc combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.JoltingFeedback, trait.SuperchargedMagazine],
             [trait.GearShift],
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.JoltingFeedback],
             [trait.ChaosReshaped],
             ),
@@ -144,16 +142,16 @@ class Trendsetter(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback],
             [trait.GearShift],
             ),
         Roll(
             'Arc combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback, trait.GearShift],
             ),
@@ -172,8 +170,8 @@ class VSPyroelectricPropellant(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.AttritionOrbs],
             [trait.EddyCurrent],
             [trait.Strategist],
@@ -183,15 +181,15 @@ class VSPyroelectricPropellant(RollDefinition):
             ),
         Roll(
             'Arc combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.EddyCurrent],
             [trait.JoltingFeedback, trait.GearShift],
             ),
         Roll(
             'Ability regen',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Strategist],
             [trait.Onslaught],
             ),

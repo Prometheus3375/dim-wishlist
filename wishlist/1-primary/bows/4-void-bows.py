@@ -1,9 +1,5 @@
 from wishlist import *
-
-_precision_strings = [bowstring.ElasticString, AnyPerk]
-_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
-_lightweight_strings = [bowstring.PolymerString, AnyPerk]
-_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+from . import *
 
 
 class ConvenedRecurve(RollDefinition):
@@ -21,8 +17,8 @@ class ConvenedRecurve(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.RepulsorBrace],
             [trait.WitheringGaze],
             [trait.DestabilizingRounds],
@@ -30,8 +26,8 @@ class ConvenedRecurve(RollDefinition):
             ),
         Roll(
             'Void combo',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.RepulsorBrace],
             [trait.DestabilizingRounds, trait.Demoralize],
             ),
@@ -53,8 +49,8 @@ class FortunateStar(RollDefinition):
     rolls = [
         Roll(
             'Ad clear',
-            _lightweight_strings,
-            _lightweight_arrows,
+            lightweight_strings,
+            lightweight_arrows,
             [trait.ImpromptuAmmunition],
             [trait.RepulsorBrace],
             [trait.ArchersTempo],
@@ -64,8 +60,8 @@ class FortunateStar(RollDefinition):
             ),
         Roll(
             'Void combo',
-            _lightweight_strings,
-            _lightweight_arrows,
+            lightweight_strings,
+            lightweight_arrows,
             [trait.RepulsorBrace],
             [trait.DestabilizingRounds, trait.Demoralize],
             ),

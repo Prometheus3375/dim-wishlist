@@ -1,9 +1,5 @@
 from wishlist import *
-
-_precision_strings = [bowstring.ElasticString, AnyPerk]
-_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
-_lightweight_strings = [bowstring.PolymerString, AnyPerk]
-_lightweight_arrows = [arrow.FiberglassArrowShaft, AnyPerk]
+from . import *
 
 
 class KingOrfeo(RollDefinition):
@@ -23,8 +19,8 @@ class KingOrfeo(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.ExplosiveHead],
             [trait.Meganeura],
@@ -32,15 +28,15 @@ class KingOrfeo(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.Meganeura, trait.JoltingFeedback],
             ),
         Roll(
             'Ad clear',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ExplosiveHead],
             [trait.JoltingFeedback],
             ),
@@ -62,8 +58,8 @@ class NonDenouement(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.Dragonfly],
             [trait.ArchersTempo],
             [trait.ChaosReshaped],
@@ -72,8 +68,8 @@ class NonDenouement(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.Voltshot, trait.Meganeura],
             ),
@@ -91,8 +87,8 @@ class PointOfTheStag(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.Dragonfly],
             [trait.HipFireGrip],
@@ -102,15 +98,15 @@ class PointOfTheStag(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _precision_strings,
-            _precision_arrows,
+            precision_strings,
+            precision_arrows,
             [trait.ArchersTempo],
             [trait.Voltshot],
             ),
         Roll(
             'Hip-fire combo',
-            _precision_strings,
-            [arrow.FiberglassArrowShaft, AnyPerk],
+            precision_strings,
+            hipfire_arrows,
             [trait.HipFireGrip],
             [trait.ArchersGambit],
             ),
@@ -127,8 +123,8 @@ class TripwireCanary(RollDefinition):
     item = Item('Tripwire Canary', hash=3849444474)
     roll = Roll(
         'Ad clear',
-        _lightweight_strings,
-        _lightweight_arrows,
+        lightweight_strings,
+        lightweight_arrows,
         [trait.ArchersTempo],
         [trait.ExplosiveHead],
         )

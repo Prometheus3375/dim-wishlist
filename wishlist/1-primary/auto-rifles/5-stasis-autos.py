@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class FairJudgment(RollDefinition):
@@ -15,16 +13,16 @@ class FairJudgment(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Rimestealer],
             [trait.Deconstruct],
             [trait.Headstone],
             ),
         Roll(
             'Stasis combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Rimestealer],
             [trait.Headstone],
             ),
@@ -52,16 +50,16 @@ class HorrorStory(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demolitionist],
             [trait.Headstone],
             [trait.AdrenalineJunkie],
             ),
         Roll(
             'Grenade combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demolitionist],
             [trait.AdrenalineJunkie],
             ),
@@ -80,8 +78,8 @@ class Intercalary(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Headstone],
             [trait.Demolitionist],
             [trait.Rimestealer],

@@ -1,7 +1,7 @@
 from wishlist import *
 
-_default_barrels = [barrel.HammerForgedRifling, AnyPerk]
-_default_mags = [magazine.AlloyMagazine, AnyPerk]
+default_barrels = [barrel.HammerForgedRifling, AnyPerk]
+default_mags = [magazine.AlloyMagazine, AnyPerk]
 
 
 class ChrysuraMelo(RollDefinition):
@@ -16,8 +16,8 @@ class ChrysuraMelo(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Physic],
             [trait.JoltingFeedback],
             [trait.LeadFromLight],
@@ -26,15 +26,15 @@ class ChrysuraMelo(RollDefinition):
             ),
         Roll(
             'Arc combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.JoltingFeedback],
             [trait.SuperchargedMagazine],
             ),
         Roll(
             'Orb combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.LeadFromLight],
             [trait.AttritionOrbs],
             ),
@@ -52,8 +52,8 @@ class NoHesitation(RollDefinition):
     is_chosen = True
     roll = Roll(
         'Self-healing',
-        _default_barrels,
-        _default_mags,
+        default_barrels,
+        default_mags,
         [trait.Physic],
         [trait.Incandescent, trait.ChaosReshaped],
         )
@@ -71,8 +71,8 @@ class CuspSempiternal(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reciprocity],
             [trait.RepulsorBrace],
             [trait.WitheringGaze],
@@ -80,15 +80,15 @@ class CuspSempiternal(RollDefinition):
             ),
         Roll(
             'Self-healing',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reciprocity],
             [trait.DestabilizingRounds],
             ),
         Roll(
             'Void combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.RepulsorBrace],
             [trait.DestabilizingRounds],
             ),
@@ -107,8 +107,8 @@ class DECATUR02(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Physic],
             [trait.CrystallineCorpsebloom],
             [trait.Redirection],
@@ -117,22 +117,22 @@ class DECATUR02(RollDefinition):
             ),
         Roll(
             'Self-sustain',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Physic],
             [trait.Reciprocity],
             ),
         Roll(
             'Stasis combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.CrystallineCorpsebloom],
             [trait.Rimestealer],
             ),
         Roll(
             'Origin trait combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.CrystallineCorpsebloom],
             [trait.Redirection],
             ),
@@ -151,8 +151,8 @@ class Adamantite(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reciprocity],
             [trait.ImpromptuAmmunition],
             [trait.Hatchling],
@@ -160,8 +160,8 @@ class Adamantite(RollDefinition):
             ),
         Roll(
             'Self-healing',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reciprocity],
             [trait.Hatchling],
             ),

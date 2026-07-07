@@ -1,7 +1,5 @@
 from wishlist import *
-
-_default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-_default_mags = [magazine.FlaredMagwell, AnyPerk]
+from . import *
 
 
 class AuricDisabler(RollDefinition):
@@ -15,8 +13,8 @@ class AuricDisabler(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Dragonfly],
             [trait.Hatchling],
             [trait.Slice],
@@ -24,8 +22,8 @@ class AuricDisabler(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Dragonfly, trait.Hatchling],
             [trait.Tear],
             ),
@@ -43,8 +41,8 @@ class LethalAbundance(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Dragonfly],
             [trait.Hatchling],
             [trait.Slice],
@@ -52,8 +50,8 @@ class LethalAbundance(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Dragonfly, trait.Hatchling],
             [trait.Tear],
             ),
@@ -85,8 +83,8 @@ class RufussFury(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reconstruction],
             [trait.Demolitionist],
             [trait.Slice],
@@ -96,15 +94,15 @@ class RufussFury(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Reconstruction],
             [trait.Hatchling, trait.ChaosReshaped],
             ),
         Roll(
             'Grenade combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Demolitionist],
             [trait.AdrenalineJunkie],
             ),
@@ -122,8 +120,8 @@ class TheForwardPath(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Slice],
             [trait.Demolitionist],
             [trait.Hatchling],
@@ -131,8 +129,8 @@ class TheForwardPath(RollDefinition):
             ),
         Roll(
             'Strand combo',
-            _default_barrels,
-            _default_mags,
+            default_barrels,
+            default_mags,
             [trait.Slice],
             [trait.Hatchling, trait.Tear],
             ),
