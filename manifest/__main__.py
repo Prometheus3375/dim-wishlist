@@ -483,6 +483,9 @@ def get_weapon_type_with_intrinsic(w: Weapon, /) -> str:
         case 'Combat Bow' if w.ammo_type is AmmunitionType.Heavy:
             return f'Crossbow, {w.intrinsic}'
 
+        case 'Combat Bow' if w.intrinsic == 'High-Impact Longbow':
+            return w.intrinsic
+
         case 'Glaive':
             return w.intrinsic
 
