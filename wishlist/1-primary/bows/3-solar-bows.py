@@ -52,7 +52,7 @@ class PreAstyanaxIV(RollDefinition):
     https://destiny.report/w/471764396
     """
     item = Item('Pre Astyanax IV', hash=471764396)
-    roll = [
+    rolls = [
         Roll(
             'Super roll',
             _precision_strings,
@@ -86,4 +86,4 @@ class TyrannyOfHeaven(RollDefinition):
         _lightweight_arrows,
         [trait.BurningAmbition],
         [trait.Incandescent],
-        ),
+        )

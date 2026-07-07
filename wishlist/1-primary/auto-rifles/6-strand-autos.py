@@ -12,7 +12,7 @@ class AuricDisabler(RollDefinition):
     https://destiny.report/w/702001725
     """
     item = Item('Auric Disabler', hash=702001725)
-    roll = [
+    rolls = [
         Roll(
             'Super roll',
             _default_barrels,
@@ -24,8 +24,8 @@ class AuricDisabler(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            _default_barrels,
+            _default_mags,
             [trait.Dragonfly, trait.Hatchling],
             [trait.Tear],
             ),
@@ -40,7 +40,7 @@ class LethalAbundance(RollDefinition):
     https://destiny.report/w/1884897339
     """
     item = Item('Lethal Abundance', hash=1884897339)
-    roll = [
+    rolls = [
         Roll(
             'Super roll',
             _default_barrels,
