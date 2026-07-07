@@ -41,16 +41,6 @@ class IKELOS_HC_v103(RollDefinition):
     item = Item('IKELOS_HC_v1.0.3', hash=1731355324)
 
 
-class IRONWOOD03(RollDefinition):
-    """
-    Void Hand Cannon, Spread Shot, Anti-Overload
-    Source: Distortions
-    https://www.light.gg/db/items/2041617874
-    https://destiny.report/w/2041617874
-    """
-    item = Item('IRONWOOD 03', hash=2041617874)
-
-
 class KindledOrchid(RollDefinition):
     """
     Void Hand Cannon, Adaptive Frame, Anti-Barrier
