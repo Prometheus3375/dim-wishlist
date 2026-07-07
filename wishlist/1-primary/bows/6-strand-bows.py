@@ -1,5 +1,8 @@
 from wishlist import *
 
+_precision_strings = [bowstring.ElasticString, AnyPerk]
+_precision_arrows = [arrow.CompactArrowShaft, AnyPerk]
+
 
 class HushedWhisper(RollDefinition):
     """
@@ -15,8 +18,8 @@ class HushedWhisper(RollDefinition):
     rolls = [
         Roll(
             'Strand combo',
-            [bowstring.ElasticString, AnyPerk],
-            [arrow.CompactArrowShaft, AnyPerk],
+            _precision_strings,
+            _precision_arrows,
             [trait.Tear, trait.Slice],
             [trait.Hatchling],
             ),
@@ -31,3 +34,31 @@ class VengefulWhisper(RollDefinition):
     https://destiny.report/w/1054567917
     """
     item = Item('Vengeful Whisper', hash=1054567917)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            _precision_strings,
+            _precision_arrows,
+            [trait.Tear],
+            [trait.HipFireGrip],
+            [trait.ExplosiveHead],
+            [trait.Hatchling],
+            [trait.ArchersGambit],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Strand combo',
+            _precision_strings,
+            _precision_arrows,
+            [trait.Tear],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Hip-fire combo',
+            _precision_strings,
+            [arrow.FiberglassArrowShaft, AnyPerk],
+            [trait.HipFireGrip],
+            [trait.ArchersGambit],
+            ),
+        ]
