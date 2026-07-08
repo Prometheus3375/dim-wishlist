@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class NationOfBeasts(RollDefinition):
@@ -9,6 +10,14 @@ class NationOfBeasts(RollDefinition):
     https://destiny.report/w/70083888
     """
     item = Item('Nation of Beasts', hash=70083888)
+    is_chosen = True
+    roll = Roll(
+        'Arc combo',
+        default_barrels,
+        default_mags,
+        [trait.GearShift],
+        [trait.JoltingFeedback],
+        )
 
 
 class SightlineSurvey(RollDefinition):
@@ -42,6 +51,24 @@ class ThePalindrome(RollDefinition):
         Item('The Palindrome', hash=739029152),
         Item('The Palindrome', hash=3303271523),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ExplosivePayload],
+            [trait.SuperchargedMagazine],
+            [trait.MasterOfArms],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.MasterOfArms],
+            ),
+        ]
 
 
 class TrueProphecy(RollDefinition):
@@ -62,6 +89,24 @@ class WakingVigil(RollDefinition):
     https://destiny.report/w/1727550459
     """
     item = Item('Waking Vigil', hash=1727550459)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Outlaw],
+            [trait.Voltshot],
+            [trait.GearShift],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Reload combo',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Outlaw],
+            [trait.Voltshot, trait.GearShift],
+            ),
+        ]
 
 
 class YesterdaysQuestion(RollDefinition):
@@ -72,3 +117,29 @@ class YesterdaysQuestion(RollDefinition):
     https://destiny.report/w/1803480512
     """
     item = Item("Yesterday's Question", hash=1803480512)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.AirTrigger],
+            [trait.FourthTimesTheCharm],
+            [trait.Dragonfly],
+            [trait.Voltshot],
+            [trait.VorpalWeapon],
+            ),
+        Roll(
+            'Reload combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.AirTrigger],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Miniboss damage dealing',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.VorpalWeapon],
+            ),
+        ]

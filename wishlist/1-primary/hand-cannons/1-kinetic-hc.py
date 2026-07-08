@@ -1,5 +1,5 @@
 from wishlist import *
-from . import default_mags
+from . import *
 
 
 class Austringer(RollDefinition):
@@ -67,7 +67,7 @@ class Fatebringer(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            [barrel.FlutedBarrel, AnyPerk],
+            default_barrels,
             default_mags,
             [trait.KineticTremors],
             [trait.ExplosivePayload],
@@ -77,14 +77,14 @@ class Fatebringer(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            [barrel.FlutedBarrel, AnyPerk],
+            default_barrels,
             default_mags,
             [trait.KineticTremors],
             [trait.Firefly],
             ),
         Roll(
             'Ad clear',
-            [barrel.FlutedBarrel, AnyPerk],
+            default_barrels,
             default_mags,
             [trait.KineticTremors, trait.ExplosivePayload],
             [trait.OneForAll],
@@ -222,7 +222,7 @@ class WardensLaw(RollDefinition):
     item = Item("Warden's Law", hash=2363113134)
     rolls = [
         Roll(
-            'Damage dealing',
+            'Miniboss damage dealing',
             [barrel.FlutedBarrel, AnyPerk],
             default_mags,
             [trait.FourthTimesTheCharm],
