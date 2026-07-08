@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Agape(RollDefinition):
@@ -11,18 +12,28 @@ class Agape(RollDefinition):
     item = Item('Agape', hash=4124362340)
     rolls = [
         Roll(
-            'Lucky Pants combo',
+            'Super roll',
             [barrel.ChamberedCompensator, AnyPerk],
             [magazine.AppendedMag, AnyPerk],
+            [trait.HealClip],
             [trait.RewindRounds],
+            [trait.Incandescent],
             [trait.PrecisionInstrument],
+            [trait.Firefly],
             ),
         Roll(
             'Solar combo',
             [barrel.ChamberedCompensator, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
             [trait.HealClip],
             [trait.Incandescent],
+            ),
+        Roll(
+            'Miniboss damage dealing',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AppendedMag, AnyPerk],
+            [trait.RewindRounds],
+            [trait.PrecisionInstrument],
             ),
         ]
 
@@ -35,6 +46,25 @@ class EpochalIntegration(RollDefinition):
     https://destiny.report/w/3851394887
     """
     item = Item('Epochal Integration', hash=3851394887)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.ExplosivePayload],
+            [trait.Incandescent],
+            [trait.Meganeura],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class FiniteImpactor(RollDefinition):
@@ -75,6 +105,24 @@ class LunasHowl(RollDefinition):
     https://destiny.report/w/2033531688
     """
     item = Item("Luna's Howl", hash=2033531688)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.HealClip],
+            [trait.Firefly],
+            [trait.ChaosReshaped],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class Trust(RollDefinition):
@@ -85,6 +133,23 @@ class Trust(RollDefinition):
     https://destiny.report/w/810474118
     """
     item = Item('Trust', hash=810474118)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.ExplosivePayload],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class ZaoulisBane(RollDefinition):
@@ -98,6 +163,33 @@ class ZaoulisBane(RollDefinition):
         Item("Zaouli's Bane", hash=431721920),
         Item("Zaouli's Bane (Harrowed)", hash=291092617),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.ExplosivePayload],
+            [trait.Redirection],
+            [trait.Incandescent],
+            [trait.Meganeura],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Redirection, trait.ExplosivePayload],
+            [trait.Incandescent, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Redirection],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class ZaoulisBanePantheon(RollDefinition):
@@ -110,4 +202,30 @@ class ZaoulisBanePantheon(RollDefinition):
     items = [
         Item("Zaouli's Bane", hash=3647341740),
         Item("Zaouli's Bane", hash=3066945855),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.ExplosivePayload],
+            [trait.Firefly],
+            [trait.Incandescent],
+            [trait.Meganeura],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Firefly, trait.ExplosivePayload],
+            [trait.Incandescent, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Firefly],
+            [trait.Meganeura],
+            ),
         ]
