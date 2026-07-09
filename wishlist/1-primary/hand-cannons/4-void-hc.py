@@ -123,7 +123,7 @@ class MaahesHC4(RollDefinition):
         [magazine.AlloyMagazine, AnyPerk],
         [trait.RepulsorBrace],
         [trait.DestabilizingRounds],
-        ),
+        )
 
 
 class MosAthanorIV(RollDefinition):

@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class BoldEndings(RollDefinition):
@@ -9,6 +10,13 @@ class BoldEndings(RollDefinition):
     https://destiny.report/w/496728945
     """
     item = Item('Bold Endings', hash=496728945)
+    roll = Roll(
+        'Stasis combo',
+        [barrel.ChamberedCompensator, AnyPerk],
+        default_mags,
+        [trait.Rimestealer, trait.Headstone],
+        [trait.CrystallineCorpsebloom],
+        )
 
 
 class Eyasluna(RollDefinition):
@@ -19,6 +27,25 @@ class Eyasluna(RollDefinition):
     https://destiny.report/w/386864872
     """
     item = Item('Eyasluna', hash=386864872)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Firefly],
+            [trait.Meganeura],
+            [trait.Headstone],
+            [trait.ChaosReshaped],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Meganeura, trait.Firefly],
+            [trait.Headstone],
+            ),
+        ]
 
 
 class Judgment(RollDefinition):
@@ -29,6 +56,33 @@ class Judgment(RollDefinition):
     https://destiny.report/w/1567585973
     """
     item = Item('Judgment', hash=1567585973)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
+            [trait.TimedPayload],
+            [trait.AdrenalineJunkie],
+            [trait.Rimestealer],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Headstone, trait.CrystallineCorpsebloom],
+            [trait.Rimestealer],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class LoudLullaby(RollDefinition):
@@ -54,11 +108,21 @@ class ModifiedB7Pistol(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [battery.IonizedHeatsink, AnyPerk],
+            [trait.Rimestealer],
+            [trait.Firefly],
+            [trait.Demolitionist],
+            [trait.Headstone],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
             'Stasis combo',
             [barrel.ArrowheadBrake, AnyPerk],
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Rimestealer],
-            [trait.CrystallineCorpsebloom, trait.Headstone],
+            [trait.Headstone, trait.CrystallineCorpsebloom],
             ),
         Roll(
             'Precision combo',
@@ -66,13 +130,6 @@ class ModifiedB7Pistol(RollDefinition):
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Firefly],
             [trait.Headstone],
-            ),
-        Roll(
-            'Demolitionist',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.IonizedHeatsink, AnyPerk],
-            [trait.Demolitionist],
-            [trait.CrystallineCorpsebloom, trait.Headstone],
             ),
         ]
 
@@ -87,20 +144,30 @@ class SolemnRemembrance(RollDefinition):
     item = Item('Solemn Remembrance', hash=4116518582)
     rolls = [
         Roll(
-            'Ad clear',
+            'Super roll',
             [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            default_mags,
+            [trait.ImpromptuAmmunition],
             [trait.Headstone],
             [trait.Firefly],
-            [grip.PolymerGrip, AnyPerk],
+            [trait.Rimestealer],
+            [grip.CombatGrip, AnyPerk],
+            ),
+        Roll(
+            'Precision combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.Headstone],
+            [trait.Firefly],
+            [grip.CombatGrip, AnyPerk],
             ),
         Roll(
             'Stasis combo',
             [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            default_mags,
             [trait.Headstone],
             [trait.Rimestealer],
-            [grip.PolymerGrip, AnyPerk],
+            [grip.CombatGrip, AnyPerk],
             ),
         ]
 
@@ -126,6 +193,31 @@ class SpareRations(RollDefinition):
     https://destiny.report/w/810474119
     """
     item = Item('Spare Rations', hash=810474119)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.CrystallineCorpsebloom],
+            [trait.OneForAll],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Firefly, trait.CrystallineCorpsebloom],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.CrystallineCorpsebloom],
+            [trait.ExplosivePayload],
+            ),
+        ]
 
 
 class Vulpecula(RollDefinition):
@@ -136,3 +228,29 @@ class Vulpecula(RollDefinition):
     https://destiny.report/w/3245446311
     """
     item = Item('Vulpecula', hash=3245446311)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.Headstone],
+            [trait.Rimestealer],
+            [trait.ExplosivePayload],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Headstone, trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]
