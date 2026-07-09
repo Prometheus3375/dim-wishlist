@@ -38,6 +38,14 @@ class BitingWinds(RollDefinition):
             [trait.ImpromptuAmmunition],
             [trait.ExplosiveHead],
             [trait.KineticTremors],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Ad clear',
+            precision_strings,
+            precision_arrows,
+            [trait.BewilderingBurst],
+            [trait.KineticTremors],
             ),
         ]
 

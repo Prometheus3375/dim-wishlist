@@ -212,6 +212,7 @@ class SeventhSeraphCarbine(RollDefinition):
             [trait.Reconstruction],
             [trait.StoppingPower],
             [trait.AttritionOrbs],
+            [trait.AllStar],
             [trait.KineticTremors],
             [trait.AncillaryOrdinance],
             ),

@@ -181,6 +181,7 @@ class SeventhSeraphOfficerRevolver(RollDefinition):
             [trait.ShootToLoot],
             [trait.Redirection],
             [trait.ExplosivePayload],
+            [trait.AdhesiveOrdnance],
             ),
         Roll(
             'Ad clear',
@@ -194,7 +195,7 @@ class SeventhSeraphOfficerRevolver(RollDefinition):
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.SeraphRounds, AnyPerk],
             [trait.ShootToLoot],
-            [trait.ExplosivePayload],
+            [trait.ExplosivePayload, trait.AdhesiveOrdnance],
             ),
         ]
 
