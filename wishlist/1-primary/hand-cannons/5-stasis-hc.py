@@ -106,6 +106,7 @@ class ModifiedB7Pistol(RollDefinition):
         Item('Modified B-7 Pistol', hash=3146657388),
         Item('Modified B-7 Pistol', hash=1872906663),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -228,6 +229,7 @@ class Vulpecula(RollDefinition):
     https://destiny.report/w/3245446311
     """
     item = Item('Vulpecula', hash=3245446311)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
