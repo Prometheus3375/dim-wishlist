@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AutumnWind(RollDefinition):
@@ -22,6 +23,32 @@ class BattleScar(RollDefinition):
     https://destiny.report/w/1525080480
     """
     item = Item('Battle Scar', hash=1525080480)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.Overflow],
+            [trait.AttritionOrbs],
+            [trait.KineticTremors],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Hit combo',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.KineticTremors],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.KineticTremors, trait.AllStar],
+            ),
+        ]
 
 
 class BlastFurnace(RollDefinition):
@@ -35,6 +62,26 @@ class BlastFurnace(RollDefinition):
         Item('Blast Furnace', hash=52683113),
         Item('Blast Furnace', hash=2631356658),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.AncillaryOrdinance],
+            [trait.KineticTremors],
+            [trait.Firefly],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.KineticTremors],
+            [trait.Firefly, trait.ChaosReshaped],
+            ),
+        ]
 
 
 class Bygones(RollDefinition):
@@ -45,6 +92,34 @@ class Bygones(RollDefinition):
     https://destiny.report/w/767170345
     """
     item = Item('Bygones', hash=767170345)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.ShootToLoot],
+            [trait.StoppingPower],
+            [trait.KineticTremors],
+            [trait.Firefly],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.KineticTremors],
+            [trait.Firefly, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.KineticTremors, trait.AllStar],
+            ),
+        ]
 
 
 class ChatteringBone(RollDefinition):
@@ -55,6 +130,13 @@ class ChatteringBone(RollDefinition):
     https://destiny.report/w/501329015
     """
     item = Item('Chattering Bone', hash=501329015)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.StoppingPower],
+        [trait.KineticTremors],
+        )
 
 
 class ChatteringBonePantheon(RollDefinition):
@@ -67,6 +149,26 @@ class ChatteringBonePantheon(RollDefinition):
     items = [
         Item('Chattering Bone', hash=830651379),
         Item('Chattering Bone', hash=4157371152),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.AttritionOrbs],
+            [trait.CollectiveDemolition],
+            [trait.KineticTremors],
+            [trait.AncillaryOrdinance],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Hit combo',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.KineticTremors],
+            ),
         ]
 
 
@@ -98,6 +200,13 @@ class SacredProvenance(RollDefinition):
     https://destiny.report/w/2241507890
     """
     item = Item('Sacred Provenance', hash=2241507890)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.StoppingPower],
+        [trait.KineticTremors],
+        )
 
 
 class SmiteOfMerain(RollDefinition):
@@ -111,6 +220,33 @@ class SmiteOfMerain(RollDefinition):
         Item('Smite of Merain', hash=2221264583),
         Item('Smite of Merain (Harrowed)', hash=3407395594),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AncillaryOrdinance],
+            [trait.BewilderingBurst],
+            [trait.AdrenalineJunkie],
+            [trait.Firefly],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.Firefly],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class TheMessenger(RollDefinition):
@@ -121,3 +257,22 @@ class TheMessenger(RollDefinition):
     https://destiny.report/w/4277548087
     """
     item = Item('The Messenger', hash=4277548087)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.Firefly],
+            [trait.StoppingPower],
+            [trait.KineticTremors],
+            [trait.AncillaryOrdinance],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Firefly, trait.StoppingPower],
+            [trait.KineticTremors],
+            ),
+        ]
