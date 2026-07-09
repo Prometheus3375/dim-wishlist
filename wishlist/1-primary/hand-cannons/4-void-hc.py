@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AncientGospel(RollDefinition):
@@ -9,6 +10,14 @@ class AncientGospel(RollDefinition):
     https://destiny.report/w/963574173
     """
     item = Item('Ancient Gospel', hash=963574173)
+    is_chosen = True
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.DestabilizingRounds],
+        [trait.ExplosivePayload],
+        )
 
 
 class BottomDollar(RollDefinition):
@@ -29,6 +38,24 @@ class ExaltedTruth(RollDefinition):
     https://destiny.report/w/2776092653
     """
     item = Item('Exalted Truth', hash=2776092653)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.DestabilizingRounds],
+            [trait.WitheringGaze],
+            [trait.Demoralize],
+            [trait.RepulsorBrace],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.DestabilizingRounds],
+            [trait.RepulsorBrace],
+            ),
+        ]
 
 
 class IKELOS_HC_v103(RollDefinition):
@@ -52,6 +79,34 @@ class KindledOrchid(RollDefinition):
         Item('Kindled Orchid', hash=3961462214),
         Item('Kindled Orchid', hash=334964261),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.ShootToLoot],
+            [trait.ImpromptuAmmunition],
+            [trait.DestabilizingRounds],
+            [trait.Demoralize],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]
 
 
 class MaahesHC4(RollDefinition):
@@ -62,6 +117,13 @@ class MaahesHC4(RollDefinition):
     https://destiny.report/w/734476286
     """
     item = Item('Maahes HC4', hash=734476286)
+    roll = Roll(
+        'Void combo',
+        default_barrels,
+        [magazine.AlloyMagazine, AnyPerk],
+        [trait.RepulsorBrace],
+        [trait.DestabilizingRounds],
+        ),
 
 
 class MosAthanorIV(RollDefinition):
@@ -107,4 +169,29 @@ class WordOfCrota(RollDefinition):
     items = [
         Item('Word of Crota', hash=120706239),
         Item('Word of Crota (Adept)', hash=3926103986),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.Demolitionist],
+            [trait.DestabilizingRounds],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
         ]
