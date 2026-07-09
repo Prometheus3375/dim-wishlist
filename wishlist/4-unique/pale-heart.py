@@ -7,6 +7,7 @@ class ErgoSum(RollDefinition):
     https://www.light.gg/db/items/1681583613
     """
     item = ErgoSum = Item('Ergo Sum', hash=1681583613)
+    is_chosen = True
     _blades = [blade.EnduringBlade, AnyPerk]
     _dmg_note = """
         Damage dealing. Blade and guard is not that important.
@@ -71,6 +72,7 @@ class Relativism(RollDefinition):
     https://www.light.gg/db/items/2809120022
     """
     item = Item('Relativism', hash=2809120022)
+    is_chosen = True
     rolls = [
         Roll(
             _note_spirit_of_the_star_eater,
@@ -118,6 +120,7 @@ class Stoicism(RollDefinition):
     https://www.light.gg/db/items/266021826
     """
     item = Item('Stoicism', hash=266021826)
+    is_chosen = True
     rolls = [
         Roll(
             _note_spirit_of_the_star_eater,
@@ -159,6 +162,7 @@ class Solipsism(RollDefinition):
     https://www.light.gg/db/items/2273643087
     """
     item = Item('Solipsism', hash=2273643087)
+    is_chosen = True
     rolls = [
         Roll(
             f"""
