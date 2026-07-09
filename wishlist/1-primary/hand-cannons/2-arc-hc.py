@@ -28,6 +28,13 @@ class Posterity(RollDefinition):
     https://destiny.report/w/3281285075
     """
     item = Item('Posterity', hash=3281285075)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.SuperchargedMagazine],
+        [trait.Redirection, trait.OneForAll],
+        )
 
 
 class SightlineSurvey(RollDefinition):
