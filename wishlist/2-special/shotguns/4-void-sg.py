@@ -34,7 +34,7 @@ class Bonechiller(RollDefinition):
 class NessasOblation(RollDefinition):
     """
     Void Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: Root of Nightmares
+    Source: Raid "Root of Nightmares"
     https://www.light.gg/db/items/135029084
     https://destiny.report/w/135029084
     """
@@ -97,7 +97,7 @@ class Retrofuturist(RollDefinition):
 class Unvoiced(RollDefinition):
     """
     Void Shotgun, Pinpoint Slug Frame, Anti-Barrier
-    Source: Sundered Doctrine
+    Source: Dungeon "Sundered Doctrine"
     https://www.light.gg/db/items/2213885190
     https://destiny.report/w/2213885190
     """

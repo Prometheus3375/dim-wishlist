@@ -4,7 +4,7 @@ from wishlist import *
 class RomanticDeath(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/4169082039
     https://destiny.report/w/4169082039
     """
@@ -36,7 +36,7 @@ class RomanticDeath(RollDefinition):
 class VSVelocityBaton(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
-    Source: Vesper's Host
+    Source: Dungeon "Vesper's Host"
     https://www.light.gg/db/items/2452936816
     https://destiny.report/w/2452936816
     """
@@ -46,7 +46,7 @@ class VSVelocityBaton(RollDefinition):
 class Wilderflight(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Double Fire, Anti-Unstoppable
-    Source: Spire of the Watcher
+    Source: Dungeon "Spire of the Watcher"
     https://www.light.gg/db/items/408862798
     https://destiny.report/w/408862798
     """

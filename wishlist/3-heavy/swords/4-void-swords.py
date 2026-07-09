@@ -47,7 +47,7 @@ class StrykersSureHand(RollDefinition):
 class SullenClaw(RollDefinition):
     """
     Void Sword, Lightweight Frame, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/1085743380
     https://destiny.report/w/1085743380
     """

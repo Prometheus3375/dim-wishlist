@@ -34,7 +34,7 @@ class Gridskipper(RollDefinition):
 class HighTyrant(RollDefinition):
     """
     Void Pulse Rifle, Balanced Heat Weapon, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/2873508409
     https://destiny.report/w/2873508409
     """

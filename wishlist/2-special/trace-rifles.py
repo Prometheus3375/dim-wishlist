@@ -51,7 +51,7 @@ class Keraunios(RollDefinition):
 class PathOfLeastResistance(RollDefinition):
     """
     Arc Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/2827764482
     https://destiny.report/w/2827764482
     """
@@ -61,7 +61,7 @@ class PathOfLeastResistance(RollDefinition):
 class AcasiasDejection(RollDefinition):
     """
     Solar Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Root of Nightmares
+    Source: Raid "Root of Nightmares"
     https://www.light.gg/db/items/1471212226
     https://destiny.report/w/1471212226
     """
@@ -94,7 +94,7 @@ class Chronophage(RollDefinition):
 class HollowDenial(RollDefinition):
     """
     Void Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/2323544076
     https://destiny.report/w/2323544076
     """
@@ -104,7 +104,7 @@ class HollowDenial(RollDefinition):
 class ActionItem(RollDefinition):
     """
     Stasis Trace Rifle, Adaptive Frame, Anti-Barrier
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/527989828
     https://destiny.report/w/527989828
     """
@@ -153,7 +153,7 @@ class ActionItem(RollDefinition):
 class Appetence(RollDefinition):
     """
     Stasis Trace Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/4153087276
     https://destiny.report/w/4153087276
     """
@@ -163,7 +163,7 @@ class Appetence(RollDefinition):
 class Ribbontail(RollDefinition):
     """
     Strand Trace Rifle, Adaptive Frame, Anti-Barrier
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/3576134513
     https://destiny.report/w/3576134513
     """
@@ -186,7 +186,7 @@ class Ribbontail(RollDefinition):
 class Unsworn(RollDefinition):
     """
     Strand Trace Rifle, Adaptive Frame, Anti-Barrier
-    Source: Sundered Doctrine
+    Source: Dungeon "Sundered Doctrine"
     https://www.light.gg/db/items/3462679024
     https://destiny.report/w/3462679024
     """

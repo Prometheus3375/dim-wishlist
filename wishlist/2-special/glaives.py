@@ -24,7 +24,7 @@ class Backfang(RollDefinition):
 class NezarecsWhisper(RollDefinition):
     """
     Arc Adaptive Glaive, Anti-Barrier, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/254636484
     https://destiny.report/w/254636484
     """
@@ -34,7 +34,7 @@ class NezarecsWhisper(RollDefinition):
 class GreasyLuck(RollDefinition):
     """
     Solar Rapid-Fire Glaive, Anti-Overload
-    Source: Ghosts of the Deep
+    Source: Dungeon "Ghosts of the Deep"
     https://www.light.gg/db/items/4274165888
     https://destiny.report/w/4274165888
     """
@@ -44,7 +44,7 @@ class GreasyLuck(RollDefinition):
 class JudgmentOfKelgorath(RollDefinition):
     """
     Solar Aggressive Glaive, Anti-Unstoppable, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/2978226043
     https://destiny.report/w/2978226043
     """
@@ -54,7 +54,7 @@ class JudgmentOfKelgorath(RollDefinition):
 class LubraesRuin(RollDefinition):
     """
     Solar Adaptive Glaive, Anti-Barrier, Craftable
-    Source: Vow of the Disciple
+    Source: Raid "Vow of the Disciple"
     https://www.light.gg/db/items/2534546147
     https://destiny.report/w/2534546147
     """
@@ -77,7 +77,7 @@ class EclipticDistaff(RollDefinition):
 class ForthcomingDeviance(RollDefinition):
     """
     Void Rapid-Fire Glaive, Anti-Overload, Craftable
-    Source: Salvation's Edge
+    Source: Raid "Salvation's Edge"
     https://www.light.gg/db/items/535198113
     https://destiny.report/w/535198113
     """
@@ -100,7 +100,7 @@ class TheEnigma(RollDefinition):
 class TheHeron(RollDefinition):
     """
     Void Aggressive Glaive, Anti-Unstoppable
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/2246386812
     https://destiny.report/w/2246386812
     """
@@ -142,7 +142,7 @@ class RakeAngle(RollDefinition):
 class RefusalOfTheCall(RollDefinition):
     """
     Strand Adaptive Glaive, Anti-Barrier
-    Source: Pit of Heresy
+    Source: Dungeon "Pit of Heresy"
     https://www.light.gg/db/items/1541324871
     https://destiny.report/w/1541324871
     """

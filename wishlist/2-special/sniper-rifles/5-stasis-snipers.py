@@ -14,7 +14,7 @@ class ADistantPull(RollDefinition):
 class ConspiracyHoned(RollDefinition):
     """
     Stasis Sniper Rifle, Dynamic Heat Weapon, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/4062069077
     https://destiny.report/w/4062069077
     """
@@ -36,7 +36,7 @@ class ConspiracyHoned(RollDefinition):
 class CriticalAnomaly(RollDefinition):
     """
     Stasis Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Salvation's Edge
+    Source: Raid "Salvation's Edge"
     https://www.light.gg/db/items/445197843
     https://destiny.report/w/445197843
     """
@@ -59,7 +59,7 @@ class LocusLocutus(RollDefinition):
 class Thoughtless(RollDefinition):
     """
     Stasis Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Vox Obscura
+    Source: Exotic mission "Vox Obscura"
     https://www.light.gg/db/items/4067556514
     https://destiny.report/w/4067556514
     """

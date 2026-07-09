@@ -4,7 +4,7 @@ from wishlist import *
 class DoomedPetitioner(RollDefinition):
     """
     Void Linear Fusion Rifle, Adaptive Burst, Anti-Barrier, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/1501688142
     https://destiny.report/w/1501688142
     """
@@ -14,7 +14,7 @@ class DoomedPetitioner(RollDefinition):
 class EyesUnveiled(RollDefinition):
     """
     Void Linear Fusion Rifle, Precision Frame, Anti-Barrier
-    Source: Pit of Heresy
+    Source: Dungeon "Pit of Heresy"
     https://www.light.gg/db/items/4147428506
     https://destiny.report/w/4147428506
     """

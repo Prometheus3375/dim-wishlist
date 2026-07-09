@@ -7,7 +7,7 @@ default_mags = [magazine.AlloyMagazine, AnyPerk]
 class ChrysuraMelo(RollDefinition):
     """
     Arc Auto Rifle, Support Frame, Anti-Overload
-    Source: The Shattered Throne
+    Source: Dungeon "The Shattered Throne"
     https://www.light.gg/db/items/1750388538
     https://destiny.report/w/1750388538
     """
@@ -62,7 +62,7 @@ class NoHesitation(RollDefinition):
 class CuspSempiternal(RollDefinition):
     """
     Void Auto Rifle, Support Frame, Anti-Overload
-    Source: The Desert Perpetual (Epic)
+    Source: Epic raid "The Desert Perpetual"
     https://www.light.gg/db/items/2579693381
     https://destiny.report/w/2579693381
     """
@@ -142,7 +142,7 @@ class DECATUR02(RollDefinition):
 class Adamantite(RollDefinition):
     """
     Strand Auto Rifle, Support Frame, Anti-Overload
-    Source: Pit of Heresy
+    Source: Dungeon "Pit of Heresy"
     https://www.light.gg/db/items/621450049
     https://destiny.report/w/621450049
     """

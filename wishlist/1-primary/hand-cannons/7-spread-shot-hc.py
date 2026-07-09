@@ -73,7 +73,7 @@ class SarpedonD(RollDefinition):
 class PhoneutriaFera(RollDefinition):
     """
     Solar Hand Cannon, Spread Shot, Anti-Overload
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/3496887154
     https://destiny.report/w/3496887154
     """

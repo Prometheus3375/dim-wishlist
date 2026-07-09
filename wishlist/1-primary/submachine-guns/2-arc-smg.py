@@ -4,7 +4,7 @@ from wishlist import *
 class Antedate(RollDefinition):
     """
     Arc Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: The Desert Perpetual (Both)
+    Source: Raid "The Desert Perpetual"
     https://www.light.gg/db/items/1435808083
     https://destiny.report/w/1435808083
     """
@@ -30,7 +30,7 @@ class Antedate(RollDefinition):
 class IKELOS_SMG_v103(RollDefinition):
     """
     Arc Submachine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/2149683300
     https://destiny.report/w/2149683300
     """
@@ -63,7 +63,7 @@ class SeventhSeraphVY7(RollDefinition):
 class Subjunctive(RollDefinition):
     """
     Arc Submachine Gun, Lightweight Frame, Anti-Overload, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/1447836603
     https://destiny.report/w/1447836603
     """

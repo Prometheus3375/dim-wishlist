@@ -4,7 +4,7 @@ from wishlist import *
 class CALUSMiniTool(RollDefinition):
     """
     Solar Submachine Gun, MIDA Synergy, Anti-Overload, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/2490988246
     https://destiny.report/w/2490988246
     """
@@ -41,7 +41,7 @@ class MIDAMiniTool(RollDefinition):
 class NoSurvivors(RollDefinition):
     """
     Solar Submachine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Ghosts of the Deep
+    Source: Dungeon "Ghosts of the Deep"
     https://www.light.gg/db/items/3625452995
     https://destiny.report/w/3625452995
     """

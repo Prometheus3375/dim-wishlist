@@ -34,7 +34,7 @@ class DedGramaryeIV(RollDefinition):
 class FoundVerdict(RollDefinition):
     """
     Arc Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Vault of Glass
+    Source: Raid "Vault of Glass"
     https://www.light.gg/db/items/694500607
     https://destiny.report/w/694500607
     """
@@ -47,7 +47,7 @@ class FoundVerdict(RollDefinition):
 class Matador64(RollDefinition):
     """
     Arc Shotgun, Precision Frame, Anti-Barrier
-    Source: Grasp of Avarice
+    Source: Dungeon "Grasp of Avarice"
     https://www.light.gg/db/items/1518956169
     https://destiny.report/w/1518956169
     """
@@ -74,7 +74,7 @@ class MIDAMacroTool(RollDefinition):
 class ProphetOfDoom(RollDefinition):
     """
     Arc Shotgun, Precision Frame, Anti-Barrier, Craftable
-    Source: Garden of Salvation
+    Source: Raid "Garden of Salvation"
     https://www.light.gg/db/items/2145441168
     https://destiny.report/w/2145441168
     """

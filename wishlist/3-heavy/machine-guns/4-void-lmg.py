@@ -17,7 +17,7 @@ class BaneOfSorrow(RollDefinition):
 class Commemoration(RollDefinition):
     """
     Void Machine Gun, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/4230965989
     https://destiny.report/w/4230965989
     """
@@ -27,7 +27,7 @@ class Commemoration(RollDefinition):
 class CorrectiveMeasure(RollDefinition):
     """
     Void Machine Gun, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Vault of Glass
+    Source: Raid "Vault of Glass"
     https://www.light.gg/db/items/3654744298
     https://destiny.report/w/3654744298
     """
@@ -53,7 +53,7 @@ class Hammerhead(RollDefinition):
 class RetrofitEscapade(RollDefinition):
     """
     Void Machine Gun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/3103325054
     https://destiny.report/w/3103325054
     """

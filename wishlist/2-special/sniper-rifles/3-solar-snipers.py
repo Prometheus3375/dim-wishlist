@@ -4,7 +4,7 @@ from wishlist import *
 class Beloved(RollDefinition):
     """
     Solar Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/3107853529
     https://destiny.report/w/3107853529
     """
@@ -14,7 +14,7 @@ class Beloved(RollDefinition):
 class IKELOS_SR_v103(RollDefinition):
     """
     Solar Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/2302346155
     https://destiny.report/w/2302346155
     """
@@ -44,7 +44,7 @@ class LastForay(RollDefinition):
 class OmniscientEye(RollDefinition):
     """
     Solar Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Garden of Salvation
+    Source: Raid "Garden of Salvation"
     https://www.light.gg/db/items/147444292
     https://destiny.report/w/147444292
     """

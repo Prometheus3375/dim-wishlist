@@ -30,7 +30,7 @@ class CataphractGL3(RollDefinition):
 class KoraxissDistress(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Root of Nightmares
+    Source: Raid "Root of Nightmares"
     https://www.light.gg/db/items/2972949637
     https://destiny.report/w/2972949637
     """
@@ -43,7 +43,7 @@ class KoraxissDistress(RollDefinition):
 class TheEverPresent(RollDefinition):
     """
     Strand Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload
-    Source: The Desert Perpetual (Epic)
+    Source: Epic raid "The Desert Perpetual"
     https://www.light.gg/db/items/3177074192
     https://destiny.report/w/3177074192
     """

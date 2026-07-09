@@ -5,7 +5,7 @@ from . import *
 class NationOfBeasts(RollDefinition):
     """
     Arc Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Last Wish
+    Source: Raid "Last Wish"
     https://www.light.gg/db/items/70083888
     https://destiny.report/w/70083888
     """
@@ -23,7 +23,7 @@ class NationOfBeasts(RollDefinition):
 class Posterity(RollDefinition):
     """
     Arc Hand Cannon, Precision Frame, Anti-Barrier, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/3281285075
     https://destiny.report/w/3281285075
     """

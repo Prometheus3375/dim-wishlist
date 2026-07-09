@@ -4,7 +4,7 @@ from wishlist import *
 class Adhortative(RollDefinition):
     """
     Solar Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/2993554824
     https://destiny.report/w/2993554824
     """
@@ -44,7 +44,7 @@ class JorumsClaw(RollDefinition):
 class Nullify(RollDefinition):
     """
     Solar Pulse Rifle, Heavy Burst, Anti-Unstoppable, Craftable
-    Source: Salvation's Edge
+    Source: Raid "Salvation's Edge"
     https://www.light.gg/db/items/859869931
     https://destiny.report/w/859869931
     """

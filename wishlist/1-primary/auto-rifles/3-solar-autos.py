@@ -5,7 +5,7 @@ from . import *
 class AbyssDefiant(RollDefinition):
     """
     Solar Auto Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: Crota's End
+    Source: Raid "Crota's End"
     https://www.light.gg/db/items/833898322
     https://destiny.report/w/833898322
     """
@@ -142,7 +142,7 @@ class TheSummoner(RollDefinition):
 class ZealousIdeal(RollDefinition):
     """
     Solar Auto Rifle, Balanced Heat Weapon, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/1863583117
     https://destiny.report/w/1863583117
     """

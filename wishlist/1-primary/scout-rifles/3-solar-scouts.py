@@ -46,7 +46,7 @@ class TimewornWayfarer(RollDefinition):
 class Trustee(RollDefinition):
     """
     Solar Scout Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/1392919471
     https://destiny.report/w/1392919471
     """
@@ -56,7 +56,7 @@ class Trustee(RollDefinition):
 class VisionOfConfluence(RollDefinition):
     """
     Solar Scout Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: Vault of Glass
+    Source: Raid "Vault of Glass"
     https://www.light.gg/db/items/3444688218
     https://destiny.report/w/3444688218
     """

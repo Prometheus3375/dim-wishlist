@@ -14,7 +14,7 @@ class Heretic(RollDefinition):
 class Micromort(RollDefinition):
     """
     Arc Rocket Launcher, Precision Frame, Anti-Barrier
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/474671201
     https://destiny.report/w/474671201
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Forbearance(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable, Craftable
-    Source: Vow of the Disciple
+    Source: Raid "Vow of the Disciple"
     https://www.light.gg/db/items/613334176
     https://destiny.report/w/613334176
     """
@@ -27,7 +27,7 @@ class ForbearanceOnslaught(RollDefinition):
 class ProdigalReturn(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload, Craftable
-    Source: NODE.OVRD.AVALON
+    Source: Exotic mission "NODE.OVRD.AVALON"
     https://www.light.gg/db/items/268260373
     https://destiny.report/w/268260373
     """
@@ -37,7 +37,7 @@ class ProdigalReturn(RollDefinition):
 class Psychopomp(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
-    Source: Pit of Heresy
+    Source: Dungeon "Pit of Heresy"
     https://www.light.gg/db/items/1835232052
     https://destiny.report/w/1835232052
     """

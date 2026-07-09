@@ -4,7 +4,7 @@ from wishlist import *
 class Disparity(RollDefinition):
     """
     Stasis Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/1751893422
     https://destiny.report/w/1751893422
     """

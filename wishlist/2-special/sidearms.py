@@ -14,7 +14,7 @@ class HighAlbedo(RollDefinition):
 class IndebtedKindness(RollDefinition):
     """
     Arc Sidearm, Micro-Missile Frame, Anti-Unstoppable
-    Source: Warlord's Ruin
+    Source: Dungeon "Warlord's Ruin"
     https://www.light.gg/db/items/2554513694
     https://destiny.report/w/2554513694
     """

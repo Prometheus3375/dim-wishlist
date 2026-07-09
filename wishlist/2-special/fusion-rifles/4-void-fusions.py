@@ -57,7 +57,7 @@ class TheEpicurean(RollDefinition):
 class VSGraviticArrest(RollDefinition):
     """
     Void Fusion Rifle, Adaptive Frame, Anti-Barrier
-    Source: Vesper's Host
+    Source: Dungeon "Vesper's Host"
     https://www.light.gg/db/items/3102162710
     https://destiny.report/w/3102162710
     """
@@ -67,7 +67,7 @@ class VSGraviticArrest(RollDefinition):
 class ZealotsReward(RollDefinition):
     """
     Void Fusion Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Garden of Salvation
+    Source: Raid "Garden of Salvation"
     https://www.light.gg/db/items/2720651699
     https://destiny.report/w/2720651699
     """

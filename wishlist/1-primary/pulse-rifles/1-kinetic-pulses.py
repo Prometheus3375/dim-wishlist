@@ -50,7 +50,7 @@ class Bygones(RollDefinition):
 class ChatteringBone(RollDefinition):
     """
     Kinetic Pulse Rifle, Lightweight Frame, Anti-Overload, Craftable
-    Source: Last Wish
+    Source: Raid "Last Wish"
     https://www.light.gg/db/items/501329015
     https://destiny.report/w/501329015
     """
@@ -83,7 +83,7 @@ class ColdDenial(RollDefinition):
 class PieceOfMind(RollDefinition):
     """
     Kinetic Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Vox Obscura
+    Source: Exotic mission "Vox Obscura"
     https://www.light.gg/db/items/2097055732
     https://destiny.report/w/2097055732
     """
@@ -93,7 +93,7 @@ class PieceOfMind(RollDefinition):
 class SacredProvenance(RollDefinition):
     """
     Kinetic Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
-    Source: Garden of Salvation
+    Source: Raid "Garden of Salvation"
     https://www.light.gg/db/items/2241507890
     https://destiny.report/w/2241507890
     """
@@ -103,7 +103,7 @@ class SacredProvenance(RollDefinition):
 class SmiteOfMerain(RollDefinition):
     """
     Kinetic Pulse Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: King's Fall
+    Source: Raid "King's Fall"
     https://www.light.gg/db/items/2221264583
     https://destiny.report/w/2221264583
     """

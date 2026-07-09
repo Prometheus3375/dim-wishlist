@@ -71,7 +71,7 @@ class FortunateStar(RollDefinition):
 class Lethophobia(RollDefinition):
     """
     Void Combat Bow, Lightweight Frame, Anti-Overload, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/3710082365
     https://destiny.report/w/3710082365
     """
@@ -81,7 +81,7 @@ class Lethophobia(RollDefinition):
 class UnderYourSkin(RollDefinition):
     """
     Void Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: Vox Obscura
+    Source: Exotic mission "Vox Obscura"
     https://www.light.gg/db/items/232928045
     https://destiny.report/w/232928045
     """

@@ -5,7 +5,7 @@ from . import *
 class Raconteur(RollDefinition):
     """
     Stasis Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: NODE.OVRD.AVALON
+    Source: Exotic mission "NODE.OVRD.AVALON"
     https://www.light.gg/db/items/45643573
     https://destiny.report/w/45643573
     """

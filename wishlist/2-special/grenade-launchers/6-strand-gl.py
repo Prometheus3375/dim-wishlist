@@ -34,7 +34,7 @@ class FestivalFlight(RollDefinition):
 class GizmoWeft(RollDefinition):
     """
     Strand Breechloaded Grenade Launcher, Micro-Missile Frame, Anti-Unstoppable
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/4069880346
     https://destiny.report/w/4069880346
     """

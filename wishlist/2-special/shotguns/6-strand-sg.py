@@ -4,7 +4,7 @@ from wishlist import *
 class Supercluster(RollDefinition):
     """
     Strand Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/92459755
     https://destiny.report/w/92459755
     """
@@ -14,7 +14,7 @@ class Supercluster(RollDefinition):
 class Swordbreaker(RollDefinition):
     """
     Strand Shotgun, Lightweight Frame, Anti-Overload, Craftable
-    Source: Crota's End
+    Source: Raid "Crota's End"
     https://www.light.gg/db/items/3163900678
     https://destiny.report/w/3163900678
     """

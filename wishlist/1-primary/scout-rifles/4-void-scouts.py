@@ -40,7 +40,7 @@ class BryasLove(RollDefinition):
 class DoomOfChelchis(RollDefinition):
     """
     Void Scout Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: King's Fall
+    Source: Raid "King's Fall"
     https://www.light.gg/db/items/1937552980
     https://destiny.report/w/1937552980
     """

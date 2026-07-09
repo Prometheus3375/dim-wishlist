@@ -14,7 +14,7 @@ class AbideTheReturn(RollDefinition):
 class Caretaker(RollDefinition):
     """
     Solar Sword, Adaptive Frame, Anti-Barrier, Craftable
-    Source: NODE.OVRD.AVALON
+    Source: Exotic mission "NODE.OVRD.AVALON"
     https://www.light.gg/db/items/2508948099
     https://destiny.report/w/2508948099
     """
@@ -44,7 +44,7 @@ class SolasScar(RollDefinition):
 class Synanceia(RollDefinition):
     """
     Solar Sword, Wave Sword Frame, Anti-Unstoppable
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/1823308496
     https://destiny.report/w/1823308496
     """

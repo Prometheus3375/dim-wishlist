@@ -69,7 +69,7 @@ class HorrorStory(RollDefinition):
 class Intercalary(RollDefinition):
     """
     Stasis Auto Rifle, Adaptive Frame, Anti-Barrier
-    Source: The Desert Perpetual (Both)
+    Source: Raid "The Desert Perpetual"
     https://www.light.gg/db/items/2725426834
     https://destiny.report/w/2725426834
     """

@@ -37,7 +37,7 @@ class FaithKeeper(RollDefinition):
 class FoldedRoot(RollDefinition):
     """
     Void Rocket Launcher, Aggressive Frame, Anti-Unstoppable
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/2725894221
     https://destiny.report/w/2725894221
     """

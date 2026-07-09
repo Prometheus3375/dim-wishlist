@@ -5,7 +5,7 @@ from . import *
 class KingOrfeo(RollDefinition):
     """
     Arc Combat Bow, Precision Frame, Anti-Barrier
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/3481382332
     https://destiny.report/w/3481382332
     """
@@ -46,7 +46,7 @@ class KingOrfeo(RollDefinition):
 class NonDenouement(RollDefinition):
     """
     Arc Combat Bow, Precision Frame, Anti-Barrier, Craftable
-    Source: Salvation's Edge
+    Source: Raid "Salvation's Edge"
     https://www.light.gg/db/items/1770490683
     https://destiny.report/w/1770490683
     """
@@ -116,7 +116,7 @@ class PointOfTheStag(RollDefinition):
 class TripwireCanary(RollDefinition):
     """
     Arc Combat Bow, Lightweight Frame, Anti-Overload, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/3849444474
     https://destiny.report/w/3849444474
     """

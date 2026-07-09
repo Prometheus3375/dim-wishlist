@@ -34,7 +34,7 @@ class Fortissimo11(RollDefinition):
 class Heritage(RollDefinition):
     """
     Kinetic Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/4248569242
     https://destiny.report/w/4248569242
     """

@@ -5,7 +5,7 @@ from . import *
 class AncientGospel(RollDefinition):
     """
     Void Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Garden of Salvation
+    Source: Raid "Garden of Salvation"
     https://www.light.gg/db/items/963574173
     https://destiny.report/w/963574173
     """
@@ -61,7 +61,7 @@ class ExaltedTruth(RollDefinition):
 class IKELOS_HC_v103(RollDefinition):
     """
     Void Hand Cannon, Precision Frame, Anti-Barrier, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/1731355324
     https://destiny.report/w/1731355324
     """
@@ -142,7 +142,7 @@ class MosAthanorIV(RollDefinition):
 class Optative(RollDefinition):
     """
     Void Hand Cannon, Precision Frame, Anti-Barrier, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/2817683783
     https://destiny.report/w/2817683783
     """
@@ -162,7 +162,7 @@ class TargetedRedaction(RollDefinition):
 class WordOfCrota(RollDefinition):
     """
     Void Hand Cannon, Precision Frame, Anti-Barrier, Craftable
-    Source: Crota's End
+    Source: Raid "Crota's End"
     https://www.light.gg/db/items/120706239
     https://destiny.report/w/120706239
     """

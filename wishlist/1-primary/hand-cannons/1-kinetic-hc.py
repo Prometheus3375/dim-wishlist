@@ -5,7 +5,7 @@ from . import *
 class Austringer(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/3055790362
     https://destiny.report/w/3055790362
     """
@@ -55,7 +55,7 @@ class DFA(RollDefinition):
 class Fatebringer(RollDefinition):
     """
     Kinetic Hand Cannon, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Vault of Glass
+    Source: Raid "Vault of Glass"
     https://www.light.gg/db/items/4184168210
     https://destiny.report/w/4184168210
     """

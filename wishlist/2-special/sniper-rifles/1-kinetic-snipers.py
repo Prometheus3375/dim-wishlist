@@ -27,7 +27,7 @@ class BiteOfTheFox(RollDefinition):
 class DefianceOfYasmin(RollDefinition):
     """
     Kinetic Sniper Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: King's Fall
+    Source: Raid "King's Fall"
     https://www.light.gg/db/items/3228096719
     https://destiny.report/w/3228096719
     """
@@ -50,7 +50,7 @@ class EyeOfSol(RollDefinition):
 class PraedythsRevenge(RollDefinition):
     """
     Kinetic Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Vault of Glass
+    Source: Raid "Vault of Glass"
     https://www.light.gg/db/items/3844610113
     https://destiny.report/w/3844610113
     """
@@ -76,7 +76,7 @@ class SomethingSomething(RollDefinition):
 class Succession(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/2990047042
     https://destiny.report/w/2990047042
     """
@@ -96,7 +96,7 @@ class SuccessionOnslaught(RollDefinition):
 class TheSupremacy(RollDefinition):
     """
     Kinetic Sniper Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Last Wish
+    Source: Raid "Last Wish"
     https://www.light.gg/db/items/2884596447
     https://destiny.report/w/2884596447
     """

@@ -34,7 +34,7 @@ class GunnorasAxe(RollDefinition):
 class IKELOS_SG_v103(RollDefinition):
     """
     Solar Shotgun, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Seraph's Shield
+    Source: Exotic mission "Seraph's Shield"
     https://www.light.gg/db/items/1168625549
     https://destiny.report/w/1168625549
     """
@@ -74,7 +74,7 @@ class SeventhSeraphCQC12(RollDefinition):
 class StarscapeNull(RollDefinition):
     """
     Solar Shotgun, Lightweight Frame, Anti-Overload
-    Source: The Desert Perpetual (Epic)
+    Source: Epic raid "The Desert Perpetual"
     https://www.light.gg/db/items/3868973291
     https://destiny.report/w/3868973291
     """
@@ -84,7 +84,7 @@ class StarscapeNull(RollDefinition):
 class WithoutRemorse(RollDefinition):
     """
     Solar Shotgun, Lightweight Frame, Anti-Overload, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/1478986057
     https://destiny.report/w/1478986057
     """

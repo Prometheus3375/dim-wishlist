@@ -93,7 +93,7 @@ class RoundRobin(RollDefinition):
 class SixthSense(RollDefinition):
     """
     Strand Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/3163473092
     https://destiny.report/w/3163473092
     """
@@ -109,7 +109,7 @@ class SixthSense(RollDefinition):
 class Unloved(RollDefinition):
     """
     Strand Hand Cannon, Heavy Burst, Anti-Unstoppable
-    Source: Sundered Doctrine
+    Source: Dungeon "Sundered Doctrine"
     https://www.light.gg/db/items/388390591
     https://destiny.report/w/388390591
     """

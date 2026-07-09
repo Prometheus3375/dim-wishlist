@@ -24,7 +24,7 @@ class AFineMemorial(RollDefinition):
 class BitterEnd(RollDefinition):
     """
     Arc Machine Gun, Balanced Heat Weapon, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/954563454
     https://destiny.report/w/954563454
     """
@@ -84,7 +84,7 @@ class SeventhSeraphSAW(RollDefinition):
 class SongOfIrYut(RollDefinition):
     """
     Arc Machine Gun, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Crota's End
+    Source: Raid "Crota's End"
     https://www.light.gg/db/items/2828278545
     https://destiny.report/w/2828278545
     """
@@ -97,7 +97,7 @@ class SongOfIrYut(RollDefinition):
 class TerminusHorizon(RollDefinition):
     """
     Arc Machine Gun, High-Impact Frame, Anti-Unstoppable
-    Source: Spire of the Watcher
+    Source: Dungeon "Spire of the Watcher"
     https://www.light.gg/db/items/3814261872
     https://destiny.report/w/3814261872
     """

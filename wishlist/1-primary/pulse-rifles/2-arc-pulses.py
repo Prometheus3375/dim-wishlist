@@ -56,7 +56,7 @@ class InfinitePaths8(RollDefinition):
 class Insidious(RollDefinition):
     """
     Arc Pulse Rifle, Aggressive Burst, Anti-Unstoppable, Craftable
-    Source: Vow of the Disciple
+    Source: Raid "Vow of the Disciple"
     https://www.light.gg/db/items/3428521585
     https://destiny.report/w/3428521585
     """
@@ -66,7 +66,7 @@ class Insidious(RollDefinition):
 class OversoulEdict(RollDefinition):
     """
     Arc Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Crota's End
+    Source: Raid "Crota's End"
     https://www.light.gg/db/items/1098171824
     https://destiny.report/w/1098171824
     """
@@ -89,7 +89,7 @@ class PhyllotacticSpiral(RollDefinition):
 class ScalarPotential(RollDefinition):
     """
     Arc Pulse Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Starcrossed
+    Source: Exotic mission "Starcrossed"
     https://www.light.gg/db/items/2563668388
     https://destiny.report/w/2563668388
     """

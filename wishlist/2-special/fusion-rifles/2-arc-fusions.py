@@ -24,7 +24,7 @@ class LoadedQuestion(RollDefinition):
 class MidhasReckoning(RollDefinition):
     """
     Arc Fusion Rifle, High-Impact Frame, Anti-Unstoppable, Craftable
-    Source: King's Fall
+    Source: Raid "King's Fall"
     https://www.light.gg/db/items/3969066556
     https://destiny.report/w/3969066556
     """
@@ -60,7 +60,7 @@ class PLUGONE1(RollDefinition):
 class TecheunForce(RollDefinition):
     """
     Arc Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Last Wish
+    Source: Raid "Last Wish"
     https://www.light.gg/db/items/3591141932
     https://destiny.report/w/3591141932
     """

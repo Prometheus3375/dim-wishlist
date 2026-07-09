@@ -44,7 +44,7 @@ class ExilesCurse(RollDefinition):
 class FiniteMaybe(RollDefinition):
     """
     Solar Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: The Desert Perpetual (Both)
+    Source: Raid "The Desert Perpetual"
     https://www.light.gg/db/items/3241217409
     https://destiny.report/w/3241217409
     """
@@ -70,7 +70,7 @@ class FiniteMaybe(RollDefinition):
 class RoyalExecutioner(RollDefinition):
     """
     Solar Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: NODE.OVRD.AVALON
+    Source: Exotic mission "NODE.OVRD.AVALON"
     https://www.light.gg/db/items/1720503118
     https://destiny.report/w/1720503118
     """

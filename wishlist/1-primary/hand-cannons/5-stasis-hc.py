@@ -22,7 +22,7 @@ class BoldEndings(RollDefinition):
 class Eyasluna(RollDefinition):
     """
     Stasis Hand Cannon, Adaptive Frame, Anti-Barrier
-    Source: Grasp of Avarice
+    Source: Dungeon "Grasp of Avarice"
     https://www.light.gg/db/items/386864872
     https://destiny.report/w/386864872
     """
@@ -224,7 +224,7 @@ class SpareRations(RollDefinition):
 class Vulpecula(RollDefinition):
     """
     Stasis Hand Cannon, Precision Frame, Anti-Barrier
-    Source: The Shattered Throne
+    Source: Dungeon "The Shattered Throne"
     https://www.light.gg/db/items/3245446311
     https://destiny.report/w/3245446311
     """

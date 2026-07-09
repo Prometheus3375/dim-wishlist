@@ -4,7 +4,7 @@ from wishlist import *
 class LongArm(RollDefinition):
     """
     Arc Scout Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Spire of the Watcher
+    Source: Dungeon "Spire of the Watcher"
     https://www.light.gg/db/items/3418719964
     https://destiny.report/w/3418719964
     """
@@ -47,7 +47,7 @@ class TarnishedMettle(RollDefinition):
 class Unworthy(RollDefinition):
     """
     Arc Scout Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Sundered Doctrine
+    Source: Dungeon "Sundered Doctrine"
     https://www.light.gg/db/items/1700366811
     https://destiny.report/w/1700366811
     """
@@ -57,7 +57,7 @@ class Unworthy(RollDefinition):
 class VoltaicShade(RollDefinition):
     """
     Arc Scout Rifle, Balanced Heat Weapon, Anti-Overload
-    Source: Equilibrium
+    Source: Dungeon "Equilibrium"
     https://www.light.gg/db/items/71057630
     https://destiny.report/w/71057630
     """

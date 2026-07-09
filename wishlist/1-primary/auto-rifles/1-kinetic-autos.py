@@ -101,7 +101,7 @@ class EverburningGlitz(RollDefinition):
 class Firefright(RollDefinition):
     """
     Kinetic Auto Rifle, Precision Frame, Anti-Barrier, Craftable
-    Source: Presage
+    Source: Exotic mission "Presage"
     https://www.light.gg/db/items/2778013407
     https://destiny.report/w/2778013407
     """

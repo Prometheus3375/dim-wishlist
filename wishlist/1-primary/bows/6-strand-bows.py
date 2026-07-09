@@ -27,7 +27,7 @@ class HushedWhisper(RollDefinition):
 class VengefulWhisper(RollDefinition):
     """
     Strand Combat Bow, Precision Frame, Anti-Barrier
-    Source: Warlord's Ruin
+    Source: Dungeon "Warlord's Ruin"
     https://www.light.gg/db/items/1054567917
     https://destiny.report/w/1054567917
     """

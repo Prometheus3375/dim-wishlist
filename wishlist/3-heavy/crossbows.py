@@ -4,7 +4,7 @@ from wishlist import *
 class OpaqueHourglass(RollDefinition):
     """
     Arc Crossbow, High-Impact Frame, Anti-Unstoppable
-    Source: The Desert Perpetual (Both)
+    Source: Raid "The Desert Perpetual"
     https://www.light.gg/db/items/1553681400
     https://destiny.report/w/1553681400
     """
@@ -69,7 +69,7 @@ class AGoodShout(RollDefinition):
 class Submersion(RollDefinition):
     """
     Stasis Crossbow, High-Impact Frame, Anti-Unstoppable
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/3524386983
     https://destiny.report/w/3524386983
     """

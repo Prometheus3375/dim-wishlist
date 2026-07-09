@@ -124,7 +124,7 @@ class SorrowsVerse(RollDefinition):
 class SweetSorrow(RollDefinition):
     """
     Arc Auto Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
-    Source: Vox Obscura
+    Source: Exotic mission "Vox Obscura"
     https://www.light.gg/db/items/1248372789
     https://destiny.report/w/1248372789
     """
@@ -161,7 +161,7 @@ class Trendsetter(RollDefinition):
 class VSPyroelectricPropellant(RollDefinition):
     """
     Arc Auto Rifle, Adaptive Frame, Anti-Barrier
-    Source: Vesper's Host
+    Source: Dungeon "Vesper's Host"
     https://www.light.gg/db/items/2460368549
     https://destiny.report/w/2460368549
     """

@@ -4,7 +4,7 @@ from wishlist import *
 class Bequest(RollDefinition):
     """
     Arc Sword, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Deep Stone Crypt
+    Source: Raid "Deep Stone Crypt"
     https://www.light.gg/db/items/3366545721
     https://destiny.report/w/3366545721
     """
@@ -24,7 +24,7 @@ class Goldtusk(RollDefinition):
 class HardlineCut(RollDefinition):
     """
     Arc Sword, Adaptive Frame, Anti-Barrier
-    Source: Lawless Events
+    Source: Events during season "Lawless"
     https://www.light.gg/db/items/3461043766
     https://destiny.report/w/3461043766
     """
@@ -50,7 +50,7 @@ class HalfTruths(RollDefinition):
 class HeroOfAges(RollDefinition):
     """
     Arc Sword, Aggressive Frame, Anti-Unstoppable
-    Source: Grasp of Avarice
+    Source: Dungeon "Grasp of Avarice"
     https://www.light.gg/db/items/944708986
     https://destiny.report/w/944708986
     """
@@ -80,7 +80,7 @@ class NightTerror(RollDefinition):
 class SummumBonum(RollDefinition):
     """
     Arc Sword, Wave Sword Frame, Anti-Unstoppable, Craftable
-    Source: Salvation's Edge
+    Source: Raid "Salvation's Edge"
     https://www.light.gg/db/items/3569407878
     https://destiny.report/w/3569407878
     """

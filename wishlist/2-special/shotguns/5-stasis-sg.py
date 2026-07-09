@@ -14,7 +14,7 @@ class Deadlock(RollDefinition):
 class Fractethyst(RollDefinition):
     """
     Stasis Shotgun, Precision Frame, Anti-Barrier
-    Source: The Shattered Throne
+    Source: Dungeon "The Shattered Throne"
     https://www.light.gg/db/items/2993995118
     https://destiny.report/w/2993995118
     """
@@ -70,7 +70,7 @@ class OneSmallStep(RollDefinition):
 class Trachinus(RollDefinition):
     """
     Stasis Shotgun, Rapid Fire Slug, Anti-Overload
-    Source: Reclamation Events
+    Source: Events during season "Reclamation"
     https://www.light.gg/db/items/3635232671
     https://destiny.report/w/3635232671
     """
