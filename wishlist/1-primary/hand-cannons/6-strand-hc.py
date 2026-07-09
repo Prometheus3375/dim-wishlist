@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class BetterDevils(RollDefinition):
@@ -12,6 +13,24 @@ class BetterDevils(RollDefinition):
         Item('Better Devils', hash=4059111041),
         Item('Better Devils', hash=2106353446),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Reconstruction],
+            [trait.Slice],
+            [trait.ExplosivePayload],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Strand combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Slice],
+            [trait.Hatchling],
+            ),
+        ]
 
 
 class CorundumHammer(RollDefinition):
@@ -22,18 +41,29 @@ class CorundumHammer(RollDefinition):
     https://destiny.report/w/2263462407
     """
     item = Item('Corundum Hammer', hash=2263462407)
+    is_chosen = True
     rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.Reconstruction],
+            [trait.Firefly],
+            [trait.ShootToLoot],
+            [trait.Tear],
+            [trait.ExplosivePayload],
+            ),
         Roll(
             'Shoot to Loot',
             [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            default_mags,
             [trait.ShootToLoot],
             [trait.ExplosivePayload],
             ),
         Roll(
             'Ad clear',
             [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            default_mags,
             [trait.Firefly],
             [trait.Tear],
             ),
@@ -84,3 +114,22 @@ class Unloved(RollDefinition):
     https://destiny.report/w/388390591
     """
     item = Item('Unloved', hash=388390591)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Dragonfly],
+            [trait.Hatchling],
+            [trait.Tear],
+            [trait.ParacausalAffinity],
+            ),
+        Roll(
+            'Strand combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [magazine.AlloyMagazine, AnyPerk],
+            [trait.Hatchling],
+            [trait.Tear],
+            ),
+        ]
