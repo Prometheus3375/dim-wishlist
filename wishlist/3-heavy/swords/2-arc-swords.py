@@ -1,6 +1,16 @@
 from wishlist import *
 
 
+class Bequest(RollDefinition):
+    """
+    Arc Sword, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/3366545721
+    https://destiny.report/w/3366545721
+    """
+    item = Item('Bequest', hash=3366545721)
+
+
 class Goldtusk(RollDefinition):
     """
     Arc Sword, Lightweight Frame, Anti-Overload, Craftable

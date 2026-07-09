@@ -14,6 +14,16 @@ class BaneOfSorrow(RollDefinition):
         ]
 
 
+class Commemoration(RollDefinition):
+    """
+    Void Machine Gun, Adaptive Frame, Anti-Barrier, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/4230965989
+    https://destiny.report/w/4230965989
+    """
+    item = Item('Commemoration', hash=4230965989)
+
+
 class CorrectiveMeasure(RollDefinition):
     """
     Void Machine Gun, Aggressive Frame, Anti-Unstoppable, Craftable

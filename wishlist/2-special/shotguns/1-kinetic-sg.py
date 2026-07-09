@@ -31,6 +31,16 @@ class Fortissimo11(RollDefinition):
     item = Item('Fortissimo-11', hash=963732595)
 
 
+class Heritage(RollDefinition):
+    """
+    Kinetic Shotgun, Pinpoint Slug Frame, Anti-Barrier, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/4248569242
+    https://destiny.report/w/4248569242
+    """
+    item = Item('Heritage', hash=4248569242)
+
+
 class ImperialDecree(RollDefinition):
     """
     Kinetic Shotgun, Aggressive Frame, Anti-Unstoppable, Craftable

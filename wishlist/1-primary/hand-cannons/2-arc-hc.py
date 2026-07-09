@@ -20,6 +20,16 @@ class NationOfBeasts(RollDefinition):
         )
 
 
+class Posterity(RollDefinition):
+    """
+    Arc Hand Cannon, Precision Frame, Anti-Barrier, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/3281285075
+    https://destiny.report/w/3281285075
+    """
+    item = Item('Posterity', hash=3281285075)
+
+
 class SightlineSurvey(RollDefinition):
     """
     Arc Hand Cannon, Precision Frame, Anti-Barrier, Craftable

@@ -43,6 +43,16 @@ class TimewornWayfarer(RollDefinition):
     item = Item('Timeworn Wayfarer', hash=1058098236)
 
 
+class Trustee(RollDefinition):
+    """
+    Solar Scout Rifle, Rapid-Fire Frame, Anti-Overload, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/1392919471
+    https://destiny.report/w/1392919471
+    """
+    item = Item('Trustee', hash=1392919471)
+
+
 class VisionOfConfluence(RollDefinition):
     """
     Solar Scout Rifle, Precision Frame, Anti-Barrier, Craftable

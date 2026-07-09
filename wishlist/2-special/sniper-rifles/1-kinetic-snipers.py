@@ -73,6 +73,16 @@ class SomethingSomething(RollDefinition):
         ]
 
 
+class Succession(RollDefinition):
+    """
+    Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable, Craftable
+    Source: Deep Stone Crypt
+    https://www.light.gg/db/items/2990047042
+    https://destiny.report/w/2990047042
+    """
+    item = Item('Succession', hash=2990047042)
+
+
 class SuccessionOnslaught(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable
