@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Corrasion(RollDefinition):
@@ -19,6 +20,13 @@ class CruelMercy(RollDefinition):
     https://destiny.report/w/4011513985
     """
     item = Item('Cruel Mercy', hash=4011513985)
+    roll = Roll(
+        'Grenade combo',
+        default_barrels,
+        default_mags,
+        [trait.Demolitionist],
+        [trait.AdrenalineJunkie],
+        )
 
 
 class HorrorsLeast(RollDefinition):
@@ -34,9 +42,18 @@ class HorrorsLeast(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.Overflow],
+            [trait.JoltingFeedback],
+            [trait.Rampage],
+            ),
+        Roll(
             'Arc combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback],
             ),
@@ -61,6 +78,31 @@ class Insidious(RollDefinition):
     https://destiny.report/w/3428521585
     """
     item = Item('Insidious', hash=3428521585)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Dragonfly],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Dragonfly],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class OversoulEdict(RollDefinition):
@@ -73,6 +115,33 @@ class OversoulEdict(RollDefinition):
     items = [
         Item('Oversoul Edict', hash=1098171824),
         Item('Oversoul Edict (Adept)', hash=578105049),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.SuperchargedMagazine],
+            [trait.AdrenalineJunkie],
+            [trait.JoltingFeedback],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Arc combo',
+            default_barrels,
+            default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.GearShift],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
         ]
 
 
