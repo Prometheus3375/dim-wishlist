@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ClawsOfTheWolf(RollDefinition):
@@ -9,6 +10,13 @@ class ClawsOfTheWolf(RollDefinition):
     https://destiny.report/w/3634548599
     """
     item = Item('Claws of the Wolf', hash=3634548599)
+    roll = Roll(
+        'Void combo',
+        default_barrels,
+        default_mags,
+        [trait.RepulsorBrace],
+        [trait.DestabilizingRounds],
+        )
 
 
 class ElsiesRifle(RollDefinition):
@@ -19,6 +27,33 @@ class ElsiesRifle(RollDefinition):
     https://destiny.report/w/381446446
     """
     item = Item("Elsie's Rifle", hash=381446446)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.DimensionalShift],
+            [trait.RepulsorBrace],
+            [trait.CollectiveDemolition],
+            [trait.Demoralize],
+            [trait.CollectiveAction],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Collective combo',
+            default_barrels,
+            default_mags,
+            [trait.DimensionalShift, trait.CollectiveDemolition],
+            [trait.CollectiveAction],
+            ),
+        ]
 
 
 class Gridskipper(RollDefinition):
@@ -29,6 +64,33 @@ class Gridskipper(RollDefinition):
     https://destiny.report/w/3176697589
     """
     item = Item('Gridskipper', hash=3176697589)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.DimensionalShift],
+            [trait.Demoralize],
+            [trait.Demolitionist],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            [trait.DesperateMeasures],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Ability combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.DesperateMeasures],
+            ),
+        ]
 
 
 class HighTyrant(RollDefinition):
@@ -39,27 +101,25 @@ class HighTyrant(RollDefinition):
     https://destiny.report/w/2873508409
     """
     item = Item('High Tyrant', hash=2873508409)
+    is_chosen = True
     rolls = [
         Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
+            'Super roll',
+            default_barrels,
             [battery.IonizedHeatsink, AnyPerk],
-            [trait.DestabilizingRounds, trait.Demolitionist],
-            [trait.MasterOfArms, trait.Meganeura, trait.Demoralize],
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            [trait.Demolitionist],
+            [trait.WitheringGaze],
+            [trait.Demoralize],
+            [trait.Meganeura],
             ),
         Roll(
             'Void combo',
-            [barrel.ArrowheadBrake, AnyPerk],
+            default_barrels,
             [battery.IonizedHeatsink, AnyPerk],
-            [trait.RepulsorBrace],
+            [trait.RepulsorBrace, trait.DestabilizingRounds],
             [trait.Demoralize],
-            ),
-        Roll(
-            'Withering Gaze',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.IonizedHeatsink, AnyPerk],
-            [trait.DestabilizingRounds],
-            [trait.WitheringGaze],
             ),
         ]
 
@@ -74,6 +134,34 @@ class JoxersLongsword(RollDefinition):
     items = [
         Item("Joxer's Longsword", hash=2150012406),
         Item("Joxer's Longsword", hash=3538003989),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.Dragonfly],
+            [trait.RepulsorBrace],
+            [trait.AdrenalineJunkie],
+            [trait.DestabilizingRounds],
+            [trait.Demoralize],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds, trait.Demoralize],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
         ]
 
 
@@ -95,6 +183,32 @@ class Premonition(RollDefinition):
     https://destiny.report/w/1969802090
     """
     item = Item('Premonition', hash=1969802090)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.Firefly],
+            [trait.Demoralize],
+            [trait.DestabilizingRounds],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace, trait.Demoralize],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class TheMartlet(RollDefinition):
@@ -107,10 +221,19 @@ class TheMartlet(RollDefinition):
     item = Item('The Martlet', hash=877384)
     rolls = [
         Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.RepulsorBrace, trait.Firefly],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.Firefly],
+            [trait.DestabilizingRounds],
+            [trait.WitheringGaze],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
             [trait.DestabilizingRounds],
             ),
         ]
@@ -124,6 +247,24 @@ class VelesX(RollDefinition):
     https://destiny.report/w/438540299
     """
     item = Item('Veles-X', hash=438540299)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.Demoralize],
+            [trait.DestabilizingRounds],
+            [trait.Firefly],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace, trait.Demoralize],
+            [trait.DestabilizingRounds],
+            ),
+        ]
 
 
 class Yesteryear(RollDefinition):
