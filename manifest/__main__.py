@@ -116,7 +116,7 @@ def parse_cmd_arguments() -> Namespace:
     parser_generate.set_defaults(function=generate_commands)
     parser_generate.add_argument(*help_args, **help_kwargs)
 
-    perk_database_default = 'releases.v800.annual'
+    perk_database_default = 'releases.v500.annual'
     parser_generate.add_argument(
         '-p', '--perk-database',
         nargs='?',
