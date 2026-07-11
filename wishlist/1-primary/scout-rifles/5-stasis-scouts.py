@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Jurisprudent(RollDefinition):
@@ -9,6 +10,13 @@ class Jurisprudent(RollDefinition):
     https://destiny.report/w/4090134063
     """
     item = Item('Jurisprudent', hash=4090134063)
+    roll = Roll(
+        'Stasis combo',
+        default_barrels,
+        default_mags,
+        [trait.Rimestealer],
+        [trait.Headstone],
+        )
 
 
 class LiveFire(RollDefinition):
@@ -19,6 +27,24 @@ class LiveFire(RollDefinition):
     https://destiny.report/w/3156551031
     """
     item = Item('Live Fire', hash=3156551031)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.AirTrigger],
+            [trait.Headstone],
+            [trait.ShootToLoot],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        ]
 
 
 class RedTape(RollDefinition):
@@ -29,3 +55,38 @@ class RedTape(RollDefinition):
     https://destiny.report/w/736362511
     """
     item = Item('Red Tape', hash=736362511)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.AttritionOrbs],
+            [trait.Demolitionist],
+            [trait.Headstone],
+            [trait.AdrenalineJunkie],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        Roll(
+            'Hit combo',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]

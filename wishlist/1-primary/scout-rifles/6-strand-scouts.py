@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class FangOfIrYut(RollDefinition):
@@ -12,6 +13,26 @@ class FangOfIrYut(RollDefinition):
         Item('Fang of Ir Yût', hash=1432682459),
         Item('Fang of Ir Yût (Adept)', hash=128782990),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.Slice],
+            [trait.Tear],
+            [trait.Hatchling],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Tear],
+            [trait.Hatchling, trait.Meganeura],
+            ),
+        ]
 
 
 class Glissando47(RollDefinition):
@@ -22,6 +43,13 @@ class Glissando47(RollDefinition):
     https://destiny.report/w/3156551028
     """
     item = Item('Glissando-47', hash=3156551028)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.Reconstruction],
+        [trait.Hatchling],
+        )
 
 
 class Taraxippos(RollDefinition):
@@ -42,3 +70,30 @@ class TheScholar(RollDefinition):
     https://destiny.report/w/3790632261
     """
     item = Item('The Scholar', hash=3790632261)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Slice],
+            [trait.ShootToLoot],
+            [trait.Firefly],
+            [trait.ExplosivePayload],
+            [trait.Tear],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Hatchling, trait.Tear],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]
