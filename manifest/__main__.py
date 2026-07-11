@@ -405,6 +405,19 @@ def resolve_perk_tuple_duplicates(name: str, perk_set: set[PerkTuple], /) -> Ite
                     f'there is no perk tuple with 972757866 as regular hash for {name!r}'
                     )
 
+        case 'Psychohack':
+            hash2tuple = {pt.regular: pt for pt in perk_set}
+            yield PerkHelper(hash2tuple[883366072], 'ComeToPass')
+            yield PerkHelper(hash2tuple[1598147670], 'EmpiricalEvidence')
+            yield PerkHelper(hash2tuple[567997816], 'FathersSins')
+            yield PerkHelper(hash2tuple[3754350707], 'FelTaradiddle')
+            yield PerkHelper(hash2tuple[3717985200], 'ForensicNightmare')
+            yield PerkHelper(hash2tuple[2171055345], 'LikelySuspect')
+            yield PerkHelper(hash2tuple[1471995745], 'PointedInquiry')
+            yield PerkHelper(hash2tuple[82180537], 'RedHerring')
+            yield PerkHelper(hash2tuple[79448657], 'Tarnation')
+            yield PerkHelper(hash2tuple[357495645], 'TheEnigma')
+
         case _:
             yield PerkHelper(min(perk_set, key=PERK_TUPLE_SORT_BY_COMPLETENESS))
 
