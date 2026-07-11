@@ -12,7 +12,6 @@ class ChrysuraMelo(RollDefinition):
     https://destiny.report/w/1750388538
     """
     item = Item('Chrysura Melo', hash=1750388538)
-    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -147,7 +146,6 @@ class Adamantite(RollDefinition):
     https://destiny.report/w/621450049
     """
     item = Item('Adamantite', hash=621450049)
-    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
