@@ -138,12 +138,10 @@ class StarsInShadow(RollDefinition):
         Roll(
             'Super roll',
             [barrel.PolygonalRifling, AnyPerk],
-            [magazine.AccurizedRounds, AnyPerk],
+            [magazine.AccurizedRounds],
             [trait.HealClip],
             [trait.KeepAway],
-            [trait.ImpromptuAmmunition],
             [trait.Headseeker],
-            [trait.Incandescent],
             [trait.KillClip],
             ),
         Roll(
@@ -154,10 +152,10 @@ class StarsInShadow(RollDefinition):
             [trait.Headseeker, trait.KillClip],
             ),
         Roll(
-            'Solar combo',
-            default_barrels,
-            default_mags,
+            'Clip combo',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.AccurizedRounds],
             [trait.HealClip],
-            [trait.Incandescent],
+            [trait.KillClip],
             ),
         ]
