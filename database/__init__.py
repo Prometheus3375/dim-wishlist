@@ -12,6 +12,7 @@ __all__ = (
     'magazine',
     'origin',
     'rail',
+    'scope',
     'sight',
     'stock',
     'trait',
