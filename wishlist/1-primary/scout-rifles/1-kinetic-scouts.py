@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ForcedMemorializer(RollDefinition):
@@ -11,18 +12,58 @@ class ForcedMemorializer(RollDefinition):
     item = Item('Forced Memorializer', hash=1197073834)
     rolls = [
         Roll(
-            'PvE',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.ExplosivePayload, trait.BewilderingBurst],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.ExplosivePayload],
+            [trait.AncillaryOrdinance],
             [trait.KineticTremors],
             ),
         Roll(
-            'Missile combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.BewilderingBurst],
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ExplosivePayload, trait.BewilderingBurst],
+            [trait.KineticTremors],
+            ),
+        ]
+
+
+class HungJurySR4(RollDefinition):
+    """
+    Kinetic Scout Rifle, Precision Frame, Anti-Barrier
+    Source: Onslaught
+    https://www.light.gg/db/items/697459665
+    https://destiny.report/w/697459665
+    """
+    item = Item('Hung Jury SR4', hash=697459665)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.KineticTremors],
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            [trait.Firefly],
             [trait.AncillaryOrdinance],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.KineticTremors],
+            [trait.Firefly, trait.ExplosivePayload],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
             ),
         ]
 
@@ -35,6 +76,13 @@ class Imperative(RollDefinition):
     https://destiny.report/w/2045811635
     """
     item = Item('Imperative', hash=2045811635)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.RapidHit],
+        [trait.KineticTremors],
+        )
 
 
 class InboundSurveillance(RollDefinition):
@@ -45,16 +93,33 @@ class InboundSurveillance(RollDefinition):
     https://destiny.report/w/2776506837
     """
     item = Item('Inbound Surveillance', hash=2776506837)
-
-
-class HungJurySR4(RollDefinition):
-    """
-    Kinetic Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Onslaught
-    https://www.light.gg/db/items/697459665
-    https://destiny.report/w/697459665
-    """
-    item = Item('Hung Jury SR4', hash=697459665)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.StoppingPower],
+            [trait.ShootToLoot],
+            [trait.BewilderingBurst],
+            [trait.ExplosivePayload],
+            [trait.KineticTremors],
+            [trait.Redirection],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.StoppingPower],
+            [trait.KineticTremors, trait.Redirection],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]
 
 
 class LastRite(RollDefinition):
@@ -65,6 +130,34 @@ class LastRite(RollDefinition):
     https://destiny.report/w/3708636616
     """
     item = Item('Last Rite', hash=3708636616)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.StoppingPower],
+            [trait.BewilderingBurst],
+            [trait.ShootToLoot],
+            [trait.Firefly],
+            [trait.AdhesiveOrdnance],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.BewilderingBurst],
+            [trait.Firefly, trait.ExplosivePayload],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload, trait.AdhesiveOrdnance],
+            ),
+        ]
 
 
 class NamelessMidnight(RollDefinition):
@@ -78,6 +171,32 @@ class NamelessMidnight(RollDefinition):
         Item('Nameless Midnight', hash=1957301533),
         Item('Nameless Midnight', hash=3470514298),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.RapidHit],
+            [trait.KineticTremors],
+            [trait.ExplosivePayload],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.RapidHit],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload, trait.AllStar],
+            ),
+        ]
 
 
 class NightWatch(RollDefinition):
@@ -88,6 +207,13 @@ class NightWatch(RollDefinition):
     https://destiny.report/w/2916547559
     """
     item = Item('Night Watch', hash=2916547559)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.RapidHit],
+        [trait.ExplosivePayload],
+        ),
 
 
 class PatronOfLostCauses(RollDefinition):
@@ -98,6 +224,24 @@ class PatronOfLostCauses(RollDefinition):
     https://destiny.report/w/3156551030
     """
     item = Item('Patron of Lost Causes', hash=3156551030)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RapidHit],
+            [trait.Strategist],
+            [trait.ExplosivePayload],
+            [trait.KineticTremors],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.RapidHit],
+            [trait.KineticTremors, trait.ExplosivePayload],
+            ),
+        ]
 
 
 class RandysThrowingKnife(RollDefinition):
@@ -111,6 +255,13 @@ class RandysThrowingKnife(RollDefinition):
         Item("Randy's Throwing Knife", hash=4176824345),
         Item("Randy's Throwing Knife", hash=3975115486),
         ]
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.RapidHit],
+        [trait.KineticTremors, trait.Firefly],
+        ),
 
 
 class TearsOfContrition(RollDefinition):
@@ -131,3 +282,19 @@ class Transfiguration(RollDefinition):
     https://destiny.report/w/3885259140
     """
     item = Item('Transfiguration', hash=3885259140)
+    rolls = [
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
+            'Collective combo',
+            default_barrels,
+            default_mags,
+            [trait.CollectiveDemolition],
+            [trait.CollectiveAction],
+            ),
+        ]
