@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Adhortative(RollDefinition):
@@ -9,6 +10,13 @@ class Adhortative(RollDefinition):
     https://destiny.report/w/2993554824
     """
     item = Item('Adhortative', hash=2993554824)
+    roll = Roll(
+        'Solar combo',
+        default_barrels,
+        default_mags,
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
 
 
 class BxR55Battler(RollDefinition):
@@ -19,6 +27,14 @@ class BxR55Battler(RollDefinition):
     https://destiny.report/w/2708806099
     """
     item = Item('BxR-55 Battler', hash=2708806099)
+    is_chosen = True
+    roll = Roll(
+        'PvP with grapple melee',
+        [barrel.HammerForgedRifling],
+        [magazine.AccurizedRounds],
+        [trait.Demolitionist],
+        [trait.BluntExecutionRounds],
+        )
 
 
 class DarkestBefore(RollDefinition):
@@ -29,6 +45,24 @@ class DarkestBefore(RollDefinition):
     https://destiny.report/w/2831259642
     """
     item = Item('Darkest Before', hash=2831259642)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.AttritionOrbs],
+            [trait.Incandescent],
+            [trait.KillClip],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class JorumsClaw(RollDefinition):
@@ -52,6 +86,34 @@ class Nullify(RollDefinition):
         Item('Nullify', hash=859869931),
         Item('Nullify (Adept)', hash=892183998),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.HealClip],
+            [trait.BurningAmbition],
+            [trait.ChaosReshaped],
+            [trait.Incandescent],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.BurningAmbition, trait.HealClip],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class OgmaPR6(RollDefinition):
@@ -72,3 +134,30 @@ class StarsInShadow(RollDefinition):
     https://destiny.report/w/3602242905
     """
     item = Item('Stars In Shadow', hash=3602242905)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.HealClip],
+            [trait.KeepAway],
+            [trait.ImpromptuAmmunition],
+            [trait.Headseeker],
+            [trait.Incandescent],
+            [trait.KillClip],
+            ),
+        Roll(
+            'PvP',
+            [barrel.PolygonalRifling, AnyPerk],
+            [magazine.AccurizedRounds],
+            [trait.KeepAway],
+            [trait.Headseeker, trait.KillClip],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        ]
