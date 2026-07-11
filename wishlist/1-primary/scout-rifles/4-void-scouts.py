@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AishasEmbrace(RollDefinition):
@@ -11,18 +12,20 @@ class AishasEmbrace(RollDefinition):
     item = Item("Aisha's Embrace", hash=3709368142)
     rolls = [
         Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.RapidHit, trait.Demoralize],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.Demoralize],
+            [trait.WitheringGaze],
             [trait.DestabilizingRounds],
             ),
         Roll(
-            'Withering Gaze',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.RapidHit, trait.Demoralize],
-            [trait.WitheringGaze],
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.Demoralize],
+            [trait.DestabilizingRounds],
             ),
         ]
 
@@ -35,6 +38,13 @@ class BryasLove(RollDefinition):
     https://destiny.report/w/2779821308
     """
     item = Item("Brya's Love", hash=2779821308)
+    roll = Roll(
+        'Shoot to Loot',
+        default_barrels,
+        default_mags,
+        [trait.ShootToLoot],
+        [trait.ExplosivePayload],
+        ),
 
 
 class DoomOfChelchis(RollDefinition):
@@ -48,6 +58,33 @@ class DoomOfChelchis(RollDefinition):
         Item('Doom of Chelchis', hash=1937552980),
         Item('Doom of Chelchis (Harrowed)', hash=1184692845),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Demoralize],
+            [trait.DestabilizingRounds],
+            [trait.RepulsorBrace],
+            [trait.Meganeura],
+            [trait.WitheringGaze],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.DestabilizingRounds, trait.Demoralize],
+            [trait.RepulsorBrace],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class PointedInquiry(RollDefinition):
@@ -58,6 +95,13 @@ class PointedInquiry(RollDefinition):
     https://destiny.report/w/297296830
     """
     item = Item('Pointed Inquiry', hash=297296830)
+    roll = Roll(
+        'Shoot to Loot',
+        default_barrels,
+        default_mags,
+        [trait.RepulsorBrace],
+        [trait.Demoralize],
+        ),
 
 
 class Vouchsafe(RollDefinition):
@@ -68,3 +112,31 @@ class Vouchsafe(RollDefinition):
     https://destiny.report/w/3218302023
     """
     item = Item('Vouchsafe', hash=3218302023)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RapidHit],
+            [trait.RepulsorBrace],
+            [trait.ShootToLoot],
+            [trait.DestabilizingRounds],
+            [trait.ExplosivePayload],
+            [trait.Demoralize],
+            ),
+        Roll(
+            'Void combo',
+            default_barrels,
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds, trait.Demoralize],
+            ),
+        Roll(
+            'Shoot to Loot',
+            default_barrels,
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload],
+            ),
+        ]

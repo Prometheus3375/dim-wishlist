@@ -50,7 +50,7 @@ class ElsiesRifle(RollDefinition):
             'Collective combo',
             default_barrels,
             default_mags,
-            [trait.DimensionalShift, trait.CollectiveDemolition],
+            [trait.CollectiveDemolition, trait.DimensionalShift],
             [trait.CollectiveAction],
             ),
         ]
