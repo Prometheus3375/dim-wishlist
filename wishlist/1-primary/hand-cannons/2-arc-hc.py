@@ -141,7 +141,6 @@ class YesterdaysQuestion(RollDefinition):
             [magazine.AlloyMagazine, AnyPerk],
             [trait.AirTrigger],
             [trait.FourthTimesTheCharm],
-            [trait.Dragonfly],
             [trait.Voltshot],
             [trait.VorpalWeapon],
             ),

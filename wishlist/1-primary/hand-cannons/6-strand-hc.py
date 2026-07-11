@@ -47,7 +47,6 @@ class CorundumHammer(RollDefinition):
             'Super roll',
             [barrel.ArrowheadBrake, AnyPerk],
             default_mags,
-            [trait.Reconstruction],
             [trait.Firefly],
             [trait.ShootToLoot],
             [trait.Tear],
