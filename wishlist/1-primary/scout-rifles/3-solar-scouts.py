@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AdmetusD(RollDefinition):
@@ -9,6 +10,13 @@ class AdmetusD(RollDefinition):
     https://destiny.report/w/3156551029
     """
     item = Item('Admetus-D', hash=3156551029)
+    roll = Roll(
+        'Solar combo',
+        default_barrels,
+        default_mags,
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
 
 
 class OxygenSR3(RollDefinition):
@@ -24,9 +32,18 @@ class OxygenSR3(RollDefinition):
         ]
     rolls = [
         Roll(
-            'PvE',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.ShootToLoot],
+            [trait.Meganeura],
+            [trait.OneForAll],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
             [trait.HealClip],
             [trait.Meganeura],
             ),
@@ -41,6 +58,14 @@ class TimewornWayfarer(RollDefinition):
     https://destiny.report/w/1058098236
     """
     item = Item('Timeworn Wayfarer', hash=1058098236)
+    is_chosen = True
+    roll = Roll(
+        'Solar combo',
+        default_barrels,
+        default_mags,
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
 
 
 class Trustee(RollDefinition):
@@ -51,6 +76,22 @@ class Trustee(RollDefinition):
     https://destiny.report/w/1392919471
     """
     item = Item('Trustee', hash=1392919471)
+    rolls = [
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Reconstruction],
+            [trait.Meganeura, trait.Redirection],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class VisionOfConfluence(RollDefinition):
@@ -63,4 +104,29 @@ class VisionOfConfluence(RollDefinition):
     items = [
         Item('Vision of Confluence', hash=3444688218),
         Item('Vision of Confluence (Timelost)', hash=337578911),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            [trait.Firefly],
+            [trait.BurningAmbition],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.BurningAmbition],
+            ),
+        Roll(
+            'Reload combo',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Firefly],
+            ),
         ]
