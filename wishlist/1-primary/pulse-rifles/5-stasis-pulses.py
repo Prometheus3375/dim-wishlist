@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Disparity(RollDefinition):
@@ -19,6 +20,41 @@ class HailingConfusion(RollDefinition):
     https://destiny.report/w/4236134153
     """
     item = Item('Hailing Confusion', hash=4236134153)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Rimestealer],
+            [trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
+            [trait.DesperateMeasures],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer, trait.Headstone],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ability combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.DesperateMeasures],
+            ),
+        ]
 
 
 class NewPurpose(RollDefinition):
@@ -29,6 +65,30 @@ class NewPurpose(RollDefinition):
     https://destiny.report/w/1400385226
     """
     item = Item('New Purpose', hash=1400385226)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Rimestealer],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Rimestealer],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Headstone],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class RedrixsEstoc(RollDefinition):
@@ -39,6 +99,34 @@ class RedrixsEstoc(RollDefinition):
     https://destiny.report/w/747743636
     """
     item = Item("Redrix's Estoc", hash=747743636)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.Firefly],
+            [trait.CrystallineCorpsebloom],
+            [trait.Headstone],
+            [stock.HandLaidStock, AnyPerk],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer, trait.CrystallineCorpsebloom],
+            [trait.Headstone],
+            [stock.HandLaidStock, AnyPerk],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Headstone],
+            [stock.HandLaidStock, AnyPerk],
+            ),
+        ]
 
 
 class StayFrosty(RollDefinition):
@@ -49,6 +137,13 @@ class StayFrosty(RollDefinition):
     https://destiny.report/w/3910523587
     """
     item = Item('Stay Frosty', hash=3910523587)
+    roll = Roll(
+        'Stasis combo',
+        default_barrels,
+        default_mags,
+        [trait.Rimestealer],
+        [trait.Headstone],
+        )
 
 
 class Syncopation53(RollDefinition):
@@ -69,3 +164,10 @@ class TheTimeWornSpire(RollDefinition):
     https://destiny.report/w/2204165992
     """
     item = Item('The Time-Worn Spire', hash=2204165992)
+    roll = Roll(
+        'Precision combo',
+        default_barrels,
+        default_mags,
+        [trait.Firefly],
+        [trait.Headstone],
+        )
