@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AnonymousAutumn(RollDefinition):
@@ -9,6 +10,31 @@ class AnonymousAutumn(RollDefinition):
     https://destiny.report/w/1644501332
     """
     item = Item('Anonymous Autumn', hash=1644501332)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.EddyCurrent],
+            [trait.AdrenalineJunkie],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Arc combo',
+            default_barrels,
+            default_mags,
+            [trait.EddyCurrent],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class BrigandsLaw(RollDefinition):
@@ -19,6 +45,14 @@ class BrigandsLaw(RollDefinition):
     https://destiny.report/w/1298815317
     """
     item = Item("Brigand's Law", hash=1298815317)
+    is_chosen = True
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.ThreatDetector],
+        [trait.Voltshot],
+        ),
 
 
 class FimbulwinterStitch(RollDefinition):
@@ -34,16 +68,26 @@ class FimbulwinterStitch(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Ad clear',
+            'Super roll',
             [barrel.FlutedBarrel, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            default_mags,
+            [trait.LooseChange],
             [trait.SuperchargedMagazine],
-            [trait.JoltingFeedback, trait.Redirection],
+            [trait.JoltingFeedback],
+            [trait.Redirection],
+            [trait.Voltshot],
             ),
         Roll(
             'Ad clear',
             [barrel.FlutedBarrel, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback, trait.Redirection],
+            ),
+        Roll(
+            'Reload combo',
+            [barrel.FlutedBarrel, AnyPerk],
+            default_mags,
             [trait.LooseChange],
             [trait.Voltshot],
             ),
@@ -58,6 +102,31 @@ class Forgiveness(RollDefinition):
     https://destiny.report/w/1552443158
     """
     item = Item('Forgiveness', hash=1552443158)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags
+            [trait.Voltshot],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            [trait.LooseChange],
+            ),
+        Roll(
+            'Reload combo',
+            default_barrels,
+            default_mags,
+            [trait.Voltshot],
+            [trait.LooseChange],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class TheKeening(RollDefinition):
@@ -71,6 +140,13 @@ class TheKeening(RollDefinition):
         Item('The Keening', hash=3902351469),
         Item('The Keening', hash=2839128618),
         ]
+    roll = Roll(
+        'Arc combo',
+        default_barrels,
+        default_mags,
+        [trait.Voltshot],
+        [trait.JoltingFeedback],
+        ),
 
 
 class TheLastDance(RollDefinition):

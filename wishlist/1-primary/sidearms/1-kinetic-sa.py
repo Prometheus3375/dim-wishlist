@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AlliedDemand(RollDefinition):
@@ -19,6 +20,14 @@ class Buzzard(RollDefinition):
     https://destiny.report/w/4237970862
     """
     item = Item('Buzzard', hash=4237970862)
+    is_chosen = True
+    roll = Roll(
+        'Ad clear',
+        [barrel.ExtendedBarrel, AnyPerk],
+        default_mags,
+        [trait.Overflow],
+        [trait.KineticTremors],
+        )
 
 
 class EmpiricalEvidence(RollDefinition):

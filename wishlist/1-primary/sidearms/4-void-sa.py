@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class BrassAttacks(RollDefinition):
@@ -9,6 +10,27 @@ class BrassAttacks(RollDefinition):
     https://destiny.report/w/1291040554
     """
     item = Item('Brass Attacks', hash=1291040554)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.ImpromptuAmmunition],
+            [trait.ThreatDetector],
+            [trait.Demoralize],
+            [trait.DestabilizingRounds],
+            [trait.Rampage],
+            ),
+        Roll(
+            'Void combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds, trait.Demoralize],
+            ),
+        ]
 
 
 class CompactDefender(RollDefinition):
@@ -22,6 +44,7 @@ class CompactDefender(RollDefinition):
         Item('Compact Defender', hash=2819552809),
         Item('Compact Defender', hash=2659286158),
         ]
+    is_chosen = True
     roll = Roll(
         'Void combo',
         [barrel.ExtendedBarrel, AnyPerk],
@@ -39,6 +62,24 @@ class Insurmountable(RollDefinition):
     https://destiny.report/w/2596736862
     """
     item = Item('Insurmountable', hash=2596736862)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.AirTrigger],
+            [trait.DestabilizingRounds],
+            [trait.Rampage],
+            ),
+        Roll(
+            'Void combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.RepulsorBrace],
+            [trait.DestabilizingRounds],
+            ),
+        ]
 
 
 class SeventhSeraphSI2(RollDefinition):
@@ -49,3 +90,22 @@ class SeventhSeraphSI2(RollDefinition):
     https://destiny.report/w/453798564
     """
     item = Item('Seventh Seraph SI-2', hash=453798564)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.DestabilizingRounds],
+            [trait.Meganeura],
+            [trait.Demoralize],
+            [trait.RepulsorBrace],
+            ),
+        Roll(
+            'Void combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.DestabilizingRounds],
+            [trait.Demoralize, trait.RepulsorBrace],
+            ),
+        ]

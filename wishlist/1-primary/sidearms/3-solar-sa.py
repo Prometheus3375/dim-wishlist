@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Drang(RollDefinition):
@@ -41,26 +42,20 @@ class EveningSI4(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Solar combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
             [trait.HealClip],
-            [trait.Incandescent],
-            ),
-        Roll(
-            'Impromptu Ammunition',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
             [trait.ImpromptuAmmunition],
             [trait.Incandescent],
             ),
-        # Roll(
-        #     'Melee regen',
-        #     [barrel.ArrowheadBrake, AnyPerk],
-        #     [magazine.FlaredMagwell, AnyPerk],
-        #     [trait.HealClip],
-        #     [trait.CollectivePugilism],
-        #     ),
+        Roll(
+            'Solar combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
         ]
 
 
@@ -72,6 +67,31 @@ class HeliocentricQSc(RollDefinition):
     https://destiny.report/w/1291040555
     """
     item = Item('Heliocentric QSc', hash=1291040555)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.Demolitionist],
+            [trait.Incandescent],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Grenade combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class PunchingOut(RollDefinition):
@@ -84,4 +104,32 @@ class PunchingOut(RollDefinition):
     items = [
         Item('Punching Out', hash=1469372193),
         Item('Punching Out', hash=1409524486),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.Overflow],
+            [trait.HealClip],
+            [trait.Demolitionist],
+            [trait.Meganeura],
+            [trait.Incandescent],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Grenade combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
         ]

@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class FaustusDecline(RollDefinition):
@@ -9,13 +10,24 @@ class FaustusDecline(RollDefinition):
     https://destiny.report/w/1663482635
     """
     item = Item('Faustus Decline', hash=1663482635)
-    roll = Roll(
-        'PvE',
-        [barrel.Smallbore, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
-        [trait.Demolitionist, trait.Rimestealer],
-        [trait.Headstone],
-        )
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.Demolitionist],
+            [trait.Headstone],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            default_mags,
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        ]
 
 
 class LiminalVigil(RollDefinition):
@@ -26,6 +38,13 @@ class LiminalVigil(RollDefinition):
     https://destiny.report/w/355893876
     """
     item = Item('Liminal Vigil', hash=355893876)
+    roll = Roll(
+        'Stasis combo',
+        default_barrels,
+        default_mags,
+        [trait.CrystallineCorpsebloom, trait.Headstone],
+        [trait.Rimestealer],
+        )
 
 
 class Peacebond(RollDefinition):
@@ -36,3 +55,10 @@ class Peacebond(RollDefinition):
     https://destiny.report/w/247984829
     """
     item = Item('Peacebond', hash=247984829)
+    roll = Roll(
+        'Stasis combo',
+        [barrel.ExtendedBarrel, AnyPerk],
+        default_mags,
+        [trait.Headstone],
+        [trait.Rimestealer],
+        )
