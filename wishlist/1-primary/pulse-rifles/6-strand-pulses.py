@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AishasCare(RollDefinition):
@@ -9,6 +10,13 @@ class AishasCare(RollDefinition):
     https://destiny.report/w/3614211586
     """
     item = Item("Aisha's Care", hash=3614211586)
+    roll = Roll(
+        'Strand combo',
+        default_barrels,
+        default_mags,
+        [trait.Slice],
+        [trait.Hatchling],
+        )
 
 
 class AllOrNothing(RollDefinition):
@@ -22,10 +30,20 @@ class AllOrNothing(RollDefinition):
         Item('All or Nothing', hash=3984776322),
         Item('All or Nothing', hash=2023002233),
         ]
+    is_chosen = True
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            [battery.IonizedHeatsink, AnyPerk],
+            [trait.Firefly],
+            [trait.Slice],
+            [trait.Tear],
+            [trait.Hatchling],
+            ),
+        Roll(
             'Precision combo',
-            [barrel.ArrowheadBrake, AnyPerk],
+            default_barrels,
             [battery.IonizedHeatsink, AnyPerk],
             [trait.Firefly],
             [trait.Hatchling],
@@ -41,6 +59,25 @@ class BelisariusD(RollDefinition):
     https://destiny.report/w/747743637
     """
     item = Item('Belisarius-D', hash=747743637)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Slice],
+            [trait.Tear],
+            [trait.Dragonfly],
+            [trait.Hatchling],
+            [trait.Firefly],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Dragonfly],
+            [trait.Hatchling, trait.Firefly],
+            ),
+        ]
 
 
 class DifferentTimes(RollDefinition):
@@ -63,18 +100,21 @@ class LastThursday(RollDefinition):
     item = Item('Last Thursday', hash=3813721211)
     rolls = [
         Roll(
-            'Slice',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
             [trait.Strategist],
             [trait.Slice],
+            [trait.Hatchling],
+            [trait.Dragonfly],
             ),
         Roll(
-            'Hatchling',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.Demolitionist, trait.Strategist],
-            [trait.Hatchling],
+            'Class ability combo',
+            default_barrels,
+            default_mags,
+            [trait.Strategist],
+            [trait.Slice],
             ),
         ]
 
@@ -90,6 +130,13 @@ class Nightshade(RollDefinition):
         Item('Nightshade', hash=34731066),
         Item('Nightshade', hash=1559068369),
         ]
+    roll = Roll(
+        'Strand combo',
+        default_barrels,
+        default_mags,
+        [trait.Slice],
+        [trait.Hatchling],
+        )
 
 
 class Relentless(RollDefinition):
@@ -100,3 +147,29 @@ class Relentless(RollDefinition):
     https://destiny.report/w/2831259643
     """
     item = Item('Relentless', hash=2831259643)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Tear],
+            [trait.Slice],
+            [trait.Hatchling],
+            [trait.ParacausalAffinity],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            default_mags,
+            [trait.Firefly],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Strand combo',
+            default_barrels,
+            default_mags,
+            [trait.Tear],
+            [trait.Hatchling],
+            ),
+        ]
