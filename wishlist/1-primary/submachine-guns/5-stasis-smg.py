@@ -121,7 +121,7 @@ class RapaciousAppetite(RollDefinition):
 class SeraphineHaze(RollDefinition):
     """
     Stasis Submachine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/1524387902
     https://destiny.report/w/1524387902
     """
@@ -131,9 +131,11 @@ class SeraphineHaze(RollDefinition):
             'Super roll',
             [barrel.PolygonalRifling, AnyPerk],
             default_mags,
+            [trait.Demolitionist],
             [trait.LeadFromLight],
             [trait.Rimestealer],
             [trait.AttritionOrbs],
+            [trait.AdrenalineJunkie],
             [trait.CrystallineCorpsebloom],
             ),
         Roll(
@@ -149,6 +151,13 @@ class SeraphineHaze(RollDefinition):
             default_mags,
             [trait.LeadFromLight],
             [trait.AttritionOrbs],
+            ),
+        Roll(
+            'Grenade combo',
+            [barrel.PolygonalRifling, AnyPerk],
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
             ),
         ]
 

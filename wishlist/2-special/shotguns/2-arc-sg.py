@@ -57,7 +57,7 @@ class Matador64(RollDefinition):
 class MIDAMacroTool(RollDefinition):
     """
     Arc Shotgun, MIDA Synergy, Anti-Unstoppable
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery
     https://www.light.gg/db/items/2699423382
     https://destiny.report/w/2699423382
     """

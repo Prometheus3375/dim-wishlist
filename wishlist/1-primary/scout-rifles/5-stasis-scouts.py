@@ -5,7 +5,7 @@ from . import *
 class Jurisprudent(RollDefinition):
     """
     Stasis Scout Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/4090134063
     https://destiny.report/w/4090134063
     """

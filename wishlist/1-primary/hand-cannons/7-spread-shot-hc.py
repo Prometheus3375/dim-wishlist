@@ -42,7 +42,7 @@ class AureusNeutralizer(RollDefinition):
 class SarpedonD(RollDefinition):
     """
     Arc Hand Cannon, Spread Shot, Anti-Overload
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/1242785638
     https://destiny.report/w/1242785638
     """

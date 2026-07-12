@@ -34,7 +34,7 @@ class LoveAndDeath(RollDefinition):
 class OutrageousFortune(RollDefinition):
     """
     Solar Drum Grenade Launcher, Rapid-Fire Frame, Anti-Overload
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/4146673634
     https://destiny.report/w/4146673634
     """

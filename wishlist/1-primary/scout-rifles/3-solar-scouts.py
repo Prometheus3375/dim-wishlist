@@ -22,7 +22,7 @@ class AdmetusD(RollDefinition):
 class OxygenSR3(RollDefinition):
     """
     Solar Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/4104613038
     https://destiny.report/w/4104613038
     """

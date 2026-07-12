@@ -47,7 +47,7 @@ class FrozenOrbit(RollDefinition):
 class ShorelineDissident(RollDefinition):
     """
     Void Sniper Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/1193318082
     https://destiny.report/w/1193318082
     """

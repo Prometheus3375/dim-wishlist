@@ -4,7 +4,7 @@ from wishlist import *
 class PsiAeternaIV(RollDefinition):
     """
     Arc Pulse Rifle, Micro-Missile Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/3556730800
     https://destiny.report/w/3556730800
     """

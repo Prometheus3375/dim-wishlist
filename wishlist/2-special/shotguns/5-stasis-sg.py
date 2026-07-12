@@ -24,7 +24,7 @@ class Fractethyst(RollDefinition):
 class HawthornesFieldForgedShotgun(RollDefinition):
     """
     Stasis Shotgun, Lightweight Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/1402874079
     https://destiny.report/w/1402874079
     """

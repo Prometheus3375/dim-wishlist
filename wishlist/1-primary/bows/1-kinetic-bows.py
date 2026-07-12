@@ -70,7 +70,7 @@ class FelTaradiddle(RollDefinition):
 class MercuryA(RollDefinition):
     """
     Kinetic High-Impact Longbow, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/2838279629
     https://destiny.report/w/2838279629
     """

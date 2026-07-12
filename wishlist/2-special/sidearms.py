@@ -24,7 +24,7 @@ class IndebtedKindness(RollDefinition):
 class Unfall(RollDefinition):
     """
     Arc Sidearm, Together Forever, Anti-Overload
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/738446555
     https://destiny.report/w/738446555
     """
@@ -60,7 +60,7 @@ class AberrantAction(RollDefinition):
 class ReturnedMemory(RollDefinition):
     """
     Solar Sidearm, Micro-Missile Frame, Anti-Unstoppable
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery    
     https://www.light.gg/db/items/4049127142
     https://destiny.report/w/4049127142
     """

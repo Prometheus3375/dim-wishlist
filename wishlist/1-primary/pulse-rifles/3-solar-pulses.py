@@ -129,7 +129,7 @@ class OgmaPR6(RollDefinition):
 class StarsInShadow(RollDefinition):
     """
     Solar Pulse Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery
     https://www.light.gg/db/items/3602242905
     https://destiny.report/w/3602242905
     """
@@ -138,10 +138,12 @@ class StarsInShadow(RollDefinition):
         Roll(
             'Super roll',
             [barrel.PolygonalRifling, AnyPerk],
-            [magazine.AccurizedRounds],
+            [magazine.AccurizedRounds, AnyPerk],
             [trait.HealClip],
             [trait.KeepAway],
+            [trait.ImpromptuAmmunition],
             [trait.Headseeker],
+            [trait.Incandescent],
             [trait.KillClip],
             ),
         Roll(
@@ -152,10 +154,10 @@ class StarsInShadow(RollDefinition):
             [trait.Headseeker, trait.KillClip],
             ),
         Roll(
-            'Clip combo',
-            [barrel.PolygonalRifling, AnyPerk],
-            [magazine.AccurizedRounds],
+            'Solar combo',
+            default_barrels,
+            default_mags,
             [trait.HealClip],
-            [trait.KillClip],
+            [trait.Incandescent],
             ),
         ]

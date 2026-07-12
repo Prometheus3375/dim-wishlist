@@ -24,7 +24,7 @@ class DragoncultSickle(RollDefinition):
 class EightySix(RollDefinition):
     """
     Strand Sword, Vortex Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/2344383760
     https://destiny.report/w/2344383760
     """

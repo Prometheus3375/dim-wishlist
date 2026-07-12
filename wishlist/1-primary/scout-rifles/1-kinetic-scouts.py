@@ -5,7 +5,7 @@ from . import *
 class ForcedMemorializer(RollDefinition):
     """
     Kinetic Scout Rifle, Precision Frame, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/1197073834
     https://destiny.report/w/1197073834
     """
@@ -17,6 +17,7 @@ class ForcedMemorializer(RollDefinition):
             default_mags,
             [trait.BewilderingBurst],
             [trait.ExplosivePayload],
+            [trait.ShootToLoot],
             [trait.AncillaryOrdinance],
             [trait.KineticTremors],
             ),

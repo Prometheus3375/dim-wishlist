@@ -24,7 +24,7 @@ class ExplosivePersonality(RollDefinition):
 class Motif41(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Area Denial Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/1685533876
     https://destiny.report/w/1685533876
     """

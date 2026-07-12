@@ -4,7 +4,7 @@ from wishlist import *
 class Boomslang4FR(RollDefinition):
     """
     Arc Linear Fusion Rifle, Adaptive Burst, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/3926153598
     https://destiny.report/w/3926153598
     """

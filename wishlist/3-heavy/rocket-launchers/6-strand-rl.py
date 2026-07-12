@@ -40,7 +40,7 @@ class Cynosure(RollDefinition):
 class Haliaetus(RollDefinition):
     """
     Strand Rocket Launcher, High-Impact Frame, Anti-Unstoppable
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/2155534128
     https://destiny.report/w/2155534128
     """

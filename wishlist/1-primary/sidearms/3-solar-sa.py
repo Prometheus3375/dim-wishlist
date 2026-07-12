@@ -5,7 +5,7 @@ from . import *
 class Drang(RollDefinition):
     """
     Solar Sidearm, Together Forever, Anti-Barrier
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/358190158
     https://destiny.report/w/358190158
     """
@@ -32,7 +32,7 @@ class DrangBaroque(RollDefinition):
 class EveningSI4(RollDefinition):
     """
     Solar Sidearm, Adaptive Burst, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/1763361847
     https://destiny.report/w/1763361847
     """

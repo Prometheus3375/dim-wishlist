@@ -46,7 +46,7 @@ class Deliverance(RollDefinition):
 class Lionfish4FR(RollDefinition):
     """
     Stasis Fusion Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/2423071981
     https://destiny.report/w/2423071981
     """
@@ -72,7 +72,7 @@ class Lionfish4FR(RollDefinition):
 class NoxSiderealIV(RollDefinition):
     """
     Stasis Fusion Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/2875763009
     https://destiny.report/w/2875763009
     """
@@ -101,7 +101,7 @@ class NoxSiderealIV(RollDefinition):
 class Riptide(RollDefinition):
     """
     Stasis Fusion Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery
     https://www.light.gg/db/items/2297554989
     https://destiny.report/w/2297554989
     """

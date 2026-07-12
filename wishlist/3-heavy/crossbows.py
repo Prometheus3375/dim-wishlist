@@ -33,7 +33,7 @@ class OpaqueHourglass(RollDefinition):
 class AGoodShout(RollDefinition):
     """
     Void Crossbow, High-Impact Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/3615748501
     https://destiny.report/w/3615748501
     """

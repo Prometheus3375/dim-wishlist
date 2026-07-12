@@ -32,7 +32,7 @@ class DeathAdder(RollDefinition):
 class MIDAMiniTool(RollDefinition):
     """
     Solar Submachine Gun, MIDA Synergy, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/3946054154
     https://destiny.report/w/3946054154
     """

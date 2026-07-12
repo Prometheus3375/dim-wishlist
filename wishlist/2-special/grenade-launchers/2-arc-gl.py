@@ -60,7 +60,7 @@ class SalvagersSalvo(RollDefinition):
 class Theodolite(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Micro-Missile Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/4146673635
     https://destiny.report/w/4146673635
     """

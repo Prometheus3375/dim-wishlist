@@ -57,11 +57,11 @@ class Precipial(RollDefinition):
 class PureRecollection(RollDefinition):
     """
     Void Shotgun, Heavy Burst, Anti-Unstoppable
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery
     https://www.light.gg/db/items/1956186483
     https://destiny.report/w/1956186483
     """
-    item = Item('Void Shotgun', hash=1956186483)
+    item = Item('Pure Recollection', hash=1956186483)
 
 
 class Python(RollDefinition):

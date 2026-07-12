@@ -129,7 +129,7 @@ class MaahesHC4(RollDefinition):
 class MosAthanorIV(RollDefinition):
     """
     Void Hand Cannon, Aggressive Frame, Anti-Unstoppable
-    Source: Lord Shaxx
+    Source: Lord Shaxx; Tenet of Bravery
     https://www.light.gg/db/items/4118334987
     https://destiny.report/w/4118334987
     """

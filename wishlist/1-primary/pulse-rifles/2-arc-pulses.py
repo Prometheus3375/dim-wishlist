@@ -32,7 +32,7 @@ class CruelMercy(RollDefinition):
 class HorrorsLeast(RollDefinition):
     """
     Arc Pulse Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/827835657
     https://destiny.report/w/827835657
     """

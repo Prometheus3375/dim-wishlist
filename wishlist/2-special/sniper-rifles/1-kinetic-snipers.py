@@ -63,7 +63,7 @@ class PraedythsRevenge(RollDefinition):
 class SomethingSomething(RollDefinition):
     """
     Kinetic Sniper Rifle, Aggressive Frame, Anti-Unstoppable
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/3421075982
     https://destiny.report/w/3421075982
     """

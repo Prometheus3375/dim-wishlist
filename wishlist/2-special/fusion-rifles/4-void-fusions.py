@@ -24,7 +24,7 @@ class LikelySuspect(RollDefinition):
 class Monody44(RollDefinition):
     """
     Void Fusion Rifle, High-Impact Frame, Anti-Unstoppable
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/3201200906
     https://destiny.report/w/3201200906
     """

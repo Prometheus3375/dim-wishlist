@@ -5,7 +5,7 @@ from . import *
 class FaustusDecline(RollDefinition):
     """
     Stasis Sidearm, Lightweight Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/1663482635
     https://destiny.report/w/1663482635
     """

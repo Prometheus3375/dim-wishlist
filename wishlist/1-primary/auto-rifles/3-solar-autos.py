@@ -18,7 +18,7 @@ class AbyssDefiant(RollDefinition):
 class AhabChar(RollDefinition):
     """
     Solar Auto Rifle, Rapid-Fire Frame, Anti-Overload
-    Source: Banshee-44
+    Source: Banshee-44; Tenet of Bravery
     https://www.light.gg/db/items/1411560894
     https://destiny.report/w/1411560894
     """

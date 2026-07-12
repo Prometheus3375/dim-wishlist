@@ -38,7 +38,7 @@ class Imminence(RollDefinition):
 class QuaNilusII(RollDefinition):
     """
     Strand Submachine Gun, Adaptive Frame, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/190747610
     https://destiny.report/w/190747610
     """

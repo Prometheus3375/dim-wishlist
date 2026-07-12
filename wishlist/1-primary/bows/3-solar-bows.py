@@ -43,7 +43,7 @@ class Hush(RollDefinition):
 class PreAstyanaxIV(RollDefinition):
     """
     Solar Combat Bow, Precision Frame, Anti-Barrier
-    Source: Commander Zavala
+    Source: Commander Zavala; Tenet of Bravery
     https://www.light.gg/db/items/471764396
     https://destiny.report/w/471764396
     """
