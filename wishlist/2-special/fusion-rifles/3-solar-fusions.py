@@ -70,7 +70,7 @@ class FiniteMaybe(RollDefinition):
 class RoyalExecutioner(RollDefinition):
     """
     Solar Fusion Rifle, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Exotic mission "NODE.OVRD.AVALON"
+    Source: Exotic mission "//NODE.OVRD.AVALON//"
     https://www.light.gg/db/items/1720503118
     https://destiny.report/w/1720503118
     """

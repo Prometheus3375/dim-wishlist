@@ -27,7 +27,7 @@ class ForbearanceOnslaught(RollDefinition):
 class ProdigalReturn(RollDefinition):
     """
     Arc Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload, Craftable
-    Source: Exotic mission "NODE.OVRD.AVALON"
+    Source: Exotic mission "//NODE.OVRD.AVALON//"
     https://www.light.gg/db/items/268260373
     https://destiny.report/w/268260373
     """

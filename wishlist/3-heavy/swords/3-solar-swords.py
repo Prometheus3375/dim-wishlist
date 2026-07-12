@@ -14,7 +14,7 @@ class AbideTheReturn(RollDefinition):
 class Caretaker(RollDefinition):
     """
     Solar Sword, Adaptive Frame, Anti-Barrier, Craftable
-    Source: Exotic mission "NODE.OVRD.AVALON"
+    Source: Exotic mission "//NODE.OVRD.AVALON//"
     https://www.light.gg/db/items/2508948099
     https://destiny.report/w/2508948099
     """
