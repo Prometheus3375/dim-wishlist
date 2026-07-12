@@ -108,7 +108,7 @@ class TarnishedMettle(RollDefinition):
         default_mags,
         [trait.ShootToLoot],
         [trait.ExplosivePayload],
-        ),
+        )
 
 
 class Unworthy(RollDefinition):
@@ -158,7 +158,7 @@ class VoltaicShade(RollDefinition):
     rolls = [
         Roll(
             'Super roll',
-            default_barrels
+            default_barrels,
             [battery.IonizedHeatsink, AnyPerk],
             [trait.JoltingFeedback],
             [trait.ShootToLoot],
@@ -167,7 +167,7 @@ class VoltaicShade(RollDefinition):
             ),
         Roll(
             'Ad clear',
-            default_barrels
+            default_barrels,
             [battery.IonizedHeatsink, AnyPerk],
             [trait.JoltingFeedback],
             [trait.Voltshot, trait.Meganeura],

@@ -44,7 +44,7 @@ class BryasLove(RollDefinition):
         default_mags,
         [trait.ShootToLoot],
         [trait.ExplosivePayload],
-        ),
+        )
 
 
 class DoomOfChelchis(RollDefinition):
@@ -101,7 +101,7 @@ class PointedInquiry(RollDefinition):
         default_mags,
         [trait.RepulsorBrace],
         [trait.Demoralize],
-        ),
+        )
 
 
 class Vouchsafe(RollDefinition):

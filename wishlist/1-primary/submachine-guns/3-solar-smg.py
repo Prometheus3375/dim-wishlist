@@ -90,7 +90,7 @@ class Parabellum(RollDefinition):
     https://destiny.report/w/3769072067
     """
     item = Item('Parabellum', hash=3769072067)
-    rolls = Roll(
+    roll = Roll(
         'Solar combo',
         [barrel.ArrowheadBrake, AnyPerk],
         default_mags,
@@ -107,7 +107,7 @@ class PerfectPitch(RollDefinition):
     https://destiny.report/w/2191451996
     """
     item = Item('Perfect Pitch', hash=2191451996)
-    rolls = Roll(
+    roll = Roll(
         'Solar combo',
         [barrel.ArrowheadBrake, AnyPerk],
         default_mags,

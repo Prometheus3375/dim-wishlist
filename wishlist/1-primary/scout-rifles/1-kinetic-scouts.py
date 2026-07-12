@@ -213,7 +213,7 @@ class NightWatch(RollDefinition):
         default_mags,
         [trait.RapidHit],
         [trait.ExplosivePayload],
-        ),
+        )
 
 
 class PatronOfLostCauses(RollDefinition):
@@ -261,7 +261,7 @@ class RandysThrowingKnife(RollDefinition):
         default_mags,
         [trait.RapidHit],
         [trait.KineticTremors, trait.Firefly],
-        ),
+        )
 
 
 class TearsOfContrition(RollDefinition):

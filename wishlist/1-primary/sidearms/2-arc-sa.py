@@ -52,7 +52,7 @@ class BrigandsLaw(RollDefinition):
         default_mags,
         [trait.ThreatDetector],
         [trait.Voltshot],
-        ),
+        )
 
 
 class FimbulwinterStitch(RollDefinition):
@@ -106,7 +106,7 @@ class Forgiveness(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags
+            default_mags,
             [trait.Voltshot],
             [trait.Demolitionist],
             [trait.AdrenalineJunkie],
@@ -146,7 +146,7 @@ class TheKeening(RollDefinition):
         default_mags,
         [trait.Voltshot],
         [trait.JoltingFeedback],
-        ),
+        )
 
 
 class TheLastDance(RollDefinition):
