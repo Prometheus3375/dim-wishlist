@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Imminence(RollDefinition):
@@ -12,6 +13,26 @@ class Imminence(RollDefinition):
         Item('Imminence', hash=1258168956),
         Item('Imminence (Adept)', hash=3951511045),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.Demolitionist],
+            [trait.Tear],
+            [trait.AmbitiousAssassin],
+            [trait.Firefly],
+            [trait.ChaosReshaped],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Precision combo',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.Tear],
+            [trait.Firefly, trait.Hatchling],
+            ),
+        ]
 
 
 class QuaNilusII(RollDefinition):
@@ -23,11 +44,11 @@ class QuaNilusII(RollDefinition):
     """
     item = Item('Qua Nilus II', hash=190747610)
     roll = Roll(
-        'PvE',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
+        'Strand combo',
+        [barrel.ExtendedBarrel, AnyPerk],
+        default_mags,
         [trait.Slice],
-        [trait.Hatchling, trait.Surrounded],
+        [trait.Hatchling],
         )
 
 
@@ -39,6 +60,25 @@ class SynchronicRoulette(RollDefinition):
     https://destiny.report/w/3752860091
     """
     item = Item('Synchronic Roulette', hash=3752860091)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.CollectiveDemolition],
+            [trait.Hatchling],
+            [trait.CollectiveAction],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Collective combo',
+            [barrel.ArrowheadBrake, AnyPerk],
+            default_mags,
+            [trait.CollectiveDemolition],
+            [trait.CollectiveAction],
+            ),
+        ]
 
 
 class TheImmortal(RollDefinition):
@@ -51,19 +91,19 @@ class TheImmortal(RollDefinition):
     item = Item('The Immortal', hash=2872063099)
     rolls = [
         Roll(
-            'PvE',
+            'Super roll',
             [barrel.PolygonalRifling, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.Hatchling, trait.ThreatDetector],
+            default_barrels,
+            [trait.ThreatDetector],
+            [trait.Hatchling],
             [trait.Demolitionist],
+            [trait.MasterOfArms],
             ),
         Roll(
-            'PvP',
-            [barrel.HammerForgedRifling, barrel.ExtendedBarrel, barrel.Smallbore,
-             barrel.CorkscrewRifling],
-            [magazine.HighCaliberRounds, magazine.ArmorPiercingRounds, magazine.LightMag,
-             magazine.RicochetRounds],
-            [trait.DynamicSwayReduction, trait.Rangefinder],
-            [trait.LoneWolf],
+            'Ad clear',
+            [barrel.PolygonalRifling, AnyPerk],
+            default_barrels,
+            [trait.Hatchling, trait.ThreatDetector],
+            [trait.MasterOfArms],
             ),
         ]

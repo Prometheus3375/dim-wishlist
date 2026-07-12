@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class CALUSMiniTool(RollDefinition):
@@ -9,6 +10,13 @@ class CALUSMiniTool(RollDefinition):
     https://destiny.report/w/2490988246
     """
     item = Item('CALUS Mini-Tool', hash=2490988246)
+    roll = Roll(
+        'Ad clear',
+        [barrel.ArrowheadBrake, AnyPerk],
+        default_mags,
+        [trait.ThreatDetector],
+        [trait.Incandescent],
+        )
 
 
 class DeathAdder(RollDefinition):
@@ -32,7 +40,7 @@ class MIDAMiniTool(RollDefinition):
     roll = Roll(
         'Solar combo',
         [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.FlaredMagwell, AnyPerk],
+        default_mags,
         [trait.HealClip],
         [trait.Incandescent],
         )
@@ -46,6 +54,32 @@ class NoSurvivors(RollDefinition):
     https://destiny.report/w/3625452995
     """
     item = Item('No Survivors', hash=3625452995)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.HealClip],
+            [trait.BurningAmbition],
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.HealClip, trait.BurningAmbition],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Grenade combo',
+            [barrel.ChamberedCompensator, AnyPerk],
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
+            ),
+        ]
 
 
 class Parabellum(RollDefinition):
@@ -56,6 +90,13 @@ class Parabellum(RollDefinition):
     https://destiny.report/w/3769072067
     """
     item = Item('Parabellum', hash=3769072067)
+    rolls = Roll(
+        'Solar combo',
+        [barrel.ArrowheadBrake, AnyPerk],
+        default_mags,
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
 
 
 class PerfectPitch(RollDefinition):
@@ -66,6 +107,13 @@ class PerfectPitch(RollDefinition):
     https://destiny.report/w/2191451996
     """
     item = Item('Perfect Pitch', hash=2191451996)
+    rolls = Roll(
+        'Solar combo',
+        [barrel.ArrowheadBrake, AnyPerk],
+        default_mags,
+        [trait.HealClip],
+        [trait.Incandescent],
+        )
 
 
 class YeartideApex(RollDefinition):
@@ -79,19 +127,22 @@ class YeartideApex(RollDefinition):
         Item('Yeartide Apex', hash=3293207827),
         Item('Yeartide Apex', hash=2965080304),
         ]
+    is_chosen = True
     rolls = [
         Roll(
-            'Ad clear',
-            [barrel.Smallbore, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.HealClip, trait.Demolitionist],
-            [trait.Incandescent, trait.ChaosReshaped],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Demolitionist],
+            [trait.Incandescent],
+            [trait.ChaosReshaped],
             ),
         Roll(
-            'Super regen',
-            [barrel.Smallbore, AnyPerk],
-            [magazine.FlaredMagwell, AnyPerk],
-            [trait.AttritionOrbs],
-            [trait.ChaosReshaped, trait.TargetLock],
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.Incandescent],
             ),
         ]
