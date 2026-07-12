@@ -31,8 +31,8 @@ class AureusNeutralizer(RollDefinition):
             ),
         Roll(
             'PvP',
-            [barrel.Smallbore, AnyPerk],
-            [magazine.AccurizedRounds, AnyPerk],
+            [barrel.Smallbore],
+            [magazine.AccurizedRounds],
             [trait.ThreatDetector],
             [trait.OpeningShot],
             ),
