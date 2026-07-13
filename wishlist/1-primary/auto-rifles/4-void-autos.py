@@ -116,7 +116,7 @@ class RecklessOraclePantheon(RollDefinition):
             default_barrels,
             default_mags,
             [trait.DestabilizingRounds],
-            [trait.CollectiveAction],
+            [trait.CollectiveDemolition],
             [trait.RepulsorBrace],
             [trait.ChaosReshaped],
             [trait.OneForAll],
