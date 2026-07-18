@@ -32,8 +32,8 @@ class BurdenOfGuilt(RollDefinition):
     rolls = [
         Roll(
             'Stasis combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.AcceleratedCoils, AnyPerk],
+            default_barrels,
+            default_battery,
             [trait.Rimestealer],
             [trait.CrystallineCorpsebloom],
             ),

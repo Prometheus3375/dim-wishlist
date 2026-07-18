@@ -46,7 +46,7 @@ class ExilesCurse(RollDefinition):
         [battery.ProjectionFuse, AnyPerk],
         [trait.UnderPressure],
         [trait.ClosingTime],
-        ),
+        )
 
 
 class FiniteMaybe(RollDefinition):
@@ -117,4 +117,4 @@ class TheEremite(RollDefinition):
         default_battery,
         [trait.EnviousAssassin],
         [trait.ControlledBurst],
-        ),
+        )
