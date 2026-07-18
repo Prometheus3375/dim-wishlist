@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AxialLacuna(RollDefinition):
@@ -39,6 +40,13 @@ class ExilesCurse(RollDefinition):
     https://destiny.report/w/1117787139
     """
     item = Item("Exile's Curse", hash=1117787139)
+    roll = Roll(
+        'PvP',
+        [barrel.HammerForgedRifling, AnyPerk],
+        [battery.ProjectionFuse, AnyPerk],
+        [trait.UnderPressure],
+        [trait.ClosingTime],
+        ),
 
 
 class FiniteMaybe(RollDefinition):
@@ -49,20 +57,24 @@ class FiniteMaybe(RollDefinition):
     https://destiny.report/w/3241217409
     """
     item = Item('Finite Maybe', hash=3241217409)
+    is_chosen = True
     rolls = [
         Roll(
-            'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.AcceleratedCoils, AnyPerk],
+            'Super roll',
+            default_barrels,
+            default_battery,
             [trait.Incandescent],
+            [trait.AmbitiousAssassin],
+            [trait.Demolitionist],
             [trait.Discord],
+            [trait.BurningAmbition],
             ),
         Roll(
-            'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.AcceleratedCoils, AnyPerk],
-            [trait.Reconstruction],
-            [trait.BaitAndSwitch, trait.ControlledBurst],
+            'Ad clear',
+            default_barrels,
+            default_battery,
+            [trait.Incandescent],
+            [trait.Discord, trait.BurningAmbition],
             ),
         ]
 
@@ -88,32 +100,6 @@ class TheBeacon(RollDefinition):
         Item('The Beacon', hash=2161618499),
         Item('The Beacon', hash=76739872),
         ]
-    rolls = [
-        Roll(
-            'Super roll',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.RewindRounds],
-            [trait.Demolitionist],
-            [trait.Deconstruct],
-            [trait.ControlledBurst],
-            [trait.BaitAndSwitch],
-            ),
-        Roll(
-            'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.RewindRounds],
-            [trait.BaitAndSwitch, trait.ControlledBurst],
-            ),
-        Roll(
-            'Deconstruct',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.RewindRounds],
-            [trait.Deconstruct],
-            ),
-        ]
 
 
 class TheEremite(RollDefinition):
@@ -124,3 +110,11 @@ class TheEremite(RollDefinition):
     https://destiny.report/w/3347946548
     """
     item = Item('The Eremite', hash=3347946548)
+    is_chosen = True
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_battery,
+        [trait.EnviousAssassin],
+        [trait.ControlledBurst],
+        ),
