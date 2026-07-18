@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AurvandilFR6(RollDefinition):
@@ -9,6 +10,15 @@ class AurvandilFR6(RollDefinition):
     https://destiny.report/w/3786215462
     """
     item = Item('Aurvandil FR6', hash=3786215462)
+    rolls = [
+        Roll(
+            'Debuff support',
+            default_barrels,
+            default_battery,
+            [trait.Reconstruction],
+            [trait.ChillClip],
+            ),
+        ]
 
 
 class BurdenOfGuilt(RollDefinition):
@@ -51,20 +61,15 @@ class Lionfish4FR(RollDefinition):
     https://destiny.report/w/2423071981
     """
     item = Item('Lionfish-4FR', hash=2423071981)
+    is_chosen = True
     rolls = [
         Roll(
-            'Chill Clip',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
+            'Debuff support',
+            default_barrels,
+            [battery.AcceleratedCoils, AnyPerk],
             [trait.Reconstruction],
             [trait.ChillClip],
-            ),
-        Roll(
-            'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.Reconstruction],
-            [trait.ControlledBurst, trait.ElementalHoning],
+            [origin.VeistStinger],
             ),
         ]
 
@@ -80,20 +85,31 @@ class NoxSiderealIV(RollDefinition):
         Item('Nox Sidereal IV', hash=2875763009),
         Item('Nox Sidereal IV', hash=74733286),
         ]
+    is_chosen = True
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.AmbitiousAssassin],
+            [trait.Demolitionist],
+            [trait.CrystallineCorpsebloom],
+            [trait.ReservoirBurst],
+            [trait.AdrenalineJunkie],
+            ),
+        Roll(
             'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.AmbitiousAssassin, trait.Demolitionist],
+            default_barrels,
+            default_battery,
+            [trait.AmbitiousAssassin],
             [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
             ),
         Roll(
-            'Proximity Power',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.ProximityPower],
-            [trait.CrystallineCorpsebloom, trait.ReservoirBurst],
+            'Grenade combo',
+            default_barrels,
+            default_battery,
+            [trait.Demolitionist],
+            [trait.AdrenalineJunkie],
             ),
         ]
 
@@ -111,17 +127,10 @@ class Riptide(RollDefinition):
         ]
     rolls = [
         Roll(
-            'Chill Clip',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
+            'Debuff support',
+            default_barrels,
+            [battery.AcceleratedCoils, AnyPerk],
             [trait.Overflow, trait.AutoLoadingHolster],
             [trait.ChillClip],
-            ),
-        Roll(
-            'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [battery.EnhancedBattery, AnyPerk],
-            [trait.Overflow, trait.AutoLoadingHolster],
-            [trait.ControlledBurst],
             ),
         ]
