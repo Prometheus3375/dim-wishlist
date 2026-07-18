@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class IterativeLoop(RollDefinition):
@@ -19,6 +20,32 @@ class LoadedQuestion(RollDefinition):
     https://destiny.report/w/852069910
     """
     item = Item('Loaded Question', hash=852069910)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.EnviousAssassin],
+            [trait.Demolitionist],
+            [trait.ReservoirBurst],
+            [trait.ControlledBurst],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_battery,
+            [trait.EnviousAssassin],
+            [trait.ControlledBurst],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_battery,
+            [trait.Demolitionist],
+            [trait.ReservoirBurst],
+            ),
+        ]
 
 
 class MidhasReckoning(RollDefinition):
@@ -31,6 +58,32 @@ class MidhasReckoning(RollDefinition):
     items = [
         Item("Midha's Reckoning", hash=3969066556),
         Item("Midha's Reckoning (Harrowed)", hash=3904516037),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.Cornered],
+            [trait.Voltshot],
+            [trait.Surrounded],
+            [trait.ReservoirBurst],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_battery,
+            [trait.Cornered],
+            [trait.Surrounded, trait.Surrounded],
+            ),
+        Roll(
+            'Reload combo',
+            default_barrels,
+            default_battery,
+            [trait.Voltshot],
+            [trait.ReservoirBurst],
+            ),
         ]
 
 
@@ -78,6 +131,27 @@ class TemperedDynamo(RollDefinition):
         Item('Tempered Dynamo', hash=2274706510),
         Item('Tempered Dynamo', hash=2925315757),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.RewindRounds],
+            [trait.ImpromptuAmmunition],
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            [trait.Discord],
+            [trait.Surrounded],
+            ),
+        Roll(
+            'Arc combo',
+            default_barrels,
+            default_battery,
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            ),
+        ]
 
 
 class TheWizenedRebuke(RollDefinition):
@@ -88,3 +162,38 @@ class TheWizenedRebuke(RollDefinition):
     https://destiny.report/w/293709641
     """
     item = Item('The Wizened Rebuke', hash=293709641)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.HammerForgedRifling, AnyPerk],
+            [battery.ProjectionFuse, AnyPerk],
+            [trait.UnderPressure],
+            [trait.Discord],
+            [trait.Overflow],
+            [trait.ClosingTime],
+            [trait.ControlledBurst],
+            [trait.ReservoirBurst],
+            ),
+        Roll(
+            'PvP',
+            [barrel.HammerForgedRifling, AnyPerk],
+            [battery.ProjectionFuse, AnyPerk],
+            [trait.UnderPressure],
+            [trait.ClosingTime],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_battery,
+            [trait.Overflow],
+            [trait.ControlledBurst],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_battery,
+            [trait.Discord],
+            [trait.ReservoirBurst],
+            ),
+        ]
