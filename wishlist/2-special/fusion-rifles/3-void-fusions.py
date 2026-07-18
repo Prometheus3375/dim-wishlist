@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class CoriolisForce(RollDefinition):
@@ -9,6 +10,25 @@ class CoriolisForce(RollDefinition):
     https://destiny.report/w/856316142
     """
     item = Item('Coriolis Force', hash=856316142)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.AmbitiousAssassin],
+            [trait.ImpromptuAmmunition],
+            [trait.DestabilizingRounds],
+            [trait.ReservoirBurst],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_battery,
+            [trait.AmbitiousAssassin],
+            [trait.DestabilizingRounds, trait.ReservoirBurst],
+            ),
+        ]
 
 
 class LikelySuspect(RollDefinition):
@@ -72,3 +92,11 @@ class ZealotsReward(RollDefinition):
     https://destiny.report/w/2720651699
     """
     item = Item("Zealot's Reward", hash=2720651699)
+    is_chosen = True
+    roll = Roll(
+        'Debuff support',
+        default_barrels,
+        [battery.AcceleratedCoils, AnyPerk],
+        [trait.AutoLoadingHolster],
+        [trait.WitheringGaze],
+        )
