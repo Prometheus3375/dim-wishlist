@@ -160,6 +160,25 @@ class ServiceRevolver(RollDefinition):
         Item('Service Revolver', hash=3796682229),
         Item('Service Revolver', hash=59060498),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.StoppingPower],
+            [trait.KineticTremors],
+            [trait.AllStar],
+            [trait.ExplosivePayload],
+            ),
+        Roll(
+            'Shoot to Loot',
+            [barrel.ExtendedBarrel, AnyPerk],
+            default_mags,
+            [trait.ShootToLoot],
+            [trait.ExplosivePayload, trait.AllStar, trait.KineticTremors],
+            ),
+        ]
 
 
 class SeventhSeraphOfficerRevolver(RollDefinition):
