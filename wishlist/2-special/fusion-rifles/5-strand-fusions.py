@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Accelerando42(RollDefinition):
@@ -22,6 +23,25 @@ class NoxPerennialV(RollDefinition):
     https://destiny.report/w/2366022261
     """
     item = Item('Nox Perennial V', hash=2366022261)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.EnviousAssassin],
+            [trait.ThreatDetector],
+            [trait.ControlledBurst],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_battery,
+            [trait.EnviousAssassin],
+            [trait.ControlledBurst],
+            ),
+        ]
 
 
 class PressurizedPrecision(RollDefinition):
@@ -42,6 +62,40 @@ class Resounding(RollDefinition):
     https://destiny.report/w/3273807888
     """
     item = Item('Resounding', hash=3273807888)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.Cornered],
+            [trait.AmbitiousAssassin],
+            [trait.Slice],
+            [trait.Hatchling],
+            [trait.ReservoirBurst],
+            [trait.Surrounded],
+            ),
+        Roll(
+            'Strand combo',
+            default_barrels,
+            default_battery,
+            [trait.Slice],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Mag combo',
+            default_barrels,
+            default_battery,
+            [trait.AmbitiousAssassin],
+            [trait.ReservoirBurst],
+            ),
+        Roll(
+            'Surrounded combo',
+            default_barrels,
+            default_battery,
+            [trait.Cornered],
+            [trait.Surrounded],
+            ),
+        ]
 
 
 class ScatterSignal(RollDefinition):
@@ -62,3 +116,29 @@ class TAHOMA01(RollDefinition):
     https://destiny.report/w/1225851434
     """
     item = Item('TAHOMA 01', hash=1225851434)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_battery,
+            [trait.Hatchling],
+            [trait.CollectiveDemolition],
+            [trait.ReservoirBurst],
+            [trait.CollectiveAction],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_battery,
+            [trait.Hatchling],
+            [trait.ReservoirBurst],
+            ),
+        Roll(
+            'Collective combo',
+            default_barrels,
+            default_battery,
+            [trait.CollectiveDemolition],
+            [trait.CollectiveAction],
+            ),
+        ]
