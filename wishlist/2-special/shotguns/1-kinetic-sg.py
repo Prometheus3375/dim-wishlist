@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AstralHorizon(RollDefinition):
@@ -59,6 +60,40 @@ class PerfectParadox(RollDefinition):
     https://destiny.report/w/4108648762
     """
     item = Item('Perfect Paradox', hash=4108648762)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.BewilderingBurst],
+            [trait.StoppingPower],
+            [trait.Pugilist],
+            [trait.TrenchBarrel],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Pugilist],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Melee combo',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.Pugilist],
+            [trait.TrenchBarrel],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.StoppingPower],
+            [trait.TrenchBarrel],
+            ),
+        ]
 
 
 class RagnhildD(RollDefinition):
@@ -89,6 +124,13 @@ class Riiswalker(RollDefinition):
     https://destiny.report/w/1435062001
     """
     item = Item('Riiswalker', hash=1435062001)
+    roll = Roll(
+        'PvP',
+        pvp_barrels,
+        pvp_mags,
+        [trait.Discord, trait.KillingWind],
+        [trait.OpeningShot, trait.FragileFocus],
+        )
 
 
 class Someday(RollDefinition):
@@ -111,6 +153,34 @@ class ThreatLevel(RollDefinition):
     items = [
         Item('Threat Level', hash=1523151869),
         Item('Threat Level', hash=950894542),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.OneTwoPunch],
+            [trait.BewilderingBurst],
+            [trait.CascadePoint],
+            [trait.TrenchBarrel],
+            [trait.AllStar],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.OneTwoPunch],
+            [trait.TrenchBarrel],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.CascadePoint],
+            [trait.AggregateCharge, trait.AllStar, trait.TrenchBarrel],
+            ),
         ]
 
 
