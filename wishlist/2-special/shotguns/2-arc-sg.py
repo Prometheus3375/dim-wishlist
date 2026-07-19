@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ArcaneEmbrace(RollDefinition):
@@ -12,13 +13,25 @@ class ArcaneEmbrace(RollDefinition):
         Item('Arcane Embrace', hash=3328019216),
         Item('Arcane Embrace', hash=1813474267),
         ]
-    roll = Roll(
-        'Damage dealing',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.TacticalMag, AnyPerk],
-        [trait.FourthTimesTheCharm],
-        [trait.AggregateCharge, trait.PrecisionInstrument, trait.Surrounded],
-        )
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.EnviousArsenal],
+            [trait.Surrounded],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.EnviousArsenal, trait.FourthTimesTheCharm],
+            [trait.AggregateCharge, trait.Surrounded],
+            ),
+        ]
 
 
 class DedGramaryeIV(RollDefinition):
@@ -29,6 +42,37 @@ class DedGramaryeIV(RollDefinition):
     https://destiny.report/w/870893339
     """
     item = Item('Ded Gramarye IV', hash=870893339)
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.LightMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Discord],
+            [trait.Voltshot],
+            [trait.ChainReaction],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.LightMag, AnyPerk],
+            [trait.Discord],
+            [trait.ChainReaction],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.LightMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Discord does not combo with Voltshot',
+            [trait.Discord],
+            [trait.Voltshot],
+            is_trash=True,
+            ),
+        ]
 
 
 class FoundVerdict(RollDefinition):
@@ -52,6 +96,32 @@ class Matador64(RollDefinition):
     https://destiny.report/w/1518956169
     """
     item = Item('Matador 64', hash=1518956169)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ThreatDetector],
+            [trait.ClosingTime],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ClosingTime],
+            )
+        ]
 
 
 class MIDAMacroTool(RollDefinition):
@@ -62,13 +132,31 @@ class MIDAMacroTool(RollDefinition):
     https://destiny.report/w/2699423382
     """
     item = Item('MIDA Macro-Tool', hash=2699423382)
-    roll = Roll(
-        'PvP',
-        [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],
-        [magazine.AccurizedRounds, magazine.LightMag],
-        [trait.ThreatDetector],
-        [trait.ClosingTime, trait.OpeningShot],
-        )
+    rolls = [
+        Roll(
+            'Super roll',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ThreatDetector],
+            [trait.ClosingTime],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ClosingTime],
+            )
+        ]
 
 
 class ProphetOfDoom(RollDefinition):
@@ -79,6 +167,13 @@ class ProphetOfDoom(RollDefinition):
     https://destiny.report/w/2145441168
     """
     item = Item('Prophet of Doom', hash=2145441168)
+    roll = Roll(
+        'PvP',
+        pvp_barrels,
+        pvp_mags,
+        [trait.ThreatDetector],
+        [trait.OpeningShot],
+        )
 
 
 class TheDeicide(RollDefinition):
@@ -89,6 +184,41 @@ class TheDeicide(RollDefinition):
     https://destiny.report/w/1517780158
     """
     item = Item('The Deicide', hash=1517780158)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.DualLoader],
+            [trait.ThreatDetector],
+            [trait.AutoLoadingHolster],
+            [trait.OneTwoPunch],
+            [trait.TrenchBarrel],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Melee damage increase',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.DualLoader],
+            [trait.Voltshot],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.TacticalMag, AnyPerk],
+            [trait.AutoLoadingHolster],
+            [trait.TrenchBarrel],
+            ),
+        ]
 
 
 class TheInquisitor(RollDefinition):
