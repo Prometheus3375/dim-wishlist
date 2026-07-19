@@ -66,7 +66,7 @@ class PerfectParadox(RollDefinition):
             'Super roll',
             [barrel.BarrelShroud, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
-            [trait.BewilderingBurst],
+            [trait.ThreatDetector],
             [trait.StoppingPower],
             [trait.Pugilist],
             [trait.TrenchBarrel],
@@ -76,7 +76,7 @@ class PerfectParadox(RollDefinition):
             'Melee damage increase',
             [barrel.BarrelShroud, AnyPerk],
             [magazine.TacticalMag, AnyPerk],
-            [trait.Pugilist],
+            [trait.ThreatDetector],
             [trait.OneTwoPunch],
             ),
         Roll(
