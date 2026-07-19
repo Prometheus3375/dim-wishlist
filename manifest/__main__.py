@@ -516,7 +516,7 @@ WEAPON_DEFINITION_CODE = """
 
 class {identifier}({base_class}):
     \"""
-    {damage_type} {weapon_type_with_intrinsic}, {breaker}{craftable}
+    {damage_type} {weapon_type_with_intrinsic}, {breaker}{postfix}
     Source: {source}
     https://www.light.gg/db/items/{hash}
     https://destiny.report/w/{hash}
@@ -554,15 +554,24 @@ def generate_weapons_definitions(manifest_: Manifest, release: str, /) -> None:
             elif source.startswith('Source:'):
                 source = source[8:]
 
+            is_craftable = any(w.is_craftable for w in li)
+            highest_release_string = max(w.release_string for w in li)
+            if is_craftable:
+                postfix = ', Craftable'
+            elif highest_release_string < 'releases.v900':
+                postfix = ', Legacy'
+            else:
+                postfix = ''
+
             format_params = dict(
                 identifier=name_to_python_identifier(main_weapon.name),
                 base_class=RollDefinition.__name__,
                 damage_type='-'.join(main_weapon.damage_types),
                 weapon_type_with_intrinsic=get_weapon_type_with_intrinsic(main_weapon),
                 breaker=breaker,
+                postfix=postfix,
                 source=source,
                 hash=main_weapon.hash,
-                craftable=', Craftable' * any(w.is_craftable for w in li),
                 )
             f.write(WEAPON_DEFINITION_CODE.format_map(format_params))
             if len(li) == 1:
