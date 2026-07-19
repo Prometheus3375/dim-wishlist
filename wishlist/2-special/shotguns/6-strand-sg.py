@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Supercluster(RollDefinition):
@@ -22,6 +23,41 @@ class Swordbreaker(RollDefinition):
         Item('Swordbreaker', hash=3163900678),
         Item('Swordbreaker (Adept)', hash=1239700299),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.BarrelShroud, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.Pugilist],
+            [trait.ThreatDetector],
+            [trait.ParacausalAffinity],
+            [trait.OneTwoPunch],
+            [trait.OpeningShot],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Melee damage increase',
+            pve_barrels,
+            pve_mags,
+            [trait.ThreatDetector],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            pve_barrels,
+            pve_mags,
+            [trait.Pugilist, trait.ParacausalAffinity],
+            [trait.Hatchling],
+            ),
+        ]
 
 
 class UntilItsReturn(RollDefinition):
@@ -32,3 +68,10 @@ class UntilItsReturn(RollDefinition):
     https://destiny.report/w/2883484461
     """
     item = Item('Until Its Return', hash=2883484461)
+    roll = Roll(
+        'Damage dealing',
+        pve_barrels,
+        pve_mags,
+        [trait.Overflow],
+        [trait.TrenchBarrel],
+        )
