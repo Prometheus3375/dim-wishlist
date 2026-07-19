@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ASuddenDeath(RollDefinition):
@@ -19,6 +20,41 @@ class BassoOstinato(RollDefinition):
     https://destiny.report/w/2353274446
     """
     item = Item('Basso Ostinato', hash=2353274446)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            pve_barrels,
+            pve_mags,
+            [trait.GraveRobber],
+            [trait.ProximityPower],
+            [trait.Discord],
+            [trait.OneTwoPunch],
+            [trait.DestabilizingRounds],
+            [trait.TrenchBarrel],
+            ),
+        Roll(
+            'Melee damage increase',
+            pve_barrels,
+            pve_mags,
+            [trait.ProximityPower, trait.GraveRobber],
+            [trait.OneTwoPunch],
+            ),
+        Roll(
+            'Ad clear',
+            pve_barrels,
+            pve_mags,
+            [trait.Discord],
+            [trait.DestabilizingRounds],
+            ),
+        Roll(
+            'Damage dealing',
+            pve_barrels,
+            pve_mags,
+            [trait.GraveRobber],
+            [trait.TrenchBarrel],
+            ),
+        ]
 
 
 class Bonechiller(RollDefinition):
@@ -52,6 +88,14 @@ class Precipial(RollDefinition):
     https://destiny.report/w/367772693
     """
     item = Item('Precipial', hash=367772693)
+    is_chosen = True
+    roll = Roll(
+        'PvP',
+        pvp_barrels,
+        pvp_mags,
+        [trait.ThreatDetector],
+        [trait.OpeningShot],
+        )
 
 
 class PureRecollection(RollDefinition):
@@ -62,6 +106,15 @@ class PureRecollection(RollDefinition):
     https://destiny.report/w/1956186483
     """
     item = Item('Pure Recollection', hash=1956186483)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.ArmorPiercingRounds, AnyPerk],
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
+            ),
+        ]
 
 
 class Python(RollDefinition):
@@ -82,6 +135,23 @@ class RetoldTale(RollDefinition):
     https://destiny.report/w/3442151842
     """
     item = Item('Retold Tale', hash=3442151842)
+    rolls = [
+        Roll(
+            'Super roll',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.LoneWolf],
+            [trait.ClosingTime],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector, trait.LoneWolf],
+            [trait.ClosingTime],
+            ),
+        ]
 
 
 class Retrofuturist(RollDefinition):
