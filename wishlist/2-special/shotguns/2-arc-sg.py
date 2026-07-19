@@ -120,7 +120,7 @@ class Matador64(RollDefinition):
             pvp_mags,
             [trait.LoneWolf],
             [trait.ClosingTime],
-            )
+            ),
         ]
 
 
@@ -155,7 +155,7 @@ class MIDAMacroTool(RollDefinition):
             pvp_mags,
             [trait.LoneWolf],
             [trait.ClosingTime],
-            )
+            ),
         ]
 
 

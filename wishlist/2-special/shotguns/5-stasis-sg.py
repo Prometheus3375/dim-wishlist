@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Deadlock(RollDefinition):
@@ -9,6 +10,32 @@ class Deadlock(RollDefinition):
     https://destiny.report/w/3926987546
     """
     item = Item('Deadlock', hash=3926987546)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ThreatDetector],
+            [trait.ClosingTime],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ClosingTime],
+            ),
+        ]
 
 
 class Fractethyst(RollDefinition):
@@ -31,18 +58,27 @@ class HawthornesFieldForgedShotgun(RollDefinition):
     item = Item("Hawthorne's Field-Forged Shotgun", hash=1402874079)
     rolls = [
         Roll(
-            'PvP',
-            [barrel.Smallbore, barrel.CorkscrewRifling, barrel.BarrelShroud],
-            [magazine.AccurizedRounds, magazine.LightMag],
-            [trait.ThreatDetector, trait.LoneWolf],
-            [trait.OpeningShot, trait.ClosingTime],
+            'Super roll',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ThreatDetector],
+            [trait.ClosingTime],
+            [trait.OpeningShot],
             ),
         Roll(
-            'Ad clear',
-            [barrel.BarrelShroud, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
             [trait.ThreatDetector],
-            [trait.CrystallineCorpsebloom],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.LoneWolf],
+            [trait.ClosingTime],
             ),
         ]
 
@@ -65,6 +101,41 @@ class OneSmallStep(RollDefinition):
     https://destiny.report/w/2527058296
     """
     item = Item('One Small Step', hash=2527058296)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            pve_barrels,
+            pve_mags,
+            [trait.ProximityPower],
+            [trait.Rimestealer],
+            [trait.GraveRobber],
+            [trait.OneTwoPunch],
+            [trait.TrenchBarrel],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Melee damage increase',
+            pve_barrels,
+            pve_mags,
+            [trait.ProximityPower, trait.GraveRobber],
+            [trait.GraveRobber],
+            ),
+        Roll(
+            'Stasis combo',
+            pve_barrels,
+            pve_mags,
+            [trait.Rimestealer],
+            [trait.CrystallineCorpsebloom],
+            ),
+        Roll(
+            'Damage dealing',
+            pve_barrels,
+            pve_mags,
+            [trait.GraveRobber],
+            [trait.TrenchBarrel],
+            ),
+        ]
 
 
 class Trachinus(RollDefinition):
@@ -83,6 +154,17 @@ class Trachinus(RollDefinition):
         ]
     rolls = [
         Roll(
+            'Super roll',
+            [barrel.ArrowheadBrake, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.LeadFromGold],
+            [trait.Rimestealer],
+            [trait.RapidHit],
+            [trait.Headstone],
+            [trait.ChillClip],
+            [trait.PrecisionInstrument],
+            ),
+        Roll(
             'Stasis combo',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.AssaultMag, AnyPerk],
@@ -100,7 +182,7 @@ class Trachinus(RollDefinition):
             'Damage dealing',
             [barrel.ArrowheadBrake, AnyPerk],
             [magazine.AssaultMag, AnyPerk],
-            [trait.RapidHit, trait.LeadFromGold],
+            [trait.RapidHit],
             [trait.PrecisionInstrument],
             ),
         ]
