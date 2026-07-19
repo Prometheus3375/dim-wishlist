@@ -12,6 +12,7 @@ class Psychopomp(RollDefinition):
     https://destiny.report/w/1835232052
     """
     item = Item('Psychopomp', hash=1835232052)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -49,6 +50,7 @@ class Motif41(RollDefinition):
     https://destiny.report/w/1685533876
     """
     item = Item('Motif-41', hash=1685533876)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -77,6 +79,7 @@ class VSVelocityBaton(RollDefinition):
     https://destiny.report/w/2452936816
     """
     item = Item('VS Velocity Baton', hash=2452936816)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -134,6 +137,7 @@ class OusterEngine(RollDefinition):
         Item('Ouster Engine', hash=2223968549),
         Item('Ouster Engine', hash=3718184802),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -181,6 +185,7 @@ class FestivalFlight(RollDefinition):
         Item('Festival Flight', hash=4019651319),
         Item('Festival Flight', hash=3977654524),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',

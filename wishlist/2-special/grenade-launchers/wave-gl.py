@@ -45,6 +45,7 @@ class ForbearanceOnslaught(RollDefinition):
     https://destiny.report/w/3736001860
     """
     item = Item('Forbearance', hash=3736001860)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -134,6 +135,7 @@ class NewPacificEpitaph(RollDefinition):
     https://destiny.report/w/2988180391
     """
     item = Item('New Pacific Epitaph', hash=2988180391)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -184,7 +186,7 @@ class Permafrost(RollDefinition):
             [trait.ImpromptuAmmunition],
             [trait.CrystallineCorpsebloom],
             [trait.ReapersTithe],
-            # todo Check if it works properly, replace with One For All if not.
+            # todo Check if Reapers Tithe works properly, replace with One For All if not.
             [trait.AdrenalineJunkie],
             ),
         Roll(

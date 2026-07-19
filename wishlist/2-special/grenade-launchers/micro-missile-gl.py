@@ -14,6 +14,7 @@ class TheMountaintop(RollDefinition):
     https://destiny.report/w/3736001861
     """
     item = Item('The Mountaintop', hash=3736001861)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -89,6 +90,7 @@ class GizmoWeft(RollDefinition):
         Item('Gizmo Weft', hash=4069880346),
         Item('Gizmo Weft', hash=1572604081),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',

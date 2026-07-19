@@ -60,6 +60,7 @@ class SalvagersSalvo(RollDefinition):
         Item("Salvager's Salvo", hash=1692109318),
         Item("Salvager's Salvo", hash=2461640837),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -116,6 +117,7 @@ class LingeringDread(RollDefinition):
     https://destiny.report/w/1745368385
     """
     item = Item('Lingering Dread', hash=1745368385)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',

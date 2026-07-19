@@ -24,6 +24,7 @@ class Wilderflight(RollDefinition):
     https://destiny.report/w/408862798
     """
     item = Item('Wilderflight', hash=408862798)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
