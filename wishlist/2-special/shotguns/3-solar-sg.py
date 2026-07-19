@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class CompassRose(RollDefinition):
@@ -39,6 +40,14 @@ class IKELOS_SG_v103(RollDefinition):
     https://destiny.report/w/1168625549
     """
     item = Item('IKELOS_SG_v1.0.3', hash=1168625549)
+    is_chosen = True
+    roll = Roll(
+        'Melee damage increase',
+        [barrel.BarrelShroud, AnyPerk],
+        [magazine.TacticalMag, AnyPerk],
+        [trait.ThreatDetector],
+        [trait.OneTwoPunch],
+        )
 
 
 class LastManStanding(RollDefinition):
@@ -69,6 +78,41 @@ class SeventhSeraphCQC12(RollDefinition):
     https://destiny.report/w/2308010345
     """
     item = Item('Seventh Seraph CQC-12', hash=2308010345)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.Discord],
+            [trait.ThreatDetector],
+            [trait.HealClip],
+            [trait.ClosingTime],
+            [trait.ChainReaction],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'PvP',
+            pvp_barrels,
+            pvp_mags,
+            [trait.ThreatDetector],
+            [trait.ClosingTime],
+            ),
+        Roll(
+            'Solar combo',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.LightMag, AnyPerk],
+            [trait.HealClip],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Ad clear',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.LightMag, AnyPerk],
+            [trait.Discord],
+            [trait.Incandescent, trait.ChainReaction],
+            ),
+        ]
 
 
 class StarscapeNull(RollDefinition):
@@ -89,3 +133,10 @@ class WithoutRemorse(RollDefinition):
     https://destiny.report/w/1478986057
     """
     item = Item('Without Remorse', hash=1478986057)
+    Roll(
+        'PvP',
+        pvp_barrels,
+        pvp_mags,
+        [trait.ThreatDetector],
+        [trait.FragileFocus],
+        )
