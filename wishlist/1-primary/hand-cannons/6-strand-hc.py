@@ -122,7 +122,7 @@ class Unloved(RollDefinition):
             [trait.Dragonfly],
             [trait.Hatchling],
             [trait.Tear],
-            [trait.ParacausalAffinity],
+            [trait.Rampage],
             ),
         Roll(
             'Strand combo',
