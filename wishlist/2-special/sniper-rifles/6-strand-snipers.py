@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ALLEN05(RollDefinition):
@@ -19,13 +20,24 @@ class LanceEphemeral(RollDefinition):
     https://destiny.report/w/688593230
     """
     item = Item('Lance Ephemeral', hash=688593230)
+    is_chosen = True
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.FourthTimesTheCharm],
+            [trait.RewindRounds],
+            [trait.BaitAndSwitch],
+            [trait.Deconstruct],
+            [trait.ElementalHoning],
+            ),
+        Roll(
             'Damage dealing',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.TacticalMag, AnyPerk],
-            [trait.RewindRounds, trait.FourthTimesTheCharm],
-            [trait.BaitAndSwitch, trait.Redirection, trait.ElementalHoning],
+            default_barrels,
+            default_mags,
+            [trait.FourthTimesTheCharm, trait.RewindRounds],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
             ),
         ]
 
@@ -38,6 +50,24 @@ class NaeemsLance(RollDefinition):
     https://destiny.report/w/4119503981
     """
     item = Item("Naeem's Lance", hash=4119503981)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Deconstruct],
+            [trait.RewindRounds],
+            [trait.ElementalHoning],
+            [trait.PrecisionInstrument],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.PrecisionInstrument, trait.ElementalHoning],
+            ),
+        ]
 
 
 class VoltaBracket(RollDefinition):
@@ -48,3 +78,10 @@ class VoltaBracket(RollDefinition):
     https://destiny.report/w/3920310144
     """
     item = Item('Volta Bracket', hash=3920310144)
+    roll = Roll(
+        'Sniper spam',
+        default_barrels,
+        default_mags,
+        [trait.TripleTap],
+        [trait.RewindRounds],
+        )
