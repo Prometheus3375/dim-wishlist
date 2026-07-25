@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Beloved(RollDefinition):
@@ -19,6 +20,13 @@ class IKELOS_SR_v103(RollDefinition):
     https://destiny.report/w/2302346155
     """
     item = Item('IKELOS_SR_v1.0.3', hash=2302346155)
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.FourthTimesTheCharm],
+        [trait.FocusedFury],
+        )
 
 
 class KeenThistle(RollDefinition):
@@ -29,6 +37,33 @@ class KeenThistle(RollDefinition):
     https://destiny.report/w/2499834164
     """
     item = Item('Keen Thistle', hash=2499834164)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal],
+            [trait.TripleTap],
+            [trait.BaitAndSwitch],
+            [trait.FourthTimesTheCharm],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap, trait.EnviousArsenal],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
+            ),
+        Roll(
+            'Sniper spam',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap],
+            [trait.FourthTimesTheCharm],
+            ),
+        ]
 
 
 class LastForay(RollDefinition):
@@ -39,6 +74,32 @@ class LastForay(RollDefinition):
     https://destiny.report/w/4118936670
     """
     item = Item('Last Foray', hash=4118936670)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.EnviousAssassin],
+            [trait.PrecisionInstrument],
+            [trait.BaitAndSwitch],
+            [trait.TripleTap],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds, trait.EnviousAssassin],
+            [trait.BaitAndSwitch, trait.PrecisionInstrument],
+            ),
+        Roll(
+            'Sniper spam',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.TripleTap],
+            ),
+        ]
 
 
 class OmniscientEye(RollDefinition):
@@ -49,6 +110,14 @@ class OmniscientEye(RollDefinition):
     https://destiny.report/w/147444292
     """
     item = Item('Omniscient Eye', hash=147444292)
+    is_chosen = True
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.FourthTimesTheCharm],
+        [trait.PrecisionInstrument],
+        )
 
 
 class TwilightOath(RollDefinition):
@@ -59,6 +128,24 @@ class TwilightOath(RollDefinition):
     https://destiny.report/w/268357178
     """
     item = Item('Twilight Oath', hash=268357178)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.EnviousAssassin],
+            [trait.LuckyShot],
+            [trait.PrecisionInstrument],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousAssassin, trait.LuckyShot],
+            [trait.BaitAndSwitch, trait.PrecisionInstrument],
+            ),
+        ]
 
 
 class UzumeRR4(RollDefinition):
