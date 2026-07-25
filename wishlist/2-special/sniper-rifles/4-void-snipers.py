@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class A1000YardStare(RollDefinition):
@@ -29,6 +30,14 @@ class FathersSins(RollDefinition):
     https://destiny.report/w/3865728990
     """
     item = Item("Father's Sins", hash=3865728990)
+    is_chosen = True
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.TripleTap],
+        [trait.BaitAndSwitch],
+        )
 
 
 class FrozenOrbit(RollDefinition):
@@ -42,6 +51,13 @@ class FrozenOrbit(RollDefinition):
         Item('Frozen Orbit', hash=1516542120),
         Item('Frozen Orbit', hash=232119851),
         ]
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.TripleTap],
+        [trait.VorpalWeapon],
+        )
 
 
 class ShorelineDissident(RollDefinition):
@@ -54,8 +70,8 @@ class ShorelineDissident(RollDefinition):
     item = Item('Shoreline Dissident', hash=1193318082)
     roll = Roll(
         'Damage dealing',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [magazine.TacticalMag, AnyPerk],
+        default_barrels,
+        default_mags,
         [trait.TripleTap],
         [trait.PrecisionInstrument],
         )
@@ -69,3 +85,31 @@ class TrophyHunter(RollDefinition):
     https://destiny.report/w/2566169398
     """
     item = Item('Trophy Hunter', hash=2566169398)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.AutoLoadingHolster],
+            [trait.LuckyShot],
+            [trait.TripleTap],
+            [trait.VorpalWeapon],
+            [trait.BaitAndSwitch],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap, trait.LuckyShot],
+            [trait.AggregateCharge, trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Support rifle',
+            default_barrels,
+            default_mags,
+            [trait.AutoLoadingHolster],
+            [trait.VorpalWeapon],
+            ),
+        ]
