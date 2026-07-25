@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class AloneAsAGod(RollDefinition):
@@ -11,6 +12,26 @@ class AloneAsAGod(RollDefinition):
     items = [
         Item('Alone as a god', hash=353884603),
         Item('Alone as a god', hash=4278664152),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.StoppingPower],
+            [trait.RewindRounds],
+            [trait.LuckyShot],
+            [trait.KineticTremors],
+            [trait.AllStar],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.StoppingPower, trait.RewindRounds, trait.LuckyShot],
+            [trait.AggregateCharge, trait.AllStar, trait.KineticTremors],
+            ),
         ]
 
 
@@ -58,6 +79,27 @@ class PraedythsRevenge(RollDefinition):
         Item("Praedyth's Revenge", hash=3844610113),
         Item("Praedyth's Revenge (Timelost)", hash=2362652544),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.FourthTimesTheCharm],
+            [trait.KineticTremors],
+            [trait.RewindRounds],
+            [trait.ElementalHoning],
+            [trait.BaitAndSwitch],
+            [trait.AllStar],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.KineticTremors, trait.FourthTimesTheCharm, trait.RewindRounds],
+            [trait.BaitAndSwitch, trait.ElementalHoning, trait.AllStar],
+            ),
+        ]
 
 
 class SomethingSomething(RollDefinition):
@@ -71,6 +113,33 @@ class SomethingSomething(RollDefinition):
         Item('Something Something', hash=3421075982),
         Item('Something Something', hash=690412397),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap],
+            [trait.StoppingPower],
+            [trait.Discord],
+            [trait.ElementalHoning],
+            [trait.KineticTremors],
+            [trait.Redirection],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap, trait.StoppingPower],
+            [trait.Redirection, trait.KineticTremors, trait.ElementalHoning],
+            ),
+        Roll(
+            'Stacking Redirection',
+            default_barrels,
+            default_mags,
+            [trait.Discord],
+            [trait.Redirection],
+            ),
+        ]
 
 
 class Succession(RollDefinition):
@@ -81,6 +150,13 @@ class Succession(RollDefinition):
     https://destiny.report/w/2990047042
     """
     item = Item('Succession', hash=2990047042)
+    roll = Roll(
+        'Support rifle',
+        default_barrels,
+        default_mags,
+        [trait.Reconstruction],
+        [trait.Recombination],
+        )
 
 
 class SuccessionOnslaught(RollDefinition):
@@ -91,6 +167,25 @@ class SuccessionOnslaught(RollDefinition):
     https://destiny.report/w/2731922624
     """
     item = Item('Succession', hash=2731922624)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.KineticTremors],
+            [trait.Reconstruction],
+            [trait.Recombination],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Support rifle',
+            default_barrels,
+            default_mags,
+            [trait.Reconstruction],
+            [trait.Recombination],
+            ),
+        ]
 
 
 class TheSupremacy(RollDefinition):
@@ -101,6 +196,13 @@ class TheSupremacy(RollDefinition):
     https://destiny.report/w/2884596447
     """
     item = Item('The Supremacy', hash=2884596447)
+    roll = Roll(
+        'Sniper spam',
+        default_barrels,
+        default_mags,
+        [trait.RewindRounds],
+        [trait.FourthTimesTheCharm],
+        )
 
 
 class Tranquility(RollDefinition):
