@@ -414,7 +414,7 @@ class RefusalOfTheCall(RollDefinition):
 class RefusalOfTheCallOriginal(RollDefinition):
     """
     Strand Adaptive Glaive, Anti-Barrier, Legacy
-    Source: Xûr?
+    Source: Unobtainable (Heresy)
     https://www.light.gg/db/items/25228802
     https://destiny.report/w/25228802
     """

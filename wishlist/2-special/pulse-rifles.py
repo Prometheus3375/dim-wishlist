@@ -1,5 +1,8 @@
 from wishlist import *
 
+default_barrels = [launcher_barrel.VolatileLaunch, AnyPerk]
+default_mags = [magazine.HighVelocityRounds, AnyPerk]
+
 
 class PsiAeternaIV(RollDefinition):
     """
@@ -12,29 +15,32 @@ class PsiAeternaIV(RollDefinition):
         Item('Psi Aeterna IV', hash=3556730800),
         Item('Psi Aeterna IV', hash=135971347),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.BlastDistributor],
+            [trait.BeaconRounds],
             [trait.TrickleCharge],
             [trait.ElementalHoning],
+            [trait.JoltingFeedback],
             [trait.OneForAll],
             ),
         Roll(
-            'Damage dealing',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
-            [trait.TrickleCharge],
-            [trait.ElementalHoning],
+            'Miniboss damage',
+            default_barrels,
+            default_mags,
+            [trait.TrickleCharge, trait.BeaconRounds],
+            [trait.OneForAll, trait.JoltingFeedback],
             ),
         Roll(
             'Blast Distributor',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.HighVelocityRounds, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.BlastDistributor],
-            [trait.OneForAll, trait.ElementalHoning],
+            [trait.OneForAll, trait.JoltingFeedback],
             ),
         ]
 
@@ -50,6 +56,34 @@ class VeillantifD(RollDefinition):
         Item('Veillantif-D', hash=1361871430),
         Item('Veillantif-D', hash=406384293),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.AirTrigger],
+            [trait.BlastDistributor],
+            [trait.ParacausalAffinity],
+            [trait.Incandescent],
+            [trait.SwordLogic],
+            ),
+        Roll(
+            'Miniboss damage',
+            default_barrels,
+            default_mags,
+            [trait.HealClip, trait.AirTrigger],
+            [trait.SwordLogic, trait.ParacausalAffinity],
+            ),
+        Roll(
+            'Blast Distributor',
+            default_barrels,
+            default_mags,
+            [trait.BlastDistributor],
+            [trait.SwordLogic, trait.ParacausalAffinity],
+            ),
+        ]
 
 
 class MintRetrograde(RollDefinition):
@@ -63,3 +97,47 @@ class MintRetrograde(RollDefinition):
         Item('Mint Retrograde', hash=1715391576),
         Item('Mint Retrograde', hash=3285784871),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BeaconRounds],
+            [trait.RewindRounds],
+            [trait.Hatchling],
+            [trait.ElementalHoning],
+            [trait.MasterOfArms],
+            ),
+        Roll(
+            'Miniboss damage',
+            default_barrels,
+            default_mags,
+            [trait.BeaconRounds, trait.RewindRounds],
+            [trait.MasterOfArms, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Hatchling],
+            [trait.MasterOfArms, trait.ElementalHoning],
+            ),
+        ]
+
+
+class MintRetrogradeOriginal(RollDefinition):
+    """
+    Strand Pulse Rifle, Micro-Missile Frame, Anti-Unstoppable
+    Source: Unobtainable (Pinnacle Ops)
+    https://www.light.gg/db/items/42435996
+    https://destiny.report/w/42435996
+    """
+    item = Item('Mint Retrograde', hash=42435996)
+    roll = Roll(
+        'Ad clear',
+        default_barrels,
+        default_mags,
+        [trait.Hatchling],
+        [trait.OneForAll],
+        )
