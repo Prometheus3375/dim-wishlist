@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class Adored(RollDefinition):
@@ -22,6 +23,24 @@ class Apostate(RollDefinition):
     https://destiny.report/w/846241149
     """
     item = Item('Apostate', hash=846241149)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap],
+            [trait.SuperchargedMagazine],
+            [trait.GearShift],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap, trait.SuperchargedMagazine],
+            [trait.GearShift],
+            ),
+        ]
 
 
 class Mechabre(RollDefinition):
@@ -52,6 +71,25 @@ class OccludedFinality(RollDefinition):
     https://destiny.report/w/3104013318
     """
     item = Item('Occluded Finality', hash=3104013318)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap],
+            [trait.RewindRounds],
+            [trait.AggregateCharge],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.TripleTap, trait.RewindRounds],
+            [trait.AggregateCharge, trait.ElementalHoning],
+            ),
+        ]
 
 
 class RapidGrowth(RollDefinition):
@@ -64,6 +102,24 @@ class RapidGrowth(RollDefinition):
     items = [
         Item('Rapid Growth', hash=3448712083),
         Item('Rapid Growth', hash=3856342856),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.SuperchargedMagazine],
+            [trait.FourthTimesTheCharm],
+            [trait.GearShift],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.FourthTimesTheCharm, trait.SuperchargedMagazine],
+            [trait.AggregateCharge, trait.GearShift],
+            ),
         ]
 
 
@@ -88,6 +144,38 @@ class TataraGaze(RollDefinition):
         Item('Tatara Gaze', hash=2531614757),
         Item('Tatara Gaze', hash=3595694326),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.Discord],
+            [trait.Redirection],
+            [trait.TripleTap],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.Redirection],
+            ),
+        Roll(
+            'Stacking Redirection',
+            default_barrels,
+            default_mags,
+            [trait.Discord],
+            [trait.Redirection],
+            ),
+        Roll(
+            'Sniper spam',
+            default_barrels,
+            default_mags,
+            [trait.RewindRounds],
+            [trait.TripleTap],
+            ),
+        ]
 
 
 class TheHelmsman(RollDefinition):
@@ -101,3 +189,10 @@ class TheHelmsman(RollDefinition):
         Item('The Helmsman', hash=2325078119),
         Item('The Helmsman', hash=3215649176),
         ]
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.LightTouch],
+        [trait.GearShift],
+        )
