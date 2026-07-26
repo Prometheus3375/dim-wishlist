@@ -111,7 +111,7 @@ class RetracedPath(RollDefinition):
     item = Item('Retraced Path', hash=548958835)
     roll = Roll(
         'Shoot To Loot',
-        default_barrels,
+        [barrel.ExtendedBarrel, AnyPerk],
         default_batteries,
         [trait.ShootToLoot],
         [trait.Incandescent],

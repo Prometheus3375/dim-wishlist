@@ -208,7 +208,10 @@ class TinashasMastery(RollDefinition):
     https://www.light.gg/db/items/247984828
     https://destiny.report/w/247984828
     """
-    item = Item("Tinasha's Mastery", hash=247984828)
+    items = [
+        Item("Tinasha's Mastery", hash=247984828),
+        Item("Tinasha's Mastery", hash=480368036),
+        ]
     is_chosen = True
     rolls = [
         Roll(
