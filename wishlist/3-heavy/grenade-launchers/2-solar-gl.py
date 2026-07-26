@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class CanisMajor(RollDefinition):
@@ -9,6 +10,33 @@ class CanisMajor(RollDefinition):
     https://destiny.report/w/2966714447
     """
     item = Item('Canis Major', hash=2966714447)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ClownCartridge],
+            [trait.Incandescent],
+            [trait.Reconstruction],
+            [trait.ChainReaction],
+            [trait.AggregateCharge],
+            [trait.ExplosiveLight],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.ClownCartridge, trait.Reconstruction],
+            [trait.ExplosiveLight, trait.AggregateCharge],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.ChainReaction],
+            ),
+        ]
 
 
 class CryMutiny(RollDefinition):
@@ -19,16 +47,31 @@ class CryMutiny(RollDefinition):
     https://destiny.report/w/768696858
     """
     item = Item('Cry Mutiny', hash=768696858)
-
-
-class LoveAndDeath(RollDefinition):
-    """
-    Solar Drum Grenade Launcher, Compressed Wave Frame, Anti-Unstoppable
-    Source: The Moon
-    https://www.light.gg/db/items/3482299617
-    https://destiny.report/w/3482299617
-    """
-    item = Item('Love and Death', hash=3482299617)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.DangerZone],
+            [trait.Surrounded],
+            [trait.MegaKillClip],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.MegaKillClip, trait.Surrounded],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.DangerZone],
+            [trait.Surrounded],
+            ),
+        ]
 
 
 class OutrageousFortune(RollDefinition):
@@ -39,25 +82,29 @@ class OutrageousFortune(RollDefinition):
     https://destiny.report/w/4146673634
     """
     item = Item('Outrageous Fortune', hash=4146673634)
+    is_chosen = True
     rolls = [
         Roll(
-            'Damage dealing',
-            [launcher_barrel.HardLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
+            'Super roll',
+            default_barrels,
+            default_mags,
             [trait.EnviousArsenal],
+            [trait.Incandescent],
+            [trait.ChainReaction],
             [trait.BaitAndSwitch],
-            ),
-        Roll(
-            'High DPS',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
-            [trait.EnviousArsenal],
             [trait.ExplosiveLight],
             ),
         Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal],
+            [trait.ExplosiveLight, trait.BaitAndSwitch],
+            ),
+        Roll(
             'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.HighExplosiveOrdnance, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.ChainReaction],
             ),
