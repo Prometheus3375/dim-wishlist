@@ -1,5 +1,8 @@
 from wishlist import *
 
+default_barrels = [barrel.Smallbore, AnyPerk]
+default_batteries = [battery.TacticalBattery, AnyPerk]
+
 
 class Keraunios(RollDefinition):
     """
@@ -12,38 +15,30 @@ class Keraunios(RollDefinition):
         Item('Keraunios', hash=2386208942),
         Item('Keraunios', hash=981450701),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
-            [trait.FourthTimesTheCharm],
+            default_barrels,
+            default_batteries,
             [trait.SuperchargedMagazine],
             [trait.ShootToLoot],
-            [trait.TargetLock],
             [trait.JoltingFeedback],
             [trait.DetonatorBeam],
             ),
         Roll(
             'Ad clear',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
+            default_barrels,
+            default_batteries,
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback, trait.DetonatorBeam],
             ),
         Roll(
             'Shoot To Loot',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
+            default_barrels,
+            default_batteries,
             [trait.ShootToLoot],
             [trait.DetonatorBeam, trait.JoltingFeedback],
-            ),
-        Roll(
-            'Continuous damage',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
-            [trait.FourthTimesTheCharm],
-            [trait.TargetLock],
             ),
         ]
 
@@ -56,6 +51,13 @@ class PathOfLeastResistance(RollDefinition):
     https://destiny.report/w/2827764482
     """
     item = Item('Path of Least Resistance', hash=2827764482)
+    roll = Roll(
+        'Shoot To Loot',
+        default_barrels,
+        default_batteries,
+        [trait.ShootToLoot],
+        [trait.Dragonfly],
+        )
 
 
 class AcasiasDejection(RollDefinition):
@@ -69,6 +71,34 @@ class AcasiasDejection(RollDefinition):
         Item("Acasia's Dejection", hash=1471212226),
         Item("Acasia's Dejection (Adept)", hash=3493494807),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_batteries,
+            [trait.FieldPrep],
+            [trait.Reconstruction],
+            [trait.BurningAmbition],
+            [trait.Incandescent],
+            [trait.DetonatorBeam],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_batteries,
+            [trait.FieldPrep, trait.Reconstruction],
+            [trait.Incandescent, trait.DetonatorBeam, trait.ChaosReshaped],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_batteries,
+            [trait.BurningAmbition],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class RetracedPath(RollDefinition):
@@ -79,6 +109,13 @@ class RetracedPath(RollDefinition):
     https://destiny.report/w/548958835
     """
     item = Item('Retraced Path', hash=548958835)
+    roll = Roll(
+        'Shoot To Loot',
+        default_barrels,
+        default_batteries,
+        [trait.ShootToLoot],
+        [trait.Incandescent],
+        )
 
 
 class Chronophage(RollDefinition):
@@ -89,6 +126,14 @@ class Chronophage(RollDefinition):
     https://destiny.report/w/1886840007
     """
     item = Item('Chronophage', hash=1886840007)
+    is_chosen = True
+    roll = Roll(
+        'Void combo',
+        default_barrels,
+        default_batteries,
+        [trait.RepulsorBrace],
+        [trait.DestabilizingRounds],
+        )
 
 
 class HollowDenial(RollDefinition):
@@ -115,11 +160,12 @@ class ActionItem(RollDefinition):
         Item('Action Item', hash=437854390),
         Item('Action Item', hash=437854391),
         ]
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
+            default_barrels,
+            default_batteries,
             [trait.Rimestealer],
             [trait.Deconstruct],
             [trait.Demolitionist],
@@ -128,24 +174,17 @@ class ActionItem(RollDefinition):
             ),
         Roll(
             'Stasis combo',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
+            default_barrels,
+            default_batteries,
             [trait.Rimestealer],
             [trait.CrystallineCorpsebloom],
             ),
         Roll(
-            'Demolitionist',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
-            [trait.Demolitionist],
-            [trait.CrystallineCorpsebloom, trait.DetonatorBeam],
-            ),
-        Roll(
             'Deconstruct',
-            [barrel.Smallbore, AnyPerk],
-            [battery.TacticalBattery, AnyPerk],
+            default_barrels,
+            default_batteries,
             [trait.Deconstruct],
-            [trait.CrystallineCorpsebloom, trait.DetonatorBeam],
+            [trait.CrystallineCorpsebloom],
             ),
         ]
 
@@ -174,13 +213,23 @@ class Ribbontail(RollDefinition):
         Item('Ribbontail', hash=407150810),
         Item('Ribbontail', hash=407150811),
         ]
-    roll = Roll(
-        'Ad clear',
-        [barrel.Smallbore, AnyPerk],
-        [battery.TacticalBattery, AnyPerk],
-        [trait.Subsistence],
-        [trait.Redirection, trait.DetonatorBeam],
-        )
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_batteries,
+            [trait.Subsistence],
+            [trait.DetonatorBeam],
+            [trait.Redirection],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_batteries,
+            [trait.Subsistence],
+            [trait.Redirection, trait.DetonatorBeam],
+            ),
+        ]
 
 
 class Unsworn(RollDefinition):
@@ -191,3 +240,30 @@ class Unsworn(RollDefinition):
     https://destiny.report/w/3462679024
     """
     item = Item('Unsworn', hash=3462679024)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_batteries,
+            [trait.ShootToLoot],
+            [trait.Tear],
+            [trait.DetonatorBeam],
+            [trait.Hatchling],
+            [trait.ChaosReshaped],
+            ),
+        Roll(
+            'Strand combo',
+            default_barrels,
+            default_batteries,
+            [trait.Tear],
+            [trait.Hatchling],
+            ),
+        Roll(
+            'Shoot To loot',
+            default_barrels,
+            default_batteries,
+            [trait.ShootToLoot],
+            [trait.DetonatorBeam],
+            ),
+        ]
