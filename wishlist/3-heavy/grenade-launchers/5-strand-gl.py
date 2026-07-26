@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class CataphractGL3(RollDefinition):
@@ -11,18 +12,29 @@ class CataphractGL3(RollDefinition):
     item = Item('Cataphract GL3', hash=3805679279)
     rolls = [
         Roll(
-            'Damage dealing',
-            [launcher_barrel.HardLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
-            [trait.EnviousAssassin, trait.EnviousArsenal, trait.AutoLoadingHolster],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.EnviousAssassin],
+            [trait.EnviousArsenal],
+            [trait.BlastDistributor],
             [trait.BaitAndSwitch],
+            [trait.ExplosiveLight],
+            [trait.Demolitionist],
             ),
         Roll(
-            'High DPS',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
-            [trait.EnviousArsenal, trait.AutoLoadingHolster, trait.EnviousAssassin],
-            [trait.ExplosiveLight],
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal, trait.EnviousAssassin],
+            [trait.ExplosiveLight, trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            default_mags,
+            [trait.BlastDistributor],
+            [trait.Demolitionist],
             ),
         ]
 
@@ -38,6 +50,33 @@ class KoraxissDistress(RollDefinition):
         Item("Koraxis's Distress", hash=2972949637),
         Item("Koraxis's Distress (Adept)", hash=495442100),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.EnviousAssassin],
+            [trait.ChainReaction],
+            [trait.EnviousArsenal],
+            [trait.Surrounded],
+            [trait.Hatchling],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal, trait.EnviousAssassin],
+            [trait.BaitAndSwitch, trait.Surrounded],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ChainReaction],
+            [trait.Surrounded, trait.Hatchling],
+            ),
+        ]
 
 
 class TheEverPresent(RollDefinition):
@@ -48,25 +87,30 @@ class TheEverPresent(RollDefinition):
     https://destiny.report/w/3177074192
     """
     item = Item('The Ever-Present', hash=3177074192)
+    is_chosen = True
     rolls = [
         Roll(
-            'Damage dealing',
-            [launcher_barrel.HardLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Hatchling],
             [trait.EnviousArsenal],
-            [trait.AggregateCharge, trait.BaitAndSwitch, trait.ElementalHoning],
-            ),
-        Roll(
-            'High DPS',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.SpikeGrenades, AnyPerk],
             [trait.AutoLoadingHolster],
             [trait.ExplosiveLight],
+            [trait.AggregateCharge],
+            [trait.ChainReaction],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal, trait.AutoLoadingHolster],
+            [trait.ExplosiveLight, trait.AggregateCharge],
             ),
         Roll(
             'Ad clear',
-            [launcher_barrel.VolatileLaunch, AnyPerk],
-            [magazine.AlloyCasing, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.Hatchling],
             [trait.ChainReaction],
             ),

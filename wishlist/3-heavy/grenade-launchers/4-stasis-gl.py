@@ -1,14 +1,5 @@
 from wishlist import *
-
-
-class DimensionalHypotrochoid(RollDefinition):
-    """
-    Stasis Drum Grenade Launcher, Compressed Wave Frame, Anti-Unstoppable, Craftable
-    Source: Neomuna
-    https://www.light.gg/db/items/1311684613
-    https://destiny.report/w/1311684613
-    """
-    item = Item('Dimensional Hypotrochoid', hash=1311684613)
+from . import *
 
 
 class VSChillInhibitor(RollDefinition):
@@ -19,3 +10,31 @@ class VSChillInhibitor(RollDefinition):
     https://destiny.report/w/2452936817
     """
     item = Item('VS Chill Inhibitor', hash=2452936817)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.CascadePoint],
+            [trait.ChillClip],
+            [trait.EnviousArsenal],
+            [trait.AggregateCharge],
+            [trait.ChainReaction],
+            [trait.ExplosiveLight],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal, trait.CascadePoint],
+            [trait.ExplosiveLight, trait.AggregateCharge],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ChillClip],
+            [trait.ChainReaction],
+            ),
+        ]
