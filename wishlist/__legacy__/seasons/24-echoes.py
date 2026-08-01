@@ -68,18 +68,3 @@ class MartyrsRetribution(RollDefinition):
             [trait.AdrenalineJunkie],
             ),
         ]
-
-
-class LineInTheSand(RollDefinition):
-    """
-    Arc Linear Fusion Rifle, Precision Frame
-    https://www.light.gg/db/items/2450049485
-    """
-    item = Item('Line in the Sand', hash=2450049485)
-    roll = Roll(
-        'Damage dealing',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [battery.AcceleratedCoils, AnyPerk],
-        [trait.Demolitionist, trait.ClownCartridge],
-        [trait.BaitAndSwitch],
-        )
