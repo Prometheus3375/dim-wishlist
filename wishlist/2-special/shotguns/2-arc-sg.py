@@ -86,6 +86,32 @@ class FoundVerdict(RollDefinition):
         Item('Found Verdict', hash=694500607),
         Item('Found Verdict (Timelost)', hash=851296754),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.AggregateCharge],
+            [trait.TrenchBarrel],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'PvP',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AccurizedRounds, AnyPerk],
+            [trait.ThreatDetector],
+            [trait.OpeningShot],
+            ),
+        Roll(
+            'Damage dealing',
+            [barrel.Smallbore, AnyPerk],
+            [magazine.AssaultMag, AnyPerk],
+            [trait.AggregateCharge],
+            [trait.TrenchBarrel],
+            ),
+        ]
 
 
 class Matador64(RollDefinition):
