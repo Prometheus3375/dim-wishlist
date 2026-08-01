@@ -60,7 +60,6 @@ class ArcticHaze(RollDefinition):
     https://destiny.report/w/2187337757
     """
     item = Item('Arctic Haze', hash=2187337757)
-    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
@@ -109,8 +108,16 @@ class TheRingingNail(RollDefinition):
             [trait.Incandescent],
             [trait.ImpromptuAmmunition],
             [trait.HealClip],
+            [trait.Rampage],
             [trait.BurningAmbition],
             [trait.Firefly],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ImpromptuAmmunition],
+            [trait.Firefly, trait.Rampage],
             ),
         Roll(
             'Solar combo',
