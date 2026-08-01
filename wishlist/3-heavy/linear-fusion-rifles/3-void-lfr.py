@@ -11,6 +11,7 @@ class DoomedPetitioner(RollDefinition):
     """
     item = Item('Doomed Petitioner', hash=1501688142)
     roll = Roll(
+        'Damage dealing',
         default_barrels,
         [battery.EnhancedBattery, AnyPerk],
         [trait.EnviousAssassin],
@@ -89,6 +90,7 @@ class Taipan4fr(RollDefinition):
     """
     item = Item('Taipan-4fr', hash=1911060537)
     roll = Roll(
+        'Damage dealing',
         default_barrels,
         default_batteries,
         [trait.TripleTap],
