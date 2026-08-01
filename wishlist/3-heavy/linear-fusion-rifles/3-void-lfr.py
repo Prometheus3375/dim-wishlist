@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class DoomedPetitioner(RollDefinition):
@@ -9,6 +10,12 @@ class DoomedPetitioner(RollDefinition):
     https://destiny.report/w/1501688142
     """
     item = Item('Doomed Petitioner', hash=1501688142)
+    roll = Roll(
+        default_barrels,
+        [battery.EnhancedBattery, AnyPerk],
+        [trait.EnviousAssassin],
+        [trait.PrecisionInstrument],
+        )
 
 
 class EyesUnveiled(RollDefinition):
@@ -19,6 +26,25 @@ class EyesUnveiled(RollDefinition):
     https://destiny.report/w/4147428506
     """
     item = Item('Eyes Unveiled', hash=4147428506)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.FourthTimesTheCharm],
+            [trait.MegaKillClip],
+            [trait.PrecisionInstrument],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            [battery.EnhancedBattery, AnyPerk],
+            [trait.FourthTimesTheCharm, trait.MegaKillClip],
+            [trait.PrecisionInstrument, trait.ElementalHoning],
+            ),
+        ]
 
 
 class MistralLift(RollDefinition):
@@ -32,14 +58,26 @@ class MistralLift(RollDefinition):
         Item('Mistral Lift', hash=766122634),
         Item('Mistral Lift', hash=270610849),
         ]
-    roll = Roll(
-        'Damage dealing',
-        [barrel.ArrowheadBrake, AnyPerk],
-        [battery.AcceleratedCoils, AnyPerk],
-        [trait.EnviousArsenal, trait.WitheringGaze],
-        [trait.BaitAndSwitch],
-        [origin.VeistStinger],
-        )
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal],
+            [trait.Overflow],
+            [trait.BaitAndSwitch],
+            [trait.PrecisionInstrument],
+            [origin.VeistStinger],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.Overflow, trait.EnviousArsenal],
+            [trait.BaitAndSwitch, trait.PrecisionInstrument],
+            [origin.VeistStinger],
+            ),
+        ]
 
 
 class Taipan4fr(RollDefinition):
@@ -50,3 +88,9 @@ class Taipan4fr(RollDefinition):
     https://destiny.report/w/1911060537
     """
     item = Item('Taipan-4fr', hash=1911060537)
+    roll = Roll(
+        default_barrels,
+        default_mags,
+        [trait.TripleTap],
+        [trait.FiringLine],
+        )
