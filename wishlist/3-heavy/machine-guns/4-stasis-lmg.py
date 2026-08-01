@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ArchonsThunder(RollDefinition):
@@ -8,7 +9,27 @@ class ArchonsThunder(RollDefinition):
     https://www.light.gg/db/items/91672792
     https://destiny.report/w/91672792
     """
-    item = Item("Archon's Thunder", hash=91672792)
+    items = [
+        Item("Archon's Thunder", hash=91672792),
+        Item("Archon's Thunder", hash=2896109856),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            appended_mag,
+            [trait.AirTrigger],
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            appended_mag,
+            [trait.Rimestealer],
+            [trait.Headstone],
+            ),
+        ]
 
 
 class ChainOfCommand(RollDefinition):
@@ -19,6 +40,41 @@ class ChainOfCommand(RollDefinition):
     https://destiny.report/w/1716620044
     """
     item = Item('Chain of Command', hash=1716620044)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            flared_mag,
+            [trait.AdrenalineJunkie],
+            [trait.Overflow],
+            [trait.Headstone],
+            [trait.Demolitionist],
+            [trait.KillingTally],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            flared_mag,
+            [trait.Overflow, trait.AdrenalineJunkie],
+            [trait.KillingTally],
+            ),
+        Roll(
+            'Precision combo',
+            default_barrels,
+            flared_mag,
+            [trait.Headstone],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Grenade combo',
+            default_barrels,
+            flared_mag,
+            [trait.AdrenalineJunkie],
+            [trait.Demolitionist],
+            ),
+        ]
 
 
 class QullimsTerminus(RollDefinition):
@@ -31,6 +87,23 @@ class QullimsTerminus(RollDefinition):
     items = [
         Item("Qullim's Terminus", hash=1321506184),
         Item("Qullim's Terminus (Harrowed)", hash=3248429089),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            appended_mag,
+            [trait.Unrelenting],
+            [trait.CrystallineCorpsebloom],
+            [trait.MegaKillClip],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            appended_mag,
+            [trait.Unrelenting],
+            [trait.CrystallineCorpsebloom, trait.MegaKillClip],
+            ),
         ]
 
 
@@ -52,19 +125,29 @@ class UlteriorObservation(RollDefinition):
     https://destiny.report/w/1079872540
     """
     item = Item('Ulterior Observation', hash=1079872540)
+    is_chosen = True
     rolls = [
         Roll(
-            'Stasis combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
+            'Super roll',
+            default_barrels,
+            appended_mag,
+            [trait.Subsistence],
             [trait.Headstone],
             [trait.Rimestealer],
+            [trait.KillingTally],
             ),
         Roll(
             'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
+            default_barrels,
+            appended_mag,
             [trait.Subsistence, trait.Headstone],
             [trait.KillingTally],
+            ),
+        Roll(
+            'Stasis combo',
+            default_barrels,
+            appended_mag,
+            [trait.Headstone],
+            [trait.Rimestealer],
             ),
         ]
