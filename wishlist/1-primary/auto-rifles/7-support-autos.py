@@ -164,3 +164,25 @@ class Adamantite(RollDefinition):
             [trait.Hatchling],
             ),
         ]
+
+
+class AdamantiteOriginal(RollDefinition):
+    """
+    Strand Auto Rifle, Support Frame, Anti-Overload, Legacy
+    Source: Unobtainable (Heresy)
+    https://www.light.gg/db/items/3229982889
+    https://destiny.report/w/3229982889
+    """
+    items = [
+        Item('Adamantite', hash=3229982889),
+        Item('Adamantite (Adept)', hash=3485029080),
+        Item('Adamantite', hash=2987244302),
+        Item('Adamantite (Adept)', hash=601574723),
+        ]
+    roll = Roll(
+        'Self-healing',
+        default_barrels,
+        default_mags,
+        [trait.Reciprocity],
+        [trait.AttritionOrbs, trait.Hatchling],
+        )
