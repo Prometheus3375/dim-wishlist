@@ -134,10 +134,19 @@ class MintRetrogradeOriginal(RollDefinition):
     https://destiny.report/w/42435996
     """
     item = Item('Mint Retrograde', hash=42435996)
-    roll = Roll(
-        'Ad clear',
-        default_barrels,
-        default_mags,
-        [trait.Hatchling],
-        [trait.OneForAll],
-        )
+    rolls = [
+        Roll(
+            'Miniboss damage',
+            default_barrels,
+            default_mags,
+            [trait.BeaconRounds, trait.RewindRounds],
+            [trait.OneForAll, trait.ElementalHoning],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Hatchling],
+            [trait.OneForAll, trait.ElementalHoning],
+            ),
+        ]
