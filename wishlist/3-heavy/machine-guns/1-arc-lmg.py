@@ -14,7 +14,7 @@ class A21Delirium(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Overflow],
             [trait.TrickleCharge],
             [trait.FeedingFrenzy],
@@ -25,14 +25,14 @@ class A21Delirium(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.FeedingFrenzy],
             [trait.MegaKillClip],
             ),
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Overflow, trait.TrickleCharge],
             [trait.KillingTally],
             ),
@@ -51,7 +51,7 @@ class AFineMemorial(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.ImpromptuAmmunition],
             [trait.MegaKillClip],
             [trait.JoltingFeedback],
@@ -60,7 +60,7 @@ class AFineMemorial(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.ImpromptuAmmunition],
             [trait.Meganeura],
             ),
@@ -165,7 +165,7 @@ class SongOfIrYut(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.FeedingFrenzy],
             [trait.JoltingFeedback],
             [trait.MegaKillClip],
@@ -173,7 +173,7 @@ class SongOfIrYut(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.JoltingFeedback, trait.FeedingFrenzy],
             [trait.MegaKillClip],
             ),
@@ -193,7 +193,7 @@ class TerminusHorizon(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Meganeura],
             [trait.SuperchargedMagazine],
             [trait.FeedingFrenzy],
@@ -203,7 +203,7 @@ class TerminusHorizon(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Meganeura],
             [trait.MegaKillClip, trait.JoltingFeedback],
             ),
@@ -228,7 +228,7 @@ class WatchfulEye(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Overflow],
             [trait.JoltingFeedback],
             [trait.KillingTally],
@@ -236,7 +236,7 @@ class WatchfulEye(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Overflow],
             [trait.KillingTally, trait.JoltingFeedback],
             ),

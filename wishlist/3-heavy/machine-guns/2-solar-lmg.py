@@ -18,7 +18,7 @@ class DawnFarOff(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.BurningAmbition],
             [trait.ImpromptuAmmunition],
             [trait.AttritionOrbs],
@@ -29,14 +29,14 @@ class DawnFarOff(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.ImpromptuAmmunition],
             [trait.Incandescent, trait.Redirection],
             ),
         Roll(
             'Solar combo',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.BurningAmbition],
             [trait.Incandescent],
             ),
@@ -54,7 +54,7 @@ class FixedOdds(RollDefinition):
     roll = Roll(
         'Solar combo',
         default_barrels,
-        default_mags,
+        appended_mag,
         [trait.FieldPrep],
         [trait.Incandescent],
         )
@@ -93,7 +93,7 @@ class ThermalErosion(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Incandescent],
             [trait.FeedingFrenzy],
             [trait.Demolitionist],
@@ -104,14 +104,14 @@ class ThermalErosion(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Incandescent],
             [trait.Meganeura, trait.MegaKillClip],
             ),
         Roll(
             'Solar combo',
             default_barrels,
-            default_mags,
+            appended_mag,
             [trait.Incandescent],
             [trait.BurningAmbition],
             ),
@@ -130,7 +130,7 @@ class UnwaveringDuty(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.Incandescent],
             [trait.Rampage],
             [trait.BurningAmbition],
@@ -139,14 +139,14 @@ class UnwaveringDuty(RollDefinition):
         Roll(
             'Ad clear',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.Incandescent, trait.Rampage],
             [trait.KillingTally],
             ),
         Roll(
             'Solar combo',
             default_barrels,
-            default_mags,
+            flared_mag,
             [trait.Incandescent],
             [trait.BurningAmbition],
             ),
