@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class A21Delirium(RollDefinition):
@@ -9,6 +10,33 @@ class A21Delirium(RollDefinition):
     https://destiny.report/w/3001598094
     """
     item = Item('21% Delirium', hash=3001598094)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Overflow],
+            [trait.TrickleCharge],
+            [trait.FeedingFrenzy],
+            [trait.KillingTally],
+            [trait.MegaKillClip],
+            [trait.JoltingFeedback],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.FeedingFrenzy],
+            [trait.MegaKillClip],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Overflow, trait.TrickleCharge],
+            [trait.KillingTally],
+            ),
+        ]
 
 
 class AFineMemorial(RollDefinition):
@@ -19,6 +47,24 @@ class AFineMemorial(RollDefinition):
     https://destiny.report/w/3211332727
     """
     item = Item('A Fine Memorial', hash=3211332727)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ImpromptuAmmunition],
+            [trait.MegaKillClip],
+            [trait.JoltingFeedback],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ImpromptuAmmunition],
+            [trait.Meganeura],
+            ),
+        ]
 
 
 class BitterEnd(RollDefinition):
@@ -29,7 +75,18 @@ class BitterEnd(RollDefinition):
     https://destiny.report/w/954563454
     """
     item = Item('Bitter End', hash=954563454)
+    is_chosen = True
     rolls = [
+        Roll(
+            'Super roll',
+            [barrel.ChamberedCompensator, AnyPerk],
+            [battery.OverclockedHeatsink, AnyPerk],
+            [trait.CoolingBaubles],
+            [trait.AttritionOrbs],
+            [trait.JoltingFeedback],
+            [trait.OneForAll],
+            [trait.KillingTally],
+            ),
         Roll(
             """
             Ad clear.
@@ -40,13 +97,6 @@ class BitterEnd(RollDefinition):
             [battery.OverclockedHeatsink, AnyPerk],
             [trait.CoolingBaubles],
             [trait.KillingTally, trait.JoltingFeedback, trait.OneForAll],
-            ),
-        Roll(
-            'Damage dealing',
-            [barrel.ChamberedCompensator, AnyPerk],
-            [battery.OverclockedHeatsink, AnyPerk],
-            [trait.TrickleCharge],
-            [trait.KillingTally],
             ),
         ]
 
@@ -79,6 +129,25 @@ class SeventhSeraphSAW(RollDefinition):
     https://destiny.report/w/2584201248
     """
     item = Item('Seventh Seraph SAW', hash=2584201248)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.AttritionOrbs],
+            [trait.SuperchargedMagazine],
+            [trait.JoltingFeedback],
+            [trait.MegaKillClip],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            [magazine.SeraphRounds, AnyPerk],
+            [trait.SuperchargedMagazine],
+            [trait.Meganeura, trait.JoltingFeedback],
+            ),
+        ]
 
 
 class SongOfIrYut(RollDefinition):
@@ -92,6 +161,23 @@ class SongOfIrYut(RollDefinition):
         Item('Song of Ir Yût', hash=2828278545),
         Item('Song of Ir Yût (Adept)', hash=407511664),
         ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.FeedingFrenzy],
+            [trait.JoltingFeedback],
+            [trait.MegaKillClip],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.JoltingFeedback, trait.FeedingFrenzy],
+            [trait.MegaKillClip],
+            ),
+        ]
 
 
 class TerminusHorizon(RollDefinition):
@@ -102,13 +188,56 @@ class TerminusHorizon(RollDefinition):
     https://destiny.report/w/3814261872
     """
     item = Item('Terminus Horizon', hash=3814261872)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Meganeura],
+            [trait.SuperchargedMagazine],
+            [trait.FeedingFrenzy],
+            [trait.JoltingFeedback],
+            [trait.MegaKillClip],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Meganeura],
+            [trait.MegaKillClip, trait.JoltingFeedback],
+            ),
+        ]
 
 
 class WatchfulEye(RollDefinition):
     """
     Arc Machine Gun, Aggressive Frame, Anti-Unstoppable
-    Source: Banshee-44
+    Source: Dungeon "Pit of Heresy"
     https://www.light.gg/db/items/3058845782
     https://destiny.report/w/3058845782
     """
-    item = Item('Watchful Eye', hash=3058845782)
+    items = [
+        Item('Watchful Eye', hash=3058845782),
+        Item('Watchful Eye', hash=1757177186),
+        Item('Watchful Eye (Adept)', hash=737409399),
+        Item('Watchful Eye (Adept)', hash=2856225832),
+        Item('Watchful Eye', hash=768610585),
+        ]
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Overflow],
+            [trait.JoltingFeedback],
+            [trait.KillingTally],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Overflow],
+            [trait.KillingTally, trait.JoltingFeedback],
+            ),
+        ]
