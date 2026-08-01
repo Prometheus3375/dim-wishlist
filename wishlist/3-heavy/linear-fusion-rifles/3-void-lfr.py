@@ -62,7 +62,7 @@ class MistralLift(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousArsenal],
             [trait.Overflow],
             [trait.BaitAndSwitch],
@@ -72,7 +72,7 @@ class MistralLift(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.Overflow, trait.EnviousArsenal],
             [trait.BaitAndSwitch, trait.PrecisionInstrument],
             [origin.VeistStinger],
@@ -90,7 +90,7 @@ class Taipan4fr(RollDefinition):
     item = Item('Taipan-4fr', hash=1911060537)
     roll = Roll(
         default_barrels,
-        default_mags,
+        default_batteries,
         [trait.TripleTap],
         [trait.FiringLine],
         )

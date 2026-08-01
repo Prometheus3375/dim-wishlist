@@ -17,7 +17,7 @@ class BriarsContempt(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousAssassin],
             [trait.RewindRounds],
             [trait.Surrounded],
@@ -26,7 +26,7 @@ class BriarsContempt(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousAssassin, trait.RewindRounds],
             [trait.AggregateCharge, trait.Surrounded],
             ),

@@ -14,7 +14,7 @@ class Boomslang4FR(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousArsenal],
             [trait.RapidHit],
             [trait.PrecisionInstrument],
@@ -23,7 +23,7 @@ class Boomslang4FR(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousArsenal, trait.RapidHit],
             [trait.PrecisionInstrument],
             [origin.VeistStinger],
@@ -53,7 +53,7 @@ class Stormchaser(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.AutoLoadingHolster],
             [trait.SuperchargedMagazine],
             [trait.JoltingFeedback],
@@ -63,7 +63,7 @@ class Stormchaser(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.JoltingFeedback, trait.SuperchargedMagazine, trait.AutoLoadingHolster],
             [trait.AggregateCharge, trait.GearShift],
             ),
@@ -82,7 +82,7 @@ class WillfulHamartia(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousArsenal],
             [trait.HighImpactReserves],
             [trait.BaitAndSwitch],
@@ -90,7 +90,7 @@ class WillfulHamartia(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.HighImpactReserves, trait.EnviousArsenal],
             [trait.BaitAndSwitch],
             ),

@@ -32,7 +32,7 @@ class Scintillation(RollDefinition):
         Roll(
             'Super roll',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousAssassin],
             [trait.Cornered],
             [trait.Surrounded],
@@ -42,7 +42,7 @@ class Scintillation(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousAssassin],
             [trait.BaitAndSwitch],
             [origin.VeistStinger],
@@ -50,7 +50,7 @@ class Scintillation(RollDefinition):
         Roll(
             'Damage dealing',
             default_barrels,
-            default_mags,
+            default_batteries,
             [trait.EnviousAssassin, trait.Cornered],
             [trait.Surrounded],
             [origin.VeistStinger],
