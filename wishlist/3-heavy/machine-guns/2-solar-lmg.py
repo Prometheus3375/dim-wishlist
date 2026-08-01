@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class DawnFarOff(RollDefinition):
@@ -12,6 +13,34 @@ class DawnFarOff(RollDefinition):
         Item('Dawn Far Off', hash=1484294659),
         Item('Dawn Far Off', hash=2770617440),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.BurningAmbition],
+            [trait.ImpromptuAmmunition],
+            [trait.AttritionOrbs],
+            [trait.Incandescent],
+            [trait.Redirection],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ImpromptuAmmunition],
+            [trait.Incandescent, trait.Redirection],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.BurningAmbition],
+            [trait.Incandescent],
+            ),
+        ]
 
 
 class FixedOdds(RollDefinition):
@@ -22,6 +51,13 @@ class FixedOdds(RollDefinition):
     https://destiny.report/w/2194955522
     """
     item = Item('Fixed Odds', hash=2194955522)
+    roll = Roll(
+        'Solar combo',
+        default_barrels,
+        default_mags,
+        [trait.FieldPrep],
+        [trait.Incandescent],
+        )
 
 
 class Speleologist(RollDefinition):
@@ -52,6 +88,34 @@ class ThermalErosion(RollDefinition):
     https://destiny.report/w/642545454
     """
     item = Item('Thermal Erosion', hash=642545454)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.FeedingFrenzy],
+            [trait.Demolitionist],
+            [trait.BurningAmbition],
+            [trait.MegaKillClip],
+            [trait.Meganeura],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.Meganeura, trait.MegaKillClip],
+            ),
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.BurningAmbition],
+            ),
+        ]
 
 
 class UnwaveringDuty(RollDefinition):
@@ -64,16 +128,25 @@ class UnwaveringDuty(RollDefinition):
     item = Item('Unwavering Duty', hash=3489054606)
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Incandescent],
+            [trait.Rampage],
+            [trait.BurningAmbition],
+            [trait.KillingTally],
+            ),
+        Roll(
             'Ad clear',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
-            [trait.Incandescent, trait.Rampage, trait.Incandescent],
+            default_barrels,
+            default_mags,
+            [trait.Incandescent, trait.Rampage],
             [trait.KillingTally],
             ),
         Roll(
             'Solar combo',
-            [barrel.ArrowheadBrake, AnyPerk],
-            [magazine.AppendedMag, AnyPerk],
+            default_barrels,
+            default_mags,
             [trait.Incandescent],
             [trait.BurningAmbition],
             ),
