@@ -1,6 +1,7 @@
-__all__ = 'default_barrels', 'default_mags'
+__all__ = 'default_barrels', 'appended_mag', 'flared_mag'
 
 from wishlist import AnyPerk, barrel, magazine
 
 default_barrels = [barrel.ArrowheadBrake, AnyPerk]
-default_mags = [magazine.AppendedMag, AnyPerk]
+appended_mag = [magazine.AppendedMag, AnyPerk]
+flared_mag = [magazine.FlaredMagwell, AnyPerk]
