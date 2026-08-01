@@ -45,6 +45,7 @@ class DIABLERETS06(RollDefinition):
     https://destiny.report/w/1120206506
     """
     item = Item('DIABLERETS 06', hash=1120206506)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
