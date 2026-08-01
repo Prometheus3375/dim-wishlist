@@ -83,18 +83,16 @@ class WillfulHamartia(RollDefinition):
             'Super roll',
             default_barrels,
             default_mags,
-            [trait.AutoLoadingHolster],
-            [trait.SuperchargedMagazine],
-            [trait.JoltingFeedback],
-            [trait.GearShift],
-            [trait.AggregateCharge],
+            [trait.EnviousArsenal],
+            [trait.HighImpactReserves],
+            [trait.BaitAndSwitch],
             ),
         Roll(
             'Damage dealing',
             default_barrels,
             default_mags,
-            [trait.JoltingFeedback, trait.SuperchargedMagazine, trait.AutoLoadingHolster],
-            [trait.AggregateCharge, trait.GearShift],
+            [trait.HighImpactReserves, trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
             ),
         ]
 
