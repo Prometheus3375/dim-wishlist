@@ -155,4 +155,10 @@ class UzumeRR4(RollDefinition):
     https://www.light.gg/db/items/4037675261
     https://destiny.report/w/4037675261
     """
-    item = Item('Uzume RR4', hash=4037675261)
+    items = [
+        Item('Uzume RR4', hash=4037675261),
+        Item('Uzume RR4 (Adept)', hash=3610521673),
+        Item('Uzume RR4', hash=42874240),
+        Item('Uzume RR4 (Adept)', hash=1891996599),
+        Item('Uzume RR4', hash=2450917538),
+        ]

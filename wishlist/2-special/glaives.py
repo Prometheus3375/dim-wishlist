@@ -12,7 +12,10 @@ class AlbedoWing(RollDefinition):
     https://www.light.gg/db/items/2274629609
     https://destiny.report/w/2274629609
     """
-    item = Item('Albedo Wing', hash=2274629609)
+    items = [
+        Item('Albedo Wing', hash=2274629609),
+        Item('Albedo Wing', hash=1845372864),
+        ]
     is_chosen = True
     rolls = [
         Roll(

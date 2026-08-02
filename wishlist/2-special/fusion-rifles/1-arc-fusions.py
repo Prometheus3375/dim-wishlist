@@ -19,7 +19,11 @@ class LoadedQuestion(RollDefinition):
     https://www.light.gg/db/items/852069910
     https://destiny.report/w/852069910
     """
-    item = Item('Loaded Question', hash=852069910)
+    items = [
+        Item('Loaded Question', hash=852069910),
+        Item('Loaded Question (Adept)', hash=2914913838),
+        Item('Loaded Question', hash=3125454907),
+        ]
     is_chosen = True
     rolls = [
         Roll(
@@ -107,7 +111,11 @@ class PLUGONE1(RollDefinition):
     https://www.light.gg/db/items/852069911
     https://destiny.report/w/852069911
     """
-    item = Item('PLUG ONE.1', hash=852069911)
+    items = [
+        Item('PLUG ONE.1', hash=852069911),
+        Item('PLUG ONE.1 (Adept)', hash=3106557243),
+        Item('PLUG ONE.1', hash=3293524502),
+        ]
 
 
 class TecheunForce(RollDefinition):

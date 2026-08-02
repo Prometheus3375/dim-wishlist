@@ -42,7 +42,10 @@ class BiteOfTheFox(RollDefinition):
     https://www.light.gg/db/items/2851703775
     https://destiny.report/w/2851703775
     """
-    item = Item('Bite of the Fox', hash=2851703775)
+    items = [
+        Item('Bite of the Fox', hash=2851703775),
+        Item('Bite of the Fox', hash=1403800851),
+        ]
 
 
 class DefianceOfYasmin(RollDefinition):

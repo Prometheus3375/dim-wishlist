@@ -161,7 +161,10 @@ class Retrofuturist(RollDefinition):
     https://www.light.gg/db/items/3688176697
     https://destiny.report/w/3688176697
     """
-    item = Item('Retrofuturist', hash=3688176697)
+    items = [
+        Item('Retrofuturist', hash=3688176697),
+        Item('Retrofuturist', hash=1612781792),
+        ]
 
 
 class Unvoiced(RollDefinition):

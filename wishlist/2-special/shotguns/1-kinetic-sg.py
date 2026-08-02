@@ -29,7 +29,10 @@ class Fortissimo11(RollDefinition):
     https://www.light.gg/db/items/963732595
     https://destiny.report/w/963732595
     """
-    item = Item('Fortissimo-11', hash=963732595)
+    items = [
+        Item('Fortissimo-11', hash=963732595),
+        Item('Fortissimo-11', hash=2821430069),
+        ]
 
 
 class Heritage(RollDefinition):
@@ -123,7 +126,10 @@ class Riiswalker(RollDefinition):
     https://www.light.gg/db/items/1435062001
     https://destiny.report/w/1435062001
     """
-    item = Item('Riiswalker', hash=1435062001)
+    items = [
+        Item('Riiswalker', hash=1435062001),
+        Item('Riiswalker', hash=557165046),
+        ]
     roll = Roll(
         'PvP',
         pvp_barrels,

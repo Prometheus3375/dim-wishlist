@@ -22,7 +22,10 @@ class NoxPerennialV(RollDefinition):
     https://www.light.gg/db/items/2366022261
     https://destiny.report/w/2366022261
     """
-    item = Item('Nox Perennial V', hash=2366022261)
+    items = [
+        Item('Nox Perennial V', hash=2366022261),
+        Item('Nox Perennial V', hash=2767393525),
+        ]
     is_chosen = True
     rolls = [
         Roll(

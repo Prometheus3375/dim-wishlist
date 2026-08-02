@@ -41,7 +41,10 @@ class DedGramaryeIV(RollDefinition):
     https://www.light.gg/db/items/870893339
     https://destiny.report/w/870893339
     """
-    item = Item('Ded Gramarye IV', hash=870893339)
+    items = [
+        Item('Ded Gramarye IV', hash=870893339),
+        Item('Ded Gramarye IV', hash=499245245),
+        ]
     rolls = [
         Roll(
             'Super roll',

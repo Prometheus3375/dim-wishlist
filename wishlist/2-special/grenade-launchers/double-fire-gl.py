@@ -52,7 +52,10 @@ class Liturgy(RollDefinition):
     https://www.light.gg/db/items/3377522331
     https://destiny.report/w/3377522331
     """
-    item = Item('Liturgy', hash=3377522331)
+    items = [
+        Item('Liturgy', hash=3377522331),
+        Item('Liturgy', hash=2599338624),
+        ]
     roll = Roll(
         'Damage rotations',
         default_barrels,

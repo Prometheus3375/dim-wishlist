@@ -9,7 +9,10 @@ class CompassRose(RollDefinition):
     https://www.light.gg/db/items/2723419129
     https://destiny.report/w/2723419129
     """
-    item = Item('Compass Rose', hash=2723419129)
+    items = [
+        Item('Compass Rose', hash=2723419129),
+        Item('Compass Rose', hash=4169225313),
+        ]
 
 
 class FelwintersLie(RollDefinition):
@@ -67,7 +70,11 @@ class MindbendersAmbition(RollDefinition):
     https://www.light.gg/db/items/951529995
     https://destiny.report/w/951529995
     """
-    item = Item("Mindbender's Ambition", hash=951529995)
+    items = [
+        Item("Mindbender's Ambition", hash=951529995),
+        Item("Mindbender's Ambition", hash=1586231351),
+        Item("Mindbender's Ambition (Adept)", hash=2074041946),
+        ]
 
 
 class SeventhSeraphCQC12(RollDefinition):

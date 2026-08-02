@@ -247,7 +247,10 @@ class TuskOfTheBoar(RollDefinition):
     https://www.light.gg/db/items/491956886
     https://destiny.report/w/491956886
     """
-    item = Item('Tusk of the Boar', hash=491956886)
+    items = [
+        Item('Tusk of the Boar', hash=491956886),
+        Item('Tusk of the Boar', hash=1218113510),
+        ]
     rolls = [
         Roll(
             'Super roll',

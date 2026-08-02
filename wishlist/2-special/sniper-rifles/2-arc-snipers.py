@@ -50,7 +50,10 @@ class Mechabre(RollDefinition):
     https://www.light.gg/db/items/3023280734
     https://destiny.report/w/3023280734
     """
-    item = Item('Mechabre', hash=3023280734)
+    items = [
+        Item('Mechabre', hash=3023280734),
+        Item('Mechabre', hash=2477980485),
+        ]
 
 
 class MercurialOverreach(RollDefinition):

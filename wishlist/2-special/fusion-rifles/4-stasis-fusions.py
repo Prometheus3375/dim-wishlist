@@ -9,7 +9,10 @@ class AurvandilFR6(RollDefinition):
     https://www.light.gg/db/items/3786215462
     https://destiny.report/w/3786215462
     """
-    item = Item('Aurvandil FR6', hash=3786215462)
+    items = [
+        Item('Aurvandil FR6', hash=3786215462),
+        Item('Aurvandil FR6', hash=963710795),
+        ]
     rolls = [
         Roll(
             'Debuff support',
