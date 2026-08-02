@@ -99,7 +99,7 @@ class MartyrsRetribution(RollDefinition):
             'Solar combo',
             default_barrels,
             default_magazine,
-            [trait.HealClip, trait.Demolitionist],
+            [trait.HealClip],
             [trait.Incandescent],
             ),
         Roll(
