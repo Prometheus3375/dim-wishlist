@@ -85,6 +85,33 @@ class ExplosivePersonality(RollDefinition):
         )
 
 
+class MartyrsRetribution(RollDefinition):
+    """
+    Solar Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable, Legacy
+    Source: Xûr
+    https://www.light.gg/db/items/2584830733
+    https://destiny.report/w/2584830733
+    """
+    item = Item("Martyr's Retribution", hash=2584830733)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Solar combo',
+            default_barrels,
+            default_magazine,
+            [trait.HealClip, trait.Demolitionist],
+            [trait.Incandescent],
+            ),
+        Roll(
+            'Clip combo',
+            default_barrels,
+            default_magazine,
+            [trait.HealClip],
+            [trait.KillClip],
+            ),
+        ]
+
+
 class RomanticDeath(RollDefinition):
     """
     Void Breechloaded Grenade Launcher, Wave Frame, Anti-Unstoppable
