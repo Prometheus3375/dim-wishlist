@@ -26,7 +26,10 @@ class LiveFire(RollDefinition):
     https://www.light.gg/db/items/3156551031
     https://destiny.report/w/3156551031
     """
-    item = Item('Live Fire', hash=3156551031)
+    items = [
+        Item('Live Fire', hash=3156551031),
+        Item('Live Fire', hash=3612142623),
+        ]
     rolls = [
         Roll(
             'Super roll',
@@ -54,7 +57,10 @@ class RedTape(RollDefinition):
     https://www.light.gg/db/items/736362511
     https://destiny.report/w/736362511
     """
-    item = Item('Red Tape', hash=736362511)
+    items = [
+        Item('Red Tape', hash=736362511),
+        Item('Red Tape', hash=3423493037),
+        ]
     is_chosen = True
     rolls = [
         Roll(

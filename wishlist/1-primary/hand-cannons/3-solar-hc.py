@@ -84,7 +84,10 @@ class FrontiersCry(RollDefinition):
     https://www.light.gg/db/items/3203303472
     https://destiny.report/w/3203303472
     """
-    item = Item("Frontier's Cry", hash=3203303472)
+    items = [
+        Item("Frontier's Cry", hash=3203303472),
+        Item("Frontier's Cry", hash=1141547457),
+        ]
 
 
 class IgneousHammer(RollDefinition):

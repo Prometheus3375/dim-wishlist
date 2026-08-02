@@ -19,7 +19,11 @@ class CruelMercy(RollDefinition):
     https://www.light.gg/db/items/4011513985
     https://destiny.report/w/4011513985
     """
-    item = Item('Cruel Mercy', hash=4011513985)
+    items = [
+        Item('Cruel Mercy', hash=4011513985),
+        Item('Cruel Mercy', hash=233635202),
+        Item('Cruel Mercy (Adept)', hash=2347178967),
+        ]
     roll = Roll(
         'Grenade combo',
         default_barrels,
@@ -172,4 +176,7 @@ class TheThirdAxiom(RollDefinition):
     https://www.light.gg/db/items/3744058588
     https://destiny.report/w/3744058588
     """
-    item = Item('The Third Axiom', hash=3744058588)
+    items = [
+        Item('The Third Axiom', hash=3744058588),
+        Item('The Third Axiom', hash=4156253727),
+        ]

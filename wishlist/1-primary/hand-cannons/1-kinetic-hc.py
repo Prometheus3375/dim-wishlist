@@ -239,7 +239,11 @@ class WardensLaw(RollDefinition):
     https://www.light.gg/db/items/2363113134
     https://destiny.report/w/2363113134
     """
-    item = Item("Warden's Law", hash=2363113134)
+    items = [
+        Item("Warden's Law", hash=2363113134),
+        Item("Warden's Law", hash=2152484073),
+        Item("Warden's Law (Adept)", hash=3250744600),
+        ]
     rolls = [
         Roll(
             'Miniboss damage dealing',

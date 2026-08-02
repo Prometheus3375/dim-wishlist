@@ -90,7 +90,10 @@ class TheHerosBurden(RollDefinition):
     https://www.light.gg/db/items/4222913208
     https://destiny.report/w/4222913208
     """
-    item = Item("The Hero's Burden", hash=4222913208)
+    items = [
+        Item("The Hero's Burden", hash=4222913208),
+        Item("The Hero's Burden", hash=1028124540),
+        ]
 
 
 class TheRecluse(RollDefinition):
@@ -137,7 +140,10 @@ class TheTitle(RollDefinition):
     https://www.light.gg/db/items/4106258882
     https://destiny.report/w/4106258882
     """
-    item = Item('The Title', hash=4106258882)
+    items = [
+        Item('The Title', hash=4106258882),
+        Item('The Title', hash=55393445),
+        ]
     rolls = [
         Roll(
             'Super roll',

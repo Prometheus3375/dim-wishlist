@@ -136,7 +136,10 @@ class StayFrosty(RollDefinition):
     https://www.light.gg/db/items/3910523587
     https://destiny.report/w/3910523587
     """
-    item = Item('Stay Frosty', hash=3910523587)
+    items = [
+        Item('Stay Frosty', hash=3910523587),
+        Item('Stay Frosty', hash=1123433952),
+        ]
     roll = Roll(
         'Stasis combo',
         default_barrels,

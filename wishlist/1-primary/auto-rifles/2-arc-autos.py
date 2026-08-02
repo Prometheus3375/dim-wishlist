@@ -65,7 +65,11 @@ class ShadowPrice(RollDefinition):
     https://www.light.gg/db/items/3142989221
     https://destiny.report/w/3142989221
     """
-    item = Item('Shadow Price', hash=3142989221)
+    items = [
+        Item('Shadow Price', hash=3142989221),
+        Item('Shadow Price (Adept)', hash=1056103557),
+        Item('Shadow Price', hash=2322926844),
+        ]
 
 
 class SnipehuntMk47(RollDefinition):

@@ -179,7 +179,10 @@ class ColdDenial(RollDefinition):
     https://www.light.gg/db/items/324584913
     https://destiny.report/w/324584913
     """
-    item = Item('Cold Denial', hash=324584913)
+    items = [
+        Item('Cold Denial', hash=324584913),
+        Item('Cold Denial', hash=558794124),
+        ]
 
 
 class PieceOfMind(RollDefinition):

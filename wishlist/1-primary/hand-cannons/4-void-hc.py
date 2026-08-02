@@ -27,7 +27,10 @@ class BottomDollar(RollDefinition):
     https://www.light.gg/db/items/2953199259
     https://destiny.report/w/2953199259
     """
-    item = Item('Bottom Dollar', hash=2953199259)
+    items = [
+        Item('Bottom Dollar', hash=2953199259),
+        Item('Bottom Dollar', hash=1046651176),
+        ]
 
 
 class ExaltedTruth(RollDefinition):
@@ -116,7 +119,10 @@ class MaahesHC4(RollDefinition):
     https://www.light.gg/db/items/734476286
     https://destiny.report/w/734476286
     """
-    item = Item('Maahes HC4', hash=734476286)
+    items = [
+        Item('Maahes HC4', hash=734476286),
+        Item('Maahes HC4', hash=1246793994),
+        ]
     roll = Roll(
         'Void combo',
         default_barrels,

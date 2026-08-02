@@ -224,7 +224,10 @@ class PatronOfLostCauses(RollDefinition):
     https://www.light.gg/db/items/3156551030
     https://destiny.report/w/3156551030
     """
-    item = Item('Patron of Lost Causes', hash=3156551030)
+    items = [
+        Item('Patron of Lost Causes', hash=3156551030),
+        Item('Patron of Lost Causes', hash=2249996761),
+        ]
     rolls = [
         Roll(
             'Super roll',

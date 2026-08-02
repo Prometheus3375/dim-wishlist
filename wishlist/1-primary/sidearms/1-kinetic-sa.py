@@ -9,7 +9,11 @@ class AlliedDemand(RollDefinition):
     https://www.light.gg/db/items/247984830
     https://destiny.report/w/247984830
     """
-    item = Item('Allied Demand', hash=247984830)
+    items = [
+        Item('Allied Demand', hash=247984830),
+        Item('Allied Demand', hash=3166250992),
+        Item('Allied Demand', hash=1532276803),
+        ]
 
 
 class Buzzard(RollDefinition):
@@ -19,7 +23,11 @@ class Buzzard(RollDefinition):
     https://www.light.gg/db/items/4237970862
     https://destiny.report/w/4237970862
     """
-    item = Item('Buzzard', hash=4237970862)
+    items = [
+        Item('Buzzard', hash=4237970862),
+        Item('Buzzard', hash=213264394),
+        Item('Buzzard (Adept)', hash=927835311),
+        ]
     is_chosen = True
     roll = Roll(
         'Ad clear',

@@ -133,7 +133,11 @@ class YesterdaysQuestion(RollDefinition):
     https://www.light.gg/db/items/1803480512
     https://destiny.report/w/1803480512
     """
-    item = Item("Yesterday's Question", hash=1803480512)
+    items = [
+        Item("Yesterday's Question", hash=1803480512),
+        Item("Yesterday's Question", hash=2300143112),
+        Item("Yesterday's Question (Adept)", hash=2378785953),
+        ]
     rolls = [
         Roll(
             'Super roll',

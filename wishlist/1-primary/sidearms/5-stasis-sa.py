@@ -54,7 +54,10 @@ class Peacebond(RollDefinition):
     https://www.light.gg/db/items/247984829
     https://destiny.report/w/247984829
     """
-    item = Item('Peacebond', hash=247984829)
+    items = [
+        Item('Peacebond', hash=247984829),
+        Item('Peacebond', hash=3437370193),
+        ]
     roll = Roll(
         'Stasis combo',
         [barrel.ExtendedBarrel, AnyPerk],

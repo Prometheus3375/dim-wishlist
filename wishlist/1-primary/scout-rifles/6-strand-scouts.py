@@ -42,7 +42,10 @@ class Glissando47(RollDefinition):
     https://www.light.gg/db/items/3156551028
     https://destiny.report/w/3156551028
     """
-    item = Item('Glissando-47', hash=3156551028)
+    items = [
+        Item('Glissando-47', hash=3156551028),
+        Item('Glissando-47', hash=222606050),
+        ]
     roll = Roll(
         'Ad clear',
         default_barrels,
@@ -59,7 +62,10 @@ class Taraxippos(RollDefinition):
     https://www.light.gg/db/items/4148460558
     https://destiny.report/w/4148460558
     """
-    item = Item('Taraxippos', hash=4148460558)
+    items = [
+        Item('Taraxippos', hash=4148460558),
+        Item('Taraxippos', hash=2595813005),
+        ]
 
 
 class TheScholar(RollDefinition):

@@ -72,7 +72,10 @@ class JorumsClaw(RollDefinition):
     https://www.light.gg/db/items/3634548598
     https://destiny.report/w/3634548598
     """
-    item = Item("Jorum's Claw", hash=3634548598)
+    items = [
+        Item("Jorum's Claw", hash=3634548598),
+        Item("Jorum's Claw", hash=62937067),
+        ]
 
 
 class Nullify(RollDefinition):
@@ -123,7 +126,10 @@ class OgmaPR6(RollDefinition):
     https://www.light.gg/db/items/324584912
     https://destiny.report/w/324584912
     """
-    item = Item('Ogma PR6', hash=324584912)
+    items = [
+        Item('Ogma PR6', hash=324584912),
+        Item('Ogma PR6', hash=2342054803),
+        ]
 
 
 class StarsInShadow(RollDefinition):

@@ -9,7 +9,10 @@ class AnonymousAutumn(RollDefinition):
     https://www.light.gg/db/items/1644501332
     https://destiny.report/w/1644501332
     """
-    item = Item('Anonymous Autumn', hash=1644501332)
+    items = [
+        Item('Anonymous Autumn', hash=1644501332),
+        Item('Anonymous Autumn', hash=1051949956),
+        ]
     rolls = [
         Roll(
             'Super roll',

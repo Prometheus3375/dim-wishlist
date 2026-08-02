@@ -9,7 +9,10 @@ class Breakneck(RollDefinition):
     https://www.light.gg/db/items/2065366343
     https://destiny.report/w/2065366343
     """
-    item = Item('Breakneck', hash=2065366343)
+    items = [
+        Item('Breakneck', hash=2065366343),
+        Item('Breakneck', hash=2026755633),
+        ]
 
 
 class ChromaRush(RollDefinition):
@@ -170,7 +173,10 @@ class OriginStory(RollDefinition):
     https://www.light.gg/db/items/2188356726
     https://destiny.report/w/2188356726
     """
-    item = Item('Origin Story', hash=2188356726)
+    items = [
+        Item('Origin Story', hash=2188356726),
+        Item('Origin Story', hash=2826850739),
+        ]
 
 
 class Pluperfect(RollDefinition):

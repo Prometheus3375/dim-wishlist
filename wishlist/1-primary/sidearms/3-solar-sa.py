@@ -66,7 +66,10 @@ class HeliocentricQSc(RollDefinition):
     https://www.light.gg/db/items/1291040555
     https://destiny.report/w/1291040555
     """
-    item = Item('Heliocentric QSc', hash=1291040555)
+    items = [
+        Item('Heliocentric QSc', hash=1291040555),
+        Item('Heliocentric QSc', hash=3998080529),
+        ]
     rolls = [
         Roll(
             'Super roll',

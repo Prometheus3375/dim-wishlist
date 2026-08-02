@@ -61,7 +61,10 @@ class Insurmountable(RollDefinition):
     https://www.light.gg/db/items/2596736862
     https://destiny.report/w/2596736862
     """
-    item = Item('Insurmountable', hash=2596736862)
+    items = [
+        Item('Insurmountable', hash=2596736862),
+        Item('Insurmountable', hash=414045521),
+        ]
     rolls = [
         Roll(
             'Super roll',

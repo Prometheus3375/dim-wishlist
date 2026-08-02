@@ -36,7 +36,10 @@ class HerodC(RollDefinition):
     https://www.light.gg/db/items/2065366342
     https://destiny.report/w/2065366342
     """
-    item = Item('Herod-C', hash=2065366342)
+    items = [
+        Item('Herod-C', hash=2065366342),
+        Item('Herod-C', hash=1788603939),
+        ]
 
 
 class HorrorStory(RollDefinition):
@@ -46,7 +49,10 @@ class HorrorStory(RollDefinition):
     https://www.light.gg/db/items/2884070594
     https://destiny.report/w/2884070594
     """
-    item = Item('Horror Story', hash=2884070594)
+    items = [
+        Item('Horror Story', hash=2884070594),
+        Item('Horror Story', hash=177568179),
+        ]
     rolls = [
         Roll(
             'Super roll',

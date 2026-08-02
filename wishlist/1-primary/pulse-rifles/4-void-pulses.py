@@ -9,7 +9,10 @@ class ClawsOfTheWolf(RollDefinition):
     https://www.light.gg/db/items/3634548599
     https://destiny.report/w/3634548599
     """
-    item = Item('Claws of the Wolf', hash=3634548599)
+    items = [
+        Item('Claws of the Wolf', hash=3634548599),
+        Item('Claws of the Wolf', hash=1505862304),
+        ]
     roll = Roll(
         'Void combo',
         default_barrels,
@@ -274,4 +277,7 @@ class Yesteryear(RollDefinition):
     https://www.light.gg/db/items/4028000428
     https://destiny.report/w/4028000428
     """
-    item = Item('Yesteryear', hash=4028000428)
+    items = [
+        Item('Yesteryear', hash=4028000428),
+        Item('Yesteryear', hash=1141927949),
+        ]
