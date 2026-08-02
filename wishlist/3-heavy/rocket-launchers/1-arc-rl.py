@@ -58,6 +58,14 @@ class Micromort(RollDefinition):
             [trait.Bipod],
             ),
         Roll(
+            'Anti-construct',
+            default_barrels,
+            default_mags,
+            [trait.ClusterBomb, trait.ClownCartridge],
+            [trait.Bipod],
+            [origin.HakkeBreachArmaments],
+            ),
+        Roll(
             'Damage dealing',
             default_barrels,
             default_mags,
