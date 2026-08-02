@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class BadOmens(RollDefinition):
@@ -9,6 +10,24 @@ class BadOmens(RollDefinition):
     https://destiny.report/w/1996201272
     """
     item = Item('Bad Omens', hash=1996201272)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.AutoLoadingHolster],
+            [trait.Bipod],
+            [trait.BaitAndSwitch],
+            [trait.ElementalHoning],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            [magazine.HighVelocityRounds, AnyPerk],
+            [trait.AutoLoadingHolster],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
+            ),
+        ]
 
 
 class BellowingGiant(RollDefinition):
@@ -22,6 +41,26 @@ class BellowingGiant(RollDefinition):
         Item('Bellowing Giant', hash=412265080),
         Item('Bellowing Giant', hash=1889005379),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Overflow],
+            [trait.LastingImpression],
+            [trait.ReapersTithe],
+            [trait.AggregateCharge],
+            [trait.Bipod],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.LastingImpression, trait.Overflow],
+            [trait.ReapersTithe, trait.AggregateCharge],
+            ),
+        ]
 
 
 class FaithKeeper(RollDefinition):
@@ -32,6 +71,13 @@ class FaithKeeper(RollDefinition):
     https://destiny.report/w/4195186942
     """
     item = Item('Faith-Keeper', hash=4195186942)
+    Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.AutoLoadingHolster],
+        [trait.LastingImpression],
+        )
 
 
 class FoldedRoot(RollDefinition):
@@ -50,10 +96,10 @@ class FoldedRoot(RollDefinition):
         ]
     roll = Roll(
         'Damage dealing',
-        [launcher_barrel.QuickLaunch, AnyPerk],
-        [magazine.ImpactCasing, AnyPerk],
+        default_barrels,
+        default_mags,
         [trait.ClusterBomb],
-        [trait.LastingImpression, trait.Frenzy],
+        [trait.LastingImpression],
         )
 
 
@@ -65,6 +111,13 @@ class RedHerring(RollDefinition):
     https://destiny.report/w/3175851496
     """
     item = Item('Red Herring', hash=3175851496)
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.ClusterBomb],
+        [trait.ElementalHoning],
+        )
 
 
 class TomorrowsAnswer(RollDefinition):
@@ -75,3 +128,21 @@ class TomorrowsAnswer(RollDefinition):
     https://destiny.report/w/1940352487
     """
     item = Item("Tomorrow's Answer", hash=1940352487)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.WitheringGaze],
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch],
+            [trait.ReapersTithe],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal],
+            [trait.ReapersTithe, trait.BaitAndSwitch],
+            ),
+        ]
