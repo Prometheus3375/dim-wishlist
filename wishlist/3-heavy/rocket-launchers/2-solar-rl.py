@@ -14,7 +14,7 @@ class ApexPredator(RollDefinition):
         'Rocket spam',
         default_barrels,
         default_mags,
-        [trait.Demolitionist]
+        [trait.Demolitionist],
         [trait.CollectiveDemolition],
         )
 
