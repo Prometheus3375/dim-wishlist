@@ -1,35 +1,6 @@
 from wishlist import *
 
 
-class Breachlight(RollDefinition):
-    """
-    Strand Sidearm, Heavy Burst
-    https://www.light.gg/db/items/2328923181
-    """
-    item = Item('Breachlight', hash=2328923181)
-    _mags = [magazine.FlaredMagwell, magazine.TacticalMag, AnyPerk]
-    rolls = [
-        Roll(
-            'Hatchling',
-            [barrel.ArrowheadBrake, AnyPerk],
-            _mags,
-            [trait.Demolitionist, trait.Pugilist, trait.ThreatDetector],
-            [trait.Hatchling],
-            ),
-        Roll(
-            """
-            Desperate Measures.
-            For this weapon Desperate Measures is better than Swashbuckler and Adrenaline Junkie
-            because DM can be activated while stowed and lasts longer
-            """,
-            [barrel.ArrowheadBrake, AnyPerk],
-            _mags,
-            [trait.Demolitionist, trait.Pugilist, trait.ThreatDetector],
-            [trait.DesperateMeasures],
-            ),
-        ]
-
-
 class MartyrsRetribution(RollDefinition):
     """
     Solar Breechloaded Grenade Launcher, Wave Frame
