@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class BumpInTheNight(RollDefinition):
@@ -19,6 +20,50 @@ class ColdComfort(RollDefinition):
     https://destiny.report/w/2287287549
     """
     item = Item('Cold Comfort', hash=2287287549)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ChillClip],
+            [trait.EnviousAssassin],
+            [trait.Bipod],
+            [trait.ReapersTithe],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousAssassin],
+            [trait.ReapersTithe, trait.AggregateCharge],
+            ),
+        ]
+
+
+class ColdComfortRotN(RollDefinition):
+    """
+    Stasis Rocket Launcher, Aggressive Frame, Anti-Unstoppable, Legacy
+    Source: Unobtainable (Rite of the Nine)
+    https://www.light.gg/db/items/1817605554
+    https://destiny.report/w/1817605554
+    """
+    items = [
+        Item('Cold Comfort (Adept)', hash=1817605554),
+        Item('Cold Comfort', hash=291447487),
+        Item('Cold Comfort (Adept)', hash=2126543269),
+        Item('Cold Comfort', hash=2760833884),
+        ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.EnviousArsenal],
+            [trait.BaitAndSwitch, trait.ElementalHoning],
+            ),
+        ]
 
 
 class PalmyraB(RollDefinition):
@@ -29,6 +74,13 @@ class PalmyraB(RollDefinition):
     https://destiny.report/w/3489657138
     """
     item = Item('Palmyra-B', hash=3489657138)
+    roll = Roll(
+        'Damage dealing',
+        default_barrels,
+        default_mags,
+        [trait.AutoLoadingHolster],
+        [trait.LastingImpression],
+        )
 
 
 class TheWhenAndWhere(RollDefinition):
@@ -39,12 +91,24 @@ class TheWhenAndWhere(RollDefinition):
     https://destiny.report/w/1090936013
     """
     item = Item('The When And Where', hash=1090936013)
+    is_chosen = True
     rolls = [
         Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.ChillClip],
+            [trait.ClownCartridge],
+            [trait.Overflow],
+            [trait.BaitAndSwitch],
+            [trait.Surrounded],
+            [trait.ReapersTithe],
+            ),
+        Roll(
             'Damage dealing',
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.ImpactCasing, AnyPerk],
-            [trait.Reconstruction, trait.Overflow, trait.ClownCartridge],
-            [trait.BaitAndSwitch, trait.ElementalHoning, trait.ReapersTithe],
+            default_barrels,
+            default_mags,
+            [trait.Overflow, trait.ClownCartridge],
+            [trait.ReapersTithe, trait.BaitAndSwitch, trait.Surrounded],
             ),
         ]

@@ -251,25 +251,3 @@ class GreasyLuck(RollDefinition):
             [trait.CloseToMelee],
             ),
         ]
-
-
-class ColdComfort(RollDefinition):
-    """
-    Stasis Rocket Launcher, Aggressive Frame
-    https://www.light.gg/db/items/291447487
-    """
-    items = [
-        Item('Cold Comfort', hash=291447487),
-        Item('Cold Comfort (Adept)', hash=1817605554),
-        Item('Cold Comfort', hash=2760833884),
-        Item('Cold Comfort (Adept)', hash=2126543269),
-        ]
-    rolls = [
-        Roll(
-            "Damage dealing; prefer Heretic's Fervor for roll with Explosive Light",
-            [launcher_barrel.QuickLaunch, AnyPerk],
-            [magazine.ImpactCasing, AnyPerk],
-            [trait.EnviousArsenal, trait.Reconstruction],
-            [trait.BaitAndSwitch, trait.ElementalHoning],
-            ),
-        ]
