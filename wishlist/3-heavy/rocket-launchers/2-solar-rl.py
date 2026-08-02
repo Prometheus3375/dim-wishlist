@@ -1,4 +1,5 @@
 from wishlist import *
+from . import *
 
 
 class ApexPredator(RollDefinition):
@@ -9,6 +10,13 @@ class ApexPredator(RollDefinition):
     https://destiny.report/w/1851777734
     """
     item = Item('Apex Predator', hash=1851777734)
+    roll = Roll(
+        'Rocket spam',
+        default_barrels,
+        default_mags,
+        [trait.Demolitionist]
+        [trait.CollectiveDemolition],
+        )
 
 
 class Ascendancy(RollDefinition):
@@ -19,6 +27,24 @@ class Ascendancy(RollDefinition):
     https://destiny.report/w/1713388226
     """
     item = Item('Ascendancy', hash=1713388226)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.ExplosiveLight],
+            [trait.ChainReaction],
+            [trait.ClusterBomb],
+            ),
+        Roll(
+            'Attrition orbs',
+            default_barrels,
+            default_mags,
+            [trait.AttritionOrbs],
+            [trait.ExplosiveLight, trait.ClusterBomb, trait.ChainReaction],
+            ),
+        ]
 
 
 class HezenVengeance(RollDefinition):
@@ -32,6 +58,27 @@ class HezenVengeance(RollDefinition):
         Item('Hezen Vengeance', hash=2265407516),
         Item('Hezen Vengeance (Timelost)', hash=3623686757),
         ]
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Overflow],
+            [trait.ClusterBomb],
+            [trait.EnviousArsenal],
+            [trait.Bipod],
+            [trait.BaitAndSwitch],
+            [trait.AggregateCharge],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.Overflow, trait.EnviousArsenal, trait.ClusterBomb],
+            [trait.AggregateCharge, trait.BaitAndSwitch],
+            ),
+        ]
 
 
 class PyroclasticFlow(RollDefinition):
@@ -42,6 +89,26 @@ class PyroclasticFlow(RollDefinition):
     https://destiny.report/w/3161496501
     """
     item = Item('Pyroclastic Flow', hash=3161496501)
+    is_chosen = True
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.AutoLoadingHolster],
+            [trait.ClusterBomb],
+            [trait.Bipod],
+            [trait.AggregateCharge],
+            [trait.BaitAndSwitch],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.ClusterBomb, trait.AutoLoadingHolster],
+            [trait.AggregateCharge, trait.BaitAndSwitch],
+            ),
+        ]
 
 
 class RoarOfTheBear(RollDefinition):
@@ -52,3 +119,29 @@ class RoarOfTheBear(RollDefinition):
     https://destiny.report/w/2881109029
     """
     item = Item('Roar of the Bear', hash=2881109029)
+    rolls = [
+        Roll(
+            'Super roll',
+            default_barrels,
+            default_mags,
+            [trait.Demolitionist],
+            [trait.AutoLoadingHolster],
+            [trait.ExplosiveLight],
+            [trait.Bipod],
+            [trait.ReapersTithe],
+            ),
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.ExplosiveLight, trait.AutoLoadingHolster],
+            [trait.ReapersTithe],
+            ),
+        Roll(
+            'Grapple flying',
+            [launcher_barrel.ConfinedLaunch, AnyPerk],
+            [magazine.AlloyCasing, AnyPerk],
+            [trait.Demolitionist],
+            [trait.Bipod],
+            ),
+        ]
