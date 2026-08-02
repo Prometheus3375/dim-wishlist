@@ -20,13 +20,15 @@ class Deadlock(RollDefinition):
             [trait.ThreatDetector],
             [trait.ClosingTime],
             [trait.OpeningShot],
+            [stock.ShortActionStock, stock.CompositeStock],
             ),
         Roll(
             'PvP',
             pvp_barrels,
             pvp_mags,
-            [trait.ThreatDetector],
+            [trait.LoneWolf, trait.ThreatDetector],
             [trait.OpeningShot],
+            [stock.ShortActionStock, stock.CompositeStock],
             ),
         Roll(
             'PvP',
@@ -34,6 +36,7 @@ class Deadlock(RollDefinition):
             pvp_mags,
             [trait.LoneWolf],
             [trait.ClosingTime],
+            [stock.ShortActionStock, stock.CompositeStock],
             ),
         ]
 
