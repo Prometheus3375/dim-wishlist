@@ -109,6 +109,18 @@ class EmptyVessel(RollDefinition):
         ]
 
 
+# Put separately, because it has different version of Pulse Monitor.
+class EmptyVesselOriginal(RollDefinition):
+    """
+    Solar Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload
+    Source: Unobtainable (Strike Playlist)
+    https://www.light.gg/db/items/4255586669
+    https://destiny.report/w/4255586669
+    """
+    item = Item('Empty Vessel', hash=4255586669)
+    rolls = EmptyVessel.rolls
+
+
 class LingeringDread(RollDefinition):
     """
     Stasis Breechloaded Grenade Launcher, Lightweight Frame, Anti-Overload
