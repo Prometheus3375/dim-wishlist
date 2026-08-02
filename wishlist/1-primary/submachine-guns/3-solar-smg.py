@@ -134,7 +134,7 @@ class YeartideApex(RollDefinition):
             default_barrels,
             default_mags,
             [trait.HealClip],
-            [trait.Demolitionist],
+            [trait.AttritionOrbs],
             [trait.Incandescent],
             [trait.ChaosReshaped],
             ),
@@ -144,5 +144,12 @@ class YeartideApex(RollDefinition):
             default_mags,
             [trait.HealClip],
             [trait.Incandescent],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.HealClip],
+            [trait.ChaosReshaped],
             ),
         ]
