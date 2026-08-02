@@ -174,7 +174,7 @@ class Unforgiven(RollDefinition):
             default_mags,
             [trait.DestabilizingRounds],
             [trait.Demolitionist],
-            [trait.AmbitiousAssassin],
+            [trait.AttritionOrbs],
             [trait.RepulsorBrace],
             [trait.AdrenalineJunkie],
             [trait.ChaosReshaped],
