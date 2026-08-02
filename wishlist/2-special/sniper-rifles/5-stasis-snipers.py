@@ -27,6 +27,7 @@ class ConspiracyHoned(RollDefinition):
     https://destiny.report/w/4062069077
     """
     item = Item('Conspiracy Honed', hash=4062069077)
+    is_chosen = True
     rolls = [
         Roll(
             'Super roll',
