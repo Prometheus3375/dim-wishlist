@@ -2,6 +2,32 @@ from wishlist import *
 from . import *
 
 
+class CruxTerminationIV(RollDefinition):
+    """
+    Arc Rocket Launcher, Aggressive Frame, Anti-Unstoppable, Legacy
+    Source: Banshee-44
+    https://www.light.gg/db/items/1719687748
+    https://destiny.report/w/1719687748
+    """
+    item = Item('Crux Termination IV', hash=1719687748)
+    rolls = [
+        Roll(
+            'Damage dealing',
+            default_barrels,
+            default_mags,
+            [trait.ClownCartridge],
+            [trait.Surrounded],
+            ),
+        Roll(
+            'Ad clear',
+            default_barrels,
+            default_mags,
+            [trait.ClownCartridge],
+            [trait.Bipod],
+            ),
+        ]
+
+
 class Heretic(RollDefinition):
     """
     Arc Rocket Launcher, Aggressive Frame, Anti-Unstoppable
